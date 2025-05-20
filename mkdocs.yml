@@ -1,0 +1,97 @@
+site_name: ASRC Nanofabrication Facility - NanoNotes
+site_description: Documentation for the ASRC Nanofabrication Facility
+site_url: https://asrc-nanofab.github.io/nanonotes
+repo_name: nanonotes
+
+# Standard docs directory
+docs_dir: docs
+
+theme:
+  name: material
+  font: 
+    text: Roboto
+    code: Roboto Mono
+  # icon:
+  #   logo: octicons/globe/16
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    # - toc.integrate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets:
+      base_path: docs
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+  - pymdownx.details
+  - admonition
+  - toc:
+      permalink: true
+      # baselevel: 2
+      # separator: "_"
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+
+nav:
+  - Home: index.md
+  - Staff: staff/google.md
+ 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/asrc-nanofab/nanonotes
+    # - icon: fontawesome/brands/linkedin
+    #   link: https://www.linkedin.com/in/worldlycode/
+
+copyright: "© 2025 ASRC Nanofabrication Facility"
