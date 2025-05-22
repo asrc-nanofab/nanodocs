@@ -83,9 +83,27 @@ plugins:
             show_source: true
             show_root_heading: true
 
+# nav:
+#   - Home: index.md
+#   - Staff: staff/google.md
+#   - SOPs: 
+#     - SOP Overview: sops/index.md
+#     - SOP Test: sops/sop_test.md
+
 nav:
   - Home: index.md
   - Staff: staff/google.md
+  - SOPs: 
+    - SOP Overview: sops/index.md
+    - SOP Test: sops/sop_test.md
+    - Chemical SOPs:
+      # - RCA Clean: sops/chemical_sops/RCA_Clean_SOP.pdf
+      # - Piranha Clean: sops/chemical_sops/Piranha_Clean_SOP.pdf
+      # - Nickel Etch: sops/chemical_sops/Nickel_Etch_SOP.pdf
+      # - Gold Etch: sops/chemical_sops/Gold_Etch_SOP.pdf
+      # - Chromium Etch: sops/chemical_sops/Chromium_Etch_SOP.pdf
+      - Aluminum Etch: sops/chemical_sops/aluminum_etch.md
+      # - HydroFluoric Acid: sops/chemical_sops/HydroFluoric_Acid_SOP.pdf
  
 extra:
   social:
