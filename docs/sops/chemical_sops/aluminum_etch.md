@@ -1,6 +1,6 @@
 ## View the PDF using PDF.js
 
-<iframe src="/nanonotes/assets/pdfjs/web/viewer.html?file=/nanonotes/assets/pdfs/Aluminum_Etch_SOP.pdf"
+<iframe src="/nanodocs-staff/assets/pdfjs/web/viewer.html?file=/nanodocs-staff/assets/pdfs/Aluminum_Etch_SOP.pdf"
         width="100%" height="900px" style="border: none;"></iframe>
         
 ## Aluminum Etch

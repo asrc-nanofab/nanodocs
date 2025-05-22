@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/installation/pdfjs/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/installation/pdfjs/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/sops/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/sops/sop_test/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/sop_test/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/sops/chemical_sops/aluminum_etch/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/chemical_sops/aluminum_etch/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/staff/documentation/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/documentation/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/staff/google/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/google/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanonotes/staff/sop_formatting/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/sop_formatting/</loc>
          <lastmod>2025-05-22</lastmod>
     </url>
 </urlset>
