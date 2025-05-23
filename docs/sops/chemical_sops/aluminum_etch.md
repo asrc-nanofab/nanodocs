@@ -1,9 +1,10 @@
-## View the PDF using PDF.js
+# Aluminum Etch Standard Operating Procedure
 
 <iframe src="/nanodocs-staff/assets/pdfjs/web/viewer.html?file=/nanodocs-staff/assets/pdfs/Aluminum_Etch_SOP.pdf"
-        width="100%" height="900px" style="border: none;"></iframe>
-        
-## Aluminum Etch
+        width="100%" height="1000px" style="border: none;"></iframe>
+
+
+<hr style="border: none; border-top: 1px solid #bbb; margin: 2em 0;" />
 
 ## Table of Contents:
 
