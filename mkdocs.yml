@@ -38,7 +38,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.instant
-    # - toc.integrate # toggle to show the toc on the right side of the page
+    # - toc.integrate # toggle OFF to show the toc on the right side of the page
     - search.suggest
     - search.highlight
     - navigation.top
@@ -89,23 +89,41 @@ plugins:
 
 nav:
   - Home: index.md
-  - Staff: staff/google.md
-  - SOPs: 
-      - SOP Overview: sops/index.md
-      - SOP Test: sops/sop_test.md
-      - Chemical SOPs: 
-        - Chemical SOP Overview: sops/chemical_sops/index.md
-        - Aluminum Etch: sops/chemical_sops/aluminum_etch.md
-        - Chrome Etch: sops/chemical_sops/chrome_etch.md
-      - Lithography SOPs:
-        - Lithography SOP Overview: sops/lithography_sops/index.md
-        - Elionix EBL 100keV: sops/lithography_sops/elionix_100.md
-      - Etcher SOPs:
-        - Etcher SOP Overview: sops/etch_sops/index.md
-        - RIE Etcher: sops/etch_sops/rie.md
-        - ICP Flourine Etcher: sops/etch_sops/icp-fl.md
-        - ICP Chlorine Etcher: sops/etch_sops/icp-cl.md
-  
+  - Lab Policies:
+    - Lab Policies Overview: policy/index.md
+    - Rules of Conduct: policy/conduct.md
+    - Safety: policy/safety.md
+    - C-14 | After Hours Access: policy/c14.md
+  - Tool SOPs: 
+    - Tool SOP Overview: tool_sops/index.md
+    - Tool SOP Test: tool_sops/sop_test.md
+    - Lithography SOPs:
+      - Lithography SOP Overview: tool_sops/lithography_sops/index.md
+      - Elionix EBL 100keV: tool_sops/lithography_sops/elionix_100.md
+      - WECAS Software: tool_sops/lithography_sops/wecas.md
+    - Etcher SOPs:
+      - Etcher SOP Overview: tool_sops/etch_sops/index.md
+      - RIE Etcher: tool_sops/etch_sops/rie.md
+      - ICP Flourine Etcher: tool_sops/etch_sops/icp-fl.md
+      - ICP Chlorine Etcher: tool_sops/etch_sops/icp-cl.md
+  - Chemicals:
+    - Chemical SOPs: 
+      - Chemical SOP Overview: chemicals/chem_sops/index.md
+      - Aluminum Etch: chemicals/chem_sops/aluminum_etch.md
+      - Piranha Clean: chemicals/chem_sops/piranha.md
+      - RCA Clean: chemicals/chem_sops/rca_clean.md
+      - Nickel Etch: chemicals/chem_sops/nickel_etch.md
+      - Chromium Etch: chemicals/chem_sops/chrome_etch.md
+      - Hydrofluoric Acid: chemicals/chem_sops/hf_etch.md
+    - Chemical List | SDS:
+      - Chemical List | SDS Overview: chemicals/chem_sds/index.md
+  - FAQ:
+    - FAQ Overview: faq/index.md
+  - Staff-Info: 
+    - Staff Info Overview: staff/index.md
+    - Google Drive: staff/google.md
+    - SOP Formatting: staff/sop_formatting.md
+    - Document Versioning: staff/versioning.md
  
 extra:
   social:

@@ -20,8 +20,3 @@ The one thing that Google Docs does not offer, which is important for us when us
 So many times when you're retrieving certain information from documentation, you will find that the URL or the source (if you're using a Google search engine) will actually return to you the page and the location of that page where the information is contained. The only thing that Google Docs would be able to do is to actually serve the entire document.
 
 For this reason, we need to add an additional step in the pipeline where at a certain point in time (maybe this is weekly or any time a major version is made), we need to be able to add an aspect where that document is converted into a PDF and that there is a cloud-based storage that references these PDFs and the URLs to the PDFs. This is an additional step that needs to be done with Google Docs that may not typically need to be done with other document management tools and software's. 
-
-## How to do this:
-
-1.  Import all documentation into google drive with comprehensive formatiing that remains consistent
-

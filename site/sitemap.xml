@@ -2,34 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/installation/pdfjs/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/sop_test/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/chemical_sops/</loc>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/chemical_sops/aluminum_etch/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/chemical_sops/chrome_etch/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/etch_sops/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/etch_sops/icp-cl/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/etch_sops/icp-fl/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/etch_sops/rie/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/lithography_sops/</loc>
+         <lastmod>2025-05-23</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs-staff/sops/lithography_sops/elionix_100/</loc>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/documentation/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/google/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/sop_formatting/</loc>
-         <lastmod>2025-05-22</lastmod>
+         <lastmod>2025-05-23</lastmod>
     </url>
 </urlset>
