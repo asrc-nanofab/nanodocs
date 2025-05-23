@@ -1,12 +1,17 @@
 # Aluminum Etch Standard Operating Procedure
 
+## SOP In Embedded PDF Format 
+(Directly converted from the Google Doc)
+
+<hr style="border: none; border-top: 1px solid #bbb; margin: 2em 0;" />
+
 <iframe src="/nanodocs-staff/assets/pdfjs/web/viewer.html?file=/nanodocs-staff/assets/pdfs/Aluminum_Etch_SOP.pdf"
         width="100%" height="1000px" style="border: none;"></iframe>
 
 
 <hr style="border: none; border-top: 1px solid #bbb; margin: 2em 0;" />
 
-## Table of Contents:
+## SOP in Markdown Format Below - (Converted from the Google Doc)
 
 | Table of Contents.................................................................................................................... 1           |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -108,28 +113,22 @@ If  a  small,  contained  spill  occurs, such as inside the hood, wipe it up wit
 - Version 0.0  - Created September 8 th , 2017
 - Version 1.0  - Revised May 22, 2025
 
+<hr style="border: none; border-top: 1px solid #bbb; margin: 2em 0;" />
 
+## Click to download the PDF
+[Click for the Google Doc](https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/export?format=pdf)
 
-## Download a PDF of the SOP
-[Click to view the PDF](../../assets/pdfs/Aluminum_Etch_SOP.pdf)
+## Click to download the DOCX
+[Click for the Google Doc](https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/export?format=docx)
+
+## View PDF in Browser
+[Click to View PDF in Browser](../../assets/pdfs/Aluminum_Etch_SOP.pdf)
 
 ## View the original Google Doc (via share link)
 [Click for the Google Doc](https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/edit?usp=sharing)
 
-<!-- ## View the published google doc (via publish link)
+## View the published google doc (via publish link)
 
-
-## View the embedded shared google link
-
-<div style="position: relative; width: 100%; height: 90vh; border: 1px solid #ccc;">
-  <iframe
-    src="https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/edit?usp=sharing"
-    style="width: 100%; height: 100%; border: none;">
-  </iframe>
-</div>
-
-
-## View the embedded published google link
 
 <div style="position: relative; width: 100%; height: 90vh; border: 1px solid #ccc;">
   <iframe
@@ -140,8 +139,8 @@ If  a  small,  contained  spill  occurs, such as inside the hood, wipe it up wit
 
 
 
-## view the embedded pDf
+<!-- ## view the embedded pDf
 
 <iframe src="../../../assets/pdfs/Aluminum_Etch_SOP.pdf" width="100%" height="800px" style="border: none;"></iframe>
 
- -->
+ --> -->
