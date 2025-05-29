@@ -36,7 +36,8 @@ theme:
     - navigation.tabs
     - navigation.indexes
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
+    - navigation.collapsible
     - navigation.instant
     # - toc.integrate # toggle OFF to show the toc on the right side of the page
     - search.suggest
@@ -132,5 +133,7 @@ extra:
       link: https://github.com/asrc-nanofab/nanodocs-staff
     # - icon: fontawesome/brands/linkedin
     #   link: https://www.linkedin.com/in/worldlycode/
+# extra_css:
+#   - stylesheets/extra.css
 
 copyright: "© 2025 ASRC Nanofabrication Facility"

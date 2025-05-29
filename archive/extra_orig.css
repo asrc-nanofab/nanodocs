@@ -1,0 +1,25 @@
+/* Make navigation headers more prominent */
+.md-nav__item--section > .md-nav__link,
+.md-nav__item--nested > .md-nav__link {
+  font-weight: bold;
+}
+
+/* Add a pointer cursor to show items are clickable */
+.md-nav__toggle {
+  cursor: pointer;
+}
+
+/* Fix any display issues from previous CSS */
+.md-nav__item:hover > .md-nav {
+  display: inherit;
+}
+
+/* Make sure the navigation stays collapsed by default */
+.md-nav__toggle:not(:checked) ~ .md-nav {
+  display: none;
+}
+
+/* Make sure the navigation expands when checked */
+.md-nav__toggle:checked ~ .md-nav {
+  display: block;
+}

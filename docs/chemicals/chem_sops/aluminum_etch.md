@@ -173,8 +173,8 @@ If  a  small,  contained  spill  occurs, such as inside the hood, wipe it up wit
 
 
 
-<!-- ## view the embedded pDf
+## view the embedded PDf (without the PDF.js javascript plugin)
 
 <iframe src="../../../assets/pdfs/Aluminum_Etch_SOP.pdf" width="100%" height="800px" style="border: none;"></iframe>
 
- --> -->
+ -->
