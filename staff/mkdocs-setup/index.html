@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://asrc-nanofab.github.io/nanodocs-staff/staff/versioning/">
+        <link rel="canonical" href="https://asrc-nanofab.github.io/nanodocs-staff/staff/mkdocs-setup/">
       
       
-        <link rel="prev" href="../sop_formatting/">
+        <link rel="prev" href="../versioning/">
       
-      
-        <link rel="next" href="../mkdocs-setup/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>Document Versioning - ASRC Nanofabrication Facility - NanoDocs</title>
+        <title>Mkdocs Setup - ASRC Nanofabrication Facility - NanoDocs</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-do-this" class="md-skip">
+        <a href="#setting-up-mkdocs-with-material-theme" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Document Versioning
+              Mkdocs Setup
             
           </span>
         </div>
@@ -1465,6 +1463,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../versioning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Document Versioning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1474,13 +1495,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    Document Versioning
+    Mkdocs Setup
     
   </span>
   
@@ -1493,7 +1516,7 @@
   
   
   <span class="md-ellipsis">
-    Document Versioning
+    Mkdocs Setup
     
   </span>
   
@@ -1506,6 +1529,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1514,9 +1539,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-do-this" class="md-nav__link">
+  <a href="#embedding-pdfs-with-pdfjs" class="md-nav__link">
     <span class="md-ellipsis">
-      How to do this:
+      Embedding PDFs with PDF.js
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-pdfjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing PDF.js
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-the-navagation-side-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting the Navagation side panel
     </span>
   </a>
   
@@ -1526,29 +1569,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mkdocs-setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Mkdocs Setup
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1578,6 +1598,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1586,9 +1608,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-do-this" class="md-nav__link">
+  <a href="#embedding-pdfs-with-pdfjs" class="md-nav__link">
     <span class="md-ellipsis">
-      How to do this:
+      Embedding PDFs with PDF.js
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-pdfjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing PDF.js
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-the-navagation-side-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formatting the Navagation side panel
     </span>
   </a>
   
@@ -1610,12 +1650,74 @@
 
 
 
-  <h1>Document Versioning</h1>
-
-<h2 id="how-to-do-this">How to do this:<a class="headerlink" href="#how-to-do-this" title="Permanent link">&para;</a></h2>
+<h1 id="setting-up-mkdocs-with-material-theme">Setting up Mkdocs (with Material Theme)<a class="headerlink" href="#setting-up-mkdocs-with-material-theme" title="Permanent link">&para;</a></h1>
+<h2 id="embedding-pdfs-with-pdfjs">Embedding PDFs with PDF.js<a class="headerlink" href="#embedding-pdfs-with-pdfjs" title="Permanent link">&para;</a></h2>
+<p>Embedding PDFs and having them render properly requires soem javascript add-in magic.  In particular we use PDF.js from Mozilla.  You can find it in the Github repo at <a href="https://github.com/mozilla/pdf.js">https://github.com/mozilla/pdf.js</a></p>
+<p>To install it in Mkdocs is very simple, and does not require any installation of javascript at all.  This is because everything runs client-side in the browser with the mkdocs website.  </p>
+<p>However, you do need to include the <code>/build</code> and <code>/web</code> directories within the mkdocs directory.  I will tell you how I install it to keep things separate.</p>
+<h2 id="installing-pdfjs">Installing PDF.js<a class="headerlink" href="#installing-pdfjs" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Import all documentation into google drive with comprehensive formatiing that remains consistent</li>
+<li>
+<p>Goto the github site to download a zip file of the latest release.  This can be found by going to <a href="https://github.com/mozilla/pdf.js/releases">https://github.com/mozilla/pdf.js/releases</a> and downloading the <code>Assets</code> tab of the most recent stable release.  (It will have the name format of <code>pdfjs-x.y.z-dist.zip</code>.  As of the writing of this post, I downloaded <code>pdfjs-5.2.133-dist.zip</code>)</p>
+</li>
+<li>
+<p>Extract the files from the zip file.  There shoud be two folders with many files in each.  Very important is to verify that the <code>viewer.html</code> is in the <code>web</code> folder.  The downloaded file structure will look like the image below.  </p>
+</li>
 </ol>
+<div class="highlight"><pre><span></span><code>pdfjs/
+├──<span class="w"> </span>build/
+│<span class="w">   </span>└──<span class="w"> </span>pdf.js
+├──<span class="w"> </span>web/
+│<span class="w">   </span>├──<span class="w"> </span>viewer.html
+│<span class="w">   </span>└──<span class="w"> </span>viewer.js
+│<span class="w">   </span>└──<span class="w"> </span>...
+</code></pre></div>
+<ol>
+<li>If you do not already have an <code>assets</code> folder inside of your <code>/docs</code> directory, put one there now.  I then have the following hierarchy:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>project-root/
+├──<span class="w"> </span>mkdocs.yml
+├──<span class="w"> </span>docs/
+│<span class="w">   </span>├──<span class="w"> </span>index.md<span class="w">  </span>←<span class="w"> </span>homepage<span class="w"> </span><span class="k">for</span><span class="w"> </span>your<span class="w"> </span>MkDocs<span class="w"> </span>site
+│<span class="w">   </span>├──<span class="w"> </span>README.md<span class="w">  </span>←<span class="w"> </span>optional,<span class="w"> </span><span class="k">for</span><span class="w"> </span>internal<span class="w"> </span>notes
+│<span class="w">   </span>├──<span class="w"> </span>assets/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>PDFs/
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>sample_pdf1.pdf
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>sample_pdf2.pdf
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>data_sheet.pdf
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>PDFJS/<span class="w">  </span>
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>build/
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>pdf.js
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>...
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>web/
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>viewer.html
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>viewer.js
+│<span class="w">   </span>│<span class="w">   </span>│<span class="w">       </span>├──<span class="w"> </span>...
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>Images/
+│<span class="w">   </span>├──<span class="w"> </span>intro-guide/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>index.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>getting_started.md
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>site_structure_explained.md
+│<span class="w">   </span>├──<span class="w"> </span>example-folder/
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>index.md
+│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>example_file1.md
+│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>example_file2.md
+│<span class="w">   </span>├──<span class="w"> </span>...
+</code></pre></div>
+<ol>
+<li>Now wherever you want a PDF to be rendered in one of your Markdown documents, you will need to add the following relative link. For example, let us say we want to embed a data sheet into example file one. We would need to write the following <code>iframe</code> html tag path:</li>
+</ol>
+<div class="highlight"><pre><span></span><code> &lt;iframe 
+   src=&quot;/[project-root]/assets/pdfjs/web/viewer.html?file=/[project-root]/assets/pdfs/data_sheet.pdf&quot; 
+   width=&quot;100%&quot; 
+   height=&quot;1000px&quot; 
+   style=&quot;border: none;&quot;&gt;&lt;/iframe&gt;
+</code></pre></div>
+<p><strong>NOTE:</strong>  You will see that I put the full path name to the PDF directory, in case I move the file, the iframe willl still load properly.  </p>
+<ol>
+<li>There is nothing else to do to embed PDFs into your markdown documents. No installation.  Everything is done by properly writing the path to the PDFJS directory and the <code>viewer.html</code> as well as the path to the PDF file itself.  </li>
+</ol>
+<h2 id="formatting-the-navagation-side-panel">Formatting the Navagation side panel<a class="headerlink" href="#formatting-the-navagation-side-panel" title="Permanent link">&para;</a></h2>
 
 
 
