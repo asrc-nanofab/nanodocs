@@ -1,8 +1,21 @@
-# SOP Formatting
+# Google Docs for SOPs
+
+All SOPs must be in Google Docs format.  If you have a Microsoft Word document:
+  * Drag and drop it into Google Drive
+  * Go to File menu and select "Save as Google Docs"
+  * Delete the original Microsoft Word file
+  * Only edit the Google Docs version
+  * Do not delete or recreate the original file as the URL for that will be used for keeping updates of the document. 
 
 ## Tool SOPs
 
+The first thing you will want to do is properly assign all header, large bolded header items as headers in the Google Doc. This will enable it to be formatted as an appropriate table of contents. 
+
 Every every SOP should begin with a title and table of contents. The first thing in the table should be the safety information. The second thing in the table should be the tool operation information. The third thing in the table, these are high-level SOPs, should be troubleshooting and important information.
+
+## Sections in the Tool SOP
+
+
 
 ```md
 # Document Name 

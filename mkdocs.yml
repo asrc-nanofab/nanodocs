@@ -126,7 +126,8 @@ nav:
     - Google Drive: staff/google.md
     - SOP Formatting: staff/sop_formatting.md
     - Document Versioning: staff/versioning.md
- 
+    - Mkdocs Setup: staff/mkdocs-setup.md
+    - Links: staff/links.md
 extra:
   social:
     - icon: fontawesome/brands/github
