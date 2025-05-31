@@ -71,7 +71,7 @@ project-root/
 
 5. There is nothing else to do to embed PDFs into your markdown documents. No installation.  Everything is done by properly writing the path to the PDFJS directory and the `viewer.html` as well as the path to the PDF file itself.  
 
-## Formatting the Navagation side panel
+## Formatting the Navagation side panel(s)
 
 
 
