@@ -1,4 +1,5 @@
 title: Chemicals
 nav:
-  - Chemical SOPs
-  - Chemical List | SDS
+  - index.md
+  - Chemical SOPs: chem_sops
+  - Chemical List | SDS: chem_sds

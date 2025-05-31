@@ -1,9 +1,4 @@
 collapse: true
-# nav:
-#   - index.md
-#   - signup/
-#   - policy/
-#   - tool_sops/
-#   - chemicals/
-#   - faq/
-#   - staff/
+
+nav:
+  - ...
