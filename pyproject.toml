@@ -10,4 +10,5 @@ dependencies = [
     "mkdocstrings[python]==0.29.1",
     "pymdown-extensions==10.15",
     "ghp-import==2.1.0",
+    "mkdocs-awesome-pages-plugin>=2.10.1",
 ]
