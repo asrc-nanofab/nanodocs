@@ -1,5 +1,5 @@
 [project]
-name = "nanonotes"
+name = "nanodocs-staff"
 version = "0.1.0"
 description = "Documentation for the ASRC nanofab facility"
 authors = [

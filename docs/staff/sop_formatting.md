@@ -1,5 +1,7 @@
 # Google Docs for SOPs
 
+[TOC]
+
 All SOPs must be in Google Docs format.  If you have a Microsoft Word document:
   * Drag and drop it into Google Drive
   * Go to File menu and select "Save as Google Docs"

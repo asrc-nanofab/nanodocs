@@ -1,4 +1,5 @@
 title: Staff-Info
+collapse: true
 nav:
   - index.md
   - google.md

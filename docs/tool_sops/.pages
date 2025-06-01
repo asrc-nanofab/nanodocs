@@ -2,5 +2,5 @@ title: Tool SOPs
 collapse: true
 nav:
   - index.md
-  - Lithography SOPs
-  - Etcher SOPs
+  - Lithography SOPs: lithography_sops
+  - Etcher SOPs: etch_sops

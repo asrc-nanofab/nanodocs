@@ -1,4 +1,6 @@
 collapse: true
 
 nav:
-  - ...
+  - Home: index.md
+  - Staff Info: staff
+  - Tool SOPs: tool_sops
