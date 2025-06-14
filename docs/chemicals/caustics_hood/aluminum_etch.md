@@ -7,7 +7,7 @@
 
 
 
-<iframe src="/nanodocs-staff/assets/pdfjs/web/viewer.html?file=/nanodocs-staff/assets/pdfs/Aluminum_Etch_SOP.pdf"
+<iframe src="/nanodocs/assets/pdfjs/web/viewer.html?file=/nanodocs/assets/pdfs/chem/Aluminum_Etch_SOP.pdf"
         width="100%" height="1000px" style="border: none;"></iframe>
 
 
@@ -22,7 +22,7 @@
 
 
 ## View PDF in Browser
-[Click to View PDF in Browser](../../assets/pdfs/Aluminum_Etch_SOP.pdf)
+[Click to View PDF in Browser](../../assets/pdfs/chem/Aluminum_Etch_SOP.pdf)
 
 <hr style="border: none; border-top: 1px solid #bbb; margin: 2em 0;" />
 
@@ -175,6 +175,6 @@ If  a  small,  contained  spill  occurs, such as inside the hood, wipe it up wit
 
 ## view the embedded PDf (without the PDF.js javascript plugin)
 
-<iframe src="../../../assets/pdfs/Aluminum_Etch_SOP.pdf" width="100%" height="800px" style="border: none;"></iframe>
+<iframe src="../../../assets/pdfs/chem/Aluminum_Etch_SOP.pdf" width="100%" height="800px" style="border: none;"></iframe>
 
  -->

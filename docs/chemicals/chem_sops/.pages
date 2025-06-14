@@ -1,9 +1,6 @@
 title: Chemical SOPs
 nav:
   - index.md
-  - aluminum_etch.md
   - piranha.md
   - rca_clean.md
-  - nickel_etch.md
-  - chrome_etch.md
   - hf_etch.md

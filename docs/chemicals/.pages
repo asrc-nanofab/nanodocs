@@ -2,4 +2,6 @@ title: Chemicals
 nav:
   - index.md
   - Chemical SOPs: chem_sops
-  - Chemical List | SDS: chem_sds
+  - Solvent Hood: solvent_hood
+  - Caustics/Metal Etch Hood: caustics_hood
+

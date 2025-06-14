@@ -1,0 +1,10 @@
+title: Caustics/Metal Etch Hood
+nav:
+  - index.md
+  - Caustics Overview: caustics_overview.md
+  - Aluminum Etch: aluminum_etch.md
+  - Nickel Etch: nickel_etch.md
+  - Chrome Etch: chrome_etch.md
+  - Gold Etch: gold_etch.md
+
+
