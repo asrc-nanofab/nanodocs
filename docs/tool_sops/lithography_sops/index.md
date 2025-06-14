@@ -1,7 +1,6 @@
-# Lithography Tools and SOPs
+# Lithography Tool SOPs
 
-* Mask Aligner
-* EBL
-* Spinner
-* Resists
+* EVG Photomask Aligner
+* Elionix E-Beam Lithography
+* Hot Plates
 
