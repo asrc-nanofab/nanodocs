@@ -11,4 +11,5 @@ dependencies = [
     "pymdown-extensions==10.15",
     "ghp-import==2.1.0",
     "mkdocs-awesome-pages-plugin>=2.10.1",
+    "ipykernel==6.29.5",
 ]
