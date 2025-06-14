@@ -1,135 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sds/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sds/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/aluminum_etch/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/aluminum_etch/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/aluminum_markdown/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/aluminum_markdown/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/chrome_etch/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/chrome_etch/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/gold_etch/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/gold_etch/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/hf_etch/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/hf_etch/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/nickel_etch/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/nickel_etch/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/piranha/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/piranha/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/chemicals/chem_sops/rca_clean/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/chem_sops/rca_clean/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/faq/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/faq/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/installation/pdfjs/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/policy/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/policy/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/policy/c14/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/policy/c14/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/policy/conduct/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/policy/conduct/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/policy/safety/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/policy/safety/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/signup/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/signup/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/etch_sops/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/google/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/etch_sops/icp-cl/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/links/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/etch_sops/icp-fl/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/mkdocs-setup/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/etch_sops/rie/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/sop_formatting/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography_sops/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/staff/versioning/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography_sops/elionix_100/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/etch_sops/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/etch_sops/icp-cl/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/etch_sops/icp-fl/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/etch_sops/rie/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/lithography_sops/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/lithography_sops/elionix_100/</loc>
-         <lastmod>2025-05-31</lastmod>
-    </url>
-    <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs-staff/tool_sops/lithography_sops/wecas/</loc>
-         <lastmod>2025-05-31</lastmod>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography_sops/wecas/</loc>
+         <lastmod>2025-06-14</lastmod>
     </url>
 </urlset>
