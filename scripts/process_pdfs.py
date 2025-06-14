@@ -10,10 +10,10 @@ sheet_csv_url = "https://docs.google.com/spreadsheets/d/1b4RRhKAukj9NrFyiJl_I9vb
 df = pd.read_csv(sheet_csv_url)
 
 # Set this to the exact column name with the PDF URLs
-pdf_column = "pdf link"  # e.g., 'PDF Link'
+pdf_column = "PDF Link"  # e.g., 'PDF Link'
 tool_name_column = "Tool Name"  # Column containing the tool names
 
-output_folder = "pdf_downloads"
+output_folder = "../docs/assets/pdfs/tools"
 os.makedirs(output_folder, exist_ok=True)
 
 # URL validation pattern
