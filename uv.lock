@@ -542,7 +542,7 @@ wheels = [
 ]
 
 [[package]]
-name = "nanodocs-staff"
+name = "nanodocs"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

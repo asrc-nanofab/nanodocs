@@ -1,9 +1,9 @@
 [project]
-name = "nanodocs-staff"
+name = "nanodocs"
 version = "0.1.0"
 description = "Documentation for the ASRC nanofab facility"
 authors = [
-    {name = "NanoStaff"}
+    {name = "SPR"}
 ]
 dependencies = [
     "mkdocs-material==9.6.14",
