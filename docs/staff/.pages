@@ -1,9 +1,0 @@
-title: Staff-Info
-collapse: true
-nav:
-  - index.md
-  - google.md
-  - sop_formatting.md
-  - versioning.md
-  - mkdocs-setup.md
-  - links.md

@@ -1,13 +1,14 @@
 site_name: ASRC Nanofabrication Facility - NanoDocs
 site_description: Documentation for the ASRC Nanofabrication Facility
-site_url: https://asrc-nanofab.github.io/nanodocs-staff
-repo_name: nanodocs-staff
+site_url: https://asrc-nanofab.github.io/nanodocs
+repo_name: nanodocs
 
 # Standard docs directory
 docs_dir: docs
 
 theme:
   name: material
+  custom_dir: overrides
   font: 
     text: Roboto
     code: Roboto Mono
