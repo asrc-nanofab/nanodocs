@@ -1,6 +1,6 @@
 # Lab Policies
 
-!!! danger "Critical Information: Read Carefully"
+!!! note "Critical Information: Read Carefully"
     Adherence to all lab rules and policies is mandatory. These documents must be read and understood completely before using the ASRC Nanofabrication Facility. 
 
 <div class="grid cards" markdown>
