@@ -1,6 +1,6 @@
 # How to Become a Nanofab Member
 
-!!! info "Start Here"
+!!! note "Start Here"
     To become a user of the ASRC Nanofabrication Facility, you must complete all steps below. If you have any questions, please contact facility staff.
 
 ## Steps to Membership
