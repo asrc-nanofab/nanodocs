@@ -1,21 +1,8 @@
-<!-- # ASRC Nanofabrication Facility - NanoDocs
-
-Wecome to the site containg all Nanofab Documentation.  
-
-## Main Sections
-
-- [Tool SOPs](tool_sops/)
-- [Chemical Handling](chemicals/)
-- [Lab Safety Policies](policy/)
-- [Nanofab Signup](signup/)
-- [FAQ](faq/) -->
-
-
 # ASRC Nanofabrication Facility - NanoDocs
 
 <div class="grid cards" markdown>
 
--   [:material-flask-outline: __Welcome to NanoDocs__](#main-sections)
+-   [:material-chip: __Welcome to NanoDocs__](#main-sections)
 
     ---
 
