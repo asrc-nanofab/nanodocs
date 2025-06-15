@@ -1,6 +1,5 @@
-# Depostion Tools
-
-title: Deposition Tools
+title: Deposition SOPs
+collapse: true
 nav:
   - index.md
   - AJA Sputter: aja_sputter.md
