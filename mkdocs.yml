@@ -12,8 +12,8 @@ theme:
   font: 
     text: Roboto
     code: Roboto Mono
-  # icon:
-  #   logo: octicons/globe/16
+  icon:
+    logo: material/cube-outline
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
