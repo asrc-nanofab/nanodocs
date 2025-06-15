@@ -1,5 +1,7 @@
 # Plasma Etch Tools
 
+## Equipment List
+
 - [Reactive Ion Etcher](rie.md)
 - [ICP-RIE Fluorine Etcher](icp-fl.md)
 - [ICP-RIE Chlorine Etcher](icp-fl.md)

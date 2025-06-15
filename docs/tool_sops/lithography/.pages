@@ -1,5 +1,10 @@
 title: Lithography SOPs
 nav:
   - index.md
-  - elionix_100.md
-  - wecas.md
+  - Elionix E-Beam Lithography: elionix.md
+  - EVG Photo-Mask Aligner: mask_aligner.md
+  - Nanoscribe 3D Lithography: nanoscribe.md
+  - Spinners: spinners.md
+  - Hot Plates: hot_plates.md
+
+
