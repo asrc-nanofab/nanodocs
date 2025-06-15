@@ -21,10 +21,6 @@
          <lastmod>2025-06-15</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/caustics_hood/caustics_overview/</loc>
-         <lastmod>2025-06-15</lastmod>
-    </url>
-    <url>
          <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/caustics_hood/chrome_etch/</loc>
          <lastmod>2025-06-15</lastmod>
     </url>
@@ -34,6 +30,10 @@
     </url>
     <url>
          <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/caustics_hood/nickel_etch/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/chemicals/caustics_hood/silicon_etch/</loc>
          <lastmod>2025-06-15</lastmod>
     </url>
     <url>
@@ -149,7 +149,23 @@
          <lastmod>2025-06-15</lastmod>
     </url>
     <url>
-         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography/elionix_100/</loc>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography/elionix/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography/hot_plates/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography/mask_aligner/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography/nanoscribe/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/lithography/spinners/</loc>
          <lastmod>2025-06-15</lastmod>
     </url>
     <url>
@@ -161,7 +177,31 @@
          <lastmod>2025-06-15</lastmod>
     </url>
     <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/metrology/afm/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/metrology/ellipsometer/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/metrology/optical_profilometer/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/metrology/profilometer/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/metrology/sem/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
          <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/packaging/</loc>
+         <lastmod>2025-06-15</lastmod>
+    </url>
+    <url>
+         <loc>https://asrc-nanofab.github.io/nanodocs/tool_sops/packaging/dicing_saw/</loc>
          <lastmod>2025-06-15</lastmod>
     </url>
 </urlset>
