@@ -2,6 +2,6 @@ title: Etcher SOPs
 collapse: true
 nav:
   - index.md
-  - rie.md
-  - icp-fl.md
-  - icp-cl.md
+  - Reactive Ion Etcher: rie.md
+  - ICP-Fluorine Etcher: icp-fl.md
+  - ICP-Chlorine Etcher: icp-cl.md
