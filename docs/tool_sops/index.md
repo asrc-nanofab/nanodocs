@@ -4,7 +4,7 @@ These Standard Operating Procedures (SOPs) provide detailed instructions for saf
 
 <div class="grid cards" markdown>
 
--   __[:material-image-filter-center-focus-strong-outline: Lithography Tools](litho/)__
+-   __[:material-image-filter-center-focus-strong-outline: Lithography Tools](lithography/)__
 
     ---
     

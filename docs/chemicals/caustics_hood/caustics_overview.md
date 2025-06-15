@@ -1,1 +1,0 @@
-# Caustics overview
