@@ -17,13 +17,13 @@
 
     ---
 
-    SOPs for working with solvents for cleaning and processing.
+    SOPs for working with solvents for cleaning and Lift-Off.
 
 -   __[:material-beaker-alert-outline: Caustics Hood](caustics_hood/)__
 
     ---
 
-    Guidelines for using caustic substances like developers and etchants.
+    Guidelines for using caustic substances and etchants.
 
 -   __[:material-skull-crossbones-outline: HF and Piranha Hood](hf_pirahna_hood/)__
 
