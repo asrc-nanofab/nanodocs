@@ -18,8 +18,8 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: slate # blue  
-      accent: blue
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -27,8 +27,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: slate # blue
-      accent: blue
+      primary: indigo 
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -42,7 +42,7 @@ theme:
     # - navigation.expand
     - navigation.collapsible
     - navigation.instant
-    # - toc.integrate # toggle OFF to show the toc on the right side of the page
+    - toc.integrate # toggle OFF to show the toc on the right side of the page
     - search.suggest
     - search.highlight
     - navigation.top
