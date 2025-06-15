@@ -1,9 +1,8 @@
-collapse: true
-
+title: Nanodocs 
 nav:
   - Home: index.md
   - Tool SOPs: tool_sops
   - Chemical Handling: chemicals
   - Lab Safety Policies: policy
-  - Signup: signup
+  - Nanofab Signup: signup
   - FAQ: faq

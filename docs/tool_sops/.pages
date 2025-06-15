@@ -2,5 +2,8 @@ title: Tool SOPs
 collapse: true
 nav:
   - index.md
-  - Lithography SOPs: lithography_sops
-  - Etcher SOPs: etch_sops
+  - Lithography SOPs: lithography
+  - Deposition SOPs: deposition
+  - Etcher SOPs: etch
+  - Metrology SOPs: metrology
+  - Packaging SOPs: packaging

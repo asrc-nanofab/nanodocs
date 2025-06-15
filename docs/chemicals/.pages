@@ -1,7 +1,9 @@
-title: Chemicals
+title: Chemical Processing
 nav:
   - index.md
-  - Chemical SOPs: chem_sops
+  - Litho-Development Hood: litho_hood
   - Solvent Hood: solvent_hood
   - Caustics/Metal Etch Hood: caustics_hood
+  - HF and Piranha Hood: hf_pirahna_hood
+  - RCA Hood: rca_hood
 
