@@ -12,26 +12,6 @@
 
 ## Standard Operating Procedure
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Section 1: Process Description {#section-1:-process-description}
 
 ## Hood Description {#hood-description}
@@ -259,7 +239,6 @@ Note that as covered in those SOPs that if you are leaving chemicals unattended,
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
-
 
 ### **Spills**
 

@@ -245,7 +245,6 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
  
 
-
 **Note**\- if for any reason the tool is unable to run a clean, make sure the table temperature set point is still set to 20C before leaving the tool. This can be done using the “Temp Set” recipe. 
 
  

@@ -10,27 +10,6 @@
 
 **Standard Operating Procedure: Stylus Profiler**
 
-Table of Contents: 
-
-**[Section 1 – Process or Experiment Description	1](#section-1-–-process-or-experiment-description)**
-
-
-
-
-
-
-
-
-
-
-4.1.6. Unloading [sample and Shutdown Tool	6](#4.1.6.unloading-sample-and-shutdown-tool)
-
-
-
-
-
-
-
 # **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This Standard Operating Procedure (SOP) outlines the proper use of the Bruker Detach \-XT Stylus profiler. The Bruker Stylus Profiler is a semi-automated stylus profiler that can be used to measure step height with better than 5 Å repeatability, surface roughness, as well as 3D surface mapping. 
@@ -44,7 +23,6 @@ All standard laboratory safety protocols must be followed throughout this proced
 | Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The act of scanning your sample can cause the stage to move. Keep hands and fingers clear of sample stage while making measurements. |
 
 # **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
-
 
 N/A
 
@@ -70,7 +48,7 @@ N/A
    1. Note: If you need to raise the stylus at all, you can move it up a few millimeters by clicking **Tower Up**, or you can move it all the way up by clicking **Tower Home**.  
       
 
-   ### **4.1.3 Collect Measurement Data** {#4.1.3-collect-measurement-data}
+### **4.1.3 Collect Measurement Data** {#4.1.3-collect-measurement-data}
 
       
 
@@ -139,7 +117,6 @@ Be mindful of the limits your sample might impose on measurements.  The stylus m
 # **Section 8 \- Common Troubleshooting Tips** {#section-8---common-troubleshooting-tips}
 
 If something is not responding, attempt to close and restart the software, reinitializing all of the stages in the process.  Notify staff if this occurs.
-
 
 # **Section 9- When to call staff?** 
 

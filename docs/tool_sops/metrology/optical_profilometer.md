@@ -10,25 +10,6 @@
 
 **Standard Operating Procedure: Optical Profiler**
 
-Table of Contents:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This Standard Operating Procedure (SOP) outlines the proper use of Bruker ContourGT-I 3D Optical Profiler. The Bruker Optical Profiler is a fully automated and programmable optical interferometric microscope that can be used to measure and map surface features in 3D.  The system features an automated tip/tilt optical head, to enable measurements over a range of angles while minimizing tracking errors.
@@ -40,7 +21,6 @@ All standard laboratory safety protocols must be followed throughout this proced
 | Hazard | Hazard Sign | Hazard Description |
 | ----- | :---: | ----- |
 | Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The optical profiler is equipped with a motorized stage that can create pinch points – areas where a person’s fingers can get caught or crushed. Do not move the stage with your hands near it. |
-
 
 # **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
 
@@ -85,7 +65,7 @@ N/A
 5. Once your measurement parameters are entered, click **Single Acquisition** to make the measurement. **Do not touch or bump the table holding the ContourGT while it is making a measurement as any wobbling could ruin the measurement.**  
    
 
-   ### **4.1.4.  Data Analysis** {#4.1.4.-data-analysis}
+### **4.1.4.  Data Analysis** {#4.1.4.-data-analysis}
 
    
 

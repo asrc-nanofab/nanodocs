@@ -91,6 +91,22 @@ Generated (never hand-edit — fix the Google Doc or the script, then re-sync):
 Hand-written: section index pages, `docs/faq/`, `docs/signup/`, and the
 `.nav.yml` navigation files.
 
+## Writing docs that convert cleanly
+
+Google's Markdown export is faithful, with two authoring rules to know:
+
+1. **Images must be "In line with text."** Images set to "Wrap text" or
+   "Break text" are silently dropped by the export and will not appear on the
+   site (the sync prints a warning when it detects an orphaned figure caption).
+   Click the image → choose the leftmost "In line" layout option.
+2. **Don't indent headings inside lists.** The sync compensates for this
+   (dedenting them so they don't render as literal text), but keeping headings
+   at the left margin gives the cleanest results.
+
+Tables, bold/italics, footnotes, numbered procedures, and inline images all
+convert well. The doc's own table of contents and letterhead are stripped
+automatically, so authors can keep using them in the doc.
+
 ## Adding or updating a document
 
 **Update an existing doc:** edit the Google Doc, then re-run the sync. Nothing

@@ -12,32 +12,6 @@
 
 ## Standard Operating Procedure
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Section 1: Process and Experiment Description {#section-1:-process-and-experiment-description}
 
 ## Hardware Description {#hardware-description}
@@ -96,7 +70,6 @@ There are four objectives available for use with the system for different applic
 	Typical slicing distance \= 5 um  
 	Typical hatching distance \= 1 um
 
-
 ## Material Description {#material-description}
 
 Nanoscribe GmbH supplies proprietary UV-curable photoresins to be utilized with different applications of the Nanoscribe system.  The resins have optimized sensitivity for fast 3D structuring using two-photon absorption with good adhesion to various substrates, low mechanical stress and high mechanical stability.  None of the resins require post-exposure bakes.  Each resin is optimized to be used with specific objectives, utilizing specific solutions sets to be printed on specific substrates based on the difference in refractive index between the resin and substrate required by the utilized objective.
@@ -146,9 +119,6 @@ Equipment: substrate, tweezers, three glass containers (for Surpass \[optional\]
 5. Turn on the motorized stages  
 6. Log onto the computer as “User” with password “Hilda001”  
 7. Confirm that the objective you intend to use is selected in the microscope controller.
-
-
-
 
 ## **Initialize Software** {#initialize-software}
 
@@ -304,7 +274,6 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
  
 
  
-
 
 ## **Unload Sample** {#unload-sample}
 

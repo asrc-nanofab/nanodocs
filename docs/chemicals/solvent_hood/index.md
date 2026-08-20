@@ -12,19 +12,6 @@
 
 ## Standard Operating Procedure
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Section 1: Process Description {#section-1:-process-description}
 
 The Solvents/Lift-Off Hood is an Air Control stainless steel fume hood designed for non-corrosive chemical work. Located in the metrology bay of the cleanroom, this hood is designated for solvents only and is to be used for cleaning substrates and other samples with solvents and performing post-deposition or post-etch lift-off of photo- and EBL-resists. There are two sonicator tanks built into the hood that can be used to assist with cleaning or lift-off processes.

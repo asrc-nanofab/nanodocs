@@ -43,7 +43,6 @@ Thermal ALD operates through sequential, self-limiting chemical reactions betwee
 * Lower contamination risk  
   
 
-
 **Disadvantages**
 
 * Requires higher substrate temperature (typically above 150o C)  
@@ -68,13 +67,11 @@ Plasma Enhanced or Plasma assisted ALD is another technique that deposits a thin
 * Due to ion bombardment sensitive substrate may damage.  
 * Not suitable for deep trench or high aspect ratio deposition.
 
-
 ### **Material Requirements** {#material-requirements}
 
 The ALD growth process involves the use of volatile chemical reactants. Therefore, the materials on which ALD growth takes place should be inert. Typically, silicon, glass, or metal substrates are ideal. Many ALD precursors are known to react with organic materials, such as photo or electron beam resists. Furthermore, most ALD processes are calibrated in the 100 – 300 C temperature range. The sample should be able to withstand that heat for a prolonged period. Please consult staff (and literature) prior to growing on uncommon substrates.
 
 ## **Section 2- Potential Hazards of Precursors** {#section-2--potential-hazards-of-precursors}
-
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
@@ -105,9 +102,7 @@ While transferring wafer from the loadlock, residual gases may escape, and Wafer
 
 **Equipment for the tool**: Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers 
 
-
 ## **Section 5- Standard Operating Procedure** {#section-5--standard-operating-procedure}
-
 
 **Estimated Time**: Typical processes go from 1 hour for 100 cycles to several hours as many hundreds of cycles. The Screen will display with process time when a recipe is loaded.
 
@@ -148,7 +143,6 @@ Verify that both the load lock and the reactor are under vacuum.
    
 
  
-
 
 	3\.  Turn off the Argon flow by setting the values of the MFC-0 and the MFC-1 			controllers to zero.
 
@@ -262,7 +256,6 @@ Figure 8, Unloading sample
 
 ## **Section 6- Safety and Emergency** {#section-6--safety-and-emergency}
 
-
 **Emergency Stop**
 
 *Critical*
@@ -287,14 +280,12 @@ Figure 8, Unloading sample
 
 - Change the ALD precursors.
 
-
 **When to call staff?**
 
 * If either the main chamber or the load lock is not pumping down as expected.  
 * If the substrate holder /puck stucked inside the chamber or in between the load lock and the chamber.  
 * If the pressure graph during your recipe does not look like the graph in Figure 6\.  
 * If the sample holder falls off the loading arm (or the loading fork) when you are either loading or unloading the sample.
-
 
  **What to watch out for during the operation**
 
@@ -322,11 +313,7 @@ Figure 9 Pressure graph and Pulse peaks
 
 * The tool doesn’t pump down to vacuum.
 
-
-
-
 ### ***Revision History:*** {#revision-history:}
-
 
 1. Revision 1.0 \-January 2018 – MB created the original document  
 2. Revision 2.0 – June 2025 \- Rai

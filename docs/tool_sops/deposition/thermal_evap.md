@@ -36,7 +36,6 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-
 ## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
@@ -72,7 +71,6 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | ----- | ----- | ----- | ----- | :---- | ----- |
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment and human health | Must be collected and disposed of as Hazardous waste  |
-
 
 # **Tool operation** {#tool-operation}
 

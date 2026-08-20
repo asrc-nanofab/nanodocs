@@ -12,23 +12,6 @@ ASRC Nanofab – Standard Operating Procedure:
 
 # **Chromium Etch**
 
-## **Table of Contents:** {#table-of-contents:}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Principle of Operation** {#principle-of-operation}
 
 To remove chromium from a substrate – patterned or unpatterned.

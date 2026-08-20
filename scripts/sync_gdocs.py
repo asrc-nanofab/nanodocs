@@ -126,8 +126,20 @@ IMAGE_DEF_RE = re.compile(
 )
 # A paragraph that is nothing but an image reference, e.g. "![alt][image1]"
 IMAGE_ONLY_LINE_RE = re.compile(r"^!\[[^\]]*\]\[(image\d+)\]\s*$")
-# Google Docs TOC entries: full-line links to in-page anchors
-TOC_ENTRY_RE = re.compile(r"^\[.*\]\(#.*\)\s*$")
+# Google Docs TOC entries: full-line links to in-page anchors (may be bolded)
+TOC_ENTRY_RE = re.compile(r"^\*{0,2}\[.*\]\(#.*\)\*{0,2}\s*$")
+# TOC entries with a tab + page number inside the link text; catches entries
+# with stray text outside the link that TOC_ENTRY_RE misses
+TOC_PAGENUM_RE = re.compile(r"\t\d+\]\(#")
+# The TOC label in all observed doc stylings: plain, bold, or a heading
+# with Google's anchor suffix (e.g. "## **Table of Contents:** {#table-of-contents:}")
+TOC_LABEL_RE = re.compile(
+    r"(#{1,6}\s+)?\*{0,2}Table of Contents:?\*{0,2}(\s*\{#[^}]*\})?"
+)
+# Headings the doc author indented inside a list; markdown renders these as
+# literal text (and their indented paragraphs as code blocks) unless dedented
+INDENTED_HEADING_RE = re.compile(r"^\s+(#{1,6}\s.*)$")
+LIST_ITEM_RE = re.compile(r"^\s*(\d+\.|[*+-])\s")
 ALT_BOILERPLATE_RE = re.compile(r"AI-generated content may be incorrect\.?")
 
 IMAGE_EXTENSIONS = {"jpeg": "jpg", "svg+xml": "svg"}
@@ -311,14 +323,41 @@ def clean_body(markdown: str) -> str:
         # Empty heading lines are Google Doc styling leftovers with no content
         if re.fullmatch(r"#{1,6}", stripped):
             continue
-        if stripped == "Table of Contents" or TOC_ENTRY_RE.match(stripped):
+        if TOC_LABEL_RE.fullmatch(stripped) or TOC_ENTRY_RE.match(stripped):
+            continue
+        if TOC_PAGENUM_RE.search(stripped):
             continue
         # TOC remnants with unresolved Google anchors (e.g. partially bolded
         # entries that escape TOC_ENTRY_RE); "#heading=" is never a valid target
         if "](#heading=" in stripped:
             continue
         out.append(line)
-    return "\n".join(out).strip() + "\n"
+    # Collapse blank-line runs left behind by the stripping above
+    body = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip() + "\n"
+    return _dedent_nested_headings(body)
+
+
+def _dedent_nested_headings(markdown: str) -> str:
+    """Un-indent headings the doc author nested inside lists.
+
+    Google exports them with leading spaces, which markdown renders as
+    literal text — and the further-indented paragraphs under them as code
+    blocks. Dedent the heading and its following paragraphs, stopping at
+    the next list item or column-0 line so real nested lists are untouched.
+    """
+    out: list[str] = []
+    dedent_mode = False
+    for line in markdown.splitlines():
+        if m := INDENTED_HEADING_RE.match(line):
+            line = m.group(1)
+            dedent_mode = True
+        elif dedent_mode and line.strip():
+            if LIST_ITEM_RE.match(line) or not line[0].isspace():
+                dedent_mode = False
+            else:
+                line = line.lstrip()
+        out.append(line)
+    return "\n".join(out) + "\n"
 
 
 def build_page(title: str, preview_url: str, pdf_href: str, body: str) -> str:
@@ -335,6 +374,29 @@ def build_page(title: str, preview_url: str, pdf_href: str, body: str) -> str:
         "---\n\n"
         f"{body}"
     )
+
+
+CAPTION_RE = re.compile(r"^\W{0,3}Image \d+", re.IGNORECASE)
+
+
+def warn_dropped_images(name: str, body: str) -> None:
+    """Flag figure captions with no image directly above them.
+
+    Google's markdown export silently drops images whose layout is "Wrap
+    text" / "Break text" (only "In line with text" exports), so an orphaned
+    caption usually means the doc author needs to change the image layout.
+    """
+    lines = body.splitlines()
+    for i, line in enumerate(lines):
+        if not CAPTION_RE.match(line.strip()):
+            continue
+        prev = [ln for ln in lines[max(0, i - 4) : i] if ln.strip()]
+        if not any("](img/" in ln for ln in prev[-2:]):
+            print(
+                f"  WARNING {name!r}: caption {line.strip()[:60]!r} has no image "
+                "above it — likely a wrapped image the Google export dropped; "
+                'set it to "In line with text" in the doc'
+            )
 
 
 def existing_title(page_path: Path, fallback: str) -> str:
@@ -391,6 +453,7 @@ def sync_row(section: Section, row: dict[str, str]) -> bool:
     page_path.parent.mkdir(parents=True, exist_ok=True)
     page_path.write_text(build_page(title, preview_url, pdf_href, body))
     print(f"  WROTE {page_path.relative_to(DOCS_DIR.parent)}")
+    warn_dropped_images(name, body)
     return True
 
 

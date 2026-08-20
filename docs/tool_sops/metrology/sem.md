@@ -10,32 +10,6 @@
 
 **Standard Operating Procedure: SEM**
 
-**Table of Contents:** 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This Standard Operating Procedure (SOP) outlines the proper use of the Nova Scanning Electron Microscope (Nova NanoSEM 450). The Nova Scanning Electron Microscope (SEM) is a high resolution scanning electron microscope intended for sample characterization. In addition to the powerful combination of advanced optics (including a two-mode final lens), SE/BSE (Secondary Electrons/Backscattered Electrons) in-lens detection and beam deceleration, the Nova NanoSEM 450 series introduces a new suite of latest generation, high sensitivity, retractable SE/BSE and STEM detectors, as well as versatile SE/BSE filtering capabilities, to best optimize the information of interest. Intelligent scanning modes are available to minimize imaging artifacts.  

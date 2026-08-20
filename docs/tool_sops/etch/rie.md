@@ -8,21 +8,6 @@
 
 ---
 
-## **Table of Contents:**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Section 1: Hardware Description and Principle of Operation**   {#section-1:-hardware-description-and-principle-of-operation}
 
 The Reactive Ion Etcher (RIE) uses a radio-frequency-powered electromagnetic field to generate a plasma in a vacuum chamber. Gasses pumped in while the RF power is active are ionized and bombard the sample- removing material through both chemical and physical mechanisms.

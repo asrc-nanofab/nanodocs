@@ -12,24 +12,6 @@ Standard Operating Procedure:
 
 # **Gold Etch**
 
-## **Table of Contents:** {#table-of-contents:}
-
-**[Table of Contents:	1](#table-of-contents:)**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Principle of Operation** {#principle-of-operation}
 
 To remove gold from a substrate – patterned or unpatterned.

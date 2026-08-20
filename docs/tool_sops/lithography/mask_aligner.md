@@ -31,7 +31,6 @@ This SOP is only for the general use of transferring microscale patterns from a 
 
 **Abbreviation:** Hg
 
-
 ## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
@@ -226,7 +225,6 @@ Page **4** of **10**
 
 Revision 1.0 Created February 26th, 2018 
 
-
 Standard Operating Procedure: **Mask Aligner** 
 
 a. Verify that the mask holder is installed by verifying the inscription on the frame:  “MASKHOLDER 5””. This mask holder should always be installed in the tool.  b. Press **Continue**. 
@@ -292,7 +290,6 @@ a. Gently push the tray in.
 Page **5** of **10** 
 
 Revision 1.0 Created February 26th, 2018 
-
 
 Standard Operating Procedure: **Mask Aligner** 
 
@@ -367,7 +364,6 @@ a. Press **Exit**.
 Page **6** of **10** 
 
 Revision 1.0 Created February 26th, 2018 
-
 
 Standard Operating Procedure: **Mask Aligner** 
 
@@ -445,7 +441,6 @@ Page **7** of **10**
 
 Revision 1.0 Created February 26th, 2018 
 
-
 Standard Operating Procedure: **Mask Aligner** 
 
 **Emergency Stop** 
@@ -496,7 +491,6 @@ Page **8** of **10**
 
 Revision 1.0 Created February 26th, 2018 
 
-
 Standard Operating Procedure: **Mask Aligner** 
 
 **When to call staff?**  
@@ -533,7 +527,6 @@ Prepared by: Salam Elhalabi
 Date: June 13, 2025  
 Reviewed/Revised:   
 Salam Elhalabi  
-
 
 
 

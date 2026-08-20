@@ -10,27 +10,6 @@
 
 **Standard Operating Procedure: J.A. Woollam V-VASE Ellipsometer** 
 
-Table of Contents:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This Standard Operating Procedure (SOP) outlines the proper use of the J.A. Woollam V-VASE Ellipsometer. Ellipsometry is a sensitive measurement technique that uses polarized light to characterize thin films, surfaces, and material microstructure by determining the relative phase change in the beam of reflected light.  Ellipsometry can be used to determine optical constants (n, k or ε1, ε2), thin film thickness, doping concentration, surface and interfacial roughness, alloy ratio, crystallinity, optical anisotropy, and depth of profile of material properties.
@@ -39,13 +18,11 @@ All standard laboratory safety protocols must be followed throughout this proced
 
 # **Section 2 – Hazards General** {#section-2-–-hazards-general}
 
-
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
 | Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The act of scanning your sample can cause the stage to move outward and rotate. Keep hands and fingers clear of sample stage while making measurements. |
 
 # **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
-
 
             N/A
 
@@ -64,7 +41,6 @@ All standard laboratory safety protocols must be followed throughout this proced
    Enter a username when prompted to do so.   
 6. Insert the alignment detector in the polarized light source if it is not already in place. Be careful whenever handling the alignment detector, especially when inserting it. Be sure the pins are aligned and connected correctly so they are not bent or broken in the process.
 
-
 ###      **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
 
 1. Place calibration wafer on the sample holder. The sample size switch on the side of the sample holder should be set to large for large wafers or small for small samples and then set the vacuum switch from vent to vacuum to hold the wafer in place.   
@@ -77,7 +53,7 @@ All standard laboratory safety protocols must be followed throughout this proced
    ![](img/06de764cd2fb.png){ width="547" }  
    
 
-   ### **4.1.3.  System Calibration** {#4.1.3.-system-calibration}
+### **4.1.3.  System Calibration** {#4.1.3.-system-calibration}
 
    
 
@@ -105,11 +81,11 @@ All standard laboratory safety protocols must be followed throughout this proced
 
    
 
-   ### **4.1.5.  Save data** {#4.1.5.-save-data}
+### **4.1.5.  Save data** {#4.1.5.-save-data}
 
    
 
-   You should save your data to your own folder in the NanoFab01 network drive. Enter any comments that you think will help to distinguish the data you collect from any other data. 
+You should save your data to your own folder in the NanoFab01 network drive. Enter any comments that you think will help to distinguish the data you collect from any other data. 
 
 ###           **4.1.6. Focusing Probes (Optional)** {#4.1.6.-focusing-probes-(optional)}
 

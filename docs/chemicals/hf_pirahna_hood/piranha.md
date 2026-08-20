@@ -12,23 +12,6 @@ ASRC Standard Operating Procedure:
 
 # **Piranha Clean**
 
-## **Table of Contents** {#table-of-contents}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Principle of Operation**  {#principle-of-operation}
 
 To clean organic residues off substrates.

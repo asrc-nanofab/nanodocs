@@ -12,22 +12,6 @@ Standard Operating Procedure:
 
 # **Hydrofluoric Acid**
 
-## **Table of Contents** {#table-of-contents}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Principle of Operation** {#principle-of-operation}
 
 For isotropic wet etching of silicon dioxide. Etch rates depend on the concentration of HF, temperature, and type of silicon dioxide being etched with rates varying between a few nanometers to several hundred nanometers per minute.  HF is also used to etch titanium.

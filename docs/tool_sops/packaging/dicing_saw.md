@@ -244,7 +244,6 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 5. Switch power key switch to the OFF position. Note: Machine will go through its power- down sequence.
 
-
 ### **UV Release** {#uv-release}
 
 1. Press the orange square **POWER** button on the top right side of the tool IF the tool is not powered on. Wait for it to boot up.  
@@ -365,7 +364,6 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 1. Created 1.0 – December ,2017  
 2. Revision 1.1 – January,2021   
 3. Revision 1.2 – June 2025
-
 
 ## **Section 7 – Blade Change Procedure** {#section-7-–-blade-change-procedure}
 

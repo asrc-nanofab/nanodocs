@@ -10,37 +10,6 @@
 
 **Lab Manual: Safety**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # **Section 1: Cleanroom Basic Layout** {#section-1:-cleanroom-basic-layout}
 
 ![](img/08c982587f12.jpg){ width="615" }
@@ -112,7 +81,6 @@
 In the case of a fire emergency, activate the nearest red fore-alarm pull box and then immediately evacuate while alerting others in the area to the same.  DO NOT use the central staircase or elevators.  Contact the CCNY Public Safety Emergency number once out of immediate danger.
 
 In the case of a medical emergency, contact the CCNY Public Safety Emergency number and report the nature of the medical emergency, the exact location of the injured person(s), and any hazards.
-
 
 ## **Phone Locations in the Cleanroom** {#phone-locations-in-the-cleanroom}
 
@@ -373,7 +341,6 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 * Pour waste into appropriate carboy.
 
 * Chutes are labeled directly above.
-
 
 ## **Chemical Spills** {#chemical-spills}
 

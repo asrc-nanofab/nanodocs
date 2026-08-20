@@ -12,34 +12,6 @@
 
 ## Standard Operating Procedure
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Section 1: Process Description {#section-1:-process-description}
 
 The Litho-Development Hood is an Air Control stainless steel fume hood designed for non-corrosive chemical work. Located in the lithography bay of the cleanroom, this hood is designated for solvents and developers with low concentrations of caustics (3% or less) and is to be used for preparing substrates and other samples for lithography and performing post-exposure development of photo- and EBL-resists. There is one sonicator tank built into the hood that can be used to assist with cleaning or development.
@@ -107,7 +79,6 @@ Safety glasses are required when using the litho-development hood.
 * Solvent-based developers are mostly stored in the Litho Flammables Cabinet, the medium yellow cabinet located under the table further to the right of the hood, past the door to the bay. Some EBL development solutions that need to be kept cold are stored in the Resists Refrigerator located across from the Litho Flammables Cabinet.
 
 * Regular solvents, such as IPA and acetone, are stored in the Solvents Cabinet, the large yellow cabinet located just outside of the lithography bay.
-
 
 ## Waste Disposal {#waste-disposal}
 

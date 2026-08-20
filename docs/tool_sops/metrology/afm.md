@@ -10,23 +10,6 @@
 
 Standard Operating Procedure: **AFM**
 
-Table of Contents: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Section 1 – Process or Experiment Description
 
 This Standard Operating Procedure (SOP) outlines the proper use of the Bruker Dimension FastScan AFM. The Bruker AFM provides high speed topographic imaging without loss of resolution or force control. The system is capable of measurements on both large and small size samples in air or fluids. The FastScan module generates on the fly atomic force microscopy images.

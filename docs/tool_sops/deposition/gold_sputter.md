@@ -18,9 +18,6 @@
 | Department | NanoFabrication Facility |
 | Room and Building | ASRC G.263 |
 
-
-
-
 ## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after training with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
@@ -187,7 +184,6 @@ Prepared by: Salam Elhalabi
 Date:  May 30, 2025  
 Reviewed/Revised:   
 Salam Elhalabi  
-
 
 
 

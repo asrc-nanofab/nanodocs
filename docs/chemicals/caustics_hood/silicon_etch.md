@@ -12,24 +12,6 @@ Standard Operating Procedure:
 
 # **Isotropic Silicon Etch (HNA)**
 
-## **Table of Contents** {#table-of-contents}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Principle of Operation** {#principle-of-operation}
 
 For isotropic wet etching of silicon and polysilicon. Etch rates are on the order of 1-3 µm/min depending on the ratio of chemicals used.
@@ -140,12 +122,12 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 3. After the affected area is flushed with copious amounts of water for at least five minutes, apply 2.5% calcium gluconate gel to the area of exposure. Massage gel into affected areas. If calcium gluconate gel is unavailable, flush skin surfaces with water for at least 15 minutes. In order to prevent cross contamination, the victim should self-apply the calcium gluconate gel. If the victim is unable to self-apply, anyone present can apply the gel after first putting on trionic gloves. Do not use regular nitrile gloves because they are not thick enough to provide an effective barrier against HF. Note the time when the calcium gluconate gel was first applied to the contaminated skin and provide this information to the emergency responders. Re-apply gel every 15 minutes until the victim arrives at the hospital and is treated by doctors.  
 4. After the emergency responders arrive they will call the Emergency Room doctor for instructions and may administer the calcium carbonate tablets (antacid tablets) in the HF First Aid Kit.
 
-   ### **Eye Exposure**
+### **Eye Exposure**
 
 1. Immediately flush eyes for at least 5 minutes with copious cool flowing water. Call Public Safety (212-650-7777), inform the emergency dispatcher of the exposure and request emergency transport. The victim should then be transported to a medical facility. MEDICAL PERSONNEL may irrigate the victim’s eyes with a sterile 1% calcium gluconate solution.  
 2. Ensure emergency responders and treating physicians are aware of the nature of the chemical exposure. Provide a copy of the MSDS to emergency responders.
 
-   ### **Inhalation**
+### **Inhalation**
 
 1. *If a large volume of hydrofluoric acid gas is inhaled.* Immediately remove the victim to fresh air. Call Public Safety (212-650-7777) and inform the emergency dispatcher of the exposure and request emergency transport.  
 2. Ensure emergency responders and treating physicians are aware of the nature of the chemical exposure. Provide a copy of the MSDS to emergency responders.  

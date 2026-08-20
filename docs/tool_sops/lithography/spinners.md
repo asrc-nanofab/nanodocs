@@ -12,26 +12,6 @@
 
 **Photo/EBL-resist Spinners**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Section 1: Process Description {#section-1:-process-description}
 
 ***Brewer Science Spin Coater***

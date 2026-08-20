@@ -10,27 +10,6 @@
 
 **Standard Operating Procedure: PECVD**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION** {#plasma-enhanced-chemical-vapor-deposition}
 
 ## **Facility and Contact Information** {#facility-and-contact-information}
@@ -76,27 +55,23 @@ The PECVD process has three main operation steps
 
    3. Cleaning
 
+#### **Conditioning:** {#conditioning:}
 
-   #### **Conditioning:** {#conditioning:}
+It is the process of preparing and stabilizing the chamber and its components before actual film deposition starts. This step helps to remove any contaminants or any residues from previous processes. Conditioning or seasoning involves a pre-deposition of approximately 200 nm of material deposition on the chamber area to ensure a clean atmosphere for the new deposition process using the recommended carrier wafer.
 
-      It is the process of preparing and stabilizing the chamber and its components before actual film deposition starts. This step helps to remove any contaminants or any residues from previous processes. Conditioning or seasoning involves a pre-deposition of approximately 200 nm of material deposition on the chamber area to ensure a clean atmosphere for the new deposition process using the recommended carrier wafer.
+Conditioning also heats the chamber to the desired temperature, adjusts chamber pressure to the required level and ensures consistent gas flow into the chamber.
 
-      Conditioning also heats the chamber to the desired temperature, adjusts chamber pressure to the required level and ensures consistent gas flow into the chamber.
+#### **Deposition:** {#deposition:}
 
+It is the main process of the PECVD where the desired thickness of materials is deposited onto the surface of the wafer or substrate to form a thin film layer/s in a precisely controlled environment. In a confined space of vacuum, high voltage RF power is applied to generate plasma between two parallel configurations of electrodes with the introduction of process gas/es.  During the operation, some gases flow and components are interlocked for safety purposes. 
 
-   #### **Deposition:** {#deposition:}
+#### **Cleaning:** {#cleaning:}
 
-      It is the main process of the PECVD where the desired thickness of materials is deposited onto the surface of the wafer or substrate to form a thin film layer/s in a precisely controlled environment. In a confined space of vacuum, high voltage RF power is applied to generate plasma between two parallel configurations of electrodes with the introduction of process gas/es.  During the operation, some gases flow and components are interlocked for safety purposes. 
+The cleaning process after deposition is crucial for maintaining the PECVD system’s performance and high-quality film deposition in the next subsequent processes. 
 
-   #### **Cleaning:** {#cleaning:}
-
-      The cleaning process after deposition is crucial for maintaining the PECVD system’s performance and high-quality film deposition in the next subsequent processes. 
-
-      After the deposition process, the chamber walls and components often contain residual films and toxic gases. Plasma cleaning is commonly used to remove these residues. Generally, fluorine-based gas is introduced into the chamber to generate plasma, and it etches out thin layers of material that are deposited on the chamber’s inside walls and stage. After plasma cleaning multiple cycles of pumping and purging of N2 gas are done to flush out any remaining contaminants.
-
+After the deposition process, the chamber walls and components often contain residual films and toxic gases. Plasma cleaning is commonly used to remove these residues. Generally, fluorine-based gas is introduced into the chamber to generate plasma, and it etches out thin layers of material that are deposited on the chamber’s inside walls and stage. After plasma cleaning multiple cycles of pumping and purging of N2 gas are done to flush out any remaining contaminants.
 
 ## ---
-
 
 ## **Section 2 \- Personal Protective Equipment & Responsibilities** {#section-2---personal-protective-equipment-&-responsibilities}
 
@@ -351,7 +326,6 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 ## **Section 4 – Gases, Hazards Classification and symbols** {#section-4-–-gases,-hazards-classification-and-symbols}
 
-
 ![](img/d1d00fedc781.png){ width="445" }
 
 **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**  \= Flammable
@@ -368,7 +342,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 ![A red and white sign with a skull and crossbonesDescription automatically generated](img/940a999ed658.jpg){ width="66" } \= Toxic
 
-![A black exclamation mark in a red diamondDescription automatically generated](img/fb9ccb8a17d2.png){ width="61" }  \= Harmful
+![A black exclamation mark in a red diamondDescription automatically generated](img/281c24ff29c7.png){ width="61" }  \= Harmful
 
 ![A sign with a black object in the middleDescription automatically generated](img/794c4d78c5a0.png){ width="66" } \= Compressed Gas
 
@@ -406,7 +380,6 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 **Revision History:**  
 Version 1.0 \- After PTIQ Upgrade  \- May 2025 
-
 
 
 

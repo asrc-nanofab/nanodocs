@@ -72,7 +72,6 @@ For Full MSDS Information, Visit:
 
 **He:** [https://www.airgas.com/msds/001025.pdf](https://www.airgas.com/msds/001025.pdf) 
 
-
 ## **Section 3: Routes of Exposure** {#section-3:-routes-of-exposure}
 
 Inhalation (always make sure load lock has successfully completed automatic venting cycle)

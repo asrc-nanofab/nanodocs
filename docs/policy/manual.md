@@ -20,8 +20,6 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-**Table of Contents:**
-
 1. General Rules of Conduct  
 2. General Rules and Restrictions  
 3. Hours of Operation  

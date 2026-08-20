@@ -20,32 +20,11 @@
 
 hello
 
-**[TOC	1](#toc)**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Safety Information and Overview** {#safety-information-and-overview}
 
 1. ### **Tool Information** {#tool-information}
 
 The Elionix 100keV and Elionix 50keV are both E-Beam Lithography tools that use a raster scanned electron beam to write patterns on pieces (as small as 1cm2 or wafers up to 6” in diameter.  The tools is able to accommodate substrates of various compositions, from 150 𝜇m thick up to 2.5mm thick.
-
 
 2. ### **General Hazards** {#general-hazards}
 
@@ -105,9 +84,6 @@ When you get to the machine, the software that controls the Elionix hardware and
     
   
 
-
-
-
 **Identifying the Exchange Indicators on the tool and the software**
 
 * Mount your sample on the appropriate chuck.  We use the 4” waver chuck or the “multi-piece holder” chuck.  Be sure to secure the grounding clip.  
@@ -144,7 +120,6 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 5. After adjusting the current, click on the horseshoe shaped magnet icon to degauss the beam again.  
 6.  Blank the beam again using the “BLK” button and deselect the “measure” button.
 
-
 #### **Adjust the beam focus and stigmation** {#adjust-the-beam-focus-and-stigmation}
 
  
@@ -177,7 +152,6 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 * Clicking on “Initialize Sch List” will clear the previous users schedule file.    
 * “Calculate Dose Time” will bring up the window shown below – **The Feed and Scan Pitch should match what you used in the conversion of your CAD file.**   Enter your area Dose and Beam current and click “Calculation” – This gives the shot clock time in µs/dot which you will need next.
 
-
 ![Graphical user interface, applicationDescription automatically generated](img/b78a4cfabec8.png){ width="237" }
 
 * Click “Select CON file” (as seen below)  All CON files and the supporting files must be in the same directory.  If you only have one CON file your job will look as it does below.  It is convenient to leave the position shift for now at X \= 0, Y \= 0\.  We will position the pattern on your wafer/piece in a later step.
@@ -186,7 +160,6 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 * Note that “Total Dose Time” \= “Dose  Time” \+ (“Dose Coefficient” \* Factor in .scon).  For some WECAS jobs you may want to set **“Dose Time” \= Calculated Base Dose** and the **Dose Coefficient \= 0\.**  
 * Also note that you can make one schedule file that uses multiple CON files and can shoot die at different doses for exposure dose array testing.  For example, the following is what such a schedule file might look like.  This was made using the “Matrix Con File“ button.  Note that there are 2 CON files here, each with 8 different doses at different positions on the wafer.
-
 
 ![TableDescription automatically generated](img/8eacd6aa97c2.png)
 
@@ -301,13 +274,11 @@ PC …
 
 Make certain that the “set option” value is correct (\~3.0 mm for a 5oo um substrate) and that the height sensor is on.
 
-
 ### **Turbo Pump Failure** {#turbo-pump-failure}
 
 If the load lock door is not properly closed when the evacuate switch is toggled, the vacuum pump will fail, often with a loud noise.  This is something that should be prevented against by holding the door firmly shut when pumping down.  
 
 In the event of a pump failure, please make certain that you alert staff directly. 
-
 
 
 

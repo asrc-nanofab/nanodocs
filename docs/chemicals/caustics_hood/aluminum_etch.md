@@ -12,20 +12,6 @@ Standard Operating Procedure:
 
 #     **Aluminum Etch**
 
-## **Table of Contents:** {#table-of-contents:}
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## **Principle of Operation** {#principle-of-operation}
 
 To remove aluminum from a substrate – patterned or unpatterned.

@@ -36,8 +36,6 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-
-
 ## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
@@ -63,9 +61,6 @@ All personnel must wear the welding goggles whenever looking directly at the bri
 
 All trained staff must use the grounding rod to touch the working areas, before attempting any maintenance.
 
-
-
-
 ## **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
 
 Kapton or copper tape that has silver and/or chrome on the top layer, must be disposed into the container found on the workbench. Staff will transport the container for waste disposal when the container is full. 
@@ -74,7 +69,6 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | ----- | ----- | ----- | ----- | :---- | ----- |
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment and human health | Must be collected and disposed of as Hazardous waste  |
-
 
 # **Tool Operation** {#tool-operation}
 
