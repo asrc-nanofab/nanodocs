@@ -41,7 +41,6 @@ theme:
     - navigation.indexes
     - navigation.sections
     # - navigation.expand
-    - navigation.collapsible
     - navigation.instant
     - toc.integrate # toggle OFF to show the toc on the right side of the page
     - search.suggest
@@ -82,15 +81,7 @@ extra_javascript:
 
 plugins:
   - search
-  - mkdocstrings:
-      handlers:
-        python:
-          paths: [.]
-          options:
-            docstring_style: google
-            show_source: true
-            show_root_heading: true
-  - awesome-pages
+  - awesome-nav
 
 
 extra:
