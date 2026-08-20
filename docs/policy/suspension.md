@@ -2,9 +2,11 @@
 
 # Lab Suspension Policy
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1H5BNvSj7EzHJ6-9Pjn1EpoTDeR8hgMribRgxNWJGK_g/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1H5BNvSj7EzHJ6-9Pjn1EpoTDeR8hgMribRgxNWJGK_g/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../assets/pdfs/policy/Lab_Suspension.pdf){ .md-button }
-[:material-download: Download PDF](../assets/pdfs/policy/Lab_Suspension.pdf){ .md-button download="Lab_Suspension.pdf" }
+[:material-download: Download](../assets/pdfs/policy/Lab_Suspension.pdf){ .md-button download="Lab_Suspension.pdf" }
+</div>
 
 ---
 

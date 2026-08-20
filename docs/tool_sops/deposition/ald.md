@@ -2,9 +2,11 @@
 
 # Atomic Layer Deposition (ALD)
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/ALD_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/ALD_SOP.pdf){ .md-button download="ALD_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/ALD_SOP.pdf){ .md-button download="ALD_SOP.pdf" }
+</div>
 
 ---
 
@@ -230,7 +232,7 @@ When unloading the sample, you must follow the above steps in reverse order. In 
 
    
 
-   ![](img/cadc440a3100.png)
+   ![](img/3b8dcd1b6d10.png)
 
    
 
@@ -291,7 +293,7 @@ Figure 8, Unloading sample
 
 Figure 9 shows a typical pressure graph for a Plasma-Enhanced ALD process. If the pressure graph during your process does not look like this or you cannot see any pulse peaks, then something is wrong. All the precursor pulses should look identical, areas under those curves should be the same. You can change the “plot time” option in the ALD software to monitor the long-term progress.
 
-![](img/911311f43dc0.png){ width="604" }  
+![](img/283584239d8e.png)  
 Figure 9 Pressure graph and Pulse peaks
 
 **Common Troubleshooting Tips**
@@ -300,7 +302,7 @@ Figure 9 Pressure graph and Pulse peaks
 * Pressure gauge issues.   
   * Sometimes load lock pressure gauge and chamber low-pressure gauges will malfunction, when you notice the pressures are not reading correctly unplug the ethernet cable from the gauge for 10 seconds and again re-plug it, now orange and green LEDs will lite up **(Figure 10).**
 
-  ![](img/bb85880b84ee.png)
+  ![](img/3c99e8367c6d.png)
 
   Figure 10 Pressure under the LL and Main Reactor chamber
 

@@ -2,9 +2,11 @@
 
 # ICP Fluorine Etcher SOP
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/ICP-Fl_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/ICP-Fl_SOP.pdf){ .md-button download="ICP-Fl_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/ICP-Fl_SOP.pdf){ .md-button download="ICP-Fl_SOP.pdf" }
+</div>
 
 ---
 
@@ -20,7 +22,7 @@ Our lab has two ICP-RIEs- an ICP Fluorine (on the le***F***t) and an ICP Chlorin
 | :---- | :---- |
 | ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/1dc80d143fee.jpg){ width="88" } | Radio-frequency Energy/ Radiation |
 | ![Ultraviolet Hazard Symbol](img/52c9c5c8f31e.png){ width="90" } | Ultraviolet Radiation |
-| ![](img/343c08ec74e0.png) | Hot Surface  |
+| ![](img/b5b0b156346e.png){ width="87" } | Hot Surface  |
 | ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/30329e739885.jpg){ width="83" } | Mechanical Pinch-Point  |
 
  
@@ -141,7 +143,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 1. Insert your carrier wafer or conditioning wafer by venting the load lock *(Go to the “Transport” Tab and click “Vent” under Load Lock quick actions. Wait until the entire Process completes and view pressure changes in the real-time chart. Venting is also indicated by the formation of grey and white dots in the loadlock background. When it is ready to be opened you will also hear a slight hissing noise as nitrogen escapes the load lock. Then open the load lock porthole and insert the wafer shiny-side up, flat side touching the screws, and close the load lock porthole.)*
 
-![](img/d0a043fcb17d.png){ width="624" }
+![](img/d0a043fcb17d.png)
 
 **Note**\- Wafer size is 4” only\! Be sure to center the wafer on the load arm, placing the flat edge between the two screws and ensuring the wafer contacts both screws. Tap it against screws and hold gently on sides to avoid shifts when under vacuum. An off-center wafer may be shattered in the main chamber. 
 
@@ -193,7 +195,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 **Note**\- Plasma glow will likely be visible from viewport when plasma is active:
 
- ![](img/36e71f2287ff.png){ width="599" }
+ ![](img/36e71f2287ff.png)
 
 > > > 
 

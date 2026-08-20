@@ -2,9 +2,11 @@
 
 # ICP-Chlorine Etcher SOP
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/ICP-Cl_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/ICP-Cl_SOP.pdf){ .md-button download="ICP-Cl_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/ICP-Cl_SOP.pdf){ .md-button download="ICP-Cl_SOP.pdf" }
+</div>
 
 ---
 
@@ -20,7 +22,7 @@ Our lab has two ICP-RIEs- an ICP Fluorine (on the le***F***t) and an ICP Chlorin
 | :---- | :---- |
 | ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/1dc80d143fee.jpg){ width="88" } | Radio-frequency Energy/ Radiation |
 | ![Ultraviolet Hazard Symbol](img/52c9c5c8f31e.png){ width="90" } | Ultraviolet Radiation |
-| ![](img/343c08ec74e0.png) | Hot Surface  |
+| ![](img/b5b0b156346e.png){ width="87" } | Hot Surface  |
 | ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/30329e739885.jpg){ width="83" } | Mechanical Pinch-Point |
 
  
@@ -37,7 +39,7 @@ Be aware that hazardous flammable, oxidizing, corrosive, and acutely toxic (pote
 
 Any process recipe using a double-valve interlocked Hazardous Gas needs to incorporate a sufficient three-minute inert (Argon) purge step afterwards. The double-valve interlocked hazardous gasses on the ICP-Cl are BCl3, Cl2, H2, HBr, and CH4. There are currently no double-valve interlocked gasses in the ICP-F. 
 
-![](img/6f445f6abc42.png){ width="624" }
+![](img/6f445f6abc42.png)
 
 Only open the Loadlock when it has fully completed its “vent” process without any errors. If the Loadlock “vent” command produces an error, quickly command it to “pump” down again and contact staff. Do not continue to open the loadlock, even if it is at atmosphere. 
 
@@ -145,7 +147,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 1. Insert your carrier/ conditioning wafer by venting the load lock *(Go to the “Transport” Tab and click “Vent” under Load Lock actions.)* **Wait until the entire automated vent process completes** and view pressure changes in the real-time chart to ensure successful purge completion. Venting to atmosphere is also indicated by the formation of grey and white dots in the loadlock illustration background. You may also hear a slight hissing noise as nitrogen escapes the load lock when at atmosphere. Once the automated vent process is completed, open the load lock porthole and insert the wafer shiny-side up, flat side touching the screws, and close the load lock porthole.
 
-![](img/d0a043fcb17d.png){ width="624" }
+![](img/d0a043fcb17d.png)
 
 **Note**\- Wafer size is 4” only\! Be sure to center the wafer on the load arm, placing the flat edge between the two screws and ensuring the wafer contacts both screws. Tap it against screws and hold gently on sides to avoid shifts when under vacuum. An off-center wafer may be shattered in the main chamber. 
 
@@ -202,7 +204,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 **Note**\- Plasma glow will be visible from viewport when plasma is active:
 
- ![](img/36e71f2287ff.png){ width="599" }
+ ![](img/36e71f2287ff.png)
 
 > > > 
 

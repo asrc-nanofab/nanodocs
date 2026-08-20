@@ -2,9 +2,11 @@
 
 # Bruker Optical Profilometer
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Optical_Profilometer_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Optical_Profilometer_SOP.pdf){ .md-button download="Optical_Profilometer_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Optical_Profilometer_SOP.pdf){ .md-button download="Optical_Profilometer_SOP.pdf" }
+</div>
 
 ---
 
@@ -74,9 +76,9 @@ N/A
 3. In the 2D view measurements can be made along cross-sections on the X and Y-axes.  These can be moved around the 2D field.  Make measurements by moving the R and M cursors to positions you wish to compare.  
 4. In the 3D view measurements can be made between points set by right-clicking on the 3D field.
 
-![](img/4deb3c6d99e5.png){ width="624" }
+![](img/4deb3c6d99e5.png)
 
-*![](img/24eb927a3836.png){ width="624" }*
+*![](img/24eb927a3836.png)*
 
 ### **4.1.5.  Save Data** {#4.1.5.-save-data}
 

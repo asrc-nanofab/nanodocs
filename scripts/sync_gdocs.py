@@ -2,8 +2,8 @@
 
 Reads the registry spreadsheets (public CSV export), downloads each linked
 Google Doc in Markdown, DOCX and PDF formats, cleans up the Markdown, and
-writes a site page topped with "Open the Google Doc" (read-only /preview) /
-"View PDF" / "Download PDF" buttons. The DOCX is only used to recover
+writes a site page topped with a row of "Google Doc" (read-only /preview) /
+"View PDF" / "Download" pill links. The DOCX is only used to recover
 original-resolution images: the Markdown export downscales embedded images
 to ~640px.
 The PDF is hosted in docs/assets/pdfs/ so "View PDF" opens in the browser's
@@ -15,6 +15,10 @@ The docs and sheets are link-shared, so no credentials are needed.
 Usage:
     uv run python scripts/sync_gdocs.py tools --category Deposition
     uv run python scripts/sync_gdocs.py tools chem policy
+    uv run python scripts/sync_gdocs.py tools --only AFM --watch
+
+With --watch, the sync re-runs every ~20s (pair with `mkdocs serve` for a
+live preview while editing the Google Doc); Ctrl+C stops it.
 """
 
 from __future__ import annotations
@@ -22,11 +26,14 @@ from __future__ import annotations
 import argparse
 import base64
 import csv
+import enum
 import hashlib
 import io
 import re
 import sys
+import time
 import zipfile
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -36,6 +43,9 @@ from PIL import Image
 DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 PDFS_DIR = DOCS_DIR / "assets" / "pdfs"
 REQUEST_TIMEOUT = 60
+DEFAULT_WATCH_INTERVAL = 20.0
+# Floor so a typo like --watch 0 can't hammer Google's export endpoints
+MIN_WATCH_INTERVAL = 5.0
 
 # Sheet categories → site folders under tool_sops/.
 # "Furnace" has no folder yet; its rows currently carry no doc links.
@@ -77,6 +87,12 @@ POLICY_PAGE_MAP: dict[str, str] = {
     "Safety Manual": "policy/safety.md",
     "Lab Suspension": "policy/suspension.md",
 }
+
+
+class SyncStatus(enum.Enum):
+    SYNCED = "synced"
+    UNCHANGED = "unchanged"
+    SKIPPED = "skipped"
 
 
 @dataclass(frozen=True)
@@ -136,6 +152,11 @@ TOC_PAGENUM_RE = re.compile(r"\t\d+\]\(#")
 TOC_LABEL_RE = re.compile(
     r"(#{1,6}\s+)?\*{0,2}Table of Contents:?\*{0,2}(\s*\{#[^}]*\})?"
 )
+# Page-boundary artifacts from docs converted out of paginated PDFs
+PAGE_MARKER_RE = re.compile(r"^Page\s+\*{0,2}\d+\*{0,2}\s+of\s+\*{0,2}\d+\*{0,2}\s*$")
+# Canonicalize labels so a scaffold image matches across occurrences even if
+# the export assigned each occurrence its own label
+IMAGE_LABEL_RE = re.compile(r"\[image\d+\]")
 # Headings the doc author indented inside a list; markdown renders these as
 # literal text (and their indented paragraphs as code blocks) unless dedented
 INDENTED_HEADING_RE = re.compile(r"^\s+(#{1,6}\s.*)$")
@@ -145,15 +166,19 @@ ALT_BOILERPLATE_RE = re.compile(r"AI-generated content may be incorrect\.?")
 IMAGE_EXTENSIONS = {"jpeg": "jpg", "svg+xml": "svg"}
 
 # Image-upgrade tuning: only swap in a docx original when it is confidently
-# the same picture (aspect + pixel match) and meaningfully larger than the
-# ~640px-capped version in the markdown export.
+# the same picture and meaningfully larger than the ~640px-capped version in
+# the markdown export. Matching is by pixel content only (24px thumbnails) —
+# deliberately NOT by aspect ratio, because authors resize images
+# non-proportionally in docs, which changes the export's shape but not its
+# content. Genuine matches score ~1-5; unrelated images score 15+.
 MATCH_THUMB_SIZE = (24, 24)
-MATCH_MAX_DISTANCE = 30.0
-MATCH_ASPECT_TOLERANCE = 0.05
+MATCH_MAX_DISTANCE = 10.0
 UPGRADE_MIN_AREA_RATIO = 1.2
 # Google's markdown export caps image width at 640px; below the cap, the
-# exported size is the author's chosen display size in the doc
-MD_EXPORT_MAX_WIDTH = 640
+# exported size is the author's chosen display size in the doc. A Google Doc's
+# text column is ~620px, so anything close to it was sized "page wide" by the
+# author — render those full width instead of pinning the in-doc pixel size.
+FULL_WIDTH_MIN = 550
 
 
 def _flatten(img: Image.Image) -> Image.Image:
@@ -191,15 +216,16 @@ def load_docx_media(docx_bytes: bytes) -> list[tuple[bytes, Image.Image]]:
     return media
 
 
+def _similar(a: Image.Image, b: Image.Image) -> bool:
+    return _thumb_distance(a, b) <= MATCH_MAX_DISTANCE
+
+
 def best_original(
     md_img: Image.Image, media: list[tuple[bytes, Image.Image]]
 ) -> bytes | None:
     """Return original-resolution bytes for md_img, or None to keep as is."""
-    md_aspect = md_img.width / md_img.height
     best: tuple[float, bytes, Image.Image] | None = None
     for data, img in media:
-        if abs(img.width / img.height - md_aspect) > MATCH_ASPECT_TOLERANCE * md_aspect:
-            continue
         distance = _thumb_distance(md_img, img)
         if best is None or distance < best[0]:
             best = (distance, data, img)
@@ -224,21 +250,25 @@ def pdf_asset_path(section: Section, name: str) -> Path:
     return PDFS_DIR / section.pdf_dir / f"{filename}{section.pdf_suffix}.pdf"
 
 
-def resolve_page_path(section: Section, row: dict[str, str]) -> Path | None:
+def resolve_page_path(
+    section: Section, row: dict[str, str], quiet: bool = False
+) -> Path | None:
     """Return the target page path for a sheet row, or None if unmappable."""
     name = row[section.name_column].strip()
     if section.name == "tools":
         category = row.get("Type (Category)", "").strip()
         folder = TOOL_CATEGORY_DIRS.get(category)
         if folder is None:
-            print(f"  SKIP {name!r}: no site folder for category {category!r}")
+            if not quiet:
+                print(f"  SKIP {name!r}: no site folder for category {category!r}")
             return None
         filename = TOOL_PAGE_OVERRIDES.get(name, f"{slugify(name)}.md")
         return DOCS_DIR / "tool_sops" / folder / filename
     page_map = CHEM_PAGE_MAP if section.name == "chem" else POLICY_PAGE_MAP
     rel = page_map.get(name)
     if rel is None:
-        print(f"  SKIP {name!r}: not in {section.name} page map (Phase B)")
+        if not quiet:
+            print(f"  SKIP {name!r}: not in {section.name} page map (Phase B)")
         return None
     return DOCS_DIR / rel
 
@@ -248,8 +278,11 @@ def extract_images(
     img_dir: Path,
     page_dir: Path,
     docx_media: list[tuple[bytes, Image.Image]],
-) -> str:
+) -> tuple[str, str | None]:
     """Decode base64 image definitions into files and inline the references.
+
+    Returns the rewritten markdown and an image-upgrade note (or None), so
+    the caller can report it only when the page actually changed.
 
     The markdown export downscales images to ~640px; where a confidently
     matching original exists in the docx export, that is written instead.
@@ -261,7 +294,31 @@ def extract_images(
     """
     defs = {m.group(1): m for m in IMAGE_DEF_RE.finditer(markdown)}
     if not defs:
-        return markdown
+        return markdown, None
+
+    # Defs whose references clean_body stripped (typically the letterhead
+    # logo): don't write them, and exclude look-alike docx media from upgrade
+    # matching — the letterhead is in every docx and can otherwise win the
+    # match for wide, mostly-white screenshots and replace them on the page.
+    referenced = set(re.findall(r"!\[[^\]]*\]\[(image\d+)\]", markdown))
+    stripped_imgs: list[Image.Image] = []
+    for label in [label for label in defs if label not in referenced]:
+        match = defs.pop(label)
+        try:
+            img = Image.open(io.BytesIO(base64.b64decode(match.group(3))))
+            img.load()
+            stripped_imgs.append(img)
+        except OSError:
+            pass
+        markdown = markdown.replace(match.group(0), "")
+    if stripped_imgs:
+        docx_media = [
+            (data, img)
+            for data, img in docx_media
+            if not any(_similar(stripped, img) for stripped in stripped_imgs)
+        ]
+    if not defs:
+        return markdown, None
 
     img_dir.mkdir(parents=True, exist_ok=True)
     upgraded = 0
@@ -282,10 +339,12 @@ def extract_images(
                 img_format = Image.open(io.BytesIO(data)).format or "png"
                 ext = IMAGE_EXTENSIONS.get(img_format.lower(), img_format.lower())
                 upgraded += 1
-                if md_img.width < MD_EXPORT_MAX_WIDTH:
+                if md_img.width < FULL_WIDTH_MIN:
                     display_width = md_img.width
         filename = f"{hashlib.sha1(data).hexdigest()[:12]}.{ext}"
-        (img_dir / filename).write_bytes(data)
+        # Content-hash name: if the file exists, its bytes are identical
+        if not (img_dir / filename).exists():
+            (img_dir / filename).write_bytes(data)
         rel = (img_dir / filename).relative_to(page_dir).as_posix()
 
         attr = f'{{ width="{display_width}" }}' if display_width else ""
@@ -296,14 +355,56 @@ def extract_images(
         )
         markdown = markdown.replace(match.group(0), "")
 
-    if upgraded:
-        print(f"    {upgraded}/{len(defs)} images upgraded to docx originals")
-    return markdown
+    note = f"{upgraded}/{len(defs)} images upgraded to docx originals"
+    return markdown, note if upgraded else None
+
+
+def _strip_page_scaffold(lines: list[str]) -> list[str]:
+    """Drop page-boundary blocks baked in by PDF → Google Doc conversion.
+
+    Converted docs carry each PDF page's header/footer as body text: a
+    "Page N of M" line with the same few lines (logo image, revision line,
+    doc title) recurring at every boundary. Markers are always dropped;
+    neighbor lines are dropped only when they recur near two or more
+    markers, so genuine content adjacent to a single page break survives.
+    """
+
+    def canon(line: str) -> str:
+        return IMAGE_LABEL_RE.sub("[image]", line.strip())
+
+    def window(center: int) -> list[int]:
+        """Indices of the 3 nearest non-blank lines on each side."""
+        idxs = []
+        for step in (-1, 1):
+            found, j = 0, center
+            while found < 3:
+                j += step
+                if j < 0 or j >= len(lines):
+                    break
+                if lines[j].strip():
+                    idxs.append(j)
+                    found += 1
+        return idxs
+
+    markers = [i for i, ln in enumerate(lines) if PAGE_MARKER_RE.match(ln.strip())]
+    if not markers:
+        return lines
+
+    near_counts: Counter[str] = Counter()
+    for i in markers:
+        for j in window(i):
+            near_counts[canon(lines[j])] += 1
+    scaffold = {text for text, count in near_counts.items() if count >= 2}
+
+    drop = set(markers)
+    for i in markers:
+        drop.update(j for j in window(i) if canon(lines[j]) in scaffold)
+    return [ln for k, ln in enumerate(lines) if k not in drop]
 
 
 def clean_body(markdown: str) -> str:
     """Strip Google's export artifacts: leading logo, original H1, inline TOC."""
-    lines = markdown.splitlines()
+    lines = _strip_page_scaffold(markdown.splitlines())
     out: list[str] = []
     seen_content = False
     title_consumed = False
@@ -360,18 +461,26 @@ def _dedent_nested_headings(markdown: str) -> str:
     return "\n".join(out) + "\n"
 
 
+# Separates the generated header (H1 + link row) from the doc body; also
+# used to recover the body of an existing page so template-only changes can
+# be told apart from doc-content changes.
+PAGE_BODY_SEP = "\n---\n\n"
+
+
 def build_page(title: str, preview_url: str, pdf_href: str, body: str) -> str:
     pdf_filename = pdf_href.rsplit("/", 1)[-1]
     return (
         "<!-- AUTO-GENERATED by scripts/sync_gdocs.py from the Google Doc "
         "below. Edit the Google Doc, not this file. -->\n\n"
         f"# {title}\n\n"
-        f"[:material-file-document-outline: Open the Google Doc]({preview_url})"
-        "{ .md-button }\n"
+        # Compact labels + pill styling (overrides/stylesheets/extra.css) so
+        # all three links share one row on phones instead of stacking
+        '<div class="doc-links" markdown="span">\n'
+        f"[:material-file-document-outline: Google Doc]({preview_url}){{ .md-button }}\n"
         # Same-tab navigation so the browser back button returns to this page
         f"[:material-file-pdf-box: View PDF]({pdf_href}){{ .md-button }}\n"
-        f'[:material-download: Download PDF]({pdf_href}){{ .md-button download="{pdf_filename}" }}\n\n'
-        "---\n\n"
+        f'[:material-download: Download]({pdf_href}){{ .md-button download="{pdf_filename}" }}\n'
+        f"</div>\n{PAGE_BODY_SEP}"
         f"{body}"
     )
 
@@ -399,6 +508,15 @@ def warn_dropped_images(name: str, body: str) -> None:
             )
 
 
+def write_if_changed(path: Path, content: str) -> bool:
+    """Write only when content differs, so mkdocs serve isn't reloaded no-op."""
+    if path.exists() and path.read_text() == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content)
+    return True
+
+
 def existing_title(page_path: Path, fallback: str) -> str:
     """Keep the current page's H1 so on-page titles don't churn."""
     if page_path.exists():
@@ -408,28 +526,54 @@ def existing_title(page_path: Path, fallback: str) -> str:
     return fallback
 
 
-def sync_row(section: Section, row: dict[str, str]) -> bool:
+def existing_body(page_path: Path) -> str | None:
+    """The current page's doc body (everything after the header rule)."""
+    if not page_path.exists():
+        return None
+    content = page_path.read_text()
+    if PAGE_BODY_SEP not in content:
+        return None
+    return content.split(PAGE_BODY_SEP, 1)[1]
+
+
+def sync_row(
+    section: Section,
+    row: dict[str, str],
+    quiet: bool = False,
+    md_cache: dict[str, str] | None = None,
+) -> SyncStatus:
     name = (row.get(section.name_column) or "").strip()
     pdf_url = (row.get("PDF Link") or "").strip()
     if not name or not pdf_url.startswith("http"):
-        return False
+        return SyncStatus.SKIPPED
 
     doc_id_match = DOC_ID_RE.search(pdf_url)
     if doc_id_match is None:
-        print(f"  SKIP {name!r}: could not parse doc id from {pdf_url}")
-        return False
+        if not quiet:
+            print(f"  SKIP {name!r}: could not parse doc id from {pdf_url}")
+        return SyncStatus.SKIPPED
     doc_id = doc_id_match.group(1)
 
-    page_path = resolve_page_path(section, row)
+    page_path = resolve_page_path(section, row, quiet)
     if page_path is None:
-        return False
+        return SyncStatus.SKIPPED
+    pdf_path = pdf_asset_path(section, name)
 
     preview_url = f"https://docs.google.com/document/d/{doc_id}/preview"
 
     md_url = f"https://docs.google.com/document/d/{doc_id}/export?format=md"
-    print(f"  {name}: downloading markdown ...")
     resp = requests.get(md_url, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
+    # Watch-mode fast path: a byte-identical export means nothing to do,
+    # skipping the docx download, image matching, and PDF logic entirely
+    md_digest = hashlib.sha1(resp.content).hexdigest()
+    if (
+        md_cache is not None
+        and md_cache.get(doc_id) == md_digest
+        and page_path.exists()
+        and pdf_path.exists()
+    ):
+        return SyncStatus.UNCHANGED
     markdown = ALT_BOILERPLATE_RE.sub("", resp.text)
 
     docx_url = f"https://docs.google.com/document/d/{doc_id}/export?format=docx"
@@ -438,41 +582,105 @@ def sync_row(section: Section, row: dict[str, str]) -> bool:
     docx_media = load_docx_media(resp.content)
 
     body = clean_body(markdown)
-    body = extract_images(body, page_path.parent / "img", page_path.parent, docx_media)
+    body, upgrade_note = extract_images(
+        body, page_path.parent / "img", page_path.parent, docx_media
+    )
 
-    pdf_path = pdf_asset_path(section, name)
-    print(f"  {name}: downloading pdf ...")
-    resp = requests.get(pdf_url, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
-    pdf_path.write_bytes(resp.content)
     # Relative href so mkdocs build --strict verifies the PDF exists
     pdf_href = pdf_path.relative_to(page_path.parent, walk_up=True).as_posix()
 
     title = existing_title(page_path, name)
-    page_path.parent.mkdir(parents=True, exist_ok=True)
-    page_path.write_text(build_page(title, preview_url, pdf_href, body))
-    print(f"  WROTE {page_path.relative_to(DOCS_DIR.parent)}")
+    body_changed = existing_body(page_path) != body
+    page_changed = write_if_changed(
+        page_path, build_page(title, preview_url, pdf_href, body)
+    )
+
+    # Google's PDF export is not byte-stable, so refresh it only when the doc
+    # content changed (or the file is missing, e.g. on a fresh checkout).
+    # Keyed to the body, not the whole page, so header-template tweaks don't
+    # re-download and rewrite every hosted PDF.
+    if body_changed or not pdf_path.exists():
+        resp = requests.get(pdf_url, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        pdf_path.write_bytes(resp.content)
+
+    # Only cache after the full pipeline, so disk is known to match the export
+    if md_cache is not None:
+        md_cache[doc_id] = md_digest
+
+    if not page_changed:
+        if not quiet:
+            print(f"  {name}: unchanged")
+        return SyncStatus.UNCHANGED
+
+    print(f"  {name}: WROTE {page_path.relative_to(DOCS_DIR.parent)}")
+    if upgrade_note:
+        print(f"    {upgrade_note}")
     warn_dropped_images(name, body)
-    return True
+    return SyncStatus.SYNCED
 
 
-def sync_section(section: Section, category: str | None, only: str | None) -> int:
-    print(f"Section: {section.name}")
+def sync_section(
+    section: Section,
+    category: str | None,
+    only: str | None,
+    quiet: bool = False,
+    md_cache: dict[str, str] | None = None,
+) -> Counter[SyncStatus]:
+    if not quiet:
+        print(f"Section: {section.name}")
     resp = requests.get(section.sheet_csv_url, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     rows = list(csv.DictReader(io.StringIO(resp.text)))
 
-    written = 0
+    counts: Counter[SyncStatus] = Counter()
     for row in rows:
         if category and row.get("Type (Category)", "").strip() != category:
             continue
         if only and (row.get(section.name_column) or "").strip() != only:
             continue
-        if sync_row(section, row):
-            written += 1
-    print(f"  {written} page(s) written")
-    return written
+        counts[sync_row(section, row, quiet, md_cache)] += 1
+    if not quiet:
+        print(f"  {summarize(counts)}")
+    return counts
+
+
+def summarize(counts: Counter[SyncStatus]) -> str:
+    return ", ".join(f"{status.value} {counts[status]}" for status in SyncStatus)
+
+
+def sync_all(
+    args: argparse.Namespace,
+    quiet: bool = False,
+    md_cache: dict[str, str] | None = None,
+) -> Counter[SyncStatus]:
+    totals: Counter[SyncStatus] = Counter()
+    for section_name in args.sections:
+        totals += sync_section(
+            SECTIONS[section_name], args.category, args.only, quiet, md_cache
+        )
+    return totals
+
+
+def watch(args: argparse.Namespace, interval: float) -> int:
+    md_cache: dict[str, str] = {}
+    print(f"Watching every {interval:g}s — Ctrl+C to stop")
+    try:
+        while True:
+            try:
+                totals = sync_all(args, quiet=True, md_cache=md_cache)
+            except requests.RequestException as exc:
+                print(f"[{time.strftime('%H:%M:%S')}] error: {exc} — will retry")
+            else:
+                print(f"[{time.strftime('%H:%M:%S')}] {summarize(totals)}")
+                if totals[SyncStatus.SYNCED] + totals[SyncStatus.UNCHANGED] == 0:
+                    print("No syncable documents matched.")
+                    return 1
+            time.sleep(interval)
+    except KeyboardInterrupt:
+        print("\nStopped.")
+        return 0
 
 
 def main() -> int:
@@ -487,13 +695,25 @@ def main() -> int:
         "--category", help="tools only: limit to one Type (Category), e.g. Deposition"
     )
     parser.add_argument("--only", help="limit to a single document by name")
+    parser.add_argument(
+        "--watch",
+        nargs="?",
+        const=DEFAULT_WATCH_INTERVAL,
+        type=float,
+        metavar="SECONDS",
+        help=f"re-sync every SECONDS (default {DEFAULT_WATCH_INTERVAL:g}) "
+        "until Ctrl+C; pair with `mkdocs serve` for a live preview",
+    )
     args = parser.parse_args()
 
-    total = 0
-    for section_name in args.sections:
-        total += sync_section(SECTIONS[section_name], args.category, args.only)
-    if total == 0:
-        print("Nothing written.")
+    if args.watch is not None:
+        return watch(args, max(args.watch, MIN_WATCH_INTERVAL))
+
+    totals = sync_all(args)
+    # Skipped-only still errors: nothing syncable matched the selection
+    # (e.g. a typo in --only, or a registry row with no doc link yet)
+    if totals[SyncStatus.SYNCED] + totals[SyncStatus.UNCHANGED] == 0:
+        print("No syncable documents matched.")
         return 1
     return 0
 

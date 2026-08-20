@@ -2,9 +2,11 @@
 
 # AJA Thermal Evaporator
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1XmcgTR4KJSk2_5zVrSb0KT16OabZz5VcCGGa1UyJi4s/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1XmcgTR4KJSk2_5zVrSb0KT16OabZz5VcCGGa1UyJi4s/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Thermal_Evap_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Thermal_Evap_SOP.pdf){ .md-button download="Thermal_Evap_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Thermal_Evap_SOP.pdf){ .md-button download="Thermal_Evap_SOP.pdf" }
+</div>
 
 ---
 

@@ -2,9 +2,11 @@
 
 # Gold Sputter Coater
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1CEDzZpsaCl18r2u3Z_2YnZJjB6EAYobtiUnn9lpl9LY/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1CEDzZpsaCl18r2u3Z_2YnZJjB6EAYobtiUnn9lpl9LY/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Gold_Sputter_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Gold_Sputter_SOP.pdf){ .md-button download="Gold_Sputter_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Gold_Sputter_SOP.pdf){ .md-button download="Gold_Sputter_SOP.pdf" }
+</div>
 
 ---
 

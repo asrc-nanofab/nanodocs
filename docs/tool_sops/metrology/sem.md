@@ -2,9 +2,11 @@
 
 # Scanning Electron Microscope
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/SEM_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/SEM_SOP.pdf){ .md-button download="SEM_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/SEM_SOP.pdf){ .md-button download="SEM_SOP.pdf" }
+</div>
 
 ---
 
@@ -53,7 +55,7 @@ N/A
 5. Move the loading rod from the *parking* position and into the chamber until the sample carrier engages with the stage at the end of travel. Turn the rod counterclockwise to the base of the slot, pull the rod to the back of the slot, turn it clockwise out of the slot and then withdraw it back to the *parking* slot.  
 6. Close the gate valve by turning the knob bar to the UNLOCK position, pressing the knob in to engage the valve over the opening and then turn the knob to the LOCK position to secure it. Leave the load lock under vacuum.
 
-![](img/80fda3a035e3.jpg){ width="589" }
+![](img/80fda3a035e3.jpg)
 
 ####        **4.1.3.2. Loading Sample through Main Chamber**  {#4.1.3.2.-loading-sample-through-main-chamber}
 
@@ -106,7 +108,7 @@ N/A
 7. Remove your sample from the load lock.  
 8. Close the load lock lid and press the **P** button to evacuate the loader chamber.
 
-![](img/2c9c5fe9abc5.jpg){ width="589" }
+![](img/2c9c5fe9abc5.jpg)
 
 #### **4.1.7.2. Unloading  Sample through the Main Chamber**  {#4.1.7.2.-unloading-sample-through-the-main-chamber}
 

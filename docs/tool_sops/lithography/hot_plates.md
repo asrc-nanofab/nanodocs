@@ -2,9 +2,11 @@
 
 # Hot Plates
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1lzJ2D_izEUCCXlF7XG8gEiAwup2btTmb8DAzQv20AQ8/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1lzJ2D_izEUCCXlF7XG8gEiAwup2btTmb8DAzQv20AQ8/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Hot_Plates_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Hot_Plates_SOP.pdf){ .md-button download="Hot_Plates_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Hot_Plates_SOP.pdf){ .md-button download="Hot_Plates_SOP.pdf" }
+</div>
 
 ---
 

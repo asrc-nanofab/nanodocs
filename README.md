@@ -52,13 +52,22 @@ assembles a site page:
       the headings themselves
     - **empty heading lines** (leftover Heading styling on blank lines in the doc)
     - Google's *"AI-generated content may be incorrect"* image alt-text boilerplate
+    - **page-boundary scaffold** in docs converted from paginated PDFs:
+      "Page N of M" lines are always dropped, and lines that recur next to
+      several of those markers (repeated logos, revision lines, running
+      titles) are recognized as page headers/footers and dropped too —
+      content adjacent to a single page break is never touched
 - **DOCX** (`export?format=docx`) — used only to recover **original-resolution
   images**. The Markdown export downscales images to ~640 px; the script matches
-  each one against the docx originals (aspect ratio + pixel comparison) and swaps
-  in the original when it's confidently the same picture and meaningfully larger.
-  Cropped or unmatched images safely keep the Markdown version. Upgraded images
-  keep the author's in-doc display size via a `width` attribute (so a QR code
-  displayed small in the doc stays small on the page, but is high-res when zoomed).
+  each one against the docx originals by **pixel content** (deliberately not by
+  aspect ratio — authors resize images non-proportionally in docs) and swaps in
+  the original when it's confidently the same picture and meaningfully larger.
+  The letterhead logo is excluded from matching so it can never displace a
+  look-alike screenshot. Cropped or unmatched images safely keep the Markdown
+  version. Upgraded images sized **550 px or wider** in the doc render at full
+  page width; smaller ones keep the author's in-doc display size via a `width`
+  attribute (so a QR code displayed small in the doc stays small on the page,
+  but is high-res when zoomed).
 - **PDF** (`export?format=pdf`) — refreshed into `docs/assets/pdfs/` so the site
   can offer an in-browser PDF view and a direct download.
 
@@ -72,13 +81,23 @@ Every generated page gets three buttons:
 Everything is public "anyone with the link can view", so the sync needs
 **no credentials**.
 
+The sync only writes files whose content actually changed — pages, images
+(content-hash named), and PDFs are all change-guarded — so re-running it is
+a safe no-op and exits with an error only when nothing matched the filters.
+
 Run it with:
 
 ```bash
 uv run python scripts/sync_gdocs.py tools chem policy   # everything
 uv run python scripts/sync_gdocs.py tools --category Deposition
 uv run python scripts/sync_gdocs.py policy --only "Safety Manual"
+uv run python scripts/sync_gdocs.py tools --only AFM --watch   # re-sync every 20s
 ```
+
+With `--watch [SECONDS]`, the sync re-runs until Ctrl+C, printing one
+timestamped status line per cycle. Pair it with `uv run mkdocs serve` for a
+live side-by-side workflow: edit the Google Doc in one browser pane and the
+converted local page refreshes in the other within a cycle.
 
 ### What is generated vs. hand-written
 
@@ -105,7 +124,11 @@ Google's Markdown export is faithful, with two authoring rules to know:
 
 Tables, bold/italics, footnotes, numbered procedures, and inline images all
 convert well. The doc's own table of contents and letterhead are stripped
-automatically, so authors can keep using them in the doc.
+automatically, so authors can keep using them in the doc. Docs that were
+converted from old PDFs are handled too: their baked-in per-page headers and
+footers ("Page N of M", repeated logos and running titles) are stripped by
+the sync, though cleaning them out of the doc itself is still nicer for
+anyone reading the Google Doc directly.
 
 ## Adding or updating a document
 

@@ -2,9 +2,11 @@
 
 # Solvent Lift-Off Hood
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/16OSeeL1jXSGKkX6lI78EIyhBQONfz8GxHnL7XUGWk14/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/16OSeeL1jXSGKkX6lI78EIyhBQONfz8GxHnL7XUGWk14/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Solvent_Lift-Off_Hood.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Solvent_Lift-Off_Hood.pdf){ .md-button download="Solvent_Lift-Off_Hood.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Solvent_Lift-Off_Hood.pdf){ .md-button download="Solvent_Lift-Off_Hood.pdf" }
+</div>
 
 ---
 

@@ -2,9 +2,11 @@
 
 # Elionix EBL 100keV SOP
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Elionix_100keV_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Elionix_100keV_SOP.pdf){ .md-button download="Elionix_100keV_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Elionix_100keV_SOP.pdf){ .md-button download="Elionix_100keV_SOP.pdf" }
+</div>
 
 ---
 
@@ -15,10 +17,6 @@
 **Elionix ELS-G100 and ELS-HS50**
 
 ---
-
-## **TOC** {#toc}
-
-hello
 
 ## **Safety Information and Overview** {#safety-information-and-overview}
 
@@ -58,7 +56,7 @@ The Elionix tools are in the lithography area which is designated class 100 and 
 
 After logging into Badger, you should ascertain the state of the machine.  The system is shown in the Figure below.  The only part of the system that you should interact with are the load lock where you will load your sample, and the Computer and keyboard.  **No other knobs or buttons should be touched. ** Below you will see images denoting the various parts of the machine
 
-![](img/51e20c34e220.png)
+![](img/1b3762bda2df.png){ width="542" }
 
 **Layout of the Elionix Tool Components**
 
@@ -81,8 +79,9 @@ When you get to the machine, the software that controls the Elionix hardware and
 * On the Stage Panel click the “Exchange” button.  This will move the stage into alignment with the load lock so that you can load your sample.  When the stage is in position the numbers in the x, y coordinates stop changing.  The circle to the left of the icon will turn green as shown in the panel on the left.     
 * The “Exchange Ready” above the Z-Height sensor (above the computer monitor on the hardware) should also be flashing green.   You are now ready to load your sample.  
     
-    
-  
+  ![Graphical user interfaceDescription automatically generated with medium confidence](img/beae6fcc6a54.png){ width="194" }
+
+![](img/dad34836e865.png){ width="270" }
 
 **Identifying the Exchange Indicators on the tool and the software**
 
@@ -145,10 +144,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 ![](img/50c01a081244.png){ width="451" }
 
-* Click on the blue “Edit Schedule Execution” button.  The following screen will come up: 
-
-   
-
+* Click on the blue “Edit Schedule Execution” button.  The following screen will come up:   
 * Clicking on “Initialize Sch List” will clear the previous users schedule file.    
 * “Calculate Dose Time” will bring up the window shown below – **The Feed and Scan Pitch should match what you used in the conversion of your CAD file.**   Enter your area Dose and Beam current and click “Calculation” – This gives the shot clock time in µs/dot which you will need next.
 
@@ -156,21 +152,23 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 * Click “Select CON file” (as seen below)  All CON files and the supporting files must be in the same directory.  If you only have one CON file your job will look as it does below.  It is convenient to leave the position shift for now at X \= 0, Y \= 0\.  We will position the pattern on your wafer/piece in a later step.
 
-![TableDescription automatically generated](img/0040c3f24571.png){ width="558" }
+![TableDescription automatically generated](img/924b4fae0598.png)
 
 * Note that “Total Dose Time” \= “Dose  Time” \+ (“Dose Coefficient” \* Factor in .scon).  For some WECAS jobs you may want to set **“Dose Time” \= Calculated Base Dose** and the **Dose Coefficient \= 0\.**  
 * Also note that you can make one schedule file that uses multiple CON files and can shoot die at different doses for exposure dose array testing.  For example, the following is what such a schedule file might look like.  This was made using the “Matrix Con File“ button.  Note that there are 2 CON files here, each with 8 different doses at different positions on the wafer.
 
-![TableDescription automatically generated](img/8eacd6aa97c2.png)
+![TableDescription automatically generated](img/b9353292b0ac.png)
 
 * Press the Set Options Tab. If alignment is not necessary Set “Registration” to OFF, “Periodic Correction” to OFF and “Width Modulation” to OFF.  The only things that should be active are in the left-hand column under “X/Y Laser” as shown below.  (If alignment is needed, please see Appendix A)   
     
-  ![](img/471377d127b6.png){ width="530" }  
+  ![](img/471377d127b6.png)  
     
 * The most important parameter in this window is the “Z Preset (mm)” setting for the XY-laser.  This parameter tells the laser displacement meter the height of the substrate.  As of January of 2023 the Z-Preset value for a 500 micron thick Si substrate is \~3.0 mm.  This value will work if your wafer thickness including layers and resist and is is within 200 microns of this value.  If you are working with thinner or thicker substrates you will have to adjust the Z-Preset in the following way:  If it is thicker than 500um you will need to decrease the number.  (For instance: a 750 micron substrate would have a Z-preset of about 2.75mm.    
-*   Click “Next” in the Schedule Execution tab.  You will be prompted to save the Schedule file (.SC8 extension) to the same directory your CON files are in.  Change the name else it will save in the directory as “Default”.  The lower left hand corner of your pattern will be at X \= 0 Y \= 0 by default.  You will now see a blue-green tab **“Exp. Graphics”** menu as shown in the image here to the right.    
-*  Click “Display Sample Holder” and select the holder you will be using.  We use only the “Multipiece Holder” or the “ 4” Wafer Holder” then Click “Zoom Out” to see the extents of where the sample is held in the Elionix.  If using the multipiece holder enter in the size of your chip so that it shows on the layout screen in proper scale.  
+*   Click “Next” in the Schedule Execution tab.  You will be prompted to save the Schedule file (.SC8 extension) to the same directory your CON files are in.  Change the name else it will save in the directory as “Default”.  The lower left hand corner of your pattern will be at X \= 0 Y \= 0 by default.  You will now see a blue-green tab **“Exp. Graphics”** menu as shown in the image here.
 
+![](img/209e649b46dd.png){ width="180" }
+
+*  Click “Display Sample Holder” and select the holder you will be using.  We use only the “Multipiece Holder” or the “ 4” Wafer Holder” then Click “Zoom Out” to see the extents of where the sample is held in the Elionix.  If using the multipiece holder enter in the size of your chip so that it shows on the layout screen in proper scale.    
 *  Most likely your pattern is not positioned on the wafer/chip.  Click “Move Pattern” and then click at the center position that you want to move the pattern.  This will bring up a dialog box that will offer the option of centering your pattern on the wafer or changing the values to round numbers when positioning on the multi-piece holder.  
 *   Click “Next” and since you changed the position of the pattern you will be prompted to resave your schedule file again.  You will then be brought to the Exposure pane in WECAS.  
 *  Clicking on the “Calc” button will give you the length of your exposure time to verify all is the same as when you initially converted the job off-line.    
@@ -179,6 +177,8 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 ---
 
 6. ### **Exposing the job in WECAS** {#exposing-the-job-in-wecas}
+
+**![](img/2e6eb2c004e1.png){ width="186" }**
 
 1. Click “Next” and check once again the location of the write by choosing “Show Pattern” then “Next” again to get to the exposure tab – as shown to the right  
 2. As a sanity check calculate the time for the job.  It should be the same as when you calculated it when writing the job within a few minutes.    
@@ -214,7 +214,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 
 1. You need to tell WECAS that you will be doing alignment when you set up the initial schedule file.  We need to go back to the “Set Option” Button (From Section II Page 3 of this manual) and set values in the “Registration” column (indicated below).  For manual Alignment “Periodic Correction” and “width modulation” remain off \-- These are used only in “Auto” and “Full Auto” alignment modes.  
      
-   **![](img/cb0be8bdee40.png){ width="568" }**  
+   **![](img/cb0be8bdee40.png)**  
      
 2. Click the “ON” radio button in the Registration Panel  
 3. Set “Control Type” to “Manual”  
@@ -279,6 +279,10 @@ Make certain that the “set option” value is correct (\~3.0 mm for a 5oo um s
 If the load lock door is not properly closed when the evacuate switch is toggled, the vacuum pump will fail, often with a loud noise.  This is something that should be prevented against by holding the door firmly shut when pumping down.  
 
 In the event of a pump failure, please make certain that you alert staff directly. 
+
+
+
+
 
 
 

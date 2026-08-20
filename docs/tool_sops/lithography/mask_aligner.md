@@ -2,9 +2,11 @@
 
 # EVG Photomask Aligner
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1cds236-fRol1RoqzUvsCR4YPsqeyf5Yum19WReIJFl8/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1cds236-fRol1RoqzUvsCR4YPsqeyf5Yum19WReIJFl8/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Mask_Aligner_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Mask_Aligner_SOP.pdf){ .md-button download="Mask_Aligner_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Mask_Aligner_SOP.pdf){ .md-button download="Mask_Aligner_SOP.pdf" }
+</div>
 
 ---
 
@@ -95,17 +97,7 @@ Resolution
 
 \- Proximity: 2 – 4 µm 
 
-![](img/17e260a068cb.png)  
 \- Soft Contact: 1.5 – 3 µm
-
-![](img/387c7c9126a4.png)
-
-Page **1** of **10** 
-
-Revision 1.0 Created February 26th, 2018   
-  ![](img/3740fa68c648.png)
-
-Standard Operating Procedure: **Mask Aligner** 
 
 \- Hard Contact: 1 – 2 µm 
 
@@ -128,14 +120,6 @@ Estimated Time: 30-45 minutes
 *System Pre-Checks* 
 
 1\. Check to ensure the Hg-Arc lamp is ON by slightly moving the lamp viewport window  shutter for the minimum amount of time to see if the light is ON. If the lamp is OFF, contact  NanoFab staff. 
-
-Page **2** of **10** 
-
-Revision 1.0 Created February 26th, 2018 
-
-  ![](img/3740fa68c648.png)
-
-Standard Operating Procedure: **Mask Aligner** 
 
 2\. Check to ensure the lamp power supply LCD displays are within the following spec limits.  If the displays are out of range, contact NanoFab staff. 
 
@@ -167,13 +151,6 @@ a. Select Constant Dose, Constant Dose – Interval, Constant Time, or Constant 
 a. Select Hard Contact, Proximity, Soft Contact, Vacuum Contact, or V+H Contact 6\. General 🡪 Mask Holder 
 
 a. Select
-
-Page **3** of **10** 
-
-Revision 1.0 Created February 26th, 2018   
-  ![](img/3740fa68c648.png)
-
-Standard Operating Procedure: **Mask Aligner** 
 
 7\. General 🡪 Chuck 
 
@@ -220,12 +197,6 @@ a. Verify that the objective lens are installed.
 b. Press **Continue**. 
 
 5\. Tool will instruct: “Insert Maskholder And Press \<Continue\>”.
-
-Page **4** of **10** 
-
-Revision 1.0 Created February 26th, 2018 
-
-Standard Operating Procedure: **Mask Aligner** 
 
 a. Verify that the mask holder is installed by verifying the inscription on the frame:  “MASKHOLDER 5””. This mask holder should always be installed in the tool.  b. Press **Continue**. 
 
@@ -286,12 +257,6 @@ b. Press **Continue**.
 a. Gently push the tray in. 
 
 17\. Tool will instruct: “Adjust Substrate And Press \<Continue\>”.
-
-Page **5** of **10** 
-
-Revision 1.0 Created February 26th, 2018 
-
-Standard Operating Procedure: **Mask Aligner** 
 
 a. Changes to the recipe can be made by switching to the RECIPE tab on the right  side. 
 
@@ -360,12 +325,6 @@ a. Press **Exit**.
 28\. Close the recipe. Decide whether to save the changes or not and select a response  accordingly.  
 
 *Run Process – Bottomside Alignment*
-
-Page **6** of **10** 
-
-Revision 1.0 Created February 26th, 2018 
-
-Standard Operating Procedure: **Mask Aligner** 
 
 1\. Select the following options for an existing or new recipe: 
 
@@ -437,12 +396,6 @@ a. Remove substrate.
 
 15\. Repeat *Step 21 – Step 28* of *Run Process – Top Side Alignment*.
 
-Page **7** of **10** 
-
-Revision 1.0 Created February 26th, 2018 
-
-Standard Operating Procedure: **Mask Aligner** 
-
 **Emergency Stop** 
 
 *Critical* 
@@ -486,12 +439,6 @@ o Unscrew and remove the mask holder.
 ▪ Wipe the bottom side of the mask holder with IPA.  
 
 \- If alignment shifts after performing Sep/Con, decrease the separation. 
-
-Page **8** of **10** 
-
-Revision 1.0 Created February 26th, 2018 
-
-Standard Operating Procedure: **Mask Aligner** 
 
 **When to call staff?**  
 

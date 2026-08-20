@@ -2,9 +2,11 @@
 
 # Nickel Etch SOP
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1T6G6K91GHww4PlztrbcEJj7Kibu3BXw-j6RAdp5PAGQ/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1T6G6K91GHww4PlztrbcEJj7Kibu3BXw-j6RAdp5PAGQ/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Nickel_Etch_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Nickel_Etch_SOP.pdf){ .md-button download="Nickel_Etch_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Nickel_Etch_SOP.pdf){ .md-button download="Nickel_Etch_SOP.pdf" }
+</div>
 
 ---
 

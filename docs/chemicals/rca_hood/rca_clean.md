@@ -2,9 +2,11 @@
 
 # RCA Cleaning Procedure
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/RCA_Clean_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/RCA_Clean_SOP.pdf){ .md-button download="RCA_Clean_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/RCA_Clean_SOP.pdf){ .md-button download="RCA_Clean_SOP.pdf" }
+</div>
 
 ---
 

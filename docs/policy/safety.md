@@ -2,9 +2,11 @@
 
 # ASRC Nanofab Facility -- Safety Manual
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../assets/pdfs/policy/Safety_Manual.pdf){ .md-button }
-[:material-download: Download PDF](../assets/pdfs/policy/Safety_Manual.pdf){ .md-button download="Safety_Manual.pdf" }
+[:material-download: Download](../assets/pdfs/policy/Safety_Manual.pdf){ .md-button download="Safety_Manual.pdf" }
+</div>
 
 ---
 
@@ -12,31 +14,37 @@
 
 # **Section 1: Cleanroom Basic Layout** {#section-1:-cleanroom-basic-layout}
 
-![](img/08c982587f12.jpg){ width="615" }
+![](img/08c982587f12.jpg)
 
 # **Section 2: Emergency Exits** 
 
-![](img/00b79aa65c1c.jpg){ width="624" }
+![](img/00b79aa65c1c.jpg)
 
-![](img/a46036c6d34a.jpg){ width="624" }
+![](img/a46036c6d34a.jpg)
 
 **Cleanroom Egress**
 
 **Building Egress from the Cleanroom**
 
-**Evacuation Procedure**
+## **Evacuation Procedures**
 
-* Secure your process.
+### **Fire Alarm:**
 
-* Do not de-gown, keep your gown on.
+1. Secure your process.
 
-* As you proceed to an exit door, ask other lab members to follow.
+2. Do not de-gown, keep your gown on.
 
-* Exit the building through the nearest exits.
+3. As you proceed to an exit door, ask other lab members to follow.
 
-* The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+4. Exit the building through the nearest exits.
 
-* Remain available to pass on details you have about events that lead to an evacuation.
+5. The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+
+6. Remain available to pass on details you have about events that lead to an evacuation.
+
+### **TGMS Alarm Level 1:**
+
+### **TGMS Alarm Level 1:**
 
 # **Section 3: Facility Staff and Emergency Contacts** {#section-3:-facility-staff-and-emergency-contacts}
 
@@ -88,7 +96,7 @@ A staff contact list is posted next to all telephones in the cleanroom.
 
 ![](img/63e2dbfb376c.jpg){ width="364" }
 
-![](img/08c982587f12.jpg){ width="624" }
+![](img/2cc2d1ab518f.jpg)
 
 # **Section 4: Alarm Systems** {#section-4:-alarm-systems}
 
@@ -223,7 +231,7 @@ The piranha/HF hood, caustics/metal etch hood and the RCA hood are all polypropy
   * Designated for RCA chemistries, including ammonium hydroxide (RCA 1), hydrochloric acid (RCA 2\) and hydrofluoric acid (HF dip).  
   * To be for the RCA cleaning process to prepare samples for oxide growths in the furnace.
 
-**![](img/0bab8dcb1b6c.jpg){ width="624" }**
+**![](img/0bab8dcb1b6c.jpg)**
 
 ## **Chemical Storage** {#chemical-storage}
 
@@ -334,7 +342,7 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 **Showers and Eye Wash Stations**
 
-![](img/a2e77f0c432a.jpg){ width="624" }
+![](img/a2e77f0c432a.jpg)
 
 **Hoods and Carboys**
 

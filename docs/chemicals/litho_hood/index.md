@@ -2,9 +2,11 @@
 
 # Litho-Development Hood
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/15K8HiRoBqTl6__K5GMHitdGn7ybAD6Iga3Qf07gFwt4/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/15K8HiRoBqTl6__K5GMHitdGn7ybAD6Iga3Qf07gFwt4/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Litho-Development_Hood.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Litho-Development_Hood.pdf){ .md-button download="Litho-Development_Hood.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Litho-Development_Hood.pdf){ .md-button download="Litho-Development_Hood.pdf" }
+</div>
 
 ---
 
