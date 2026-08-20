@@ -2,9 +2,11 @@
 
 # Hydrofluoric Acid Etch
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1RVBRcWvxVvR0yamtidYjsd0aanbXqg84ov4ds2PDYB0/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1RVBRcWvxVvR0yamtidYjsd0aanbXqg84ov4ds2PDYB0/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Hydroflouric_Acid_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Hydroflouric_Acid_SOP.pdf){ .md-button download="Hydroflouric_Acid_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Hydroflouric_Acid_SOP.pdf){ .md-button download="Hydroflouric_Acid_SOP.pdf" }
+</div>
 
 ---
 

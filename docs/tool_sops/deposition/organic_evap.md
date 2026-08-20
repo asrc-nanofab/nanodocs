@@ -2,9 +2,11 @@
 
 # AJA Organic Evaporator
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1_GuCjeccX-jVpvjYN3VdQHAqRQzjFMkkwiHjFlsDaZI/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1_GuCjeccX-jVpvjYN3VdQHAqRQzjFMkkwiHjFlsDaZI/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Organic_Evap_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Organic_Evap_SOP.pdf){ .md-button download="Organic_Evap_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Organic_Evap_SOP.pdf){ .md-button download="Organic_Evap_SOP.pdf" }
+</div>
 
 ---
 

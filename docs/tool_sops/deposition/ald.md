@@ -2,9 +2,11 @@
 
 # Atomic Layer Deposition (ALD)
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/ALD_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/ALD_SOP.pdf){ .md-button download="ALD_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/ALD_SOP.pdf){ .md-button download="ALD_SOP.pdf" }
+</div>
 
 ---
 

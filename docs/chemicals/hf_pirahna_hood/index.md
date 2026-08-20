@@ -2,9 +2,11 @@
 
 # HF and Piranha Hood
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1Gcfy5zHprGlI_ZHOKh8N3v_X1wO9ndRzPOorbETv7g0/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1Gcfy5zHprGlI_ZHOKh8N3v_X1wO9ndRzPOorbETv7g0/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Piranha_HF_Hood.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Piranha_HF_Hood.pdf){ .md-button download="Piranha_HF_Hood.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Piranha_HF_Hood.pdf){ .md-button download="Piranha_HF_Hood.pdf" }
+</div>
 
 ---
 

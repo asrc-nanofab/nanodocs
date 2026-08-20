@@ -2,9 +2,11 @@
 
 # Gold Etch
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1ffuyK_5d5dMrEkYlPAlxepmydWzc6R_e42pD5W3brjw/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1ffuyK_5d5dMrEkYlPAlxepmydWzc6R_e42pD5W3brjw/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Gold_Etch_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Gold_Etch_SOP.pdf){ .md-button download="Gold_Etch_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Gold_Etch_SOP.pdf){ .md-button download="Gold_Etch_SOP.pdf" }
+</div>
 
 ---
 

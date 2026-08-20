@@ -2,9 +2,11 @@
 
 # Nanoscribe 3D-Lithography
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Nanoscribe_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Nanoscribe_SOP.pdf){ .md-button download="Nanoscribe_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Nanoscribe_SOP.pdf){ .md-button download="Nanoscribe_SOP.pdf" }
+</div>
 
 ---
 

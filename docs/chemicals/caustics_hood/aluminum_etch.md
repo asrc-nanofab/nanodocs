@@ -2,9 +2,11 @@
 
 # Aluminum Etch SOP - Various formats of Display
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Aluminum_Etch_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Aluminum_Etch_SOP.pdf){ .md-button download="Aluminum_Etch_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Aluminum_Etch_SOP.pdf){ .md-button download="Aluminum_Etch_SOP.pdf" }
+</div>
 
 ---
 

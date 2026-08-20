@@ -2,9 +2,11 @@
 
 # Bruker Optical Profilometer
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Optical_Profilometer_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Optical_Profilometer_SOP.pdf){ .md-button download="Optical_Profilometer_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Optical_Profilometer_SOP.pdf){ .md-button download="Optical_Profilometer_SOP.pdf" }
+</div>
 
 ---
 

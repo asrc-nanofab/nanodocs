@@ -2,9 +2,11 @@
 
 # AJA Sputter Deposition
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1ZxRo_R4RzLxKZ7h_I2hFphAH187e9qq2U4bBf5n4lOg/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1ZxRo_R4RzLxKZ7h_I2hFphAH187e9qq2U4bBf5n4lOg/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/AJA_Sputter_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/AJA_Sputter_SOP.pdf){ .md-button download="AJA_Sputter_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/AJA_Sputter_SOP.pdf){ .md-button download="AJA_Sputter_SOP.pdf" }
+</div>
 
 ---
 

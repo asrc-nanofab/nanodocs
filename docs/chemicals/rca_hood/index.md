@@ -2,9 +2,11 @@
 
 # RCA Clean Hood
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1Qtl2bvsitV9snJGXmonvmC6lgJgq6zfIud20R6E94i0/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1Qtl2bvsitV9snJGXmonvmC6lgJgq6zfIud20R6E94i0/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/RCA_Hood.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/RCA_Hood.pdf){ .md-button download="RCA_Hood.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/RCA_Hood.pdf){ .md-button download="RCA_Hood.pdf" }
+</div>
 
 ---
 

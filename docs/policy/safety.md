@@ -2,9 +2,11 @@
 
 # ASRC Nanofab Facility -- Safety Manual
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../assets/pdfs/policy/Safety_Manual.pdf){ .md-button }
-[:material-download: Download PDF](../assets/pdfs/policy/Safety_Manual.pdf){ .md-button download="Safety_Manual.pdf" }
+[:material-download: Download](../assets/pdfs/policy/Safety_Manual.pdf){ .md-button download="Safety_Manual.pdf" }
+</div>
 
 ---
 

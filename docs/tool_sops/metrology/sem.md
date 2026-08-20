@@ -2,9 +2,11 @@
 
 # Scanning Electron Microscope
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/SEM_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/SEM_SOP.pdf){ .md-button download="SEM_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/SEM_SOP.pdf){ .md-button download="SEM_SOP.pdf" }
+</div>
 
 ---
 

@@ -2,9 +2,11 @@
 
 # Isotropic Silicon Etch
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1OKt-lxZbpTqgTQaB2xr4tY9Pc04TGJ_Dgq-SYLFo0FM/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1OKt-lxZbpTqgTQaB2xr4tY9Pc04TGJ_Dgq-SYLFo0FM/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Isotropic_Silicon_Etch_(HNA)_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Isotropic_Silicon_Etch_(HNA)_SOP.pdf){ .md-button download="Isotropic_Silicon_Etch_(HNA)_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Isotropic_Silicon_Etch_(HNA)_SOP.pdf){ .md-button download="Isotropic_Silicon_Etch_(HNA)_SOP.pdf" }
+</div>
 
 ---
 

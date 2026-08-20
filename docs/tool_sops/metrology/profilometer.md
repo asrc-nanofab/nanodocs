@@ -2,9 +2,11 @@
 
 # Dektak Profilometer
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1uDD_bNfVsyvTkWzNPy5QGdm7Z_LQdniKeHbNruE4a1I/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1uDD_bNfVsyvTkWzNPy5QGdm7Z_LQdniKeHbNruE4a1I/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Profilometer_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Profilometer_SOP.pdf){ .md-button download="Profilometer_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Profilometer_SOP.pdf){ .md-button download="Profilometer_SOP.pdf" }
+</div>
 
 ---
 

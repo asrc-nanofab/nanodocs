@@ -2,9 +2,11 @@
 
 # Chrome Etch
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1KGMAyNuV7d_IKULiMIsnu3mv2qEcMy-Go3yxuJijZLQ/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1KGMAyNuV7d_IKULiMIsnu3mv2qEcMy-Go3yxuJijZLQ/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Chromium_Etch_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Chromium_Etch_SOP.pdf){ .md-button download="Chromium_Etch_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Chromium_Etch_SOP.pdf){ .md-button download="Chromium_Etch_SOP.pdf" }
+</div>
 
 ---
 

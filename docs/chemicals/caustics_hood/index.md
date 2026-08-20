@@ -2,9 +2,11 @@
 
 # Caustics and Metal Etch Hood
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1_9u5YudriyjGAOOsm-8EVmkD0bD6SvVQZb4RuNEvKrg/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1_9u5YudriyjGAOOsm-8EVmkD0bD6SvVQZb4RuNEvKrg/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/chem/Caustics_Metal_Etch_Hood.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/chem/Caustics_Metal_Etch_Hood.pdf){ .md-button download="Caustics_Metal_Etch_Hood.pdf" }
+[:material-download: Download](../../assets/pdfs/chem/Caustics_Metal_Etch_Hood.pdf){ .md-button download="Caustics_Metal_Etch_Hood.pdf" }
+</div>
 
 ---
 

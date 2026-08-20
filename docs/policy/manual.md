@@ -2,9 +2,11 @@
 
 # ASRC Nanofab -- Rules of Conduct
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1qzcJ_VQbIsTaRefLxhnhzaancla2f7Q7IbotATD6YJU/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1qzcJ_VQbIsTaRefLxhnhzaancla2f7Q7IbotATD6YJU/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../assets/pdfs/policy/Lab_Manual.pdf){ .md-button }
-[:material-download: Download PDF](../assets/pdfs/policy/Lab_Manual.pdf){ .md-button download="Lab_Manual.pdf" }
+[:material-download: Download](../assets/pdfs/policy/Lab_Manual.pdf){ .md-button download="Lab_Manual.pdf" }
+</div>
 
 ---
 

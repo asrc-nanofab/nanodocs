@@ -2,9 +2,11 @@
 
 # Elionix EBL 100keV SOP
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/Elionix_100keV_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/Elionix_100keV_SOP.pdf){ .md-button download="Elionix_100keV_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/Elionix_100keV_SOP.pdf){ .md-button download="Elionix_100keV_SOP.pdf" }
+</div>
 
 ---
 

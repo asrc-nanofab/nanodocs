@@ -2,9 +2,11 @@
 
 # Atomic Force Microscope
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1vWchHUJWEjEPmC7fhBNWyf3IMGcx8EHeKd0mEAQ3X0c/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1vWchHUJWEjEPmC7fhBNWyf3IMGcx8EHeKd0mEAQ3X0c/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/AFM_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/AFM_SOP.pdf){ .md-button download="AFM_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/AFM_SOP.pdf){ .md-button download="AFM_SOP.pdf" }
+</div>
 
 ---
 

@@ -90,7 +90,8 @@ extra:
       link: https://github.com/asrc-nanofab/nanodocs
     # - icon: fontawesome/brands/linkedin
     #   link: https://www.linkedin.com/in/worldlycode/
-# extra_css:
-#   - stylesheets/extra.css
+# Served from overrides/stylesheets/ (theme custom_dir static files)
+extra_css:
+  - stylesheets/extra.css
 
 copyright: "© 2025–2026 ASRC Nanofabrication Facility"

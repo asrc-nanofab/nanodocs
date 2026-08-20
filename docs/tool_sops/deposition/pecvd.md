@@ -2,9 +2,11 @@
 
 # Oxford PECVD
 
-[:material-file-document-outline: Open the Google Doc](https://docs.google.com/document/d/1q-4YgUklqppoQipswF7NygH4oarlqO2lo9nTGDubHhk/preview){ .md-button }
+<div class="doc-links" markdown="span">
+[:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1q-4YgUklqppoQipswF7NygH4oarlqO2lo9nTGDubHhk/preview){ .md-button }
 [:material-file-pdf-box: View PDF](../../assets/pdfs/tools/PECVD_SOP.pdf){ .md-button }
-[:material-download: Download PDF](../../assets/pdfs/tools/PECVD_SOP.pdf){ .md-button download="PECVD_SOP.pdf" }
+[:material-download: Download](../../assets/pdfs/tools/PECVD_SOP.pdf){ .md-button download="PECVD_SOP.pdf" }
+</div>
 
 ---
 
@@ -348,7 +350,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 ![A red and white sign with a skull and crossbonesDescription automatically generated](img/940a999ed658.jpg){ width="66" } \= Toxic
 
-![A black exclamation mark in a red diamondDescription automatically generated](img/fb9ccb8a17d2.png){ width="61" }  \= Harmful
+![A black exclamation mark in a red diamondDescription automatically generated](img/281c24ff29c7.png){ width="61" }  \= Harmful
 
 ![A sign with a black object in the middleDescription automatically generated](img/794c4d78c5a0.png){ width="66" } \= Compressed Gas
 
