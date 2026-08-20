@@ -1,0 +1,53 @@
+---
+description: How to create and maintain plan files in plans/
+globs: plans/**/*.md
+alwaysApply: false
+---
+
+# Plan Files
+
+Plans live in `plans/` and are named `YYYY-MM-DD-short-slug.md`.
+
+## Structure
+
+```markdown
+# Title (imperative, describes the outcome)
+
+**Date:** YYYY-MM-DD
+**Status:** Draft | Phase X in progress | Phase X done — awaiting sign-off | Complete
+**Branch:** branch-name (if work happens off main)
+
+## Description
+
+What and why, in a few short paragraphs. Include key findings/constraints that
+justify the approach, and a table of affected areas when useful.
+
+## Steps
+
+### Phase A — <name>
+- [ ] Concrete, checkable step
+- [ ] ...
+
+### Phase A review gate — STOP for sign-off
+- [ ] What the user should verify, as a checklist
+- [ ] Decision: proceed / adjust / abandon
+
+### Phase B — <name>
+...
+
+## Known limits / notes
+
+Constraints, deferred items, risks, and follow-ups.
+```
+
+## Conventions
+
+- Phases end in an explicit **review gate** whenever the next phase depends on
+  user judgment (visual checks, trust decisions, deploys).
+- Check off items (`[x]`) as they complete, in the same session they happen —
+  annotate with brief results when useful (e.g. "7 pages written").
+- Keep the **Status** line current; it's the single-glance state of the plan.
+- Record decisions and discovered facts in the plan (e.g. "stray PDFs were never
+  in git") so the plan stays the source of truth.
+- Destructive or irreversible steps (deletes, deploys) belong in the final phase,
+  after all sign-offs.

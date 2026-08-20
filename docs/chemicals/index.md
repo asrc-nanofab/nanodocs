@@ -7,31 +7,31 @@
 
 <div class="grid cards" markdown>
 
--   __[:material-image-filter-center-focus-strong-outline: Litho-Development Hood](litho_hood/)__
+-   __[:material-image-filter-center-focus-strong-outline: Litho-Development Hood](litho_hood/index.md)__
 
     ---
     
     Procedures for lithography-related chemical processes, including development and cleaning.
 
--   __[:material-bottle-tonic-outline: Solvent Hood](solvent_hood/)__
+-   __[:material-bottle-tonic-outline: Solvent Hood](solvent_hood/index.md)__
 
     ---
 
     SOPs for working with solvents for cleaning and Lift-Off.
 
--   __[:material-beaker-alert-outline: Caustics Hood](caustics_hood/)__
+-   __[:material-beaker-alert-outline: Caustics Hood](caustics_hood/index.md)__
 
     ---
 
     Guidelines for using caustic substances and etchants.
 
--   __[:material-skull-crossbones-outline: HF and Piranha Hood](hf_pirahna_hood/)__
+-   __[:material-skull-crossbones-outline: HF and Piranha Hood](hf_pirahna_hood/index.md)__
 
     ---
 
     Strict safety protocols for hydrofluoric acid and piranha etch solutions.
 
--   __[:material-beaker-check-outline: RCA Hood](rca_hood/)__
+-   __[:material-beaker-check-outline: RCA Hood](rca_hood/index.md)__
 
     ---
 
