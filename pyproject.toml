@@ -13,4 +13,11 @@ dependencies = [
     "ipykernel==6.29.5",
     "pandas>=2.3.0",
     "mkdocs-awesome-nav>=3.3.0",
+    "requests>=2.32.4",
+    "pillow>=12.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.3",
 ]
