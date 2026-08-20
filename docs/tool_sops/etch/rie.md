@@ -31,9 +31,9 @@ The Reactive Ion Etcher (RIE) uses a radio-frequency-powered electromagnetic fie
 
 | Pictogram | Description |
 | :---- | :---- |
-| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a][image1] | Radio-frequency Energy/ Radiation |
-| ![Ultraviolet Hazard Symbol][image2] | Ultraviolet Radiation |
-| ![International Symbol Labels - Pinch Point, Safety Label | Emedco][image3] | Mechanical Pinch-Point |
+| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/225bfb3ae37f.png) | Radio-frequency Energy/ Radiation |
+| ![Ultraviolet Hazard Symbol](img/310939788fa3.png) | Ultraviolet Radiation |
+| ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/8c508b2a0417.jpg){ width="83" } | Mechanical Pinch-Point |
 
  
 
@@ -49,12 +49,12 @@ Any process recipe using a double-valve interlocked Hazardous Gas needs to incor
 
 | Gas | GHS Labels | Hazards |
 | :---- | :---- | :---- |
-| Oxygen (O2) | ![][image4]![][image5] | \-Gasses Under Pressure  \-Danger \-Oxidizing\! |
-| Argon (Ar) | ![][image4] | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Simple Asphyxiant  |
-| Methane (CH4) | ![][image4]![][image6] | \-Gasses Under Pressure (may displace oxygen) \-Danger \-Flammable\! |
-| Trifluoromethane (CHF3) | ![][image4]![][image7] | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Specific Target Organ Toxicity \- Single Exposure  |
-| Sulfur Hexafluoride (SF6)  | ![][image4] | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
-| Tetrafluoromethane (CF4) | ![][image4] | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
+| Oxygen (O2) | ![](img/c414a6fabdf9.png){ width="59" }![](img/d448c6d812c6.png){ width="59" } | \-Gasses Under Pressure  \-Danger \-Oxidizing\! |
+| Argon (Ar) | ![](img/c414a6fabdf9.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Simple Asphyxiant  |
+| Methane (CH4) | ![](img/c414a6fabdf9.png){ width="59" }![](img/b28ec596da35.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Danger \-Flammable\! |
+| Trifluoromethane (CHF3) | ![](img/c414a6fabdf9.png){ width="59" }![](img/0bee1904c91d.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Specific Target Organ Toxicity \- Single Exposure  |
+| Sulfur Hexafluoride (SF6)  | ![](img/c414a6fabdf9.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
+| Tetrafluoromethane (CF4) | ![](img/c414a6fabdf9.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
 
 For Full MSDS Information, Visit:
 
@@ -105,7 +105,7 @@ Cleanroom suits (including booties, hairnets, and hoods), nitrile cleanroom glov
 
 The form can also be accessed here:
 
-![][image8]
+![](img/9c116dff8e15.png){ width="185" }
 
 Fomblin oil is available at the ICP-RIE tools for chip adherence to carrier wafer if needed.
 
@@ -119,7 +119,7 @@ Note on Toxic Materials:
 
 Material MSDS Symbols indicating potential toxicity:
 
-![][image9]![][image10]![][image11]![A black exclamation mark in a red diamond shape][image7]
+![](img/169e71868618.png){ width="60" }![](img/adcf65b027e4.png){ width="61" }![](img/ab62368482d2.png){ width="60" }![A black exclamation mark in a red diamond shape](img/0bee1904c91d.png){ width="59" }
 
 If you need to prematurely stop a process step with hazardous gasses or materials, it is preferable to **click “Skip Phase” rather than stop**. This ensures any additional purge steps of the recipe are completed before venting. (There is also a shorter purge built into the venting process)
 
@@ -190,25 +190,25 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 ***Ready To Open Main Chamber***:
 
-![][image12]
+![](img/07849f4a91c7.png){ width="624" }
 
 ***Tool Buttons for Opening/Closing Chamber***:
 
-***![][image13]***
+***![](img/03cb27fa13cc.png)***
 
 ***Graphite Process Plate with Wafer:***
 
-***![][image14]***
+***![](img/105969f58fe5.png)***
 
 ***Recipe Page:***
 
-***![][image15]***
+***![](img/31dc8474474c.png){ width="623" }***
 
 ***Manual View During Process:***
 
 **Note**\- Plasma glow will likely be visible from viewport when plasma is active:
 
-![][image16]
+![](img/734c34bc102f.png)
 
 > > > 3. **Etch Sample**
 
@@ -217,7 +217,7 @@ If you need to prematurely stop a process step with hazardous gasses or material
 1. Once conditioning process is complete, follow the steps above for venting the chamber, inserting your sample, and running a recipe. Make sure any mandatory purges for hazardous gasses or toxic materials are performed before opening the chamber. Retain the black graphite process plate in the chamber, and change the RF step time to your desired etch time. The etch recipe will vary from your conditioning etch only by the time of the etch step.   
 2. Remember to record your etch in the user log
 
-**Note-** The double arrow  **![][image17]** buttons may be used to change elements of the display. You can revert back to the original “**hybrid**” display via the “**View**” menu on the upper right hand corner. Some users may find the other, tabular display more convenient.
+**Note-** The double arrow  **![](img/ff1355d892f7.png)** buttons may be used to change elements of the display. You can revert back to the original “**hybrid**” display via the “**View**” menu on the upper right hand corner. Some users may find the other, tabular display more convenient.
 
 > > > 4. **Clean**
 
@@ -233,7 +233,7 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 ***White Quartz Cleaning Plate**:*
 
-![][image18]
+![](img/6877f2f9fb8e.png)
 
 ## **Section 8: Emergency Stop** {#section-8:-emergency-stop}
 
@@ -319,21 +319,20 @@ My signature below indicates that I have read this SOP and will abide by all rul
 |   |  |  |
 |   |  |  |
 
-[image1]: img/225bfb3ae37f.png
-[image2]: img/310939788fa3.png
-[image3]: img/8c508b2a0417.jpg
-[image4]: img/c414a6fabdf9.png
-[image5]: img/d448c6d812c6.png
-[image6]: img/b28ec596da35.png
-[image7]: img/0bee1904c91d.png
-[image8]: img/9c116dff8e15.png
-[image9]: img/169e71868618.png
-[image10]: img/adcf65b027e4.png
-[image11]: img/ab62368482d2.png
-[image12]: img/07849f4a91c7.png
-[image13]: img/03cb27fa13cc.png
-[image14]: img/105969f58fe5.png
-[image15]: img/31dc8474474c.png
-[image16]: img/734c34bc102f.png
-[image17]: img/ff1355d892f7.png
-[image18]: img/6877f2f9fb8e.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

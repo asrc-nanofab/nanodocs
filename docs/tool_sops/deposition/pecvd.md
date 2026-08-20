@@ -154,7 +154,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 
 * In the case of an emergency where a tool malfunction puts users in imminent danger, press the red EMO button on the tool. This is only to be used as a last resort.
 
-*![][image2]*
+*![](img/269a9324048f.png){ width="351" }*
 
 ***Image 3*** EMO located at the side wall of the load lock chamber
 
@@ -176,9 +176,9 @@ If users have their own private account, they can login under the same Individua
 
 After logging in to the appropriate account, users might see on the screen as either Image 6 or Image 7\.
 
-![][image3]*Image 6,* general cartoon view of PTIQ screen
+![](img/282918a37fd1.jpg)*Image 6,* general cartoon view of PTIQ screen
 
-![][image4]
+![](img/1cce505ab39b.jpg)
 
 *Image 7, * Opened Load Lock lid
 
@@ -204,7 +204,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 8. Ivory color of the wafer is assumed as fresh wafer into the chamber.
 
-![][image5]
+![](img/01a2344e08f6.jpg){ width="620" }
 
 *Image 8*, Loading steps for wafer/chips for Condition/Deposition/Clean processe*s*
 
@@ -218,7 +218,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 4. Now click **START RECIPE** \[step **4**\] under the **RUN** Recipe tab to run the desired recipe.
 
-![][image6]
+![](img/6962d1747c2b.jpg)
 
 *Image 9,* Steps for Loading and Runing Recipe
 
@@ -236,7 +236,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 5. Open the Lid and place the Clean Wafer (Sapphire) for the next OPT Clean operation.
 
-![][image7]
+![](img/683a62531567.jpg)
 
 *Image 10,* Unloading steps for wafer/chips after Condition/Deposition processes 
 
@@ -292,7 +292,7 @@ Go to the Recipe Editor \[step **1**\].
 
 5. Click the SAVE tab at the top-middle of the screen to save your entered time \[step **4**\]. \[must\]
 
-![][image8]
+![](img/154444d360ca.jpg)
 
 *Image 11*, Changing deposition time on the Deposition recipe
 
@@ -312,7 +312,7 @@ Go to the Recipe Editor \[step **1**\].
 
 7. Click the SAVE tab at the top-middle of the screen to save your entered time \[step **5**\]. \[must\]
 
-![][image9]
+![](img/53faea9f0cfc.png)
 
 *Image 12*, Changing deposition time on the Nitrite Recipe or recipe that has the deposition process with a number of cycles.
 
@@ -345,32 +345,32 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 4. Unload Clean wafer into the Load lock and keep the chamber under vacuum.  
 5. Clean the tools area, if needed, and disable the tool from the badger.
 
-![][image10]
+![](img/38979f71cdfb.jpg)
 
 *Image 13*, Changing Cleaning Time for OPT Clean Timed Recipe
 
 ## **Section 4 – Gases, Hazards Classification and symbols** {#section-4-–-gases,-hazards-classification-and-symbols}
 
 
-![][image11]
+![](img/d1d00fedc781.png){ width="445" }
 
-**![A red and black sign with a flameDescription automatically generated][image12]**  \= Flammable
+**![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**  \= Flammable
 
-![A red and black sign with flamesDescription automatically generated][image13] \= Oxidizing
+![A red and black sign with flamesDescription automatically generated](img/16873140e3c5.png){ width="61" } \= Oxidizing
 
-![A sign with a person with a star in the centerDescription automatically generated][image14] \= Health Hazard
+![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" } \= Health Hazard
 
-![A red and white sign with black symbolsDescription automatically generated][image15]\= Explosive
+![A red and white sign with black symbolsDescription automatically generated](img/b54076df9dca.png){ width="69" }\= Explosive
 
-**![A sign with a fish and a treeDescription automatically generated][image16]** \= Environmental Hazard
+**![A sign with a fish and a treeDescription automatically generated](img/04e6c6d578e9.png){ width="63" }** \= Environmental Hazard
 
-![A warning sign with a red borderDescription automatically generated][image17] \= Corrosive
+![A warning sign with a red borderDescription automatically generated](img/e3e85360e375.jpg){ width="62" } \= Corrosive
 
-![A red and white sign with a skull and crossbonesDescription automatically generated][image18] \= Toxic
+![A red and white sign with a skull and crossbonesDescription automatically generated](img/940a999ed658.jpg){ width="66" } \= Toxic
 
-![A black exclamation mark in a red diamondDescription automatically generated][image19]  \= Harmful
+![A black exclamation mark in a red diamondDescription automatically generated](img/fb9ccb8a17d2.png){ width="61" }  \= Harmful
 
-![A sign with a black object in the middleDescription automatically generated][image20] \= Compressed Gas
+![A sign with a black object in the middleDescription automatically generated](img/794c4d78c5a0.png){ width="66" } \= Compressed Gas
 
  
 
@@ -380,13 +380,13 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 | ----- | ----- | ----- | ----- |
 | 1 | SiH4 (Silane) |    | Pyrophoric – Ignites and explodes spontaneously in air, often without a spark Flammable compressed gas Toxic at high concentrations: mainly lungs Can cause severe burn |
 | 2 | NH3 (Ammonia) |   | Corrosive to skin, eyes and mucous membranes Acute toxic and cause severe respiratory irritation if inhaled Reacts with acids and oxidizer Environmental hazard |
-|   | PH3 (Phosphene) |   ![][image21]  | Highly toxic even at low concentrations Highly Flammable Pyrophobic- Ignites and explodes spontaneously in air Causes damage to lungs, liver, kidneys and Central Nervous System. |
-| 4 | B2H6 (Diborane) |   ![][image22] | Extremely toxic to organs Highly flammable Pyrophoric and ignite in moist air. Highly reactive Causes damage to lungs, liver, kidneys and Central Nervous System |
-| 5 | CH4 (Methane) |  ![][image23] | Flammable gas Reduce oxygen level (Asphyxiant) at high concentrations, specifically in a confined space. |
-| 6 | C2H2 (Acetylene) |   ![][image24] | Highly flammable, explosive under pressure or when mixed with moist air. Reactive gas forms explosive compounds with Cu, Ag and Hg. Asphyxiant in confined areas. |
-| 7 | H2 (Hydrogen) |   ![][image25] | Extremely flammable gas Odorless and invisible flame Reduce oxygen levels at high concentrations.  |
-| 8 | N2O (Nitrous Oxide) |  ![][image26] | Colorless, sweet-smelling Supports combustion (Oxidizer) Can cause fire or explosion if mixed with flammables at high temperature and pressure Inhalation hazard (narcotic effects) Asphyxiant concentrations |
-| 9 | O2 (Oxygen) |   ![][image27] | Odorless, colorless gas with strong oxidizer Intensifies fire, with combustible materials (oils, greases or organic materials) may ignite spontaneously and  Can cause explosion at high pressure Prolong exposure to high concentration leads to damage tissues and organs.  |
+|   | PH3 (Phosphene) |   ![](img/a52f3cffa3df.png)  | Highly toxic even at low concentrations Highly Flammable Pyrophobic- Ignites and explodes spontaneously in air Causes damage to lungs, liver, kidneys and Central Nervous System. |
+| 4 | B2H6 (Diborane) |   ![](img/cfa940c3927d.png){ width="247" } | Extremely toxic to organs Highly flammable Pyrophoric and ignite in moist air. Highly reactive Causes damage to lungs, liver, kidneys and Central Nervous System |
+| 5 | CH4 (Methane) |  ![](img/99c463b7d903.png){ width="176" } | Flammable gas Reduce oxygen level (Asphyxiant) at high concentrations, specifically in a confined space. |
+| 6 | C2H2 (Acetylene) |   ![](img/cebf4cb4f458.png){ width="185" } | Highly flammable, explosive under pressure or when mixed with moist air. Reactive gas forms explosive compounds with Cu, Ag and Hg. Asphyxiant in confined areas. |
+| 7 | H2 (Hydrogen) |   ![](img/0ed88b43df86.png){ width="163" } | Extremely flammable gas Odorless and invisible flame Reduce oxygen levels at high concentrations.  |
+| 8 | N2O (Nitrous Oxide) |  ![](img/7fd69b94b07a.png){ width="158" } | Colorless, sweet-smelling Supports combustion (Oxidizer) Can cause fire or explosion if mixed with flammables at high temperature and pressure Inhalation hazard (narcotic effects) Asphyxiant concentrations |
+| 9 | O2 (Oxygen) |   ![](img/8835cd32a295.png){ width="193" } | Odorless, colorless gas with strong oxidizer Intensifies fire, with combustible materials (oils, greases or organic materials) may ignite spontaneously and  Can cause explosion at high pressure Prolong exposure to high concentration leads to damage tissues and organs.  |
 
 * **What to watch out for during operation**
 
@@ -408,30 +408,29 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 Version 1.0 \- After PTIQ Upgrade  \- May 2025 
 
 
-[image1]: img/31762bc346af.png
-[image2]: img/269a9324048f.png
-[image3]: img/282918a37fd1.jpg
-[image4]: img/1cce505ab39b.jpg
-[image5]: img/01a2344e08f6.jpg
-[image6]: img/6962d1747c2b.jpg
-[image7]: img/683a62531567.jpg
-[image8]: img/154444d360ca.jpg
-[image9]: img/53faea9f0cfc.png
-[image10]: img/38979f71cdfb.jpg
-[image11]: img/d1d00fedc781.png
-[image12]: img/a80b2cde7a35.png
-[image13]: img/16873140e3c5.png
-[image14]: img/bf7fa46e8661.png
-[image15]: img/b54076df9dca.png
-[image16]: img/04e6c6d578e9.png
-[image17]: img/e3e85360e375.jpg
-[image18]: img/940a999ed658.jpg
-[image19]: img/281c24ff29c7.png
-[image20]: img/794c4d78c5a0.png
-[image21]: img/a52f3cffa3df.png
-[image22]: img/cfa940c3927d.png
-[image23]: img/99c463b7d903.png
-[image24]: img/cebf4cb4f458.png
-[image25]: img/0ed88b43df86.png
-[image26]: img/7fd69b94b07a.png
-[image27]: img/8835cd32a295.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

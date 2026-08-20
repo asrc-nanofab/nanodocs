@@ -43,9 +43,33 @@
 
 # **Section 1: Cleanroom Basic Layout** {#section-1:-cleanroom-basic-layout}
 
-![][image2]
+![](img/08c982587f12.jpg){ width="615" }
 
-# **Section 2: Facility Staff and Emergency Contacts** {#section-2:-facility-staff-and-emergency-contacts}
+# **Section 2: Emergency Exits** 
+
+![](img/00b79aa65c1c.jpg){ width="624" }
+
+![](img/a46036c6d34a.jpg){ width="624" }
+
+**Cleanroom Egress**
+
+**Building Egress from the Cleanroom**
+
+**Evacuation Procedure**
+
+* Secure your process.
+
+* Do not de-gown, keep your gown on.
+
+* As you proceed to an exit door, ask other lab members to follow.
+
+* Exit the building through the nearest exits.
+
+* The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+
+* Remain available to pass on details you have about events that lead to an evacuation.
+
+# **Section 3: Facility Staff and Emergency Contacts** {#section-3:-facility-staff-and-emergency-contacts}
 
 ## **Facility Staff Contacts** {#facility-staff-contacts}
 
@@ -94,11 +118,11 @@ In the case of a medical emergency, contact the CCNY Public Safety Emergency num
 
 A staff contact list is posted next to all telephones in the cleanroom.
 
-![][image3]
+![](img/63e2dbfb376c.jpg){ width="364" }
 
-![][image4]
+![](img/08c982587f12.jpg){ width="624" }
 
-# **Section 2: Alarm Systems** {#section-2:-alarm-systems}
+# **Section 4: Alarm Systems** {#section-4:-alarm-systems}
 
 ## **Fire Alarm:**  {#fire-alarm:}
 
@@ -144,7 +168,7 @@ Emergency Gas Off (EGO) and Fire Alarm is located in the gowning room next to th
 
 * Pressing the button will damage the instrument.
 
-# **Section 3: Emergency Response** {#section-3:-emergency-response}
+# **Section 5: Emergency Response** {#section-5:-emergency-response}
 
 ## **Fire** {#fire}
 
@@ -180,7 +204,7 @@ Immediately contact facility staff.
 
 * Shutdown water supply if you can identify the source.  DO NOT attempt to do anything if the flooding is near high voltage power supplies.  Immediately get away from anything hazardous.
 
-# **Section 4: Right to Know and Safety Data Sheets** {#section-4:-right-to-know-and-safety-data-sheets}
+# **Section 6: Right to Know and Safety Data Sheets** {#section-6:-right-to-know-and-safety-data-sheets}
 
 ## **Right to Know** {#right-to-know}
 
@@ -204,7 +228,7 @@ Copies of the SDS’s for all chemicals can be found in:
 * Digital copies stored in the MSDS folder in the shared NanoFab01 drive accessible within the ASRC network.  
 * Digital copies available as downloadable PDFs from the NanoFab website: https://asrc.gc.cuny.edu/facilities/nanofabrication/policies-procedures-resources/chemicals/
 
-# **Section 5: Chemical Safety** {#section-5:-chemical-safety}
+# **Section 7: Chemical Safety** {#section-7:-chemical-safety}
 
 ## **Chemical Hood Access and Use** {#chemical-hood-access-and-use}
 
@@ -231,7 +255,7 @@ The piranha/HF hood, caustics/metal etch hood and the RCA hood are all polypropy
   * Designated for RCA chemistries, including ammonium hydroxide (RCA 1), hydrochloric acid (RCA 2\) and hydrofluoric acid (HF dip).  
   * To be for the RCA cleaning process to prepare samples for oxide growths in the furnace.
 
-**![][image5]**
+**![](img/0bab8dcb1b6c.jpg){ width="624" }**
 
 ## **Chemical Storage** {#chemical-storage}
 
@@ -342,37 +366,14 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 **Showers and Eye Wash Stations**
 
-![][image6]
-
-**Cleanroom Egress**
-
-**Building Egress from the Cleanroom**
-
-**Evacuation Procedure**
-
-* Secure your process.
-
-* Do not de-gown, keep your gown on.
-
-* As you proceed to an exit door, ask other lab members to follow.
-
-* Exit the building through the nearest exits.
-
-* The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
-
-* Remain available to pass on details you have about events that lead to an evacuation.
+![](img/a2e77f0c432a.jpg){ width="624" }
 
 **Hoods and Carboys**
-
-* 
-
-* 
 
 * Pour waste into appropriate carboy.
 
 * Chutes are labeled directly above.
 
-**Showers and Eye Wash Stations**
 
 ## **Chemical Spills** {#chemical-spills}
 
@@ -531,15 +532,10 @@ In the case of such a spill, users are to do the following:
 
   * Call Public Safety (91 (212) 650-7777).
 
-![][image7]
 
-![][image8]
 
-[image1]: img/0040c3f24571.png
-[image2]: img/08c982587f12.jpg
-[image3]: img/63e2dbfb376c.jpg
-[image4]: img/08c982587f12.jpg
-[image5]: img/0bab8dcb1b6c.jpg
-[image6]: img/a2e77f0c432a.jpg
-[image7]: img/00b79aa65c1c.jpg
-[image8]: img/a46036c6d34a.jpg
+
+
+
+
+

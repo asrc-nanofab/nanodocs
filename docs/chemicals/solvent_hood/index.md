@@ -37,20 +37,20 @@ DI water and dry nitrogen guns are available in the hood for rinsing and blowing
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
-| Acetone \[2-propanone; Dimethyl ketone\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
-| Methanol \[Methyl alcohol\] | ![][image2]![][image5]![][image4] | Highly flammable liquid and vapor Causes damage to organs (eyes/central nervous system) Toxic if swallowed, in contact with skin or if inhaled |
-| Remover PG \[NMP; N-methylpyrrolidinone; N-methyl-2-pyrrolidone\] | ![][image3]![][image4] | Combustible liquid Causes skin irritation Causes serious eye irritation May cause respiratory irritation May damage fertility or the unborn child May cause damage to organs through prolonged or repeated exposure |
-| Ethanol \[Ethyl alcohol\] | ![][image2]![][image3] | Highly flammable liquid and vapor Causes serious eye irritation |
-| Toluene \[Toluol\] | ![][image2]![][image4]![][image3] | Highly flammable liquid and vapor May be fatal if swallowed and enters airways Causes skin irritation Causes serious eye irritation May cause drowsiness or dizziness Suspected of damaging fertility or the unborn child May cause damage to organs (central nervous system) through prolonged or repeated exposure |
-| Chloroform \[Trichloromethane\] | ![][image5]![][image4] | Harmful if swallowed Toxic if inhaled Causes skin irritation Causes serious eye irritation Suspected of causing cancer Suspected of damaging fertility or the unborn child May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs (liver, kidney) through prolonged or repeated exposure |
+| Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
+| Acetone \[2-propanone; Dimethyl ketone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
+| Methanol \[Methyl alcohol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes damage to organs (eyes/central nervous system) Toxic if swallowed, in contact with skin or if inhaled |
+| Remover PG \[NMP; N-methylpyrrolidinone; N-methyl-2-pyrrolidone\] | ![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Combustible liquid Causes skin irritation Causes serious eye irritation May cause respiratory irritation May damage fertility or the unborn child May cause damage to organs through prolonged or repeated exposure |
+| Ethanol \[Ethyl alcohol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Highly flammable liquid and vapor Causes serious eye irritation |
+| Toluene \[Toluol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Highly flammable liquid and vapor May be fatal if swallowed and enters airways Causes skin irritation Causes serious eye irritation May cause drowsiness or dizziness Suspected of damaging fertility or the unborn child May cause damage to organs (central nervous system) through prolonged or repeated exposure |
+| Chloroform \[Trichloromethane\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | Harmful if swallowed Toxic if inhaled Causes skin irritation Causes serious eye irritation Suspected of causing cancer Suspected of damaging fertility or the unborn child May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs (liver, kidney) through prolonged or repeated exposure |
 
 ## Physical Hazards
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
-| Pressurized gas | ![][image6] | Nitrogen guns in the hood are pressurized |
-| Hot Plate | ![][image7] | Can cause severe thermal burns |
+| Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
+| Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
 ## Routes of Exposure {#routes-of-exposure}
 
@@ -185,10 +185,9 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-[image1]: img/0040c3f24571.png
-[image2]: img/b0820edd970c.jpg
-[image3]: img/b1c097ef480a.png
-[image4]: img/933ea4999773.png
-[image5]: img/a4ada579aeba.jpg
-[image6]: img/e45aac766869.jpg
-[image7]: img/eb60111b034b.png
+
+
+
+
+
+

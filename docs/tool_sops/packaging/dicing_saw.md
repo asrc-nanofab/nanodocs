@@ -55,18 +55,18 @@ The Ultron UV Release System exposes the dicing tape to UV radiation making the 
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
-| Electric Shock | ![A yellow triangle sign with black lightning bolt][image1] | Tools operates with High voltage components |
-| Mechanical  Hazard  | ![Close-up of a machine with water droplets][image2] | Rotating blades at very high speed can cause serious cuts or amputations.  |
-| Slips and Falls | ![A yellow triangle sign with a person falling on the floor][image3] | Water overspray or leaks around the tool can make the floor wet and slippery, increase the risk of falls. |
+| Electric Shock | ![A yellow triangle sign with black lightning bolt](img/508e736200ef.jpg){ width="80" } | Tools operates with High voltage components |
+| Mechanical  Hazard  | ![Close-up of a machine with water droplets](img/572dc515982a.png){ width="129" } | Rotating blades at very high speed can cause serious cuts or amputations.  |
+| Slips and Falls | ![A yellow triangle sign with a person falling on the floor](img/a3c57bfc1c32.png){ width="75" } | Water overspray or leaks around the tool can make the floor wet and slippery, increase the risk of falls. |
 
 ## **Section 3- Routes of Exposure** {#section-3--routes-of-exposure}
 
 | Route | Description | Risks |
 | ----- | :---- | :---- |
-|  ![A red circle with a person's mouth open][image4]
+|  ![A red circle with a person's mouth open](img/a6a9732f9063.png){ width="97" }
 Inhalation | Breathing of aerosolized wafer particles (Si, GsAs, metal oxides) Volatile compounds from wafer residual | Allergic, respiratory irritation. GaAs can damage lung in long term exposure |
-| ![A red circle with a hand and drops of water][image5] Skin Contact | Direct contact with dicing slurry, DI water Blade edges, adhesive tape and cutter | Irritation,  Allergic Cuts or abrasion |
-| ![A red circle with a logo][image6] Eye Contact | Slurry splashes during cutting or cleaning Particles ejection from wafer or blade cracking | Eye irritation, Injury Discomfort |
+| ![A red circle with a hand and drops of water](img/c5718438518d.png){ width="101" } Skin Contact | Direct contact with dicing slurry, DI water Blade edges, adhesive tape and cutter | Irritation,  Allergic Cuts or abrasion |
+| ![A red circle with a logo](img/f24a3b923d0d.png){ width="100" } Eye Contact | Slurry splashes during cutting or cleaning Particles ejection from wafer or blade cracking | Eye irritation, Injury Discomfort |
 
 ## **Section 4 \- Personal Protective Equipment** {#section-4---personal-protective-equipment}
 
@@ -80,13 +80,13 @@ Material Requirements
 
 ### **Tape Mounter \- Mount Wafer on Film Frame** {#tape-mounter---mount-wafer-on-film-frame}
 
-*![../../../Downloads/Ultron%20Tape%20Mounter.JPG][image7]*
+*![../../../Downloads/Ultron%20Tape%20Mounter.JPG](img/aeeaae4d8c4f.jpg){ width="488" }*
 
 1. The Tape Mounter power is kept ON and at 25°C at all times. If you have developed a process at a different temperature, you can adjust the controller on the front of the tool. Remember to turn the temperature back to 25°C when you are done mounting your wafer.
 
 2. Place the wafer face down in the tape applicator, aligning the wafer with the straight-line grooves while centering it using the concentric circular grooves as guides.
 
-![../../../Downloads/20161020\_112111.jpg][image8]
+![../../../Downloads/20161020\_112111.jpg](img/6360ea9037c8.jpg){ width="421" }
 
 3. Center a film frame around the wafer, aligning the wafer frame notches with the three silver pins on the mounter surface. Film frames are kept on the wire rack to the left of the tape mounter table.
 
@@ -123,13 +123,13 @@ Material Requirements
 
    
 
-***![][image9]***
+***![](img/e7473f9251ab.jpg){ width="349" }***
 
 4. Press **BLADE SETUP** at the bottom left of the screen.
 
 5. In the Non-Contact Setup menu that comes up, press **START**.
 
-![][image10]
+![](img/af78736a687a.jpg){ width="378" }
 
 1. The machine will now measure the blade position 3 times.
 
@@ -156,7 +156,7 @@ DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
 
 4. Press **ENTER** to open file for editing.
 
-   ![][image11]
+   ![](img/2c7273322ad2.jpg){ width="421" }
 
    1. If editing, the fields to watch out for are:
 
@@ -292,7 +292,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 ***Critical emergency stopping procedure***
 
-*![][image12]*
+*![](img/4a5dd05b521a.jpg){ width="222" }*
 
 * The Emergency Off Switch (EMO switch) is a large red button below the key switches, shown in the picture below. The EMO switch should only ever be pressed in the event of imminent or current danger to the user.  
   * This button should never be pressed to stop an operation for any other reason.
@@ -395,7 +395,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 4. Affix nut demounting jig onto the flange lock nut. Turn counterclockwise until the flange lock nut is removed.  
    1. Press down on the center of the demounting jig release the clamps that attaches onto the flange lock nut.
 
-      ![A picture containing indoor, engine  Description automatically generated][image13]
+      ![A picture containing indoor, engine  Description automatically generated](img/c0d5c8e7e162.jpg){ width="304" }
 
 5. Remove flange.  
 6. Carefully remove existing blade and place in its case. Makes sure it is dry before closing the blade case.  
@@ -419,7 +419,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 14. Upload new blade data by pressing **USED BLADE LIST** on the bottom tool bar.
 
-![A white board with writing on it  Description automatically generated with low confidence][image14]
+![A white board with writing on it  Description automatically generated with low confidence](img/97e4f50d38f9.jpg){ width="374" }
 
 15. Select desired blade data. Press **ENTER**.
 
@@ -433,17 +433,16 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 20. Perform hairline alignment.
 
-[image1]: img/508e736200ef.jpg
-[image2]: img/572dc515982a.png
-[image3]: img/a3c57bfc1c32.png
-[image4]: img/a6a9732f9063.png
-[image5]: img/c5718438518d.png
-[image6]: img/f24a3b923d0d.png
-[image7]: img/aeeaae4d8c4f.jpg
-[image8]: img/6360ea9037c8.jpg
-[image9]: img/e7473f9251ab.jpg
-[image10]: img/af78736a687a.jpg
-[image11]: img/2c7273322ad2.jpg
-[image12]: img/4a5dd05b521a.jpg
-[image13]: img/c0d5c8e7e162.jpg
-[image14]: img/97e4f50d38f9.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+

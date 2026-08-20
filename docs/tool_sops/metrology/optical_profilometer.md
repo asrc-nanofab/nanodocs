@@ -39,7 +39,7 @@ All standard laboratory safety protocols must be followed throughout this proced
 
 | Hazard | Hazard Sign | Hazard Description |
 | ----- | :---: | ----- |
-| Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear][image1] | The optical profiler is equipped with a motorized stage that can create pinch points – areas where a person’s fingers can get caught or crushed. Do not move the stage with your hands near it. |
+| Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The optical profiler is equipped with a motorized stage that can create pinch points – areas where a person’s fingers can get caught or crushed. Do not move the stage with your hands near it. |
 
 
 # **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
@@ -65,7 +65,7 @@ N/A
 3. In the **Z control panel under Instrument Control**, select the speed at which you want to move the objective lens.  Drag the red mark in Z control up or down to adjust the height of the objective in order to bring the sample features into focus.  **WARNING: Constantly monitor the gap between the objective lens and sample while adjusting the Z position.  Crashing the objective lens into the sample will seriously damage the objective.**  
 4. The sample is in focus when you observe regularly spaced black and white fringes on the screen.
 
-![][image2]
+![](img/2695a8839f94.png){ width="436" }
 
 5. Portions of the image will appear red when the detector is saturated.  You can manually adjust the **intensity under Instrument Control** or select **Auto** for an automatic adjustment.  **Unselect Auto after each auto intensity adjustment.**  
 6. In the **Tip Tilt control panel under Instrument Control**, select the speed at which you want to move the objective.  Drag the red circle in Tip Tilt control from the center of the cross-hair to adjust the objective.  You need to adjust the tip and tilt such that the fringes are oriented perpendicular to any step features and expanded until there are around 5 fringes on the screen.  
@@ -94,9 +94,9 @@ N/A
 3. In the 2D view measurements can be made along cross-sections on the X and Y-axes.  These can be moved around the 2D field.  Make measurements by moving the R and M cursors to positions you wish to compare.  
 4. In the 3D view measurements can be made between points set by right-clicking on the 3D field.
 
-![][image3]
+![](img/4deb3c6d99e5.png){ width="624" }
 
-*![][image4]*
+*![](img/24eb927a3836.png){ width="624" }*
 
 ### **4.1.5.  Save Data** {#4.1.5.-save-data}
 
@@ -141,7 +141,6 @@ If the stages stop working, or the light is no longer working.
 
 If the stage is not working. Report this in Badger and send a message to staff. 
 
-[image1]: img/1091f6aa7e39.png
-[image2]: img/2695a8839f94.png
-[image3]: img/4deb3c6d99e5.png
-[image4]: img/24eb927a3836.png
+
+
+

@@ -41,9 +41,9 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
-| Thermal  | ![][image1] | Sample(s) and sample plate can get hot to touch |
-| Chrome | ![][image2]![][image3] | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
-| Silver | ![][image4]![][image5] | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
+| Thermal  | ![](img/eb60111b034b.png){ width="88" } | Sample(s) and sample plate can get hot to touch |
+| Chrome | ![](img/3c69e7170c3c.jpg){ width="98" }![](img/8b0deafcd5f4.png){ width="74" } | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
+| Silver | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
  **Respiratory irritation** from dust or vapor in poorly ventilated areas. |
 
 ## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
@@ -139,8 +139,7 @@ Reviewed/Revised:
 Salam Elhalabi  
  
 
-[image1]: img/eb60111b034b.png
-[image2]: img/3c69e7170c3c.jpg
-[image3]: img/8b0deafcd5f4.png
-[image4]: img/3c69e7170c3c.jpg
-[image5]: img/8b0deafcd5f4.png
+
+
+
+

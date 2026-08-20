@@ -37,7 +37,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
-| Gold | ![][image1]![][image2] | Gold is toxic to aquatic life in nanoparticulate form. **Inhalation risk** from dust or nanoparticles in poorly ventilated areas. |
+| Gold | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Gold is toxic to aquatic life in nanoparticulate form. **Inhalation risk** from dust or nanoparticles in poorly ventilated areas. |
 
 ## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
 
@@ -67,7 +67,7 @@ Equipment: substrate and tweezers
 
 Personal Protective Equipment: nitrile gloves
 
-![][image3]
+![](img/afd7c75083f7.png)
 
 **Procedure** 
 
@@ -189,6 +189,5 @@ Reviewed/Revised:
 Salam Elhalabi  
 
 
-[image1]: img/3c69e7170c3c.jpg
-[image2]: img/8b0deafcd5f4.png
-[image3]: img/afd7c75083f7.png
+
+

@@ -56,7 +56,9 @@ assembles a site page:
   images**. The Markdown export downscales images to ~640 px; the script matches
   each one against the docx originals (aspect ratio + pixel comparison) and swaps
   in the original when it's confidently the same picture and meaningfully larger.
-  Cropped or unmatched images safely keep the Markdown version.
+  Cropped or unmatched images safely keep the Markdown version. Upgraded images
+  keep the author's in-doc display size via a `width` attribute (so a QR code
+  displayed small in the doc stays small on the page, but is high-res when zoomed).
 - **PDF** (`export?format=pdf`) — refreshed into `docs/assets/pdfs/` so the site
   can offer an in-browser PDF view and a direct download.
 

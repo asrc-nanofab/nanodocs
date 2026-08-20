@@ -79,7 +79,7 @@ N/A
 5. Move the loading rod from the *parking* position and into the chamber until the sample carrier engages with the stage at the end of travel. Turn the rod counterclockwise to the base of the slot, pull the rod to the back of the slot, turn it clockwise out of the slot and then withdraw it back to the *parking* slot.  
 6. Close the gate valve by turning the knob bar to the UNLOCK position, pressing the knob in to engage the valve over the opening and then turn the knob to the LOCK position to secure it. Leave the load lock under vacuum.
 
-![][image1]
+![](img/80fda3a035e3.jpg){ width="589" }
 
 ####        **4.1.3.2. Loading Sample through Main Chamber**  {#4.1.3.2.-loading-sample-through-main-chamber}
 
@@ -87,7 +87,7 @@ N/A
 2. Once the chamber has finished venting, open the specimen chamber and insert the specimen holder with the sample into the slot on the stage.  
 3. Close the specimen chamber. Check to see that the proper vacuum mode is selected and click the **Pump** button.
 
-![][image2]
+![](img/5163229d1135.jpg){ width="353" }
 
 ### **4.1.4. Stage Movement – Navigation** {#4.1.4.-stage-movement-–-navigation}
 
@@ -132,7 +132,7 @@ N/A
 7. Remove your sample from the load lock.  
 8. Close the load lock lid and press the **P** button to evacuate the loader chamber.
 
-![][image3]
+![](img/2c9c5fe9abc5.jpg){ width="589" }
 
 #### **4.1.7.2. Unloading  Sample through the Main Chamber**  {#4.1.7.2.-unloading-sample-through-the-main-chamber}
 
@@ -187,6 +187,5 @@ N/A
 1. If the cooling water is not flowing.  
 2. If your sample gets stuck in the load lock door.
 
-[image1]: img/80fda3a035e3.jpg
-[image2]: img/5163229d1135.jpg
-[image3]: img/2c9c5fe9abc5.jpg
+
+

@@ -54,41 +54,41 @@ TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also 
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Nitric acid | ![][image2]![][image3]![][image4] | May intensify fire; oxidizer May be corrosive to metals Causes severe skin burns and eye damage Toxic if inhaled Corrosive to the respiratory tract |
-| Hydrochloric acid | ![][image5]![][image6] | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Corrosive to the respiratory tract |
-| Phosphoric acid | ![][image5]![][image6] | May be corrosive to metals Harmful if swallowed Causes severe skin burns and eye damage |
-| Citric acid | ![][image7] | Causes serious eye irritation May cause respiratory irritation |
-| Transene Chromium Etchant 1020 \[contains: nitric acid; ceric ammonium nitrate\] | ![][image5]![][image7]![][image8] | May be corrosive to metals Harmful if swallowed, in contact with skin or inhaled Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
-| Transene Aluminum Etchant Type A \[contains: nitric acid; phosphoric acid; acetic acid\] | ![][image5]![][image7]![][image3]![][image8] | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and eye damage May causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
-| Transene Aluminum Etchant Type D \[contains: sodium-m-nitrobenzene sulfonate; phosphoric acid; acetic acid\] | ![][image5]![][image7]![][image3]![][image8] | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and eye damage May causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
-| Transene Nickel Etchant TFB \[contains: nitric acid; potassium perfluoroalkyl sulfonate (surfactant)\] | ![][image5]![][image3]![][image8] | May be corrosive to metals Toxic if swallowed Fatal if inhaled Causes severe skin burns and eye damage Causes serious eye damage Causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
-| Transene Titanium Etchant TFTN \[contains: hydrochloric acid\] | ![][image5]![][image3] | May be corrosive to metals Fatal if swallowed Toxic if inhaled Causes severe skin burns and eye damage Causes serious eye damage |
-| Transene Transetch N \[contains: phosphoric acid\] | ![][image5]![][image7]![][image3]![][image8] | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and serious eye damage Causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure  |
-| Transene Copper Etchant CE-100 & ITO Etchant TE-100 \[contains: ferric chloride; hydrochloric acid\] | ![][image5]![][image7]![][image8] | May be corrosive to metals Harmful if swallowed Harmful if inhaled Causes severe skin burns and eye damage Causes serious eye damage Causes damage to organs (liver) through prolonged or repeated exposure |
+| Nitric acid | ![](img/676825a050ce.png){ width="95" }![](img/a4ada579aeba.jpg){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | May intensify fire; oxidizer May be corrosive to metals Causes severe skin burns and eye damage Toxic if inhaled Corrosive to the respiratory tract |
+| Hydrochloric acid | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Corrosive to the respiratory tract |
+| Phosphoric acid | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Harmful if swallowed Causes severe skin burns and eye damage |
+| Citric acid | ![](img/b1c097ef480a.png){ width="95" } | Causes serious eye irritation May cause respiratory irritation |
+| Transene Chromium Etchant 1020 \[contains: nitric acid; ceric ammonium nitrate\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed, in contact with skin or inhaled Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
+| Transene Aluminum Etchant Type A \[contains: nitric acid; phosphoric acid; acetic acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and eye damage May causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
+| Transene Aluminum Etchant Type D \[contains: sodium-m-nitrobenzene sulfonate; phosphoric acid; acetic acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and eye damage May causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
+| Transene Nickel Etchant TFB \[contains: nitric acid; potassium perfluoroalkyl sulfonate (surfactant)\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Toxic if swallowed Fatal if inhaled Causes severe skin burns and eye damage Causes serious eye damage Causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure |
+| Transene Titanium Etchant TFTN \[contains: hydrochloric acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/a4ada579aeba.jpg){ width="96" } | May be corrosive to metals Fatal if swallowed Toxic if inhaled Causes severe skin burns and eye damage Causes serious eye damage |
+| Transene Transetch N \[contains: phosphoric acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and serious eye damage Causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure  |
+| Transene Copper Etchant CE-100 & ITO Etchant TE-100 \[contains: ferric chloride; hydrochloric acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed Harmful if inhaled Causes severe skin burns and eye damage Causes serious eye damage Causes damage to organs (liver) through prolonged or repeated exposure |
 
 ### Caustics {#caustics}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Tetramethylammonium hydroxide | ![][image3]![][image8]![][image4]![][image9] | Fatal if swallowed or in contact with skin Causes severe skin burns and eye damage Causes damage to organs (central nervous system) Causes damage to organs (liver, thymus) through prolonged or repeated exposure in contact with skin Toxic to aquatic life with long lasting effects |
-| Ammonium hydroxide | ![][image5]![][image6]![][image9] | Causes severe skin burns and eye damage Harmful if swallowed May cause respiratory irritation Toxic to aquatic life with long lasting effects  |
-| Potassium hydroxide | ![][image5]![][image6] | May be corrosive to metals Harmful if swallowed Causes severe skin burns and eye damage May cause respiratory irritation Harmful to aquatic life |
-| Sodium hydroxide | ![][image5]![][image6] | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Harmful to aquatic life |
+| Tetramethylammonium hydroxide | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" }![](img/27f7133549e9.jpg){ width="96" } | Fatal if swallowed or in contact with skin Causes severe skin burns and eye damage Causes damage to organs (central nervous system) Causes damage to organs (liver, thymus) through prolonged or repeated exposure in contact with skin Toxic to aquatic life with long lasting effects |
+| Ammonium hydroxide | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/27f7133549e9.jpg){ width="96" } | Causes severe skin burns and eye damage Harmful if swallowed May cause respiratory irritation Toxic to aquatic life with long lasting effects  |
+| Potassium hydroxide | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Harmful if swallowed Causes severe skin burns and eye damage May cause respiratory irritation Harmful to aquatic life |
+| Sodium hydroxide | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Harmful to aquatic life |
 
 ### Oxidizers {#oxidizers}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Hydrogen peroxide | ![][image2]![][image7]![][image4]![][image10] | May intensify fire; oxidizer Harmful if swallowed or inhaled Causes severe skin burns and eye damage Toxic to aquatic life  Harmful to aquatic life with long lasting effects |
-| Transene Gold Etchant Type TFA & Silver Etchant TFS \[contains: iodine; potassium iodide | ![][image7]![][image8] | Harmful if swallowed Causes mild skin irritation Causes eye irritation Harmful to aquatic life May causes damage to endocrine or gastrointestinal system through prolonged or repeated exposure |
-| Transene Copper Etchant APS-100 \[contains: ammonium peroxydisulfate\] | ![][image2]![][image7] | May intensify fire; oxidizer Harmful if swallowed, in contact with skin or inhaled Causes skin irritation and serious eye irritation |
+| Hydrogen peroxide | ![](img/676825a050ce.png){ width="95" }![](img/b1c097ef480a.png){ width="95" }![](img/2e3c68d6de9b.jpg){ width="96" }![](img/27f7133549e9.jpg){ width="96" } | May intensify fire; oxidizer Harmful if swallowed or inhaled Causes severe skin burns and eye damage Toxic to aquatic life  Harmful to aquatic life with long lasting effects |
+| Transene Gold Etchant Type TFA & Silver Etchant TFS \[contains: iodine; potassium iodide | ![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Harmful if swallowed Causes mild skin irritation Causes eye irritation Harmful to aquatic life May causes damage to endocrine or gastrointestinal system through prolonged or repeated exposure |
+| Transene Copper Etchant APS-100 \[contains: ammonium peroxydisulfate\] | ![](img/676825a050ce.png){ width="95" }![](img/b1c097ef480a.png){ width="95" } | May intensify fire; oxidizer Harmful if swallowed, in contact with skin or inhaled Causes skin irritation and serious eye irritation |
 
 ## Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
-| Pressurized gas | ![][image11] | Nitrogen guns in the hood are pressurized |
-| Hot Plate | ![][image12] | Can cause severe thermal burns |
+| Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
+| Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
 ## Routes of Exposure {#routes-of-exposure}
 
@@ -286,15 +286,14 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-[image1]: img/0040c3f24571.png
-[image2]: img/676825a050ce.png
-[image3]: img/a4ada579aeba.jpg
-[image4]: img/2e3c68d6de9b.jpg
-[image5]: img/2e3c68d6de9b.jpg
-[image6]: img/b1c097ef480a.png
-[image7]: img/b1c097ef480a.png
-[image8]: img/933ea4999773.png
-[image9]: img/27f7133549e9.jpg
-[image10]: img/27f7133549e9.jpg
-[image11]: img/e45aac766869.jpg
-[image12]: img/eb60111b034b.png
+
+
+
+
+
+
+
+
+
+
+

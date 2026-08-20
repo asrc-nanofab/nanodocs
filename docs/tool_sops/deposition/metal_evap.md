@@ -42,11 +42,11 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
-| Bright e-beam | ![][image2] | Serious eye damage may occur if viewed directly at e-beam during use |
-| Electric Shock | ![][image3] | Tool operates in extremely high voltages (3-10kV). |
-| Thermal  | ![][image4] | Sample(s) and sample plate can get hot to touch |
-| Chrome | ![][image5]![][image6] | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
-| Silver | ![][image7]![][image8] | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
+| Bright e-beam | ![](img/de09a6b8829c.jpg){ width="83" } | Serious eye damage may occur if viewed directly at e-beam during use |
+| Electric Shock | ![](img/ab90af7d548b.jpg){ width="80" } | Tool operates in extremely high voltages (3-10kV). |
+| Thermal  | ![](img/eb60111b034b.png){ width="88" } | Sample(s) and sample plate can get hot to touch |
+| Chrome | ![](img/0bbce0ece39a.jpg){ width="98" }![](img/8b0deafcd5f4.png){ width="74" } | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
+| Silver | ![](img/0bbce0ece39a.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
  **Respiratory irritation** from dust or vapor in poorly ventilated areas. |
 
 ## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
@@ -261,19 +261,19 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 1. Open the gate valve to the loadlock, and **keep it open**.  
 2. Turn off the ion gauge, by pressing the **SENSOR ON/OFF** button  
    1. Shown in figure 8  
-      ![][image9]  
+      ![](img/69c9142ec327.png)  
 3. Shut off the top cryo pump.  
    1. Touch **Cr\_I** to make it go from **ON** to **OFF**  
    2. Shown in figure 9  
-      ![][image10]  
+      ![](img/a8661cbfecdc.png)  
 4. Turn on the Argon gas and start the flow at 5 sccm  
    1. On the touch screen, touch the gas box to edit the value  
    2. See figure 10  
-      ![][image11]  
+      ![](img/63ed86f82602.png)  
 5. Establish the chamber pressure to be about **5E-4 Torr** by cranking the lever on the bottom cryo  
    1. Use the loadlock gauge to verify the pressure  
    2. See figure 11 for the location of the bottom cryo lever.  
-      ![][image12]  
+      ![](img/f85ec30dbed2.png)  
 6. Setup your ion milling settings  
    1. Use the chart on the tool to help you with this  
       1. If you need to adjust a parameter, press the button that is next to it, and then turn the knob  
@@ -288,9 +288,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     3. The chamber will be very bright, please make sure to use welding goggles if you are going to look inside.  
        1. The filament for ion milling will glow and refer to figure 13 for what it should look like
 
-       ![][image13]
+       ![](img/b6cf8cd5798a.png)
 
-       ![][image14]
+       ![](img/6972756bc91a.png)
 
 11. Turn on rotation of the sample plate.  
     1. Flip the switch to **LOCAL** mode  
@@ -299,7 +299,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
        2. A green LED should be turned ON  
     3. Adjust the RPM knob to desired rotation speed  
     4. See figure 14 as an example for in-use  
-       ![][image15]  
+       ![](img/f213c9b44f17.png)  
 12. At this point, you are ready to mill. Open the substrate shutter and start a timer  
     1. The substrate shutter is **S\_SH**  
     2. You may see a red light appear for **Accel mAmp Limit** on the panel, this is ok.  
@@ -331,7 +331,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 2. Open the top cryo pump by pressing the **Cr\_I**   
    1. You may hear a hiss and pop sounds, this is normal.  
    2. See figure 13 for what the touch screen and the ion gauge panels should look like for idle state  
-      ![][image16]  
+      ![](img/9439c3777db2.png)  
 3. Open up completely the bottom cryo pump  
    1. Manually crank the level to **OPEN** position  
 4. **Make sure the gate valve is closed before venting the loadlock to remove your sample**  
@@ -345,31 +345,31 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
 ### *Loading Sample into the Main Chamber* {#loading-sample-into-the-main-chamber}
 
-![][image17]  
+![](img/f96f0dd97b2f.png){ width="407" }  
 *Figure 1*  
 The green dashed line shows that the green sharpie mark is aligned with the screw groove or red sharpie mark (whichever is easiest). *Note: the green sharpie mark will only appear if you can see the screw notched on the side, represented by the blue arrow.*  
-![][image18]  
+![](img/d4ffe3bd5182.png){ width="406" }  
 *Figure 2*  
 This point of view of looking through the loadlock viewport window. The loadarm paddle is directly below the sample plate. **The goal is to place the sample plate onto the middle step feature on the loadarm, represented by the blue arrows.** 
 
-![][image19]  
+![](img/184e257a83b7.png){ width="421" }  
 *Figure 3*  
 This point of view is looking into the main chamber from the viewport window. The yellow arrow points to the angle bracket. **The blue arrow shows where the sample plate should be placed onto the angle bracket.**  
-![][image20]  
+![](img/e23d5caf23ad.png){ width="365" }  
 *Figure 4*  
 The **bottom** sharpie denotes where the angle brackets should be placed to start the loading process. This is also where you leave the angle bracket when you want to transfer the sample plate back into the loadlock. The **top** sharpie mark is the minimum safe clearance to move the loadarm back to its home position safely. The blue dashed line shows where the angle bracket is at the 90mm mark, the deposition height. *Note: We align the angle bracket to the placemarkers by using the bottom edge of the brass rod.*
 
 ### *Preparing for Film Deposition* {#preparing-for-film-deposition}
 
-![][image21]  
+![](img/d904898b7ac4.png){ width="412" }  
 *Figure 5*  
 This is the main screen on the Inficon. On the top, in the yellow box, displays the current material recipe loaded, and the state of the process. Next to the blue arrow, is the “next menu” button, that cycles indefinitely through all of the options. Next to the orange arrow, is the “Auto/Manual” button, that you must confirm/adjust to read “Manual/Auto” for using the tool in manual mode. Next to the yellow arrow, is the “Start Layer” button, that you press **once** to start ramping up your deposition process. 
 
-![][image22]  
+![](img/a36201a4b1d3.png){ width="428" }  
 *Figure 6*  
 After you press the “Process Menu” button, it takes to this screen to select a material. Choose the material you will be depositioning, and **in order to make the selection (or move on to the next screen), you must press it twice.**
 
-![][image23]  
+![](img/dbd9583f0298.png){ width="500" }  
 *Figure 7*  
 When you are on this screen, you are editing the material’s recipe/process. The only parameter to edit here is the “Final Thickness”, which you **must set to a number higher than what you want on your sample**. The other 2 parameters: **“Start Mode” and “Sensor 1” must match this photo.** 
 
@@ -382,26 +382,25 @@ Date: June 9, 2026
 Reviewed/Revised:   
 Salam Garraway
 
-[image1]: img/0040c3f24571.png
-[image2]: img/de09a6b8829c.jpg
-[image3]: img/ab90af7d548b.jpg
-[image4]: img/eb60111b034b.png
-[image5]: img/0bbce0ece39a.jpg
-[image6]: img/8b0deafcd5f4.png
-[image7]: img/0bbce0ece39a.jpg
-[image8]: img/8b0deafcd5f4.png
-[image9]: img/69c9142ec327.png
-[image10]: img/a8661cbfecdc.png
-[image11]: img/63ed86f82602.png
-[image12]: img/f85ec30dbed2.png
-[image13]: img/b6cf8cd5798a.png
-[image14]: img/6972756bc91a.png
-[image15]: img/f213c9b44f17.png
-[image16]: img/9439c3777db2.png
-[image17]: img/f96f0dd97b2f.png
-[image18]: img/d4ffe3bd5182.png
-[image19]: img/184e257a83b7.png
-[image20]: img/e23d5caf23ad.png
-[image21]: img/d904898b7ac4.png
-[image22]: img/a36201a4b1d3.png
-[image23]: img/dbd9583f0298.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

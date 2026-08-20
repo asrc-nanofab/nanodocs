@@ -41,8 +41,8 @@ All standard laboratory safety protocols must be followed throughout this proced
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
-| Laser Hazard  | ![Laser safety - Wikipedia][image1] | AFMs typically use a **low-power laser** (often Class 1, 2, or sometimes 3R) that is directed at the back of the cantilever and reflected onto a photodetector. During probe/sample alignment users may be exposed to the beam either directly or via reflections. |
-| Electrical Shock Hazard High Voltage present | ![Electrical Shock Hazard][image2] | High voltage is present during AFM setup. Ensure the "High Voltage" light is OFF before installing the Z-piezo to the FastScan head. Failure to follow this procedure may result in **electrical shock** and serious injury. |
+| Laser Hazard  | ![Laser safety - Wikipedia](img/fe1e34a56bcd.png){ width="47" } | AFMs typically use a **low-power laser** (often Class 1, 2, or sometimes 3R) that is directed at the back of the cantilever and reflected onto a photodetector. During probe/sample alignment users may be exposed to the beam either directly or via reflections. |
+| Electrical Shock Hazard High Voltage present | ![Electrical Shock Hazard](img/5f681199c41f.png){ width="68" } | High voltage is present during AFM setup. Ensure the "High Voltage" light is OFF before installing the Z-piezo to the FastScan head. Failure to follow this procedure may result in **electrical shock** and serious injury. |
 
 # Section 3 – Routes of Exposure
 
@@ -76,15 +76,15 @@ NOTE: Adjustments can be made to optimize the view by zooming in or out on the v
 
 13. Calibrate the laser position so that the laser reticle shown in the UI matches that of the actual laser spot. Once complete, optimize laser position and auto-align the photodetector. The vertical target is generally set to 0.0 V but in uncommon cases may need to be adjusted depending on your sample and the experiment. 
 
-![][image3]
+![](img/7905bf937de8.png)
 
 14. Choose the tip location. The actual location of the tip must be selected for the most accurate measurements. If you are uncertain, you can find SEM micrographs of each Bruker tip on the Bruker website.
 
-![][image4]
+![](img/c26e2400ea22.png)
 
 15. Depending on the scanning mode, you may need to tune the cantilever which can be done using Auto Tune.
 
-![][image5]
+![](img/b9d06112c6e6.png){ width="347" }
 
 ### 4.1.2. Loading your sample
 
@@ -92,7 +92,7 @@ NOTE: Adjustments can be made to optimize the view by zooming in or out on the v
 2. Click on **Navigate** in the Workflow Toolbar. Move your sample below the scanning head.  
 3. Using the trackball and/or the Focus Sample submenu, bring the scanning head towards the surface of your sample. Focus on your sample surface. If the sample is transparent or reflective, use the Tip Reflection focus method instead of the default.
 
-![][image6]
+![](img/70009eccffa1.png){ width="409" }
 
 WARNING: Be very careful when focusing on the surface using the Z motor. Set speed to a low speed to reduce the risk of damage to the head, probe, and sample.
 
@@ -101,11 +101,11 @@ WARNING: Be very careful when focusing on the surface using the Z motor. Set spe
 
 ### 4.1.3.Sample Measurement
 
-1. Prior to engaging the surface, click on **Check Parameters** in the Workflow Toolbar. Set scan size 500nm and offsets 0 nm for not to damage the tip uring the engage. ![][image7]  
+1. Prior to engaging the surface, click on **Check Parameters** in the Workflow Toolbar. Set scan size 500nm and offsets 0 nm for not to damage the tip uring the engage. ![](img/09de4f0cb6fc.png){ width="239" }  
 2. Close the AFM acoustic and vibration isolation enclosure. Once ready, click **Engage** to begin the scan. The parameters can be adjusted during the scan but should be done with caution as it can destroy the sample or tip.  
 3. Image capture can be done using Capture Now, or Capture Continuous. It is recommended to select Capture Continuous. The file name and directory can be changed at any time.
 
-![][image8]
+![](img/fb28eec0c2f7.png)
 
 4. To scan another sample, move to a new sample location, or quit the experiment, select **Withdraw** from the Workflow Toolbar.
 
@@ -146,11 +146,10 @@ If the stage is not working or the Nanoscope software fails to start, or if ther
 
 If the above error occurs, inform the staff and report in the Badger.
 
-[image1]: img/fe1e34a56bcd.png
-[image2]: img/5f681199c41f.png
-[image3]: img/7905bf937de8.png
-[image4]: img/c26e2400ea22.png
-[image5]: img/b9d06112c6e6.png
-[image6]: img/70009eccffa1.png
-[image7]: img/09de4f0cb6fc.png
-[image8]: img/fb28eec0c2f7.png
+
+
+
+
+
+
+

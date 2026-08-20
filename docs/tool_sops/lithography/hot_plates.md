@@ -33,9 +33,9 @@ Does not apply.
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
-| Thermal  | ![][image1] | Hot plate can get **hot to touch.** |
-| Electrical  | ![][image2] | Operate on **high-voltage** systems. |
-| Chemical | ![][image3]![][image4] | Photoresists, developers, and solvents used during the fabrication process. Many are **toxic**, **flammable**, or **skin/eye irritants**. **Dangerous to the environment** if not properly disposed of. |
+| Thermal  | ![](img/eb60111b034b.png){ width="88" } | Hot plate can get **hot to touch.** |
+| Electrical  | ![](img/765f52c79e88.jpg){ width="80" } | Operate on **high-voltage** systems. |
+| Chemical | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="74" } | Photoresists, developers, and solvents used during the fabrication process. Many are **toxic**, **flammable**, or **skin/eye irritants**. **Dangerous to the environment** if not properly disposed of. |
 
 ## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
 
@@ -69,7 +69,6 @@ Reviewed/Revised:
 Salam Elhalabi  
 
 
-[image1]: img/eb60111b034b.png
-[image2]: img/765f52c79e88.jpg
-[image3]: img/3c69e7170c3c.jpg
-[image4]: img/8b0deafcd5f4.png
+
+
+

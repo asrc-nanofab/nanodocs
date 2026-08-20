@@ -417,4 +417,3 @@ Do not remove gloves, hairnet, facemask or booties until you’ve exited the gow
 
 * **When you register as a User of the ASRC NanoFabrication Facility, you will be directed to this document and asked to confirm your acceptance of the Rules of Conduct and Use.**
 
-[image1]: img/0ec11a43bb62.png

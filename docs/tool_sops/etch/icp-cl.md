@@ -18,10 +18,10 @@ Our lab has two ICP-RIEs- an ICP Fluorine (on the le***F***t) and an ICP Chlorin
 
 | Pictogram | Description |
 | :---- | :---- |
-| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a][image1] | Radio-frequency Energy/ Radiation |
-| ![Ultraviolet Hazard Symbol][image2] | Ultraviolet Radiation |
-| ![][image3] | Hot Surface  |
-| ![International Symbol Labels - Pinch Point, Safety Label | Emedco][image4] | Mechanical Pinch-Point |
+| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/1dc80d143fee.jpg){ width="88" } | Radio-frequency Energy/ Radiation |
+| ![Ultraviolet Hazard Symbol](img/52c9c5c8f31e.png){ width="90" } | Ultraviolet Radiation |
+| ![](img/343c08ec74e0.png) | Hot Surface  |
+| ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/30329e739885.jpg){ width="83" } | Mechanical Pinch-Point |
 
  
 
@@ -37,7 +37,7 @@ Be aware that hazardous flammable, oxidizing, corrosive, and acutely toxic (pote
 
 Any process recipe using a double-valve interlocked Hazardous Gas needs to incorporate a sufficient three-minute inert (Argon) purge step afterwards. The double-valve interlocked hazardous gasses on the ICP-Cl are BCl3, Cl2, H2, HBr, and CH4. There are currently no double-valve interlocked gasses in the ICP-F. 
 
-![][image5]
+![](img/6f445f6abc42.png){ width="624" }
 
 Only open the Loadlock when it has fully completed its “vent” process without any errors. If the Loadlock “vent” command produces an error, quickly command it to “pump” down again and contact staff. Do not continue to open the loadlock, even if it is at atmosphere. 
 
@@ -47,16 +47,16 @@ If you need to prematurely stop a process step with hazardous gasses, it is pref
 
 | Gas | GHS Labels | Hazards |
 | :---- | :---- | :---- |
-| **Hydrogen (H2)** | ![][image6]![][image7] | \-Gasses Under Pressure (may displace oxygen) \-Danger \-**Flammable\!**  |
+| **Hydrogen (H2)** | ![](img/3d2f8ede5b82.jpg){ width="59" }![](img/af60d5da5b89.jpg){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Danger \-**Flammable\!**  |
 | **Gas** | **GHS Labels** | **Hazards** |
-| **Methane (CH4)** | ![][image8]![][image9] | \-Gasses Under Pressure (may displace oxygen) \-Danger \-**Flammable\!**   |
-| **Chlorine (Cl2)** | ![][image10]![][image11]![][image12]![][image13]![][image14] | \-Gasses Under Pressure (may displace oxygen) \-Danger **\-Oxidizing\!** \-Acute Toxicity (inhalation) \-Skin Corrosion \-Serious Eye Damage \-Aquatic Hazard (Acute)     |
-| **Hydrogen Bromide (HBr)** | ![][image15]![][image16]![][image17]![][image18] | \-Gasses Under Pressure (may displace oxygen) \-Danger \-Acute Toxicity (inhalation) \-Skin Corrosion \-Serious Eye Damage \-Specific Target Organ Toxicity (Single Exposure)   |
-| **Argon (Ar)** | ![][image19] | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Simple Asphyxiant     |
-| **Oxygen (O2)** | ![][image19]![][image20] | \-Gasses Under Pressure  \-Danger \-**Oxidizing\!**   |
-| **Tetrafluoromethane (CF4)** | ![][image19] | \-Gasses Under Pressure (may displace oxygen) \-Warning   |
+| **Methane (CH4)** | ![](img/e12ba4c0212e.jpg){ width="59" }![](img/297dcd13f4a5.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Danger \-**Flammable\!**   |
+| **Chlorine (Cl2)** | ![](img/91f4d7cd52ab.jpg){ width="59" }![](img/1b605c4b40bb.jpg){ width="59" }![](img/fb5067689c89.jpg){ width="59" }![](img/c83b5b87fd19.jpg){ width="59" }![](img/f7b80a6ef38a.jpg){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Danger **\-Oxidizing\!** \-Acute Toxicity (inhalation) \-Skin Corrosion \-Serious Eye Damage \-Aquatic Hazard (Acute)     |
+| **Hydrogen Bromide (HBr)** | ![](img/fc4508dd8ef3.jpg){ width="59" }![](img/3cd031727ebd.png){ width="59" }![](img/3a24d419c0e2.png){ width="59" }![](img/26081ef8209a.png){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Danger \-Acute Toxicity (inhalation) \-Skin Corrosion \-Serious Eye Damage \-Specific Target Organ Toxicity (Single Exposure)   |
+| **Argon (Ar)** | ![](img/69f5a63d695d.jpg){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Simple Asphyxiant     |
+| **Oxygen (O2)** | ![](img/69f5a63d695d.jpg){ width="59" }![](img/25e9ea287403.png){ width="59" } | \-Gasses Under Pressure  \-Danger \-**Oxidizing\!**   |
+| **Tetrafluoromethane (CF4)** | ![](img/69f5a63d695d.jpg){ width="59" } | \-Gasses Under Pressure (may displace oxygen) \-Warning   |
 | **Gas** | **GHS Labels** | **Hazards** |
-| **Boron Trichloride (BCl3)**  | ![][image21]![][image22]![][image23]![][image24] | \-Gasses Under Pressure (liquified) (may displace oxygen) \-Danger \-Acute Toxicity (inhalation) \-Skin Corrosion \- Eye Damage \-Specific Target Organ Toxicity (Single Exposure)     |
+| **Boron Trichloride (BCl3)**  | ![](img/ac75d6d3aed4.jpg){ width="59" }![](img/ac223ba2a81d.jpg){ width="59" }![](img/3cd031727ebd.png){ width="59" }![](img/3a24d419c0e2.png){ width="59" } | \-Gasses Under Pressure (liquified) (may displace oxygen) \-Danger \-Acute Toxicity (inhalation) \-Skin Corrosion \- Eye Damage \-Specific Target Organ Toxicity (Single Exposure)     |
 
  
 
@@ -114,7 +114,7 @@ Cleanroom suits (including booties, hairnets, and hoods), nitrile cleanroom glov
 
 The form can also be accessed here:
 
-![][image25]
+![](img/33db609b8fb5.png){ width="185" }
 
 Fomblin oil is available for chip adherence to carrier wafer if needed.
 
@@ -145,7 +145,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 1. Insert your carrier/ conditioning wafer by venting the load lock *(Go to the “Transport” Tab and click “Vent” under Load Lock actions.)* **Wait until the entire automated vent process completes** and view pressure changes in the real-time chart to ensure successful purge completion. Venting to atmosphere is also indicated by the formation of grey and white dots in the loadlock illustration background. You may also hear a slight hissing noise as nitrogen escapes the load lock when at atmosphere. Once the automated vent process is completed, open the load lock porthole and insert the wafer shiny-side up, flat side touching the screws, and close the load lock porthole.
 
-![][image26]
+![](img/d0a043fcb17d.png){ width="624" }
 
 **Note**\- Wafer size is 4” only\! Be sure to center the wafer on the load arm, placing the flat edge between the two screws and ensuring the wafer contacts both screws. Tap it against screws and hold gently on sides to avoid shifts when under vacuum. An off-center wafer may be shattered in the main chamber. 
 
@@ -202,7 +202,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 **Note**\- Plasma glow will be visible from viewport when plasma is active:
 
- ![][image27]
+ ![](img/36e71f2287ff.png){ width="599" }
 
 > > > 
 
@@ -216,7 +216,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 3. Follow the steps in the previous section to execute your etch recipe. The etch recipe will likely vary from your conditioning etch only by the time of the etch step. The length of your etch process will often be longer than the conditioning step.   
 4. Remember to add your etch to the tool’s etch log\!
 
-**Note-** The double arrow  **![][image28]** buttons may be used to change the style of elements of the display. You can revert back to the original “**hybrid**” display via the “**View**” menu on the upper right hand corner. Some users may find the other, tabular display more convenient.
+**Note-** The double arrow  **![](img/ff1355d892f7.png)** buttons may be used to change the style of elements of the display. You can revert back to the original “**hybrid**” display via the “**View**” menu on the upper right hand corner. Some users may find the other, tabular display more convenient.
 
 > > > 4. **Clean**
 
@@ -311,31 +311,30 @@ Revision 4.0- May 22, 2025 (Structure updated with hazard information to match u
 
 Revision 5.0- May 18, 2026         (New Cleaning Protocol, other minor changes)
 
-[image1]: img/1dc80d143fee.jpg
-[image2]: img/52c9c5c8f31e.png
-[image3]: img/343c08ec74e0.png
-[image4]: img/30329e739885.jpg
-[image5]: img/6f445f6abc42.png
-[image6]: img/3d2f8ede5b82.jpg
-[image7]: img/af60d5da5b89.jpg
-[image8]: img/e12ba4c0212e.jpg
-[image9]: img/297dcd13f4a5.png
-[image10]: img/91f4d7cd52ab.jpg
-[image11]: img/1b605c4b40bb.jpg
-[image12]: img/fb5067689c89.jpg
-[image13]: img/c83b5b87fd19.jpg
-[image14]: img/f7b80a6ef38a.jpg
-[image15]: img/fc4508dd8ef3.jpg
-[image16]: img/3cd031727ebd.png
-[image17]: img/3a24d419c0e2.png
-[image18]: img/26081ef8209a.png
-[image19]: img/69f5a63d695d.jpg
-[image20]: img/25e9ea287403.png
-[image21]: img/ac75d6d3aed4.jpg
-[image22]: img/ac223ba2a81d.jpg
-[image23]: img/3cd031727ebd.png
-[image24]: img/3a24d419c0e2.png
-[image25]: img/33db609b8fb5.png
-[image26]: img/d0a043fcb17d.png
-[image27]: img/36e71f2287ff.png
-[image28]: img/ff1355d892f7.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -42,7 +42,7 @@ All standard laboratory safety protocols must be followed throughout this proced
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
-| Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear][image1] | The act of scanning your sample can cause the stage to move outward and rotate. Keep hands and fingers clear of sample stage while making measurements. |
+| Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The act of scanning your sample can cause the stage to move outward and rotate. Keep hands and fingers clear of sample stage while making measurements. |
 
 # **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
 
@@ -70,11 +70,11 @@ All standard laboratory safety protocols must be followed throughout this proced
 1. Place calibration wafer on the sample holder. The sample size switch on the side of the sample holder should be set to large for large wafers or small for small samples and then set the vacuum switch from vent to vacuum to hold the wafer in place.   
 2. Click on **Acquire Data-\>Align Sample** from the menu bar. You’ll be prompted to insert the alignment detector and then to adjust the positioning of the wafer; click **OKAY** when prompted to do so.   
 3. Adjust the alignment of the sample by turning the two knobs on the back of the sample holder. You need to center the red cross in the display while equalizing the intensity among the four quadrants. The X and Y values both need to be between \-1 and 1, as close to 0 as possible. Press **Esc** when you are finished.   
-   ![][image2]  
+   ![](img/4cba39d2d663.png){ width="547" }  
      
 4. Click **OKAY** when prompted to do so and then the system will then automatically align the z-stage.   
      
-   ![][image3]  
+   ![](img/06de764cd2fb.png){ width="547" }  
    
 
    ### **4.1.3.  System Calibration** {#4.1.3.-system-calibration}
@@ -163,6 +163,5 @@ Contact staff if the-stage alignment fails.
 
 1. If the stage alignment fails. Report this in Badger and send a message to staff. 
 
-[image1]: img/1091f6aa7e39.png
-[image2]: img/4cba39d2d663.png
-[image3]: img/06de764cd2fb.png
+
+

@@ -52,17 +52,17 @@ Some extra precautions should be taken if using hydrofluoric acid. Hydrofluoric 
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Ammonium hydroxide | ![][image2]![][image3]![][image4] | Causes severe skin burns and eye damage Harmful if swallowed May cause respiratory irritation Toxic to aquatic life with long lasting effects  |
-| Hydrochloric acid | ![][image2]![][image3] | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Corrosive to the respiratory tract |
-| Hydrogen peroxide | ![][image5]![][image3]![][image2]![][image4] | May intensify fire; oxidizer Harmful if swallowed or inhaled Causes severe skin burns and eye damage Toxic to aquatic life  Harmful to aquatic life with long lasting effects |
-| Hydrofluoric acid | ![][image6]![][image2] | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Fatal if swallowed, in contact with skin or if inhaled Corrosive to the respiratory tract |
+| Ammonium hydroxide | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/27f7133549e9.jpg){ width="96" } | Causes severe skin burns and eye damage Harmful if swallowed May cause respiratory irritation Toxic to aquatic life with long lasting effects  |
+| Hydrochloric acid | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Corrosive to the respiratory tract |
+| Hydrogen peroxide | ![](img/676825a050ce.png){ width="95" }![](img/b1c097ef480a.png){ width="95" }![](img/2e3c68d6de9b.jpg){ width="96" }![](img/27f7133549e9.jpg){ width="96" } | May intensify fire; oxidizer Harmful if swallowed or inhaled Causes severe skin burns and eye damage Toxic to aquatic life  Harmful to aquatic life with long lasting effects |
+| Hydrofluoric acid | ![](img/a4ada579aeba.jpg){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Fatal if swallowed, in contact with skin or if inhaled Corrosive to the respiratory tract |
 
 ## Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
-| Pressurized gas | ![][image7] | Nitrogen guns in the hood are pressurized |
-| Hot Plate | ![][image8] | Can cause severe thermal burns |
+| Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
+| Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
 ## Routes of Exposure {#routes-of-exposure}
 
@@ -278,11 +278,10 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-[image1]: img/0040c3f24571.png
-[image2]: img/2e3c68d6de9b.jpg
-[image3]: img/b1c097ef480a.png
-[image4]: img/27f7133549e9.jpg
-[image5]: img/676825a050ce.png
-[image6]: img/a4ada579aeba.jpg
-[image7]: img/e45aac766869.jpg
-[image8]: img/eb60111b034b.png
+
+
+
+
+
+
+

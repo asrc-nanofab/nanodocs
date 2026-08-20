@@ -78,12 +78,12 @@ The ALD growth process involves the use of volatile chemical reactants. Therefor
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
-| Electric Shock | ![A yellow triangle sign with black lightning bolt][image2] | RF generator works with high voltage supply. |
-| Thermal  | ![A yellow triangle sign with a hand over a surface][image3] | Sample(s) and sample holder can get hot to touch, even LL get heated up with the chamber’s high temperature. |
-| TDMHf | **![A red and black sign with a flameDescription automatically generated][image4]**![A warning sign with a red borderDescription automatically generated][image5]![A red and white sign with a skull and crossbonesDescription automatically generated][image6]![A sign with a person with a star in the centerDescription automatically generated][image7] | Vapor may form explosive mixing with air. It can cause burn to skin, eyes and respiratory tract and is toxic.  . |
-| TDMA | **![A red and black sign with a flameDescription automatically generated][image4]**![A red and white sign with a skull and crossbonesDescription automatically generated][image6] | Pyrophoric, may ignite in the moist air can form flammable and may cause skin and eye burns |
-| TDMSi | **![A red and black sign with a flameDescription automatically generated][image4]**![A sign with a person with a star in the centerDescription automatically generated][image7]![A warning sign with a red borderDescription automatically generated][image5] | Can form flammable vapors Release corrosive gases Can cause coughing, dizziness and respiratory distress. |
-| TDMTi | **![A red and black sign with a flameDescription automatically generated][image4]**![A warning sign with a red borderDescription automatically generated][image5]![A sign with a person with a star in the centerDescription automatically generated][image7] | Highly reactive in air. Skin and eye damage, respiratory irritation. |
+| Electric Shock | ![A yellow triangle sign with black lightning bolt](img/9fbf021183b8.jpg){ width="80" } | RF generator works with high voltage supply. |
+| Thermal  | ![A yellow triangle sign with a hand over a surface](img/eb60111b034b.png){ width="88" } | Sample(s) and sample holder can get hot to touch, even LL get heated up with the chamber’s high temperature. |
+| TDMHf | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A red and white sign with a skull and crossbonesDescription automatically generated](img/657e736dbfb3.jpg){ width="66" }![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" } | Vapor may form explosive mixing with air. It can cause burn to skin, eyes and respiratory tract and is toxic.  . |
+| TDMA | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A red and white sign with a skull and crossbonesDescription automatically generated](img/657e736dbfb3.jpg){ width="66" } | Pyrophoric, may ignite in the moist air can form flammable and may cause skin and eye burns |
+| TDMSi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" }![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" } | Can form flammable vapors Release corrosive gases Can cause coughing, dizziness and respiratory distress. |
+| TDMTi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" } | Highly reactive in air. Skin and eye damage, respiratory irritation. |
 
 ## **Section 3- Routes of Exposure** {#section-3--routes-of-exposure}
 
@@ -95,9 +95,9 @@ While transferring wafer from the loadlock, residual gases may escape, and Wafer
 
 | Sl. No. | Route | Description | Risks |
 | :---- | :---- | :---- | :---- |
-| 1 | ![A red circle with a person's mouth open][image8] Inhalation | Breathing toxic or reactive gas vapor/fumes | Headaches, dizziness, respiratory irritation, disorientation. |
-| 2 | ![A red circle with a hand and drops of water][image9]Skin Contact | Direct contact with leaked or condensed gas | Irritation, chemical burns or delayed skin reactions. |
-| 3 | ![A red circle with a logo][image10]Eye Contact | Irritation from gas fumes or splashes | Eye irritation, burn |
+| 1 | ![A red circle with a person's mouth open](img/a6a9732f9063.png){ width="97" } Inhalation | Breathing toxic or reactive gas vapor/fumes | Headaches, dizziness, respiratory irritation, disorientation. |
+| 2 | ![A red circle with a hand and drops of water](img/c5718438518d.png){ width="101" }Skin Contact | Direct contact with leaked or condensed gas | Irritation, chemical burns or delayed skin reactions. |
+| 3 | ![A red circle with a logo](img/f24a3b923d0d.png){ width="100" }Eye Contact | Irritation from gas fumes or splashes | Eye irritation, burn |
 
 ## **Section 4 \- Personal Protective Equipment** {#section-4---personal-protective-equipment}
 
@@ -115,7 +115,7 @@ Loading and unloading samples into the Fiji system can initially appear tricky i
 
 Figure 3 shows the software screen that you should encounter when coming to the tool. Note that both the load lock and process chamber are under vacuum, the Argon flow rate for MFC-0 is set to 5 sccm, the Argon flow rate for MFC 1 is set to 10 sccm, and heaters 13, 14, 15 are set to 100oC. 
 
-![][image11]
+![](img/194d4d3ddcfc.png)
 
 Figure 3 General Information of FIJI software screen
 
@@ -168,7 +168,7 @@ Verify that both the load lock and the reactor are under vacuum.
 
 Once the load lock has been pumped, it is ready to transfer the sample into the Reactor chamber. 
 
-![][image12]
+![](img/8b26c0b8581a.png)
 
 Figure 5 Isolating reactor chamber and Pumping LL
 
@@ -196,7 +196,7 @@ Figure 5 Isolating reactor chamber and Pumping LL
 
    
 
-![][image13]  
+![](img/820b661269ae.png)  
 Figure 6, Loading and pumping reactor sequences
 
 ### ***Run Recipe*** {#run-recipe}
@@ -215,7 +215,7 @@ You are now ready to run a recipe.
 
 NOTE: At the end of your recipe make sure to set the temperature of heaters 13, 14, and 15 back to 100 C **\[step 4\]**. This will allow the tool to cool down for the next user.
 
-![][image14]  
+![](img/911311f43dc0.png)  
 Figure 7 Loading recipe and modifying parameters
 
 ### ***Unload Sample*** {#unload-sample}
@@ -236,7 +236,7 @@ When unloading the sample, you must follow the above steps in reverse order. In 
 
    
 
-   ![][image15]
+   ![](img/cadc440a3100.png)
 
    
 
@@ -300,7 +300,7 @@ Figure 8, Unloading sample
 
 Figure 9 shows a typical pressure graph for a Plasma-Enhanced ALD process. If the pressure graph during your process does not look like this or you cannot see any pulse peaks, then something is wrong. All the precursor pulses should look identical, areas under those curves should be the same. You can change the “plot time” option in the ALD software to monitor the long-term progress.
 
-![][image16]  
+![](img/911311f43dc0.png){ width="604" }  
 Figure 9 Pressure graph and Pulse peaks
 
 **Common Troubleshooting Tips**
@@ -309,7 +309,7 @@ Figure 9 Pressure graph and Pulse peaks
 * Pressure gauge issues.   
   * Sometimes load lock pressure gauge and chamber low-pressure gauges will malfunction, when you notice the pressures are not reading correctly unplug the ethernet cable from the gauge for 10 seconds and again re-plug it, now orange and green LEDs will lite up **(Figure 10).**
 
-  ![][image17]
+  ![](img/bb85880b84ee.png)
 
   Figure 10 Pressure under the LL and Main Reactor chamber
 
@@ -331,20 +331,19 @@ Figure 9 Pressure graph and Pulse peaks
 1. Revision 1.0 \-January 2018 – MB created the original document  
 2. Revision 2.0 – June 2025 \- Rai
 
-[image1]: img/31762bc346af.png
-[image2]: img/9fbf021183b8.jpg
-[image3]: img/eb60111b034b.png
-[image4]: img/a80b2cde7a35.png
-[image5]: img/7558c2926e19.jpg
-[image6]: img/657e736dbfb3.jpg
-[image7]: img/bf7fa46e8661.png
-[image8]: img/a6a9732f9063.png
-[image9]: img/c5718438518d.png
-[image10]: img/f24a3b923d0d.png
-[image11]: img/194d4d3ddcfc.png
-[image12]: img/8b26c0b8581a.png
-[image13]: img/820b661269ae.png
-[image14]: img/911311f43dc0.png
-[image15]: img/cadc440a3100.png
-[image16]: img/911311f43dc0.png
-[image17]: img/bb85880b84ee.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -40,11 +40,11 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
-| Bright e-beam | ![][image1] | Serious eye damage may occur if viewed directly at e-beam during use |
-| Electric Shock | ![][image2] | Tool operates in extremely high voltages (3-10kV). |
-| Thermal  | ![][image3] | Sample(s) and sample plate can get hot to touch |
-| Chrome | ![][image4]![][image5] | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
-| Silver | ![][image6]![][image7] | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
+| Bright e-beam | ![](img/639ff255dd2a.jpg){ width="83" } | Serious eye damage may occur if viewed directly at e-beam during use |
+| Electric Shock | ![](img/765f52c79e88.jpg){ width="80" } | Tool operates in extremely high voltages (3-10kV). |
+| Thermal  | ![](img/eb60111b034b.png){ width="88" } | Sample(s) and sample plate can get hot to touch |
+| Chrome | ![](img/3c69e7170c3c.jpg){ width="98" }![](img/8b0deafcd5f4.png){ width="74" } | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
+| Silver | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
  **Respiratory irritation** from dust or vapor in poorly ventilated areas. |
 
 **Section 4 – Routes of Exposure**
@@ -141,7 +141,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
    1. Enter a film thickness **greater** than what you need to deposit  
    2. Verify that the Start Mode is in “Manual” mode  
    3. Sensor 1 must be “On”  
-   4. See figure 4 for reference ![][image8]  
+   4. See figure 4 for reference ![](img/c2f506ee7d12.png){ width="398" }  
 8. Go back to the main menu and go to the **Film menu**  
 9. Select the material desired to deposit  
 10.  In that material film menu screen, verify the following 2 items  
@@ -149,7 +149,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     2. The line that reads “**material”** matches to what you will be evaporating   
        1. This would be found towards the bottom of the screen  
        2. Do not look at the top of the screen to verify this information  
-       3. See figure 5 for reference![][image9]  
+       3. See figure 5 for reference![](img/5df2744c3222.png)  
 11. On the main menu, verify you are operating in “Man/Auto” (as opposed to Auto/Man)  
     1. You may have to click on **“Next Menu”** to see this option  
     2. A white box appears around the **“Power”** level column when you are in manual mode  
@@ -238,12 +238,11 @@ Date: March 11, 2026
 Reviewed/Revised:   
 Salam Elhalabi
 
-[image1]: img/639ff255dd2a.jpg
-[image2]: img/765f52c79e88.jpg
-[image3]: img/eb60111b034b.png
-[image4]: img/3c69e7170c3c.jpg
-[image5]: img/8b0deafcd5f4.png
-[image6]: img/3c69e7170c3c.jpg
-[image7]: img/8b0deafcd5f4.png
-[image8]: img/c2f506ee7d12.png
-[image9]: img/5df2744c3222.png
+
+
+
+
+
+
+
+

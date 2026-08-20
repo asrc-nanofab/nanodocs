@@ -139,6 +139,9 @@ MATCH_THUMB_SIZE = (24, 24)
 MATCH_MAX_DISTANCE = 30.0
 MATCH_ASPECT_TOLERANCE = 0.05
 UPGRADE_MIN_AREA_RATIO = 1.2
+# Google's markdown export caps image width at 640px; below the cap, the
+# exported size is the author's chosen display size in the doc
+MD_EXPORT_MAX_WIDTH = 640
 
 
 def _flatten(img: Image.Image) -> Image.Image:
@@ -234,10 +237,13 @@ def extract_images(
     page_dir: Path,
     docx_media: list[tuple[bytes, Image.Image]],
 ) -> str:
-    """Decode base64 image definitions into files and rewrite the references.
+    """Decode base64 image definitions into files and inline the references.
 
     The markdown export downscales images to ~640px; where a confidently
     matching original exists in the docx export, that is written instead.
+    Because the markdown-export size IS the author's chosen display size in
+    the doc (unless capped at 640px), upgraded images below the cap get an
+    attr_list width so e.g. QR codes stay small on the page but high-res.
     Files are named by content hash so identical images dedupe and re-runs
     are idempotent.
     """
@@ -246,12 +252,12 @@ def extract_images(
         return markdown
 
     img_dir.mkdir(parents=True, exist_ok=True)
-    replacements = {}
     upgraded = 0
     for label, match in defs.items():
         subtype, b64 = match.group(2), match.group(3)
         data = base64.b64decode(b64)
         ext = IMAGE_EXTENSIONS.get(subtype, subtype)
+        display_width = None
         try:
             md_img = Image.open(io.BytesIO(data))
             md_img.load()
@@ -264,15 +270,22 @@ def extract_images(
                 img_format = Image.open(io.BytesIO(data)).format or "png"
                 ext = IMAGE_EXTENSIONS.get(img_format.lower(), img_format.lower())
                 upgraded += 1
+                if md_img.width < MD_EXPORT_MAX_WIDTH:
+                    display_width = md_img.width
         filename = f"{hashlib.sha1(data).hexdigest()[:12]}.{ext}"
         (img_dir / filename).write_bytes(data)
-        rel = (img_dir / filename).relative_to(page_dir)
-        replacements[match.group(0)] = f"[{label}]: {rel.as_posix()}"
+        rel = (img_dir / filename).relative_to(page_dir).as_posix()
+
+        attr = f'{{ width="{display_width}" }}' if display_width else ""
+        markdown = re.sub(
+            rf"!\[([^\]]*)\]\[{label}\]",
+            lambda m, rel=rel, attr=attr: f"![{m.group(1)}]({rel}){attr}",
+            markdown,
+        )
+        markdown = markdown.replace(match.group(0), "")
 
     if upgraded:
         print(f"    {upgraded}/{len(defs)} images upgraded to docx originals")
-    for old, new in replacements.items():
-        markdown = markdown.replace(old, new)
     return markdown
 
 

@@ -36,13 +36,13 @@ This SOP is only for the general use of transferring microscale patterns from a 
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
-| Bright light | ![][image1] | **Serious eye damage** may occur if viewed directly at light during use |
-| UV Radiation | ![][image2] | UV radiation can cause **eye damage.** |
-| Thermal  | ![][image3] | Hg lamp can get **hot to touch.** |
-| Electrical  | ![][image4] | Operate on **high-voltage** systems for light sources and alignment mechanisms. |
-| Chemical | ![][image5] | Photoresists and developers used before and after exposure. Many are **toxic**, **flammable**, or **skin/eye irritants**. |
-| Pinching or Crushing | ![][image6] | **Moving parts** such as wafer stage and mask holder. |
-| Mercury | ![][image5]![][image7]![][image8] | Mercury vapor and liquid **are highly toxic.**  If the lamp breaks or leaks, it can release elemental mercury, which is: **A neurotoxin** when inhaled.
+| Bright light | ![](img/639ff255dd2a.jpg){ width="83" } | **Serious eye damage** may occur if viewed directly at light during use |
+| UV Radiation | ![](img/befa9626180f.png){ width="143" } | UV radiation can cause **eye damage.** |
+| Thermal  | ![](img/eb60111b034b.png){ width="88" } | Hg lamp can get **hot to touch.** |
+| Electrical  | ![](img/765f52c79e88.jpg){ width="80" } | Operate on **high-voltage** systems for light sources and alignment mechanisms. |
+| Chemical | ![](img/3c69e7170c3c.jpg){ width="99" } | Photoresists and developers used before and after exposure. Many are **toxic**, **flammable**, or **skin/eye irritants**. |
+| Pinching or Crushing | ![](img/8af46a2999c3.png){ width="95" } | **Moving parts** such as wafer stage and mask holder. |
+| Mercury | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="74" }![](img/ed12888b3ddb.jpg){ width="94" } | Mercury vapor and liquid **are highly toxic.**  If the lamp breaks or leaks, it can release elemental mercury, which is: **A neurotoxin** when inhaled.
  **Harmful to kidneys and other organs.
  Dangerous to the environment** if not properly disposed of.  |
 
@@ -96,27 +96,27 @@ Resolution
 
 \- Proximity: 2 – 4 µm 
 
-![][image9]  
+![](img/17e260a068cb.png)  
 \- Soft Contact: 1.5 – 3 µm
 
-![][image10]
+![](img/387c7c9126a4.png)
 
 Page **1** of **10** 
 
 Revision 1.0 Created February 26th, 2018   
-  ![][image11]
+  ![](img/3740fa68c648.png)
 
 Standard Operating Procedure: **Mask Aligner** 
 
 \- Hard Contact: 1 – 2 µm 
 
-![][image12]  
+![](img/c9f4ccf40e2c.png)  
 \- Vacuum Contact: ≤ 0.8 µm 
 
-![][image13]  
+![](img/07bfa8c87634.png)  
 \- Vacuum \+ Hard Contact 
 
-![][image14]\+  ![][image15]
+![](img/448a26a22a56.png){ width="225" }\+  ![](img/aea68ec828e2.png)
 
 Material Requirements 
 
@@ -134,7 +134,7 @@ Page **2** of **10**
 
 Revision 1.0 Created February 26th, 2018 
 
-  ![][image16]
+  ![](img/3740fa68c648.png)
 
 Standard Operating Procedure: **Mask Aligner** 
 
@@ -148,7 +148,7 @@ c. N2 Pressure: 6 ± 0.5 barr
 
 *Create Recipe* 
 
-*![][image17]*  
+*![](img/d403fa0da05e.png)*  
 1\. Press **New Recipe** under the RECIPES tab. 
 
 2\. General 🡪 Process: Main recipe parameter for process selection. 
@@ -172,7 +172,7 @@ a. Select
 Page **3** of **10** 
 
 Revision 1.0 Created February 26th, 2018   
-  ![][image18]
+  ![](img/3740fa68c648.png)
 
 Standard Operating Procedure: **Mask Aligner** 
 
@@ -182,12 +182,12 @@ a. Select
 
 8\. General 🡪 Separation: Distance used during the alignment process step. a. Input \> 30 µm 
 
-![][image19]  
+![](img/56377c613ab1.png)  
 9\. General 🡪 Proximity: Distance used during the exposure sequence 
 
 a. Input desired distance.  
 
-![][image20]  
+![](img/fbc8d8278993.png)  
 10\. General 🡪 Thickn. Mask: Mask thickness. 
 
 a. Input mask thickness. (2.3 mm for most quartz masks) 
@@ -206,9 +206,9 @@ a. Input estimated thickness of photoresist.
 
 17\. Press **Save Recipe As** 🡪 Enter desired file name 🡪 **Save** to save recipe.  *Run Process – Top Side Alignment* 
 
-1\. Open recipe by pressing **Open Recipe**. Select desired recipe. ![][image21]
+1\. Open recipe by pressing **Open Recipe**. Select desired recipe. ![](img/a91c74c02fe3.png)
 
-2\. Press **RUN ![][image22]**in the lower left portion of the recipe screen. 
+2\. Press **RUN ![](img/a5faae4369f0.png)**in the lower left portion of the recipe screen. 
 
 3\. Tool will instruct: “Begin Process – Press \<Continue\> Or \<Exit\>”.  
 
@@ -377,7 +377,7 @@ a. Process: **Man Bottomside**
 
 b. Process Mode: **Crosshair** 
 
-2\. Select **Run ![][image23]**on the recipe window. 
+2\. Select **Run ![](img/a5faae4369f0.png)**on the recipe window. 
 
 3\. Repeat *Step 3 – Step 11* of *Run Process – Top Side Alignment*. 
 
@@ -535,26 +535,25 @@ Reviewed/Revised:
 Salam Elhalabi  
 
 
-[image1]: img/639ff255dd2a.jpg
-[image2]: img/befa9626180f.png
-[image3]: img/eb60111b034b.png
-[image4]: img/765f52c79e88.jpg
-[image5]: img/3c69e7170c3c.jpg
-[image6]: img/8af46a2999c3.png
-[image7]: img/8b0deafcd5f4.png
-[image8]: img/ed12888b3ddb.jpg
-[image9]: img/17e260a068cb.png
-[image10]: img/387c7c9126a4.png
-[image11]: img/3740fa68c648.png
-[image12]: img/c9f4ccf40e2c.png
-[image13]: img/07bfa8c87634.png
-[image14]: img/448a26a22a56.png
-[image15]: img/aea68ec828e2.png
-[image16]: img/3740fa68c648.png
-[image17]: img/d403fa0da05e.png
-[image18]: img/3740fa68c648.png
-[image19]: img/56377c613ab1.png
-[image20]: img/fbc8d8278993.png
-[image21]: img/a91c74c02fe3.png
-[image22]: img/a5faae4369f0.png
-[image23]: img/a5faae4369f0.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

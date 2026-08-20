@@ -48,35 +48,35 @@ Two additional Brewer Cee spin coaters are located in the fume hoods in the lith
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
-| Acetone \[2-propanone; Dimethyl ketone\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
+| Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
+| Acetone \[2-propanone; Dimethyl ketone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
 
 ### EBL Resists {#ebl-resists}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| 495 PMMA A2, A4, A6 950 PMMA A2, A4 \[contains: anisole; poly(methyl methacrylate\]  | ![][image2]![][image3] | Flammable liquid and vapor Harmful if inhaled Causes skin irritation Causes serious eye irritation May cause respiratory irritation |
-| ma-N 2403 \[contains: 1-methyl-2-pyrrolidone; n-butyl acetate; cyclohexanone\] | ![][image2]![][image3] | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation |
-| ZEP 520A \[contains: anisole\] | ![][image2] | Flammable liquid and vapor |
+| 495 PMMA A2, A4, A6 950 PMMA A2, A4 \[contains: anisole; poly(methyl methacrylate\]  | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Harmful if inhaled Causes skin irritation Causes serious eye irritation May cause respiratory irritation |
+| ma-N 2403 \[contains: 1-methyl-2-pyrrolidone; n-butyl acetate; cyclohexanone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation |
+| ZEP 520A \[contains: anisole\] | ![](img/b0820edd970c.jpg){ width="96" } | Flammable liquid and vapor |
 
 ### Photoresists {#photoresists}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| AZ MiR 701 Photoresist \[contains: ethyl lactate; n-butyl acetate\] | ![][image2]![][image3] | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation May cause respiratory irritation |
-| AZ 1512, AZ 5214-E, AZ P4620 Photoresists | ![][image2]![][image3] | Flammable liquid and vapor Causes serious eye damage May cause respiratory irritation, drowsiness or dizziness |
-| Megaposit SPR 220-3.0, 7.0 Photoresists \[contains: ethyl lactate; anisole; 2-methyl butyl acetate; n-amyl acetate; 1,4-dioxane\] | ![][image2]![][image4]![][image5]![][image3] | Flammable liquid and vapor Causes serious eye damage May cause respiratory irritation May cause cancer |
-| Microposit S1813 Photoresist \[contains: propylene glycol monomethyl ether acetate; methoxy-1-propanol acetate; 1,4-dioxane\] | ![][image2]![][image3] | Flammable liquid and vapor May cause drowsiness or dizziness |
-| AZ 125nXT-7A Photoresist \[contains: 1-methoxy-2-propanol acetate; modified diacrylate; phenone derivative; triarylphosphine oxide\] | ![][image2]![][image5]![][image3]![][image6] | Flammable liquid and vapor Causes skin irritation May cause an allergic skin reaction Causes serious eye damage May cause respiratory irritation, drowsiness or dizziness Toxic to aquatic life with long lasting effects |
-| SU-8 2002, 2005, 2010, 2025, 2050, 2100 Photoresist \[contains: epoxy resin; cyclopentanone; hexafluoroantimonate salt; propylene carbonate; triarylsulfonium salt\] | ![][image2]![][image3]![][image4]![][image6] | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation May cause an allergic skin reaction Suspected of causing genetic defects Toxic to aquatic life with long lasting effects |
+| AZ MiR 701 Photoresist \[contains: ethyl lactate; n-butyl acetate\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation May cause respiratory irritation |
+| AZ 1512, AZ 5214-E, AZ P4620 Photoresists | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes serious eye damage May cause respiratory irritation, drowsiness or dizziness |
+| Megaposit SPR 220-3.0, 7.0 Photoresists \[contains: ethyl lactate; anisole; 2-methyl butyl acetate; n-amyl acetate; 1,4-dioxane\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/5be351cd4aeb.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes serious eye damage May cause respiratory irritation May cause cancer |
+| Microposit S1813 Photoresist \[contains: propylene glycol monomethyl ether acetate; methoxy-1-propanol acetate; 1,4-dioxane\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor May cause drowsiness or dizziness |
+| AZ 125nXT-7A Photoresist \[contains: 1-methoxy-2-propanol acetate; modified diacrylate; phenone derivative; triarylphosphine oxide\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/5be351cd4aeb.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/27f7133549e9.jpg){ width="96" } | Flammable liquid and vapor Causes skin irritation May cause an allergic skin reaction Causes serious eye damage May cause respiratory irritation, drowsiness or dizziness Toxic to aquatic life with long lasting effects |
+| SU-8 2002, 2005, 2010, 2025, 2050, 2100 Photoresist \[contains: epoxy resin; cyclopentanone; hexafluoroantimonate salt; propylene carbonate; triarylsulfonium salt\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" }![](img/27f7133549e9.jpg){ width="96" } | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation May cause an allergic skin reaction Suspected of causing genetic defects Toxic to aquatic life with long lasting effects |
 
 ## Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
-| High velocity spinning  | ![][image7] | High velocity objects can come loose from the spinner chuck if the vacuum fails while the spinner is in operation  |
-| Pressurized gas (for the hood spinners only) | ![][image7] | Nitrogen guns in the hood are pressurized |
-| Hotplate (for EBL spinner only) | ![][image8] | Hotplate is set to 180℃ at all times and can cause severe burns |
+| High velocity spinning  | ![](img/e45aac766869.jpg){ width="101" } | High velocity objects can come loose from the spinner chuck if the vacuum fails while the spinner is in operation  |
+| Pressurized gas (for the hood spinners only) | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
+| Hotplate (for EBL spinner only) | ![](img/eb60111b034b.png){ width="100" } | Hotplate is set to 180℃ at all times and can cause severe burns |
 
 ## Routes of Exposure {#routes-of-exposure}
 
@@ -278,11 +278,10 @@ o   Be careful to not get solvent anywhere but inside the vacuum opening.
 
 \-        https://www.brewerscience.com/processing-theories/spin-coat/
 
-[image1]: img/0040c3f24571.png
-[image2]: img/b0820edd970c.jpg
-[image3]: img/b1c097ef480a.png
-[image4]: img/933ea4999773.png
-[image5]: img/5be351cd4aeb.jpg
-[image6]: img/27f7133549e9.jpg
-[image7]: img/e45aac766869.jpg
-[image8]: img/eb60111b034b.png
+
+
+
+
+
+
+

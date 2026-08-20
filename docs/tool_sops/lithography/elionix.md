@@ -53,7 +53,7 @@ The Elionix E-Beam lithography tools use extremely high voltages.  Though the to
 
 | Pictogram | Description |
 | :---- | :---- |
-| ![][image2] |  High Voltage |
+| ![](img/d729a3d39d45.png){ width="100" } |  High Voltage |
 
  
 
@@ -79,7 +79,7 @@ The Elionix tools are in the lithography area which is designated class 100 and 
 
 After logging into Badger, you should ascertain the state of the machine.  The system is shown in the Figure below.  The only part of the system that you should interact with are the load lock where you will load your sample, and the Computer and keyboard.  **No other knobs or buttons should be touched. ** Below you will see images denoting the various parts of the machine
 
-![][image3]
+![](img/51e20c34e220.png)
 
 **Layout of the Elionix Tool Components**
 
@@ -89,7 +89,7 @@ When you get to the machine, the software that controls the Elionix hardware and
 * The “Beam Adjustment” tab  
 * The “Exposure” tab 
 
-![Graphical user interface, applicationDescription automatically generated][image4]
+![Graphical user interface, applicationDescription automatically generated](img/6fb0fc7652df.png){ width="498" }
 
 **Layout of the SEM Window**
 
@@ -115,7 +115,7 @@ When you get to the machine, the software that controls the Elionix hardware and
 * “Vent” the load-lock by flipping the toggle switch upward.  This usually only takes a minute.  When the system is vented the load lock door will easily slide open.    
 *  Pull the load-lock door open and mount your holder onto the arm.  The chuck should be held against the load lock door while threading the exchange rod into the chuck.  Be certain that the load-lock arm is tightened after the sample chuck is loaded to prevent movement.  
 
-![][image5]  
+![](img/b79cc71dd55b.png){ width="404" }  
 **Mounting and loading the sample into the chamber**
 
 * Press “Evacuate” on the load-lock and wait a minute.  It will flash green while evacuating but will be steady green when totally evacuated.  
@@ -134,7 +134,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 1. Go to the tab that has the recipe that corresponds to the current used to prepare your condition file.   Select the “Recall” radio button, then select the recipe you want.  A screen will pop up that asks you to confirm this choice.  Click ok.  You will see a magnet shaped icon while the magnets are degaussed.  When magnet icon goes away you can close the “Beam memory” screen.
 
-![][image6]         ![][image7]
+![](img/dc8172dd7e7c.png){ width="157" }         ![](img/e0f1d86ef5ac.png){ width="361" }
 
 **Beam Adjustment and Beam Memory windows**
 
@@ -151,7 +151,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 1. In the “Stage” panel now click on “Reference”.  This will move the stage to the position of an evaporated gold reference sample that is used to correct focus and stigmation.  Once the stage stops moving un-blank the beam again using “BLK” button from the top toolbar.  You will see a low-resolution image (250X) of the gold chip.  Zoom in using the magnification buttons (Top tool bar “High” and “Low”) above the SEM image to a value of 25,000X to 30,000X magnification.  At that magnification you will see a SEM image that looks like the following:
 
-   ![][image8]
+   ![](img/a71241c4106d.png){ width="424" }
 
    
 
@@ -168,7 +168,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 * Copy the Beamer output Folder to your directory From “User in CAD PC” to “Users on-line PC”  
 * Open a WECAS screen.  The top toolbar will look as follows:
 
-![][image9]
+![](img/50c01a081244.png){ width="451" }
 
 * Click on the blue “Edit Schedule Execution” button.  The following screen will come up: 
 
@@ -178,21 +178,21 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 * “Calculate Dose Time” will bring up the window shown below – **The Feed and Scan Pitch should match what you used in the conversion of your CAD file.**   Enter your area Dose and Beam current and click “Calculation” – This gives the shot clock time in µs/dot which you will need next.
 
 
-![Graphical user interface, applicationDescription automatically generated][image10]
+![Graphical user interface, applicationDescription automatically generated](img/b78a4cfabec8.png){ width="237" }
 
 * Click “Select CON file” (as seen below)  All CON files and the supporting files must be in the same directory.  If you only have one CON file your job will look as it does below.  It is convenient to leave the position shift for now at X \= 0, Y \= 0\.  We will position the pattern on your wafer/piece in a later step.
 
-![TableDescription automatically generated][image11]
+![TableDescription automatically generated](img/0040c3f24571.png){ width="558" }
 
 * Note that “Total Dose Time” \= “Dose  Time” \+ (“Dose Coefficient” \* Factor in .scon).  For some WECAS jobs you may want to set **“Dose Time” \= Calculated Base Dose** and the **Dose Coefficient \= 0\.**  
 * Also note that you can make one schedule file that uses multiple CON files and can shoot die at different doses for exposure dose array testing.  For example, the following is what such a schedule file might look like.  This was made using the “Matrix Con File“ button.  Note that there are 2 CON files here, each with 8 different doses at different positions on the wafer.
 
 
-![TableDescription automatically generated][image12]
+![TableDescription automatically generated](img/8eacd6aa97c2.png)
 
 * Press the Set Options Tab. If alignment is not necessary Set “Registration” to OFF, “Periodic Correction” to OFF and “Width Modulation” to OFF.  The only things that should be active are in the left-hand column under “X/Y Laser” as shown below.  (If alignment is needed, please see Appendix A)   
     
-  ![][image13]  
+  ![](img/471377d127b6.png){ width="530" }  
     
 * The most important parameter in this window is the “Z Preset (mm)” setting for the XY-laser.  This parameter tells the laser displacement meter the height of the substrate.  As of January of 2023 the Z-Preset value for a 500 micron thick Si substrate is \~3.0 mm.  This value will work if your wafer thickness including layers and resist and is is within 200 microns of this value.  If you are working with thinner or thicker substrates you will have to adjust the Z-Preset in the following way:  If it is thicker than 500um you will need to decrease the number.  (For instance: a 750 micron substrate would have a Z-preset of about 2.75mm.    
 *   Click “Next” in the Schedule Execution tab.  You will be prompted to save the Schedule file (.SC8 extension) to the same directory your CON files are in.  Change the name else it will save in the directory as “Default”.  The lower left hand corner of your pattern will be at X \= 0 Y \= 0 by default.  You will now see a blue-green tab **“Exp. Graphics”** menu as shown in the image here to the right.    
@@ -232,7 +232,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 ### **Appendix A:  Manual Alignment** {#appendix-a:-manual-alignment}
 
 Now we need to tell WECAS where the alignment marks are, relative to the (0,0) position of your original CAD output by BEAMER.  We Generally use 4 global marks, Denoted A,B,C and D, which are always oriented as shown below:  
-        ** ![][image14]**  
+        ** ![](img/a4ded59641e3.png){ width="217" }**  
 It is useful to create a bounding box in your GDS file that is the size of your chip, or at least encompasses all of your features (including alignment marks) as shown in gray in the image above.  This gives a Lower-left-hand (0,0) (x,y) position, to reference, and you need to program into WECAS the location of the 4 alignment marks with respect to this coordinate system in units of millimeters.
 
 Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, with a feature at the center that allows for easy alignment.  
@@ -241,7 +241,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 
 1. You need to tell WECAS that you will be doing alignment when you set up the initial schedule file.  We need to go back to the “Set Option” Button (From Section II Page 3 of this manual) and set values in the “Registration” column (indicated below).  For manual Alignment “Periodic Correction” and “width modulation” remain off \-- These are used only in “Auto” and “Full Auto” alignment modes.  
      
-   **![][image15]**  
+   **![](img/cb0be8bdee40.png){ width="568" }**  
      
 2. Click the “ON” radio button in the Registration Panel  
 3. Set “Control Type” to “Manual”  
@@ -249,7 +249,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 5. Set the “Search Position Repeatability” to 20-50 nm   
 6. Open the ASCII .scon file in notepad and add the following line (RS) between the lines PC and PX separated only by commas
 
-![][image16]  
+![](img/ca2583f6ea3b.png)  
 **Example of modification in the SCON file – Red Text is inserted into the file**
 
 7. Now when you display your schedule file (“Edit Schedule Execution”🡪”Next”) in WECAS you will see white crosses that represent the locations of your alignment marks.    
@@ -309,19 +309,18 @@ If the load lock door is not properly closed when the evacuate switch is toggled
 In the event of a pump failure, please make certain that you alert staff directly. 
 
 
-[image1]: img/0040c3f24571.png
-[image2]: img/d729a3d39d45.png
-[image3]: img/51e20c34e220.png
-[image4]: img/6fb0fc7652df.png
-[image5]: img/b79cc71dd55b.png
-[image6]: img/dc8172dd7e7c.png
-[image7]: img/e0f1d86ef5ac.png
-[image8]: img/a71241c4106d.png
-[image9]: img/50c01a081244.png
-[image10]: img/b78a4cfabec8.png
-[image11]: img/0040c3f24571.png
-[image12]: img/8eacd6aa97c2.png
-[image13]: img/471377d127b6.png
-[image14]: img/a4ded59641e3.png
-[image15]: img/cb0be8bdee40.png
-[image16]: img/ca2583f6ea3b.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

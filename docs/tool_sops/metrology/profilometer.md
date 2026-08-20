@@ -41,7 +41,7 @@ All standard laboratory safety protocols must be followed throughout this proced
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
-| Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear][image1] | The act of scanning your sample can cause the stage to move. Keep hands and fingers clear of sample stage while making measurements. |
+| Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The act of scanning your sample can cause the stage to move. Keep hands and fingers clear of sample stage while making measurements. |
 
 # **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
 
@@ -81,7 +81,7 @@ N/A
 4. In Measurement Options under Trace, select the Range and Profile best suited to what you are measuring.   
 5. Determine the length of the measurement by either entering a value in micrometers into Length or click the **Teach** icon next to it. When prompted, move the sample to the position from which you want the measurement to start and then click **Next**, then move the sample to the position where you want the measurement to end and then click **Done**. 
 
-![][image2]
+![](img/27f33caf0735.png){ width="589" }
 
 5. Determine the Resolution of your measurement by entering a value in seconds into Duration. Longer scans will resolve smaller structures and thus have better resolution.   
    1. Note: If you wish to perform a sequence of measurements, perform data stitching, or create a 3D map, those options are also available under Measurement Setup, but they are not necessary for a typical measurement.   
@@ -93,13 +93,13 @@ N/A
 2. Level the data if necessary, by selecting **Terms Removal (F-Operator)** in Data Analyzer, then move the R and M cursors to two points you expect should be level and then right-click the data and select **Two-Point Leveling**.   
    1. Note: There are many options for filtering and analyzing data available in Data Analyzer. For information on the different options, consult a Bruker manual.
 
-![][image3]
+![](img/b512b9255b9b.png){ width="562" }
 
 3. Make measurements by moving the R and M cursors to positions you wish to compare and then expand them in order to average over certain portions of the measurement.   
 4. A value for Total\_ASH (average step height) determined from the difference between the average heights of R and m will be displayed in Watch List.   
    1. Note: Watch List can be configured to display other data that you may wish to measure. 
 
-![][image4]
+![](img/05d68765349d.png){ width="562" }
 
 ### **4.1.5.  Save data** {#4.1.5.-save-data}
 
@@ -151,7 +151,6 @@ If the stage is not working. Or if the stylus is broken.
 
 If the Stylus is broken or the stage is not working. Report this in Badger and send a message to staff. 
 
-[image1]: img/1091f6aa7e39.png
-[image2]: img/27f33caf0735.png
-[image3]: img/b512b9255b9b.png
-[image4]: img/05d68765349d.png
+
+
+

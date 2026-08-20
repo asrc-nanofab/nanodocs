@@ -116,9 +116,9 @@ Nanoscribe GmbH supplies proprietary UV-curable photoresins to be utilized with 
 
 | Hazard | Hazard Sign | Hazard Description | Safety Protocol |
 | ----- | :---: | ----- | ----- |
-| Class 3B Laser | ![][image2] | Eye hazards: moderate risk level (120mW power) laser may cause immediate eye damage from viewing the direct beam or specular reflections. Skin hazards: prolonged skin exposure can cause burns or skin damage. | Laser shutter is interlocked to close whenever any of the system covers are opened.  Users cannot be exposed to the laser when the system is used as directed. |
-| Pinch Points | ![][image3] | Fingers may be trapped between moving parts if placed in the path of moving motorized stages causing minor cuts and bruising. | Stay clear of the motorized stages whenever they are in motion. |
-| 2PP Resins \[IP-Dip, IP-L, IP-S, IP-Visio, IP-PDMS, IP-Q\] | ![][image4]![][image5] | Causes serious eye irritation. Causes skin irritation. May cause an allergic skin reaction. Toxic to aquatic life with long lasting effects. | Users are required to wear cleanroom gloves and safety glasses at all times in the cleanroom.  It is also recommended to wear a second pair of nitrile gloves whenever handling photoresins.  Change gloves whenever gloves are soiled by photoresin.  Dispose of soiled gloves in a red garbage bin. |
+| Class 3B Laser | ![](img/8377c30dca3e.png){ width="102" } | Eye hazards: moderate risk level (120mW power) laser may cause immediate eye damage from viewing the direct beam or specular reflections. Skin hazards: prolonged skin exposure can cause burns or skin damage. | Laser shutter is interlocked to close whenever any of the system covers are opened.  Users cannot be exposed to the laser when the system is used as directed. |
+| Pinch Points | ![](img/40a3ff5c9d27.jpg){ width="100" } | Fingers may be trapped between moving parts if placed in the path of moving motorized stages causing minor cuts and bruising. | Stay clear of the motorized stages whenever they are in motion. |
+| 2PP Resins \[IP-Dip, IP-L, IP-S, IP-Visio, IP-PDMS, IP-Q\] | ![](img/0514f37e76d2.png){ width="106" }![](img/3bf4afce750c.jpg){ width="107" } | Causes serious eye irritation. Causes skin irritation. May cause an allergic skin reaction. Toxic to aquatic life with long lasting effects. | Users are required to wear cleanroom gloves and safety glasses at all times in the cleanroom.  It is also recommended to wear a second pair of nitrile gloves whenever handling photoresins.  Change gloves whenever gloves are soiled by photoresin.  Dispose of soiled gloves in a red garbage bin. |
 
 ## Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
 
@@ -164,7 +164,7 @@ Equipment: substrate, tweezers, three glass containers (for Surpass \[optional\]
 
 5\.     Confirm on the microscope controller that the objective turret (Z-stage) is in the lowest position.
 
-![][image6]
+![](img/348bf528149d.png){ width="291" }
 
 ## **Sample preparation** {#sample-preparation}
 
@@ -192,11 +192,11 @@ a.     Here is the cleaning procedure in the user manual (Chapter 5.3 of User\_M
 
 4\. 	Put a drop of oil or/and resist on the substrate carefully. *The following example is immersion configuration: resist on the bottom side.*
 
-*![][image7]*
+*![](img/09bdc866422d.jpg){ width="141" }*
 
 5\.     Insert the sample holder into the microscope module. Make sure that the sample holder is set at the right position. When the sample holder is inserted, you can hear a "click sound".
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe22.jpg][image8] ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe23.jpg][image9]
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe22.jpg](img/48b22b8c3ce2.jpg){ width="215" } ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe23.jpg](img/3814ea4e1d97.jpg){ width="216" }
 
 **Note**: There are the following three printing configurations (see Chapter 5.2 of User\_Manual in Nanobox file directory on the PC).
 
@@ -206,9 +206,9 @@ b.     Air configuration
 
 c.     Dip-in laser lithography (DiLL)
 
-![https://www.seas.upenn.edu/\~nanosop/images/configurations\_002.jpg][image10]
+![https://www.seas.upenn.edu/\~nanosop/images/configurations\_002.jpg](img/740b0e7dafe3.png)
 
-![https://www.seas.upenn.edu/\~nanosop/images/table1\_001.jpg][image11]
+![https://www.seas.upenn.edu/\~nanosop/images/table1\_001.jpg](img/e283ee916874.jpg){ width="451" }
 
 **Note**: Resolution depends on the objective lens and resist. 
 
@@ -222,19 +222,19 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
 2\.     Remove the cap from the pocket of the turret if it is present.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe46.jpg][image12]
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe46.jpg](img/7757310e17be.jpg){ width="241" }
 
 3\.     Remove the objective lens from the case. A white suction ring must be put on the objective lens.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg][image13] ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg][image14] 
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg](img/772aca86a7d9.jpg){ width="265" } ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg](img/aecbe9855262.jpg){ width="275" } 
 
 4\.     Install the objective lens on the objective turret of the microscope module.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe48.jpg][image15]![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe49.jpg][image16]![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe51.jpg][image17] 
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe48.jpg](img/22c0202d9fa8.jpg){ width="203" }![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe49.jpg](img/4eeea4e556bd.jpg){ width="204" }![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe51.jpg](img/8dff6935d124.jpg){ width="207" } 
 
 5\.     On the Zeiss touch screen, press the button of the objective lens installed, and the objective lens will move beneath the sample.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe52.jpg][image18]
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe52.jpg](img/d9fdb7ee9e39.jpg){ width="313" }
 
 ## **3D Writing Procedure** {#3d-writing-procedure}
 
@@ -242,21 +242,21 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
 2\.     Click the **OK** button. 
 
-![][image19]
+![](img/36a2ff413e28.png){ width="160" }
 
-3\.     Click the ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe33.jpg][image20] icon on the bottom of the screen, and the monitor window and illumination LED switches will be opened.  
+3\.     Click the ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe33.jpg](img/2842e74385f0.png) icon on the bottom of the screen, and the monitor window and illumination LED switches will be opened.  
 4\.     Click on the button of the transmission or reflection illumination.
 
  
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe32.jpg][image21]
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe32.jpg](img/d71608fec528.jpg){ width="535" }
 
    
 5\.     Click the **Approach Sample** button.
 
  
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe34.jpg][image22]
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe34.jpg](img/2b92e14e066f.jpg){ width="359" }
 
 6\.     When the right working distance is automatically found, the small interference fringes will be observed in the "Interface Finder" window, as shown below.  If the small interference fringes are not observed, or located at the wrong pixel, you have to click **Find Interface** later.
 
@@ -283,7 +283,7 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
  
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe36.jpg][image23]![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe37\_000.jpg][image24]
+![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe36.jpg](img/14eab77caebb.jpg){ width="219" }![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe37\_000.jpg](img/ad137c2e17d3.jpg){ width="355" }
 
  	9\.     Click **Start Job**.
 
@@ -370,7 +370,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
 \-           Users may use substrate/holder combinations according to the following parameters:
 
-![][image25]
+![](img/83f785b84eb9.png){ width="527" }
 
 \-           You must have permission from staff if you wish to use a holder/substrate combo different from this, which requires special training on finding the interface.
 
@@ -430,28 +430,27 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
 \-        No laser power reported during interface finding.
 
-[image1]: img/0040c3f24571.png
-[image2]: img/8377c30dca3e.png
-[image3]: img/40a3ff5c9d27.jpg
-[image4]: img/0514f37e76d2.png
-[image5]: img/3bf4afce750c.jpg
-[image6]: img/348bf528149d.png
-[image7]: img/09bdc866422d.jpg
-[image8]: img/48b22b8c3ce2.jpg
-[image9]: img/3814ea4e1d97.jpg
-[image10]: img/740b0e7dafe3.png
-[image11]: img/e283ee916874.jpg
-[image12]: img/7757310e17be.jpg
-[image13]: img/772aca86a7d9.jpg
-[image14]: img/aecbe9855262.jpg
-[image15]: img/22c0202d9fa8.jpg
-[image16]: img/4eeea4e556bd.jpg
-[image17]: img/8dff6935d124.jpg
-[image18]: img/d9fdb7ee9e39.jpg
-[image19]: img/36a2ff413e28.png
-[image20]: img/2842e74385f0.png
-[image21]: img/d71608fec528.jpg
-[image22]: img/2b92e14e066f.jpg
-[image23]: img/14eab77caebb.jpg
-[image24]: img/ad137c2e17d3.jpg
-[image25]: img/83f785b84eb9.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

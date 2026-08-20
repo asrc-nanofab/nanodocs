@@ -52,24 +52,24 @@ Hydrofluoric acid is an acid used for wet etching of oxides and some metals. Sin
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Sulfuric acid | ![][image2]![][image3] | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation  |
-| Hydrogen peroxide | ![][image4]![][image3]![][image2]![][image5] | May intensify fire; oxidizer Harmful if swallowed or inhaled Causes severe skin burns and eye damage Toxic to aquatic life  Harmful to aquatic life with long lasting effects |
-| Hydrofluoric acid | ![][image6]![][image2] | Fatal if swallowed, in contact with skin or if inhaled May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Corrosive to the respiratory tract |
-| Nitric acid | ![][image4]![][image7]![][image8] | May intensify fire; oxidizer May be corrosive to metals Causes severe skin burns and eye damage Toxic if inhaled Corrosive to the respiratory tract |
-| Acetic acid | ![][image9]![][image8] | Flammable liquid and vapor Causes severe skin burns and eye damage |
-| Transene BOE 6:1, BOE 20:1 & Buffered HF Improved \[contains: hydrofluoric acid; ammonium fluoride\] | ![][image7]![][image10]![][image8] | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones) Harmful to aquatic life |
-| Transene Titanium Etchant TFT \[contains: hydrofluoric acid; surfactant\] | ![][image7]![][image10]![][image8] | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones) Harmful to aquatic life |
-| Transene AlPad Etch 639 \[contains: hydrofluoric acid; ammonium fluoride; acetic acid; propylene glycol\] | ![][image7]![][image10]![][image8] | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones) |
-| Transene RSE 5:6:3, RSE-100 & RSE-200 \[contains: hydrofluoric acid; nitric acid; acetic acid\] | ![][image7]![][image10]![][image8] | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones, lungs, eyes, mucous membranes) Harmful to aquatic life |
-| Niobium Etchant Nb \[contains: hydrofluoric acid; nitric acid\] | ![][image7]![][image10]![][image8] | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones, lungs, eyes, mucous membranes) Harmful to aquatic life |
-| Transene Nickelex \[contains: nickel chloride hexahydrate; sodium hypophosphite; sodium succinate; hydrofluoric acid | ![][image3]![][image10] | Harmful if swallowed Causes mild skin irritation Causes eye irritation Harmful to aquatic life May cause harm to aquatic life with long lasting effects May cause cancer if swallowed Chronic exposure may cause mutagenicity or reproductive hazards |
+| Sulfuric acid | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation  |
+| Hydrogen peroxide | ![](img/676825a050ce.png){ width="95" }![](img/b1c097ef480a.png){ width="95" }![](img/2e3c68d6de9b.jpg){ width="96" }![](img/27f7133549e9.jpg){ width="96" } | May intensify fire; oxidizer Harmful if swallowed or inhaled Causes severe skin burns and eye damage Toxic to aquatic life  Harmful to aquatic life with long lasting effects |
+| Hydrofluoric acid | ![](img/a4ada579aeba.jpg){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed, in contact with skin or if inhaled May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Corrosive to the respiratory tract |
+| Nitric acid | ![](img/676825a050ce.png){ width="95" }![](img/a4ada579aeba.jpg){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | May intensify fire; oxidizer May be corrosive to metals Causes severe skin burns and eye damage Toxic if inhaled Corrosive to the respiratory tract |
+| Acetic acid | ![](img/b0820edd970c.jpg){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Flammable liquid and vapor Causes severe skin burns and eye damage |
+| Transene BOE 6:1, BOE 20:1 & Buffered HF Improved \[contains: hydrofluoric acid; ammonium fluoride\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones) Harmful to aquatic life |
+| Transene Titanium Etchant TFT \[contains: hydrofluoric acid; surfactant\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones) Harmful to aquatic life |
+| Transene AlPad Etch 639 \[contains: hydrofluoric acid; ammonium fluoride; acetic acid; propylene glycol\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones) |
+| Transene RSE 5:6:3, RSE-100 & RSE-200 \[contains: hydrofluoric acid; nitric acid; acetic acid\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones, lungs, eyes, mucous membranes) Harmful to aquatic life |
+| Niobium Etchant Nb \[contains: hydrofluoric acid; nitric acid\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones, lungs, eyes, mucous membranes) Harmful to aquatic life |
+| Transene Nickelex \[contains: nickel chloride hexahydrate; sodium hypophosphite; sodium succinate; hydrofluoric acid | ![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Harmful if swallowed Causes mild skin irritation Causes eye irritation Harmful to aquatic life May cause harm to aquatic life with long lasting effects May cause cancer if swallowed Chronic exposure may cause mutagenicity or reproductive hazards |
 
 ## Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
-| Pressurized gas | ![][image11] | Nitrogen guns in the hood are pressurized |
-| Hot Plate | ![][image12] | Can cause severe thermal burns |
+| Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
+| Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
 ## Routes of Exposure {#routes-of-exposure}
 
@@ -287,15 +287,14 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-[image1]: img/0040c3f24571.png
-[image2]: img/2e3c68d6de9b.jpg
-[image3]: img/b1c097ef480a.png
-[image4]: img/676825a050ce.png
-[image5]: img/27f7133549e9.jpg
-[image6]: img/a4ada579aeba.jpg
-[image7]: img/a4ada579aeba.jpg
-[image8]: img/2e3c68d6de9b.jpg
-[image9]: img/b0820edd970c.jpg
-[image10]: img/933ea4999773.png
-[image11]: img/e45aac766869.jpg
-[image12]: img/eb60111b034b.png
+
+
+
+
+
+
+
+
+
+
+

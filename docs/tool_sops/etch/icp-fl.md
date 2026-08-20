@@ -18,10 +18,10 @@ Our lab has two ICP-RIEs- an ICP Fluorine (on the le***F***t) and an ICP Chlorin
 
 | Pictogram | Description |
 | :---- | :---- |
-| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a][image1] | Radio-frequency Energy/ Radiation |
-| ![Ultraviolet Hazard Symbol][image2] | Ultraviolet Radiation |
-| ![][image3] | Hot Surface  |
-| ![International Symbol Labels - Pinch Point, Safety Label | Emedco][image4] | Mechanical Pinch-Point  |
+| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/1dc80d143fee.jpg){ width="88" } | Radio-frequency Energy/ Radiation |
+| ![Ultraviolet Hazard Symbol](img/52c9c5c8f31e.png){ width="90" } | Ultraviolet Radiation |
+| ![](img/343c08ec74e0.png) | Hot Surface  |
+| ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/30329e739885.jpg){ width="83" } | Mechanical Pinch-Point  |
 
  
 
@@ -45,14 +45,14 @@ If you need to prematurely stop a process step with hazardous gasses, it is pref
 
 | Gas | GHS Labels | Hazards |
 | :---- | :---- | :---- |
-| **Octafluorocyclobutane (C4F8)** | ![][image5] | \-Gasses Under Pressure (liquified) (may displace oxygen) \-Warning  |
-| **Sulfur Hexafluoride (SF6)**  | ![][image5] | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
-| **Oxygen (O2)** | ![][image5]![][image6] | \-Gasses Under Pressure  \-Danger \-**Oxidizing\!**  |
-| **Trifluoromethane (CHF3)** | ![][image5]![][image7] | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Specific Target Organ Toxicity \- Single Exposure  |
-| **Tetrafluoromethane (CF4)** | ![][image5] | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
-| **Argon (Ar)** | ![][image5] | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Simple Asphyxiant  |
-| **Nitrogen (N2)** | ![][image5] | \-Gasses Under Pressure (may displace oxygen) \-Simple Asphyxiant |
-| **Helium (He)** | ![][image5] | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
+| **Octafluorocyclobutane (C4F8)** | ![](img/fa351da05549.png){ width="61" } | \-Gasses Under Pressure (liquified) (may displace oxygen) \-Warning  |
+| **Sulfur Hexafluoride (SF6)**  | ![](img/fa351da05549.png){ width="61" } | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
+| **Oxygen (O2)** | ![](img/fa351da05549.png){ width="61" }![](img/d448c6d812c6.png){ width="60" } | \-Gasses Under Pressure  \-Danger \-**Oxidizing\!**  |
+| **Trifluoromethane (CHF3)** | ![](img/fa351da05549.png){ width="61" }![](img/99eb0ae3e33b.png){ width="60" } | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Specific Target Organ Toxicity \- Single Exposure  |
+| **Tetrafluoromethane (CF4)** | ![](img/fa351da05549.png){ width="61" } | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
+| **Argon (Ar)** | ![](img/fa351da05549.png){ width="61" } | \-Gasses Under Pressure (may displace oxygen) \-Warning \-Simple Asphyxiant  |
+| **Nitrogen (N2)** | ![](img/fa351da05549.png){ width="61" } | \-Gasses Under Pressure (may displace oxygen) \-Simple Asphyxiant |
+| **Helium (He)** | ![](img/fa351da05549.png){ width="61" } | \-Gasses Under Pressure (may displace oxygen) \-Warning  |
 
 For Full MSDS Information, Visit:
 
@@ -111,7 +111,7 @@ Cleanroom suits (including booties, hairnets, and hoods), nitrile cleanroom glov
 
 The form can also be accessed here:
 
-![][image8]
+![](img/33db609b8fb5.png){ width="185" }
 
 Fomblin oil is available for chip adherence to carrier wafer if needed.
 
@@ -142,7 +142,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 1. Insert your carrier wafer or conditioning wafer by venting the load lock *(Go to the “Transport” Tab and click “Vent” under Load Lock quick actions. Wait until the entire Process completes and view pressure changes in the real-time chart. Venting is also indicated by the formation of grey and white dots in the loadlock background. When it is ready to be opened you will also hear a slight hissing noise as nitrogen escapes the load lock. Then open the load lock porthole and insert the wafer shiny-side up, flat side touching the screws, and close the load lock porthole.)*
 
-![][image9]
+![](img/d0a043fcb17d.png){ width="624" }
 
 **Note**\- Wafer size is 4” only\! Be sure to center the wafer on the load arm, placing the flat edge between the two screws and ensuring the wafer contacts both screws. Tap it against screws and hold gently on sides to avoid shifts when under vacuum. An off-center wafer may be shattered in the main chamber. 
 
@@ -194,7 +194,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
 **Note**\- Plasma glow will likely be visible from viewport when plasma is active:
 
- ![][image10]
+ ![](img/36e71f2287ff.png){ width="599" }
 
 > > > 
 
@@ -207,7 +207,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 3. Follow the steps in the previous section to execute your etch recipe. The etch recipe will likely vary from your conditioning etch only by the time of the etch step. The length of your etch process will often be longer than the conditioning step.   
 4. Remember to add your etch to the tool’s etch log\!
 
-**Note-** The double arrow  **![][image11]** buttons may be used to change the style of elements of the display. You can revert back to the original “**hybrid**” display via the “**View**” menu on the upper right hand corner. Some users may find the other, tabular display more convenient.
+**Note-** The double arrow  **![](img/ff1355d892f7.png)** buttons may be used to change the style of elements of the display. You can revert back to the original “**hybrid**” display via the “**View**” menu on the upper right hand corner. Some users may find the other, tabular display more convenient.
 
 > > > 4. **Clean**
 
@@ -330,14 +330,13 @@ My signature below indicates that I have read this SOP and will abide by all rul
 |  |  |  |
 |  |  |  |
 
-[image1]: img/1dc80d143fee.jpg
-[image2]: img/52c9c5c8f31e.png
-[image3]: img/343c08ec74e0.png
-[image4]: img/30329e739885.jpg
-[image5]: img/fa351da05549.png
-[image6]: img/d448c6d812c6.png
-[image7]: img/99eb0ae3e33b.png
-[image8]: img/33db609b8fb5.png
-[image9]: img/d0a043fcb17d.png
-[image10]: img/36e71f2287ff.png
-[image11]: img/ff1355d892f7.png
+
+
+
+
+
+
+
+
+
+

@@ -58,31 +58,31 @@ TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also 
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
-| Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
-| Acetone \[2-propanone; Dimethyl ketone\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
-| Methanol \[Methyl alcohol\] | ![][image2]![][image5]![][image4] | Highly flammable liquid and vapor Causes damage to organs (eyes/central nervous system) Toxic if swallowed, in contact with skin or if inhaled |
-| Ethanol \[Ethyl alcohol\] | ![][image6]![][image7] | Highly flammable liquid and vapor Causes serious eye irritation |
-| SU-8 Developer \[PGMEA; Propylene glycol methyl ether acetate; 1-methoxy-2-propanol acetate\] | ![][image2]![][image3]![][image4] | Flammable liquid and vapor May cause drowsiness or dizziness May damage fertility or the unborn child |
-| Methyl isobutyl ketone \[MIBK; 4-methyl-2-pentanone\] | ![][image2]![][image3]![][image4] | Highly flammable liquid and vapor Causes serious eye irritation Harmful if inhaled May cause drowsiness or dizziness Suspected of causing cancer |
-| Amyl acetate \[Pentyl acetate\] | ![][image2]![][image3] | Flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation |
-| o-Xylene \[ortho-xylene; 1,2-dimethylbenzene\] | ![][image2]![][image4]![][image3] | Flammable liquid and vapor Harmful if inhaled May be fatal if swallowed and enters airways Harmful in contact with skin Causes skin irritation Causes serious eye irritation May cause respiratory irritation Suspected of causing cancer May cause damage to organs (central nervous system, liver, kidneys) through prolonged or repeated exposure |
-| Anisole | ![][image2]![][image3] | Flammable liquid and vapor May cause drowsiness or dizziness Harmful to aquatic life |
-| Surpass 3000 | ![][image3] | May causes skin irritation May cause respiratory irritation |
-| Cyclopentanone | ![][image2]![][image3] | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation |
-| Chlorobenzene | ![][image2]![][image3]![][image8] | Flammable liquid and vapor May causes skin irritation Harmful if swallowed Toxic to aquatic life with long lasting effects |
-| Toluene \[Toluol\] | ![][image2]![][image4]![][image3] | Highly flammable liquid and vapor May be fatal if swallowed and enters airways Causes skin irritation Causes serious eye irritation May cause drowsiness or dizziness Suspected of damaging fertility or the unborn child May cause damage to organs (central nervous system) through prolonged or repeated exposure |
-| Chlorotrimethylsilane | ![][image2]![][image5]![][image9] | Highly flammable liquid and vapor May be toxic if swallowed or if inhaled Harmful in contact with skin Causes severe skin burns and eye damage |
-| AZ 300 MIF Developer \[contains: tetramethylammonium hydroxide (\<3%)\] | ![][image9]![][image3] | May be corrosive to metals Harmful if swallowed Causes skin irritation Causes serious eye irritation |
-| AZ 726 MIF Developer \[contains: tetramethylammonium hydroxide (\<3%)\] | ![][image9]![][image3] | May be corrosive to metals Harmful if swallowed Causes skin irritation Causes serious eye irritation |
-| MF-24A Developer \[contains: tetramethylammonium hydroxide (\<3%)\] | ![][image9]![][image3] | May be corrosive to metals Harmful if swallowed Causes skin irritation Causes serious eye irritation |
-| AZ 400K 4:1 Developer \[contains: potassium borates (\<15%)\] | ![][image9]![][image4] | May be corrosive to metals Causes mild skin irritation Causes eye irritation May damage fertility or the unborn child |
+| Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
+| Acetone \[2-propanone; Dimethyl ketone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
+| Methanol \[Methyl alcohol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes damage to organs (eyes/central nervous system) Toxic if swallowed, in contact with skin or if inhaled |
+| Ethanol \[Ethyl alcohol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Highly flammable liquid and vapor Causes serious eye irritation |
+| SU-8 Developer \[PGMEA; Propylene glycol methyl ether acetate; 1-methoxy-2-propanol acetate\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Flammable liquid and vapor May cause drowsiness or dizziness May damage fertility or the unborn child |
+| Methyl isobutyl ketone \[MIBK; 4-methyl-2-pentanone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation Harmful if inhaled May cause drowsiness or dizziness Suspected of causing cancer |
+| Amyl acetate \[Pentyl acetate\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation |
+| o-Xylene \[ortho-xylene; 1,2-dimethylbenzene\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Harmful if inhaled May be fatal if swallowed and enters airways Harmful in contact with skin Causes skin irritation Causes serious eye irritation May cause respiratory irritation Suspected of causing cancer May cause damage to organs (central nervous system, liver, kidneys) through prolonged or repeated exposure |
+| Anisole | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor May cause drowsiness or dizziness Harmful to aquatic life |
+| Surpass 3000 | ![](img/b1c097ef480a.png){ width="95" } | May causes skin irritation May cause respiratory irritation |
+| Cyclopentanone | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation |
+| Chlorobenzene | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/27f7133549e9.jpg){ width="96" } | Flammable liquid and vapor May causes skin irritation Harmful if swallowed Toxic to aquatic life with long lasting effects |
+| Toluene \[Toluol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Highly flammable liquid and vapor May be fatal if swallowed and enters airways Causes skin irritation Causes serious eye irritation May cause drowsiness or dizziness Suspected of damaging fertility or the unborn child May cause damage to organs (central nervous system) through prolonged or repeated exposure |
+| Chlorotrimethylsilane | ![](img/b0820edd970c.jpg){ width="96" }![](img/a4ada579aeba.jpg){ width="96" }![](img/5be351cd4aeb.jpg){ width="96" } | Highly flammable liquid and vapor May be toxic if swallowed or if inhaled Harmful in contact with skin Causes severe skin burns and eye damage |
+| AZ 300 MIF Developer \[contains: tetramethylammonium hydroxide (\<3%)\] | ![](img/5be351cd4aeb.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Harmful if swallowed Causes skin irritation Causes serious eye irritation |
+| AZ 726 MIF Developer \[contains: tetramethylammonium hydroxide (\<3%)\] | ![](img/5be351cd4aeb.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Harmful if swallowed Causes skin irritation Causes serious eye irritation |
+| MF-24A Developer \[contains: tetramethylammonium hydroxide (\<3%)\] | ![](img/5be351cd4aeb.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Harmful if swallowed Causes skin irritation Causes serious eye irritation |
+| AZ 400K 4:1 Developer \[contains: potassium borates (\<15%)\] | ![](img/5be351cd4aeb.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Causes mild skin irritation Causes eye irritation May damage fertility or the unborn child |
 |  |  |  |
 
 ## Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
-| Pressurized gas (for the hood spinners only) | ![][image10] | Nitrogen guns in the hood are pressurized |
+| Pressurized gas (for the hood spinners only) | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 
 ## Routes of Exposure {#routes-of-exposure}
 
@@ -225,13 +225,12 @@ If a spill occurs outside the hood:
 
 4/7/26- Updated with TMAH Hazard Section
 
-[image1]: img/0040c3f24571.png
-[image2]: img/b0820edd970c.jpg
-[image3]: img/b1c097ef480a.png
-[image4]: img/933ea4999773.png
-[image5]: img/a4ada579aeba.jpg
-[image6]: img/b0820edd970c.jpg
-[image7]: img/b1c097ef480a.png
-[image8]: img/27f7133549e9.jpg
-[image9]: img/5be351cd4aeb.jpg
-[image10]: img/e45aac766869.jpg
+
+
+
+
+
+
+
+
+
