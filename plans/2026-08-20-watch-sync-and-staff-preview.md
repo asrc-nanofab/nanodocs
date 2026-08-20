@@ -1,8 +1,8 @@
 # Add watch-mode sync and a staff live-preview site
 
 **Date:** 2026-08-20
-**Status:** Draft
-**Branch:** try-markdown-conversion
+**Status:** Phases A–B done — Phase C (--watch) next
+**Branch:** sync-watch-mode (off main after PR #1 merged the conversion work)
 
 ## Description
 
@@ -40,26 +40,32 @@ Key implementation facts justifying the approach:
 
 ## Steps
 
-### Phase A — Change-guarded writes (applies to all runs, not just watch)
+### Phase A — Change-guarded writes (applies to all runs, not just watch) (DONE 2026-08-20)
 
-- [ ] Page: build the page text as today, compare to the file on disk, write only
+- [x] Page: build the page text as today, compare to the file on disk, write only
       when different (small `write_if_changed(path, text) -> bool` helper).
-- [ ] Images: skip `write_bytes` when the content-hash-named file already exists.
-- [ ] PDF: download only when the page content changed **or** the PDF file is
+- [x] Images: skip `write_bytes` when the content-hash-named file already exists.
+- [x] PDF: download only when the page content changed **or** the PDF file is
       missing (heals a fresh checkout without churning on every run).
-- [ ] Verify idempotence: run a full `tools chem policy` sync twice; the second
+- [x] Verify idempotence: run a full `tools chem policy` sync twice; the second
       run must leave `git status` and file mtimes untouched.
+      (Verified: run 1 synced one real change in `pecvd.md`; run 2 wrote
+      **zero** files — no fresh mtimes under `docs/`, `ruff` clean,
+      `mkdocs build --strict` passes.)
 
-### Phase B — Status reporting from the sync path
+### Phase B — Status reporting from the sync path (DONE 2026-08-20)
 
-- [ ] `sync_row` returns a status (`SYNCED` / `UNCHANGED` / `SKIPPED`) instead of
-      `bool`; `sync_section` aggregates and returns counts.
-- [ ] Quiet the chatty per-doc prints ("downloading markdown ...") when a doc
+- [x] `sync_row` returns a status (`SYNCED` / `UNCHANGED` / `SKIPPED`) instead of
+      `bool`; `sync_section` aggregates and returns counts
+      (summary line: `synced 0, unchanged 4, skipped 0`).
+- [x] Quiet the chatty per-doc prints ("downloading markdown ...") when a doc
       turns out unchanged; keep them (and the image-upgrade / dropped-image
-      warnings) when something actually synced.
-- [ ] Redefine the exit-code rule: with change guards, a successful no-op run
-      writes nothing, so "Nothing written → exit 1" is wrong. New rule: exit 1
-      only when **no rows matched** the section/filter selection.
+      warnings) when something actually synced. (Each doc prints one result
+      line — `name: unchanged` or `name: WROTE path` — so long one-shot runs
+      still show progress; watch cycles will suppress these in Phase C.)
+- [x] Redefine the exit-code rule: exit 1 only when nothing syncable matched
+      the selection (verified: typo'd `--only` exits 1 with
+      "No syncable documents matched."; unchanged runs exit 0).
 
 ### Phase C — `--watch` loop
 
@@ -143,5 +149,9 @@ Key implementation facts justifying the approach:
   + Pages CDN propagation ≈ 1–2 min worst case at a 60 s interval.
 - **Stale images accumulate** in `docs/**/img/` when docs change (true today
   as well) — out of scope; a future `--prune` could handle it.
+- **Google occasionally re-encodes exported images** (observed 2026-08-20: the
+  PECVD hazard pictogram came back with different bytes than an earlier export,
+  flipping the content hash). Effect: a rare spurious "synced" cycle for an
+  unedited doc, which immediately restabilizes. Harmless; not worth guarding.
 - Mid-edit states appear on the preview site by design; that is what staging
   is for. Production remains manual until the Phase D gate decides otherwise.

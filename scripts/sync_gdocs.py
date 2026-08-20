@@ -22,11 +22,13 @@ from __future__ import annotations
 import argparse
 import base64
 import csv
+import enum
 import hashlib
 import io
 import re
 import sys
 import zipfile
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -77,6 +79,12 @@ POLICY_PAGE_MAP: dict[str, str] = {
     "Safety Manual": "policy/safety.md",
     "Lab Suspension": "policy/suspension.md",
 }
+
+
+class SyncStatus(enum.Enum):
+    SYNCED = "synced"
+    UNCHANGED = "unchanged"
+    SKIPPED = "skipped"
 
 
 @dataclass(frozen=True)
@@ -248,8 +256,11 @@ def extract_images(
     img_dir: Path,
     page_dir: Path,
     docx_media: list[tuple[bytes, Image.Image]],
-) -> str:
+) -> tuple[str, str | None]:
     """Decode base64 image definitions into files and inline the references.
+
+    Returns the rewritten markdown and an image-upgrade note (or None), so
+    the caller can report it only when the page actually changed.
 
     The markdown export downscales images to ~640px; where a confidently
     matching original exists in the docx export, that is written instead.
@@ -261,7 +272,7 @@ def extract_images(
     """
     defs = {m.group(1): m for m in IMAGE_DEF_RE.finditer(markdown)}
     if not defs:
-        return markdown
+        return markdown, None
 
     img_dir.mkdir(parents=True, exist_ok=True)
     upgraded = 0
@@ -285,7 +296,9 @@ def extract_images(
                 if md_img.width < MD_EXPORT_MAX_WIDTH:
                     display_width = md_img.width
         filename = f"{hashlib.sha1(data).hexdigest()[:12]}.{ext}"
-        (img_dir / filename).write_bytes(data)
+        # Content-hash name: if the file exists, its bytes are identical
+        if not (img_dir / filename).exists():
+            (img_dir / filename).write_bytes(data)
         rel = (img_dir / filename).relative_to(page_dir).as_posix()
 
         attr = f'{{ width="{display_width}" }}' if display_width else ""
@@ -296,9 +309,8 @@ def extract_images(
         )
         markdown = markdown.replace(match.group(0), "")
 
-    if upgraded:
-        print(f"    {upgraded}/{len(defs)} images upgraded to docx originals")
-    return markdown
+    note = f"{upgraded}/{len(defs)} images upgraded to docx originals"
+    return markdown, note if upgraded else None
 
 
 def clean_body(markdown: str) -> str:
@@ -399,6 +411,15 @@ def warn_dropped_images(name: str, body: str) -> None:
             )
 
 
+def write_if_changed(path: Path, content: str) -> bool:
+    """Write only when content differs, so mkdocs serve isn't reloaded no-op."""
+    if path.exists() and path.read_text() == content:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content)
+    return True
+
+
 def existing_title(page_path: Path, fallback: str) -> str:
     """Keep the current page's H1 so on-page titles don't churn."""
     if page_path.exists():
@@ -408,26 +429,25 @@ def existing_title(page_path: Path, fallback: str) -> str:
     return fallback
 
 
-def sync_row(section: Section, row: dict[str, str]) -> bool:
+def sync_row(section: Section, row: dict[str, str]) -> SyncStatus:
     name = (row.get(section.name_column) or "").strip()
     pdf_url = (row.get("PDF Link") or "").strip()
     if not name or not pdf_url.startswith("http"):
-        return False
+        return SyncStatus.SKIPPED
 
     doc_id_match = DOC_ID_RE.search(pdf_url)
     if doc_id_match is None:
         print(f"  SKIP {name!r}: could not parse doc id from {pdf_url}")
-        return False
+        return SyncStatus.SKIPPED
     doc_id = doc_id_match.group(1)
 
     page_path = resolve_page_path(section, row)
     if page_path is None:
-        return False
+        return SyncStatus.SKIPPED
 
     preview_url = f"https://docs.google.com/document/d/{doc_id}/preview"
 
     md_url = f"https://docs.google.com/document/d/{doc_id}/export?format=md"
-    print(f"  {name}: downloading markdown ...")
     resp = requests.get(md_url, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     markdown = ALT_BOILERPLATE_RE.sub("", resp.text)
@@ -438,41 +458,59 @@ def sync_row(section: Section, row: dict[str, str]) -> bool:
     docx_media = load_docx_media(resp.content)
 
     body = clean_body(markdown)
-    body = extract_images(body, page_path.parent / "img", page_path.parent, docx_media)
+    body, upgrade_note = extract_images(
+        body, page_path.parent / "img", page_path.parent, docx_media
+    )
 
     pdf_path = pdf_asset_path(section, name)
-    print(f"  {name}: downloading pdf ...")
-    resp = requests.get(pdf_url, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
-    pdf_path.write_bytes(resp.content)
     # Relative href so mkdocs build --strict verifies the PDF exists
     pdf_href = pdf_path.relative_to(page_path.parent, walk_up=True).as_posix()
 
     title = existing_title(page_path, name)
-    page_path.parent.mkdir(parents=True, exist_ok=True)
-    page_path.write_text(build_page(title, preview_url, pdf_href, body))
-    print(f"  WROTE {page_path.relative_to(DOCS_DIR.parent)}")
+    page_changed = write_if_changed(
+        page_path, build_page(title, preview_url, pdf_href, body)
+    )
+
+    # Google's PDF export is not byte-stable, so refresh it only when the doc
+    # content changed (or the file is missing, e.g. on a fresh checkout).
+    if page_changed or not pdf_path.exists():
+        resp = requests.get(pdf_url, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        pdf_path.write_bytes(resp.content)
+
+    if not page_changed:
+        print(f"  {name}: unchanged")
+        return SyncStatus.UNCHANGED
+
+    print(f"  {name}: WROTE {page_path.relative_to(DOCS_DIR.parent)}")
+    if upgrade_note:
+        print(f"    {upgrade_note}")
     warn_dropped_images(name, body)
-    return True
+    return SyncStatus.SYNCED
 
 
-def sync_section(section: Section, category: str | None, only: str | None) -> int:
+def sync_section(
+    section: Section, category: str | None, only: str | None
+) -> Counter[SyncStatus]:
     print(f"Section: {section.name}")
     resp = requests.get(section.sheet_csv_url, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     rows = list(csv.DictReader(io.StringIO(resp.text)))
 
-    written = 0
+    counts: Counter[SyncStatus] = Counter()
     for row in rows:
         if category and row.get("Type (Category)", "").strip() != category:
             continue
         if only and (row.get(section.name_column) or "").strip() != only:
             continue
-        if sync_row(section, row):
-            written += 1
-    print(f"  {written} page(s) written")
-    return written
+        counts[sync_row(section, row)] += 1
+    print(f"  {summarize(counts)}")
+    return counts
+
+
+def summarize(counts: Counter[SyncStatus]) -> str:
+    return ", ".join(f"{status.value} {counts[status]}" for status in SyncStatus)
 
 
 def main() -> int:
@@ -489,11 +527,13 @@ def main() -> int:
     parser.add_argument("--only", help="limit to a single document by name")
     args = parser.parse_args()
 
-    total = 0
+    totals: Counter[SyncStatus] = Counter()
     for section_name in args.sections:
-        total += sync_section(SECTIONS[section_name], args.category, args.only)
-    if total == 0:
-        print("Nothing written.")
+        totals += sync_section(SECTIONS[section_name], args.category, args.only)
+    # Skipped-only still errors: nothing syncable matched the selection
+    # (e.g. a typo in --only, or a registry row with no doc link yet)
+    if totals[SyncStatus.SYNCED] + totals[SyncStatus.UNCHANGED] == 0:
+        print("No syncable documents matched.")
         return 1
     return 0
 
