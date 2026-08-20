@@ -156,4 +156,5 @@ Deploys are manual for now. Automating the sync + deploy on a schedule
 | `mkdocs.yml` | Site configuration (Material theme, awesome-nav) |
 | `overrides/` | Theme customizations |
 | `plans/` | Dated work plans with phased steps and review gates |
+| `AGENTS.md` | Operational guide for coding agents (invariants, commands, quirks) |
 | `.cursor/rules/`, `.cursor/commands/` | AI agent guardrails and workflows |
