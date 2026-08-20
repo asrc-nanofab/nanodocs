@@ -23,11 +23,8 @@ Table of Contents:
 
 
 
-**Section 7- What [to watch out for during operation	8](#heading=)**
 
-**Section 8- Common [Troubleshooting Tips	9](#heading=)**
 
-**Section 9- When [to call staff?	9](#heading=)**
 
 
 # Section 1 – Process or Experiment Description

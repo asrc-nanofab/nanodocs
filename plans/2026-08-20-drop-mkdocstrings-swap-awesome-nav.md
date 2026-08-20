@@ -80,15 +80,15 @@ Files to convert:
 - [x] `docs/tool_sops/metrology/.pages`
 - [x] `docs/tool_sops/packaging/.pages`
 
-### Step 4½ — Optional link cleanup (DEFERRED)
+### Step 4½ — Optional link cleanup (DONE 2026-08-20)
 
-Deferred until after the Google Drive SOP pull is automated, since that work may
-change page/file structure and these links would need re-fixing.
+Was deferred until after the Google Drive SOP work; that work landed without
+changing page structure, so the links were fixed on `try-markdown-conversion`.
 
-- [ ] Fix directory-style relative links in `docs/index.md` (5 links)
-- [ ] Fix links in `docs/chemicals/index.md` (5 links)
-- [ ] Fix links in `docs/policy/index.md` (4 links)
-- [ ] Fix links in `docs/tool_sops/index.md` (5 links)
+- [x] Fix directory-style relative links in `docs/index.md` (5 links)
+- [x] Fix links in `docs/chemicals/index.md` (5 links)
+- [x] Fix links in `docs/policy/index.md` (4 links)
+- [x] Fix links in `docs/tool_sops/index.md` (5 links)
 
 ### Step 5 — Verify
 

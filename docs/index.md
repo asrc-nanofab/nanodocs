@@ -17,31 +17,31 @@
 
 <div class="grid cards" markdown>
 
--   [:material-tools: __Tool SOPs__](tool_sops/){ .lg .middle }
+-   [:material-tools: __Tool SOPs__](tool_sops/index.md){ .lg .middle }
 
     ---
 
     Standard operating procedures for all nanofabrication equipment.
 
--   [:material-flask: __Chemical Handling__](chemicals/){ .lg .middle }
+-   [:material-flask: __Chemical Handling__](chemicals/index.md){ .lg .middle }
 
     ---
 
     Safety protocols and procedures for chemical processing.
 
--   [:material-shield-check: __Lab Safety Policies__](policy/){ .lg .middle }
+-   [:material-shield-check: __Lab Safety Policies__](policy/index.md){ .lg .middle }
 
     ---
 
     Essential safety information and facility policies.
 
--   [:material-account-plus: __Nanofab Signup__](signup/){ .lg .middle }
+-   [:material-account-plus: __Nanofab Signup__](signup/index.md){ .lg .middle }
 
     ---
 
     Information about accessing and using the facility.
 
--   [:material-frequently-asked-questions: __FAQ__](faq/){ .lg .middle }
+-   [:material-frequently-asked-questions: __FAQ__](faq/index.md){ .lg .middle }
 
     ---
 

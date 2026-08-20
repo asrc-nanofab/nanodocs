@@ -89,10 +89,12 @@ existing PDF pages stay on `main` untouched until final sign-off.
 
 - [ ] Keep `docs/assets/pdfs/` — the View PDF button links to these hosted files,
       refreshed by the sync script
-- [ ] Delete `docs/assets/pdfjs/` (~21 MB) and the commented pdfjs line in `mkdocs.yml`
+- [ ] Keep `docs/assets/pdfjs/` for the time being (user decision 2026-08-20) —
+      unused by any page; revisit deletion (~21 MB) once the new system has
+      proven itself in production
 - [ ] Delete the three old `download_*_pdfs.py` scripts
-- [ ] Revisit the deferred link cleanup from the awesome-nav plan (Step 4½) if page
-      structure changed
+- [x] Deferred link cleanup from the awesome-nav plan (Step 4½): all 19
+      directory-style links fixed; build now emits zero link INFO messages
 - [ ] `uv run mkdocs build --strict` + final serve check
 
 ### Phase D — Ship

@@ -4,19 +4,19 @@ These Standard Operating Procedures (SOPs) provide detailed instructions for saf
 
 <div class="grid cards" markdown>
 
--   __[:material-image-filter-center-focus-strong-outline: Lithography Tools](lithography/)__
+-   __[:material-image-filter-center-focus-strong-outline: Lithography Tools](lithography/index.md)__
 
     ---
     
     High-resolution pattern definition using optical and e-beam lithography.
 
--   __[:material-layers: Deposition Tools](deposition/)__
+-   __[:material-layers: Deposition Tools](deposition/index.md)__
 
     ---
     
     Tools for thin film deposition, including sputtering, evaporation, and ALD.
 
--   __[:material-flash: Etch Tools](etch/)__
+-   __[:material-flash: Etch Tools](etch/index.md)__
 
     ---
 
@@ -24,13 +24,13 @@ These Standard Operating Procedures (SOPs) provide detailed instructions for saf
 
 
 
--   __[:material-ruler: Metrology Tools](metrology/)__
+-   __[:material-ruler: Metrology Tools](metrology/index.md)__
 
     ---
 
     Characterization and measurement of nanofabrication processes.
 
--   __[:material-package-variant-closed: Packaging Tools](packaging/)__
+-   __[:material-package-variant-closed: Packaging Tools](packaging/index.md)__
 
     ---
 

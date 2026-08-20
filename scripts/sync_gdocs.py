@@ -300,6 +300,10 @@ def clean_body(markdown: str) -> str:
             continue
         if stripped == "Table of Contents" or TOC_ENTRY_RE.match(stripped):
             continue
+        # TOC remnants with unresolved Google anchors (e.g. partially bolded
+        # entries that escape TOC_ENTRY_RE); "#heading=" is never a valid target
+        if "](#heading=" in stripped:
+            continue
         out.append(line)
     return "\n".join(out).strip() + "\n"
 
