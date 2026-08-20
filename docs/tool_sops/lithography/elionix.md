@@ -150,16 +150,16 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 * Click “Select CON file” (as seen below)  All CON files and the supporting files must be in the same directory.  If you only have one CON file your job will look as it does below.  It is convenient to leave the position shift for now at X \= 0, Y \= 0\.  We will position the pattern on your wafer/piece in a later step.
 
-![TableDescription automatically generated](img/924b4fae0598.png){ width="558" }
+![TableDescription automatically generated](img/924b4fae0598.png)
 
 * Note that “Total Dose Time” \= “Dose  Time” \+ (“Dose Coefficient” \* Factor in .scon).  For some WECAS jobs you may want to set **“Dose Time” \= Calculated Base Dose** and the **Dose Coefficient \= 0\.**  
 * Also note that you can make one schedule file that uses multiple CON files and can shoot die at different doses for exposure dose array testing.  For example, the following is what such a schedule file might look like.  This was made using the “Matrix Con File“ button.  Note that there are 2 CON files here, each with 8 different doses at different positions on the wafer.
 
-![TableDescription automatically generated](img/b9353292b0ac.png){ width="576" }
+![TableDescription automatically generated](img/b9353292b0ac.png)
 
 * Press the Set Options Tab. If alignment is not necessary Set “Registration” to OFF, “Periodic Correction” to OFF and “Width Modulation” to OFF.  The only things that should be active are in the left-hand column under “X/Y Laser” as shown below.  (If alignment is needed, please see Appendix A)   
     
-  ![](img/471377d127b6.png){ width="560" }  
+  ![](img/471377d127b6.png)  
     
 * The most important parameter in this window is the “Z Preset (mm)” setting for the XY-laser.  This parameter tells the laser displacement meter the height of the substrate.  As of January of 2023 the Z-Preset value for a 500 micron thick Si substrate is \~3.0 mm.  This value will work if your wafer thickness including layers and resist and is is within 200 microns of this value.  If you are working with thinner or thicker substrates you will have to adjust the Z-Preset in the following way:  If it is thicker than 500um you will need to decrease the number.  (For instance: a 750 micron substrate would have a Z-preset of about 2.75mm.    
 *   Click “Next” in the Schedule Execution tab.  You will be prompted to save the Schedule file (.SC8 extension) to the same directory your CON files are in.  Change the name else it will save in the directory as “Default”.  The lower left hand corner of your pattern will be at X \= 0 Y \= 0 by default.  You will now see a blue-green tab **“Exp. Graphics”** menu as shown in the image here.
@@ -212,7 +212,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 
 1. You need to tell WECAS that you will be doing alignment when you set up the initial schedule file.  We need to go back to the “Set Option” Button (From Section II Page 3 of this manual) and set values in the “Registration” column (indicated below).  For manual Alignment “Periodic Correction” and “width modulation” remain off \-- These are used only in “Auto” and “Full Auto” alignment modes.  
      
-   **![](img/cb0be8bdee40.png){ width="568" }**  
+   **![](img/cb0be8bdee40.png)**  
      
 2. Click the “ON” radio button in the Registration Panel  
 3. Set “Control Type” to “Manual”  

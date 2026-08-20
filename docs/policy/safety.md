@@ -12,13 +12,13 @@
 
 # **Section 1: Cleanroom Basic Layout** {#section-1:-cleanroom-basic-layout}
 
-![](img/08c982587f12.jpg){ width="615" }
+![](img/08c982587f12.jpg)
 
 # **Section 2: Emergency Exits** 
 
-![](img/00b79aa65c1c.jpg){ width="624" }
+![](img/00b79aa65c1c.jpg)
 
-![](img/a46036c6d34a.jpg){ width="624" }
+![](img/a46036c6d34a.jpg)
 
 **Cleanroom Egress**
 
@@ -94,7 +94,7 @@ A staff contact list is posted next to all telephones in the cleanroom.
 
 ![](img/63e2dbfb376c.jpg){ width="364" }
 
-![](img/2cc2d1ab518f.jpg){ width="624" }
+![](img/2cc2d1ab518f.jpg)
 
 # **Section 4: Alarm Systems** {#section-4:-alarm-systems}
 
@@ -229,7 +229,7 @@ The piranha/HF hood, caustics/metal etch hood and the RCA hood are all polypropy
   * Designated for RCA chemistries, including ammonium hydroxide (RCA 1), hydrochloric acid (RCA 2\) and hydrofluoric acid (HF dip).  
   * To be for the RCA cleaning process to prepare samples for oxide growths in the furnace.
 
-**![](img/0bab8dcb1b6c.jpg){ width="624" }**
+**![](img/0bab8dcb1b6c.jpg)**
 
 ## **Chemical Storage** {#chemical-storage}
 
@@ -340,7 +340,7 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 **Showers and Eye Wash Stations**
 
-![](img/a2e77f0c432a.jpg){ width="624" }
+![](img/a2e77f0c432a.jpg)
 
 **Hoods and Carboys**
 

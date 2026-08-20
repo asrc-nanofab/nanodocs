@@ -59,7 +59,7 @@ N/A
 4. In Measurement Options under Trace, select the Range and Profile best suited to what you are measuring.   
 5. Determine the length of the measurement by either entering a value in micrometers into Length or click the **Teach** icon next to it. When prompted, move the sample to the position from which you want the measurement to start and then click **Next**, then move the sample to the position where you want the measurement to end and then click **Done**. 
 
-![](img/27f33caf0735.png){ width="589" }
+![](img/27f33caf0735.png)
 
 5. Determine the Resolution of your measurement by entering a value in seconds into Duration. Longer scans will resolve smaller structures and thus have better resolution.   
    1. Note: If you wish to perform a sequence of measurements, perform data stitching, or create a 3D map, those options are also available under Measurement Setup, but they are not necessary for a typical measurement.   
@@ -71,13 +71,13 @@ N/A
 2. Level the data if necessary, by selecting **Terms Removal (F-Operator)** in Data Analyzer, then move the R and M cursors to two points you expect should be level and then right-click the data and select **Two-Point Leveling**.   
    1. Note: There are many options for filtering and analyzing data available in Data Analyzer. For information on the different options, consult a Bruker manual.
 
-![](img/b512b9255b9b.png){ width="562" }
+![](img/b512b9255b9b.png)
 
 3. Make measurements by moving the R and M cursors to positions you wish to compare and then expand them in order to average over certain portions of the measurement.   
 4. A value for Total\_ASH (average step height) determined from the difference between the average heights of R and m will be displayed in Watch List.   
    1. Note: Watch List can be configured to display other data that you may wish to measure. 
 
-![](img/05d68765349d.png){ width="562" }
+![](img/05d68765349d.png)
 
 ### **4.1.5.  Save data** {#4.1.5.-save-data}
 

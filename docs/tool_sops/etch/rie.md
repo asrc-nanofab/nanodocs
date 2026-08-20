@@ -175,11 +175,11 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 ***Ready To Open Main Chamber***:
 
-![](img/07849f4a91c7.png){ width="624" }
+![](img/07849f4a91c7.png)
 
 ***Tool Buttons for Opening/Closing Chamber***:
 
-***![](img/f22ad26f5cf0.png){ width="624" }***
+***![](img/f22ad26f5cf0.png)***
 
 ***Graphite Process Plate with Wafer:***
 
@@ -187,13 +187,13 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 ***Recipe Page:***
 
-***![](img/31dc8474474c.png){ width="623" }***
+***![](img/31dc8474474c.png)***
 
 ***Manual View During Process:***
 
 **Note**\- Plasma glow will likely be visible from viewport when plasma is active:
 
-![](img/88ed7093a504.png){ width="623" }
+![](img/88ed7093a504.png)
 
 > > > 3. **Etch Sample**
 

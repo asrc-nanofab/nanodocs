@@ -175,8 +175,10 @@ MATCH_THUMB_SIZE = (24, 24)
 MATCH_MAX_DISTANCE = 10.0
 UPGRADE_MIN_AREA_RATIO = 1.2
 # Google's markdown export caps image width at 640px; below the cap, the
-# exported size is the author's chosen display size in the doc
-MD_EXPORT_MAX_WIDTH = 640
+# exported size is the author's chosen display size in the doc. A Google Doc's
+# text column is ~620px, so anything close to it was sized "page wide" by the
+# author — render those full width instead of pinning the in-doc pixel size.
+FULL_WIDTH_MIN = 550
 
 
 def _flatten(img: Image.Image) -> Image.Image:
@@ -337,7 +339,7 @@ def extract_images(
                 img_format = Image.open(io.BytesIO(data)).format or "png"
                 ext = IMAGE_EXTENSIONS.get(img_format.lower(), img_format.lower())
                 upgraded += 1
-                if md_img.width < MD_EXPORT_MAX_WIDTH:
+                if md_img.width < FULL_WIDTH_MIN:
                     display_width = md_img.width
         filename = f"{hashlib.sha1(data).hexdigest()[:12]}.{ext}"
         # Content-hash name: if the file exists, its bytes are identical

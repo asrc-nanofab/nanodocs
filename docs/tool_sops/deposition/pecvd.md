@@ -111,7 +111,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 * Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
 * Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 2 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
 
-       ![](img/ac4716a38cff.png){ width="109" }![](img/bad7d32bc2c4.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+       ![](img/ac4716a38cff.png){ width="109" }![](img/c33eb243d09e.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
 
 *Image 1:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
 
@@ -185,7 +185,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 8. Ivory color of the wafer is assumed as fresh wafer into the chamber.
 
-![](img/01a2344e08f6.jpg){ width="620" }
+![](img/01a2344e08f6.jpg)
 
 *Image 8*, Loading steps for wafer/chips for Condition/Deposition/Clean processe*s*
 
