@@ -59,11 +59,11 @@ NOTE: Adjustments can be made to optimize the view by zooming in or out on the v
 
 13. Calibrate the laser position so that the laser reticle shown in the UI matches that of the actual laser spot. Once complete, optimize laser position and auto-align the photodetector. The vertical target is generally set to 0.0 V but in uncommon cases may need to be adjusted depending on your sample and the experiment. 
 
-![](img/7905bf937de8.png)
+![](img/e770d06869a7.png){ width="352" }
 
 14. Choose the tip location. The actual location of the tip must be selected for the most accurate measurements. If you are uncertain, you can find SEM micrographs of each Bruker tip on the Bruker website.
 
-![](img/c26e2400ea22.png)
+![](img/e770d06869a7.png){ width="352" }
 
 15. Depending on the scanning mode, you may need to tune the cantilever which can be done using Auto Tune.
 
@@ -88,7 +88,7 @@ WARNING: Be very careful when focusing on the surface using the Z motor. Set spe
 2. Close the AFM acoustic and vibration isolation enclosure. Once ready, click **Engage** to begin the scan. The parameters can be adjusted during the scan but should be done with caution as it can destroy the sample or tip.  
 3. Image capture can be done using Capture Now, or Capture Continuous. It is recommended to select Capture Continuous. The file name and directory can be changed at any time.
 
-![](img/fb28eec0c2f7.png)
+![](img/03f2785c75b7.png){ width="427" }
 
 4. To scan another sample, move to a new sample location, or quit the experiment, select **Withdraw** from the Workflow Toolbar.
 

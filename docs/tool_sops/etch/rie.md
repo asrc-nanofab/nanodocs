@@ -16,8 +16,8 @@ The Reactive Ion Etcher (RIE) uses a radio-frequency-powered electromagnetic fie
 
 | Pictogram | Description |
 | :---- | :---- |
-| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/225bfb3ae37f.png) | Radio-frequency Energy/ Radiation |
-| ![Ultraviolet Hazard Symbol](img/310939788fa3.png) | Ultraviolet Radiation |
+| ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/6616c88f5311.gif){ width="89" } | Radio-frequency Energy/ Radiation |
+| ![Ultraviolet Hazard Symbol](img/89ad89df92c3.png){ width="91" } | Ultraviolet Radiation |
 | ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/8c508b2a0417.jpg){ width="83" } | Mechanical Pinch-Point |
 
  
@@ -179,11 +179,11 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 ***Tool Buttons for Opening/Closing Chamber***:
 
-***![](img/03cb27fa13cc.png)***
+***![](img/f22ad26f5cf0.png){ width="624" }***
 
 ***Graphite Process Plate with Wafer:***
 
-***![](img/105969f58fe5.png)***
+***![](img/715702544996.png){ width="304" }***
 
 ***Recipe Page:***
 
@@ -193,7 +193,7 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 **Note**\- Plasma glow will likely be visible from viewport when plasma is active:
 
-![](img/734c34bc102f.png)
+![](img/88ed7093a504.png){ width="623" }
 
 > > > 3. **Etch Sample**
 

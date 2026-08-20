@@ -111,6 +111,12 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 * Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
 * Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 2 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
 
+       ![](img/ac4716a38cff.png){ width="109" }![](img/bad7d32bc2c4.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+
+*Image 1:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
+
+*![](img/7426f7a4382c.jpg){ width="312" }*
+
 *Image 2* Flat Edge of the Sapphire Cleaning Wafer on the load arm
 
 **Do not**
@@ -141,11 +147,11 @@ To change the matching position of the transformer, reach out at the bottom righ
 
 Log in to the PTIQ system, using a private user account or common **User account** under **Individual** category. (Computer’s Screen will wake up only after enabling BADGER ACCOUNT)
 
-*Image 5**\-*** **PTIQ Login Screen** 
+![](img/60d1d09bd6c7.png){ width="341" }
 
-**Individual             User ID                USER** 
+*Image 5**\-***  **PTIQ Login Screen** 
 
-       **Password             USER**
+**![](img/d3bd212f4d2d.png){ width="493" }**
 
 If users have their own private account, they can login under the same Individual category and use their ID and Password, where they have permission to create recipes, modify process parameters, save, delete and transfer files. 
 
@@ -354,7 +360,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 | ----- | ----- | ----- | ----- |
 | 1 | SiH4 (Silane) |    | Pyrophoric – Ignites and explodes spontaneously in air, often without a spark Flammable compressed gas Toxic at high concentrations: mainly lungs Can cause severe burn |
 | 2 | NH3 (Ammonia) |   | Corrosive to skin, eyes and mucous membranes Acute toxic and cause severe respiratory irritation if inhaled Reacts with acids and oxidizer Environmental hazard |
-|   | PH3 (Phosphene) |   ![](img/a52f3cffa3df.png)  | Highly toxic even at low concentrations Highly Flammable Pyrophobic- Ignites and explodes spontaneously in air Causes damage to lungs, liver, kidneys and Central Nervous System. |
+|   | PH3 (Phosphene) |   ![](img/17e674799700.png){ width="343" }  | Highly toxic even at low concentrations Highly Flammable Pyrophobic- Ignites and explodes spontaneously in air Causes damage to lungs, liver, kidneys and Central Nervous System. |
 | 4 | B2H6 (Diborane) |   ![](img/cfa940c3927d.png){ width="247" } | Extremely toxic to organs Highly flammable Pyrophoric and ignite in moist air. Highly reactive Causes damage to lungs, liver, kidneys and Central Nervous System |
 | 5 | CH4 (Methane) |  ![](img/99c463b7d903.png){ width="176" } | Flammable gas Reduce oxygen level (Asphyxiant) at high concentrations, specifically in a confined space. |
 | 6 | C2H2 (Acetylene) |   ![](img/cebf4cb4f458.png){ width="185" } | Highly flammable, explosive under pressure or when mixed with moist air. Reactive gas forms explosive compounds with Cu, Ag and Hg. Asphyxiant in confined areas. |
@@ -380,6 +386,14 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 **Revision History:**  
 Version 1.0 \- After PTIQ Upgrade  \- May 2025 
+
+
+
+
+
+
+
+
 
 
 

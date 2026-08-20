@@ -20,7 +20,7 @@ Our lab has two ICP-RIEs- an ICP Fluorine (on the le***F***t) and an ICP Chlorin
 | :---- | :---- |
 | ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/1dc80d143fee.jpg){ width="88" } | Radio-frequency Energy/ Radiation |
 | ![Ultraviolet Hazard Symbol](img/52c9c5c8f31e.png){ width="90" } | Ultraviolet Radiation |
-| ![](img/343c08ec74e0.png) | Hot Surface  |
+| ![](img/b5b0b156346e.png){ width="87" } | Hot Surface  |
 | ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/30329e739885.jpg){ width="83" } | Mechanical Pinch-Point  |
 
  

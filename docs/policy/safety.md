@@ -24,19 +24,25 @@
 
 **Building Egress from the Cleanroom**
 
-**Evacuation Procedure**
+## **Evacuation Procedures**
 
-* Secure your process.
+### **Fire Alarm:**
 
-* Do not de-gown, keep your gown on.
+1. Secure your process.
 
-* As you proceed to an exit door, ask other lab members to follow.
+2. Do not de-gown, keep your gown on.
 
-* Exit the building through the nearest exits.
+3. As you proceed to an exit door, ask other lab members to follow.
 
-* The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+4. Exit the building through the nearest exits.
 
-* Remain available to pass on details you have about events that lead to an evacuation.
+5. The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+
+6. Remain available to pass on details you have about events that lead to an evacuation.
+
+### **TGMS Alarm Level 1:**
+
+### **TGMS Alarm Level 1:**
 
 # **Section 3: Facility Staff and Emergency Contacts** {#section-3:-facility-staff-and-emergency-contacts}
 
@@ -88,7 +94,7 @@ A staff contact list is posted next to all telephones in the cleanroom.
 
 ![](img/63e2dbfb376c.jpg){ width="364" }
 
-![](img/08c982587f12.jpg){ width="624" }
+![](img/2cc2d1ab518f.jpg){ width="624" }
 
 # **Section 4: Alarm Systems** {#section-4:-alarm-systems}
 

@@ -72,13 +72,23 @@ Every generated page gets three buttons:
 Everything is public "anyone with the link can view", so the sync needs
 **no credentials**.
 
+The sync only writes files whose content actually changed — pages, images
+(content-hash named), and PDFs are all change-guarded — so re-running it is
+a safe no-op and exits with an error only when nothing matched the filters.
+
 Run it with:
 
 ```bash
 uv run python scripts/sync_gdocs.py tools chem policy   # everything
 uv run python scripts/sync_gdocs.py tools --category Deposition
 uv run python scripts/sync_gdocs.py policy --only "Safety Manual"
+uv run python scripts/sync_gdocs.py tools --only AFM --watch   # re-sync every 20s
 ```
+
+With `--watch [SECONDS]`, the sync re-runs until Ctrl+C, printing one
+timestamped status line per cycle. Pair it with `uv run mkdocs serve` for a
+live side-by-side workflow: edit the Google Doc in one browser pane and the
+converted local page refreshes in the other within a cycle.
 
 ### What is generated vs. hand-written
 

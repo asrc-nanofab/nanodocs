@@ -167,7 +167,7 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
   * The buddy must be a registered cleanroom member with after-hours access and must be present in the cleanroom for the entire duration of the chemical process.
 
-Failure to abide to the After-Hours Policy will result in loss of cleanroom access.
+Failure to abide by the After-Hours Policy will result in loss of after-hours and potentially cleanroom access.
 
 **After-Hours: Emergency Closures**
 
