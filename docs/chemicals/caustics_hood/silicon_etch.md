@@ -55,7 +55,7 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 #### **Preparation**
 
 1. Review the first aid procedures for HF exposure with your chemical buddy, including identifying the location of the HF First Aid Kit and Calcium Gluconate Gel.   
-   Note that you cannot use HF alone. When using HF, you must ensure that there is at least one other person (your chemical buddy) in the vicinity of the process at all times. That person must call Public Safety (212-650-7777) in the event of an emergency and then assist you with first aid.
+    Note that you cannot use HF alone. When using HF, you must ensure that there is at least one other person (your chemical buddy) in the vicinity of the process at all times. That person must call Public Safety (212-650-7777) in the event of an emergency and then assist you with first aid.
 
 #### **HNA Etch** {#hna-etch}
 
@@ -68,14 +68,14 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 7. Pour the DI water from the measuring beaker into the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe in the hood.  
 8. Determine the amount of nitric acid, acetic acid and hydrofluoric acid you’ll need for your solution.  
 9. If mixing HNA solution yourself:  
-   1. Determine the amount of nitric acid, acetic acid and hydrofluoric acid you’ll need for your solution.  
-   2. Carefully pour nitric acid into the measuring beaker to the volume needed and then carefully add it to the “HF Only” container.  
-   3. Rinse out the measuring beaker with DI water in the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe.  
-   4. Carefully pour acetic acid into the measuring beaker to the volume needed and then carefully add it to the nitric acid in the “HF Only” container.  
-   5. Rinse out the measuring beaker with DI water in the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe.  
-   6. Carefully pour hydrofluoric acid into the measuring beaker to the volume needed and then carefully add it to the nitric acid and acetic acid in the “HF Only” container.
+    1. Determine the amount of nitric acid, acetic acid and hydrofluoric acid you’ll need for your solution.  
+    2. Carefully pour nitric acid into the measuring beaker to the volume needed and then carefully add it to the “HF Only” container.  
+    3. Rinse out the measuring beaker with DI water in the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe.  
+    4. Carefully pour acetic acid into the measuring beaker to the volume needed and then carefully add it to the nitric acid in the “HF Only” container.  
+    5. Rinse out the measuring beaker with DI water in the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe.  
+    6. Carefully pour hydrofluoric acid into the measuring beaker to the volume needed and then carefully add it to the nitric acid and acetic acid in the “HF Only” container.
 
-   If using a premixed solution such as Transene RSE 5:6:3, RSE-100 or RSE-200, carefully pour the etchant into the measuring beaker to the volume needed and then pour it into the “HF Only” container.
+    If using a premixed solution such as Transene RSE 5:6:3, RSE-100 or RSE-200, carefully pour the etchant into the measuring beaker to the volume needed and then pour it into the “HF Only” container.
 
 10. Rinse out the measuring beaker with DI water in the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe in the hood.  
 11. If you plan to heat the HNA solution for the duration of the etch, place the beaker of HF solution on the hotplate and set it to 40°C. **Never set the hotplate higher than 50°C.**  

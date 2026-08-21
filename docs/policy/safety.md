@@ -51,36 +51,36 @@
 ### **Facility Staff Contacts** {#facility-staff-contacts}
 
 * Samantha Roberts, Facility Director  
-  * Office phone: (212) 413-3313  
-    \* dial 33313 when dialing from an internal phone within the ASRC  
-  * Email: sroberts@gc.cuny.edu  
+    * Office phone: (212) 413-3313  
+        \* dial 33313 when dialing from an internal phone within the ASRC  
+    * Email: sroberts@gc.cuny.edu  
 * Shawn Kilpatrick, Lab Manager  
-  * Office phone: (212) 413-3312  
-    \* dial 33312 when dialing from an internal phone within the ASRC  
-  * Email: skilpatrick@gc.cuny.edu  
+    * Office phone: (212) 413-3312  
+        \* dial 33312 when dialing from an internal phone within the ASRC  
+    * Email: skilpatrick@gc.cuny.edu  
 * Salam Elhalabi, Cleanroom Technician  
-  * Office phone: (212) 413-3311  
-    \* dial 33311 when dialing from an internal phone within the ASRC  
-  * Email: selhalabi@gc.cuny.edu  
+    * Office phone: (212) 413-3311  
+        \* dial 33311 when dialing from an internal phone within the ASRC  
+    * Email: selhalabi@gc.cuny.edu  
 * Suresh Rai, Cleanroom Engineer  
-  * Office phone: (212) 413-3328  
-    \* dial 33328 when dialing from an internal phone within the ASRC  
-  * Email: srai@gc.cuny.edu  
+    * Office phone: (212) 413-3328  
+        \* dial 33328 when dialing from an internal phone within the ASRC  
+    * Email: srai@gc.cuny.edu  
 * Emma Anquillare, Research Scientist  
-  * Office phone: (212) 413-3407  
-    \* dial 33407 when dialing from an internal phone within the ASRC  
-  * Email: [eanquillare@gc.cuny.edu](mailto:eanquillare@gc.cuny.edu)
+    * Office phone: (212) 413-3407  
+        \* dial 33407 when dialing from an internal phone within the ASRC  
+    * Email: [eanquillare@gc.cuny.edu](mailto:eanquillare@gc.cuny.edu)
 
 ### **ASRC Safety Contacts** {#asrc-safety-contacts}
 
 * Thomas Dickson, Environmental Health and Safety Officer  
-  * Office phone: (212) 413-3351  
-    \* dial 33351 when dialing from an internal phone within the ASRC  
-  * Email: tdickson@gc.cuny.edu  
+    * Office phone: (212) 413-3351  
+        \* dial 33351 when dialing from an internal phone within the ASRC  
+    * Email: tdickson@gc.cuny.edu  
 * Elliot Quinteros  
-  * Office phone:  
-    \* dial 33313 when dialing from an internal phone within the ASRC  
-  * Email: equinteros@gc.cuny.edu
+    * Office phone:  
+        \* dial 33313 when dialing from an internal phone within the ASRC  
+    * Email: equinteros@gc.cuny.edu
 
 ### **ASRC Emergency Contacts** {#asrc-emergency-contacts}
 
@@ -124,13 +124,13 @@ There are TGMS alarms with a stack of 3 lights and a horn mounted
 
 * Blue Alarm (Danger Level): Exit the cleanroom and building.
 
-  * Orange Alarm (Warning Level): Exit the cleanroom.
+    * Orange Alarm (Warning Level): Exit the cleanroom.
 
-  * Green Light: Normal/safe conditions.
+    * Green Light: Normal/safe conditions.
 
-  **Emergency Gas Off (EGO):** if a gas leak is detected, press the EGO button
+    **Emergency Gas Off (EGO):** if a gas leak is detected, press the EGO button
 
-  **Fire Alarm:** in the event of a fire, pull the fire alarm
+    **Fire Alarm:** in the event of a fire, pull the fire alarm
 
 Emergency Gas Off (EGO) and Fire Alarm is located in the gowning room next to the Material Safety Data Sheets.
 
@@ -213,23 +213,23 @@ Chemicals can only ever be opened and used within their designated fume hoods. T
 The spinner hood, developer hood and solvents/lift-off hood are all stainless steel hoods intended for solvents and very dilute (\<3%) caustic solutions. Access to the solvents/lift-off hood and the litho-developer hood will be granted after orientation, while the spinner hood requires the spinner training before access will be granted.
 
 * Solvents/Lift-Off Hood:  
-  * Designated for solvents use only, though halogenated solvents may also be used in this hood with the permission of staff.  
-  * To be used for cleaning samples with solvents and for lift-off of patterned depositions.  
+    * Designated for solvents use only, though halogenated solvents may also be used in this hood with the permission of staff.  
+    * To be used for cleaning samples with solvents and for lift-off of patterned depositions.  
 * Litho-Developer Hood:  
-  * Designated for solvents and diluted caustic developers, such as those containing \<3% concentrations of TMAH or potassium borates.  
-  * To be used for cleaning samples with solvents and for developing patterned photo and EBL resists.
+    * Designated for solvents and diluted caustic developers, such as those containing \<3% concentrations of TMAH or potassium borates.  
+    * To be used for cleaning samples with solvents and for developing patterned photo and EBL resists.
 
 The piranha/HF hood, caustics/metal etch hood and the RCA hood are all polypropylene plastic hoods intended for corrosive chemicals, including all acids and concentrated caustics. Access to these hoods will only be granted after taking the chemical hood training. These hoods are the highest risk hoods and should never be used without proper PPE.
 
 * Piranha/HF Hood:  
-  * Designated for piranha chemistry or other sulfuric acid mixtures and hydrofluoric acid.  
-  * To be used for piranha cleans and etching with HF or HF mixtures.  
+    * Designated for piranha chemistry or other sulfuric acid mixtures and hydrofluoric acid.  
+    * To be used for piranha cleans and etching with HF or HF mixtures.  
 * Caustics/Metal Etch Hood:  
-  * Designated for all caustics, all acids except sulfuric acid and hydrofluoric acid, and the iodine based gold etchant.  
-  * To be used for acid and nitric acid etches, gold etches, and caustic processes, including the development of patterned HSQ using concentrated TMAH.  
+    * Designated for all caustics, all acids except sulfuric acid and hydrofluoric acid, and the iodine based gold etchant.  
+    * To be used for acid and nitric acid etches, gold etches, and caustic processes, including the development of patterned HSQ using concentrated TMAH.  
 * RCA Hood:  
-  * Designated for RCA chemistries, including ammonium hydroxide (RCA 1), hydrochloric acid (RCA 2\) and hydrofluoric acid (HF dip).  
-  * To be for the RCA cleaning process to prepare samples for oxide growths in the furnace.
+    * Designated for RCA chemistries, including ammonium hydroxide (RCA 1), hydrochloric acid (RCA 2\) and hydrofluoric acid (HF dip).  
+    * To be for the RCA cleaning process to prepare samples for oxide growths in the furnace.
 
 **![](img/0bab8dcb1b6c.jpg)**
 
@@ -266,15 +266,15 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 * When dispensing chemicals, use a chemical label to label the following:
 
-  * Chemical Name (no formulas)
+    * Chemical Name (no formulas)
 
-  * Your Name
+    * Your Name
 
-  * Date and Time
+    * Date and Time
 
 * Assume any liquid is potentially dangerous.
 
-  * Contact staff to dispose of unidentified chemicals.
+    * Contact staff to dispose of unidentified chemicals.
 
 * Only use tanks and glassware as they are designated.
 
@@ -282,7 +282,7 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 * Keep gloves dry and clean.
 
-  * Double glove or put on new gloves when needed.
+    * Double glove or put on new gloves when needed.
 
 * Uncap only one bottle at a time and pour slowly.
 
@@ -292,23 +292,23 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 * When mixing chemicals:
 
-  * Pour acids into water (exception being Piranha)
+    * Pour acids into water (exception being Piranha)
 
-  * Do not mix acids and solvents
+    * Do not mix acids and solvents
 
-  * Do not mix halogenated solvents with non-halogenated solvents
+    * Do not mix halogenated solvents with non-halogenated solvents
 
-  * Label all mixtures
+    * Label all mixtures
 
 **Chemical Handling – PPE**
 
 * Personal protective equipment (PPE) is required when working with acids.
 
-  * Chemically resistant gloves, face shield and apron.
+    * Chemically resistant gloves, face shield and apron.
 
-  * Safety glasses must be worn under the face shield at all times.
+    * Safety glasses must be worn under the face shield at all times.
 
-  * Make a cuff in the gauntlet gloves.
+    * Make a cuff in the gauntlet gloves.
 
 * PPE is located next to the acid benches.
 
@@ -316,7 +316,7 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 * Inspect PPE before and after use.
 
-  * Check for holes, stains and other indicators of contamination.
+    * Check for holes, stains and other indicators of contamination.
 
 * PPE is chemical resistant – not chemical proof.
 
@@ -326,7 +326,7 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 * Rinse glassware/plasticware 3x with DI water and blow dry with nitrogen gun to dry.
 
-  * Glassware/plasticware is no to be left in the hood to dry.
+    * Glassware/plasticware is no to be left in the hood to dry.
 
 * Return glassware/plasticware storage racks/storage bins and clean up work area.
 
@@ -395,7 +395,7 @@ In the case of such a spill, users are to do the following:
 
 * Have someone call Public Safety (91 (212) 650-7777) and notify staff.
 
-  * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
+    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
 
 * Remove the affected clothing.
 
@@ -411,9 +411,9 @@ In the case of such a spill, users are to do the following:
 
 * Flush eyes for at least 15 minutes – NOT LESS.
 
-  * Use an eye wash station.
+    * Use an eye wash station.
 
-  * Sinks have DI guns that can be used followed by an eye wash.
+    * Sinks have DI guns that can be used followed by an eye wash.
 
 * Contact staff for assistance or call Public Safety (91 (212) 650-7777).
 
@@ -425,11 +425,11 @@ In the case of such a spill, users are to do the following:
 
 * Have someone call Public Safety (91 (212) 650-7777) and notify staff.
 
-  * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
+    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
 
-  * MSDS is located in the gowning room.
+    * MSDS is located in the gowning room.
 
-  * Bring calcium gluconate gel to the ambulance and continue to apply.
+    * Bring calcium gluconate gel to the ambulance and continue to apply.
 
 * Remove affected clothing, flush with cold water for 5 minutes.
 
@@ -447,13 +447,13 @@ In the case of such a spill, users are to do the following:
 
 * If exposed:
 
-  * Flush exposed area with water for 15 minutes.
+    * Flush exposed area with water for 15 minutes.
 
-  * Notify cleanroom staff after exposure, using posted Emergency Contact Information.
+    * Notify cleanroom staff after exposure, using posted Emergency Contact Information.
 
 * If medical assistance is needed, have someone call Public Safety (91 (212) 650-7777).
 
-  * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
+    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
 
 **Emergency: General**
 
@@ -471,19 +471,19 @@ In the case of such a spill, users are to do the following:
 
 * Check area for safety.
 
-  * Close open containers.
+    * Close open containers.
 
-  * Move victim to safety.
+    * Move victim to safety.
 
-  * Call Public Safety (91 (212) 650-7777).
+    * Call Public Safety (91 (212) 650-7777).
 
-  * Resuscitate with rescue breathing if necessary and qualified.
+    * Resuscitate with rescue breathing if necessary and qualified.
 
 **Chemical Ingestions**
 
 * Call Public Safety (91 (212) 650-7777) and notify staff.
 
-  * Immediately go to ER.
+    * Immediately go to ER.
 
 **First Aid for Minor Incidents**
 
@@ -491,21 +491,21 @@ In the case of such a spill, users are to do the following:
 
 * Immerse burned area in cold water.
 
-  * Cover with sterile dressing.
+    * Cover with sterile dressing.
 
-  * Call Public Safety (91 (212) 650-7777) if severe.
+    * Call Public Safety (91 (212) 650-7777) if severe.
 
 **Bleeding**
 
 * Place clean pad and pressure on the wound.
 
-  * If excessive, get medical attention.
+    * If excessive, get medical attention.
 
 **Clothing Fire**
 
 * Stop, drop & roll or douse victim with safety shower.
 
-  * Call Public Safety (91 (212) 650-7777).
+    * Call Public Safety (91 (212) 650-7777).
 
 
 

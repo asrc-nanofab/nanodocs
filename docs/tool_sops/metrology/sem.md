@@ -40,7 +40,7 @@ N/A
 2. Mount the sample on a sample holder using carbon/Cu tape, or if the holder has clips, tighten the clip with a screwdriver to secure the sample. Be sure the clip holds the sample securely and that the clip is not obscuring any area that you intend to image. The specimen must be electrically grounded to the sample holder to minimize specimen charging.   
 3. Insert the stub of the sample holder into the specimen holder and secure the stub with a hex-wrench.   
 4. Check whether the sample will fit through the load lock door using the   
-   load lock door emulator. If the sample is small enough to fit through the load lock door, then you can use the load lock procedure to load the sample. If the sample is too big, then you will have to vent the main chamber door. 
+    load lock door emulator. If the sample is small enough to fit through the load lock door, then you can use the load lock procedure to load the sample. If the sample is too big, then you will have to vent the main chamber door. 
 
 #### **4.1.3. Loading your sample** {#4.1.3.-loading-your-sample}
 
@@ -71,9 +71,9 @@ N/A
 2. **Move the stage up** to the 5mm working distance line. This process should be done carefully since the SEM software does not know the relative stage-to-column distance until you link Z to the working distance later. Make sure the camera (4th quadrant) is working.   
 3. To move the stage, open the **Navigation** page and select the **Coordinates** tab.  In this tab, you can control the x, y, z, tilt, and rotation of the sample stage.  
 4. There are three modes for changing the position: actual, target, and relative.    
-   1. Actual mode displays the actual position coordinates in the edit box.    
-   2. Target mode activates when clicking a stored position or when editing a coordinate value.    
-   3. Relative mode is used to move a stage by a given value and to repeat it several times if needed.  
+    1. Actual mode displays the actual position coordinates in the edit box.    
+    2. Target mode activates when clicking a stored position or when editing a coordinate value.    
+    3. Relative mode is used to move a stage by a given value and to repeat it several times if needed.  
 5. In order to move a stage, select the Actual mode and enter a value into the edit box and click the **Go To** button.  If you wish to stop the stage while it is in motion, click the **Stop** button (the **Go To** button becomes the **Stop** button when the stage is in motion) or press the **Esc** key. Start by moving up 5-10mm at a time while keeping the mouse over the stop button in case the stage goes above the 5mm working distance line. The safest way to move the z-stage in order to avoid crashing into the detector is in the live camera quad (Quad 4), hold down the scroll wheel and drag the mouse up or down to move the stage in that direction.  
 6. Adjust so that the top of your sample is roughly aligned with the 5mm line.
 

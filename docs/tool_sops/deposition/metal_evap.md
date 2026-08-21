@@ -81,8 +81,8 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 1. Check load lock pressure (\< 1E-5)  
 2. Check chamber pressure (\~ E-8)  
 3. Check temp of cryo pumps   
-   1. Top/Left cryo (10-11K)  
-   2.  Bottom/Right cryo (12-13K)  
+    1. Top/Left cryo (10-11K)  
+    2.  Bottom/Right cryo (12-13K)  
 4. Check if other users are on the sputter tool (coordinate load lock usage)  
 5. Check that the material you need is in the tool  
 6. **CONFIRM THAT BOTH GATE VALVES ARE CLOSED**
@@ -93,37 +93,37 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 2. Vent load lock to atmospheric pressure (\~750 Torr)  
 3. Lift the load lock lid completely   
 4. Remove rack from the loadlock and load sample on the sample plate  
-   1. The sample plate can be inserted on either the 2nd or 3rd level  
+    1. The sample plate can be inserted on either the 2nd or 3rd level  
 5. Insert the rack back into the loadlock and pump loadlock to **BELOW** 3E-5 Torr
 
 ### 3\. **Loading Sample into the Main Chamber** {#3.-loading-sample-into-the-main-chamber}
 
 1. Verify the receiving substrate holder (the angle bracket) is in the correct load position (height and rotation)  
-   1. Do not go below the bottom sharpie line   
-   2. Verify the vertical sharpie line (green line) orients with either the screw groove or red line for correct orientation  
-   3. See figures 1+4 in appendix for reference  
+    1. Do not go below the bottom sharpie line   
+    2. Verify the vertical sharpie line (green line) orients with either the screw groove or red line for correct orientation  
+    3. See figures 1+4 in appendix for reference  
 2. Open viewport shutters  
 3. Open gate valve when it is **below** 3E-5 Torr  
 4. Move the load arm to the loadlock.  
-   1. First go to the gate valve marking   
-   2. Make sure to slowly move towards the loadlock  
-   3. The paddle should be below the sample plate  
-   4. See figure 2 in appendix for reference  
+    1. First go to the gate valve marking   
+    2. Make sure to slowly move towards the loadlock  
+    3. The paddle should be below the sample plate  
+    4. See figure 2 in appendix for reference  
 5. Pick up the sample plate   
-   1. The sample plate should sit in the middle step of the paddle  
-   2. Recall that there is limited clearance between the rack spaces  
-   3. See figure 2 in appendix for reference  
+    1. The sample plate should sit in the middle step of the paddle  
+    2. Recall that there is limited clearance between the rack spaces  
+    3. See figure 2 in appendix for reference  
 6. Retract load arm to the substrate holder position inside main chamber   
-   1. The sharpie line closest to the home position of the load arm  
+    1. The sharpie line closest to the home position of the load arm  
 7. Close gate valve  
-   1. The chamber pressure will suffer (you will see a spike in chamber pressure) whenever you open the gate valve. This is normal.  
+    1. The chamber pressure will suffer (you will see a spike in chamber pressure) whenever you open the gate valve. This is normal.  
 8. Use the joystick to lift the sample plate off the loadarm.   
-   1. The sample plate must sit on the lowest step of the angle brackets  
-   2. You **can adjust the loadarm as needed** to achieve the above  
-   3. See figure 3 in appendix for reference  
+    1. The sample plate must sit on the lowest step of the angle brackets  
+    2. You **can adjust the loadarm as needed** to achieve the above  
+    3. See figure 3 in appendix for reference  
 9. Raise substrate holder (with sample plate) to deposition height  
-   1. Deposition height is 90mm from the top   
-   2. See figure 4 in appendix for reference  
+    1. Deposition height is 90mm from the top   
+    2. See figure 4 in appendix for reference  
 10. Return load arm to home position  
     1. As long as you are **on or above the top sharpie line**, the loadarm can be moved back to the home position safely  
 11. Shut the viewport shutters
@@ -133,58 +133,58 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 1. Turn on HV on the Genius monitor (should say 9.45kV)  
 2. Verify the Genius monitor is in “Automatic Operation”  
 3. Go to the Process Screen  
-   1. Select the material desired to deposit  
-   2. Must select it **twice** to actually select that choice  
-   3. See figure 5+6 in appendix for reference  
+    1. Select the material desired to deposit  
+    2. Must select it **twice** to actually select that choice  
+    3. See figure 5+6 in appendix for reference  
 4. Press “Edit” on the layer screen  
-   1. **You should only see 1 layer** \- which is the same as the material selected  
+    1. **You should only see 1 layer** \- which is the same as the material selected  
 5. In the “Process Menu: Edit …: Edit Layer 1.1” screen, you must edit/verify the following:  
-   1. Enter a film thickness greater than what you need to deposit  
-   2. Verify that the Start Mode is in “Auto” mode  
-   3. Sensor 1 must be “On”  
-   4. See figure 7 in appendix for reference   
+    1. Enter a film thickness greater than what you need to deposit  
+    2. Verify that the Start Mode is in “Auto” mode  
+    3. Sensor 1 must be “On”  
+    4. See figure 7 in appendix for reference   
 6. Go back to the main menu and go to the Film menu  
-   1. Select the material desired to deposit  
+    1. Select the material desired to deposit  
 7.  In that material film menu screen, verify the following 2 items  
-   1. The pocket number on the screen matches the crucible turret position in reality  
-   2. The material name matches to what you will be evaporating   
+    1. The pocket number on the screen matches the crucible turret position in reality  
+    2. The material name matches to what you will be evaporating   
 8. On the main menu, verify you are operating in “Man/Auto” (as opposed to Auto/Man)  
-   1. A white box appears around the “Power” level column when you are in manual mode  
+    1. A white box appears around the “Power” level column when you are in manual mode  
 9. Press the green “Start Button/ Start Layer”   
-   1. The EBSH will go from Black to green  
-   2. **Wait until the crucible turret arrives to your desired material**  
-   3. **On the top left of the main screen, it will say “Verify Crystal” for a very brief moment.**   
-   4. It should read “Deposit”, before you start ramping up.
+    1. The EBSH will go from Black to green  
+    2. **Wait until the crucible turret arrives to your desired material**  
+    3. **On the top left of the main screen, it will say “Verify Crystal” for a very brief moment.**   
+    4. It should read “Deposit”, before you start ramping up.
 
 ### 5\. **Film Deposition** {#5.-film-deposition}
 
 #### *Ramping up to Threshold* 					 {#ramping-up-to-threshold}
 
 1. Ramp up by increasing the power knob slowly and waiting between movements    
-   1. Ramping up is:  
-      1. **No more than 3% at a time**   
-   2. For every movement done, **you must wait anywhere between 30 sec. \- 1 min. Before moving the power knob again.**  
+    1. Ramping up is:  
+        1. **No more than 3% at a time**   
+    2. For every movement done, **you must wait anywhere between 30 sec. \- 1 min. Before moving the power knob again.**  
 2. When you start to get a rate on the monitor (ideally \~0.01Å/s), note the power in the log binder  
-   1. If it fluctuates to 0 or to negative numbers, that is not a real rate. It’s just noise.  
+    1. If it fluctuates to 0 or to negative numbers, that is not a real rate. It’s just noise.  
 3. Check chamber pressure and cryo temperatures periodically  
 4. Verify the location of the E-beam in the crucible through the viewport window  
-   1. If it is too close to the crucible wall or if it is on the crucible, notify staff member to move the beam for you  
+    1. If it is too close to the crucible wall or if it is on the crucible, notify staff member to move the beam for you  
 5. Close the viewport window 
 
 #### *After Threshold \- Ramping up to Soaking*  {#after-threshold---ramping-up-to-soaking}
 
 6. Increase the power slowly until you are midway of the desired deposition rate   
-   1. You could try moving 1% first and observe how the rate rises.   
-      1. If the rate moves up slowly or within acceptable bounds (≤ 0.1Å/s), you can increase the power jump slightly.  
-      2. If you see the rate rise more than 0.1Å/s, then move the power back to the last number you were on. Wait at least 1 minute for the rate to stabilize. Then, try moving again at a slower pace and observe how the rate behaves  
+    1. You could try moving 1% first and observe how the rate rises.   
+        1. If the rate moves up slowly or within acceptable bounds (≤ 0.1Å/s), you can increase the power jump slightly.  
+        2. If you see the rate rise more than 0.1Å/s, then move the power back to the last number you were on. Wait at least 1 minute for the rate to stabilize. Then, try moving again at a slower pace and observe how the rate behaves  
 7. When you are halfway of the desired rate, soak for a couple of minutes for uniformity  
-   1. **Soak for at least 3 minutes**  
+    1. **Soak for at least 3 minutes**  
 8. Check chamber pressure and cryo temperatures periodically
 
 #### *After Soaking \- Ramping up to Desired Rate*  {#after-soaking---ramping-up-to-desired-rate}
 
 9. At this point, it shouldn’t take large power jumps to reach your desired rate.  
-   1. Should be increasing the power approximately the same pace  
+    1. Should be increasing the power approximately the same pace  
 10. Check chamber pressure and cryo temperatures periodically
 
 #### *Deposition*   {#deposition}
@@ -215,13 +215,13 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 1. Turn off the HV on the Genius controller.   
 2. Insert the load arm into the main chamber to receive the sample plate  
 3. Lower your sample plate onto the load arm  
-   1. Make sure the sample plate sits on the middle step feature of the loadarm paddle  
+    1. Make sure the sample plate sits on the middle step feature of the loadarm paddle  
 4. Lower the substrate holder (angle bracket) to the bottom sharpie line   
 5. Check that the rack is in the position you need it and that there is no one using the loadlock  
 6. Verify the pressure in the loadlock is \< 3E-5  
 7. Open the gate valve  
 8. Transfer your sample to the rack in the loadlock  
-   1. When the paddle is in the loadlock, the level/ledge that the sample plate was sitting on the rack originally, should be below the paddle  
+    1. When the paddle is in the loadlock, the level/ledge that the sample plate was sitting on the rack originally, should be below the paddle  
 9. After transferring the sample plate to the rack, retract the arm to its home position  
 10. Shut the gate valve  
 11. Vent the load lock and remove your sample.
@@ -232,7 +232,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     1. The HV is off on the Genius Controller  
     2. The gate valves are shut (both on the loadlock)  
     3. The load lock is evacuated and pumped down.  
-       1. You don’t need to stay until the loadlock is fully pumped down to vacuum, **but until you see that the pressure numbers are dropping**    
+        1. You don’t need to stay until the loadlock is fully pumped down to vacuum, **but until you see that the pressure numbers are dropping**    
 13. Enter your deposition info into the log book  
 14. Enter all films and thicknesses in Badger and log off 
 
@@ -243,93 +243,93 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 ### **Setup and Loading**
 
 1. Remove all of the other sample plates from the rack  
-   1. Place them on a wipe  
+    1. Place them on a wipe  
 2. Mount your sample in the middle of the plate  
-   1. **Only 1 sample at a time**  
+    1. **Only 1 sample at a time**  
 3. Place the plate back on the rack, on the middle level. Make sure that the plate is centered.  
-   1. All other plates remain on the wipe  
+    1. All other plates remain on the wipe  
 4. Pump down loadlock and transfer sample plate as you would for deposition  
 5. Load the sample plate to the milling height of 110mm from the top  
-   1. Right above the top sharpie line
+    1. Right above the top sharpie line
 
 ### **Working**
 
 1. Open the gate valve to the loadlock, and **keep it open**.  
 2. Turn off the ion gauge, by pressing the **SENSOR ON/OFF** button  
-   1. Shown in figure 8  
-      ![](img/69c9142ec327.png)  
+    1. Shown in figure 8  
+        ![](img/69c9142ec327.png)  
 3. Shut off the top cryo pump.  
-   1. Touch **Cr\_I** to make it go from **ON** to **OFF**  
-   2. Shown in figure 9  
-      ![](img/a8661cbfecdc.png)  
+    1. Touch **Cr\_I** to make it go from **ON** to **OFF**  
+    2. Shown in figure 9  
+        ![](img/a8661cbfecdc.png)  
 4. Turn on the Argon gas and start the flow at 5 sccm  
-   1. On the touch screen, touch the gas box to edit the value  
-   2. See figure 10  
-      ![](img/63ed86f82602.png)  
+    1. On the touch screen, touch the gas box to edit the value  
+    2. See figure 10  
+        ![](img/63ed86f82602.png)  
 5. Establish the chamber pressure to be about **5E-4 Torr** by cranking the lever on the bottom cryo  
-   1. Use the loadlock gauge to verify the pressure  
-   2. See figure 11 for the location of the bottom cryo lever.  
-      ![](img/f85ec30dbed2.png)  
+    1. Use the loadlock gauge to verify the pressure  
+    2. See figure 11 for the location of the bottom cryo lever.  
+        ![](img/f85ec30dbed2.png)  
 6. Setup your ion milling settings  
-   1. Use the chart on the tool to help you with this  
-      1. If you need to adjust a parameter, press the button that is next to it, and then turn the knob  
+    1. Use the chart on the tool to help you with this  
+        1. If you need to adjust a parameter, press the button that is next to it, and then turn the knob  
 7. Open the ion shutter by touching **I\_SH t**o make it go from **OFF** to **ON**  
 8. Keep the sample shutter close  
 9. Press **DISCHARGE ENABLE**  
-   1. Wait about 30 sec \-1 minute for the panel to stabilize  
-   2. See figure 12  
+    1. Wait about 30 sec \-1 minute for the panel to stabilize  
+    2. See figure 12  
 10. Press **BEAM ENABLE**  
     1. Wait about 30 sec \-1 minute for the panel to stabilize  
     2. See figure 12  
     3. The chamber will be very bright, please make sure to use welding goggles if you are going to look inside.  
-       1. The filament for ion milling will glow and refer to figure 13 for what it should look like
+        1. The filament for ion milling will glow and refer to figure 13 for what it should look like
 
-       ![](img/b6cf8cd5798a.png)
+        ![](img/b6cf8cd5798a.png)
 
-       ![](img/6972756bc91a.png)
+        ![](img/6972756bc91a.png)
 
 11. Turn on rotation of the sample plate.  
     1. Flip the switch to **LOCAL** mode  
     2. Turn the RPM knob all the way to 100  
-       1. You should hear a click at the beginning   
-       2. A green LED should be turned ON  
+        1. You should hear a click at the beginning   
+        2. A green LED should be turned ON  
     3. Adjust the RPM knob to desired rotation speed  
     4. See figure 14 as an example for in-use  
-       ![](img/f213c9b44f17.png)  
+        ![](img/f213c9b44f17.png)  
 12. At this point, you are ready to mill. Open the substrate shutter and start a timer  
     1. The substrate shutter is **S\_SH**  
     2. You may see a red light appear for **Accel mAmp Limit** on the panel, this is ok.  
-       1. See figure 12  
+        1. See figure 12  
     3. **Make sure the viewing shutter is closed\!**
 
 ### **Turning Off and Unloading**
 
 1. To turn off, first press **BEAM ENABLE**  
-   1. Wait about 30 sec \-1 minute for the panel to stabilize  
+    1. Wait about 30 sec \-1 minute for the panel to stabilize  
 2. Press **DISCHARGE ENABLE**  
-   1. Wait about30 sec \-1 minute for the panel to stabilize  
+    1. Wait about30 sec \-1 minute for the panel to stabilize  
 3. Close the ion shutter, but turning off **I\_SH**  
 4. Turn off the Argon gas, by pressing **OFF**  
-   1. Wait until it reads 0 sccm  
+    1. Wait until it reads 0 sccm  
 5. Stop the rotation by turning the RPM knob to 0  
-   1. Should hear a loud click sound when the knob is successfully at 0  
+    1. Should hear a loud click sound when the knob is successfully at 0  
 6. Set the sample plate holder (angle brackets) back into the original position. The green sharpie line should be lined up to the black sharpie line/screw groove  
-   1. Refer to figure 1 in the appendix  
-   2. Flip the switch next to the RPM knob to **REMOTE** mode after alignment  
+    1. Refer to figure 1 in the appendix  
+    2. Flip the switch next to the RPM knob to **REMOTE** mode after alignment  
 7. You may need to raise the sample plate a little bit before moving the loadarm into the unloading position. Otherwise, unload the sample plate as normal.  
-   1. Loadarm should be at the chamber sharpie line for removing the sample plate from the angle bracket.  
-   2. **Make sure the sample plate is not rotating before attempting to place it on the loadarm**  
+    1. Loadarm should be at the chamber sharpie line for removing the sample plate from the angle bracket.  
+    2. **Make sure the sample plate is not rotating before attempting to place it on the loadarm**  
 8. **Make sure the loadlock gate valve is closed before venting the loadlock to remove your sample\!**
 
 ### **Before You Go…**
 
 1. Turn the ion gauge back on by pressing the **SENSOR ON/OFF** button  
 2. Open the top cryo pump by pressing the **Cr\_I**   
-   1. You may hear a hiss and pop sounds, this is normal.  
-   2. See figure 13 for what the touch screen and the ion gauge panels should look like for idle state  
-      ![](img/9439c3777db2.png)  
+    1. You may hear a hiss and pop sounds, this is normal.  
+    2. See figure 13 for what the touch screen and the ion gauge panels should look like for idle state  
+        ![](img/9439c3777db2.png)  
 3. Open up completely the bottom cryo pump  
-   1. Manually crank the level to **OPEN** position  
+    1. Manually crank the level to **OPEN** position  
 4. **Make sure the gate valve is closed before venting the loadlock to remove your sample**  
      
      

@@ -43,11 +43,11 @@ N/A
 #### **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
 
 1. Place sample in the center of the stage. **Be careful not to touch the stylus tip whenever you load or unload a sample. Be sure the stylus is in its home position all the way up off the sample and stage.**  
-   1. Note: You can position the stage for easier loading and unloading by clicking **Unload Sample** to move the stage out and clicking **Load Sample** to move the stage back in.   
+    1. Note: You can position the stage for easier loading and unloading by clicking **Unload Sample** to move the stage out and clicking **Load Sample** to move the stage back in.   
 2. Turn the vacuum on.  
 3. Move the stylus down to the surface of the sample by clicking **Tower Down**. **Be sure the stylus will touchdown on the sample. If it touches down off the sample, you risk crashing the tower into the sample, especially if the sample is thick.** If the sample is going to touchdown off the sample, press **Esc** to stop its descent and reposition the sample before clicking **Tower Down** again.   
 4. The stylus should move down to the surface until it touches, at which point it will lift back up and remain just above the sample surface. At this point, the sample surface should be visible and in focus on the display by means of the camera.   
-   1. Note: If you need to raise the stylus at all, you can move it up a few millimeters by clicking **Tower Up**, or you can move it all the way up by clicking **Tower Home**.  
+    1. Note: If you need to raise the stylus at all, you can move it up a few millimeters by clicking **Tower Up**, or you can move it all the way up by clicking **Tower Home**.  
       
 
 #### **4.1.3 Collect Measurement Data** {#4.1.3-collect-measurement-data}
@@ -57,27 +57,27 @@ N/A
 1. In the XY and Theta control panels under Instrument Control, select the speeds at which you want to move and rotate the sample stage.   
 2. Drag the red circle in XY control from the center of the cross-hair to move the stage to find the structure on your sample you intend to measure.   
 3. Drag the red circle in the Theta control either clockwise or counterclockwise from the starting position to rotate the stage in order to orient your sample for measurement.   
-   1. Note: You can only measure in one direction, which is from bottom to top of the software display, so position your sample accordingly.   
+    1. Note: You can only measure in one direction, which is from bottom to top of the software display, so position your sample accordingly.   
 4. In Measurement Options under Trace, select the Range and Profile best suited to what you are measuring.   
 5. Determine the length of the measurement by either entering a value in micrometers into Length or click the **Teach** icon next to it. When prompted, move the sample to the position from which you want the measurement to start and then click **Next**, then move the sample to the position where you want the measurement to end and then click **Done**. 
 
 ![](img/27f33caf0735.png)
 
 5. Determine the Resolution of your measurement by entering a value in seconds into Duration. Longer scans will resolve smaller structures and thus have better resolution.   
-   1. Note: If you wish to perform a sequence of measurements, perform data stitching, or create a 3D map, those options are also available under Measurement Setup, but they are not necessary for a typical measurement.   
+    1. Note: If you wish to perform a sequence of measurements, perform data stitching, or create a 3D map, those options are also available under Measurement Setup, but they are not necessary for a typical measurement.   
 6. Once your measurement parameters are entered, click **Single Acquisition** to make the measurement. **Do not touch or bump the table holding the Dektak-XT while it is measuring, as any wobbling could ruin the measurement.** 
 
 #### **4.1.4. Data Analysis** {#4.1.4.-data-analysis}
 
 1. After the system has made a measurement, the software will switch to the Data Analysis window.   
 2. Level the data if necessary, by selecting **Terms Removal (F-Operator)** in Data Analyzer, then move the R and M cursors to two points you expect should be level and then right-click the data and select **Two-Point Leveling**.   
-   1. Note: There are many options for filtering and analyzing data available in Data Analyzer. For information on the different options, consult a Bruker manual.
+    1. Note: There are many options for filtering and analyzing data available in Data Analyzer. For information on the different options, consult a Bruker manual.
 
 ![](img/b512b9255b9b.png)
 
 3. Make measurements by moving the R and M cursors to positions you wish to compare and then expand them in order to average over certain portions of the measurement.   
 4. A value for Total\_ASH (average step height) determined from the difference between the average heights of R and m will be displayed in Watch List.   
-   1. Note: Watch List can be configured to display other data that you may wish to measure. 
+    1. Note: Watch List can be configured to display other data that you may wish to measure. 
 
 ![](img/05d68765349d.png)
 

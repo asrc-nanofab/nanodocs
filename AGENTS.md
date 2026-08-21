@@ -76,6 +76,7 @@ synced page renders oddly, check against this list before changing the script:
 | Letterhead logo + doc title at top | Stripped; the page supplies its own H1 |
 | Empty heading lines (styling leftovers) | Stripped |
 | Headings indented inside lists render as literal text / code blocks | Dedented by `_dedent_nested_headings` |
+| Nested list items indented by parent marker width (2–4 spaces); Python-Markdown needs 4 per level, so lists render flat | Re-indented by `_normalize_list_indent` |
 | Body sections authored as Heading 1 become siblings of the page's H1 title, emptying Material's sidebar TOC | All headings demoted one level by `_demote_body_headings` when a body H1 exists |
 | "AI-generated content may be incorrect" alt-text boilerplate | Stripped |
 

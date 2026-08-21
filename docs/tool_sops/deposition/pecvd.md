@@ -33,7 +33,7 @@ Hardware Description
 
 1. Vacuum Chamber
 
-   Vacuum chamber is a high purity stainless steel or aluminum alloy enclosed space to maintain a very clean and controlled deposition environment. In this tool, there are two separate vacuum chambers. To create vacuumed space inside the chambers, high-capacity pumps (dry and turbomolecular pumps) are used 
+    Vacuum chamber is a high purity stainless steel or aluminum alloy enclosed space to maintain a very clean and controlled deposition environment. In this tool, there are two separate vacuum chambers. To create vacuumed space inside the chambers, high-capacity pumps (dry and turbomolecular pumps) are used 
 
 * Main Process chamber, where deposition occurs
 
@@ -41,11 +41,11 @@ Hardware Description
 
 2. Electrode and Plasma generation system
 
-   To create plasma, parallel plate configuration is used. Top plate/Electrode serves as a showerhead which distributes process gases uniformly across the wafer. The bottom electrode/plate serves the substrate holder and is grounded to generate RF-powered plasma. Distance between two electrodes is adjusted to optimize the process parameters. RF power supply is typically 13.56 MHz to generate plasma with active precursor gases. For better control of ion bombardment and film properties (film stress, deposition density, refractive index) dual frequency setup of low and high RF frequencies is provided. Matching network of impedance is adjusted to a correct position to deliver maximum power to the plasma for uniform films deposition.
+    To create plasma, parallel plate configuration is used. Top plate/Electrode serves as a showerhead which distributes process gases uniformly across the wafer. The bottom electrode/plate serves the substrate holder and is grounded to generate RF-powered plasma. Distance between two electrodes is adjusted to optimize the process parameters. RF power supply is typically 13.56 MHz to generate plasma with active precursor gases. For better control of ion bombardment and film properties (film stress, deposition density, refractive index) dual frequency setup of low and high RF frequencies is provided. Matching network of impedance is adjusted to a correct position to deliver maximum power to the plasma for uniform films deposition.
 
 3. Substrate Holder
 
-   It can hold substrates up to 8 inches in diameter. The temperature control system is included to maintain substrate temperature generally ranges from 100oC to 400o
+    It can hold substrates up to 8 inches in diameter. The temperature control system is included to maintain substrate temperature generally ranges from 100oC to 400o
 
 #### **Principle of Operation:** {#principle-of-operation:}
 
@@ -53,9 +53,9 @@ The PECVD process has three main operation steps
 
 1. Conditioning
 
-   2. Deposition and 
+    2. Deposition and 
 
-   3. Cleaning
+    3. Cleaning
 
 ##### **Conditioning:** {#conditioning:}
 
@@ -113,7 +113,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 * Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
 * Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 2 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
 
-       ![](img/ac4716a38cff.png){ width="109" }![](img/c33eb243d09e.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+    ![](img/ac4716a38cff.png){ width="109" }![](img/c33eb243d09e.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
 
 *Image 1:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
 
@@ -169,7 +169,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 1. ##### **Load Sample** {#load-sample}
 
-   Sapphire wafer is always there in the Load Lock under the vacuum.
+    Sapphire wafer is always there in the Load Lock under the vacuum.
 
 1. Go to the Transport \[step **1**\] tab under Manual and select VENT \[step **2**\] to evacuate the load lock as shown in the **Image 8**, follow the number sequences. 
 
@@ -207,7 +207,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 3. ##### **Unload Sample** {#unload-sample}
 
-   When the process is completed, the wafer inside the chamber will be in GREEN. Follow steps of **Image 10**.
+    When the process is completed, the wafer inside the chamber will be in GREEN. Follow steps of **Image 10**.
 
 1. Go to **Manual** tab and Transport \[step **1**\]. Under the Transport tab, select **UNLOAD** Wafer \[step **2**\].
 
@@ -309,19 +309,19 @@ Load the Sapphire wafer into the loading Arm correctly
 
 1. Go to Recipe editor \[step **1**\] and select the cleaning recipe. Follow the steps of **Image 13\.**
 
-   1. Timed Clean
+    1. Timed Clean
 
 For a Clean timed recipe, the **Cleaning Time calculation** **must include the Condition recipe deposition time and main deposition time as per the chart stuck on the side wall of the Plasma Asher Tool** to clean the chamber. Add an extra 10-minute cleaning time when deposition is higher than 1 micron.
 
 1. Select OPT CLEAN TIMED (recommended) \[step **2**\] and \[step **3**\]. 
 
-   2. Go to Process (step 4), edit deposition run **time** of the **High-pressure clean** \[step **4**\], click Enter to register edited time and SAVE it \[step **5**\]
+    2. Go to Process (step 4), edit deposition run **time** of the **High-pressure clean** \[step **4**\], click Enter to register edited time and SAVE it \[step **5**\]
 
-      **Note:** **Do not change Low Pressure Time.**
+        **Note:** **Do not change Low Pressure Time.**
 
-   2. End Point Detection Clean 
+    2. End Point Detection Clean 
 
-      1. Select OPT CLEAN EPD. 
+        1. Select OPT CLEAN EPD. 
 
 2. After editing cleaning time, follow the steps of loading **wafer, loading and running the recipe and unloading the wafer** steps as shown in **images 8,9 and 10\.**  
 3. Be inside the Cleanroom until the clean recipe is completed.  

@@ -118,11 +118,11 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 
 4. Check the state of the hood:
 
-   1. Check the photohelic exhaust monitor located at the top left corner of the fume hood to ensure that the exhaust is active and at an adequate level.
+    1. Check the photohelic exhaust monitor located at the top left corner of the fume hood to ensure that the exhaust is active and at an adequate level.
 
-   2. Check that there are waste containers at the back of the hood for the chemicals you’ll be using and that there is enough room in the containers for your chemical waste.
+    2. Check that there are waste containers at the back of the hood for the chemicals you’ll be using and that there is enough room in the containers for your chemical waste.
 
-   3. Confirm that the hood is in a clean and safe state.
+    3. Confirm that the hood is in a clean and safe state.
 
 5. Collect the necessary beakers, graduated cylinders or other containers for your process from the glassware rack and place them on wipes inside the hood.
 
@@ -130,13 +130,13 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 
 7. Check the status of the PPE you’ll be wearing:
 
-   1. Check the trionic gloves you’ll be using for holes by twisting it off at the cuff to enclose air inside and squeeze it to confirm that balloons.
+    1. Check the trionic gloves you’ll be using for holes by twisting it off at the cuff to enclose air inside and squeeze it to confirm that balloons.
 
-   2. Check the vinyl apron you’ll be wearing for tears and holes, especially on the sleeves. Confirm that the ties are intact at the neck and waist.
+    2. Check the vinyl apron you’ll be wearing for tears and holes, especially on the sleeves. Confirm that the ties are intact at the neck and waist.
 
-   3. Check the faceshield you’ll be using to confirm that it is intact and that the visor is clean and clear. Make sure it is adjustable and set it up to fit comfortably and securely on your head.
+    3. Check the faceshield you’ll be using to confirm that it is intact and that the visor is clean and clear. Make sure it is adjustable and set it up to fit comfortably and securely on your head.
 
-   4. Check your safety glasses to confirm that they are clean and clear.
+    4. Check your safety glasses to confirm that they are clean and clear.
 
 8. Put on the trionic gloves. Best practice is to avoid touching the outside of the gloves as you’ll be putting them on and taking them off after handling chemicals. Turn the duff inside out so you can grip it from the inside with the opposite hand to put it on. As you put the other glove on, only touch the outside of the glove with your gloved hand.
 
@@ -181,13 +181,13 @@ Note that as covered in that SOP that if you are leaving chemicals unattended, t
 
 8. Remove the PPE:
 
-   1. Remove the trionic gloves, essentially reversing the procedure used to put them on. You may place them in the hood with the cuffs overhanging the edge outside the hood.
+    1. Remove the trionic gloves, essentially reversing the procedure used to put them on. You may place them in the hood with the cuffs overhanging the edge outside the hood.
 
-   2. Remove the faceshield and hang it on the hook on the wall. Do not place the faceshield in the hood.
+    2. Remove the faceshield and hang it on the hook on the wall. Do not place the faceshield in the hood.
 
-   3. If you remove your safety glasses, do not put them in the hood.
+    3. If you remove your safety glasses, do not put them in the hood.
 
-   4. Untie the apron and then carefully take it off. Hang it up immediately on the hook on the wall.
+    4. Untie the apron and then carefully take it off. Hang it up immediately on the hook on the wall.
 
 9. Don the trionic gloves.
 

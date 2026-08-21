@@ -37,10 +37,10 @@ All standard laboratory safety protocols must be followed throughout this proced
 1. Turn on the power for the system if it is not ON.  
 2. Turn on the monochromator.  
 3. Turn on the power for the lamp and then press and release the ignite button. The lamp should ignite after a few seconds. You should allow the lamp to warm up for at least 15 minutes before using the system to perform measurements.   
-   1. Note: The system uses an IR-Vis fiber optic cable between the monochromator and the polarizer, which has a spectral range of 300-1700 nm. There also is an IR-Vis-UV fiber optic cable with a spectral range of 240-1700 nm, but with an absorption band at 1350-1430 nm, which is better suited for UV measurements. If you want to use that cable ask the cleanroom staff to change it for you. Do not attempt to adjust or change the fiber optic cable without staff assistance.  
+    1. Note: The system uses an IR-Vis fiber optic cable between the monochromator and the polarizer, which has a spectral range of 300-1700 nm. There also is an IR-Vis-UV fiber optic cable with a spectral range of 240-1700 nm, but with an absorption band at 1350-1430 nm, which is better suited for UV measurements. If you want to use that cable ask the cleanroom staff to change it for you. Do not attempt to adjust or change the fiber optic cable without staff assistance.  
 4. Start the WVASE32 software on the computer and navigate to the hardware window.   
 5. Initialize the system: **Hardware window \-\>initialize.**   
-   Enter a username when prompted to do so.   
+    Enter a username when prompted to do so.   
 6. Insert the alignment detector in the polarized light source if it is not already in place. Be careful whenever handling the alignment detector, especially when inserting it. Be sure the pins are aligned and connected correctly so they are not bent or broken in the process.
 
 ####      **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
@@ -48,11 +48,11 @@ All standard laboratory safety protocols must be followed throughout this proced
 1. Place calibration wafer on the sample holder. The sample size switch on the side of the sample holder should be set to large for large wafers or small for small samples and then set the vacuum switch from vent to vacuum to hold the wafer in place.   
 2. Click on **Acquire Data-\>Align Sample** from the menu bar. You’ll be prompted to insert the alignment detector and then to adjust the positioning of the wafer; click **OKAY** when prompted to do so.   
 3. Adjust the alignment of the sample by turning the two knobs on the back of the sample holder. You need to center the red cross in the display while equalizing the intensity among the four quadrants. The X and Y values both need to be between \-1 and 1, as close to 0 as possible. Press **Esc** when you are finished.   
-   ![](img/4cba39d2d663.png){ width="547" }  
+    ![](img/4cba39d2d663.png){ width="547" }  
      
 4. Click **OKAY** when prompted to do so and then the system will then automatically align the z-stage.   
      
-   ![](img/06de764cd2fb.png){ width="547" }  
+    ![](img/06de764cd2fb.png){ width="547" }  
    
 
 #### **4.1.3.  System Calibration** {#4.1.3.-system-calibration}
@@ -75,11 +75,11 @@ All standard laboratory safety protocols must be followed throughout this proced
      
 4. Set up a measurement by clicking on **Acquire Data-\>Spectroscopic Scan** from the menu bar. There are a lot of options for the spectroscopic scan, such as the range of wavelengths and angles of incidence of the light to be scanned, not to mention other settings for measuring other properties of the sample. You should consult a WVASE manual to better understand all of the measurement options available to you.  
      
-   1. Note: It is important to know what data you will need. The more data you collect the longer the measurement process will take.   
-   2. Note: Aside from the typical Spectroscopic Scan, you may also acquire data using Dynamic Scan or R\&T Data.   
-      1. Dynamic Scan allows a user to acquire time dependent ellipsometric data with a wavelength range specified as a continuous range or as up to 9 discrete wavelengths, though at only one angle of incidence.  
-      2. R\&T Data allows a user to acquire intensity reflection and transmission data from a single point on a sample.   
-      3. You should consult a WVASE manual to better understand all the measurement options available to you.
+    1. Note: It is important to know what data you will need. The more data you collect the longer the measurement process will take.   
+    2. Note: Aside from the typical Spectroscopic Scan, you may also acquire data using Dynamic Scan or R\&T Data.   
+        1. Dynamic Scan allows a user to acquire time dependent ellipsometric data with a wavelength range specified as a continuous range or as up to 9 discrete wavelengths, though at only one angle of incidence.  
+        2. R\&T Data allows a user to acquire intensity reflection and transmission data from a single point on a sample.   
+        3. You should consult a WVASE manual to better understand all the measurement options available to you.
 
    
 

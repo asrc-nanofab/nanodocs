@@ -126,7 +126,7 @@ Verify that both the load lock and the reactor are under vacuum.
 
 2. Open the lid of the load lock chamber 
 
-   Place the sample/wafer/chip onto the sample holder/puck carefully. When loading the sample, make sure that there is no gap between the fork/prongs that hold the sample holder and the loader arm. See **Figure 4** for the correct position of the sample holder and the lifting fork.
+    Place the sample/wafer/chip onto the sample holder/puck carefully. When loading the sample, make sure that there is no gap between the fork/prongs that hold the sample holder and the loader arm. See **Figure 4** for the correct position of the sample holder and the lifting fork.
 
    
 
@@ -152,13 +152,13 @@ Verify that both the load lock and the reactor are under vacuum.
 
 1. Closing a radio button (OPEN/CLOSE) to make it BLUE from ORANGE **\[step 1\]**
 
-   2. Turn off the turbo purge **\[step 2\]**
+    2. Turn off the turbo purge **\[step 2\]**
 
-   3. Turn off the Turbo (ON/OFF) **\[step 3\]**
+    3. Turn off the Turbo (ON/OFF) **\[step 3\]**
 
-   4. Close the turbo isolation valve **\[step 4\]**
+    4. Close the turbo isolation valve **\[step 4\]**
 
-   5. Now press the **Pump Load Lock** button. **\[step 5\]**
+    5. Now press the **Pump Load Lock** button. **\[step 5\]**
 
    
 
@@ -178,13 +178,13 @@ Figure 5 Isolating reactor chamber and Pumping LL
 
    
 
-   CAUTION: do not press **Unload Sample**, as that will damage the transfer arm.
+    CAUTION: do not press **Unload Sample**, as that will damage the transfer arm.
 
    
 
 3. Once the sample is successfully loaded, \[you need to wait for the Load arm to fully retract back to its home position.\] Close the gate valve, by pressing the **Close Gate** button **\[step 3\].** It is the same button just used to open the gate valve.
 
-   Now you need to Pump down the reactor chamber
+    Now you need to Pump down the reactor chamber
 
 4. Press the Rough Pump button which will turn blue to orange, **\[step 4\]** 
 
@@ -228,11 +228,11 @@ When unloading the sample, you must follow the above steps in reverse order. In 
 
 5. Then vent the load lock **\[step 4\]** and remove your sample. 
 
-   CAUTION: the sample holder will be hot. Be careful not to burn yourself.
+    CAUTION: the sample holder will be hot. Be careful not to burn yourself.
 
    
 
-   ![](img/3b8dcd1b6d10.png)
+    ![](img/3b8dcd1b6d10.png)
 
    
 
@@ -242,13 +242,13 @@ Figure 8, Unloading sample
 
 7. Prior to leaving the tool you MUST verify that:
 
-   1. The load lock is under vacuum.
+    1. The load lock is under vacuum.
 
-   2. The process chamber is under vacuum, that is, the turbo isolation valve is open, the turbo purge is on, the turbo is on, and the turbo isolation valve is open.
+    2. The process chamber is under vacuum, that is, the turbo isolation valve is open, the turbo purge is on, the turbo is on, and the turbo isolation valve is open.
 
-   3. MFC-0 is set to 5 sccm. and MFC-1 is set to 10 sccm**. \[step 5\]**
+    3. MFC-0 is set to 5 sccm. and MFC-1 is set to 10 sccm**. \[step 5\]**
 
-   4. Heaters 13, 14, and 15 are set to 100 C. **\[step 6\]**
+    4. Heaters 13, 14, and 15 are set to 100 C. **\[step 6\]**
 
    
 
@@ -300,11 +300,11 @@ Figure 9 Pressure graph and Pulse peaks
 
 * If the heaters are off, or if there are communication issues between the software and the hardware, restart the Fiji software.  
 * Pressure gauge issues.   
-  * Sometimes load lock pressure gauge and chamber low-pressure gauges will malfunction, when you notice the pressures are not reading correctly unplug the ethernet cable from the gauge for 10 seconds and again re-plug it, now orange and green LEDs will lite up **(Figure 10).**
+    * Sometimes load lock pressure gauge and chamber low-pressure gauges will malfunction, when you notice the pressures are not reading correctly unplug the ethernet cable from the gauge for 10 seconds and again re-plug it, now orange and green LEDs will lite up **(Figure 10).**
 
-  ![](img/3c99e8367c6d.png)
+    ![](img/3c99e8367c6d.png)
 
-  Figure 10 Pressure under the LL and Main Reactor chamber
+    Figure 10 Pressure under the LL and Main Reactor chamber
 
 *Report Problem*
 

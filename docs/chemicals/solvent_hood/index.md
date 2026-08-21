@@ -95,13 +95,13 @@ Dispose of broken chemical glassware in a sharps waste container.
 
 3. Check the state of the hood:
 
-   1. If other users have chemistry in the hood, coordinate with them so your work in the hood does not overlap too much with theirs. While four users can have chemistry in the hood at the same time, only two users can be working at the hood at any time.
+    1. If other users have chemistry in the hood, coordinate with them so your work in the hood does not overlap too much with theirs. While four users can have chemistry in the hood at the same time, only two users can be working at the hood at any time.
 
-   2. Check the photohelic exhaust monitor located at the top left corner of the fume hood to ensure that the exhaust is active and at an adequate level.
+    2. Check the photohelic exhaust monitor located at the top left corner of the fume hood to ensure that the exhaust is active and at an adequate level.
 
-   3. Check the status of the carboys in the hood controls if you will be disposing of solvents that go into the carboys.
+    3. Check the status of the carboys in the hood controls if you will be disposing of solvents that go into the carboys.
 
-   4. Confirm that the hood is in a clean and safe state. If other users’ chemistry is in the hood, it should be towards the back of the hood and unattended chemicals must be covered.
+    4. Confirm that the hood is in a clean and safe state. If other users’ chemistry is in the hood, it should be towards the back of the hood and unattended chemicals must be covered.
 
 ### Solvent Cleaning or Lift-Off
 
@@ -112,8 +112,8 @@ Dispose of broken chemical glassware in a sharps waste container.
 5. Carefully pour enough solvent into the beaker so that your sample will be completely submerged in it.  
 6. Place your sample into the solvent using tweezers and begin agitating the solution.  
 7. If you are heating your sample to assist with lift-off, place the beaker containing your sample and solvent onto the hotplate in the hood. The setting on the hotplate should never be set over 100°C.  
-   If you are using Remover PG, it is safe to leave it on the hotplate overnight so long as it is covered and labeled. DO NOT overheat Remover PG as it can burn.  
-   If you are heating IPA or acetone, you cannot leave your chemicals unattended while they’re on the hotplate as they will likely boil off quickly. It is typically not recommended to heat IPA or acetone.  
+    If you are using Remover PG, it is safe to leave it on the hotplate overnight so long as it is covered and labeled. DO NOT overheat Remover PG as it can burn.  
+    If you are heating IPA or acetone, you cannot leave your chemicals unattended while they’re on the hotplate as they will likely boil off quickly. It is typically not recommended to heat IPA or acetone.  
 8. Allow your samples to sit in the solvent for the duration of time required to develop your features. If you are leaving your chemistry unattended for this time, make sure there is a label with your name, the date and chemical contents next to it, and leave the Badger slot for the hood enabled while your chemicals remain in the hood.
 
 ### Solvent Rinse

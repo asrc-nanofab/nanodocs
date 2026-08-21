@@ -83,9 +83,9 @@ Strike Plasma
 4. Set the ramp time to 5 seconds   
 5. Turn "on" the output button   
 6. Watch to see that the plasma ignites. You will see several things if it does:   
-   1. You will be able to see a purple glow from around the lid if it is on   
-   2. You will see a current (in mA) lower right of the gun screen   
-   3. The "Plasma" button in the gun panel will change from gray to purple 
+    1. You will be able to see a purple glow from around the lid if it is on   
+    2. You will see a current (in mA) lower right of the gun screen   
+    3. The "Plasma" button in the gun panel will change from gray to purple 
 
 Ramp Power 
 

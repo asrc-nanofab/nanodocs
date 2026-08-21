@@ -120,13 +120,13 @@ Dispose of broken chemical glassware in a sharps waste container.
 
 4. Check the state of the hood:
 
-   1. If other users have chemistry in the hood, coordinate with them so your work in the hood does not overlap too much with theirs. While three users can have chemistry in the hood at the same time, only two users can be working at the hood at any time and they cannot use the sink at the same time.
+    1. If other users have chemistry in the hood, coordinate with them so your work in the hood does not overlap too much with theirs. While three users can have chemistry in the hood at the same time, only two users can be working at the hood at any time and they cannot use the sink at the same time.
 
-   2. Check the photohelic exhaust monitor located at the top left corner of the fume hood to ensure that the exhaust is active and at an adequate level.
+    2. Check the photohelic exhaust monitor located at the top left corner of the fume hood to ensure that the exhaust is active and at an adequate level.
 
-   3. Check the status of the carboys in the hood controls if you will be disposing of solvents that go into the carboys.
+    3. Check the status of the carboys in the hood controls if you will be disposing of solvents that go into the carboys.
 
-   4. Confirm that the hood is in a clean and safe state. If other users’ chemistry is in the hood, it should be to the side of the hood and unattended chemicals must be covered.
+    4. Confirm that the hood is in a clean and safe state. If other users’ chemistry is in the hood, it should be to the side of the hood and unattended chemicals must be covered.
 
 ### Litho-Development {#litho-development}
 

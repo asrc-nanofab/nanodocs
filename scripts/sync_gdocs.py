@@ -82,6 +82,9 @@ CHEM_PAGE_MAP: dict[str, str] = {
     "Solvent/Lift-Off Hood": "chemicals/solvent_hood/index.md",
 }
 POLICY_PAGE_MAP: dict[str, str] = {
+    # Top-level page, not signup/index.md: toc.integrate skips the TOC on
+    # section index pages, and this page needs its sidebar TOC
+    "Becoming a Nanofab User": "signup.md",
     "C-14": "policy/c14.md",
     "Lab Manual": "policy/manual.md",
     "Safety Manual": "policy/safety.md",
@@ -161,6 +164,8 @@ IMAGE_LABEL_RE = re.compile(r"\[image\d+\]")
 # literal text (and their indented paragraphs as code blocks) unless dedented
 INDENTED_HEADING_RE = re.compile(r"^\s+(#{1,6}\s.*)$")
 LIST_ITEM_RE = re.compile(r"^\s*(\d+\.|[*+-])\s")
+# List item split into indent / marker / spacing / text, for re-indentation
+LIST_ITEM_PARTS_RE = re.compile(r"^( *)(\d+\.|[*+-])( +)(.*)$")
 ALT_BOILERPLATE_RE = re.compile(r"AI-generated content may be incorrect\.?")
 # A heading anchor the export orphaned onto its own line (it belongs on the
 # heading); attr_list can't attach it, so it renders as literal text
@@ -449,7 +454,7 @@ def clean_body(markdown: str) -> str:
         out.append(line)
     # Collapse blank-line runs left behind by the stripping above
     body = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip() + "\n"
-    return _demote_body_headings(_dedent_nested_headings(body))
+    return _demote_body_headings(_normalize_list_indent(_dedent_nested_headings(body)))
 
 
 def _demote_body_headings(markdown: str) -> str:
@@ -482,6 +487,49 @@ def _demote_body_headings(markdown: str) -> str:
         line if is_fenced else DEMOTABLE_HEADING_RE.sub(r"\g<1>#\g<2>", line, count=1)
         for line, is_fenced in zip(lines, fenced)
     ]
+    return "\n".join(out) + "\n"
+
+
+def _normalize_list_indent(markdown: str) -> str:
+    """Re-indent nested lists to the 4 spaces per level Python-Markdown needs.
+
+    Google indents a child item by the width of its parent's marker (2 for
+    "* ", 3 for "1. ", 4 for "10. "), but Python-Markdown only nests at
+    tab_length (4 spaces) per level — anything shallower renders as one flat
+    list. Rebuild each item's depth from the export's own indentation and
+    emit it at 4 spaces per level; continuation lines (e.g. images inside an
+    item) are re-indented to stay attached to their item.
+    """
+    out: list[str] = []
+    # Open ancestor items: (item indent, content start column, level)
+    stack: list[tuple[int, int, int]] = []
+    in_fence = False
+    for line in markdown.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_fence = not in_fence
+        if in_fence or stripped.startswith("```") or not stripped:
+            out.append(line)
+            continue
+        if m := LIST_ITEM_PARTS_RE.match(line):
+            indent, marker, spacing, text = m.groups()
+            while stack and len(indent) < stack[-1][1]:
+                stack.pop()
+            level = stack[-1][2] + 1 if stack else 0
+            # Content column is marker width + one space even when the
+            # author's spacing is wider (e.g. "10.  text" nests at col 4)
+            stack.append((len(indent), len(indent) + len(marker) + 1, level))
+            out.append(" " * (4 * level) + marker + spacing + text)
+        elif line.startswith(" "):
+            content_indent = len(line) - len(line.lstrip(" "))
+            while stack and content_indent < stack[-1][1]:
+                stack.pop()
+            if stack:
+                line = " " * (4 * stack[-1][2] + 4) + line.lstrip(" ")
+            out.append(line)
+        else:
+            stack.clear()
+            out.append(line)
     return "\n".join(out) + "\n"
 
 

@@ -133,9 +133,9 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 5. If for any reason there is not a cleaning wafer in the loadlock or a clean was not run- insert cleaning wafer and run clean. \[See Clean Step IV\]  
 6. In the “Manual \> Transport” tab, ensure the Main Chamber status is “Idle” and “Ready for Process” and the Main Chamber is pumped down to base pressure or lower (\<5x10\-5 torr)
 
-   **Note**\- The cleaning wafer should **only** be used for cleaning recipes and nothing else. **It is not a free carrier wafer.** 
+    **Note**\- The cleaning wafer should **only** be used for cleaning recipes and nothing else. **It is not a free carrier wafer.** 
 
-   **Note:** In the manual ICP180\#1 Chamber view, the main chamber pressure when a process is *not* running is given by the “High Vacuum Gauge” and “Process Gauge” should be ignored. When a process *is* running, the chamber pressure is given by the “Process Gauge” and the “High Vacuum Gauge” will be off. 
+    **Note:** In the manual ICP180\#1 Chamber view, the main chamber pressure when a process is *not* running is given by the “High Vacuum Gauge” and “Process Gauge” should be ignored. When a process *is* running, the chamber pressure is given by the “Process Gauge” and the “High Vacuum Gauge” will be off. 
 
 ***Checking Log View History:***
 

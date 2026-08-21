@@ -79,7 +79,7 @@ When you get to the machine, the software that controls the Elionix hardware and
 * On the Stage Panel click the “Exchange” button.  This will move the stage into alignment with the load lock so that you can load your sample.  When the stage is in position the numbers in the x, y coordinates stop changing.  The circle to the left of the icon will turn green as shown in the panel on the left.     
 * The “Exchange Ready” above the Z-Height sensor (above the computer monitor on the hardware) should also be flashing green.   You are now ready to load your sample.  
     
-  ![Graphical user interfaceDescription automatically generated with medium confidence](img/beae6fcc6a54.png){ width="194" }
+    ![Graphical user interfaceDescription automatically generated with medium confidence](img/beae6fcc6a54.png){ width="194" }
 
 ![](img/dad34836e865.png){ width="270" }
 
@@ -125,7 +125,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 1. In the “Stage” panel now click on “Reference”.  This will move the stage to the position of an evaporated gold reference sample that is used to correct focus and stigmation.  Once the stage stops moving un-blank the beam again using “BLK” button from the top toolbar.  You will see a low-resolution image (250X) of the gold chip.  Zoom in using the magnification buttons (Top tool bar “High” and “Low”) above the SEM image to a value of 25,000X to 30,000X magnification.  At that magnification you will see a SEM image that looks like the following:
 
-   ![](img/a71241c4106d.png){ width="424" }
+    ![](img/a71241c4106d.png){ width="424" }
 
    
 
@@ -161,7 +161,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 * Press the Set Options Tab. If alignment is not necessary Set “Registration” to OFF, “Periodic Correction” to OFF and “Width Modulation” to OFF.  The only things that should be active are in the left-hand column under “X/Y Laser” as shown below.  (If alignment is needed, please see Appendix A)   
     
-  ![](img/471377d127b6.png)  
+    ![](img/471377d127b6.png)  
     
 * The most important parameter in this window is the “Z Preset (mm)” setting for the XY-laser.  This parameter tells the laser displacement meter the height of the substrate.  As of January of 2023 the Z-Preset value for a 500 micron thick Si substrate is \~3.0 mm.  This value will work if your wafer thickness including layers and resist and is is within 200 microns of this value.  If you are working with thinner or thicker substrates you will have to adjust the Z-Preset in the following way:  If it is thicker than 500um you will need to decrease the number.  (For instance: a 750 micron substrate would have a Z-preset of about 2.75mm.    
 *   Click “Next” in the Schedule Execution tab.  You will be prompted to save the Schedule file (.SC8 extension) to the same directory your CON files are in.  Change the name else it will save in the directory as “Default”.  The lower left hand corner of your pattern will be at X \= 0 Y \= 0 by default.  You will now see a blue-green tab **“Exp. Graphics”** menu as shown in the image here.
@@ -196,7 +196,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 3. Click on “Exchange” in the Stage menu to move it into position.  Wait for indicator button to turn green  
 4. “Exchange ready” (above the computer monitor) should also be blinking green  
 5. Evacuate the load lock🡪open gate valve🡪unlock load arm🡪thread onto sample holder on stage 🡪Remove load arm with sample🡪 Lock the load arm 🡪 Close gate valve 🡪 Vent Load-Lock 🡪 unthread chuck and remove sample 🡪 Place multi-Piece stage in Load Lock thread on load arm   
-   1. 🡪 Lock load arm 🡪 Close load lock gate valve🡪 Evacuate the load lock  
+    1. 🡪 Lock load arm 🡪 Close load lock gate valve🡪 Evacuate the load lock  
 6. It is very important to evacuate load lock leaving the load lock under vacuum before logging off the tool.   
 7. Log Off the tool in Badger
 
@@ -214,7 +214,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 
 1. You need to tell WECAS that you will be doing alignment when you set up the initial schedule file.  We need to go back to the “Set Option” Button (From Section II Page 3 of this manual) and set values in the “Registration” column (indicated below).  For manual Alignment “Periodic Correction” and “width modulation” remain off \-- These are used only in “Auto” and “Full Auto” alignment modes.  
      
-   **![](img/cb0be8bdee40.png)**  
+    **![](img/cb0be8bdee40.png)**  
      
 2. Click the “ON” radio button in the Registration Panel  
 3. Set “Control Type” to “Manual”  
@@ -228,9 +228,9 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 7. Now when you display your schedule file (“Edit Schedule Execution”🡪”Next”) in WECAS you will see white crosses that represent the locations of your alignment marks.    
 8. 
 
-       **B.  Load Chip or Wafer and set up Elionix Beam as before in above Sections**
+    **B.  Load Chip or Wafer and set up Elionix Beam as before in above Sections**
 
-       **C.  Align the Elionix to the “A-Mark” of your sample chip/wafer**
+    **C.  Align the Elionix to the “A-Mark” of your sample chip/wafer**
 
 1. From WECAS go to Users On-Line PC then File 🡪 Open Schedule File 🡪 \[SC8 Filename\]  
 2. You can get back to the schedule instructions by clicking “back” and then reopen through the “Edit schedule execution”.  You will see your .con files and their locations.    
@@ -241,7 +241,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 7. Find your “A” alignment mark in the SEM window and zoom in and center it using the arrows to move the stage and the crosshairs (Crosshairs activated from the ELS-G100 software)   
 8. Click on “Move Pattern” and from the popup menu choose “Read Stage Position”.  Save the new schedule file with these updated write positions.
 
-     **  D.  Start the Exposure following Section IV on “Exposing Job in WECAS”** 
+    **  D.  Start the Exposure following Section IV on “Exposing Job in WECAS”** 
 
 …  
 PX …  
