@@ -4,8 +4,8 @@
 
 <div class="doc-links" markdown="span">
 [:material-file-document-outline: Google Doc](https://docs.google.com/document/d/1WzJh-JIVJhJRlmDeTlwibXwsdp1JH-A4RMS0WEP63CY/preview){ .md-button }
-[:material-file-pdf-box: View PDF](../assets/pdfs/policy/Becoming_a_Nanofab_User.pdf){ .md-button }
-[:material-download: Download](../assets/pdfs/policy/Becoming_a_Nanofab_User.pdf){ .md-button download="Becoming_a_Nanofab_User.pdf" }
+[:material-file-pdf-box: View PDF](assets/pdfs/policy/Becoming_a_Nanofab_User.pdf){ .md-button }
+[:material-download: Download](assets/pdfs/policy/Becoming_a_Nanofab_User.pdf){ .md-button download="Becoming_a_Nanofab_User.pdf" }
 </div>
 
 ---

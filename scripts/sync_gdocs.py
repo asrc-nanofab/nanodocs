@@ -82,7 +82,9 @@ CHEM_PAGE_MAP: dict[str, str] = {
     "Solvent/Lift-Off Hood": "chemicals/solvent_hood/index.md",
 }
 POLICY_PAGE_MAP: dict[str, str] = {
-    "Becoming a Nanofab User": "signup/index.md",
+    # Top-level page, not signup/index.md: toc.integrate skips the TOC on
+    # section index pages, and this page needs its sidebar TOC
+    "Becoming a Nanofab User": "signup.md",
     "C-14": "policy/c14.md",
     "Lab Manual": "policy/manual.md",
     "Safety Manual": "policy/safety.md",

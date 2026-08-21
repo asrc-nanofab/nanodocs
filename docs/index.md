@@ -35,7 +35,7 @@
 
     Essential safety information and facility policies.
 
--   [:material-account-plus: __Nanofab Signup__](signup/index.md){ .lg .middle }
+-   [:material-account-plus: __Nanofab Signup__](signup.md){ .lg .middle }
 
     ---
 
