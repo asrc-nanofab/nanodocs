@@ -10,7 +10,7 @@
 
 ---
 
-# Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview {#safety-information-and-overview}
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -21,13 +21,13 @@
 | Room and Building | ASRC G.263 |
 | Primary Phone Number | 2124133399 |
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after passing a qualification with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  NO high vapor pressure materials
 
-## **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
 
 **Substance Name:** Chromium
 
@@ -39,7 +39,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -48,15 +48,15 @@ This SOP is only for the general use of depositing thin films. Only approved use
 | Silver | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
  **Respiratory irritation** from dust or vapor in poorly ventilated areas. |
 
-## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
+### **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
 
 Thermal hazard is present if using the sputter’s sample heater for a long period of time, which can heat up the plate and the sample(s). 
 
-## **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
+### **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
 
 All personnel are instructed to use pliers to handle the sample plate, if it has not cooled down to sufficient temperature; and to work with tweezers to remove the sample(s) from the hot plate too.
 
-## **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
+### **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
 
 Kapton or copper tape that has silver and/or chrome on the top layer, must be disposed into the container found on the workbench. Staff will transport the container for waste disposal when the container is full. 
 
@@ -65,7 +65,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 
-# **Tool operation** {#tool-operation}
+## **Tool operation** {#tool-operation}
 
 1\. Verify the material you want to sputter is in the tool and locate its position on the Phase II control screen. (ie: Gun number)   
 2\. If the gun you want is grayed out but you can still see the info on the screen (this may   
@@ -129,11 +129,9 @@ Ramp Down
 
 24\. Unload your sample following the appropriate protocol. 
 
-# **Common Errors and Troubleshooting\-** 
+## **Common Errors and Troubleshooting\-** 
 
 ---
-
- {#common-errors-and-troubleshooting-}
 
 Prepared by: SPR  
 Date: September 8, 2025  

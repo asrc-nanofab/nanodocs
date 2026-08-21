@@ -12,9 +12,9 @@
 
 **Standard Operating Procedure: PECVD**
 
-# **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION** {#plasma-enhanced-chemical-vapor-deposition}
+## **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION** {#plasma-enhanced-chemical-vapor-deposition}
 
-## **Facility and Contact Information** {#facility-and-contact-information}
+### **Facility and Contact Information** {#facility-and-contact-information}
 
 | Nanofabrication Facility | ASRC, RFCUNY |
 | :---- | :---- |
@@ -23,7 +23,7 @@
 | **Manager** | **Shawn Kilpatrick** |
 | **Room & Building** |  **G263, Nanofab, ASRC** |
 
-## **Section 1- Process and Experiment Description** {#section-1--process-and-experiment-description}
+### **Section 1- Process and Experiment Description** {#section-1--process-and-experiment-description}
 
 **Oxford PlasmaPro System 100 PECVD**
 
@@ -47,7 +47,7 @@ Hardware Description
 
    It can hold substrates up to 8 inches in diameter. The temperature control system is included to maintain substrate temperature generally ranges from 100oC to 400o
 
-### **Principle of Operation:** {#principle-of-operation:}
+#### **Principle of Operation:** {#principle-of-operation:}
 
 The PECVD process has three main operation steps
 
@@ -57,25 +57,25 @@ The PECVD process has three main operation steps
 
    3. Cleaning
 
-#### **Conditioning:** {#conditioning:}
+##### **Conditioning:** {#conditioning:}
 
 It is the process of preparing and stabilizing the chamber and its components before actual film deposition starts. This step helps to remove any contaminants or any residues from previous processes. Conditioning or seasoning involves a pre-deposition of approximately 200 nm of material deposition on the chamber area to ensure a clean atmosphere for the new deposition process using the recommended carrier wafer.
 
 Conditioning also heats the chamber to the desired temperature, adjusts chamber pressure to the required level and ensures consistent gas flow into the chamber.
 
-#### **Deposition:** {#deposition:}
+##### **Deposition:** {#deposition:}
 
 It is the main process of the PECVD where the desired thickness of materials is deposited onto the surface of the wafer or substrate to form a thin film layer/s in a precisely controlled environment. In a confined space of vacuum, high voltage RF power is applied to generate plasma between two parallel configurations of electrodes with the introduction of process gas/es.  During the operation, some gases flow and components are interlocked for safety purposes. 
 
-#### **Cleaning:** {#cleaning:}
+##### **Cleaning:** {#cleaning:}
 
 The cleaning process after deposition is crucial for maintaining the PECVD system’s performance and high-quality film deposition in the next subsequent processes. 
 
 After the deposition process, the chamber walls and components often contain residual films and toxic gases. Plasma cleaning is commonly used to remove these residues. Generally, fluorine-based gas is introduced into the chamber to generate plasma, and it etches out thin layers of material that are deposited on the chamber’s inside walls and stage. After plasma cleaning multiple cycles of pumping and purging of N2 gas are done to flush out any remaining contaminants.
 
-## ---
+### ---
 
-## **Section 2 \- Personal Protective Equipment & Responsibilities** {#section-2---personal-protective-equipment-&-responsibilities}
+### **Section 2 \- Personal Protective Equipment & Responsibilities** {#section-2---personal-protective-equipment-&-responsibilities}
 
 **Personal Protective Equipment**: 
 
@@ -143,7 +143,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 
 To change the matching position of the transformer, reach out at the bottom right corner of the right-side panel. 
 
-## **Section 3- Process Steps of SOP** {#section-3--process-steps-of-sop}
+### **Section 3- Process Steps of SOP** {#section-3--process-steps-of-sop}
 
 **Material Deposition Procedure**
 
@@ -165,9 +165,9 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 7, * Opened Load Lock lid
 
-* ### **Three Operation Steps** {#three-operation-steps}
+* #### **Three Operation Steps** {#three-operation-steps}
 
-1. #### **Load Sample** {#load-sample}
+1. ##### **Load Sample** {#load-sample}
 
    Sapphire wafer is always there in the Load Lock under the vacuum.
 
@@ -191,7 +191,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 8*, Loading steps for wafer/chips for Condition/Deposition/Clean processe*s*
 
-2. #### **Run Recipe** {#run-recipe}
+2. ##### **Run Recipe** {#run-recipe}
 
 1. Click PECVD\#1 \[step **1**\] tab under Manual tab. Follow the numbered steps on the **Image 9\.**
 
@@ -205,7 +205,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 9,* Steps for Loading and Runing Recipe
 
-3. #### **Unload Sample** {#unload-sample}
+3. ##### **Unload Sample** {#unload-sample}
 
    When the process is completed, the wafer inside the chamber will be in GREEN. Follow steps of **Image 10**.
 
@@ -223,9 +223,9 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 10,* Unloading steps for wafer/chips after Condition/Deposition processes 
 
-* ### **Three Main Processes** {#three-main-processes}
+* #### **Three Main Processes** {#three-main-processes}
 
-1. #### **Condition Chamber** {#condition-chamber}
+1. ##### **Condition Chamber** {#condition-chamber}
 
 1. Set the match position to the appropriate setting for the desired film to be deposited.
 
@@ -245,7 +245,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 9. Vent the load lock and unload the wafer for the next operation deposition steps.
 
-2. #### **Deposition** {#deposition}
+2. ##### **Deposition** {#deposition}
 
 	To Run the Deposition Recipe.
 
@@ -299,7 +299,7 @@ Go to the Recipe Editor \[step **1**\].
 
 *Image 12*, Changing deposition time on the Nitrite Recipe or recipe that has the deposition process with a number of cycles.
 
-3. #### **Clean Chamber** {#clean-chamber}
+3. ##### **Clean Chamber** {#clean-chamber}
 
 **Approximate time: 50 mins**
 
@@ -332,7 +332,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 *Image 13*, Changing Cleaning Time for OPT Clean Timed Recipe
 
-## **Section 4 – Gases, Hazards Classification and symbols** {#section-4-–-gases,-hazards-classification-and-symbols}
+### **Section 4 – Gases, Hazards Classification and symbols** {#section-4-–-gases,-hazards-classification-and-symbols}
 
 ![](img/d1d00fedc781.png){ width="445" }
 
@@ -350,13 +350,13 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 ![A red and white sign with a skull and crossbonesDescription automatically generated](img/940a999ed658.jpg){ width="66" } \= Toxic
 
-![A black exclamation mark in a red diamondDescription automatically generated](img/281c24ff29c7.png){ width="61" }  \= Harmful
+![A black exclamation mark in a red diamondDescription automatically generated](img/fb9ccb8a17d2.png){ width="61" }  \= Harmful
 
 ![A sign with a black object in the middleDescription automatically generated](img/794c4d78c5a0.png){ width="66" } \= Compressed Gas
 
  
 
-* ### **Gases, Hazard sign and Description** {#gases,-hazard-sign-and-description}
+* #### **Gases, Hazard sign and Description** {#gases,-hazard-sign-and-description}
 
 | S. No | Gases | Gases & Hazard Sign | Description |
 | ----- | ----- | ----- | ----- |

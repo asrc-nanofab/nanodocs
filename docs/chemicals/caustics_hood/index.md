@@ -10,29 +10,29 @@
 
 ---
 
-# Caustics/Metal Etch Hood
+## Caustics/Metal Etch Hood
 
-## Standard Operating Procedure
+### Standard Operating Procedure
 
-# Section 1: Process Description {#section-1:-process-description}
+## Section 1: Process Description {#section-1:-process-description}
 
-## Hood Description {#hood-description}
+### Hood Description {#hood-description}
 
 The Caustics/Metal Etch Hood is an Air Control polypropylene fume hood designed for corrosive chemical work. Located in the deposition bay of the cleanroom, this hood is designated for multiple chemistries, such as select acids, caustics and oxidizers. The acids allowed to be used in this hood include nitric acid, hydrochloric acid and phosphoric acid. No sulfuric acid or hydrofluoric acid should ever be used in this hood as there is no waste disposal available for them in the hood. The caustics allowed in this hood include ammonium hydroxide, potassium hydroxide and tetramethylammonium hydroxide. The oxidizers allowed in this hood include hydrogen peroxide and iodine/potassium iodide. No solvents should be used in this hood as they will react violently if mixed with acids.
 
 DI water and dry nitrogen guns are available in the hood for rinsing and blowing dry samples and glassware. A rack of glassware designated for use in the caustic and metal etch hood only is located on the left side of the hood, though users may also bring their own glassware to be used in the hood if so desired. All acid should be disposed of in waste containers located at the back of the hood. Caustics can be disposed of in the carboy drain located at the back of the hood.
 
-## TMAH Description and Precautions {#tmah-description-and-precautions}
+### TMAH Description and Precautions {#tmah-description-and-precautions}
 
 Tetramethylammonium hydroxide (TMAH) is a caustic chemical available in solutions of varying concentrations, such as \<3% in some developer solutions or in higher concentrations of 10-25%. TMAH is a strong base in higher concentrations, so while the developer solutions with \<3% TMAH are allowed in the Litho Development Hood in Lithography without the full acid PPE, higher concentrations are only allowed in the Caustics/Metal Etch Hood and must be only be handled while wearing full PPE.
 
 TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also a contact poison, meaning it has toxic and potentially deadly effects if it comes in contact with skin. Skin contact allows the tetramethylammonium ion to enter the bloodstream causing systemic neurotoxicity, which can lead to respiratory failure. Though higher concentrations present the greatest risks, even lower concentrations of \<3% can cause severe burns and life-threatening symptoms depending on the duration and area of exposure if it gets on the skin, so even lower concentrations should be handled with caution and any skin that comes in contact with the solution should be flushed with water immediately.
 
-# Section 2: Safety Protocols {#section-2:-safety-protocols}
+## Section 2: Safety Protocols {#section-2:-safety-protocols}
 
-## Chemical Hazards {#chemical-hazards}
+### Chemical Hazards {#chemical-hazards}
 
-### Acids {#acids}
+#### Acids {#acids}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -48,7 +48,7 @@ TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also 
 | Transene Transetch N \[contains: phosphoric acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed or in contact with skin Toxic if mist is inhaled Causes severe skin burns and serious eye damage Causes damage to organs (lungs, eyes, mucous membranes) through prolonged or repeated exposure  |
 | Transene Copper Etchant CE-100 & ITO Etchant TE-100 \[contains: ferric chloride; hydrochloric acid\] | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Harmful if swallowed Harmful if inhaled Causes severe skin burns and eye damage Causes serious eye damage Causes damage to organs (liver) through prolonged or repeated exposure |
 
-### Caustics {#caustics}
+#### Caustics {#caustics}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -57,7 +57,7 @@ TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also 
 | Potassium hydroxide | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Harmful if swallowed Causes severe skin burns and eye damage May cause respiratory irritation Harmful to aquatic life |
 | Sodium hydroxide | ![](img/2e3c68d6de9b.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | May be corrosive to metals Causes severe skin burns and eye damage May cause respiratory irritation Harmful to aquatic life |
 
-### Oxidizers {#oxidizers}
+#### Oxidizers {#oxidizers}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -65,14 +65,14 @@ TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also 
 | Transene Gold Etchant Type TFA & Silver Etchant TFS \[contains: iodine; potassium iodide | ![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Harmful if swallowed Causes mild skin irritation Causes eye irritation Harmful to aquatic life May causes damage to endocrine or gastrointestinal system through prolonged or repeated exposure |
 | Transene Copper Etchant APS-100 \[contains: ammonium peroxydisulfate\] | ![](img/676825a050ce.png){ width="95" }![](img/b1c097ef480a.png){ width="95" } | May intensify fire; oxidizer Harmful if swallowed, in contact with skin or inhaled Causes skin irritation and serious eye irritation |
 
-## Physical Hazards {#physical-hazards}
+### Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
 | Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 | Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
-## Routes of Exposure {#routes-of-exposure}
+### Routes of Exposure {#routes-of-exposure}
 
 There is a risk of skin or eye exposure when handling chemicals that can be mitigated by wearing proper PPE.
 
@@ -84,7 +84,7 @@ There is a risk of splattering chemicals by spraying them with the nitrogen guns
 
 There is a risk of severe skin burns if a hotplate is touched, which can be prevented by using tweezers when handling samples on the hotplate and never touching it directly with hands or other body parts.  When heating chemicals in glassware on a hotplate, do not remove from the hotplate until the hotplate has been turned off and the chemicals have returned to room temperature.
 
-## Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
+### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
 
 Trionic (tripolymer of nitrile, neoprene and rubber) gloves must be worn over the regular nitrile cleanroom gloves required throughout the cleanroom.
 
@@ -94,9 +94,9 @@ Full faceshield must be worn over the cleanroom hood required throughout the cle
 
 Safety glasses should be worn under the faceshield.
 
-# Section 3: Chemical Containment {#section-3:-chemical-containment}
+## Section 3: Chemical Containment {#section-3:-chemical-containment}
 
-## Chemical Storage {#chemical-storage}
+### Chemical Storage {#chemical-storage}
 
 * Nitric acid and metal etch solutions containing nitric acid are stored in the Nitric Acid Cabinet, the small white plastic cabinet located on top of the Acids Cabinet.
 
@@ -106,13 +106,13 @@ Safety glasses should be worn under the faceshield.
 
 * All caustics are stored in the Caustic Cabinet, the long, short blue cabinet located on top of the Solvents Cabinet across from the entrance to the lithography bay.
 
-## Chemical Transport {#chemical-transport}
+### Chemical Transport {#chemical-transport}
 
 Secondary containment is always required when moving acids, caustics and oxidizers between storage cabinets and hoods.  White plastic transport pails can be found on top of the Acids Cabinet next to the Nitric Acid Cabinet and next to the Oxidizers Cabinet.
 
 Users must wear the trionic gloves whenever you’re handling bottles of acids, caustics and oxidizers due to the risk of contamination on the outside surface of bottles from chemical drips down the side of the bottle.
 
-## Chemical Waste Disposal {#chemical-waste-disposal}
+### Chemical Waste Disposal {#chemical-waste-disposal}
 
 * Acid waste, excluding the Transene Chromium Etchant, must be disposed of in the acid waste container in the back of the hood.
 
@@ -122,7 +122,7 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 
 * Caustic waste must be disposed of in the caustics carboy drain in the back of the hood.
 
-## Solid Waste Disposal {#solid-waste-disposal}
+### Solid Waste Disposal {#solid-waste-disposal}
 
 * Dispose of wipes soiled with chemicals in a red hazardous waste bin.
 
@@ -132,9 +132,9 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 
 * Dispose of broken chemical glassware in a sharps waste container.
 
-# Section 4: Chemical Use Protocols {#section-4:-chemical-use-protocols}
+## Section 4: Chemical Use Protocols {#section-4:-chemical-use-protocols}
 
-## Preparation {#preparation}
+### Preparation {#preparation}
 
 1. Read through the SOP for the specific chemical process you’re performing.  For the Caustics/Metal Etch Hood, there are SOPs for the different chemistries used in the hood.  From these you can determine the chemicals and glassware you’ll be using. The chemical SOP will also include important procedures for spill cleanup and first aid for chemical exposures that must be reviewed before using the chemicals.
 
@@ -185,13 +185,13 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 12. Once you have the full PPE on, you should only work in the immediate area of the hood. Do not touch anything outside of the hood while you’re wearing the PPE. If you need to use something outside of the hood, you need to remove the PPE first.  
     Do not touch the faceshield while you’re wearing the trionic gloves. If you need to adjust the faceshield or your safety glasses, you need to remove the trionic gloves first.
 
-## Acid or Caustic Use Procedures {#acid-or-caustic-use-procedures}
+### Acid or Caustic Use Procedures {#acid-or-caustic-use-procedures}
 
 Procedures for the different chemical processes, including post-process cleanup of glassware, spill cleanup and accident protocols, are detailed in the SOPs for those processes. This hood has a greater variety of chemicals and processes compared to the other hoods, so be sure to use the correct procedure and supplies.
 
 Note that as covered in those SOPs that if you are leaving chemicals unattended, they should be covered with watch glasses and should have a label with them. You’ll need to remove all of the PPE in order to do anything outside of the hood. Make sure to follow the guidelines for removing PPE laid out in the next section and then the guidelines for donning PPE laid out in the previous section.
 
-## Cleanup {#cleanup}
+### Cleanup {#cleanup}
 
 1. Place your samples and all of your supplies that you’ll be removing from the hood to the side of the hood on a clean wipe.
 
@@ -233,18 +233,18 @@ Note that as covered in those SOPs that if you are leaving chemicals unattended,
 
 16. Disable the “Caustics and Metal Etch Hood” user slot in Badger.
 
-# Section 5: Accident Procedure
+## Section 5: Accident Procedure
 
-### **Contact**
+#### **Contact**
 
 - Skin: Remove contaminated clothing, wash skin with soap and water. **If there is any irritation, get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-### **Spills**
+#### **Spills**
 
-#### **Small Spill Within the Hood**
+##### **Small Spill Within the Hood**
 
 If a small spill occurs and is fully contained within the hood:
 
@@ -252,14 +252,14 @@ If a small spill occurs and is fully contained within the hood:
 * If wipes are insufficient, use the absorbent pads stored in the bottom right corner of the hood.  
 * If you are unsure how to clean up the material or feel uncomfortable doing so, **notify staff immediately**.
 
-#### **Medium or Large Spill Within the Hood \- Always staff**
+##### **Medium or Large Spill Within the Hood \- Always staff**
 
 If the spill requires neutralization or use of an absorbent pillow from the spill kit:
 
 * **Notify staff immediately.**  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert other users **not to use the hood** until it has been properly cleaned and cleared by staff.
 
-#### **Any Spill Outside the Hood**
+##### **Any Spill Outside the Hood**
 
 If a spill occurs outside the hood:
 

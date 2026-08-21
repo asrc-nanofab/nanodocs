@@ -10,7 +10,7 @@
 
 ---
 
-# Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview {#safety-information-and-overview}
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -21,19 +21,19 @@
 | Room and Building | ASRC G.263 |
 | Primary Phone Number | 2124133399 |
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This SOP is only for the general use of transferring microscale patterns from a photomask, onto a photoresist-coated wafer or substrate using ultraviolet (UV) light. Only approved users are allowed to use the equipment, after passing a qualification with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  
 
-## **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
 
 **Substance Name:** Mercury
 
 **Abbreviation:** Hg
 
-## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -47,7 +47,7 @@ This SOP is only for the general use of transferring microscale patterns from a 
  **Harmful to kidneys and other organs.
  Dangerous to the environment** if not properly disposed of.  |
 
-## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
+### **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
 
 Eye damage can occur if looking at an exposed area, and not wearing the appropriate protective eyewear. 
 
@@ -59,19 +59,19 @@ Chemical exposure is present before and after equipment use.
 
 Do not place your hands near any moving parts while the tool is in use.
 
-## **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
+### **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
 
 All trained staff members are instructed to use welding goggles whenever doing routine lamp maintenance or inspection. 
 
 All personnel are instructed to not look at exposed areas while in use. 
 
-## **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
+### **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
 
 | Hazardous compound, element, or chemical name | State (L,G,S) | Hazardous | Non-hazardous | Which hazards? | How is waste managed? |
 | ----- | ----- | ----- | ----- | :---- | ----- |
 | Hg Lamp | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 
-# **Tool Operation** {#tool-operation}
+## **Tool Operation** {#tool-operation}
 
 Standard Operating Procedure: **Mask Aligner** 
 
@@ -464,11 +464,9 @@ o Unscrew and remove the mask holder.
 
 1\. Lamp is off. 
 
-# **Common Errors and Troubleshooting\-** 
+## **Common Errors and Troubleshooting\-** 
 
 ---
-
- {#common-errors-and-troubleshooting-}
 
 Prepared by: Salam Elhalabi  
 Date: June 13, 2025  

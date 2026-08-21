@@ -20,7 +20,7 @@ The Reactive Ion Etcher (RIE) uses a radio-frequency-powered electromagnetic fie
 | :---- | :---- |
 | ![Radio Frequency Radiation Symbol Label LABEL-TRIANGLE-10-a](img/6616c88f5311.gif){ width="89" } | Radio-frequency Energy/ Radiation |
 | ![Ultraviolet Hazard Symbol](img/89ad89df92c3.png){ width="91" } | Ultraviolet Radiation |
-| ![International Symbol Labels - Pinch Point, Safety Label | Emedco](img/8c508b2a0417.jpg){ width="83" } | Mechanical Pinch-Point |
+| ![International Symbol Labels - Pinch Point, Safety Label Emedco](img/8c508b2a0417.jpg){ width="83" } | Mechanical Pinch-Point |
 
  
 

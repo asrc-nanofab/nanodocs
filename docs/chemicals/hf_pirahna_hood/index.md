@@ -10,29 +10,29 @@
 
 ---
 
-# Piranha/HF Hood
+## Piranha/HF Hood
 
-## Standard Operating Procedure
+### Standard Operating Procedure
 
-# Section 1: Principles of Operation {#section-1:-principles-of-operation}
+## Section 1: Principles of Operation {#section-1:-principles-of-operation}
 
-## Hood Description {#hood-description}
+### Hood Description {#hood-description}
 
 The Piranha/HF Hood is an Air Control polypropylene fume hood designed for corrosive chemical work. Located in the metrology bay of the cleanroom, this hood is designated for the piranha and hydrofluoric acid etch chemistries. Caustics generally are not used in this hood, but there are some exceptions, though such processes must first be approved by staff. No solvents should be used in this hood as they will react violently if mixed with acids.
 
 DI water and dry nitrogen guns are available in the hood for rinsing and blowing dry samples and glassware. A rack of glassware designated for use in the piranha/HF hood only is located near the hood, which includes plastic containers specifically for HF, though users may also bring their own glassware to be used in the hood if so desired. All acid should be disposed of in waste containers located at the back of the hood.
 
-## Piranha Description and Precautions {#piranha-description-and-precautions}
+### Piranha Description and Precautions {#piranha-description-and-precautions}
 
 Piranha is a volatile mixture of sulfuric acid and hydrogen peroxide used for cleaning organic residues off substrates. Piranha will generate excess oxygen due to the volatile nature of sulfuric acid, this is the only fume hood in the cleanroom where it should be used and disposed of. No other acids should be mixed with it or disposed of in the same container as sulfuric acid since they will react with sulfuric acid generating heat and fumes. For instance, hydrochloric acid mixed with sulfuric acid will react and release hydrochloric gas. Water will also react violently with sulfuric acid, so care should be taken when using any water with the piranha process, and waste water should never be poured into the same container as piranha waste.
 
-## HF Description and Precautions {#hf-description-and-precautions}
+### HF Description and Precautions {#hf-description-and-precautions}
 
 Hydrofluoric acid is an acid used for wet etching of oxides and some metals. Since hydrofluoric acid etches glass, it should never be used in glass containers. Hydrofluoric acid is an especially dangerous acid since it is a powerful contact poison. It will not immediately burn when it comes in contact with skin, but instead will permeate the skin and begin leaching calcium from the body damaging bones and other organs long before signs of burning begin to appear on the skin. Any delay in treating exposure to hydrofluoric acid will often lead to fatal consequences for anyone exposed to it. Due to these characteristics of hydrofluoric acid, extra care should be taken when handling it.
 
-# Section 2: Safety Protocols {#section-2:-safety-protocols}
+## Section 2: Safety Protocols {#section-2:-safety-protocols}
 
-## Chemical Hazards {#chemical-hazards}
+### Chemical Hazards {#chemical-hazards}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -48,14 +48,14 @@ Hydrofluoric acid is an acid used for wet etching of oxides and some metals. Sin
 | Niobium Etchant Nb \[contains: hydrofluoric acid; nitric acid\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/2e3c68d6de9b.jpg){ width="96" } | Fatal if swallowed Toxic if inhaled May be corrosive to metals Causes severe skin burns and eye damage Causes serious eye damage May causes damage to organs (bones, lungs, eyes, mucous membranes) Harmful to aquatic life |
 | Transene Nickelex \[contains: nickel chloride hexahydrate; sodium hypophosphite; sodium succinate; hydrofluoric acid | ![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Harmful if swallowed Causes mild skin irritation Causes eye irritation Harmful to aquatic life May cause harm to aquatic life with long lasting effects May cause cancer if swallowed Chronic exposure may cause mutagenicity or reproductive hazards |
 
-## Physical Hazards {#physical-hazards}
+### Physical Hazards {#physical-hazards}
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
 | Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 | Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
-## Routes of Exposure {#routes-of-exposure}
+### Routes of Exposure {#routes-of-exposure}
 
 There is a risk of skin or eye exposure when handling chemicals that can be mitigated by wearing proper PPE.
 
@@ -67,7 +67,7 @@ There is a risk of splattering chemicals by spraying them with the nitrogen guns
 
 There is a risk of severe skin burns if a hotplate is touched, which can be prevented by using tweezers when handling samples on the hotplate and never touching it directly with hands or other body parts. When heating chemicals in glassware on a hotplate, do not remove from the hotplate until the hotplate has been turned off and the chemicals have returned to room temperature.
 
-## Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
+### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
 
 * Trionic (tripolymer of nitrile, neoprene and rubber) gloves must be worn over the regular nitrile cleanroom gloves required throughout the cleanroom.
 
@@ -77,9 +77,9 @@ There is a risk of severe skin burns if a hotplate is touched, which can be prev
 
 * Safety glasses should be worn under the faceshield.
 
-# Section 3: Chemical Containment {#section-3:-chemical-containment}
+## Section 3: Chemical Containment {#section-3:-chemical-containment}
 
-## Chemical Storage {#chemical-storage}
+### Chemical Storage {#chemical-storage}
 
 * Sulfuric acid and acetic acid are stored in the Acids Cabinet, the large blue cabinet located just outside of the EBL rooms.
 
@@ -89,13 +89,13 @@ There is a risk of severe skin burns if a hotplate is touched, which can be prev
 
 * Hydrofluoric acid, along with any chemical solutions containing hydrofluoric acid, is located in the HF Cabinet, the small white plastic cabinet located next to the Piranha/HF Hood.
 
-## Chemical Transport {#chemical-transport}
+### Chemical Transport {#chemical-transport}
 
 Secondary containment is always required when moving acids, caustics and oxidizers between storage cabinets and hoods.  White plastic transport pails can be found on top of the Acids Cabinet next to the Nitric Acid Cabinet and next to the Oxidizers Cabinet.
 
 Users must wear the trionic gloves whenever you’re handling bottles of acids, caustics and oxidizers due to the risk of contamination on the outside surface of bottles from chemical drips down the side of the bottle.
 
-## Chemical Waste Disposal {#chemical-waste-disposal}
+### Chemical Waste Disposal {#chemical-waste-disposal}
 
 * Piranha waste must be disposed of in the piranha waste container in the back of the hood. The cap on the piranha waste bottle should never be fastened. Piranha waste will continue to react long after you’re finished with it and will build pressure in a sealed container creating an explosion risk. If you notice the piranha waste container is closed and bulging, inform staff immediately and stay away from the hood until it is dealt with.
 
@@ -103,7 +103,7 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 
 * HF waste must be disposed of in the HF waste container in the back of the hood. Any chemical solution containing even minimal amounts of hydrofluoric acid is considered HF waste and must be disposed of in the HF waste container.
 
-## Solid Waste Disposal {#solid-waste-disposal}
+### Solid Waste Disposal {#solid-waste-disposal}
 
 * Dispose of wipes soiled with chemicals in a red hazardous waste bin.
 
@@ -113,9 +113,9 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 
 * Dispose of broken chemical glassware in a sharps waste container.
 
-# Section 4: Chemical Use Protocols {#section-4:-chemical-use-protocols}
+## Section 4: Chemical Use Protocols {#section-4:-chemical-use-protocols}
 
-## Preparation {#preparation}
+### Preparation {#preparation}
 
 1. Read through the SOP for the specific chemical process you’re performing.  For the Piranha/HF hood, there are SOPs for Piranha, HF and HNA.  From these you can determine the chemicals and glassware you’ll be using. The chemical SOP will also include important procedures for spill cleanup and first aid for chemical exposures that must be reviewed before using the chemicals.
 
@@ -166,13 +166,13 @@ Users must wear the trionic gloves whenever you’re handling bottles of acids, 
 12. Once you have the full PPE on, you should only work in the immediate area of the hood. Do not touch anything outside of the hood while you’re wearing the PPE. If you need to use something outside of the hood, you need to remove the PPE first.  
     Do not touch the faceshield while you’re wearing the trionic gloves. If you need to adjust the faceshield or your safety glasses, you need to remove the trionic gloves first.
 
-## Acid Use Procedures {#acid-use-procedures}
+### Acid Use Procedures {#acid-use-procedures}
 
 Procedures for piranha cleans and HF etches, including post-process cleanup of glassware, spill cleanup and accident protocols, are detailed in the SOPs for those processes.
 
 Note that as covered in those SOPs that if you are leaving chemicals unattended, they should be covered with watch glasses and should have a label with them. You’ll need to remove all of the PPE in order to do anything outside of the hood. Make sure to follow the guidelines for removing PPE laid out in the next section and then the guidelines for donning PPE laid out in the previous section.
 
-## Cleanup {#cleanup}
+### Cleanup {#cleanup}
 
 1. Place your samples and all of your supplies that you’ll be removing from the hood to the side of the hood on a clean wipe.
 
@@ -214,41 +214,41 @@ Note that as covered in those SOPs that if you are leaving chemicals unattended,
 
 16. Disable the “Piranha and HF Hood” user slot in Badger.
 
-# Section 5: Accident Procedure
+## Section 5: Accident Procedure
 
-### **Hydrofluoric Acid Contact**
+#### **Hydrofluoric Acid Contact**
 
 **In the event of an HF exposure your chemical buddy must call Public Safety (212-650-7777), and notify them of the nature of the emergency. When the ambulance arrives, the chemical safety buddy must explain to the emergency personnel the nature of the exposure, give them the MSDS, and request that the victim be transported to Columbia Presbyterian Medical Center, which is equipped to handle HF burns. Note: The ambulance driver may not always comply with this request, in which case the proper emergency room should be left to the discretion of the driver.**
 
-### **Skin Exposure**
+#### **Skin Exposure**
 
 1. Move the victim immediately under an emergency shower or other water source and flush the affected area with large amounts of cool running water for at least 5 minutes. Clothing, shoes and jewelry should be removed while the water is flowing onto the victim. Goggles should be removed last while the victim is facing the water flow. Colleagues must be EXTREMELY CAREFUL not to become contaminated while assisting the victim. Trionic gloves must be worn.  
 2. While the victim is being rinsed with water, call Public Safety (212-650-7777) and inform the emergency dispatcher of the HF exposure and request emergency transport. Ensure emergency responders and treating physicians are aware of the nature of the chemical exposure. Not all hospitals are equipped to deal with HF exposure, so emergency responders need to know to take the victim to the right hospital. Provide a copy of the MSDS to emergency responders.  
 3. After the affected area is flushed with copious amounts of water for at least five minutes, apply 2.5% calcium gluconate gel to the area of exposure. Massage gel into affected areas. If calcium gluconate gel is unavailable, flush skin surfaces with water for at least 15 minutes. In order to prevent cross contamination, the victim should self-apply the calcium gluconate gel. If the victim is unable to self-apply, anyone present can apply the gel after first putting on trionic gloves. Do not use regular nitrile gloves because they are not thick enough to provide an effective barrier against HF. Note the time when the calcium gluconate gel was first applied to the contaminated skin and provide this information to the emergency responders. Re-apply gel every 15 minutes until the victim arrives at the hospital and is treated by doctors.  
 4. After the emergency responders arrive they will call the Emergency Room doctor for instructions and may administer the calcium carbonate tablets (antacid tablets) in the HF First Aid Kit.
 
-### **Eye Exposure**
+#### **Eye Exposure**
 
 > > > 1. Immediately flush eyes for at least 5 minutes with copious cool flowing water. Call Public Safety (212-650-7777), inform the emergency dispatcher of the exposure and request emergency transport. The victim should then be transported to a medical facility. MEDICAL PERSONNEL may irrigate the victim’s eyes with a sterile 1% calcium gluconate solution.  
 > > > 2. Ensure emergency responders and treating physicians are aware of the nature of the chemical exposure. Provide a copy of the MSDS to emergency responders.
 
-### **Inhalation**
+#### **Inhalation**
 
 1. *If a large volume of hydrofluoric acid gas is inhaled.* Immediately remove the victim to fresh air. Call Public Safety (212-650-7777) and inform the emergency dispatcher of the exposure and request emergency transport.  
 2. Ensure emergency responders and treating physicians are aware of the nature of the chemical exposure. Provide a copy of the MSDS to emergency responders.  
 3. Inhalation of hydrofluoric acid fumes may cause swelling in the respiratory tract up to 24 hours after exposure. Persons who have inhaled hydrofluoric acid vapors may need prophylactic oxygen treatment and must be seen by a physician as soon as possible.  
 - 
 
-### **Sulfuric Acid and Hydrogen Peroxide Contact**
+#### **Sulfuric Acid and Hydrogen Peroxide Contact**
 
 - Skin: Remove contaminated clothing, rinse affected area with water for 10 minutes. **If there is a visible burn, get immediate medical attention.**  
 - Eye: Immediately flush with water for at least 20 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-### **Spills**
+#### **Spills**
 
-#### **Small Spill Within the Hood**
+##### **Small Spill Within the Hood**
 
 If a small spill occurs and is fully contained within the hood:
 
@@ -256,14 +256,14 @@ If a small spill occurs and is fully contained within the hood:
 * If wipes are insufficient, use the absorbent pads stored in the bottom right corner of the hood.  
 * If you are unsure how to clean up the material or feel uncomfortable doing so, **notify staff immediately**.
 
-#### **Medium or Large Spill Within the Hood \- Always staff**
+##### **Medium or Large Spill Within the Hood \- Always staff**
 
 If the spill requires neutralization or use of an absorbent pillow from the spill kit:
 
 * **Notify staff immediately.**  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert other users **not to use the hood** until it has been properly cleaned and cleared by staff.
 
-#### **Any Spill Outside the Hood**
+##### **Any Spill Outside the Hood**
 
 If a spill occurs outside the hood:
 

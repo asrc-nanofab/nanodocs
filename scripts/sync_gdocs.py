@@ -162,6 +162,12 @@ IMAGE_LABEL_RE = re.compile(r"\[image\d+\]")
 INDENTED_HEADING_RE = re.compile(r"^\s+(#{1,6}\s.*)$")
 LIST_ITEM_RE = re.compile(r"^\s*(\d+\.|[*+-])\s")
 ALT_BOILERPLATE_RE = re.compile(r"AI-generated content may be incorrect\.?")
+# A heading anchor the export orphaned onto its own line (it belongs on the
+# heading); attr_list can't attach it, so it renders as literal text
+ORPHAN_ANCHOR_RE = re.compile(r"\{#[^}]*\}")
+# A heading line, optionally prefixed by a list marker (docs sometimes nest
+# headings in numbered lists); {1,5} so H6 is never pushed past the max level
+DEMOTABLE_HEADING_RE = re.compile(r"^((?:\s*(?:\d+\.|[*+-])\s+)?)(#{1,5}\s)")
 
 IMAGE_EXTENSIONS = {"jpeg": "jpg", "svg+xml": "svg"}
 
@@ -350,7 +356,13 @@ def extract_images(
         attr = f'{{ width="{display_width}" }}' if display_width else ""
         markdown = re.sub(
             rf"!\[([^\]]*)\]\[{label}\]",
-            lambda m, rel=rel, attr=attr: f"![{m.group(1)}]({rel}){attr}",
+            # Alt text is usually browser-generated (source page titles) and
+            # can contain "|", which splits the cell when the image sits in a
+            # table — sanitize rather than escape, since "\|" only renders
+            # cleanly inside tables
+            lambda m, rel=rel, attr=attr: (
+                f"![{m.group(1).replace('|', '-')}]({rel}){attr}"
+            ),
             markdown,
         )
         markdown = markdown.replace(match.group(0), "")
@@ -424,6 +436,8 @@ def clean_body(markdown: str) -> str:
         # Empty heading lines are Google Doc styling leftovers with no content
         if re.fullmatch(r"#{1,6}", stripped):
             continue
+        if ORPHAN_ANCHOR_RE.fullmatch(stripped):
+            continue
         if TOC_LABEL_RE.fullmatch(stripped) or TOC_ENTRY_RE.match(stripped):
             continue
         if TOC_PAGENUM_RE.search(stripped):
@@ -435,7 +449,40 @@ def clean_body(markdown: str) -> str:
         out.append(line)
     # Collapse blank-line runs left behind by the stripping above
     body = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip() + "\n"
-    return _dedent_nested_headings(body)
+    return _demote_body_headings(_dedent_nested_headings(body))
+
+
+def _demote_body_headings(markdown: str) -> str:
+    """Shift every heading down one level when the body contains an H1.
+
+    Doc authors often style top-level sections as Heading 1, but the page
+    template already supplies its own H1 title, so body H1s become siblings
+    of the title. Material's sidebar TOC only lists descendants of the first
+    H1 — sibling H1s (and everything under them) silently vanish from it.
+    Demoting keeps one H1 per page and the TOC intact.
+    """
+    lines = markdown.splitlines()
+    in_fence = False
+    fenced = []
+    for line in lines:
+        if line.lstrip().startswith("```"):
+            fenced.append(True)
+            in_fence = not in_fence
+        else:
+            fenced.append(in_fence)
+
+    has_h1 = any(
+        not is_fenced and re.match(r"#\s", line)
+        for line, is_fenced in zip(lines, fenced)
+    )
+    if not has_h1:
+        return markdown
+
+    out = [
+        line if is_fenced else DEMOTABLE_HEADING_RE.sub(r"\g<1>#\g<2>", line, count=1)
+        for line, is_fenced in zip(lines, fenced)
+    ]
+    return "\n".join(out) + "\n"
 
 
 def _dedent_nested_headings(markdown: str) -> str:

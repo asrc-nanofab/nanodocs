@@ -39,10 +39,16 @@ flowchart LR
 - **"In line with text" images** — Google's conversion simply doesn't include
   wrapped or floating images, so the script can't recover them. Inline images
   come through perfectly, at full resolution.
-- **Real heading styles at the left margin** — the site builds each page's
-  table of contents and search index from your headings. Bold "fake headings"
-  or headings indented inside lists don't register as headings after
-  conversion.
+- **Real heading styles** — the site builds each page's table of contents and
+  search index from your headings. Bold "fake headings" don't register as
+  headings after conversion, so those sections vanish from the TOC.
+
+The script also smooths over conversion quirks so you don't have to think
+about them: heading levels are normalized (sections styled Heading 1 are
+shifted down so the page title stays the only top-level heading and the TOC
+works), headings indented inside lists are un-indented, and stray artifacts —
+empty headings, orphaned heading anchors, "Page N of M" scaffolding from
+PDF-converted docs — are stripped.
 
 ## What this means for you
 

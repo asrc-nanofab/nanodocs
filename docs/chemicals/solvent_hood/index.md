@@ -10,19 +10,19 @@
 
 ---
 
-# Solvents/Lift-Off Hood
+## Solvents/Lift-Off Hood
 
-## Standard Operating Procedure
+### Standard Operating Procedure
 
-# Section 1: Process Description {#section-1:-process-description}
+## Section 1: Process Description {#section-1:-process-description}
 
 The Solvents/Lift-Off Hood is an Air Control stainless steel fume hood designed for non-corrosive chemical work. Located in the metrology bay of the cleanroom, this hood is designated for solvents only and is to be used for cleaning substrates and other samples with solvents and performing post-deposition or post-etch lift-off of photo- and EBL-resists. There are two sonicator tanks built into the hood that can be used to assist with cleaning or lift-off processes.
 
 DI water and dry nitrogen guns are available in the hood for rinsing and blowing dry samples and glassware. Squeeze bottles of isopropanol, acetone and methanol are also available in the hood to be used for rinsing samples. A rack of glassware designated for use in the solvents/lift-off hood only is located near the hood, though users may also bring their own glassware to be used in the hood if so desired. There are three stainless steel carboys located in the hood for disposal of most solvents used in the hood, though any halogenated solvents used in the hood must be disposed of into a separate waste container.
 
-# Section 2: Safety Protocols {#section-2:-safety-protocols}
+## Section 2: Safety Protocols {#section-2:-safety-protocols}
 
-## Potential Hazards {#potential-hazards}
+### Potential Hazards {#potential-hazards}
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -34,14 +34,14 @@ DI water and dry nitrogen guns are available in the hood for rinsing and blowing
 | Toluene \[Toluol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/933ea4999773.png){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Highly flammable liquid and vapor May be fatal if swallowed and enters airways Causes skin irritation Causes serious eye irritation May cause drowsiness or dizziness Suspected of damaging fertility or the unborn child May cause damage to organs (central nervous system) through prolonged or repeated exposure |
 | Chloroform \[Trichloromethane\] | ![](img/a4ada579aeba.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | Harmful if swallowed Toxic if inhaled Causes skin irritation Causes serious eye irritation Suspected of causing cancer Suspected of damaging fertility or the unborn child May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs (liver, kidney) through prolonged or repeated exposure |
 
-## Physical Hazards
+### Physical Hazards
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
 | Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 | Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
-## Routes of Exposure {#routes-of-exposure}
+### Routes of Exposure {#routes-of-exposure}
 
 There is a risk of skin or eye exposure when handling chemicals that can be mitigated by wearing proper PPE.
 
@@ -53,31 +53,31 @@ There is a risk of splattering chemicals by spraying them with the nitrogen guns
 
 There is a risk of severe skin burns if a hotplate is touched, which can be prevented by using tweezers when handling samples on the hotplate and never touching it directly with hands or other body parts. When heating chemicals in glassware on a hotplate, do remove from the hotplate until the hotplate has been turned off and the chemicals have returned to room temperature.
 
-## Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
+### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
 
 Users must be wearing the nitrile cleanroom gloves required throughout the cleanroom at all times. It is also recommended that users wear a second pair of gloves over the first pair. Chemicals may splash onto gloves, which could lead to contaminating other equipment in the cleanroom if gloves are not changed after using chemicals. Wearing a second pair of gloves makes it easier to remove, dispose of and replace soiled gloves.
 
 Safety glasses are required when using the solvents hood.
 
-## Waste Disposal {#waste-disposal}
+### Waste Disposal {#waste-disposal}
 
-### Solvents {#solvents}
+#### Solvents {#solvents}
 
 There are three chemical waste slots in the back of the solvents/lift-off hood that drain to stainless steel carboys under the hood. All regular solvents, such as isopropanol, acetone, methanol, ethanol, toluene, and NMP (Remover PG) should go into the carboys. Any of these solvents can go into any of the three carboys in spite of the labeling above them.
 
-### Halogenated Solvents {#halogenated-solvents}
+#### Halogenated Solvents {#halogenated-solvents}
 
 Halogenated solvents, such as chloroform, must be disposed of in a waste bottle and stored in the chemical waste cabinet in the lithography bay. The waste bottle must be labelled with the full names of the chemical contents, meaning no abbreviations or tradenames are to be used on the label. Generally, there should already be a waste bottle set up in the waste cabinet for halogenated solvents.
 
-### Sonicator Tank {#sonicator-tank}
+#### Sonicator Tank {#sonicator-tank}
 
 The sonicator tanks in the hood also drain into the carboys, so if the tank is filled with solvents.  Water put into the tank will also have to be drained into the carboy, so when filling with water do not fill to excess. Instead, use just enough water so that the sensor in the control screen indicates it is full. There is a drain button in the sonicator tank control screen in the hood’s control screen. When the button is green, the drain is open.
 
-### Soiled Wipes and Gloves {#soiled-wipes-and-gloves}
+#### Soiled Wipes and Gloves {#soiled-wipes-and-gloves}
 
 Dispose of gloves and wipes soiled with chemicals in a red hazardous waste bin.
 
-### Sharps {#sharps}
+#### Sharps {#sharps}
 
 Dispose of any used pipettes or swabs in the sharps waste container.
 
@@ -85,9 +85,9 @@ Dispose of used or failed substrates in a sharps waste container.
 
 Dispose of broken chemical glassware in a sharps waste container.
 
-# Section 3: Process {#section-3:-process}
+## Section 3: Process {#section-3:-process}
 
-## Preparation
+### Preparation
 
 1. Check whether any users have any of the  slots for the “Solvent/Lift-Off Hood” in Badger enabled. If so, confirm that they’re actually still using the hood. Users should have the hood enabled as long as they have chemicals in the hood. If all slots are enabled, you cannot use the hood until 1 of them opens.
 
@@ -103,7 +103,7 @@ Dispose of broken chemical glassware in a sharps waste container.
 
    4. Confirm that the hood is in a clean and safe state. If other users’ chemistry is in the hood, it should be towards the back of the hood and unattended chemicals must be covered.
 
-## Solvent Cleaning or Lift-Off
+### Solvent Cleaning or Lift-Off
 
 1. Get one glass beaker that will fit your samples for processing from the “Solvent/Lift-Off Hood Supplies” glassware rack along the wall to the right of the hood.  
 2. Rinse the beaker with IPA or a very small amount of DI water prior to beginning the process. Since there is no sink in this hood, all waste must go into a carboy, so it is advised that excessive amounts of water should not be used and disposed of in the carboy.  
@@ -116,7 +116,7 @@ Dispose of broken chemical glassware in a sharps waste container.
    If you are heating IPA or acetone, you cannot leave your chemicals unattended while they’re on the hotplate as they will likely boil off quickly. It is typically not recommended to heat IPA or acetone.  
 8. Allow your samples to sit in the solvent for the duration of time required to develop your features. If you are leaving your chemistry unattended for this time, make sure there is a label with your name, the date and chemical contents next to it, and leave the Badger slot for the hood enabled while your chemicals remain in the hood.
 
-## Solvent Rinse
+### Solvent Rinse
 
 1. Get one more glass beaker that will fit your samples for processing from the “Solvent/Lift-Off Hood Supplies” glassware rack along the wall to the right of the hood.  
 2. Rinse the beaker with IPA or a very small amount of DI water prior to beginning the process. Since there is no sink in this hood, all waste must go into a carboy, so it is advised that excessive amounts of water should not be used and disposed of in the carboy.  
@@ -129,29 +129,29 @@ Dispose of broken chemical glassware in a sharps waste container.
 9. Remove the sample from the IPA with the tweezers. *It is often best to use a small trickle of IPA from a squeeze bottle to rinse your sample and break the surface tension of the chemical solution as you remove your sample so don’t coat your sample with contaminants as you take it out.*  
 10. Rinse the sample with IPA over the beaker.
 
-## Sample Dry
+### Sample Dry
 
 1. After the IPA rinse is finished, immediately blow the sample dry with the N2 gun. Be careful to use a full blast of nitrogen as it is easy to blow your sample out of the tweezers if it is too strong.
 
-## Cleanup
+### Cleanup
 
 1. Carefully pour the solvent waste into one of the carboy drains at the back of the hood.  
 2. Rinse the beakers with IPA multiple times (typically 3 times or more), pouring the waste into a carboy drain, and then blow it as dry as possible with the N2 gun.  
 3. If you wish to also rinse with DI water, take the beakers to the Litho-Development Hood in the Lithography Bay to do so in the sink in that hood.  This is optional, but it can help to remove any leftover solvent residue from the glassware.  
 4. Return all glassware to a drawer in the litho-development glassware rack.
 
-# Section 4: Accident Procedure
+## Section 4: Accident Procedure
 
-## **Chemical Exposure**
+### **Chemical Exposure**
 
 - Skin: Remove contaminated clothing, wash skin with soap and water. **If there is any irritation, get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-## **Spills**
+### **Spills**
 
-#### **Small Spill Within the Hood**
+##### **Small Spill Within the Hood**
 
 If a small spill occurs and is fully contained within the hood:
 
@@ -159,14 +159,14 @@ If a small spill occurs and is fully contained within the hood:
 * If wipes are insufficient, use the absorbent pads stored in the bottom right corner of the hood.  
 * If you are unsure how to clean up the material or feel uncomfortable doing so, **notify staff immediately**.
 
-#### **Medium or Large Spill Within the Hood \- Always staff**
+##### **Medium or Large Spill Within the Hood \- Always staff**
 
 If the spill requires use of an absorbent pillow from the spill kit:
 
 * **Notify staff immediately.**  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert other users **not to use the hood** until it has been properly cleaned and cleared by staff.
 
-#### **Any Spill Outside the Hood**
+##### **Any Spill Outside the Hood**
 
 If a spill occurs outside the hood:
 
