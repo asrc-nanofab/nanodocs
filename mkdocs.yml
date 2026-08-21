@@ -80,6 +80,10 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  # Preload mermaid so diagrams render on first visit; without this, Material
+  # lazily fetches it from unpkg at runtime, which can silently fail and leave
+  # the raw code block visible until a reload
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
   # - javascripts/pdfjs-config.js
 
 plugins:

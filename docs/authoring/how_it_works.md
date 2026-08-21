@@ -1,18 +1,19 @@
 # How This Site Is Built
 
 Curious what happens between your Google Doc and the page on this site? Here
-is the whole pipeline — it also explains *why* the
-[authoring rules](index.md#the-two-rules-that-matter) exist.
+is the whole pipeline.
 
 ## The pipeline
 
 ```mermaid
 flowchart LR
-    GD[Your Google Doc] --> REG[Registry sheet<br/>name + link]
-    REG --> SYNC[Sync script]
-    SYNC --> PAGE[Web page]
-    SYNC --> PDF[Hosted PDF]
-    PAGE --> SITE[This site]
+    GD[Your Google Doc] --> REG[Registry sheet<br/>doc name + Google link]
+    REG --> SYNC[Python sync script]
+    SYNC --> MD[Markdown pages]
+    SYNC --> IMG[Full-res images]
+    SYNC --> PDF[Hosted PDFs]
+    MD --> SITE[This site]
+    IMG --> SITE
     PDF --> SITE
 ```
 
@@ -34,26 +35,19 @@ flowchart LR
 4. **The site is rebuilt and published.** Every page ends up searchable,
    readable on phones, and always in step with the docs.
 
-## Why the authoring rules exist
-
-- **"In line with text" images** — Google's conversion simply doesn't include
-  wrapped or floating images, so the script can't recover them. Inline images
-  come through perfectly, at full resolution.
-- **Real heading styles** — the site builds each page's table of contents and
-  search index from your headings. Bold "fake headings" don't register as
-  headings after conversion, so those sections vanish from the TOC.
-
-The script also smooths over conversion quirks so you don't have to think
-about them: heading levels are normalized (sections styled Heading 1 are
-shifted down so the page title stays the only top-level heading and the TOC
-works), headings indented inside lists are un-indented, and stray artifacts —
-empty headings, orphaned heading anchors, "Page N of M" scaffolding from
-PDF-converted docs — are stripped.
-
 ## What this means for you
 
 - **Edit the doc, never the site.** Site files are overwritten on every sync.
-- **Your doc stays yours.** Keep the letterhead and table of contents for
-  print use — the site removes them automatically.
+- **Publishing is automatic.** The sync extracts the page, images, and PDF
+  from your doc — nothing else to do on your end.
 - **Readers can always reach the original**: every page links to a read-only
   preview of your Google Doc.
+
+## What this means for your readers
+
+- **Readable anywhere.** Pages adapt to any screen — a phone at the tool, a
+  desktop in the office — far more comfortably than a PDF.
+- **Searchable.** Every page is indexed, so one search box covers all SOPs
+  and policies.
+- **Always current, still printable.** Pages stay in step with the source
+  docs, and a PDF copy is one click away when paper is better.
