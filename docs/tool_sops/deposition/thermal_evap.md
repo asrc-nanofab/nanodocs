@@ -10,7 +10,7 @@
 
 ---
 
-# Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview {#safety-information-and-overview}
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -20,13 +20,13 @@
 | Department | NanoFabrication Facility |
 | Room and Building | ASRC G.263 |
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after passing a qualification with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  NO high vapor pressure materials
 
-## **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
 
 **Substance Name:** Chromium
 
@@ -38,7 +38,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -49,7 +49,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 | Silver | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
  **Respiratory irritation** from dust or vapor in poorly ventilated areas. |
 
-## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
+### **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
 
 Eye damage can occur if looking through the viewport window with the shutter open, and not wearing the appropriate protective eyewear. 
 
@@ -59,13 +59,13 @@ Thermal hazard is present if using the e-beam evaporator for a long period of ti
 
 Inhalation hazard is present if did not wait until the tool has vented fully to the atmosphere.
 
-## **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
+### **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
 
 All personnel must wear the welding goggles whenever looking directly at the bright e-beam.
 
 All trained staff must use the grounding rod to touch the working areas, before attempting any maintenance.
 
-## **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
+### **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
 
 Kapton or copper tape that has silver and/or chrome on the top layer, must be disposed into the container found on the workbench. Staff will transport the container for waste disposal when the container is full. 
 
@@ -74,12 +74,12 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment and human health | Must be collected and disposed of as Hazardous waste  |
 
-# **Tool operation** {#tool-operation}
+## **Tool operation** {#tool-operation}
 
 Coming soon\!  
 ---
 
-# **Common Errors and Troubleshooting**  {#common-errors-and-troubleshooting}
+## **Common Errors and Troubleshooting**  {#common-errors-and-troubleshooting}
 
 ---
 

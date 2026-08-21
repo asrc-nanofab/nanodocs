@@ -12,7 +12,7 @@
 
 Standard Operating Procedure: **AFM**
 
-# Section 1 – Process or Experiment Description
+## Section 1 – Process or Experiment Description
 
 This Standard Operating Procedure (SOP) outlines the proper use of the Bruker Dimension FastScan AFM. The Bruker AFM provides high speed topographic imaging without loss of resolution or force control. The system is capable of measurements on both large and small size samples in air or fluids. The FastScan module generates on the fly atomic force microscopy images.
 
@@ -22,22 +22,22 @@ Icon Scanner: ScanAsyst, TappingMode (air), Contact Mode, Lateral Force Microsco
 
 All standard laboratory safety protocols must be followed throughout this procedure. While not all safety rules are explicitly stated within this SOP, they are covered in the required safety training sessions that must be completed prior to beginning any lab work. For instance, all personnel must wear appropriate lab attire, including an approved lab coat, safety goggles, closed-toe shoes, and clothing that covers all exposed skin, including the legs. A copy of the laboratory’s minimum safety requirements can be found in the SOP binder for reference.
 
-# Section 2 – Hazards General
+## Section 2 – Hazards General
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
 | Laser Hazard  | ![Laser safety - Wikipedia](img/fe1e34a56bcd.png){ width="47" } | AFMs typically use a **low-power laser** (often Class 1, 2, or sometimes 3R) that is directed at the back of the cantilever and reflected onto a photodetector. During probe/sample alignment users may be exposed to the beam either directly or via reflections. |
 | Electrical Shock Hazard High Voltage present | ![Electrical Shock Hazard](img/5f681199c41f.png){ width="68" } | High voltage is present during AFM setup. Ensure the "High Voltage" light is OFF before installing the Z-piezo to the FastScan head. Failure to follow this procedure may result in **electrical shock** and serious injury. |
 
-# Section 3 – Routes of Exposure
+## Section 3 – Routes of Exposure
 
 N/A
 
-# Section 4 – Process Steps
+## Section 4 – Process Steps
 
-## 4.1. Working Instructions
+### 4.1. Working Instructions
 
-### 4.1.1 System Power up & Probe Setup
+#### 4.1.1 System Power up & Probe Setup
 
 1. Open the NanoScope software.   
 2. Select an experiment. The various scanning modes and their subcategories can be selected from the experiment menu. Then **Click Load Experiment**.  
@@ -71,7 +71,7 @@ NOTE: Adjustments can be made to optimize the view by zooming in or out on the v
 
 ![](img/b9d06112c6e6.png){ width="347" }
 
-### 4.1.2. Loading your sample
+#### 4.1.2. Loading your sample
 
 1. Load the sample on the circular wafer sample chuck. The circular wafer sample chuck can be manually rotated for ease of loading the sample.  
 2. Click on **Navigate** in the Workflow Toolbar. Move your sample below the scanning head.  
@@ -84,7 +84,7 @@ WARNING: Be very careful when focusing on the surface using the Z motor. Set spe
 4. Use the stage direction controls to move the sample around until the desired imaging area is centered in video window.  
    
 
-### 4.1.3.Sample Measurement
+#### 4.1.3.Sample Measurement
 
 1. Prior to engaging the surface, click on **Check Parameters** in the Workflow Toolbar. Set scan size 500nm and offsets 0 nm for not to damage the tip uring the engage. ![](img/09de4f0cb6fc.png){ width="239" }  
 2. Close the AFM acoustic and vibration isolation enclosure. Once ready, click **Engage** to begin the scan. The parameters can be adjusted during the scan but should be done with caution as it can destroy the sample or tip.  
@@ -94,7 +94,7 @@ WARNING: Be very careful when focusing on the surface using the Z motor. Set spe
 
 4. To scan another sample, move to a new sample location, or quit the experiment, select **Withdraw** from the Workflow Toolbar.
 
-### 4.14. Unloading Sample and Shutdown Tool
+#### 4.14. Unloading Sample and Shutdown Tool
 
 1. To end your session, click on **Setup**, and then **Load Probe**. Select **Move to Probe Loading Position** in order to move the stage to a safe location for probe removal.  
 2. Open the AFM acoustic and vibration isolation enclosure. Remove the sample from stage.  
@@ -103,29 +103,29 @@ WARNING: Be very careful when focusing on the surface using the Z motor. Set spe
 5. Exit the Nanoscope software.  
 6. Clean up the work area
 
-# Section 5-Allowed Activities
+## Section 5-Allowed Activities
 
 Users are only allowed to do what is recommended in the SOP. 
 
-# Section 6-Disallowed Activities
+## Section 6-Disallowed Activities
 
 Users should not attempt to calibrate the tool. If they do not believe the tool is properly calibrated they should inform the cleanroom staff.
 
-# Section7-What to watch out for during operation
+## Section7-What to watch out for during operation
 
 * Ensure the High Voltage light is not illuminated prior to installing the probe holder. Failure to do so could result in electrical shock.  
 * Use caution when focusing on the surface using the Z motor. Always move the probe away from the surface initially and check the speed. Set speed to a low speed to reduce the risk of damage to the head, probe, and sample.  
 * Handle the AFM head with extreme care\! Any impact to the head may cause severe damage to the piezos, which are very expensive to repair/replace.
 
-# Section8-Common Troubleshooting Tips
+## Section8-Common Troubleshooting Tips
 
 If you get an error for laser alignment error, make sure that laser is aligned on the back of the cantilever, not the probe substrate. If the laser is aligned on the probe substrate, you will still get a good sum value of the photodetector, but the sum won’t drop off rapidly in all directions and the probe will crash into the surface when engaging. 
 
-# Section9-When to call staff? 
+## Section9-When to call staff? 
 
 If the stage is not working or the Nanoscope software fails to start, or if there is an error with another stage service or startup errors.
 
-# Section10-Badger Criteria 
+## Section10-Badger Criteria 
 
 *Report Problem:Shutdown:*
 

@@ -10,7 +10,7 @@
 
 ---
 
-# Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview {#safety-information-and-overview}
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -20,13 +20,13 @@
 | Department | NanoFabrication Facility |
 | Room and Building | ASRC G.263 |
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after passing a qualification with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  NO high vapor pressure materials
 
-## **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
 
 **Substance Name:** Chromium
 
@@ -38,7 +38,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-## **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -49,7 +49,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 | Silver | ![](img/0bbce0ece39a.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Silver is toxic to aquatic life in nanoparticulate or ionic forms. **low acute toxicity**, but chronic exposure (especially to nanoparticles or silver dust) may lead to: **Argyria**: A bluish-gray discoloration of the skin.
  **Respiratory irritation** from dust or vapor in poorly ventilated areas. |
 
-## **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
+### **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
 
 Eye damage can occur if looking through the viewport window with the shutter open, and not wearing the appropriate protective eyewear. 
 
@@ -57,13 +57,13 @@ Electric shock can occur when working with the high voltage feedthroughs or in t
 
 Thermal hazard is present if using the e-beam evaporator for a long period of time, which can heat up the plate and the sample(s).
 
-## **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
+### **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
 
 All personnel must wear the welding goggles whenever looking directly at the bright e-beam.
 
 All trained staff must use the grounding rod to touch the working areas, before attempting any maintenance.
 
-## **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
+### **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
 
 Kapton or copper tape that has silver and/or chrome on the top layer, must be disposed into the container found on the workbench. Staff will transport the container for waste disposal when the container is full. 
 
@@ -72,11 +72,11 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment and human health | Must be collected and disposed of as Hazardous waste  |
 
-# **Tool Operation** {#tool-operation}
+## **Tool Operation** {#tool-operation}
 
-## Deposition Procedure
+### Deposition Procedure
 
-## 1\. **Precheck** {#1.-precheck}
+### 1\. **Precheck** {#1.-precheck}
 
 1. Check load lock pressure (\< 1E-5)  
 2. Check chamber pressure (\~ E-8)  
@@ -87,7 +87,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 5. Check that the material you need is in the tool  
 6. **CONFIRM THAT BOTH GATE VALVES ARE CLOSED**
 
-## 2\. **Loading Sample and Rack into the Loadlock** {#2.-loading-sample-and-rack-into-the-loadlock}
+### 2\. **Loading Sample and Rack into the Loadlock** {#2.-loading-sample-and-rack-into-the-loadlock}
 
 1. Verify BOTH gate valves are closed  
 2. Vent load lock to atmospheric pressure (\~750 Torr)  
@@ -96,7 +96,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
    1. The sample plate can be inserted on either the 2nd or 3rd level  
 5. Insert the rack back into the loadlock and pump loadlock to **BELOW** 3E-5 Torr
 
-## 3\. **Loading Sample into the Main Chamber** {#3.-loading-sample-into-the-main-chamber}
+### 3\. **Loading Sample into the Main Chamber** {#3.-loading-sample-into-the-main-chamber}
 
 1. Verify the receiving substrate holder (the angle bracket) is in the correct load position (height and rotation)  
    1. Do not go below the bottom sharpie line   
@@ -128,7 +128,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     1. As long as you are **on or above the top sharpie line**, the loadarm can be moved back to the home position safely  
 11. Shut the viewport shutters
 
-## 4\. **Preparing for Film Deposition**  {#4.-preparing-for-film-deposition}
+### 4\. **Preparing for Film Deposition**  {#4.-preparing-for-film-deposition}
 
 1. Turn on HV on the Genius monitor (should say 9.45kV)  
 2. Verify the Genius monitor is in “Automatic Operation”  
@@ -156,9 +156,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
    3. **On the top left of the main screen, it will say “Verify Crystal” for a very brief moment.**   
    4. It should read “Deposit”, before you start ramping up.
 
-## 5\. **Film Deposition** {#5.-film-deposition}
+### 5\. **Film Deposition** {#5.-film-deposition}
 
-### *Ramping up to Threshold* 					 {#ramping-up-to-threshold}
+#### *Ramping up to Threshold* 					 {#ramping-up-to-threshold}
 
 1. Ramp up by increasing the power knob slowly and waiting between movements    
    1. Ramping up is:  
@@ -171,7 +171,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
    1. If it is too close to the crucible wall or if it is on the crucible, notify staff member to move the beam for you  
 5. Close the viewport window 
 
-### *After Threshold \- Ramping up to Soaking*  {#after-threshold---ramping-up-to-soaking}
+#### *After Threshold \- Ramping up to Soaking*  {#after-threshold---ramping-up-to-soaking}
 
 6. Increase the power slowly until you are midway of the desired deposition rate   
    1. You could try moving 1% first and observe how the rate rises.   
@@ -181,13 +181,13 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
    1. **Soak for at least 3 minutes**  
 8. Check chamber pressure and cryo temperatures periodically
 
-### *After Soaking \- Ramping up to Desired Rate*  {#after-soaking---ramping-up-to-desired-rate}
+#### *After Soaking \- Ramping up to Desired Rate*  {#after-soaking---ramping-up-to-desired-rate}
 
 9. At this point, it shouldn’t take large power jumps to reach your desired rate.  
    1. Should be increasing the power approximately the same pace  
 10. Check chamber pressure and cryo temperatures periodically
 
-### *Deposition*   {#deposition}
+#### *Deposition*   {#deposition}
 
 11. When you reached your desired rate, open the substrate shutter to expose your sample  
     1. Click on the “S\_SH” button  
@@ -210,7 +210,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
  
 
-## 6\. **Unloading the Sample**  {#6.-unloading-the-sample}
+### 6\. **Unloading the Sample**  {#6.-unloading-the-sample}
 
 1. Turn off the HV on the Genius controller.   
 2. Insert the load arm into the main chamber to receive the sample plate  
@@ -226,7 +226,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 10. Shut the gate valve  
 11. Vent the load lock and remove your sample.
 
-## 7\. **Before You Go…**  {#7.-before-you-go…}
+### 7\. **Before You Go…**  {#7.-before-you-go…}
 
 12. When you leave the tool, verify the following:  
     1. The HV is off on the Genius Controller  
@@ -238,9 +238,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
 ---
 
-# Ion Milling Procedure 
+## Ion Milling Procedure 
 
-## **Setup and Loading**
+### **Setup and Loading**
 
 1. Remove all of the other sample plates from the rack  
    1. Place them on a wipe  
@@ -252,7 +252,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 5. Load the sample plate to the milling height of 110mm from the top  
    1. Right above the top sharpie line
 
-## **Working**
+### **Working**
 
 1. Open the gate valve to the loadlock, and **keep it open**.  
 2. Turn off the ion gauge, by pressing the **SENSOR ON/OFF** button  
@@ -302,7 +302,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
        1. See figure 12  
     3. **Make sure the viewing shutter is closed\!**
 
-## **Turning Off and Unloading**
+### **Turning Off and Unloading**
 
 1. To turn off, first press **BEAM ENABLE**  
    1. Wait about 30 sec \-1 minute for the panel to stabilize  
@@ -321,7 +321,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
    2. **Make sure the sample plate is not rotating before attempting to place it on the loadarm**  
 8. **Make sure the loadlock gate valve is closed before venting the loadlock to remove your sample\!**
 
-## **Before You Go…**
+### **Before You Go…**
 
 1. Turn the ion gauge back on by pressing the **SENSOR ON/OFF** button  
 2. Open the top cryo pump by pressing the **Cr\_I**   
@@ -337,9 +337,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
      
    
 
-# **Appendix** {#appendix}
+## **Appendix** {#appendix}
 
-### *Loading Sample into the Main Chamber* {#loading-sample-into-the-main-chamber}
+#### *Loading Sample into the Main Chamber* {#loading-sample-into-the-main-chamber}
 
 ![](img/f96f0dd97b2f.png){ width="407" }  
 *Figure 1*  
@@ -355,7 +355,7 @@ This point of view is looking into the main chamber from the viewport window. Th
 *Figure 4*  
 The **bottom** sharpie denotes where the angle brackets should be placed to start the loading process. This is also where you leave the angle bracket when you want to transfer the sample plate back into the loadlock. The **top** sharpie mark is the minimum safe clearance to move the loadarm back to its home position safely. The blue dashed line shows where the angle bracket is at the 90mm mark, the deposition height. *Note: We align the angle bracket to the placemarkers by using the bottom edge of the brass rod.*
 
-### *Preparing for Film Deposition* {#preparing-for-film-deposition}
+#### *Preparing for Film Deposition* {#preparing-for-film-deposition}
 
 ![](img/d904898b7ac4.png){ width="412" }  
 *Figure 5*  
@@ -369,7 +369,7 @@ After you press the “Process Menu” button, it takes to this screen to select
 *Figure 7*  
 When you are on this screen, you are editing the material’s recipe/process. The only parameter to edit here is the “Final Thickness”, which you **must set to a number higher than what you want on your sample**. The other 2 parameters: **“Start Mode” and “Sensor 1” must match this photo.** 
 
-# **Common Errors and Troubleshooting**  {#common-errors-and-troubleshooting}
+## **Common Errors and Troubleshooting**  {#common-errors-and-troubleshooting}
 
 ---
 

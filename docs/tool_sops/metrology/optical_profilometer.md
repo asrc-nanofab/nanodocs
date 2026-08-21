@@ -12,27 +12,27 @@
 
 **Standard Operating Procedure: Optical Profiler**
 
-# **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This Standard Operating Procedure (SOP) outlines the proper use of Bruker ContourGT-I 3D Optical Profiler. The Bruker Optical Profiler is a fully automated and programmable optical interferometric microscope that can be used to measure and map surface features in 3D.  The system features an automated tip/tilt optical head, to enable measurements over a range of angles while minimizing tracking errors.
 
 All standard laboratory safety protocols must be followed throughout this procedure. While not all safety rules are explicitly stated within this SOP, they are covered in the required safety training sessions that must be completed prior to beginning any lab work. For instance, all personnel must wear appropriate lab attire, including an approved lab coat, safety goggles, closed-toe shoes, and clothing that covers all exposed skin, including the legs. A copy of the laboratory’s minimum safety requirements can be found in the SOP binder for reference.
 
-# **Section 2 – Hazards General** {#section-2-–-hazards-general}
+## **Section 2 – Hazards General** {#section-2-–-hazards-general}
 
 | Hazard | Hazard Sign | Hazard Description |
 | ----- | :---: | ----- |
 | Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The optical profiler is equipped with a motorized stage that can create pinch points – areas where a person’s fingers can get caught or crushed. Do not move the stage with your hands near it. |
 
-# **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
+## **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
 
 N/A
 
-# **Section 4 – Process Steps** {#section-4-–-process-steps}
+## **Section 4 – Process Steps** {#section-4-–-process-steps}
 
-## **4.1. Working instructions**  {#4.1.-working-instructions}
+### **4.1. Working instructions**  {#4.1.-working-instructions}
 
-### **4.1.1.  System Start up** {#4.1.1.-system-start-up}
+#### **4.1.1.  System Start up** {#4.1.1.-system-start-up}
 
 1. Turn on the power to the system from the controller. The green ON button will be illuminated.  
 2. Open the Vision64 software.  
@@ -40,7 +40,7 @@ N/A
 4. Make sure the turret is clear of the stage and all samples. Select **Continue**.  
 5. If necessary, select **Initialize XY** in the settings for the XY stage to initialize the XY stage and select **Initialize Z** in the settings for the Z stage to initialize the Z stage.
 
-### **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
+#### **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
 
 1. Place the sample to be measured on the stage directly under the objective.  Be sure it is oriented in a way you want it measured as the stage does not rotate.  
 2. In the XY control panel under **Instrument Control**, select the speed at which you want to move the sample stage and drag the red circle in XY control from the center of the cross-hair to move the stage to position your sample under the objective.  
@@ -55,7 +55,7 @@ N/A
 8. Adjust the light intensity when necessary.  
    
 
-### **4.1.3. Collect Measurement Data** {#4.1.3.-collect-measurement-data}
+#### **4.1.3. Collect Measurement Data** {#4.1.3.-collect-measurement-data}
 
  
 
@@ -67,7 +67,7 @@ N/A
 5. Once your measurement parameters are entered, click **Single Acquisition** to make the measurement. **Do not touch or bump the table holding the ContourGT while it is making a measurement as any wobbling could ruin the measurement.**  
    
 
-### **4.1.4.  Data Analysis** {#4.1.4.-data-analysis}
+#### **4.1.4.  Data Analysis** {#4.1.4.-data-analysis}
 
    
 
@@ -80,11 +80,11 @@ N/A
 
 *![](img/24eb927a3836.png)*
 
-### **4.1.5.  Save Data** {#4.1.5.-save-data}
+#### **4.1.5.  Save Data** {#4.1.5.-save-data}
 
  Save the data set using the file operation functions. Save → Dataset. You should save your data to your own folder in the NanoFab01 network drive either in the XML or Bit map format. 
 
-### **4.1.6. Unloading sample and Shutdown Tool** {#4.1.6.-unloading-sample-and-shutdown-tool}
+#### **4.1.6. Unloading sample and Shutdown Tool** {#4.1.6.-unloading-sample-and-shutdown-tool}
 
 1. Remove your sample.  Move the objective up first if it is too close to the sample.  
 2. Close the Vision64 software.  
@@ -92,32 +92,32 @@ N/A
 4. Clean up the work area.  
    
 
-# **Section 5- Allowed Activities** {#section-5--allowed-activities}
+## **Section 5- Allowed Activities** {#section-5--allowed-activities}
 
 Users should only attempt to make measurements with the tool configured as it is.  Anything that requires a different configuration should not be attempted without first consulting cleanroom staff.
 
 Emergency stops should not be necessary for this tool, but if circumstances ever arise where it is necessary to perform an emergency stop, do so by pressing the red EMO button on the tool’s controller.
 
-# **Section 6-Disallowed Activities** {#section-6-disallowed-activities}
+## **Section 6-Disallowed Activities** {#section-6-disallowed-activities}
 
 Never try to move the Objectives with hand. Doing so will damage the Objectives.
 
 Users should not attempt to calibrate the tool.  If they do not believe the tool is properly calibrated they should inform the cleanroom staff.
 
-# **Section 7- What to watch out for during operation** {#section-7--what-to-watch-out-for-during-operation}
+## **Section 7- What to watch out for during operation** {#section-7--what-to-watch-out-for-during-operation}
 
 Ensure that the objectives are raised high enough to easily clear your sample. Always ensure that objectives will not strike your sample. Doing so can result in damage to the objectives and it costs close to $10,000.  
 Be mindful of the limits your sample might impose on measurements.  Rough surfaces, non-reflective surfaces and multiple materials with different reflectivity can affect or hinder measurements.
 
-# **Section 8 \- Common Troubleshooting Tips** {#section-8---common-troubleshooting-tips}
+## **Section 8 \- Common Troubleshooting Tips** {#section-8---common-troubleshooting-tips}
 
 If something is not responding, attempt to close and restart the software.  Also, reinitialize the stages.
 
-# **Section 9- When to call staff?** 
+## **Section 9- When to call staff?** 
 
 If the stages stop working, or the light is no longer working.
 
-# **Section 10- Badger Criteria**  {#section-10--badger-criteria}
+## **Section 10- Badger Criteria**  {#section-10--badger-criteria}
 
 *Report Problem:Shutdown:*
 

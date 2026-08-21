@@ -63,6 +63,9 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
+      # Sidebar TOC stays scannable: list H2/H3 only (deeper headings keep
+      # their anchors, so links to them still work)
+      toc_depth: 3
       # baselevel: 2
       # separator: "_"
   - attr_list

@@ -26,11 +26,23 @@ line")** in the toolbar that appears:
 If you're unsure about an existing doc, the sync prints a warning for every
 figure caption that has no image above it, so ask whoever runs the sync.
 
-### 2. Keep headings at the left margin
+### 2. Use real heading styles
 
-Use real heading styles (Heading 1, 2, 3…) from the styles dropdown, and don't
-indent them inside numbered lists. The site builds each page's table of
-contents from your headings — indented headings convert poorly.
+Pick **Heading 1, 2, 3…** from the styles dropdown for your section titles.
+The site builds each page's table of contents from these headings — text that
+merely *looks* like a heading (bold, larger font) will render fine but never
+appear in the TOC or in site search.
+
+Details that don't matter (the site fixes them):
+
+- **Which level you start at.** Sections styled Heading 1 are shifted down
+  automatically so the page title stays the only top-level heading.
+- **Headings indented inside numbered lists** are recovered, though major
+  sections read best at the left margin.
+
+What does matter is the *nesting*: subsections styled one level below their
+section (e.g. Heading 3 under Heading 2) show up indented in the TOC, so
+readers can see the structure at a glance.
 
 ## What converts well
 
@@ -39,20 +51,35 @@ Use these freely — they all come through cleanly:
 - **Tables** (including images inside table cells, e.g. hazard symbols)
 - **Bold, italics, numbered and bulleted lists, footnotes**
 - **Images** (inline!) — the site automatically recovers them at full
-  resolution, and small images (QR codes, icons) keep the size you set in
-  the doc
-- **Your document's table of contents and letterhead** — these are stripped
-  automatically on the site (which generates its own live TOC), so keep them
-  in the doc for print/PDF use
+  resolution. The size you set in the doc carries over: small images
+  (QR codes, icons) stay small, and images sized to the full page width
+  render full width on the site.
+- **Docs that started life as PDFs** — if your doc was converted from a
+  paginated PDF, the repeating page headers and footers ("Page 2 of 9",
+  the logo on every page) are removed automatically.
+
+## What the site cleans up for you
+
+You don't need to restructure your doc for the website. On every sync the
+site automatically strips things that belong in the printed doc but not on
+a web page:
+
+- The **letterhead logo** and the **document title line** (the page supplies
+  its own title)
+- Your doc's **table of contents** — the site generates its own live one
+  from your headings, so keep the doc's TOC for print/PDF use
+- **"Page N of M"** markers and repeated page headers/footers from
+  PDF-converted docs
+- Empty heading lines and other invisible styling leftovers
+- Google's *"AI-generated content may be incorrect"* boilerplate on image
+  alt text
 
 ## What to avoid
 
 - Wrapped/floating images (rule 1)
-- Headings indented inside lists (rule 2)
+- Manual "fake headings" — bold text instead of a heading style (rule 2)
 - Text drawn in Google Drawings or text boxes — treat anything that isn't
   regular text, a table, or an inline image as unlikely to convert
-- Manual "fake headings" (bold text instead of a heading style) — they'll
-  look fine but won't appear in the page's table of contents
 
 ## Publishing a new SOP
 
