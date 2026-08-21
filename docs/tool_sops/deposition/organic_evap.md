@@ -88,28 +88,28 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 2. Turn off pump to vent the loadlock  
 3. Remove sample holder and replace lid  
 4. Load sample onto substrate holder  
-   * Make sure one arm of the propeller is pointing towards the main chamber		OR  
-   * Use one of the lines coming out of the middle of the propeller, to align to the **NOTCH** on the **LEFT** side of the loadarm  
-   * See figure 1 for reference
+    * Make sure one arm of the propeller is pointing towards the main chamber		OR  
+    * Use one of the lines coming out of the middle of the propeller, to align to the **NOTCH** on the **LEFT** side of the loadarm  
+    * See figure 1 for reference
 
 ### **3\. Loading the Sample into Chamber**
 
 1. Open the upper viewport shutter to visualize loading  
 2. Raise propeller to **top** sharpie line for load arm clearance to transfer the sample plate  
-   * Sharpie line that is around 67 (see figure 2\)  
+    * Sharpie line that is around 67 (see figure 2\)  
 3. Spin propeller collet to line up with the **green** circle (see figure 3\)  
 4. Open gate valve when pressure is less than 3E-5 Torr  
 5. Rotate knob by loadlock to move the load arm all the way into the chamber  
-   * It’s a small knob that is to the right of the loadlock  
-   * Rotate knob until can’t move anymore  
+    * It’s a small knob that is to the right of the loadlock  
+    * Rotate knob until can’t move anymore  
 6. Lower propeller onto substrate holder.    
-   * Continue moving it down to bend the load arm only slightly  
-   * Propeller should insert into substrate holder relief and be flush  
-   * Should be aligned to the **green** sharpie line around 85 (see figure 2\)  
-     1. **Do not go below the green sharpie line**  
+    * Continue moving it down to bend the load arm only slightly  
+    * Propeller should insert into substrate holder relief and be flush  
+    * Should be aligned to the **green** sharpie line around 85 (see figure 2\)  
+        1. **Do not go below the green sharpie line**  
 7. Rotate propeller **clockwise** to lock it to the substrate holder  
 8. Raise sample holder to top sharpie line  
-   * Sharpie line that is around 67  
+    * Sharpie line that is around 67  
 9. Move loadarm back to resting position using the knob  
 10. Close the gate valve  
 11. Close the upper viewport shutter
@@ -117,41 +117,41 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 ### **4\. Preparing the Gun** {#4.-preparing-the-gun}
 
 1. Turn on the Genius remote  
-   * Make certain it is in manual mode   
-   * Should say 9.45kV  
+    * Make certain it is in manual mode   
+    * Should say 9.45kV  
 2. Open **E-beam Shutter**  
 3. Turn on the camera switch (Under laptop)  
-   * Can adjust the viewing angle of the camera by moving the shutter in front of the camera  
-   * Can adjust the contrast of the image by moving the 2 pins next to the camera  
-   * You should see the e-beam assembly glowing  
-   * Should position the view to be able to see the assembly on top and “darkness” underneath  
-     1. You could open and close the “e-beam shutter” to see if positioned correctly 
+    * Can adjust the viewing angle of the camera by moving the shutter in front of the camera  
+    * Can adjust the contrast of the image by moving the 2 pins next to the camera  
+    * You should see the e-beam assembly glowing  
+    * Should position the view to be able to see the assembly on top and “darkness” underneath  
+        1. You could open and close the “e-beam shutter” to see if positioned correctly 
 
 ### **5\. Selecting a Material and Recipe** {#5.-selecting-a-material-and-recipe}
 
 1. Select the material by crucible number from the **E-BEAM POCKET** drop-down menu  
-   1. The crucible positions are shown on the chart attached to the chamber door  
+    1. The crucible positions are shown on the chart attached to the chamber door  
 2. Click **E-beam index start** to give the command for the turret to move into that position  
 3. When movement is complete a popup window will appear with the message **“E-beam move complete”**   
-   1. Click **OK** to acknowledge the window   
+    1. Click **OK** to acknowledge the window   
 4. On the Inficon screen select **“Process Menu”**   
 5. Select the material desired to deposit  
-   1. Must select it **twice** to actually select that choice  
+    1. Must select it **twice** to actually select that choice  
 6. Press **“Edit”** on the layer screen  
-   1. **You should only see 1 layer** \- which is the same as the material selected  
+    1. **You should only see 1 layer** \- which is the same as the material selected  
 7. In the **“Process Menu: Edit …: Edit Layer 1.1”** screen, you must edit/verify the following:  
-   1. Enter a film thickness **greater** than what you need to deposit  
-   2. Verify that the Start Mode is in “Manual” mode  
-   3. Sensor 1 must be “On”  
-   4. See figure 4 for reference ![](img/c2f506ee7d12.png){ width="398" }  
+    1. Enter a film thickness **greater** than what you need to deposit  
+    2. Verify that the Start Mode is in “Manual” mode  
+    3. Sensor 1 must be “On”  
+    4. See figure 4 for reference ![](img/c2f506ee7d12.png){ width="398" }  
 8. Go back to the main menu and go to the **Film menu**  
 9. Select the material desired to deposit  
 10.  In that material film menu screen, verify the following 2 items  
     1. The **pocket number** on the screen matches the crucible turret position in reality  
     2. The line that reads “**material”** matches to what you will be evaporating   
-       1. This would be found towards the bottom of the screen  
-       2. Do not look at the top of the screen to verify this information  
-       3. See figure 5 for reference![](img/5df2744c3222.png)  
+        1. This would be found towards the bottom of the screen  
+        2. Do not look at the top of the screen to verify this information  
+        3. See figure 5 for reference![](img/5df2744c3222.png)  
 11. On the main menu, verify you are operating in “Man/Auto” (as opposed to Auto/Man)  
     1. You may have to click on **“Next Menu”** to see this option  
     2. A white box appears around the **“Power”** level column when you are in manual mode  
@@ -163,30 +163,30 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 #### *Ramping up to Threshold* 					
 
 1. Ramp up by increasing the power knob slowly and waiting between movements    
-   1. Ramping up is:  
-      1. **No more than 3% at a time**   
-   2. For every movement done, **you must wait anywhere between 30 sec. \- 1 min. Before moving the power knob again.**  
+    1. Ramping up is:  
+        1. **No more than 3% at a time**   
+    2. For every movement done, **you must wait anywhere between 30 sec. \- 1 min. Before moving the power knob again.**  
 2. When you start to get a rate on the monitor (ideally \~0.01Å/s), note the power in the log binder  
-   1. If it fluctuates to 0 or to negative numbers, that is not a real rate. It’s just noise.  
+    1. If it fluctuates to 0 or to negative numbers, that is not a real rate. It’s just noise.  
 3. Check chamber pressure and cryo temperatures periodically  
 4. Verify the location of the E-beam in the crucible through the viewport window  
-   1. If it is too close to the crucible wall or if it is on the crucible, notify staff member to move the beam for you  
+    1. If it is too close to the crucible wall or if it is on the crucible, notify staff member to move the beam for you  
 5. Close the viewport window 
 
 #### *After Threshold \- Ramping up to Soaking* 
 
 6. Increase the power slowly until you are midway of the desired deposition rate   
-   1. You could try moving 1% first and observe how the rate rises.   
-      1. If the rate moves up slowly or within acceptable bounds (≤ 0.1Å/s), you can increase the power jump slightly.  
-      2. If you see the rate rise more than 0.1Å/s, then move the power back to the last number you were on. Wait at least 1 minute for the rate to stabilize. Then, try moving again at a slower pace and observe how the rate behaves  
+    1. You could try moving 1% first and observe how the rate rises.   
+        1. If the rate moves up slowly or within acceptable bounds (≤ 0.1Å/s), you can increase the power jump slightly.  
+        2. If you see the rate rise more than 0.1Å/s, then move the power back to the last number you were on. Wait at least 1 minute for the rate to stabilize. Then, try moving again at a slower pace and observe how the rate behaves  
 7. When you are halfway of the desired rate, soak for a couple of minutes for uniformity  
-   1. **Soak for at least 3 minutes**  
+    1. **Soak for at least 3 minutes**  
 8. Check chamber pressure and cryo temperatures periodically
 
 #### *After Soaking \- Ramping up to Desired Rate* 
 
 9. At this point, it shouldn’t take large power jumps to reach your desired rate.  
-   1. Should be increasing the power approximately the same pace  
+    1. Should be increasing the power approximately the same pace  
 10. Check chamber pressure and cryo temperatures periodically
 
 #### *Deposition*  

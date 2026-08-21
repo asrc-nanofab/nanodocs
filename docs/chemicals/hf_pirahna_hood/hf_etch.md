@@ -40,9 +40,9 @@ Transene Buffered Oxide Etchant \[contains: hydrofluoric acid; ammonium fluoride
 - The etch rate will be reduced by approximately 50% by adding 1 part DI water to 2 parts etchant.  
 - Recommended Operating Temperatures: 20-50°C (30-40°C most common)  
 - Etch Rate at 25°C: depends on ratio of HF  
-  - Buffered HF Improves: 800 Å/sec  
-  - BOE 6:1: 860-930 Å/sec  
-  - BOE 50:1: 125-145 Å/sec  
+    - Buffered HF Improves: 800 Å/sec  
+    - BOE 6:1: 860-930 Å/sec  
+    - BOE 50:1: 125-145 Å/sec  
 - Select Compatible Materials: Gold, copper, nickel  
 - Select Incompatible Materials: Glass, titanium, alumina, silicon nitride  
 - Compatible Plastics: HDPE, PP, Teflon, PFA, PVC
@@ -66,7 +66,7 @@ Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasse
 #### **Preparation** {#preparation}
 
 1. Review the first aid procedures for HF exposure with your chemical buddy, including identifying the location of the HF First Aid Kit and Calcium Gluconate Gel.   
-   Note that you cannot use HF alone. When using HF, you must ensure that there is at least one other person (your chemical buddy) in the vicinity of the process at all times. That person must call Public Safety (212-650-7777) in the event of an emergency and then assist you with first aid.
+    Note that you cannot use HF alone. When using HF, you must ensure that there is at least one other person (your chemical buddy) in the vicinity of the process at all times. That person must call Public Safety (212-650-7777) in the event of an emergency and then assist you with first aid.
 
 #### **HF Etch**
 
@@ -78,8 +78,8 @@ Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasse
 6. Blow the beaker labeled “HF Only” semi-dry with the N2 gun and place it on a cleanroom wipe in the hood.  
 7. Pour the DI water from the measuring beaker into the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe in the hood.  
 8. Prepare your HF solution:  
-   1. If diluting hydrofluoric acid in water, determine the ratio of water to HF that you will be using. Fill the measuring beaker with DI water from the faucet to the volume needed, and then pour it into the “HF Only” container. Carefully pour hydrofluoric acid into the measuring beaker to the volume needed and then carefully add it to the water in the “HF Only” container. ***Acids should always be added to water when mixing solutions, and never the reverse.***  
-   2. If using a premixed solution, such as BOE, carefully pour the BOE into the measuring beaker to the volume needed and then pour it into the “HF Only” container.  
+    1. If diluting hydrofluoric acid in water, determine the ratio of water to HF that you will be using. Fill the measuring beaker with DI water from the faucet to the volume needed, and then pour it into the “HF Only” container. Carefully pour hydrofluoric acid into the measuring beaker to the volume needed and then carefully add it to the water in the “HF Only” container. ***Acids should always be added to water when mixing solutions, and never the reverse.***  
+    2. If using a premixed solution, such as BOE, carefully pour the BOE into the measuring beaker to the volume needed and then pour it into the “HF Only” container.  
 9. Rinse out the measuring beaker with DI water in the sink, then blow it semi-dry with the N2 gun and place it on a cleanroom wipe in the hood.  
 10. If you plan to heat the HF solution for the duration of the etch, place the beaker of HF solution on the hotplate and set it to 40°C. **Never set the hotplate higher than 50°C.**  
 11. Stir the HF solution with plastic tweezers to ensure it is thoroughly mixed.  Rinse the tweezers with DI water in the sink.  

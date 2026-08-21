@@ -47,27 +47,27 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 1. No member or project is more important than the safety of members and laboratory staff. 
 
-   * Ignorance of the rules, working under pressure, lack of common sense, language barriers, carelessness, and haste will never be adequate excuses for unsafe behavior. 
+    * Ignorance of the rules, working under pressure, lack of common sense, language barriers, carelessness, and haste will never be adequate excuses for unsafe behavior. 
 
-   * If you are tired, ill or do not have time to perform your work correctly and safely, please leave and return to finish your work when you are in a condition to do so. 
+    * If you are tired, ill or do not have time to perform your work correctly and safely, please leave and return to finish your work when you are in a condition to do so. 
 
-   * Anyone found to be in violation of any safety rule or otherwise compromising his or her personal safety or the safety of others will be denied access to the cleanroom.
+    * Anyone found to be in violation of any safety rule or otherwise compromising his or her personal safety or the safety of others will be denied access to the cleanroom.
 
 2. Every member must be respectful to all members and staff working in the lab, use tools in a prescribed manner, and observe the reservation policies.
 
 3. No member can operate any equipment in the laboratory without having been trained and qualified by staff on the specific equipment.
 
-   **To become qualified for a tool, you must:**
+    **To become qualified for a tool, you must:**
 
-   * Read the Standard Operating Procedure
+    * Read the Standard Operating Procedure
 
-   * Schedule and attend a training session with the staff member responsible for the tool.
+    * Schedule and attend a training session with the staff member responsible for the tool.
 
-   * If a one-on-one qualification session is required, schedule and attend a qualification with the trainer.  It is best to have a sample of your own ready to test with process during the qualification.
+    * If a one-on-one qualification session is required, schedule and attend a qualification with the trainer.  It is best to have a sample of your own ready to test with process during the qualification.
 
-   * If the staff member believes that you can safely use the equipment without supervision, they will qualify you to enable the tool and make reservations in Badger.  If the staff member does not believe that you can safely use the equipment without supervision, they will require you to attend another qualification.
+    * If the staff member believes that you can safely use the equipment without supervision, they will qualify you to enable the tool and make reservations in Badger.  If the staff member does not believe that you can safely use the equipment without supervision, they will require you to attend another qualification.
 
-   * If you are not able to enable a tool or make reservations for it in Badger, then you have not been qualified to do so.  If this is an error, contact the staff member who trained you so they can rectify it.
+    * If you are not able to enable a tool or make reservations for it in Badger, then you have not been qualified to do so.  If this is an error, contact the staff member who trained you so they can rectify it.
 
 4. Every laboratory member must utilize the proper Personal Protective Equipment (PPE) as identified in the Standard Operating Procedure (SOP) when operating equipment or processing wafers with hazardous chemicals, UV light or compressed air or nitrogen. 
 
@@ -75,7 +75,7 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 6. No member can work with chemicals in the laboratory without another member present (Buddy System). 
 
-   * Common solvents such as Methanol, Acetone, Isopropyl Alcohol, electron beam and photo resists and their developers are an exception to this rule.
+    * Common solvents such as Methanol, Acetone, Isopropyl Alcohol, electron beam and photo resists and their developers are an exception to this rule.
 
 7. No chemicals may be left unattended without first being covered (watch glasses are available with all glassware supplies) and properly labeled (must include member name and chemicals in use). 
 
@@ -107,7 +107,7 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 * Guests and non-qualified users are allowed only by pre-approval.
 
-  * Request permission from cleanroom staff at least 3 days in advance.  If the guest does not have an ASRC ID they will need to be added to the guest list for the building days in advance.
+    * Request permission from cleanroom staff at least 3 days in advance.  If the guest does not have an ASRC ID they will need to be added to the guest list for the building days in advance.
 
 * Always remove gloves as you exit the laboratory. 
 
@@ -123,29 +123,29 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 * 5:00 PM – 9:00 AM Monday through Friday
 
-  * Weekends (Saturday and Sunday)
+    * Weekends (Saturday and Sunday)
 
-  * College Closures (holidays and inclement weather)
+    * College Closures (holidays and inclement weather)
 
-    * Staff will post notices at cleanroom entrances and send messages in Slack and in the Newsletter days prior to holidays and other preplanned closures.
+        * Staff will post notices at cleanroom entrances and send messages in Slack and in the Newsletter days prior to holidays and other preplanned closures.
 
-    * Staff will send messages in Slack and email when the college is closed on short notice due to inclement weather or other events.
+        * Staff will send messages in Slack and email when the college is closed on short notice due to inclement weather or other events.
 
-    * It is the responsibility of members to watch for and heed these notices.  Members who attempt to enter the cleanroom on holidays and closures will be in violation of the after-hours policies.
+        * It is the responsibility of members to watch for and heed these notices.  Members who attempt to enter the cleanroom on holidays and closures will be in violation of the after-hours policies.
 
-    * The ASRC and NanoFab are always closed on the following holidays:
+        * The ASRC and NanoFab are always closed on the following holidays:
 
-      * Labor Day – 1st Monday of September  
-      * Columbus/Indigenous People’s Day – October 10th  
-      * Thanksgiving and the day after Thanksgiving – 4th Thursday and Friday of November  
-      * Christmas Eve and Christmas Day – December 24th & 25th  
-      * New Year’s Eve and New Year’s Day – December 31st & January 1st  
-      * Martin Luther King, Jr. Day – 3rd Monday of January  
-      * Lincoln’s Birthday – February 12th  
-      * Presidents’ Day – 3rd Monday of February  
-      * Memorial Day – last Monday of May  
-      * Juneteenth – June 19th  
-      * Independence Day – July 4th
+            * Labor Day – 1st Monday of September  
+            * Columbus/Indigenous People’s Day – October 10th  
+            * Thanksgiving and the day after Thanksgiving – 4th Thursday and Friday of November  
+            * Christmas Eve and Christmas Day – December 24th & 25th  
+            * New Year’s Eve and New Year’s Day – December 31st & January 1st  
+            * Martin Luther King, Jr. Day – 3rd Monday of January  
+            * Lincoln’s Birthday – February 12th  
+            * Presidents’ Day – 3rd Monday of February  
+            * Memorial Day – last Monday of May  
+            * Juneteenth – June 19th  
+            * Independence Day – July 4th
 
 **After-Hours: Requirements**
 
@@ -165,9 +165,9 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 * To work in the cleanroom after normal operating hours, the member cannot be alone on the ground floor of the ASRC.
 
-  * If operating a chemical process, the member must have a “buddy” present in the vicinity of the chemical hood whenever handling hazardous chemicals.
+    * If operating a chemical process, the member must have a “buddy” present in the vicinity of the chemical hood whenever handling hazardous chemicals.
 
-  * The buddy must be a registered cleanroom member with after-hours access and must be present in the cleanroom for the entire duration of the chemical process.
+    * The buddy must be a registered cleanroom member with after-hours access and must be present in the cleanroom for the entire duration of the chemical process.
 
 Failure to abide by the After-Hours Policy will result in loss of after-hours and potentially cleanroom access.
 
@@ -291,7 +291,7 @@ Face Mask
 
 * If working in the Class 100 areas, such as the lithography bay, the EBL rooms or the thermal oxidation furnace, put on face mask.
 
-  * If you have facial hair, a mask must be worn throughout the cleanroom.
+    * If you have facial hair, a mask must be worn throughout the cleanroom.
 
 Bouffant Cap
 
@@ -329,9 +329,9 @@ The above attire must be properly worn before entering the cleanroom.
 
 1. Glassware/plasticware is to be properly rinsed, blown dry with nitrogen, and removed from the hood and stored in the storage racks or after use.
 
-   * Personal or group owned glassware must be stored outside of the chemical hood. 
+    * Personal or group owned glassware must be stored outside of the chemical hood. 
 
-   * Do not leave glassware/plasticware in the hoods to dry.
+    * Do not leave glassware/plasticware in the hoods to dry.
 
 2. Used cleanroom wipes cannot be left in the hood. 
 
@@ -393,9 +393,9 @@ Do not remove gloves, hairnet, facemask or booties until you’ve exited the gow
 
 * Slack is used to facilitate discussions between and amongst members and staff.
 
-  * Channels: use the channels to watch out for updates on specific tools, announcements across the lab, or notes on processes.
+    * Channels: use the channels to watch out for updates on specific tools, announcements across the lab, or notes on processes.
 
-  * Direct Messaging: use the direct messages to get in touch with staff or with other members.
+    * Direct Messaging: use the direct messages to get in touch with staff or with other members.
 
 **NanoFab01 Drive**
 
@@ -409,7 +409,7 @@ Do not remove gloves, hairnet, facemask or booties until you’ve exited the gow
 
 * When publishing or presenting results derived from use of equipment and services at the ASRC NanoFab, please use the following acknowledgement:
 
-  *“This work was performed in part at the Advanced Science Research Center NanoFabrication Facility at the Graduate Center of the City University of New York.”*
+    *“This work was performed in part at the Advanced Science Research Center NanoFabrication Facility at the Graduate Center of the City University of New York.”*
 
 **Statement of Acceptance**
 

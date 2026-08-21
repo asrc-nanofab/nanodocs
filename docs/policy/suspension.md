@@ -21,68 +21,68 @@ After-hours access, defined as access to the facility any time *outside of* Mond
 
    
 
-   1. ### Jeopardizing the safety of the yourself or other users in the facility
+    1. ### Jeopardizing the safety of the yourself or other users in the facility
 
-      1. Improper use of chemical hood PPE:  
-         1) Users are required to wear safety glasses when using chemical hoods. Eyeglasses do not qualify as safety glasses. If wearing eyeglasses, proper safety glasses must be worn over them.  
-         2) Users are required to wear a full chemical apron that covers their arms and torso down to their knees, acid-resistant gloves, and a face shield when using acid hoods.  
-         3) All PPE should fit properly and be securely fastened. All PPE should be sized to fit comfortably, but not too lose or unmanageable. Aprons must be fastened both around the neck and waist and must never hang loose of the body.  
-         4) Users must check for cracks, tears and other damage in the PPE that would compromise its effectiveness before they put it on. Do not use damaged PPE.  
-      2. Improper use of the acid hoods (specific violations are listed below in part C in the Acid Hood Violations section).  
-      3. Not having a qualified chemical buddy present when using an acid hood  
-      4. Leaving chemicals unlabeled and unsupervised in a hood  
-      5. Using chemicals outside of a chemical hood  
-      6. Not cleaning up chemical hoods after use. No chemicals, glassware or other supplies should be left in the hood and all drips and spills must be cleaned up.  
-      7. Disposing of used wipes, PPE or other consumables in the wrong waste container. Any sharp items that could puncture a trash bag must be disposed of in a sharps container. Anything contaminated by chemicals (used wipes or PPE) must be disposed of in the red hazardous waste containers.  
-      8. Use of tools that you are not trained on. Users must be trained and certified by staff in order to use a tool unsupervised (this includes the acid hoods).  
-      9. Allowing non-certified users into the lab during after-hours  
+        1. Improper use of chemical hood PPE:  
+            1) Users are required to wear safety glasses when using chemical hoods. Eyeglasses do not qualify as safety glasses. If wearing eyeglasses, proper safety glasses must be worn over them.  
+            2) Users are required to wear a full chemical apron that covers their arms and torso down to their knees, acid-resistant gloves, and a face shield when using acid hoods.  
+            3) All PPE should fit properly and be securely fastened. All PPE should be sized to fit comfortably, but not too lose or unmanageable. Aprons must be fastened both around the neck and waist and must never hang loose of the body.  
+            4) Users must check for cracks, tears and other damage in the PPE that would compromise its effectiveness before they put it on. Do not use damaged PPE.  
+        2. Improper use of the acid hoods (specific violations are listed below in part C in the Acid Hood Violations section).  
+        3. Not having a qualified chemical buddy present when using an acid hood  
+        4. Leaving chemicals unlabeled and unsupervised in a hood  
+        5. Using chemicals outside of a chemical hood  
+        6. Not cleaning up chemical hoods after use. No chemicals, glassware or other supplies should be left in the hood and all drips and spills must be cleaned up.  
+        7. Disposing of used wipes, PPE or other consumables in the wrong waste container. Any sharp items that could puncture a trash bag must be disposed of in a sharps container. Anything contaminated by chemicals (used wipes or PPE) must be disposed of in the red hazardous waste containers.  
+        8. Use of tools that you are not trained on. Users must be trained and certified by staff in order to use a tool unsupervised (this includes the acid hoods).  
+        9. Allowing non-certified users into the lab during after-hours  
          
 
-   2. ### Disregarding the lab operating policies
+    2. ### Disregarding the lab operating policies
 
-      1. Entering the cleanroom without appropriate attire. Users must wear cleanroom nitrile gloves (no gloves worn outside the cleanroom) and full cleanroom suit over a hairnet (all hair must be contained in the hairnet) and booties. Users cannot wear shorts/skirts or open-toed shoes regardless of the fact that they will be donning a full cleanroom suit.  
-      2. Not wearing a cleanroom facemask in the lithography bay. Masks worn outside the cleanroom are not cleanroom masks, so a cleanroom mask must be worn over the outside mask.  
-      3. Not cleaning up after yourself. Users must put their personal supplies in their storage bin and dispose of any used wipes and other refuse.  
-      4. Going into restricted areas of the lab (maintenance chases and the back storage hallway) without explicit staff permission.  
-      5. Enabling tools for users other than yourself.  
-      6. Using tools enabled by another user.  
-      7. Allowing access for accompanying guests into the Nanofabrication Facility who have not been authorized or trained to enter the facility.  
-      8. Engaging in any unprofessional conduct  
+        1. Entering the cleanroom without appropriate attire. Users must wear cleanroom nitrile gloves (no gloves worn outside the cleanroom) and full cleanroom suit over a hairnet (all hair must be contained in the hairnet) and booties. Users cannot wear shorts/skirts or open-toed shoes regardless of the fact that they will be donning a full cleanroom suit.  
+        2. Not wearing a cleanroom facemask in the lithography bay. Masks worn outside the cleanroom are not cleanroom masks, so a cleanroom mask must be worn over the outside mask.  
+        3. Not cleaning up after yourself. Users must put their personal supplies in their storage bin and dispose of any used wipes and other refuse.  
+        4. Going into restricted areas of the lab (maintenance chases and the back storage hallway) without explicit staff permission.  
+        5. Enabling tools for users other than yourself.  
+        6. Using tools enabled by another user.  
+        7. Allowing access for accompanying guests into the Nanofabrication Facility who have not been authorized or trained to enter the facility.  
+        8. Engaging in any unprofessional conduct  
          
 
-   3. ### Acid Hood Violations
+    3. ### Acid Hood Violations
 
-      1. Not wearing the appropriate attire when using the White Acid Hoods. Requirements are: **Blue Vinyl Apron, Orange Trionic Gloves, and Face Shield.**  
-      2. Touching anything inside the acid hoods without the above attire.  
-      3. Leaning on the hood without the above attire.  
-      4. Not wearing orange acid-resistant gloves when retrieving acids, caustics or oxidizers from chemical storage cabinets.  
-      5. Not rinsing gloves or cleaning splashes of chemicals off aprons or face shields after using the chemical hood.  
-      6. Placing the face shield inside the acid hoods.  
-      7. Not carrying acids in the proper transport container  
-      8. Opening, shaking, or pouring acids outside the designated hoods  
-      9. Touching your face or white face mask while wearing the orange gloves.  
-      10. Walking away from the acid hood and around the cleanroom while wearing PPE contaminated by chemicals.
+        1. Not wearing the appropriate attire when using the White Acid Hoods. Requirements are: **Blue Vinyl Apron, Orange Trionic Gloves, and Face Shield.**  
+        2. Touching anything inside the acid hoods without the above attire.  
+        3. Leaning on the hood without the above attire.  
+        4. Not wearing orange acid-resistant gloves when retrieving acids, caustics or oxidizers from chemical storage cabinets.  
+        5. Not rinsing gloves or cleaning splashes of chemicals off aprons or face shields after using the chemical hood.  
+        6. Placing the face shield inside the acid hoods.  
+        7. Not carrying acids in the proper transport container  
+        8. Opening, shaking, or pouring acids outside the designated hoods  
+        9. Touching your face or white face mask while wearing the orange gloves.  
+        10. Walking away from the acid hood and around the cleanroom while wearing PPE contaminated by chemicals.
 
       
 
 2. ## Timeframe and requirements to regain access
 
-   1. Depending on the severity and danger of the infraction, the user is generally first given a warning. Should that same user be found to be in violation of policies again within 1 month, after-hours access will be suspended for 1 week.  
-   2. For infractions considered particularly egregious (items numbered 1.A.\[8-9\], 1.B.\[9-10\]) no warning will be given, and the user’s after-hours access will be immediately suspended for 1 week.  
+    1. Depending on the severity and danger of the infraction, the user is generally first given a warning. Should that same user be found to be in violation of policies again within 1 month, after-hours access will be suspended for 1 week.  
+    2. For infractions considered particularly egregious (items numbered 1.A.\[8-9\], 1.B.\[9-10\]) no warning will be given, and the user’s after-hours access will be immediately suspended for 1 week.  
       
 
 3. ## Repeat Offenses
 
-   1. Repeat offenses will result in successively longer suspension periods.  
-   2. Depending on the nature of the offense, and especially if the user demonstrates a lack of understanding of policies and procedures, the user may be required to repeat the lab orientation training and/or the chemical safety training, as appropriate.  
-   3. If a user repeatedly violates lab operating policies and chemical safety policies enough to be suspended more than 3 times within a 6-month timeframe, the user will permanently lose after-hours access.  
-   4. If a user demonstrates unwillingness to follow lab operating policies and chemical safety policies, they will permanently lose after-hours access.  
+    1. Repeat offenses will result in successively longer suspension periods.  
+    2. Depending on the nature of the offense, and especially if the user demonstrates a lack of understanding of policies and procedures, the user may be required to repeat the lab orientation training and/or the chemical safety training, as appropriate.  
+    3. If a user repeatedly violates lab operating policies and chemical safety policies enough to be suspended more than 3 times within a 6-month timeframe, the user will permanently lose after-hours access.  
+    4. If a user demonstrates unwillingness to follow lab operating policies and chemical safety policies, they will permanently lose after-hours access.  
       
 
 4. ## What warrants complete loss of facility access? 
 
-   1. If a user who has lost after-hours access permanently continues to demonstrate unwillingness to follow lab operating policies and chemical safety policies during regular business, they will permanently lose all access to the facility.  
-   2. For users who have not yet received after-hours access, repeated violations will result in suspension of all access to the facility.  
-      1. Such users who commit the same violation 3 times within a 1-month period will be suspended for 1 week.  
-      2. For infractions considered particularly egregious (items numbered 1.A.\[8-9\], 1.B.\[9-10\]) no warning will be given, and the user’s after-hours access will be immediately suspended for 1 week.  
-      3.  Subsequent violations will result in successively longer suspension periods.
+    1. If a user who has lost after-hours access permanently continues to demonstrate unwillingness to follow lab operating policies and chemical safety policies during regular business, they will permanently lose all access to the facility.  
+    2. For users who have not yet received after-hours access, repeated violations will result in suspension of all access to the facility.  
+        1. Such users who commit the same violation 3 times within a 1-month period will be suspended for 1 week.  
+        2. For infractions considered particularly egregious (items numbered 1.A.\[8-9\], 1.B.\[9-10\]) no warning will be given, and the user’s after-hours access will be immediately suspended for 1 week.  
+        3.  Subsequent violations will result in successively longer suspension periods.

@@ -94,7 +94,7 @@ Material Requirements
 
 4. Flip the toggle switch on the front of the tape mounter from OFF to ON. This turns on the vacuum to both the wafer and the frame.  
 5. Pull tape over the wafer and film frame, without touching either, and affix to front and rear edges of the frame.  
-   1. Note: Make sure tape is not too wavy and look for any cloudy/discolored spots on the tape overtop of the wafer to be mounted. If there are sections of cloudiness, pull additional tape so that is clear of the wafer.  
+    1. Note: Make sure tape is not too wavy and look for any cloudy/discolored spots on the tape overtop of the wafer to be mounted. If there are sections of cloudiness, pull additional tape so that is clear of the wafer.  
 6. Pull the roller by the handle from the back of the tool to the front slowly.
 
 7. Push roller slowly over the wafer and film frame back and forth 2-3 times to assure good adhesion. You can smooth out bubbles, in most cases, with your fingers.  
@@ -135,9 +135,9 @@ Material Requirements
 
 1. The machine will now measure the blade position 3 times.
 
-   2. When complete, the message “G0030 Setup Complete. (\*.\*\*\*mm consumed)” appears at the top. “\*.\*\*\*” indicates the blade wear amount since the last measurement. Normally, this value is 0 \+/- 0.002, prior to cutting.
+    2. When complete, the message “G0030 Setup Complete. (\*.\*\*\*mm consumed)” appears at the top. “\*.\*\*\*” indicates the blade wear amount since the last measurement. Normally, this value is 0 \+/- 0.002, prior to cutting.
 
-   3. If the blade wear is out of spec, the system will automatically alarm. If this happens, do not proceed and notify staff that the blade needs to be changed.  
+    3. If the blade wear is out of spec, the system will automatically alarm. If this happens, do not proceed and notify staff that the blade needs to be changed.  
 6. Press **EXIT** to return to the MAIN MENU when complete.
 
 7. Mount and center your framed wafer on the chuck table with the wafer facing up.
@@ -151,33 +151,33 @@ Material Requirements
 DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
 
 1. From the MAIN MENU, press the **DEVICE DATA** key. Select your device data file using scroll keys in the section of the keypad to the right of the numeric keys.  
-   1. Right scroll key moves you from the directory-name list to the file-name list. Up/Down scroll keys move you up and down through the alphanumerically sorted list.  
+    1. Right scroll key moves you from the directory-name list to the file-name list. Up/Down scroll keys move you up and down through the alphanumerically sorted list.  
 2. If you haven’t created one yet, select any file and copy it (**F2**) to the “Users” folder and give it an 8-character-limited name.  
-   1. For alphabetic characters, press **SHIFT** to toggle between the dual functions of the keys. When the indicator light above the shift key is lit, you’re in character-entry mode.  
+    1. For alphabetic characters, press **SHIFT** to toggle between the dual functions of the keys. When the indicator light above the shift key is lit, you’re in character-entry mode.  
 3. Locate the file you just named in the directory and select it.
 
 4. Press **ENTER** to open file for editing.
 
-   ![](img/2c7273322ad2.jpg){ width="421" }
+    ![](img/2c7273322ad2.jpg){ width="421" }
 
-   1. If editing, the fields to watch out for are:
+    1. If editing, the fields to watch out for are:
 
-      1. SPINDLE REVOLUTION: 30000 RPM is right for most uses. Do not change without consulting staff first.  
-      2. CUT MODE: A, with no sub-indexing
+        1. SPINDLE REVOLUTION: 30000 RPM is right for most uses. Do not change without consulting staff first.  
+        2. CUT MODE: A, with no sub-indexing
 
-         1. Note: Contact lab staff for information about other programming operations.
+            1. Note: Contact lab staff for information about other programming operations.
 
-      3. CUT DIRECTION: rear or front.
+        3. CUT DIRECTION: rear or front.
 
-      4. WAFER SHAPE: round or square. If a wafer is round, select ROUND and enter the diameter of the wafer (100mm \= 4” wafer). If a chip, select SQUARE and enter dimensions that are slightly larger than your chip.  
-      5. WORK THICKNESS: enter known wafer thickness, accurate within \+/- 0.100-mm (0.004-in.).  
-      6. TAPE THICKNESS: for our tape, it is 0.095-mm (95-µm).
+        4. WAFER SHAPE: round or square. If a wafer is round, select ROUND and enter the diameter of the wafer (100mm \= 4” wafer). If a chip, select SQUARE and enter dimensions that are slightly larger than your chip.  
+        5. WORK THICKNESS: enter known wafer thickness, accurate within \+/- 0.100-mm (0.004-in.).  
+        6. TAPE THICKNESS: for our tape, it is 0.095-mm (95-µm).
 
-      7. BLADE HEIGHT: if singulating dices on your wafer, use a height of 0.050- mm.
+        7. BLADE HEIGHT: if singulating dices on your wafer, use a height of 0.050- mm.
 
-      8. Y-INDEX CH1/CH2: enter the center-to-center spacing between dices, orthogonal to the CH1/CH2 cut direction.  
-      9. FEED SPEED: for silicon, the range is 10-20 mm/s; for glass, the range is 1-2 mm/s.  
-   2. Press **ENTER** to save the data. Note: Data is not saved until you press enter and there are no yellow highlighted fields.
+        8. Y-INDEX CH1/CH2: enter the center-to-center spacing between dices, orthogonal to the CH1/CH2 cut direction.  
+        9. FEED SPEED: for silicon, the range is 10-20 mm/s; for glass, the range is 1-2 mm/s.  
+    2. Press **ENTER** to save the data. Note: Data is not saved until you press enter and there are no yellow highlighted fields.
 
 ### **Wafer Alignment** {#wafer-alignment}
 
@@ -190,22 +190,22 @@ DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
 
 5. Run Auto Focus.
 
-   1. Press and hold down **F8** key until “Auto focus started” is displayed at the bottom of the screen. Alternatively, go to the FOCUS ADJUSTMENT screen, by briefly pressing **F8**, and choosing from the whole slew of softkey actions displayed along the bottom of the screen. Remember to exit that screen when done.
+    1. Press and hold down **F8** key until “Auto focus started” is displayed at the bottom of the screen. Alternatively, go to the FOCUS ADJUSTMENT screen, by briefly pressing **F8**, and choosing from the whole slew of softkey actions displayed along the bottom of the screen. Remember to exit that screen when done.
 
 6. If the wafer surface is still not visible after “Auto focus completed” is displayed, try adjusting the lighting by going to the lighting adjustment screen (**F7**). The F-key actions (displayed along the bottom of the screen) are self-explanatory. Remember to exit this screen, when done, but do not press **EXIT** twice or the program will exit Manual Alignment without completing it.  
 7. The next step is to align the θ orientation of the chuck so the saw x-axis is parallel with the singulation streets.
 
-   1. Find one end of a singulation street or alignment mark on the far-left side of the wafer and align its centerline with the crosshairs on the screen using the **SCAN** keys.  
-      1. Note: At any time, you can change the magnification from High to Low via the **CHANGE MAGNIF** button. But final adjustments should always be made at high magnification.  
-   2. Press **ALIGN θ** and the table moves to the opposite end of your wafer along the x-direction. Machine prompts you to “Select a target for the θ adjustment then press F5 key”.
+    1. Find one end of a singulation street or alignment mark on the far-left side of the wafer and align its centerline with the crosshairs on the screen using the **SCAN** keys.  
+        1. Note: At any time, you can change the magnification from High to Low via the **CHANGE MAGNIF** button. But final adjustments should always be made at high magnification.  
+    2. Press **ALIGN θ** and the table moves to the opposite end of your wafer along the x-direction. Machine prompts you to “Select a target for the θ adjustment then press F5 key”.
 
-   3. Find your street (it may be off-screen) with the scan arrows and align the screen crosshairs with its centerline.  
-   4. Press **ALIGN θ** and the table returns to its starting position but with the table rotates so as to “level” the two points.  
-   5. Re-align the crosshairs with the centerline of the street and repeat the above steps to fine-tune the adjustment. The last prompt on the screen should read “θ adjustment done”. At this point, the screen also read “Match the hair line to the street and press ENTER”.  
-   6. If you accidentally press any of the θ keys before completing the next two steps, you will have to re-align θ. When this is the case, the screen prompt will read “Adjustment θ”.  
+    3. Find your street (it may be off-screen) with the scan arrows and align the screen crosshairs with its centerline.  
+    4. Press **ALIGN θ** and the table returns to its starting position but with the table rotates so as to “level” the two points.  
+    5. Re-align the crosshairs with the centerline of the street and repeat the above steps to fine-tune the adjustment. The last prompt on the screen should read “θ adjustment done”. At this point, the screen also read “Match the hair line to the street and press ENTER”.  
+    6. If you accidentally press any of the θ keys before completing the next two steps, you will have to re-align θ. When this is the case, the screen prompt will read “Adjustment θ”.  
 8. Align the hairline on the screen to the location of the first cut on the wafer. If you left the cut direction as “Rear”, then align the hairline to the bottom most street. This will be the location of the first cut and the tool will index up (towards the rear of the tool) the values you put in for the index, for the number of cuts you previously entered.
 
-   1. Note: The tool requires the last stage move to be in the upward direction (towards the rear). Ensure the last movement was made by pressing the up-arrow key, or you will receive an error message asking you to do so on the next step.
+    1. Note: The tool requires the last stage move to be in the upward direction (towards the rear). Ensure the last movement was made by pressing the up-arrow key, or you will receive an error message asking you to do so on the next step.
 
 9. Press **ENTER** as the alignment for the current channel is completed.
 
@@ -258,11 +258,11 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 5. The Display Screen will now read “EXPOSURE TIMEXXX”, where “XXX” is an exposure time in seconds.  
 6. Using the keypad, enter an exposure time up to 90 seconds long (ex. 090).
 
-   1. Note: An exposure of 120 seconds will remove most of the stickiness of the tape. For those who would like the tape to remain somewhat sticky after exposure, use a time of 45 seconds or less.  
+    1. Note: An exposure of 120 seconds will remove most of the stickiness of the tape. For those who would like the tape to remain somewhat sticky after exposure, use a time of 45 seconds or less.  
 7. When you have completed entering the desired exposure time, press the blue **TIME** button again to set it. The Display Screen will read “READY” again.  
 8. To start the exposure, press the round green **START** button at the top right of the tool.
 
-   1. The tool will cycle through a “PREEXPOSE PURGE” and then the exposure, displaying a countdown during the process – “EXPOSURE TIMEXXX”.  
+    1. The tool will cycle through a “PREEXPOSE PURGE” and then the exposure, displaying a countdown during the process – “EXPOSURE TIMEXXX”.  
 9. When complete, the tool will again display “READY”.
 
 10. You can now open the lid and remove the frame/wafer.
@@ -287,18 +287,18 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 * Cutting may be interrupted immediately by pressing the red **Z-EM** key: spindle will be raised to 10-mm blade height, chuck table will be returned to x-origin position (i.e. its center position, under the microscope), alarm will sound and cutting will be halted, but cutting water will keep flowing.
 
-  * In this case: Turn off the alarm and press **CUT WATER** key to stop DI water from being wasted.
+    * In this case: Turn off the alarm and press **CUT WATER** key to stop DI water from being wasted.
 
-  * From this point, inspect the wafer, before resuming cutting. When cutting is resumed it will restart at the last, halted, index (y) position.
+    * From this point, inspect the wafer, before resuming cutting. When cutting is resumed it will restart at the last, halted, index (y) position.
 
 ***Critical emergency stopping procedure***
 
 *![](img/4a5dd05b521a.jpg){ width="222" }*
 
 * The Emergency Off Switch (EMO switch) is a large red button below the key switches, shown in the picture below. The EMO switch should only ever be pressed in the event of imminent or current danger to the user.  
-  * This button should never be pressed to stop an operation for any other reason.
+    * This button should never be pressed to stop an operation for any other reason.
 
-  * If pressed, do not attempt to restart the tool. Contact staff immediately.
+    * If pressed, do not attempt to restart the tool. Contact staff immediately.
 
 **Allowed Activities**
 
@@ -312,26 +312,26 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 * Cutting materials other than standard substrates without consultation of staff.
 
-  * Standard substrates include silicon and glass wafers with thickness between 50- 700 µm-thick.
+    * Standard substrates include silicon and glass wafers with thickness between 50- 700 µm-thick.
 
-  * Non-standard substrates will likely require special blades and cutting parameters. Staff and Disco will help you pick the correct blade for your particular application.
+    * Non-standard substrates will likely require special blades and cutting parameters. Staff and Disco will help you pick the correct blade for your particular application.
 
 **What to watch out for during operation**
 
 * Common causes of blade breakage:
 
-  * The wafer is not centered on the chuck, so the blade plunges vertically into the wafer as it begins its cut, instead of 10 mm before the edge of the wafer, based on the size of the wafer entered in Device Data.
+    * The wafer is not centered on the chuck, so the blade plunges vertically into the wafer as it begins its cut, instead of 10 mm before the edge of the wafer, based on the size of the wafer entered in Device Data.
 
-  * The wafer dimension entered in Device Data is smaller than actual. Blade breaks for the same reason as in the preceding case. It does not hurt to specify dimensions 5% greater than actual.
+    * The wafer dimension entered in Device Data is smaller than actual. Blade breaks for the same reason as in the preceding case. It does not hurt to specify dimensions 5% greater than actual.
 
-  * The FEED SPEED is set too high for the depth of cut for the particular blade and material.
+    * The FEED SPEED is set too high for the depth of cut for the particular blade and material.
 
-  * The Blade Breakage Detector is set too low for the blade and by forcing it down over the blade prior to adjustment.
+    * The Blade Breakage Detector is set too low for the blade and by forcing it down over the blade prior to adjustment.
 
 * Water flow rate:  
-  * Blade: \< 0.3
+    * Blade: \< 0.3
 
-  * Blade shower: 0.3 – 1.0
+    * Blade shower: 0.3 – 1.0
 
 **Common Troubleshooting Tips**
 
@@ -372,18 +372,18 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 **Turn On Tool**
 
 1. Turn the start key switch at the top right (front) of the tool to START, then release to the ON position.  
-   2. Wait for the tool to finish its boot-up cycle. *2-minutes.*
+    2. Wait for the tool to finish its boot-up cycle. *2-minutes.*
 
-      3. Press **SYSTEM INITIAL** key to initialize the system. *Bottom left of the MAIN MENU**.***
+        3. Press **SYSTEM INITIAL** key to initialize the system. *Bottom left of the MAIN MENU**.***
 
-      4. Press **BLADE SETUP** at the bottom left of the screen.
+        4. Press **BLADE SETUP** at the bottom left of the screen.
 
-      5. In the Non-Contact Setup menu that comes up, press **START**.
+        5. In the Non-Contact Setup menu that comes up, press **START**.
 
-         1. The machine will now measure the blade position 3 times.
+            1. The machine will now measure the blade position 3 times.
 
-         2. When complete, the message “G0030 Setup Complete. (\*.\*\*\*mm consumed)” appears at the top. “\*.\*\*\*” indicates the blade wear amount since the last measurement. Normally, this value is 0 \+/- 0.002, prior to cutting.  
-         3. If the blade wear is out of spec, the system will automatically alarm. A new blade will need to be installed.
+            2. When complete, the message “G0030 Setup Complete. (\*.\*\*\*mm consumed)” appears at the top. “\*.\*\*\*” indicates the blade wear amount since the last measurement. Normally, this value is 0 \+/- 0.002, prior to cutting.  
+            3. If the blade wear is out of spec, the system will automatically alarm. A new blade will need to be installed.
 
 *Blade Change*
 
@@ -393,19 +393,19 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 3. Remove the shower arm by unscrewing the clamping screw.
 
 4. Affix nut demounting jig onto the flange lock nut. Turn counterclockwise until the flange lock nut is removed.  
-   1. Press down on the center of the demounting jig release the clamps that attaches onto the flange lock nut.
+    1. Press down on the center of the demounting jig release the clamps that attaches onto the flange lock nut.
 
-      ![A picture containing indoor, engine  Description automatically generated](img/c0d5c8e7e162.jpg){ width="304" }
+        ![A picture containing indoor, engine  Description automatically generated](img/c0d5c8e7e162.jpg){ width="304" }
 
 5. Remove flange.  
 6. Carefully remove existing blade and place in its case. Makes sure it is dry before closing the blade case.  
-   1. Handling the blade should be done with the flat part or inner edge, not the outer edge.  
+    1. Handling the blade should be done with the flat part or inner edge, not the outer edge.  
 7. Clean flange with IPA and blow dry with the nitrogen gun.
 
 8. Add new blade to the flange making sure it is sitting correctly on the flange.
 
 9. Wipe the blade mount clean with IPA and blow dry with the nitrogen gun. Mount blade mount as parallel as possible to the flange.  
-   1. If the blade mount is mounted unevenly, pressure to even it out may snap the glass blade.
+    1. If the blade mount is mounted unevenly, pressure to even it out may snap the glass blade.
 
 10. Wipe the wheel mount clean with IPA and blow dry with the nitrogen gun. Mount the wheel mount by rotating the mount clockwise on the flange until it is finger tight. Insert the torque driver bit into the center hole of the lock bolt. Turn the torque driver clockwise twice (two clicks).  
 11. Mount the shower arm and screw the clamp screw finger tight.

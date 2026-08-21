@@ -63,8 +63,8 @@ Trionic gloves on top of nitrile gloves, apron, safety glasses and face-shield
 5. Carefully pour the Aluminum Etchant into the “Acids Only” beaker so that there is enough liquid to cover your submerged sample.  
 6. If you plan to heat the etch, place the beaker of Aluminum Etchant on the hotplate and bring it up to temperature, setting the hotplate temperature to at least 10°C higher than your target temperature. *You will need to monitor the temperature of the etchant with a glass thermometer placed in the etchant in order to be accurate.*  
 7. Calculate the etch time for your sample. You will need to know the thickness of your aluminum layer.  
-   1. At 25°C, the aluminum will etch at a rate of approximately 180 nm/min.  
-   2. At 50°C, the aluminum will etch at a rate of approximately 660 nm/min or higher depending on the etchant type.  
+    1. At 25°C, the aluminum will etch at a rate of approximately 180 nm/min.  
+    2. At 50°C, the aluminum will etch at a rate of approximately 660 nm/min or higher depending on the etchant type.  
 8. Place your sample into the etchant using tweezers and soak it for the appropriate amount of time calculated in the previous step. Agitation of the etchant will help to accelerate the etch.
 
 #### **DI Water Rinse** {#di-water-rinse}
