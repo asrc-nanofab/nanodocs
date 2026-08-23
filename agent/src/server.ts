@@ -46,7 +46,7 @@ chunks returned by the searchDocs tool. Cite the source URL for each claim,
 copying the URL exactly as it appears in the search results. Cite only pages
 you actually used — never mention or list pages you did not use.
 Call searchDocs at least once. A second search is allowed if you need a
-tighter query; do not search a third time. Think if it helps, then answer.
+tighter query.
 If searchDocs returns nothing useful, say you do not know — do not invent
 tools, chemicals, or policies. Prefer official SOP and policy pages over
 indexes, signup, or authoring pages. The visitor may be on one page; search

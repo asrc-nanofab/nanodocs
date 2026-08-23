@@ -225,6 +225,17 @@ function initWidget(workerHost) {
     return urls;
   }
 
+  /** Docs URLs the model actually linked in its prose, normalized. */
+  function citedInProse(msg) {
+    const hrefs = new Set();
+    for (const match of messageText(msg).matchAll(/https?:\/\/[^\s<)\]]+/g)) {
+      // Trim sentence punctuation the URL regex drags along.
+      const href = cleanDocsUrl(match[0].replace(/[.,;:!?]+$/, ""));
+      if (href) hrefs.add(href);
+    }
+    return hrefs;
+  }
+
   function citationLabel(href) {
     const segments = href.split("/").filter((s) => s && !s.startsWith("http"));
     const leaf = segments.length ? segments[segments.length - 1] : "Home";
@@ -274,19 +285,25 @@ function initWidget(workerHost) {
         );
       } else if (msg.role === "assistant") {
         // Citation cards attach only after the turn finishes, so the
-        // streaming text never shifts around them.
-        const cards =
-          msg === streamingMsg
-            ? ""
-            : extractCitations(msg)
-                .map((href) => {
-                  const { title, trail } = citationLabel(href);
-                  return `<a class="ndc-cite" href="${href}">
+        // streaming text never shifts around them. Show only the pages the
+        // model linked in its answer; if it wrote no links, fall back to
+        // everything searchDocs retrieved so sources are never lost.
+        let cardHrefs = [];
+        if (msg !== streamingMsg) {
+          const retrieved = extractCitations(msg);
+          const used = citedInProse(msg);
+          const cited = retrieved.filter((href) => used.has(href));
+          cardHrefs = cited.length ? cited : retrieved;
+        }
+        const cards = cardHrefs
+          .map((href) => {
+            const { title, trail } = citationLabel(href);
+            return `<a class="ndc-cite" href="${href}">
               <span class="ndc-cite-title">${escapeHtml(title)}</span>
               ${trail ? `<span class="ndc-cite-trail">${escapeHtml(trail)}</span>` : ""}
             </a>`;
-                })
-                .join("");
+          })
+          .join("");
         items.push(
           `<div class="ndc-msg ndc-assistant">${assistantBody(msg)}${
             cards

@@ -1041,6 +1041,14 @@ const partysocket = new PartySocket({
       }
       return urls;
     }
+    function citedInProse(msg) {
+      const hrefs = /* @__PURE__ */ new Set();
+      for (const match of messageText(msg).matchAll(/https?:\/\/[^\s<)\]]+/g)) {
+        const href = cleanDocsUrl(match[0].replace(/[.,;:!?]+$/, ""));
+        if (href) hrefs.add(href);
+      }
+      return hrefs;
+    }
     function citationLabel(href) {
       const segments = href.split("/").filter((s) => s && !s.startsWith("http"));
       const leaf = segments.length ? segments[segments.length - 1] : "Home";
@@ -1070,7 +1078,14 @@ const partysocket = new PartySocket({
             `<div class="ndc-msg ndc-user">${escapeHtml(messageText(msg))}</div>`
           );
         } else if (msg.role === "assistant") {
-          const cards = msg === streamingMsg ? "" : extractCitations(msg).map((href) => {
+          let cardHrefs = [];
+          if (msg !== streamingMsg) {
+            const retrieved = extractCitations(msg);
+            const used = citedInProse(msg);
+            const cited = retrieved.filter((href) => used.has(href));
+            cardHrefs = cited.length ? cited : retrieved;
+          }
+          const cards = cardHrefs.map((href) => {
             const { title, trail } = citationLabel(href);
             return `<a class="ndc-cite" href="${href}">
               <span class="ndc-cite-title">${escapeHtml(title)}</span>
