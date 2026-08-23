@@ -1,4 +1,4 @@
-site_name: ASRC Nanofabrication Facility - NanoDocs
+site_name: ASRC NanoDocs
 site_description: Documentation for the ASRC Nanofabrication Facility
 site_url: https://nanodocs.pages.dev
 repo_name: nanodocs
@@ -95,6 +95,12 @@ plugins:
 # flattened copy of those files so labels and order match the live site.
 nav:
   - Home: index.md
+  - Lab Safety Policies:
+      - policy/index.md
+      - Rules of Conduct: policy/manual.md
+      - Safety Manual: policy/safety.md
+      - C14 Application: policy/c14.md
+      - Suspension Policy: policy/suspension.md
   - Tool SOPs:
       - tool_sops/index.md
       - Lithography SOPs:
@@ -146,12 +152,6 @@ nav:
       - RCA Hood:
           - chemicals/rca_hood/index.md
           - chemicals/rca_hood/rca_clean.md
-  - Lab Safety Policies:
-      - policy/index.md
-      - Rules of Conduct: policy/manual.md
-      - Safety Manual: policy/safety.md
-      - C14 Application: policy/c14.md
-      - Suspension Policy: policy/suspension.md
   - Nanofab Signup: signup.md
   - About This Site:
       - authoring/index.md

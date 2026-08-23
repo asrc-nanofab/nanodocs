@@ -16,6 +16,62 @@
   border-radius: 2em;
 }
 
+/* Title + lead + CTA shrink-wrap to the subtitle so the
+   button is that same width and sits directly under it. */
+.md-typeset .home-landing .home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: max-content;
+  max-width: 100%;
+}
+
+.md-typeset .home-landing .home-hero > h1 {
+  margin-bottom: 0.15em;
+}
+
+.md-typeset .home-landing .home-hero > h1 + p {
+  margin: 0;
+}
+
+.md-typeset .home-landing .home-cta {
+  margin: 0.7em 0 1.25em;
+}
+
+.md-typeset .home-landing .home-cta .md-button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+/* Home cards: same flat surface as the header bar, hairline
+   border, indigo accent on hover. Columns go on .grid (the ul
+   is display:contents), not the list. */
+.md-typeset .home-landing .grid.cards {
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 45em) {
+  .md-typeset .home-landing .grid.cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.md-typeset .home-landing .grid.cards > ul > li {
+  background-color: var(--md-default-bg-color);
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  box-shadow: none;
+}
+
+.md-typeset .home-landing .grid.cards > ul > li:hover {
+  border-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .home-landing .grid.cards .lg {
+  color: var(--md-primary-fg-color);
+}
+
 /* Modern slate's default page fill is 5% lightness (near-black). Lift
    only that; leave admonitions, headings, and the rest of the theme. */
 [data-md-color-scheme="slate"] {

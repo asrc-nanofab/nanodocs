@@ -1,59 +1,51 @@
 ---
+title: Home
 hide:
   - navigation
   - toc
 ---
 
-# ASRC Nanofabrication Facility - NanoDocs
+<div class="home-landing" markdown>
 
-<div class="grid cards" markdown>
+<div class="home-hero" markdown>
 
--   [:material-chip: __Welcome to NanoDocs__](#main-sections)
+# NanoDocs
 
-    ---
+Complete documentation for the ASRC Nanofabrication Facility.
 
-    The comprehensive documentation portal for the ASRC Nanofabrication Facility.
+<p class="home-cta" markdown>[Become a Nanofab User](signup.md){ .md-button .md-button--primary }</p>
 
 </div>
 
 !!! note "About Our Facility"
-    The Advanced Science Research Center (ASRC) Nanofabrication Facility provides state-of-the-art equipment and expertise for nanoscale fabrication and characterization. Our cleanroom supports research across multiple disciplines including photonics, electronics, biomedical devices, and quantum technologies.
-
-## Main Sections
+    The ASRC Nanofab Facility provides state-of-the-art equipment and expertise for nanoscale fabrication and characterization for the New York City metropolitan area and beyond. Our users come from academic, startup, industry, nonprofit, and government organizations. The cleanroom supports research across multiple disciplines, including photonics, electronics, biomedical devices, and quantum technologies.
 
 <div class="grid cards" markdown>
 
--   [:material-tools: __Tool SOPs__](tool_sops/index.md){ .lg .middle }
-
-    ---
-
-    Standard operating procedures for all nanofabrication equipment.
-
--   [:material-flask: __Chemical Handling__](chemicals/index.md){ .lg .middle }
-
-    ---
-
-    Safety protocols and procedures for chemical processing.
-
--   [:material-shield-check: __Lab Safety Policies__](policy/index.md){ .lg .middle }
+-   :material-shield-check:{ .lg .middle } __Lab Safety Policies__
 
     ---
 
     Essential safety information and facility policies.
 
--   [:material-account-plus: __Nanofab Signup__](signup.md){ .lg .middle }
+    [:octicons-arrow-right-24: Open Lab Safety Policies](policy/index.md)
+
+-   :material-tools:{ .lg .middle } __Tool SOPs__
 
     ---
 
-    Information about accessing and using the facility.
+    Standard operating procedures for all nanofabrication equipment.
 
--   [:material-frequently-asked-questions: __FAQ__](faq/index.md){ .lg .middle }
+    [:octicons-arrow-right-24: Open Tool SOPs](tool_sops/index.md)
+
+-   :material-flask:{ .lg .middle } __Chemical Handling__
 
     ---
 
-    Answers to common questions about the facility.
+    Safety protocols and procedures for chemical processing.
+
+    [:octicons-arrow-right-24: Open Chemical Handling](chemicals/index.md)
 
 </div>
 
-
-
+</div>
