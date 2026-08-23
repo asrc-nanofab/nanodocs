@@ -221,10 +221,13 @@ from the dashboard when you change selectors or chunking.
 
 ## Where this is going
 
-- **Now:** playground Worker + AI Search over the live site.
-- **Next:** a site-wide chat window on NanoDocs (vanilla JS, not React),
-  talking to this Worker. Instant navigation must not tear down the
-  conversation.
+- **Now:** the site-wide chat window (vanilla JS, not React) talking to
+  this Worker, built and verified locally. Instant navigation does not
+  tear down the conversation, and citation cards come from `searchDocs`
+  tool output rather than the model's prose. The user-facing story is
+  [How the Docs Chat Works](how_chat_works.md).
+- **Next:** deploy the Worker and point the widget at the production
+  host.
 - **Not this:** NanoKnow, accounts, or moving the whole site off Pages.
 
 The published SOPs stay Google Docs. The Agent only **reads** what the

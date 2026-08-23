@@ -47,6 +47,8 @@ function initWidget(workerHost) {
   let messages = [];
   /** Assistant message currently being streamed, if any. */
   let streamingMsg = null;
+  /** DOM node of the streaming bubble, patched in place per token. */
+  let streamingEl = null;
   /** True between sending a question and the final done frame. */
   let pending = false;
   let client = null;
@@ -240,7 +242,30 @@ function initWidget(workerHost) {
       .join("");
   }
 
-  function render() {
+  // Follow the stream only while the visitor is at (or near) the bottom;
+  // scrolling up mid-answer must not fight them. Measured directly from the
+  // live scroll position right before each DOM update — a cached flag from
+  // scroll events races with fast token streams and yanks the view down.
+  function isPinned() {
+    return (
+      messagesEl.scrollHeight - messagesEl.scrollTop - messagesEl.clientHeight <
+      40
+    );
+  }
+
+  function scrollToBottom() {
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  function assistantBody(msg) {
+    const text = messageText(msg);
+    return msg === streamingMsg && text === ""
+      ? `<span class="ndc-dots"><i></i><i></i><i></i></span>`
+      : renderMarkdown(text);
+  }
+
+  function render(forcePin = false) {
+    const pinned = forcePin || isPinned();
     const items = [];
     for (const msg of messages) {
       if (msg.role === "user") {
@@ -248,24 +273,23 @@ function initWidget(workerHost) {
           `<div class="ndc-msg ndc-user">${escapeHtml(messageText(msg))}</div>`
         );
       } else if (msg.role === "assistant") {
-        const text = messageText(msg);
-        const searching = msg === streamingMsg && text === "";
-        const body = searching
-          ? `<span class="ndc-dots"><i></i><i></i><i></i></span>`
-          : renderMarkdown(text);
-        const citations = extractCitations(msg);
-        const cards = citations
-          .map((href) => {
-            const { title, trail } = citationLabel(href);
-            return `<a class="ndc-cite" href="${href}">
+        // Citation cards attach only after the turn finishes, so the
+        // streaming text never shifts around them.
+        const cards =
+          msg === streamingMsg
+            ? ""
+            : extractCitations(msg)
+                .map((href) => {
+                  const { title, trail } = citationLabel(href);
+                  return `<a class="ndc-cite" href="${href}">
               <span class="ndc-cite-title">${escapeHtml(title)}</span>
               ${trail ? `<span class="ndc-cite-trail">${escapeHtml(trail)}</span>` : ""}
             </a>`;
-          })
-          .join("");
+                })
+                .join("");
         items.push(
-          `<div class="ndc-msg ndc-assistant">${body}${
-            cards && !searching
+          `<div class="ndc-msg ndc-assistant">${assistantBody(msg)}${
+            cards
               ? `<div class="ndc-cites" aria-label="Sources">${cards}</div>`
               : ""
           }</div>`
@@ -278,8 +302,31 @@ function initWidget(workerHost) {
       );
     }
     messagesEl.innerHTML = items.join("");
-    messagesEl.scrollTop = messagesEl.scrollHeight;
+    // The streaming message is always the last bubble; keep a handle so
+    // token updates can patch it in place instead of rebuilding the list.
+    streamingEl =
+      streamingMsg &&
+      messagesEl.lastElementChild?.classList.contains("ndc-assistant")
+        ? messagesEl.lastElementChild
+        : null;
+    if (pinned) {
+      scrollToBottom();
+    }
     sendBtn.disabled = pending;
+  }
+
+  /** Token-cheap update: patch only the streaming bubble's contents. */
+  function updateStreaming() {
+    if (!streamingMsg) return;
+    if (!streamingEl || !messagesEl.contains(streamingEl)) {
+      render();
+      return;
+    }
+    const pinned = isPinned();
+    streamingEl.innerHTML = assistantBody(streamingMsg);
+    if (pinned) {
+      scrollToBottom();
+    }
   }
 
   function setStatus(text) {
@@ -377,7 +424,7 @@ function initWidget(workerHost) {
       default:
         break;
     }
-    render();
+    updateStreaming();
   }
 
   function finishTurn() {
@@ -509,7 +556,8 @@ function initWidget(workerHost) {
         }
       })
     );
-    render();
+    // Asking a question snaps back to following the reply.
+    render(true);
   }
 
   function newConversation() {
@@ -521,6 +569,7 @@ function initWidget(workerHost) {
     }
     messages = [];
     streamingMsg = null;
+    streamingEl = null;
     pending = false;
     historyLoaded = true; // fresh instance has no history to fetch
     setStatus("");
@@ -536,7 +585,7 @@ function initWidget(workerHost) {
     root.classList.add("ndc-open");
     ensureClient();
     loadHistory();
-    render();
+    render(true);
     input.focus();
   }
 

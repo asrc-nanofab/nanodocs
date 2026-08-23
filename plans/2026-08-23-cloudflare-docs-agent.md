@@ -1,7 +1,7 @@
 # Add a site-wide docs chat via Cloudflare Agents and AI Search
 
 **Date:** 2026-08-23
-**Status:** Phase D done — awaiting sign-off (local widget click-through)
+**Status:** Phase D complete — Phase E (deploy) not started
 **Branch:** none yet (no repo code until Phase B)
 
 ## Description
@@ -269,16 +269,40 @@ over SOP body for generic tool questions.
       localhost:8000, nanodocs.pages.dev).
 - [x] `uv run zensical build --strict` passes (plus oxfmt/oxlint/tsc in
       `agent/`)
+- [x] Post-review polish (2026-08-23, after user click-through found
+      jerky scrolling): citation cards now attach only after the turn
+      finishes (no layout shift under streaming text); auto-scroll
+      follows the stream only when the visitor is near the bottom,
+      measured from the live scroll position immediately before each
+      DOM update (a cached scroll-event flag races with fast token
+      streams and yanks the view down); per-token updates patch only
+      the streaming bubble in place instead of rebuilding the whole
+      message list.
+- [x] Docs for the feature: reader-facing RAG explainer
+      `docs/authoring/how_chat_works.md` (diagrams, no code, no vendor
+      focus) added to the nav; README gained a "The docs chat" section
+      (architecture, local dev, widget rebuild, status) and repo-map
+      rows for `agent/`; `authoring/index.md` and
+      `authoring/chat_agent.md` cross-link the new page.
 
 ### Phase D review gate — STOP for sign-off
 
-- [ ] Local click-through: ask, follow up, navigate mid-answer, dark
-      mode, mobile, open a citation. (Headless-browser pass 2026-08-23:
-      14/14 checks — ask, mid-answer instant nav, follow-up in-thread,
-      citation cards + same-origin click, dark mode, full-reload history
-      restore, mobile panel + answer, offline state. User click-through
-      still pending.)
-- [ ] Decision: UX good enough to ship?
+- [x] Local click-through (2026-08-23). Headless-browser regression,
+      14/14 checks: widget present on load; panel opens; question
+      renders; instant-nav to another page 400 ms after asking with the
+      panel staying open and the full answer (1.8k chars) streaming in
+      on the new page; citation cards parsed from `searchDocs` output
+      as same-origin links; follow-up answered in the same conversation;
+      citation click navigates on-origin with the thread intact; dark
+      mode restyles the panel; history restored after a full reload;
+      mobile (375px) panel fills the viewport and answers. Separately
+      verified: offline state ("Assistant unreachable — retrying…")
+      with the Worker killed; no citation cards while streaming; scroll
+      stays put when the visitor scrolls up mid-stream; cards attach
+      after completion. User click-through done (surfaced the scroll
+      jank fixed in the polish round above).
+- [x] Decision: UX good enough to ship (2026-08-23). Phase E deploy
+      deliberately not started.
 
 ### Phase E — Ship on nanodocs.pages.dev
 

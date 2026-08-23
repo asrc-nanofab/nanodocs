@@ -159,6 +159,7 @@ nav:
   - About This Site:
       - authoring/index.md
       - Writing Documentation: authoring/writing_documentation.md
+      - How the Docs Chat Works: authoring/how_chat_works.md
       - Wiring a Docs Chat Agent: authoring/chat_agent.md
   - FAQ: faq/index.md
 

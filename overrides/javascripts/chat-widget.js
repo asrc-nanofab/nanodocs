@@ -895,6 +895,7 @@ const partysocket = new PartySocket({
     }
     let messages = [];
     let streamingMsg = null;
+    let streamingEl = null;
     let pending = false;
     let client = null;
     let historyLoaded = false;
@@ -1050,7 +1051,18 @@ const partysocket = new PartySocket({
     function messageText(msg) {
       return (msg.parts || []).filter((p) => p.type === "text").map((p) => p.text).join("");
     }
-    function render() {
+    function isPinned() {
+      return messagesEl.scrollHeight - messagesEl.scrollTop - messagesEl.clientHeight < 40;
+    }
+    function scrollToBottom() {
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+    function assistantBody(msg) {
+      const text = messageText(msg);
+      return msg === streamingMsg && text === "" ? `<span class="ndc-dots"><i></i><i></i><i></i></span>` : renderMarkdown(text);
+    }
+    function render(forcePin = false) {
+      const pinned = forcePin || isPinned();
       const items = [];
       for (const msg of messages) {
         if (msg.role === "user") {
@@ -1058,11 +1070,7 @@ const partysocket = new PartySocket({
             `<div class="ndc-msg ndc-user">${escapeHtml(messageText(msg))}</div>`
           );
         } else if (msg.role === "assistant") {
-          const text = messageText(msg);
-          const searching = msg === streamingMsg && text === "";
-          const body = searching ? `<span class="ndc-dots"><i></i><i></i><i></i></span>` : renderMarkdown(text);
-          const citations = extractCitations(msg);
-          const cards = citations.map((href) => {
+          const cards = msg === streamingMsg ? "" : extractCitations(msg).map((href) => {
             const { title, trail } = citationLabel(href);
             return `<a class="ndc-cite" href="${href}">
               <span class="ndc-cite-title">${escapeHtml(title)}</span>
@@ -1070,7 +1078,7 @@ const partysocket = new PartySocket({
             </a>`;
           }).join("");
           items.push(
-            `<div class="ndc-msg ndc-assistant">${body}${cards && !searching ? `<div class="ndc-cites" aria-label="Sources">${cards}</div>` : ""}</div>`
+            `<div class="ndc-msg ndc-assistant">${assistantBody(msg)}${cards ? `<div class="ndc-cites" aria-label="Sources">${cards}</div>` : ""}</div>`
           );
         }
       }
@@ -1080,8 +1088,23 @@ const partysocket = new PartySocket({
         );
       }
       messagesEl.innerHTML = items.join("");
-      messagesEl.scrollTop = messagesEl.scrollHeight;
+      streamingEl = streamingMsg && messagesEl.lastElementChild?.classList.contains("ndc-assistant") ? messagesEl.lastElementChild : null;
+      if (pinned) {
+        scrollToBottom();
+      }
       sendBtn.disabled = pending;
+    }
+    function updateStreaming() {
+      if (!streamingMsg) return;
+      if (!streamingEl || !messagesEl.contains(streamingEl)) {
+        render();
+        return;
+      }
+      const pinned = isPinned();
+      streamingEl.innerHTML = assistantBody(streamingMsg);
+      if (pinned) {
+        scrollToBottom();
+      }
     }
     function setStatus(text) {
       statusEl.textContent = text || "";
@@ -1171,7 +1194,7 @@ const partysocket = new PartySocket({
         default:
           break;
       }
-      render();
+      updateStreaming();
     }
     function finishTurn() {
       pending = false;
@@ -1287,7 +1310,7 @@ const partysocket = new PartySocket({
           }
         })
       );
-      render();
+      render(true);
     }
     function newConversation() {
       conversationId = crypto.randomUUID();
@@ -1298,6 +1321,7 @@ const partysocket = new PartySocket({
       }
       messages = [];
       streamingMsg = null;
+      streamingEl = null;
       pending = false;
       historyLoaded = true;
       setStatus("");
@@ -1310,7 +1334,7 @@ const partysocket = new PartySocket({
       root.classList.add("ndc-open");
       ensureClient();
       loadHistory();
-      render();
+      render(true);
       input.focus();
     }
     function closePanel() {

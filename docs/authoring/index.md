@@ -72,9 +72,10 @@ copy. Details and commands are in the repo [README](https://github.com/asrc-nano
 
 ## A chat that reads the published site
 
-There is also a **docs chat** in the works: not the search box, but an
-assistant that retrieves from the whole live corpus and cites the page.
-It is a sibling Cloudflare Worker plus an AI Search index of this site —
-not a plugin dropped into the Google Doc pipeline. How that is wired, and
-why Pages cannot host the Agent itself, is in
+There is also a **docs chat**: not the search box, but an assistant that
+retrieves from the whole live corpus, answers in plain language, and cites
+the pages it used. What it does — and why its answers come with source
+cards — is explained in [How the Docs Chat Works](how_chat_works.md).
+The service wiring (a sibling Cloudflare Worker plus an AI Search index of
+this site — not a plugin dropped into the Google Doc pipeline) is in
 [Wiring a chat agent into your documentation](chat_agent.md).
