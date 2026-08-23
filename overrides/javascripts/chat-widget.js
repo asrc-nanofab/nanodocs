@@ -877,7 +877,8 @@ const partysocket = new PartySocket({
   // widget/chat-widget.js
   var AGENT_HOSTS = {
     localhost: "localhost:5173",
-    "127.0.0.1": "localhost:5173"
+    "127.0.0.1": "localhost:5173",
+    "nanodocs.pages.dev": "nanodocs-agent.nanofab.workers.dev"
   };
   var AGENT_NAME = "chat-agent";
   var STORAGE_KEY = "nanodocs-chat-conversation";

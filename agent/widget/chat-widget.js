@@ -15,11 +15,11 @@
  */
 import { AgentClient } from "agents/client";
 
-// Worker host per docs origin. No production host yet — Phase E fills
-// that in after the Worker is deployed. Unknown origins get no widget.
+// Worker host per docs origin. Unknown origins get no widget.
 const AGENT_HOSTS = {
   localhost: "localhost:5173",
-  "127.0.0.1": "localhost:5173"
+  "127.0.0.1": "localhost:5173",
+  "nanodocs.pages.dev": "nanodocs-agent.nanofab.workers.dev"
 };
 
 const AGENT_NAME = "chat-agent";

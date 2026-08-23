@@ -328,17 +328,17 @@ over SOP body for generic tool questions.
 
 ### Phase E — Ship on nanodocs.pages.dev
 
-- [ ] Commit the post-D polish work; merge the working branch to `main`
-      (user-run git)
-- [ ] Deploy the Worker: `cd agent && npm run deploy` (user-run;
-      `vite build && wrangler deploy`). Note the resulting
-      `nanodocs-agent.<subdomain>.workers.dev` host.
-- [ ] Point the widget at the production Worker: add
-      `"nanodocs.pages.dev": "<workers.dev host>"` to `AGENT_HOSTS` in
-      `agent/widget/chat-widget.js`, `npm run build:widget`, commit the
-      rebuilt bundle. (CORS allowlist in `server.ts` already includes
+- [x] Commit the post-D polish work; merge the working branch to `main`
+      (user-run git, 2026-08-23)
+- [x] Deploy the Worker (user-run, 2026-08-23): live at
+      `https://nanodocs-agent.nanofab.workers.dev`; smoke test
+      `/agents/chat-agent/smoke-test/get-messages` returned `[]`.
+- [x] Point the widget at the production Worker: `AGENT_HOSTS` gained
+      `"nanodocs.pages.dev": "nanodocs-agent.nanofab.workers.dev"`;
+      bundle rebuilt. (CORS allowlist in `server.ts` already includes
       `https://nanodocs.pages.dev`.)
-- [ ] `uv run zensical build --strict`; push `main` → Pages deploy
+- [ ] `uv run zensical build --strict` passed; commit + push `main` →
+      Pages deploy (user-run)
 - [ ] Live smoke test: anonymous browser on the live site — ask, get a
       cited answer, follow up, citation card navigates on-origin
 - [ ] Watch logs for a few days (volume, empty retrieval, abuse,
