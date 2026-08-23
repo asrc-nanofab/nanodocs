@@ -15,3 +15,13 @@
   font-size: 0.64rem;
   border-radius: 2em;
 }
+
+/* Modern slate's default page fill is 5% lightness (near-black). Lift
+   only that; leave admonitions, headings, and the rest of the theme. */
+[data-md-color-scheme="slate"] {
+  --md-hue: 232;
+  --md-default-bg-color: hsla(var(--md-hue), 15%, 11%, 1);
+  --md-default-bg-color--light: hsla(var(--md-hue), 15%, 11%, 0.54);
+  --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 11%, 0.26);
+  --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 11%, 0.07);
+}

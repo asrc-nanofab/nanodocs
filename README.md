@@ -1,7 +1,7 @@
 # NanoDocs
 
 Documentation site for the ASRC Nanofabrication Facility, built with
-[MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and served on
+[Zensical](https://zensical.org/) (modern theme) and served on
 Cloudflare Pages at <https://nanodocs.pages.dev>.
 
 ## How the system works
@@ -18,7 +18,7 @@ flowchart LR
     SYNC --> IMG[Original-res images<br/>docs/**/img/]
     SYNC --> PDF[Local PDFs<br/>docs/assets/pdfs/]
     PDF --> R2[Cloudflare R2<br/>nanodocs-pdfs]
-    MD --> BUILD[mkdocs build]
+    MD --> BUILD[zensical build]
     IMG --> BUILD
     BUILD --> PAGES[Cloudflare Pages]
     R2 --> FN[Pages Function<br/>/assets/pdfs/]
@@ -31,9 +31,9 @@ live in the private R2 bucket `nanodocs-pdfs`. A Pages Function at
 `functions/assets/pdfs/[[path]].js` answers `/assets/pdfs/…` from that
 bucket, so the View/Download buttons keep the same relative links.
 
-Locally, `mkdocs serve` still reads `docs/assets/pdfs/` from disk. The
+Locally, `zensical serve` still reads `docs/assets/pdfs/` from disk. The
 Function only runs on Cloudflare. The Pages build copies those PDFs into
-`site/` (MkDocs does not know about R2) and then **deletes**
+`site/` (Zensical does not know about R2) and then **deletes**
 `site/assets/pdfs` before upload so Pages never sees the large files.
 
 ### The registry sheets
@@ -61,7 +61,7 @@ assembles a site page:
     - the **doc's title heading** (the page supplies its own H1, kept in sync
       with the site navigation)
     - the **inline table of contents** — including entries with unresolved
-      `#heading=` anchors — because MkDocs Material generates a live TOC from
+      `#heading=` anchors — because Zensical generates a live TOC from
       the headings themselves
     - **empty heading lines** (leftover Heading styling on blank lines in the doc)
     - Google's *"AI-generated content may be incorrect"* image alt-text boilerplate
@@ -108,7 +108,7 @@ uv run python scripts/sync_gdocs.py tools --only AFM --watch   # re-sync every 2
 ```
 
 With `--watch [SECONDS]`, the sync re-runs until Ctrl+C, printing one
-timestamped status line per cycle. Pair it with `uv run mkdocs serve` for a
+timestamped status line per cycle. Pair it with `uv run zensical serve` for a
 live side-by-side workflow: edit the Google Doc in one browser pane and the
 converted local page refreshes in the other within a cycle.
 
@@ -121,7 +121,11 @@ Generated (never hand-edit — fix the Google Doc or the script, then re-sync):
 - `docs/assets/pdfs/` (hosted PDFs)
 
 Hand-written: section index pages, `docs/faq/`, `docs/signup/`, and the
-`.nav.yml` navigation files.
+`nav:` tree in `mkdocs.yml`. Zensical does not read awesome-nav `.nav.yml`
+files yet; those live in git history on `main` and can come back when it
+does. Until then, new pages and nests (a tool with child process docs)
+are indented entries in that tree. Keep `mkdocs.yml` — do not add a
+`zensical.toml` until Zensical ships a conversion tool.
 
 ## Writing docs that convert cleanly
 
@@ -159,7 +163,10 @@ else to do.
      `TOOL_PAGE_OVERRIDES` in the script.
    - **Chem / policy**: add the document name → page path to `CHEM_PAGE_MAP` /
      `POLICY_PAGE_MAP` in the script.
-4. Add the page to the section's `.nav.yml` so it appears in the navigation.
+4. Add the page to the `nav:` tree in `mkdocs.yml`. A flat tool is one
+   line (`AJA Sputter: tool_sops/deposition/aja_sputter.md`). Promoting
+   it to a parent with process docs means moving the file to
+   `aja_sputter/index.md` and indenting children under that entry.
 5. Run the sync and check the page locally.
 6. Upload the new PDF to R2 (same key as the local path under
    `docs/assets/pdfs/`) so View PDF works on the live site. See
@@ -168,9 +175,11 @@ else to do.
 ## Local development
 
 ```bash
-uv sync                      # install dependencies
-uv run mkdocs serve          # http://127.0.0.1:8000/
-uv run mkdocs build --strict # must pass before deploying
+uv sync                        # install dependencies
+uv run zensical serve           # http://127.0.0.1:8000/
+# From Windows Chrome against WSL, bind all interfaces:
+# uv run zensical serve -a 0.0.0.0:8000
+uv run zensical build --strict  # must pass before deploying
 ```
 
 Linting: `uv run ruff check .` and `uv run ruff format .`
@@ -183,11 +192,12 @@ Linting: `uv run ruff check .` and `uv run ruff format .`
 (`mkdocs gh-deploy`) and would republish `github.io/nanodocs`.
 
 Cloudflare already runs `pip install .` from `pyproject.toml`. The Pages
-**build command** must strip PDFs after MkDocs so the 25 MiB limit is not
-hit:
+**build command** (dashboard, not this repo) must strip PDFs after Zensical
+so the 25 MiB limit is not hit. Change it from `mkdocs build` when this
+branch goes to `main`:
 
 ```bash
-mkdocs build --strict && rm -rf site/assets/pdfs
+zensical build --strict && rm -rf site/assets/pdfs
 ```
 
 Output directory: `site`. `wrangler.jsonc` binds the R2 bucket as `PDFS`
@@ -229,8 +239,8 @@ GitHub Pages for this repo is **unpublished**. Leave it that way.
 | `docs/assets/pdfjs/` | **Legacy** — in-page PDF viewer from the iframe era; no longer used by any page, kept for the time being |
 | `docs/robots.txt` | Allows crawlers; points at `/sitemap.xml` |
 | `docs/google*.html` | Google Search Console verification file (do not delete) |
-| `mkdocs.yml` | Site configuration (Material theme, awesome-nav); `site_url` is `https://nanodocs.pages.dev` |
-| `overrides/` | Theme customizations |
+| `mkdocs.yml` | Site configuration (Zensical modern theme, explicit `nav:`); `site_url` is `https://nanodocs.pages.dev` |
+| `overrides/` | Theme customizations (`extra.css`: PDF pills; slate page fill only) |
 | `plans/` | Dated work plans with phased steps and review gates |
 | `AGENTS.md` | Operational guide for coding agents (invariants, commands, quirks) |
 | `.cursor/rules/`, `.cursor/commands/` | AI agent guardrails and workflows |

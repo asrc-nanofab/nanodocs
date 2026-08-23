@@ -8,6 +8,7 @@ docs_dir: docs
 
 theme:
   name: material
+  variant: modern
   favicon: assets/images/favicon.png
   custom_dir: overrides
   font: 
@@ -89,8 +90,73 @@ extra_javascript:
 
 plugins:
   - search
-  - awesome-nav
 
+# Zensical does not read awesome-nav .nav.yml files yet. This tree is the
+# flattened copy of those files so labels and order match the live site.
+nav:
+  - Home: index.md
+  - Tool SOPs:
+      - tool_sops/index.md
+      - Lithography SOPs:
+          - tool_sops/lithography/index.md
+          - Elionix E-Beam Lithography: tool_sops/lithography/elionix.md
+          - EVG Photo-Mask Aligner: tool_sops/lithography/mask_aligner.md
+          - Nanoscribe 3D Lithography: tool_sops/lithography/nanoscribe.md
+          - Spinners: tool_sops/lithography/spinners.md
+          - Hot Plates: tool_sops/lithography/hot_plates.md
+      - Deposition SOPs:
+          - tool_sops/deposition/index.md
+          - AJA Sputter: tool_sops/deposition/aja_sputter.md
+          - AJA Metal Evaporator: tool_sops/deposition/metal_evap.md
+          - AJA Organic Evaporator: tool_sops/deposition/organic_evap.md
+          - AJA Thermal Evaporator: tool_sops/deposition/thermal_evap.md
+          - Fuji ALD: tool_sops/deposition/ald.md
+          - Oxford PECVD: tool_sops/deposition/pecvd.md
+          - Gold Sputter Coater: tool_sops/deposition/gold_sputter.md
+      - Etcher SOPs:
+          - tool_sops/etch/index.md
+          - Reactive Ion Etcher: tool_sops/etch/rie.md
+          - ICP-Fluorine Etcher: tool_sops/etch/icp-fl.md
+          - ICP-Chlorine Etcher: tool_sops/etch/icp-cl.md
+      - Metrology SOPs:
+          - tool_sops/metrology/index.md
+          - Atomic Force Microscope: tool_sops/metrology/afm.md
+          - Scanning Electron Microscope: tool_sops/metrology/sem.md
+          - Optical Profilometer: tool_sops/metrology/optical_profilometer.md
+          - Profilometer: tool_sops/metrology/profilometer.md
+          - Ellipsometer: tool_sops/metrology/ellipsometer.md
+      - Packaging SOPs:
+          - tool_sops/packaging/index.md
+          - Dicing Saw: tool_sops/packaging/dicing_saw.md
+  - Chemical Handling:
+      - chemicals/index.md
+      - Litho-Development Hood: chemicals/litho_hood/index.md
+      - Solvent Hood: chemicals/solvent_hood/index.md
+      - Caustics/Metal Etch Hood:
+          - chemicals/caustics_hood/index.md
+          - Aluminum Etch: chemicals/caustics_hood/aluminum_etch/index.md
+          - Nickel Etch: chemicals/caustics_hood/nickel_etch.md
+          - Chrome Etch: chemicals/caustics_hood/chrome_etch.md
+          - Gold Etch: chemicals/caustics_hood/gold_etch.md
+          - Silicon Etch: chemicals/caustics_hood/silicon_etch.md
+      - HF and Piranha Hood:
+          - chemicals/hf_pirahna_hood/index.md
+          - chemicals/hf_pirahna_hood/hf_etch.md
+          - chemicals/hf_pirahna_hood/piranha.md
+      - RCA Hood:
+          - chemicals/rca_hood/index.md
+          - chemicals/rca_hood/rca_clean.md
+  - Lab Safety Policies:
+      - policy/index.md
+      - Rules of Conduct: policy/manual.md
+      - Safety Manual: policy/safety.md
+      - C14 Application: policy/c14.md
+      - Suspension Policy: policy/suspension.md
+  - Nanofab Signup: signup.md
+  - About This Site:
+      - authoring/index.md
+      - Writing Documentation: authoring/writing_documentation.md
+  - FAQ: faq/index.md
 
 extra:
   social:
