@@ -897,6 +897,7 @@ const partysocket = new PartySocket({
     let streamingMsg = null;
     let streamingEl = null;
     let pending = false;
+    let activity = "";
     let client = null;
     let historyLoaded = false;
     const root = document.createElement("div");
@@ -1067,7 +1068,7 @@ const partysocket = new PartySocket({
     }
     function assistantBody(msg) {
       const text = messageText(msg);
-      return msg === streamingMsg && text === "" ? `<span class="ndc-dots"><i></i><i></i><i></i></span>` : renderMarkdown(text);
+      return msg === streamingMsg && text === "" ? `<span class="ndc-dots"><i></i><i></i><i></i></span>${activity ? `<span class="ndc-activity">${escapeHtml(activity)}</span>` : ""}` : renderMarkdown(text);
     }
     function render(forcePin = false) {
       const pinned = forcePin || isPinned();
@@ -1164,7 +1165,15 @@ const partysocket = new PartySocket({
     function applyChunk(chunk) {
       const msg = streamingMsg || beginAssistantMessage();
       switch (chunk.type) {
+        // The model reasons before every step, and there are quiet gaps
+        // between steps — cover both so the visitor never stares at
+        // silent dots wondering if the bot hung.
+        case "start-step":
+        case "reasoning-start":
+          activity = "Thinking\u2026";
+          break;
         case "text-start":
+          activity = "";
           msg.parts.push({ type: "text", text: "", _sid: chunk.id });
           break;
         case "text-delta": {
@@ -1182,9 +1191,11 @@ const partysocket = new PartySocket({
         // this whole list is sent back to the Agent on the next turn, and
         // convertToModelMessages rejects incomplete tool parts.
         case "tool-input-start":
-          setStatus("Searching the docs\u2026");
+          activity = "Searching the docs\u2026";
           break;
-        case "tool-input-available":
+        case "tool-input-available": {
+          const query = chunk.input && typeof chunk.input.query === "string" ? chunk.input.query : "";
+          activity = query ? `Searching: ${query}` : "Searching the docs\u2026";
           msg.parts.push({
             type: `tool-${chunk.toolName || "searchDocs"}`,
             toolCallId: chunk.toolCallId,
@@ -1192,6 +1203,7 @@ const partysocket = new PartySocket({
             input: chunk.input
           });
           break;
+        }
         case "tool-output-available": {
           const part = msg.parts.find(
             (p) => p.toolCallId && p.toolCallId === chunk.toolCallId
@@ -1200,7 +1212,7 @@ const partysocket = new PartySocket({
             part.state = "output-available";
             part.output = chunk.output;
           }
-          setStatus("");
+          activity = "Thinking\u2026";
           break;
         }
         case "error":
@@ -1214,6 +1226,7 @@ const partysocket = new PartySocket({
     function finishTurn() {
       pending = false;
       streamingMsg = null;
+      activity = "";
       setStatus("");
       render();
       const localLen = messages.length;
@@ -1265,6 +1278,7 @@ const partysocket = new PartySocket({
         case "cf_agent_stream_resuming":
           pending = true;
           streamingMsg = null;
+          activity = "Thinking\u2026";
           client.send(
             JSON.stringify({ type: "cf_agent_stream_resume_ack", id: frame.id })
           );
@@ -1304,6 +1318,7 @@ const partysocket = new PartySocket({
       if (socket.readyState !== 1) {
         setStatus("Connecting\u2026");
       }
+      activity = "Thinking\u2026";
       messages.push({
         id: crypto.randomUUID(),
         role: "user",

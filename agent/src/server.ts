@@ -18,6 +18,9 @@ const MAX_RESULTS = 8;
 const MAX_SEARCHES_PER_TURN = 2;
 const MAX_TURNS_PER_MINUTE = 20;
 const MAX_PAGE_HINT_CHARS = 300;
+// Only the last ~5 turns go to the model. Older history stays persisted
+// for the UI but just slows prompt processing and muddies answers.
+const MAX_CONTEXT_MESSAGES = 10;
 
 // Origins allowed to call this Worker cross-origin: the local Zensical
 // preview and the live docs site. The Vite playground on :5173 is
@@ -46,7 +49,7 @@ chunks returned by the searchDocs tool. Cite the source URL for each claim,
 copying the URL exactly as it appears in the search results. Cite only pages
 you actually used — never mention or list pages you did not use.
 Call searchDocs at least once. A second search is allowed if you need a
-tighter query.
+tighter query; do not search a third time.
 If searchDocs returns nothing useful, say you do not know — do not invent
 tools, chemicals, or policies. Prefer official SOP and policy pages over
 indexes, signup, or authoring pages. The visitor may be on one page; search
@@ -129,11 +132,18 @@ export class ChatAgent extends AIChatAgent<Env> {
       ? `${SYSTEM_PROMPT}\nThe visitor is currently reading ${pageHint} — context only; still search the whole corpus.`
       : SYSTEM_PROMPT;
 
+    // Window must start on a user message — a leading assistant reply
+    // with tool parts confuses conversion and some models reject it.
+    const recent = this.messages.slice(-MAX_CONTEXT_MESSAGES);
+    while (recent.length && recent[0].role !== "user") {
+      recent.shift();
+    }
+
     const result = streamText({
       model: workersai(MODEL),
       system,
       messages: pruneMessages({
-        messages: await convertToModelMessages(this.messages),
+        messages: await convertToModelMessages(recent),
         toolCalls: "before-last-2-messages",
         reasoning: "before-last-message"
       }),

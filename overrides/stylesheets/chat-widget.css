@@ -221,6 +221,12 @@
   }
 }
 
+#nanodocs-chat .ndc-activity {
+  margin-left: 0.4rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+}
+
 #nanodocs-chat .ndc-status {
   padding: 0.25rem 0.6rem;
   color: var(--md-default-fg-color--light);

@@ -51,6 +51,8 @@ function initWidget(workerHost) {
   let streamingEl = null;
   /** True between sending a question and the final done frame. */
   let pending = false;
+  /** What the agent is doing right now, shown beside the typing dots. */
+  let activity = "";
   let client = null;
   let historyLoaded = false;
 
@@ -271,7 +273,11 @@ function initWidget(workerHost) {
   function assistantBody(msg) {
     const text = messageText(msg);
     return msg === streamingMsg && text === ""
-      ? `<span class="ndc-dots"><i></i><i></i><i></i></span>`
+      ? `<span class="ndc-dots"><i></i><i></i><i></i></span>${
+          activity
+            ? `<span class="ndc-activity">${escapeHtml(activity)}</span>`
+            : ""
+        }`
       : renderMarkdown(text);
   }
 
@@ -396,7 +402,15 @@ function initWidget(workerHost) {
   function applyChunk(chunk) {
     const msg = streamingMsg || beginAssistantMessage();
     switch (chunk.type) {
+      // The model reasons before every step, and there are quiet gaps
+      // between steps — cover both so the visitor never stares at
+      // silent dots wondering if the bot hung.
+      case "start-step":
+      case "reasoning-start":
+        activity = "Thinking…";
+        break;
       case "text-start":
+        activity = "";
         msg.parts.push({ type: "text", text: "", _sid: chunk.id });
         break;
       case "text-delta": {
@@ -414,9 +428,14 @@ function initWidget(workerHost) {
       // this whole list is sent back to the Agent on the next turn, and
       // convertToModelMessages rejects incomplete tool parts.
       case "tool-input-start":
-        setStatus("Searching the docs…");
+        activity = "Searching the docs…";
         break;
-      case "tool-input-available":
+      case "tool-input-available": {
+        const query =
+          chunk.input && typeof chunk.input.query === "string"
+            ? chunk.input.query
+            : "";
+        activity = query ? `Searching: ${query}` : "Searching the docs…";
         msg.parts.push({
           type: `tool-${chunk.toolName || "searchDocs"}`,
           toolCallId: chunk.toolCallId,
@@ -424,6 +443,7 @@ function initWidget(workerHost) {
           input: chunk.input
         });
         break;
+      }
       case "tool-output-available": {
         const part = msg.parts.find(
           (p) => p.toolCallId && p.toolCallId === chunk.toolCallId
@@ -432,7 +452,8 @@ function initWidget(workerHost) {
           part.state = "output-available";
           part.output = chunk.output;
         }
-        setStatus("");
+        // The model goes straight back to reasoning over the results.
+        activity = "Thinking…";
         break;
       }
       case "error":
@@ -447,6 +468,7 @@ function initWidget(workerHost) {
   function finishTurn() {
     pending = false;
     streamingMsg = null;
+    activity = "";
     setStatus("");
     render();
     // Swap the locally-built turn for the Agent's persisted copy so the
@@ -507,6 +529,7 @@ function initWidget(workerHost) {
       case "cf_agent_stream_resuming":
         pending = true;
         streamingMsg = null;
+        activity = "Thinking…";
         client.send(
           JSON.stringify({ type: "cf_agent_stream_resume_ack", id: frame.id })
         );
@@ -552,6 +575,7 @@ function initWidget(workerHost) {
     if (socket.readyState !== 1 /* OPEN */) {
       setStatus("Connecting…");
     }
+    activity = "Thinking…";
     messages.push({
       id: crypto.randomUUID(),
       role: "user",
