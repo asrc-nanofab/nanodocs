@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # ASRC Nanofabrication Facility - NanoDocs
 
 <div class="grid cards" markdown>
