@@ -1,4 +1,9 @@
+# Compiled Python
+__pycache__/
+*.pyc
 /.venv/
 /.vscode/
 /site/
 .wrangler/
+/agent/node_modules/
+/agent/.wrangler/

@@ -1,0 +1,301 @@
+/* NanoDocs chat widget (overrides/javascripts/chat-widget.js).
+   Colors come from Material's CSS variables so the slate/default
+   palettes restyle the panel automatically. */
+
+#nanodocs-chat {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 20;
+  font-family: var(--md-text-font-family, sans-serif);
+}
+
+#nanodocs-chat .ndc-fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+#nanodocs-chat .ndc-fab:hover {
+  filter: brightness(1.1);
+}
+
+/* display:flex below would otherwise override the hidden attribute */
+#nanodocs-chat .ndc-panel[hidden] {
+  display: none;
+}
+
+#nanodocs-chat .ndc-panel {
+  position: absolute;
+  right: 0;
+  bottom: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  width: min(24rem, calc(100vw - 2rem));
+  height: min(32rem, calc(100vh - 6rem));
+  height: min(32rem, calc(100dvh - 6rem));
+  overflow: hidden;
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.35);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+#nanodocs-chat .ndc-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+#nanodocs-chat .ndc-title {
+  flex: 1;
+  font-weight: 700;
+}
+
+#nanodocs-chat .ndc-header button {
+  display: flex;
+  padding: 0.15rem;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+#nanodocs-chat .ndc-header button:hover {
+  opacity: 1;
+}
+
+#nanodocs-chat .ndc-messages {
+  flex: 1;
+  padding: 0.6rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#nanodocs-chat .ndc-empty {
+  margin: auto 0.5rem;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+#nanodocs-chat .ndc-msg {
+  max-width: 88%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.4rem;
+  overflow-wrap: break-word;
+}
+
+#nanodocs-chat .ndc-user {
+  align-self: flex-end;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  white-space: pre-wrap;
+}
+
+#nanodocs-chat .ndc-assistant {
+  align-self: flex-start;
+  background-color: var(--md-code-bg-color);
+}
+
+#nanodocs-chat .ndc-assistant p {
+  margin: 0 0 0.4em;
+}
+
+#nanodocs-chat .ndc-assistant p:last-child,
+#nanodocs-chat .ndc-assistant ul:last-child,
+#nanodocs-chat .ndc-assistant ol:last-child {
+  margin-bottom: 0;
+}
+
+#nanodocs-chat .ndc-assistant .ndc-h {
+  font-weight: 700;
+}
+
+#nanodocs-chat .ndc-assistant ul,
+#nanodocs-chat .ndc-assistant ol {
+  margin: 0 0 0.4em;
+  padding-left: 1.2em;
+}
+
+#nanodocs-chat .ndc-assistant code {
+  padding: 0 0.2em;
+  background-color: var(--md-default-bg-color);
+  border-radius: 0.15rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.95em;
+}
+
+#nanodocs-chat .ndc-assistant pre {
+  margin: 0 0 0.4em;
+  padding: 0.4rem;
+  overflow-x: auto;
+  background-color: var(--md-default-bg-color);
+  border-radius: 0.2rem;
+}
+
+#nanodocs-chat .ndc-assistant a {
+  color: var(--md-typeset-a-color, var(--md-primary-fg-color));
+}
+
+/* Citation cards from searchDocs results */
+#nanodocs-chat .ndc-cites {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+#nanodocs-chat .ndc-cite {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--md-default-bg-color);
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-left: 0.15rem solid var(--md-primary-fg-color);
+  border-radius: 0.2rem;
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+
+#nanodocs-chat .ndc-cite:hover {
+  border-color: var(--md-primary-fg-color);
+}
+
+#nanodocs-chat .ndc-cite-title {
+  font-weight: 700;
+  color: var(--md-typeset-a-color, var(--md-primary-fg-color));
+}
+
+#nanodocs-chat .ndc-cite-trail {
+  font-size: 0.85em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Typing indicator */
+#nanodocs-chat .ndc-dots {
+  display: inline-flex;
+  gap: 0.2rem;
+}
+
+#nanodocs-chat .ndc-dots i {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background-color: var(--md-default-fg-color--light);
+  animation: ndc-bounce 1.2s infinite;
+}
+
+#nanodocs-chat .ndc-dots i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+#nanodocs-chat .ndc-dots i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes ndc-bounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-0.2rem);
+  }
+}
+
+#nanodocs-chat .ndc-activity {
+  margin-left: 0.4rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+}
+
+#nanodocs-chat .ndc-status {
+  padding: 0.25rem 0.6rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+}
+
+#nanodocs-chat .ndc-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.4rem;
+  padding: 0.5rem 0.6rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+#nanodocs-chat .ndc-form textarea {
+  flex: 1;
+  max-height: 120px;
+  padding: 0.35rem 0.5rem;
+  resize: none;
+  background-color: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.3rem;
+  font: inherit;
+}
+
+#nanodocs-chat .ndc-form textarea:focus {
+  outline: none;
+  border-color: var(--md-primary-fg-color);
+}
+
+#nanodocs-chat .ndc-send {
+  display: flex;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  cursor: pointer;
+}
+
+#nanodocs-chat .ndc-send:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#nanodocs-chat .ndc-footnote {
+  margin: 0;
+  padding: 0 0.6rem 0.4rem;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 0.55rem;
+}
+
+/* Phone: the panel takes over the viewport */
+@media screen and (max-width: 30em) {
+  #nanodocs-chat.ndc-open {
+    inset: 0;
+  }
+
+  #nanodocs-chat.ndc-open .ndc-fab {
+    display: none;
+  }
+
+  #nanodocs-chat .ndc-panel {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+  }
+}

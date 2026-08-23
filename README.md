@@ -172,6 +172,62 @@ else to do.
    `docs/assets/pdfs/`) so View PDF works on the live site. See
    [Deploying](#deploying).
 
+## The docs chat
+
+The site has a chat assistant (floating button, bottom-right) that answers
+lab questions from the whole published corpus and cites the pages it used.
+It is retrieval-augmented generation over the live site, split across three
+pieces — none of which live in the Google Docs pipeline:
+
+```mermaid
+flowchart LR
+    W[Chat widget<br/>on every page] -- WebSocket --> A[agent/ Worker<br/>ChatAgent Durable Object]
+    A -- searchDocs tool --> IDX[AI Search index<br/>crawl of the live site]
+    IDX --> A
+    A -- streamed answer + chunk URLs --> W
+```
+
+- **Index** — a Cloudflare AI Search instance (`nanodocs`) that crawls
+  `nanodocs.pages.dev` via the sitemap, indexes only
+  `article.md-content__inner` (not the nav chrome), and serves hybrid
+  vector + keyword search. Dashboard-configured; nothing in the repo.
+- **Conversation** — a sibling Worker in `agent/` (own `wrangler.jsonc`,
+  **not** part of the Pages project). `ChatAgent` is a Durable Object that
+  holds one conversation per browser session, calls the index through a
+  `searchDocs` tool, and has Workers AI (`glm-4.7-flash`) write the answer
+  from the retrieved chunks only. Rate-limited per conversation; CORS is
+  an origin allowlist.
+- **Widget** — vanilla JS on the docs site. Source is
+  `agent/widget/chat-widget.js`; `npm run build:widget` (esbuild) emits
+  the committed bundle `overrides/javascripts/chat-widget.js`, which
+  `mkdocs.yml` loads on every page with `overrides/stylesheets/chat-widget.css`.
+  It streams tokens over the Agents WebSocket protocol, survives
+  Material's instant navigation and full reloads (conversation id in
+  `sessionStorage`), and renders **citation cards parsed from the
+  `searchDocs` tool output** — never from the model's prose. The widget's
+  host map only knows localhost; it renders nothing on unknown origins
+  until the Worker is deployed.
+
+Local development runs two servers:
+
+```bash
+uv run zensical serve            # the docs site, http://127.0.0.1:8000/
+cd agent && npm run dev          # the chat Worker, http://localhost:5173/
+```
+
+The Worker's `AI` and `DOCS_SEARCH` bindings are `remote: true`, so local
+dev talks to the real model and the real index without deploying. After
+editing the widget source, rebuild the bundle (`npm run build:widget`) —
+never hand-edit `overrides/javascripts/chat-widget.js`. Worker checks are
+`npm run check` in `agent/`; do not run bare `npx wrangler` from the repo
+root (it walks up to the Pages `wrangler.jsonc`).
+
+**Status:** built and verified locally (see
+`plans/2026-08-23-cloudflare-docs-agent.md` for the full verification
+record). The Worker is **not deployed yet** — that is the plan's Phase E.
+Reader-facing explanation: [How the Docs Chat Works](docs/authoring/how_chat_works.md).
+Technical walkthrough: [Wiring a chat agent](docs/authoring/chat_agent.md).
+
 ## Local development
 
 ```bash
@@ -239,8 +295,10 @@ GitHub Pages for this repo is **unpublished**. Leave it that way.
 | `docs/assets/pdfjs/` | **Legacy** — in-page PDF viewer from the iframe era; no longer used by any page, kept for the time being |
 | `docs/robots.txt` | Allows crawlers; points at `/sitemap.xml` |
 | `docs/google*.html` | Google Search Console verification file (do not delete) |
+| `agent/` | Sibling Cloudflare Worker: `ChatAgent` Durable Object + `searchDocs` tool (the docs chat brain; deployed separately from Pages) |
+| `agent/widget/chat-widget.js` | Chat widget source — `npm run build:widget` emits the committed bundle |
 | `mkdocs.yml` | Site configuration (Zensical modern theme, explicit `nav:`); `site_url` is `https://nanodocs.pages.dev` |
-| `overrides/` | Theme customizations (`extra.css`: PDF pills; slate page fill only) |
+| `overrides/` | Theme customizations (`extra.css`: PDF pills; slate page fill) + chat widget bundle and stylesheet |
 | `plans/` | Dated work plans with phased steps and review gates |
 | `AGENTS.md` | Operational guide for coding agents (invariants, commands, quirks) |
 | `.cursor/rules/`, `.cursor/commands/` | AI agent guardrails and workflows |
