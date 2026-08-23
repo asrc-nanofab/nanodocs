@@ -17,10 +17,17 @@ Complete documentation for the ASRC Nanofabrication Facility.
 
 </div>
 
-!!! note "About Our Facility"
+<div class="grid cards home-about" markdown>
+
+-   :material-domain:{ .lg .middle } __About Our Facility__
+
+    ---
+
     The ASRC Nanofab Facility provides state-of-the-art equipment and expertise for nanoscale fabrication and characterization for the New York City metropolitan area and beyond. Our users come from academic, startup, industry, nonprofit, and government organizations. The cleanroom supports research across multiple disciplines, including photonics, electronics, biomedical devices, and quantum technologies.
 
-<div class="grid cards" markdown>
+</div>
+
+<div class="grid cards home-destinations" markdown>
 
 -   :material-shield-check:{ .lg .middle } __Lab Safety Policies__
 

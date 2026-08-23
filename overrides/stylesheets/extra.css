@@ -47,13 +47,14 @@
 
 /* Home cards: same flat surface as the header bar, hairline
    border, indigo accent on hover. Columns go on .grid (the ul
-   is display:contents), not the list. */
+   is display:contents), not the list. About stays one column;
+   destinations are three-across. */
 .md-typeset .home-landing .grid.cards {
   grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 45em) {
-  .md-typeset .home-landing .grid.cards {
+  .md-typeset .home-landing .home-destinations.grid.cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -64,8 +65,23 @@
   box-shadow: none;
 }
 
-.md-typeset .home-landing .grid.cards > ul > li:hover {
+.md-typeset .home-landing .home-destinations.grid.cards > ul > li {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.md-typeset .home-landing .home-destinations.grid.cards > ul > li > :last-child {
+  margin-top: auto;
+}
+
+.md-typeset .home-landing .home-destinations.grid.cards > ul > li:hover {
   border-color: var(--md-primary-fg-color);
+}
+
+.md-typeset .home-landing .home-about.grid.cards > ul > li:hover {
+  border-color: var(--md-default-fg-color--lightest);
+  box-shadow: none;
 }
 
 .md-typeset .home-landing .grid.cards .lg {
