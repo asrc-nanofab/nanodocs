@@ -1,7 +1,9 @@
 # Embed facility-scoped NanoKnow chat in NanoDocs and move to asrc.nanoknow.org
 
 **Date:** 2026-08-20
-**Status:** Draft
+**Status:** Superseded — 2026-08-23. NanoKnow-backed chat is deferred. Replacement:
+[`2026-08-23-cloudflare-docs-agent.md`](2026-08-23-cloudflare-docs-agent.md)
+(Cloudflare Agents + AI Search, no NanoKnow).
 **Branch:** `nanoknow-chat` (nanodocs); nanoknow changes on its own branch in
 `~/dev/nanoknow` (user manages that repo's git)
 
