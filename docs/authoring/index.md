@@ -69,3 +69,12 @@ copy. Details and commands are in the repo [README](https://github.com/asrc-nano
   and policies.
 - **Always current, still printable.** Pages stay in step with the source
   docs, and a PDF copy is one click away when paper is better.
+
+## A chat that reads the published site
+
+There is also a **docs chat** in the works: not the search box, but an
+assistant that retrieves from the whole live corpus and cites the page.
+It is a sibling Cloudflare Worker plus an AI Search index of this site —
+not a plugin dropped into the Google Doc pipeline. How that is wired, and
+why Pages cannot host the Agent itself, is in
+[Wiring a chat agent into your documentation](chat_agent.md).

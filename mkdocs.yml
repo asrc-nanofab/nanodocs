@@ -156,6 +156,7 @@ nav:
   - About This Site:
       - authoring/index.md
       - Writing Documentation: authoring/writing_documentation.md
+      - Wiring a Docs Chat Agent: authoring/chat_agent.md
   - FAQ: faq/index.md
 
 extra:
