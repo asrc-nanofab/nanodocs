@@ -1,7 +1,7 @@
 # Add a site-wide docs chat via Cloudflare Agents and AI Search
 
 **Date:** 2026-08-23
-**Status:** Phase D complete — Phase E (deploy) not started
+**Status:** Phase D complete (+ post-D polish rounds) — Phase E (deploy) next
 **Branch:** none yet (no repo code until Phase B)
 
 ## Description
@@ -284,6 +284,28 @@ over SOP body for generic tool questions.
       (architecture, local dev, widget rebuild, status) and repo-map
       rows for `agent/`; `authoring/index.md` and
       `authoring/chat_agent.md` cross-link the new page.
+- [x] Second polish round (2026-08-23 afternoon): citation cards now
+      show only pages the model linked in its prose (normalized:
+      fragments and trailing punctuation dropped), falling back to all
+      retrieved pages when the prose has no links; live activity label
+      ("Thinking…" / "Searching: <query>") rendered inline next to the
+      typing dots, status bar reserved for connection problems; model
+      context capped to the **last 10 messages** (~5 turns) — older
+      history stays persisted for the UI but no longer slows or muddies
+      turns; prompt keeps the exact-URL citation wording and the
+      restored "do not search a third time" line (GLM provably attempts
+      a third search without it and burns an extra model call on the
+      code-level block).
+- [x] **Latency incident, recorded (2026-08-23 ~17:10–17:25 ET).** The
+      Workers AI GLM 4.7-flash endpoint degraded to 1–2 minutes *per
+      model call* (normal same-day baseline: 12–25 s per 3-call turn),
+      then recovered to 12 s end-to-end. Diagnosis notes: AI Search
+      `search()` stayed fast throughout; Llama 3.3 70B fp8-fast and
+      Llama 4 Scout respond instantly through the same pipeline but
+      **cannot make our `searchDocs` tool calls** (every call errors) —
+      so there is no drop-in model swap in the current tool-loop
+      architecture; a model-call latency issue means wait or change
+      architecture (see `2026-08-23-aisearch-single-call.md`).
 
 ### Phase D review gate — STOP for sign-off
 
@@ -306,10 +328,21 @@ over SOP body for generic tool questions.
 
 ### Phase E — Ship on nanodocs.pages.dev
 
-- [ ] Deploy the Worker (user-run `wrangler deploy`)
-- [ ] Point the widget at the production Worker host; CORS allowlist
-      includes the live origin
-- [ ] Watch logs for a few days (volume, empty retrieval, abuse)
+- [ ] Commit the post-D polish work; merge the working branch to `main`
+      (user-run git)
+- [ ] Deploy the Worker: `cd agent && npm run deploy` (user-run;
+      `vite build && wrangler deploy`). Note the resulting
+      `nanodocs-agent.<subdomain>.workers.dev` host.
+- [ ] Point the widget at the production Worker: add
+      `"nanodocs.pages.dev": "<workers.dev host>"` to `AGENT_HOSTS` in
+      `agent/widget/chat-widget.js`, `npm run build:widget`, commit the
+      rebuilt bundle. (CORS allowlist in `server.ts` already includes
+      `https://nanodocs.pages.dev`.)
+- [ ] `uv run zensical build --strict`; push `main` → Pages deploy
+- [ ] Live smoke test: anonymous browser on the live site — ask, get a
+      cited answer, follow up, citation card navigates on-origin
+- [ ] Watch logs for a few days (volume, empty retrieval, abuse,
+      GLM latency recurrence — see incident note in Phase D)
 - [ ] Escalation path if abused: tighter caps, then Turnstile — do not
       build Turnstile until we see abuse
 
