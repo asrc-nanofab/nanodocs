@@ -1,0 +1,11 @@
+{
+  "name": "nanodocs",
+  "pages_build_output_dir": "site",
+  "compatibility_date": "2026-08-21",
+  "r2_buckets": [
+    {
+      "binding": "PDFS",
+      "bucket_name": "nanodocs-pdfs"
+    }
+  ]
+}
