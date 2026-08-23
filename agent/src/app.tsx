@@ -488,7 +488,7 @@ function Chat() {
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <h1 className="text-lg font-semibold text-kumo-default">
-              <span className="mr-2">⛅</span>Agent Starter
+              <span className="mr-2">⛅</span>NanoDocs
             </h1>
             <Badge variant="secondary">
               <ChatCircleDotsIcon size={12} weight="bold" className="mr-1" />
@@ -704,10 +704,10 @@ function Chat() {
               contents={
                 <div className="flex flex-wrap justify-center gap-2">
                   {[
-                    "What's the weather in Paris?",
-                    "What timezone am I in?",
-                    "Calculate 5000 * 3",
-                    "Remind me in 5 minutes to take a break"
+                    "What PPE is required at the HF/Piranha hood?",
+                    "How do I deposit aluminum on the AJA sputter?",
+                    "What should I do if I splash HF on a glove?",
+                    "How do I get access to use a tool?"
                   ].map((prompt) => (
                     <Button
                       key={prompt}
@@ -923,7 +923,7 @@ function Chat() {
               placeholder={
                 attachments.length > 0
                   ? "Add a message or send images..."
-                  : "Send a message..."
+                  : "Ask about a tool, chemical, or policy..."
               }
               disabled={!connected || isStreaming}
               rows={1}

@@ -17,6 +17,8 @@ const MAX_TURNS_PER_MINUTE = 20;
 
 const SYSTEM_PROMPT = `You are the ASRC NanoDocs assistant. Answer only from
 chunks returned by the searchDocs tool. Cite the source URL for each claim.
+Call searchDocs at least once. A second search is allowed if you need a
+tighter query; do not search a third time. Think if it helps, then answer.
 If searchDocs returns nothing useful, say you do not know — do not invent
 tools, chemicals, or policies. Prefer official SOP and policy pages over
 indexes, signup, or authoring pages. The visitor may be on one page; search
@@ -30,13 +32,23 @@ type SearchChunk = {
   metadata?: { filename?: string; folder?: string; url?: string };
 };
 
+function chunkText(chunk: SearchChunk): string {
+  return chunk.text ?? chunk.content ?? "";
+}
+
+function isChromeChunk(chunk: SearchChunk): boolean {
+  const text = chunkText(chunk);
+  return /<!doctype html>/i.test(text) || /\[skip to content\]/i.test(text);
+}
+
 function formatChunks(chunks: SearchChunk[] | undefined): string {
-  if (!chunks?.length) {
+  const kept = (chunks ?? []).filter((chunk) => !isChromeChunk(chunk));
+  if (!kept.length) {
     return "No matching documentation chunks.";
   }
-  return chunks
+  return kept
     .map((chunk, i) => {
-      const text = chunk.text ?? chunk.content ?? "";
+      const text = chunkText(chunk);
       const url =
         (typeof chunk.metadata?.url === "string" && chunk.metadata.url) ||
         (typeof chunk.item?.key === "string" && chunk.item.key) ||
@@ -89,7 +101,7 @@ export class ChatAgent extends AIChatAgent<Env> {
       tools: {
         searchDocs: tool({
           description:
-            "Search the published NanoDocs corpus (tool SOPs, chemicals, policy). Call this before answering lab questions.",
+            "Search the published NanoDocs corpus (tool SOPs, chemicals, policy). Call before answering. A second call with a tighter query is allowed; do not call a third time.",
           inputSchema: z.object({
             query: z
               .string()
@@ -105,14 +117,15 @@ export class ChatAgent extends AIChatAgent<Env> {
               }
             });
             const chunks = (results as { chunks?: SearchChunk[] }).chunks;
+            const kept = (chunks ?? []).filter((c) => !isChromeChunk(c)).length;
             console.log(
-              `searchDocs query=${JSON.stringify(query)} chunks=${chunks?.length ?? 0}`
+              `searchDocs query=${JSON.stringify(query)} chunks=${chunks?.length ?? 0} kept=${kept}`
             );
             return formatChunks(chunks);
           }
         })
       },
-      stopWhen: stepCountIs(8),
+      stopWhen: stepCountIs(4),
       abortSignal: options?.abortSignal,
       onFinish: onFinish as Parameters<typeof streamText>[0]["onFinish"]
     });

@@ -218,15 +218,16 @@ deploy.
 
 Website crawl coverage (51/51) is fine. Chunk *contents* are not.
 
-- [ ] Dashboard: AI Search instance `nanodocs` → Content selectors.
-      One entry: path `**`, selector `article.md-content__inner`.
-      That wrapper exists on homepage, indexes, SOP, chem, and FAQ
-      pages (Material/Zensical). Saving it retriggers a sync. Confirm
-      new chunks no longer start with `<!doctype html>` or the site
-      nav. If the selector mismatches, those URLs error — do not use
-      a guessed class.
-- [ ] Re-run `sputtering deposition process` plus the HF PPE set.
-      Keep sitemap crawl unless chrome is still the top hit.
+- [x] Dashboard: content selector `**` → `article.md-content__inner`,
+      chunk size 768 / 10% overlap. Recrawl 2026-08-23; three pages
+      lagged on Workers AI capacity then retried.
+- [x] Re-run AJA/sputter query: hit 1 is AJA tool operation (score
+      1.000), not the nav. Evaporator SOPs still appear as weaker
+      neighbors (~0.47). One leftover chrome chunk
+      (`/tool_sops/deposition/` with doctype) — Worker now drops
+      chunks that look like full-page HTML. GLM was doing two
+      searches; capped at two searches and four model steps
+      (`stepCountIs(4)`), including thinking.
 - [ ] Source-doc noise (not the crawl): Gold Sputter Coater Google
       Doc still has SOP Title “Manual Operation of the AJA Orion 8
       Sputter Tool” and Gold abbreviated **Cr**. Fix the Doc, then
