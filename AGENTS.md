@@ -6,17 +6,25 @@ disagree, this file and `.cursor/rules/` win.
 
 ## What this is
 
-A MkDocs Material site (GitHub Pages) whose content is **synced from Google
-Docs**. Staff write SOPs/policies as Google Docs; registry Google Sheets list
-what gets published; `scripts/sync_gdocs.py` converts each doc to a site page.
-This repo is a rendering of the docs, not the source of truth.
+A MkDocs Material site on **Cloudflare Pages** (`https://nanodocs.pages.dev`)
+whose content is **synced from Google Docs**. Staff write SOPs/policies as
+Google Docs; registry Google Sheets list what gets published;
+`scripts/sync_gdocs.py` converts each doc to a site page. This repo is a
+rendering of the docs, not the source of truth.
 
 ```text
 Google Docs ──> registry sheets ──> scripts/sync_gdocs.py ──> docs/**/*.md
                                                           ├─> docs/**/img/          (extracted images)
-                                                          └─> docs/assets/pdfs/     (hosted PDFs)
-docs/ ──> mkdocs build ──> site/ ──> ./deploy.sh (gh-pages, manual)
+                                                          └─> docs/assets/pdfs/     (local PDFs)
+docs/ ──> mkdocs build ──> site/ (then rm site/assets/pdfs) ──> Cloudflare Pages
+docs/assets/pdfs/ ──> wrangler r2 object put --remote ──> R2 nanodocs-pdfs
+/assets/pdfs/* ──> functions/assets/pdfs/[[path]].js ──> env.PDFS (R2)
 ```
+
+Pages has a **25 MiB per-file** limit. PDFs stay on disk for `mkdocs serve`
+and `--strict`; production serves them from the private R2 bucket
+`nanodocs-pdfs` via the `PDFS` binding. Do not put PDFs in the Pages
+artifact. Do not run `./deploy.sh` (legacy GitHub Pages).
 
 ## Hard rules
 
@@ -39,10 +47,16 @@ docs/ ──> mkdocs build ──> site/ ──> ./deploy.sh (gh-pages, manual)
 uv run python scripts/sync_gdocs.py tools chem policy    # sync everything
 uv run python scripts/sync_gdocs.py tools --category Deposition
 uv run python scripts/sync_gdocs.py tools --only "AJA Sputter"
-uv run mkdocs serve                                      # http://127.0.0.1:8000/nanodocs/
+uv run mkdocs serve                                      # http://127.0.0.1:8000/
 uv run mkdocs build --strict                             # required gate
-./deploy.sh                                              # user-run deploy
+# After a PDF changes, upload that key to R2 (user-run; --remote is required):
+npx wrangler r2 object put nanodocs-pdfs/<tools|chem|policy>/<file>.pdf \
+  --file=docs/assets/pdfs/<same> --content-type=application/pdf --remote
 ```
+
+A push to `main` deploys Pages. Cloudflare build command:
+`mkdocs build --strict && rm -rf site/assets/pdfs`. Binding and bucket are
+in `wrangler.jsonc` (`PDFS` → `nanodocs-pdfs`).
 
 The sync needs network access to `docs.google.com` (sandboxes may need full
 network). No credentials: all docs/sheets are "anyone with link can view".
@@ -90,10 +104,14 @@ they're harmless but can be deleted if unreferenced.
 | --- | --- |
 | `docs/` | Site content — generated pages plus hand-written indexes, `faq/`, `signup/`, `authoring/` |
 | `docs/**/.nav.yml` | Navigation (awesome-nav), hand-maintained |
+| `docs/assets/pdfs/` | Local PDFs (sync output). Production copies live in R2. |
+| `functions/assets/pdfs/` | Pages Function proxying `/assets/pdfs/*` to R2 |
+| `wrangler.jsonc` | Pages + R2 binding (`PDFS`) |
 | `scripts/sync_gdocs.py` | The sync (single source of sync behavior) |
 | `scripts/download_*_pdfs.py` | Legacy, superseded by the sync; slated for removal |
 | `docs/assets/pdfjs/` | Legacy in-page PDF viewer; unused, kept for now |
-| `mkdocs.yml` | Site config (Material theme, awesome-nav, markdown extensions) |
+| `docs/robots.txt`, `docs/google*.html` | Search Console / crawlers; do not delete the google HTML file |
+| `mkdocs.yml` | Site config; `site_url` is `https://nanodocs.pages.dev` |
 | `overrides/` | Theme customizations |
 | `plans/` | Dated, phased work plans with review gates (see `.cursor/rules/plan-files.mdc`) |
 | `.cursor/rules/`, `.cursor/commands/` | Agent guardrails and workflows |
@@ -103,5 +121,6 @@ they're harmless but can be deleted if unreferenced.
 - Multi-phase work gets a plan file in `plans/` (`YYYY-MM-DD-slug.md`) and is
   executed phase by phase with user approval between phases.
 - Comments explain *why*, not *what*. DRY; no dead code or speculative options.
-- The site serves under `/nanodocs/` (project pages), so absolute paths break
-  locally — always use relative links in content.
+- The site is served at the **domain root** (`https://nanodocs.pages.dev/`,
+  local `http://127.0.0.1:8000/`). Always use relative links in content.
+  Absolute `/nanodocs/…` paths are leftovers from GitHub project pages.

@@ -11,10 +11,11 @@ flowchart LR
     REG --> SYNC[Python sync script]
     SYNC --> MD[Markdown pages]
     SYNC --> IMG[Full-res images]
-    SYNC --> PDF[Hosted PDFs]
+    SYNC --> PDF[PDF file]
     MD --> SITE[This site]
     IMG --> SITE
-    PDF --> SITE
+    PDF --> R2[Cloudflare R2 storage]
+    R2 --> SITE
 ```
 
 1. **You write in Google Docs.** The doc is the single source of truth — the
@@ -30,16 +31,33 @@ flowchart LR
       one from your headings).
     - **DOCX** is used only to recover your images at **full resolution**,
       since Google's web conversion shrinks them.
-    - **PDF** is stored on the site so every page offers "View PDF" and
-      "Download PDF" buttons alongside a link to the original doc.
-4. **The site is rebuilt and published.** Every page ends up searchable,
-   readable on phones, and always in step with the docs.
+    - **PDF** is saved so every page can offer "View PDF" and "Download
+      PDF" next to a link to the original doc.
+4. **The site is rebuilt and published** to
+   [nanodocs.pages.dev](https://nanodocs.pages.dev) (Cloudflare Pages).
+   Every page ends up searchable, readable on phones, and in step with
+   the docs.
+
+### Where the PDFs live
+
+The pages and images are hosted on Cloudflare Pages. The PDFs are not:
+Cloudflare will not accept a single file larger than 25 MB, and some tool
+SOPs exceed that. So the PDFs are stored in a Cloudflare **R2** bucket
+(`nanodocs-pdfs`) and the site fetches them when you click View or
+Download. The buttons still look like ordinary links on this site; a small
+Pages Function maps `/assets/pdfs/…` to the matching file in the bucket.
+
+On a laptop, the sync still writes the PDF next to the pages so local
+preview works without the cloud. After a doc's PDF changes, that file also
+has to be uploaded to R2 or the live View PDF button stays on the old
+copy. Details and commands are in the repo [README](https://github.com/asrc-nanofab/nanodocs#deploying).
 
 ## What this means for you
 
 - **Edit the doc, never the site.** Site files are overwritten on every sync.
-- **Publishing is automatic.** The sync extracts the page, images, and PDF
-  from your doc — nothing else to do on your end.
+- **You only edit the doc.** The sync extracts the page, images, and PDF.
+  Getting a new PDF onto the live site is a short upload step for whoever
+  runs the repo (see the README), not something authors do in Google Docs.
 - **Readers can always reach the original**: every page links to a read-only
   preview of your Google Doc.
 

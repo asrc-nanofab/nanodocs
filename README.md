@@ -2,7 +2,7 @@
 
 Documentation site for the ASRC Nanofabrication Facility, built with
 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and served on
-GitHub Pages at <https://asrc-nanofab.github.io/nanodocs>.
+Cloudflare Pages at <https://nanodocs.pages.dev>.
 
 ## How the system works
 
@@ -16,12 +16,25 @@ flowchart LR
     REG --> SYNC[scripts/sync_gdocs.py]
     SYNC --> MD[Markdown pages<br/>docs/**/*.md]
     SYNC --> IMG[Original-res images<br/>docs/**/img/]
-    SYNC --> PDF[Hosted PDFs<br/>docs/assets/pdfs/]
+    SYNC --> PDF[Local PDFs<br/>docs/assets/pdfs/]
+    PDF --> R2[Cloudflare R2<br/>nanodocs-pdfs]
     MD --> BUILD[mkdocs build]
     IMG --> BUILD
-    PDF --> BUILD
-    BUILD --> PAGES[GitHub Pages]
+    BUILD --> PAGES[Cloudflare Pages]
+    R2 --> FN[Pages Function<br/>/assets/pdfs/]
+    FN --> PAGES
 ```
+
+Cloudflare Pages will not host a single file over **25 MiB** (PECVD's PDF
+is ~32 MB). The markdown and images stay in the Pages upload. Hosted PDFs
+live in the private R2 bucket `nanodocs-pdfs`. A Pages Function at
+`functions/assets/pdfs/[[path]].js` answers `/assets/pdfs/…` from that
+bucket, so the View/Download buttons keep the same relative links.
+
+Locally, `mkdocs serve` still reads `docs/assets/pdfs/` from disk. The
+Function only runs on Cloudflare. The Pages build copies those PDFs into
+`site/` (MkDocs does not know about R2) and then **deletes**
+`site/assets/pdfs` before upload so Pages never sees the large files.
 
 ### The registry sheets
 
@@ -68,8 +81,8 @@ assembles a site page:
   page width; smaller ones keep the author's in-doc display size via a `width`
   attribute (so a QR code displayed small in the doc stays small on the page,
   but is high-res when zoomed).
-- **PDF** (`export?format=pdf`) — refreshed into `docs/assets/pdfs/` so the site
-  can offer an in-browser PDF view and a direct download.
+- **PDF** (`export?format=pdf`) — written to `docs/assets/pdfs/` for local
+  preview. Production serves the same keys from R2 (see [Deploying](#deploying)).
 
 Every generated page gets three buttons:
 
@@ -148,12 +161,15 @@ else to do.
      `POLICY_PAGE_MAP` in the script.
 4. Add the page to the section's `.nav.yml` so it appears in the navigation.
 5. Run the sync and check the page locally.
+6. Upload the new PDF to R2 (same key as the local path under
+   `docs/assets/pdfs/`) so View PDF works on the live site. See
+   [Deploying](#deploying).
 
 ## Local development
 
 ```bash
 uv sync                      # install dependencies
-uv run mkdocs serve          # http://127.0.0.1:8000/nanodocs/
+uv run mkdocs serve          # http://127.0.0.1:8000/
 uv run mkdocs build --strict # must pass before deploying
 ```
 
@@ -161,22 +177,59 @@ Linting: `uv run ruff check .` and `uv run ruff format .`
 
 ## Deploying
 
+**Live site:** <https://nanodocs.pages.dev> (Cloudflare Pages project
+`nanodocs`, production branch `main`). A push to `main` is the deploy. Do
+**not** run `./deploy.sh` — that is the old GitHub Pages path
+(`mkdocs gh-deploy`) and would republish `github.io/nanodocs`.
+
+Cloudflare already runs `pip install .` from `pyproject.toml`. The Pages
+**build command** must strip PDFs after MkDocs so the 25 MiB limit is not
+hit:
+
 ```bash
-./deploy.sh   # mkdocs gh-deploy to GitHub Pages
+mkdocs build --strict && rm -rf site/assets/pdfs
 ```
 
-Deploys are manual for now. Automating the sync + deploy on a schedule
-(GitHub Actions) is planned — see `plans/`.
+Output directory: `site`. `wrangler.jsonc` binds the R2 bucket as `PDFS`
+(same name as the dashboard binding). The Function reads `context.env.PDFS`.
+
+### After a Google Doc / PDF changes
+
+1. Sync as usual (`uv run python scripts/sync_gdocs.py …`). That refreshes
+   the local file under `docs/assets/pdfs/{tools,chem,policy}/`.
+2. Upload **that file** to the real bucket (`--remote` is required;
+   without it Wrangler writes a local emulator under `.wrangler/`):
+
+   ```bash
+   npx wrangler r2 object put nanodocs-pdfs/tools/PECVD_SOP.pdf \
+     --file=docs/assets/pdfs/tools/PECVD_SOP.pdf \
+     --content-type=application/pdf \
+     --remote
+   ```
+
+   Keys match the folders: `tools/…`, `chem/…`, `policy/…`.
+3. Push to `main` if the markdown page also changed. A PDF-only change
+   needs the R2 upload; Pages does not need a rebuild for the file bytes.
+
+The bucket stays **private**. The site reaches it through the Pages
+binding, not a public URL or API key in the repo.
+
+GitHub Pages for this repo is **unpublished**. Leave it that way.
 
 ## Repo layout
 
 | Path | Purpose |
 | --- | --- |
 | `docs/` | Site content (generated pages + hand-written indexes) |
+| `docs/assets/pdfs/` | Local PDF copies (sync output; also uploaded to R2) |
+| `functions/assets/pdfs/` | Pages Function: `/assets/pdfs/…` → R2 |
+| `wrangler.jsonc` | Pages project name, `site/` output, `PDFS` → `nanodocs-pdfs` |
 | `scripts/sync_gdocs.py` | The Google Docs → site sync (see above) |
 | `scripts/download_*_pdfs.py` | **Legacy** — superseded by `sync_gdocs.py`; slated for removal |
 | `docs/assets/pdfjs/` | **Legacy** — in-page PDF viewer from the iframe era; no longer used by any page, kept for the time being |
-| `mkdocs.yml` | Site configuration (Material theme, awesome-nav) |
+| `docs/robots.txt` | Allows crawlers; points at `/sitemap.xml` |
+| `docs/google*.html` | Google Search Console verification file (do not delete) |
+| `mkdocs.yml` | Site configuration (Material theme, awesome-nav); `site_url` is `https://nanodocs.pages.dev` |
 | `overrides/` | Theme customizations |
 | `plans/` | Dated work plans with phased steps and review gates |
 | `AGENTS.md` | Operational guide for coding agents (invariants, commands, quirks) |
