@@ -25,7 +25,7 @@ alwaysApply: true
 - Python deps via `uv` only (`uv add`, `uv add --group dev`, `uv run`). Never raw pip.
 - After code changes: `uv run ruff check .` and `uv run ruff format .` — fix new
   errors before finishing.
-- After docs/config changes: `uv run mkdocs build --strict` must pass.
+- After docs/config changes: `uv run zensical build --strict` must pass.
 
 ## Generated content
 

@@ -1,4 +1,4 @@
-"""Sync Google Docs into MkDocs pages as Markdown.
+"""Sync Google Docs into site pages as Markdown.
 
 Reads the registry spreadsheets (public CSV export), downloads each linked
 Google Doc in Markdown, DOCX and PDF formats, cleans up the Markdown, and
@@ -17,7 +17,7 @@ Usage:
     uv run python scripts/sync_gdocs.py tools chem policy
     uv run python scripts/sync_gdocs.py tools --only AFM --watch
 
-With --watch, the sync re-runs every ~20s (pair with `mkdocs serve` for a
+With --watch, the sync re-runs every ~20s (pair with `zensical serve` for a
 live preview while editing the Google Doc); Ctrl+C stops it.
 """
 
@@ -614,7 +614,7 @@ def warn_dropped_images(name: str, body: str) -> None:
 
 
 def write_if_changed(path: Path, content: str) -> bool:
-    """Write only when content differs, so mkdocs serve isn't reloaded no-op."""
+    """Write only when content differs, so zensical serve isn't reloaded no-op."""
     if path.exists() and path.read_text() == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -704,7 +704,7 @@ def sync_row(
         body, page_path.parent / "img", page_path.parent, docx_media
     )
 
-    # Relative href so mkdocs build --strict verifies the PDF exists
+    # Relative href so zensical build --strict verifies the PDF exists
     pdf_href = pdf_path.relative_to(page_path.parent, walk_up=True).as_posix()
 
     title = existing_title(page_path, name)
@@ -827,7 +827,7 @@ def main() -> int:
         type=float,
         metavar="SECONDS",
         help=f"re-sync every SECONDS (default {DEFAULT_WATCH_INTERVAL:g}) "
-        "until Ctrl+C; pair with `mkdocs serve` for a live preview",
+        "until Ctrl+C; pair with `zensical serve` for a live preview",
     )
     args = parser.parse_args()
 

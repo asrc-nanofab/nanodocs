@@ -6,22 +6,22 @@ disagree, this file and `.cursor/rules/` win.
 
 ## What this is
 
-A MkDocs Material site on **Cloudflare Pages** (`https://nanodocs.pages.dev`)
-whose content is **synced from Google Docs**. Staff write SOPs/policies as
-Google Docs; registry Google Sheets list what gets published;
-`scripts/sync_gdocs.py` converts each doc to a site page. This repo is a
-rendering of the docs, not the source of truth.
+A Zensical site (modern theme) on **Cloudflare Pages**
+(`https://nanodocs.pages.dev`) whose content is **synced from Google Docs**.
+Staff write SOPs/policies as Google Docs; registry Google Sheets list what
+gets published; `scripts/sync_gdocs.py` converts each doc to a site page.
+This repo is a rendering of the docs, not the source of truth.
 
 ```text
 Google Docs ──> registry sheets ──> scripts/sync_gdocs.py ──> docs/**/*.md
                                                           ├─> docs/**/img/          (extracted images)
                                                           └─> docs/assets/pdfs/     (local PDFs)
-docs/ ──> mkdocs build ──> site/ (then rm site/assets/pdfs) ──> Cloudflare Pages
+docs/ ──> zensical build ──> site/ (then rm site/assets/pdfs) ──> Cloudflare Pages
 docs/assets/pdfs/ ──> wrangler r2 object put --remote ──> R2 nanodocs-pdfs
 /assets/pdfs/* ──> functions/assets/pdfs/[[path]].js ──> env.PDFS (R2)
 ```
 
-Pages has a **25 MiB per-file** limit. PDFs stay on disk for `mkdocs serve`
+Pages has a **25 MiB per-file** limit. PDFs stay on disk for `zensical serve`
 and `--strict`; production serves them from the private R2 bucket
 `nanodocs-pdfs` via the `PDFS` binding. Do not put PDFs in the Pages
 artifact. Do not run `./deploy.sh` (legacy GitHub Pages).
@@ -38,7 +38,7 @@ artifact. Do not run `./deploy.sh` (legacy GitHub Pages).
    script — then re-run the sync. Hand edits are silently overwritten.
 3. **Verification gates.** After Python changes: `uv run ruff check .` and
    `uv run ruff format .`. After any docs/config change:
-   `uv run mkdocs build --strict` must pass (it validates all internal links).
+   `uv run zensical build --strict` must pass (it validates all internal links).
 4. **Dependencies via `uv` only** (`uv add`, `uv add --group dev`). Never raw pip.
 
 ## Commands
@@ -47,15 +47,15 @@ artifact. Do not run `./deploy.sh` (legacy GitHub Pages).
 uv run python scripts/sync_gdocs.py tools chem policy    # sync everything
 uv run python scripts/sync_gdocs.py tools --category Deposition
 uv run python scripts/sync_gdocs.py tools --only "AJA Sputter"
-uv run mkdocs serve                                      # http://127.0.0.1:8000/
-uv run mkdocs build --strict                             # required gate
+uv run zensical serve                                    # http://127.0.0.1:8000/
+uv run zensical build --strict                           # required gate
 # After a PDF changes, upload that key to R2 (user-run; --remote is required):
 npx wrangler r2 object put nanodocs-pdfs/<tools|chem|policy>/<file>.pdf \
   --file=docs/assets/pdfs/<same> --content-type=application/pdf --remote
 ```
 
 A push to `main` deploys Pages. Cloudflare build command:
-`mkdocs build --strict && rm -rf site/assets/pdfs`. Binding and bucket are
+`zensical build --strict && rm -rf site/assets/pdfs`. Binding and bucket are
 in `wrangler.jsonc` (`PDFS` → `nanodocs-pdfs`).
 
 The sync needs network access to `docs.google.com` (sandboxes may need full
@@ -72,8 +72,13 @@ Defined in `scripts/sync_gdocs.py`:
   Non-matching filenames go in `TOOL_PAGE_OVERRIDES`.
 - **Chem / policy**: explicit name → path maps (`CHEM_PAGE_MAP`,
   `POLICY_PAGE_MAP`). A doc absent from the map is skipped with a log line.
-- New pages must also be added to the section's `.nav.yml`
-  (awesome-nav plugin; nav files live next to the content).
+- New pages must also be added to the `nav:` tree in `mkdocs.yml`.
+  Zensical does not read awesome-nav `.nav.yml` files yet — do not
+  recreate those files. Nested tools are indented children under the
+  parent path (promote `slug.md` → `slug/index.md`). The old `.nav.yml`
+  tree is in git history if Zensical later maps the plugin.
+- Keep `mkdocs.yml`. Do not add `zensical.toml` until they ship a
+  conversion tool.
 - The sync preserves an existing page's H1, so renaming a page's on-site title
   is a one-time hand edit of the H1 that survives future syncs.
 
@@ -91,7 +96,7 @@ synced page renders oddly, check against this list before changing the script:
 | Empty heading lines (styling leftovers) | Stripped |
 | Headings indented inside lists render as literal text / code blocks | Dedented by `_dedent_nested_headings` |
 | Nested list items indented by parent marker width (2–4 spaces); Python-Markdown needs 4 per level, so lists render flat | Re-indented by `_normalize_list_indent` |
-| Body sections authored as Heading 1 become siblings of the page's H1 title, emptying Material's sidebar TOC | All headings demoted one level by `_demote_body_headings` when a body H1 exists |
+| Body sections authored as Heading 1 become siblings of the page's H1 title, emptying the sidebar TOC | All headings demoted one level by `_demote_body_headings` when a body H1 exists |
 | "AI-generated content may be incorrect" alt-text boilerplate | Stripped |
 
 Image files are content-hash named, so re-syncs are idempotent and identical
@@ -103,7 +108,6 @@ they're harmless but can be deleted if unreferenced.
 | Path | What it is |
 | --- | --- |
 | `docs/` | Site content — generated pages plus hand-written indexes, `faq/`, `signup/`, `authoring/` |
-| `docs/**/.nav.yml` | Navigation (awesome-nav), hand-maintained |
 | `docs/assets/pdfs/` | Local PDFs (sync output). Production copies live in R2. |
 | `functions/assets/pdfs/` | Pages Function proxying `/assets/pdfs/*` to R2 |
 | `wrangler.jsonc` | Pages + R2 binding (`PDFS`) |
@@ -111,8 +115,8 @@ they're harmless but can be deleted if unreferenced.
 | `scripts/download_*_pdfs.py` | Legacy, superseded by the sync; slated for removal |
 | `docs/assets/pdfjs/` | Legacy in-page PDF viewer; unused, kept for now |
 | `docs/robots.txt`, `docs/google*.html` | Search Console / crawlers; do not delete the google HTML file |
-| `mkdocs.yml` | Site config; `site_url` is `https://nanodocs.pages.dev` |
-| `overrides/` | Theme customizations |
+| `mkdocs.yml` | Site config and `nav:` tree (Zensical modern; `site_url` is `https://nanodocs.pages.dev`) |
+| `overrides/` | Theme extras: PDF-link pills; slate `--md-default-bg-color` lift only |
 | `plans/` | Dated, phased work plans with review gates (see `.cursor/rules/plan-files.mdc`) |
 | `.cursor/rules/`, `.cursor/commands/` | Agent guardrails and workflows |
 
