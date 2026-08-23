@@ -13,6 +13,9 @@ import { z } from "zod";
 const MODEL = "@cf/zai-org/glm-4.7-flash";
 const MAX_QUERY_CHARS = 500;
 const MAX_RESULTS = 8;
+// Hard cap enforced in code — the prompt alone does not stop the model
+// from looping on searchDocs, and each call is a slow remote round trip.
+const MAX_SEARCHES_PER_TURN = 2;
 const MAX_TURNS_PER_MINUTE = 20;
 const MAX_PAGE_HINT_CHARS = 300;
 
@@ -39,7 +42,9 @@ function corsHeadersFor(request: Request): HeadersInit | false {
 }
 
 const SYSTEM_PROMPT = `You are the ASRC NanoDocs assistant. Answer only from
-chunks returned by the searchDocs tool. Cite the source URL for each claim.
+chunks returned by the searchDocs tool. Cite the source URL for each claim,
+copying the URL exactly as it appears in the search results. Cite only pages
+you actually used — never mention or list pages you did not use.
 Call searchDocs at least once. A second search is allowed if you need a
 tighter query; do not search a third time. Think if it helps, then answer.
 If searchDocs returns nothing useful, say you do not know — do not invent
@@ -112,6 +117,7 @@ export class ChatAgent extends AIChatAgent<Env> {
 
     const workersai = createWorkersAI({ binding: this.env.AI });
     const docsSearch = this.env.DOCS_SEARCH;
+    let searchesThisTurn = 0;
 
     // Optional hint from the site widget: which page the visitor is on.
     // Context only — the system prompt still demands corpus-wide search.
@@ -143,6 +149,13 @@ export class ChatAgent extends AIChatAgent<Env> {
               .describe("The search query, usually the user's question")
           }),
           execute: async ({ query }) => {
+            if (searchesThisTurn >= MAX_SEARCHES_PER_TURN) {
+              console.log(
+                `searchDocs query=${JSON.stringify(query)} BLOCKED (limit ${MAX_SEARCHES_PER_TURN}/turn)`
+              );
+              return "Search limit reached for this turn. Answer now using only the chunks already retrieved; if they are not enough, say you do not know.";
+            }
+            searchesThisTurn += 1;
             const results = await docsSearch.search({
               messages: [{ role: "user", content: query }],
               ai_search_options: {
