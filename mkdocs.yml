@@ -87,6 +87,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
   # Same-origin sessionStorage that PDF.js reads inside the viewer iframe
   - javascripts/pdfjs-config.js
+  # Site chat widget — bundle built by `npm run build:widget` in agent/
+  # (source: agent/widget/chat-widget.js); talks to the nanodocs-agent Worker
+  - javascripts/chat-widget.js
 
 plugins:
   - search
@@ -168,5 +171,6 @@ extra:
 # Served from overrides/stylesheets/ (theme custom_dir static files)
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/chat-widget.css
 
 copyright: "© 2025–2026 ASRC Nanofabrication Facility"

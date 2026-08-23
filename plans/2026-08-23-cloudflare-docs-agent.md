@@ -1,7 +1,7 @@
 # Add a site-wide docs chat via Cloudflare Agents and AI Search
 
 **Date:** 2026-08-23
-**Status:** Phase C in progress — drop Material nav from the crawl
+**Status:** Phase D done — awaiting sign-off (local widget click-through)
 **Branch:** none yet (no repo code until Phase B)
 
 ## Description
@@ -244,23 +244,40 @@ over SOP body for generic tool questions.
 
 ### Phase D — Chat window on NanoDocs (local)
 
-- [ ] Vanilla JS/CSS in `overrides/` / `extra_javascript` / `extra_css`.
+- [x] Vanilla JS/CSS in `overrides/` / `extra_javascript` / `extra_css`.
       Floating control opens a **site-global** window (not a per-page
       TOC companion). Conversation id in `sessionStorage`; mount outside
-      Material's swapped content and re-attach on `document$`
-- [ ] Transport: `AgentClient` to the Worker `host` (local wrangler URL
-      in dev, workers.dev or custom host later). Streaming tokens +
-      citation cards from tool results
-- [ ] Current page URL sent as optional context only — must not scope
-      search to that page
-- [ ] Theme (light/dark), mobile, failure states (Worker down, rate
-      limited, empty retrieval)
-- [ ] `uv run zensical build --strict` passes
+      Material's swapped content and re-attach on `document$`. Source is
+      `agent/widget/chat-widget.js`; `npm run build:widget` (esbuild)
+      emits the committed bundle `overrides/javascripts/chat-widget.js`.
+- [x] Transport: `AgentClient` to the Worker `host` (2026-08-23). Host
+      map in the widget has only localhost/127.0.0.1 → `localhost:5173`;
+      unknown origins render no widget (production host is Phase E).
+      Streams `cf_agent_use_chat_response` chunks; citation cards parsed
+      from `searchDocs` tool output URLs (never GLM's prose), rewritten
+      to same-origin paths. Client-built tool parts must carry
+      `toolCallId`/`input`/`output` or the next turn's persisted list
+      fails Zod validation server-side (found and fixed in testing);
+      after each turn the widget re-syncs from `get-messages`.
+- [x] Current page URL sent as optional context only (`page` field →
+      `options.body` → one system-prompt line); search stays corpus-wide
+- [x] Theme (light/dark via `--md-*` vars), mobile (full-screen panel
+      ≤30em), failure states: Worker down shows "Assistant unreachable —
+      retrying…" (verified with the dev server killed); 429 streams back
+      as assistant text; empty retrieval → model says it doesn't know.
+      CORS tightened from wildcard to allowlist (127.0.0.1:8000,
+      localhost:8000, nanodocs.pages.dev).
+- [x] `uv run zensical build --strict` passes (plus oxfmt/oxlint/tsc in
+      `agent/`)
 
 ### Phase D review gate — STOP for sign-off
 
 - [ ] Local click-through: ask, follow up, navigate mid-answer, dark
-      mode, mobile, open a citation
+      mode, mobile, open a citation. (Headless-browser pass 2026-08-23:
+      14/14 checks — ask, mid-answer instant nav, follow-up in-thread,
+      citation cards + same-origin click, dark mode, full-reload history
+      restore, mobile panel + answer, offline state. User click-through
+      still pending.)
 - [ ] Decision: UX good enough to ship?
 
 ### Phase E — Ship on nanodocs.pages.dev

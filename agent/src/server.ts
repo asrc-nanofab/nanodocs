@@ -14,6 +14,29 @@ const MODEL = "@cf/zai-org/glm-4.7-flash";
 const MAX_QUERY_CHARS = 500;
 const MAX_RESULTS = 8;
 const MAX_TURNS_PER_MINUTE = 20;
+const MAX_PAGE_HINT_CHARS = 300;
+
+// Origins allowed to call this Worker cross-origin: the local Zensical
+// preview and the live docs site. The Vite playground on :5173 is
+// same-origin with the Worker in dev, so it needs no CORS headers.
+const ALLOWED_ORIGINS = new Set([
+  "http://127.0.0.1:8000",
+  "http://localhost:8000",
+  "https://nanodocs.pages.dev"
+]);
+
+function corsHeadersFor(request: Request): HeadersInit | false {
+  const origin = request.headers.get("Origin");
+  if (!origin || !ALLOWED_ORIGINS.has(origin)) {
+    return false;
+  }
+  return {
+    "Access-Control-Allow-Origin": origin,
+    "Access-Control-Allow-Methods": "GET, POST, HEAD, OPTIONS",
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Max-Age": "86400"
+  };
+}
 
 const SYSTEM_PROMPT = `You are the ASRC NanoDocs assistant. Answer only from
 chunks returned by the searchDocs tool. Cite the source URL for each claim.
@@ -90,9 +113,19 @@ export class ChatAgent extends AIChatAgent<Env> {
     const workersai = createWorkersAI({ binding: this.env.AI });
     const docsSearch = this.env.DOCS_SEARCH;
 
+    // Optional hint from the site widget: which page the visitor is on.
+    // Context only — the system prompt still demands corpus-wide search.
+    const pageHint =
+      typeof options?.body?.page === "string"
+        ? options.body.page.slice(0, MAX_PAGE_HINT_CHARS)
+        : undefined;
+    const system = pageHint
+      ? `${SYSTEM_PROMPT}\nThe visitor is currently reading ${pageHint} — context only; still search the whole corpus.`
+      : SYSTEM_PROMPT;
+
     const result = streamText({
       model: workersai(MODEL),
-      system: SYSTEM_PROMPT,
+      system,
       messages: pruneMessages({
         messages: await convertToModelMessages(this.messages),
         toolCalls: "before-last-2-messages",
@@ -137,8 +170,9 @@ export class ChatAgent extends AIChatAgent<Env> {
 export default {
   async fetch(request: Request, env: Env) {
     return (
-      (await routeAgentRequest(request, env, { cors: true })) ||
-      new Response("Not found", { status: 404 })
+      (await routeAgentRequest(request, env, {
+        cors: corsHeadersFor(request)
+      })) || new Response("Not found", { status: 404 })
     );
   }
 } satisfies ExportedHandler<Env>;
