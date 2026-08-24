@@ -905,7 +905,8 @@ const partysocket = new PartySocket({
     root.id = ROOT_ID;
     root.innerHTML = `
     <button class="ndc-fab" type="button" aria-label="Ask NanoDocs" aria-expanded="false">
-      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.7c0 2.6 1.3 4.9 3.4 6.5-.2 1-.8 2.5-1.9 3.4 1.9.1 3.9-.6 5.3-1.5.7-.2 1.5-.3 2.2-.3 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.7c0 2.6 1.3 4.9 3.4 6.5-.2 1-.8 2.5-1.9 3.4 1.9.1 3.9-.6 5.3-1.5.7-.2 1.5-.3 2.2-.3 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/></svg>
+      <span class="ndc-fab-label">Ask NanoDocs</span>
     </button>
     <section class="ndc-panel" role="dialog" aria-label="NanoDocs assistant" hidden>
       <header class="ndc-header">
@@ -1136,7 +1137,9 @@ const partysocket = new PartySocket({
       });
       client.addEventListener("open", () => {
         setStatus("");
-        client.send(JSON.stringify({ type: "cf_agent_stream_resume_request" }));
+        if (pending) {
+          client.send(JSON.stringify({ type: "cf_agent_stream_resume_request" }));
+        }
       });
       client.addEventListener("close", () => {
         if (pending) {
@@ -1216,19 +1219,26 @@ const partysocket = new PartySocket({
           activity = "Thinking\u2026";
           break;
         }
-        case "error":
-          setStatus(chunk.errorText || "Something went wrong \u2014 try again.");
+        case "error": {
+          const err = chunk.errorText || "Something went wrong \u2014 try again.";
+          setStatus(err);
+          if (!messageText(msg)) {
+            msg.parts.push({ type: "text", text: err });
+          }
           break;
+        }
         default:
           break;
       }
       updateStreaming();
     }
-    function finishTurn() {
+    function finishTurn(keepStatus) {
       pending = false;
       streamingMsg = null;
       activity = "";
-      setStatus("");
+      if (!keepStatus) {
+        setStatus("");
+      }
       render();
       const localLen = messages.length;
       setTimeout(async () => {
@@ -1257,10 +1267,13 @@ const partysocket = new PartySocket({
           break;
         case "cf_agent_use_chat_response":
           if (frame.error) {
-            setStatus(
-              typeof frame.body === "string" && frame.body ? frame.body : "Something went wrong \u2014 try again."
-            );
-            finishTurn();
+            const err = typeof frame.body === "string" && frame.body ? frame.body : "Something went wrong \u2014 try again.";
+            const msg = streamingMsg || beginAssistantMessage();
+            if (!messageText(msg)) {
+              msg.parts.push({ type: "text", text: err });
+            }
+            finishTurn(true);
+            setStatus(err);
             break;
           }
           if (frame.body) {
