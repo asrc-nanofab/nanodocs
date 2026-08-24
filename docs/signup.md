@@ -32,9 +32,9 @@ After your approval, you will need to take all of the following steps to be able
     2. [Waste Management Training](https://youtu.be/pYW4ZtHxRMI)    
     3. [OSHA \- Hazard Communication GHS & RTK](https://youtu.be/ZKWMeoIEglY)   
 3. Review the Lab Manuals and Policies.  
-    1. [Lab Manual – Rules of Conduct and Use (PDF)](https://asrc-nanofab.github.io/nanodocs/policy/manual/)  
-    2. [Lab Manual – Safety (PDF)](https://asrc-nanofab.github.io/nanodocs/policy/safety/)  
-    3. [Policy for Suspension of Access and After-Hours Access](https://asrc-nanofab.github.io/nanodocs/policy/suspension/)  
+    1. [Lab Manual – Rules of Conduct and Use](https://nanodocs.pages.dev/policy/manual/)   
+    2. [Lab Manual – Safety](https://nanodocs.pages.dev/policy/safety/)  
+    3. [Policy for Suspension of Access and After-Hours Access](https://nanodocs.pages.dev/policy/suspension/)  
 4. Complete the [Orientation Form](https://docs.google.com/forms/d/e/1FAIpQLSdmlcT5uSM8vq7lWvp2LH0JCMJiFRG6ajrnOJ4Tb6Dp5joJCA/viewform?usp=dialog)   
 5. Complete the [Cleanroom Orientation.](https://docs.google.com/spreadsheets/d/1eTDoiOj2v4ZV_Sci4wR42tAdzQhMwUle_sh5gQwWvhU/edit?usp=sharing) Orientation is conducted once a week in person by Salam Garaway. Users must sign-up for orientation by 12:00PM the day before the scheduled orientation.  
 6. Contact the appropriate [staff member](https://asrc.gc.cuny.edu/facilities/nanofabrication/#training) to schedule tool training.
