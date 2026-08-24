@@ -905,7 +905,8 @@ const partysocket = new PartySocket({
     root.id = ROOT_ID;
     root.innerHTML = `
     <button class="ndc-fab" type="button" aria-label="Ask NanoDocs" aria-expanded="false">
-      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.7c0 2.6 1.3 4.9 3.4 6.5-.2 1-.8 2.5-1.9 3.4 1.9.1 3.9-.6 5.3-1.5.7-.2 1.5-.3 2.2-.3 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 3C6.5 3 2 6.9 2 11.7c0 2.6 1.3 4.9 3.4 6.5-.2 1-.8 2.5-1.9 3.4 1.9.1 3.9-.6 5.3-1.5.7-.2 1.5-.3 2.2-.3 5.5 0 10-3.9 10-8.7S17.5 3 12 3z"/></svg>
+      <span class="ndc-fab-label">Ask NanoDocs</span>
     </button>
     <section class="ndc-panel" role="dialog" aria-label="NanoDocs assistant" hidden>
       <header class="ndc-header">
