@@ -1136,7 +1136,9 @@ const partysocket = new PartySocket({
       });
       client.addEventListener("open", () => {
         setStatus("");
-        client.send(JSON.stringify({ type: "cf_agent_stream_resume_request" }));
+        if (pending) {
+          client.send(JSON.stringify({ type: "cf_agent_stream_resume_request" }));
+        }
       });
       client.addEventListener("close", () => {
         if (pending) {
@@ -1216,19 +1218,26 @@ const partysocket = new PartySocket({
           activity = "Thinking\u2026";
           break;
         }
-        case "error":
-          setStatus(chunk.errorText || "Something went wrong \u2014 try again.");
+        case "error": {
+          const err = chunk.errorText || "Something went wrong \u2014 try again.";
+          setStatus(err);
+          if (!messageText(msg)) {
+            msg.parts.push({ type: "text", text: err });
+          }
           break;
+        }
         default:
           break;
       }
       updateStreaming();
     }
-    function finishTurn() {
+    function finishTurn(keepStatus) {
       pending = false;
       streamingMsg = null;
       activity = "";
-      setStatus("");
+      if (!keepStatus) {
+        setStatus("");
+      }
       render();
       const localLen = messages.length;
       setTimeout(async () => {
@@ -1257,10 +1266,13 @@ const partysocket = new PartySocket({
           break;
         case "cf_agent_use_chat_response":
           if (frame.error) {
-            setStatus(
-              typeof frame.body === "string" && frame.body ? frame.body : "Something went wrong \u2014 try again."
-            );
-            finishTurn();
+            const err = typeof frame.body === "string" && frame.body ? frame.body : "Something went wrong \u2014 try again.";
+            const msg = streamingMsg || beginAssistantMessage();
+            if (!messageText(msg)) {
+              msg.parts.push({ type: "text", text: err });
+            }
+            finishTurn(true);
+            setStatus(err);
             break;
           }
           if (frame.body) {

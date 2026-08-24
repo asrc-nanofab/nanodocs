@@ -360,6 +360,9 @@ function Chat() {
     status
   } = useAgentChat({
     agent,
+    // Resume replays a finished remote AI stream through wrangler's
+    // proxy, which logs "internal error; reference = …" after every turn.
+    resume: false,
     experimental_throttle: 100,
     onToolCall: async ({ toolCall, addToolOutput }) => {
       if (toolCall.toolName === "getUserTimezone") {

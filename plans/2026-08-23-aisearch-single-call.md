@@ -1,11 +1,13 @@
 # Cut chat latency by moving answer generation into AI Search (one call)
 
 **Date:** 2026-08-23
-**Status:** Draft — deliberately gated on Phase E of
-[`2026-08-23-cloudflare-docs-agent.md`](2026-08-23-cloudflare-docs-agent.md):
-deploy and evaluate the current tool-loop chat in production **before**
-changing the architecture.
-**Branch:** TBD (experiment branch when Phase B starts)
+**Status:** Phase B in progress — both paths wired behind the `CHAT_MODE`
+toggle and smoke-tested locally; next: A/B generation models via the
+dashboard picker. (Phase A baseline was skipped by user decision — the
+GLM latency was judged real enough to prototype now.)
+**Branch:** none — the toggle makes an experiment branch unnecessary;
+both paths coexist in `agent/src/server.ts`, production stays on
+`CHAT_MODE=toolloop` until Phase B signs off.
 
 ## Description
 
@@ -61,8 +63,10 @@ swap models with no code change, no redeploy.
   query refinement). Mitigation to test: AI Search query rewriting —
   but that adds its own model call; only enable if A/B shows it earns
   its latency.
-- Multi-turn context: confirm how much conversation history
-  `aiSearch()` accepts (messages vs single query + our own condensing).
+- Multi-turn context: resolved — `chatCompletions()` accepts the full
+  messages array; we send the recent window flattened to text-only
+  turns. Verified with a bare follow-up question ("do I still need the
+  face shield…?") answered correctly in context, first token 2.3 s.
   The DO still holds full history either way.
 - Do **not** also enable reranking/similarity-cache while measuring —
   change one variable at a time.
@@ -85,17 +89,43 @@ swap models with no code change, no redeploy.
 
 ### Phase B — Prototype the single-call path
 
-- [ ] Experiment branch. In `onChatMessage`: replace the `streamText`
-      tool loop with one streaming `aiSearch()` call (system prompt via
-      option; conversation history per the API's shape; stream tokens
-      into the same UI-message protocol the widget already speaks)
-- [ ] Emit retrieved chunks in a shape the widget's citation parser
-      accepts (keep the prose-link filtering behavior)
-- [ ] Local A/B against the tool loop: same question set, measure
-      first-token + total latency, compare answer quality and citation
-      accuracy side by side
-- [ ] Try 2–3 generation models via the dashboard picker (Llama 3.3
-      fast, GLM 4.7-flash, Qwen3-30B) — no code changes between runs
+- [x] Two-mode toggle instead of an experiment branch: `CHAT_MODE` var
+      in `wrangler.jsonc` (`"toolloop"` default / `"aisearch"`), local
+      override via gitignored `agent/.dev.vars` (read at dev-server
+      start only — restart to flip). `onChatMessage` keeps the shared
+      rate limit / page hint / history window, then dispatches to
+      `#toolLoopTurn` (unchanged) or `#aiSearchTurn`.
+- [x] `#aiSearchTurn` uses the new binding's `chatCompletions()` (the
+      legacy `aiSearch()` is deprecated; we're on the new `ai_search`
+      binding). System prompt goes per-request as a `role:"system"`
+      message — **nothing to configure in the dashboard for prompts**.
+      Query rewriting / reranking / cache left off. Model deliberately
+      not passed → the dashboard Generation picker decides.
+- [x] Citations: `chatCompletions({stream:true})` emits retrieved
+      chunks as an SSE event before the answer; re-emitted as a
+      synthetic `searchDocs` tool part in the existing
+      `[n] url (score s)` format, so the widget's citation cards and
+      the persistence layer work unchanged (verified: persisted parts
+      `[step-start, tool-searchDocs, text]`).
+- [x] Smoke test both modes locally (HF PPE question, one warm run
+      each, GLM 4.7-flash on both paths):
+      | | toolloop | aisearch |
+      | --- | --- | --- |
+      | retrieval done | ~6.7 s (1st of 2 searches) | **4.8 s** |
+      | first answer token | 47.3 s | 90.7 s |
+      | total | 50.0 s | 94.0 s |
+      Retrieval + plumbing is fast; the single generation call *is*
+      the remaining latency — and it sat on GLM 4.7-flash (the
+      incident-degraded endpoint, set in the dashboard earlier today).
+      Architecture verdict deferred until a fast model is A/B'd.
+- [x] Generation-model A/B via the dashboard picker (no code changes
+      between runs; `agent/scratch-chat-test.mjs` is the throwaway
+      harness — delete after Phase B). GLM 4.7-flash: first token at
+      90.7 s and 27.5 s on two runs (degraded, high variance). Llama
+      3.3 70B fast: first token 3.9 s / 2.2 s, total 5.2 s / 4.3 s,
+      correct answers, clean citations on both. **~12–20× faster to
+      first token than the tool loop (47 s)**; user switched the
+      dashboard model to Llama. Qwen3-30B untested — optional.
 
 ### Phase B review gate — STOP for sign-off
 
