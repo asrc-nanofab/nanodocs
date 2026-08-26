@@ -128,6 +128,10 @@ broken" and none of them were the same problem:
 
 ## Step 6 — Deploy
 
+**2026-08-26:** this section was easy to forget. The runbook is now
+`notes/deploying-the-chat.md`. Push updates Pages only; the model
+changes only after `cd agent && npm run deploy`.
+
 Two deploys, easy to conflate:
 
 1. **The Worker**: `cd agent && npm run deploy` → live at

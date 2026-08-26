@@ -957,22 +957,62 @@ const partysocket = new PartySocket({
         return null;
       }
     }
+    function normalizeCite(raw) {
+      const trimmed = String(raw || "").replace(/[.,;:!?)*]+$/, "");
+      if (!trimmed) return null;
+      if (trimmed.startsWith("/")) {
+        return trimmed.split(/[?#]/)[0] || null;
+      }
+      return cleanDocsUrl(trimmed);
+    }
+    function citationMatches(cited, retrieved) {
+      const norm = (p) => p === "/" ? "/" : p.replace(/\/+$/, "") || "/";
+      const c = norm(cited);
+      const r = norm(retrieved);
+      return c === r || c.startsWith(`${r}/`);
+    }
     function renderInline(text) {
       let html = escapeHtml(text);
       html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
       html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-      html = html.replace(
-        /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
-        (m, label, url) => {
-          const href = cleanDocsUrl(url);
-          return href ? `<a href="${href}">${label}</a>` : label;
-        }
-      );
-      html = html.replace(/(?<!["'=(\]])(https?:\/\/[^\s<)]+)/g, (m, url) => {
-        const href = cleanDocsUrl(url);
-        return href ? `<a href="${href}">${href}</a>` : m;
-      });
       return html;
+    }
+    function isCiteOnlyLine(line) {
+      const t = line.trim();
+      return /^\*{0,2}Source:\*{0,2}\s+\S+/i.test(t) || /^https?:\/\/\S+$/i.test(t) || /^\/[\w./-]+\/?$/.test(t) || /^\[[^\]]*\]\((https?:\/\/[^)]+|\/[^)]+)\)$/.test(t);
+    }
+    function isListLine(line) {
+      return /^\s*(?:[-*]|\d+[.)])\s+/.test(line);
+    }
+    function stripCiteTokens(line) {
+      return line.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/g, "$1").replace(/https?:\/\/[^\s<)]+/g, "").replace(/\s*\*{0,2}Source:\*{0,2}\s+\S+/gi, "").replace(/[ \t]{2,}/g, " ").replace(/[ \t]+([.,;:!?])/g, "$1").replace(/[ \t]+$/g, "");
+    }
+    function stripCitationsForDisplay(text) {
+      const kept = [];
+      for (const line of text.split("\n")) {
+        if (isCiteOnlyLine(line)) continue;
+        const cleaned = stripCiteTokens(line);
+        if (cleaned.trim() === "" && line.trim() !== "") continue;
+        kept.push(cleaned);
+      }
+      const squeezed = [];
+      for (const line of kept) {
+        if (line.trim() === "" && squeezed.length && squeezed[squeezed.length - 1].trim() === "") {
+          continue;
+        }
+        squeezed.push(line);
+      }
+      while (squeezed.length && squeezed[squeezed.length - 1].trim() === "") {
+        squeezed.pop();
+      }
+      const out = [];
+      for (let i = 0; i < squeezed.length; i++) {
+        if (squeezed[i].trim() === "" && out.length && isListLine(out[out.length - 1]) && i + 1 < squeezed.length && isListLine(squeezed[i + 1])) {
+          continue;
+        }
+        out.push(squeezed[i]);
+      }
+      return out.join("\n");
     }
     function renderMarkdown(text) {
       const lines = text.split("\n");
@@ -1046,9 +1086,24 @@ const partysocket = new PartySocket({
     }
     function citedInProse(msg) {
       const hrefs = /* @__PURE__ */ new Set();
-      for (const match of messageText(msg).matchAll(/https?:\/\/[^\s<)\]]+/g)) {
-        const href = cleanDocsUrl(match[0].replace(/[.,;:!?]+$/, ""));
+      const text = messageText(msg);
+      const add = (raw) => {
+        const href = normalizeCite(raw);
         if (href) hrefs.add(href);
+      };
+      for (const match of text.matchAll(
+        /\[([^\]]*)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/g
+      )) {
+        add(match[2]);
+      }
+      for (const match of text.matchAll(/https?:\/\/[^\s<)\]]+/g)) {
+        add(match[0]);
+      }
+      for (const line of text.split("\n")) {
+        const src = line.match(/^\s*\*{0,2}Source:\*{0,2}\s+(\S+)/i);
+        if (src) add(src[1]);
+        const onlyPath = line.trim().match(/^(\/[\w./-]+\/?)$/);
+        if (onlyPath) add(onlyPath[1]);
       }
       return hrefs;
     }
@@ -1070,7 +1125,7 @@ const partysocket = new PartySocket({
     }
     function assistantBody(msg) {
       const text = messageText(msg);
-      return msg === streamingMsg && text === "" ? `<span class="ndc-dots"><i></i><i></i><i></i></span>${activity ? `<span class="ndc-activity">${escapeHtml(activity)}</span>` : ""}` : renderMarkdown(text);
+      return msg === streamingMsg && text === "" ? `<span class="ndc-dots"><i></i><i></i><i></i></span>${activity ? `<span class="ndc-activity">${escapeHtml(activity)}</span>` : ""}` : renderMarkdown(stripCitationsForDisplay(text));
     }
     function render(forcePin = false) {
       const pinned = forcePin || isPinned();
@@ -1083,10 +1138,10 @@ const partysocket = new PartySocket({
         } else if (msg.role === "assistant") {
           let cardHrefs = [];
           if (msg !== streamingMsg) {
-            const retrieved = extractCitations(msg);
             const used = citedInProse(msg);
-            const cited = retrieved.filter((href) => used.has(href));
-            cardHrefs = cited.length ? cited : retrieved;
+            cardHrefs = extractCitations(msg).filter(
+              (href) => [...used].some((cited) => citationMatches(cited, href))
+            );
           }
           const cards = cardHrefs.map((href) => {
             const { title, trail } = citationLabel(href);
