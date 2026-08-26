@@ -291,8 +291,6 @@ GitHub Pages for this repo is **unpublished**. Leave it that way.
 | `functions/assets/pdfs/` | Pages Function: `/assets/pdfs/…` → R2 |
 | `wrangler.jsonc` | Pages project name, `site/` output, `PDFS` → `nanodocs-pdfs` |
 | `scripts/sync_gdocs.py` | The Google Docs → site sync (see above) |
-| `scripts/download_*_pdfs.py` | **Legacy** — superseded by `sync_gdocs.py`; slated for removal |
-| `docs/assets/pdfjs/` | **Legacy** — in-page PDF viewer from the iframe era; no longer used by any page, kept for the time being |
 | `docs/robots.txt` | Allows crawlers; points at `/sitemap.xml` |
 | `docs/google*.html` | Google Search Console verification file (do not delete) |
 | `agent/` | Sibling Cloudflare Worker: `ChatAgent` Durable Object + `searchDocs` tool (the docs chat brain; deployed separately from Pages) |

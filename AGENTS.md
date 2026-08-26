@@ -112,8 +112,6 @@ they're harmless but can be deleted if unreferenced.
 | `functions/assets/pdfs/` | Pages Function proxying `/assets/pdfs/*` to R2 |
 | `wrangler.jsonc` | Pages + R2 binding (`PDFS`) |
 | `scripts/sync_gdocs.py` | The sync (single source of sync behavior) |
-| `scripts/download_*_pdfs.py` | Legacy, superseded by the sync; slated for removal |
-| `docs/assets/pdfjs/` | Legacy in-page PDF viewer; unused, kept for now |
 | `docs/robots.txt`, `docs/google*.html` | Search Console / crawlers; do not delete the google HTML file |
 | `mkdocs.yml` | Site config and `nav:` tree (Zensical modern; `site_url` is `https://nanodocs.pages.dev`) |
 | `overrides/` | Theme extras: PDF-link pills; slate `--md-default-bg-color` lift only |

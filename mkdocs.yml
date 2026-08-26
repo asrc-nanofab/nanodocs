@@ -85,8 +85,6 @@ extra_javascript:
   # lazily fetches it from unpkg at runtime, which can silently fail and leave
   # the raw code block visible until a reload
   - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
-  # Same-origin sessionStorage that PDF.js reads inside the viewer iframe
-  - javascripts/pdfjs-config.js
   # Site chat widget — bundle built by `npm run build:widget` in agent/
   # (source: agent/widget/chat-widget.js); talks to the nanodocs-agent Worker
   - javascripts/chat-widget.js
