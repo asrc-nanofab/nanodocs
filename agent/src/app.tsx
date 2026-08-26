@@ -1,4 +1,11 @@
-import { Suspense, useCallback, useState, useEffect, useRef } from "react";
+import {
+  Suspense,
+  useCallback,
+  useState,
+  useEffect,
+  useLayoutEffect,
+  useRef
+} from "react";
 import { useAgent } from "agents/react";
 import { useAgentChat } from "@cloudflare/ai-chat/react";
 import { getToolName, isToolUIPart, type UIMessage } from "ai";
@@ -265,7 +272,8 @@ function Chat() {
   const [showDebug, setShowDebug] = useState(false);
   const [attachments, setAttachments] = useState<Attachment[]>([]);
   const [isDragging, setIsDragging] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesRef = useRef<HTMLDivElement>(null);
+  const forcePinRef = useRef(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const toasts = useKumoToastManager();
@@ -379,9 +387,21 @@ function Chat() {
 
   const isStreaming = status === "streaming" || status === "submitted";
 
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  // Live measure before React commits the grown bubble. A cached
+  // scroll-event flag races the 100ms token throttle and yanks down.
+  const scroller = messagesRef.current;
+  const pinned =
+    forcePinRef.current ||
+    (scroller
+      ? scroller.scrollHeight - scroller.scrollTop - scroller.clientHeight < 40
+      : true);
+
+  useLayoutEffect(() => {
+    const el = messagesRef.current;
+    if (!el || !pinned) return;
+    forcePinRef.current = false;
+    el.scrollTop = el.scrollHeight;
+  }, [messages, pinned]);
 
   // Re-focus the input after streaming ends
   useEffect(() => {
@@ -464,6 +484,7 @@ function Chat() {
     for (const att of attachments) URL.revokeObjectURL(att.preview);
     setAttachments([]);
 
+    forcePinRef.current = true;
     sendMessage({ role: "user", parts });
     if (textareaRef.current) textareaRef.current.style.height = "auto";
   }, [input, attachments, isStreaming, sendMessage]);
@@ -698,7 +719,7 @@ function Chat() {
       </header>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto">
+      <div ref={messagesRef} className="flex-1 overflow-y-auto">
         <div className="max-w-3xl mx-auto px-5 py-6 space-y-5">
           {messages.length === 0 && (
             <Empty
@@ -718,6 +739,7 @@ function Chat() {
                       size="sm"
                       disabled={isStreaming}
                       onClick={() => {
+                        forcePinRef.current = true;
                         sendMessage({
                           role: "user",
                           parts: [{ type: "text", text: prompt }]
@@ -844,8 +866,6 @@ function Chat() {
               </div>
             );
           })}
-
-          <div ref={messagesEndRef} />
         </div>
       </div>
 
