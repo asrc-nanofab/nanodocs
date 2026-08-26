@@ -9,7 +9,6 @@ authors = [
 dependencies = [
     "ghp-import==2.1.0",
     "ipykernel==6.29.5",
-    "pandas>=2.3.0",
     "requests>=2.32.4",
     "pillow>=12.3.0",
     "zensical>=0.0.57",
