@@ -1,7 +1,7 @@
 # Publish NanoKnow from CI and a facility-ops Reload button
 
 **Date:** 2026-08-29
-**Status:** Phase A done — awaiting sign-off
+**Status:** Phase B in progress
 **Branch:** none yet
 
 ## Description
@@ -123,20 +123,20 @@ facility-ops need the last **published** export SHA-1 on `main`.
 First time anything other than a person pushes generated content to
 `main`. Secrets and a dry “idle” run come **before** a live content push.
 
-- [ ] Add `.github/workflows/sync-and-publish.yml`.
+- [x] Add `.github/workflows/sync-and-publish.yml`.
       Triggers: `workflow_dispatch` **and** `schedule: cron: "*/15 * * * *"`.
       Leave the schedule in the file from the start, but do not merge to
       `main` until the idle dispatch in the review gate has proven
       no-commit. Dispatch inputs: `sections` (default
       `tools chem policy`), `only` (optional, exact registry name).
       Scheduled runs always sync all three sections (no `only`).
-- [ ] Job: checkout (`fetch-depth` enough to push) → `uv sync` →
-      `uv run python scripts/sync_gdocs.py <sections> [--only …]` →
-      `uv run zensical build --strict` (fail the job if the tree would not
-      deploy) → if PDFs under `docs/assets/pdfs/` changed, `wrangler r2
-      object put --remote` for **those keys only** → if generated paths or
-      the sidecar are dirty, commit and push `main`. If the tree is clean,
-      print “unchanged” and stop.
+      Done 2026-08-29: workflow + `scripts/ci_publish.sh`. Push target is
+      `GITHUB_REF_NAME` (the branch the job ran on), not hardcoded
+      `main`, so a dispatch from this branch cannot overwrite `main`.
+      Cron still only fires once the file is on the default branch.
+- [x] Job: checkout → `uv` → sync → `zensical build --strict` → R2 for
+      changed PDFs only → commit generated paths + sidecar or print
+      `unchanged`. `site/`, `.venv/`, Wrangler cache stay untracked.
 - [ ] Permissions: `contents: write`. If branch protection on `main`
       blocks `GITHUB_TOKEN`, stop and use a fine-grained PAT stored as a
       secret — do not weaken protection in this plan.
