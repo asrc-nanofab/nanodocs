@@ -10,7 +10,7 @@
 
 ---
 
-## **Facility and Contact Information** {#facility-and-contact-information}
+## **Facility and Contact Information**
 
 **Disco Dicing Saw – DAD3220 SOP** 
 
@@ -21,9 +21,9 @@
 | **Manager** | **Shawn Kilpatrick** |
 | **Room & Building** |  **G263, NanoFab, ASRC** |
 
-## **Section 1- Hardware Description and Principle of Operation** {#section-1--hardware-description-and-principle-of-operation}
+## **Section 1- Hardware Description and Principle of Operation**
 
-### **Disco DAD3220 Dicing Saw** {#disco-dad3220-dicing-saw}
+### **Disco DAD3220 Dicing Saw**
 
 The Disco Dicing Saw is a single spindle dicing saw, capable of handling work-pieces up to a maximum of 6” square or 6” in diameter. The system features an LCD touch panel, auto- alignment, auto-focus, and auto-kerf check functions for enhanced productivity. The 1.5 kW spindle features a shaft lock function for easy blade changes.
 
@@ -45,15 +45,15 @@ The DAD3220 operates on the principle of mechanical sawing using a rotating diam
 
 **Automatic Operation**: It can perform programmed dicing sequences using recipe settings for cut depth, blade speed, feed rate, and step size.
 
-### **Ultron UH114 Tape Mounter** {#ultron-uh114-tape-mounter}
+### **Ultron UH114 Tape Mounter**
 
 The Ultron Tape Mounter mounts wafers to dicing tape and a metal frame to be used with the Disco Dicing Saw. Diced pieces are held in place by the tape until the dicing process is complete. The mounter has an easily adjustable spring-loaded roller assembly, along with film-tensioner bars along the x- and y-axes to ensure bubble-free lamination of the film to the wafer and film frame. Additionally, the UH114 features an adjustable cutting pressure and roller pressure to accommodate various tape base materials and thicknesses. A digital temperature controller ensures consistent work stage temperatures for repeatable mounting.
 
-### **Ultron UH102 UV Release System** {#ultron-uh102-uv-release-system}
+### **Ultron UH102 UV Release System**
 
 The Ultron UV Release System exposes the dicing tape to UV radiation making the adhesive less sticky. This allows you to more easily remove your diced wafer or chip. You can vary the exposure time to get the desired stickiness after exposure.
 
-## **Section 2- Potential Hazards** {#section-2--potential-hazards}
+## **Section 2- Potential Hazards**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
@@ -61,7 +61,7 @@ The Ultron UV Release System exposes the dicing tape to UV radiation making the 
 | Mechanical  Hazard  | ![Close-up of a machine with water droplets](img/572dc515982a.png){ width="129" } | Rotating blades at very high speed can cause serious cuts or amputations.  |
 | Slips and Falls | ![A yellow triangle sign with a person falling on the floor](img/a3c57bfc1c32.png){ width="75" } | Water overspray or leaks around the tool can make the floor wet and slippery, increase the risk of falls. |
 
-## **Section 3- Routes of Exposure** {#section-3--routes-of-exposure}
+## **Section 3- Routes of Exposure**
 
 | Route | Description | Risks |
 | ----- | :---- | :---- |
@@ -70,7 +70,7 @@ Inhalation | Breathing of aerosolized wafer particles (Si, GsAs, metal oxides) V
 | ![A red circle with a hand and drops of water](img/c5718438518d.png){ width="101" } Skin Contact | Direct contact with dicing slurry, DI water Blade edges, adhesive tape and cutter | Irritation,  Allergic Cuts or abrasion |
 | ![A red circle with a logo](img/f24a3b923d0d.png){ width="100" } Eye Contact | Slurry splashes during cutting or cleaning Particles ejection from wafer or blade cracking | Eye irritation, Injury Discomfort |
 
-## **Section 4 \- Personal Protective Equipment** {#section-4---personal-protective-equipment}
+## **Section 4 \- Personal Protective Equipment**
 
 Material Requirements
 
@@ -78,9 +78,9 @@ Material Requirements
 
 **Equipment**: substrate, Ultron UV tape (Part Number: 1020R-11.0; Thickness \= 95 µm), tweezers, razor/box cutting blade and dicing blade
 
-## **Section 5- Standard Operating Procedure** {#section-5--standard-operating-procedure}
+## **Section 5- Standard Operating Procedure**
 
-### **Tape Mounter \- Mount Wafer on Film Frame** {#tape-mounter---mount-wafer-on-film-frame}
+### **Tape Mounter \- Mount Wafer on Film Frame**
 
 *![../../../Downloads/Ultron%20Tape%20Mounter.JPG](img/aeeaae4d8c4f.jpg){ width="488" }*
 
@@ -116,7 +116,7 @@ Material Requirements
 
 17. Leave the power to the tool ON.
 
-### **Start Up Tool** {#start-up-tool}
+### **Start Up Tool**
 
 1. Turn the start key switch at the top right (front) of the tool to START, then release to the ON position.  
 2. Wait for the tool to finish its boot-up cycle. *2-minutes.*
@@ -146,7 +146,7 @@ Material Requirements
 
 9. Press **C/T VAC** to turn on the vacuum.
 
-###  **Setup Device Date File** {#setup-device-date-file}
+###  **Setup Device Date File**
 
 DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
 
@@ -179,7 +179,7 @@ DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
         9. FEED SPEED: for silicon, the range is 10-20 mm/s; for glass, the range is 1-2 mm/s.  
     2. Press **ENTER** to save the data. Note: Data is not saved until you press enter and there are no yellow highlighted fields.
 
-### **Wafer Alignment** {#wafer-alignment}
+### **Wafer Alignment**
 
 1. From the DEVICE DATA page, press **FULL AUTO** at the top of the screen.  
 2. Press **MANUAL ALIGNMENT**.
@@ -213,7 +213,7 @@ DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
 
 11. After aligning θ and aligning the hairlines for CH2 and pressing **ENTER**, the system will jump back one level to the FULL AUTOMATION screen.
 
-### **Run Recipe** {#run-recipe}
+### **Run Recipe**
 
 1. Immediately following MANUAL ALIGNMENT, start cutting by pressing **START**.
 
@@ -222,7 +222,7 @@ DEPTH OF CUT \= WORK THICKNESS \+ TAPE THICKNESS – BLADE HEIGHT
 
 Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed speed, or changing the next cutting position, you cannot modify the operation unless you first abort the operation.
 
-### **Unload Sample** {#unload-sample}
+### **Unload Sample**
 
 1. When cutting is complete, the tool will play the audible alarm. Press **ALRMCLR** at the top right of the screen to stop the alarm.  
 2. Open the sliding door where the workpiece is located.
@@ -234,7 +234,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 5. Remove the workpiece. Avoid splashing water outside of the tool as the power outlet to the tool is next to the tool.  
 6. Blow off remaining water on the chuck/table and then close the door.
 
-### **Shutdown Tool** {#shutdown-tool}
+### **Shutdown Tool**
 
 1. Press **EXIT** button until you are at the MAIN MENU.
 
@@ -246,7 +246,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 5. Switch power key switch to the OFF position. Note: Machine will go through its power- down sequence.
 
-### **UV Release** {#uv-release}
+### **UV Release**
 
 1. Press the orange square **POWER** button on the top right side of the tool IF the tool is not powered on. Wait for it to boot up.  
 2. Open the lid, place the frame/wafer with the wafer facing up, aligning the pins to the slots in the frame and then close the lid.
@@ -271,7 +271,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 12. Leave the power to the tool ON.
 
-### **Cleanup and Waste Disposal** {#cleanup-and-waste-disposal}
+### **Cleanup and Waste Disposal**
 
 1. Discard unwanted diced substrate in the sharps container.
 
@@ -279,7 +279,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 
 3. Return Film Frame on wire rack.
 
-## **Section 6- Safety and Emergency** {#section-6--safety-and-emergency}
+## **Section 6- Safety and Emergency**
 
 **Emergency Stop**
 
@@ -367,7 +367,7 @@ Note: Apart from adjusting the blade height by \+/- 0.100 mm, changing feed spee
 2. Revision 1.1 – January,2021   
 3. Revision 1.2 – June 2025
 
-## **Section 7 – Blade Change Procedure** {#section-7-–-blade-change-procedure}
+## **Section 7 – Blade Change Procedure**
 
 **Turn On Tool**
 

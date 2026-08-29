@@ -14,7 +14,7 @@ Standard Operating Procedure:
 
 ## **Hydrofluoric Acid**
 
-### **Principle of Operation** {#principle-of-operation}
+### **Principle of Operation**
 
 For isotropic wet etching of silicon dioxide. Etch rates depend on the concentration of HF, temperature, and type of silicon dioxide being etched with rates varying between a few nanometers to several hundred nanometers per minute.  HF is also used to etch titanium.
 
@@ -22,7 +22,7 @@ Hydrofluoric (HF) acid has a number of chemical, physical and toxicological prop
 
 *Danger: Hydrofluoric acid is a contact poison, capable of penetrating skin and causing deep tissue damage, including severe burns and bone damage. If absorbed into the bloodstream, it will react with calcium and other electrolytes leading to hypocalcemia, causing cardiac arrhythmias and cardiac arrest. It is important to know the first aid procedure for treating HF exposure and to immediately call CCNY Public Safety so they can call an ambulance if there is an HF exposure. HF does not burn like other acids since it penetrates the skin and reacts in the body, leading to delayed reactions and pain. Depending on the concentration of HF, pain caused by the tissue damage may be delayed 1 to 24 hours.  If HF is not rapidly neutralized and the fluoride ion bound, tissue destruction may continue for days and result in limb loss and death, so it is important to wear the proper PPE and to get immediate medical assistance in the case of exposure.*
 
-### **Material Requirements** {#material-requirements}
+### **Material Requirements**
 
 #### **Equipment:** 
 
@@ -61,9 +61,9 @@ Transene Titanium Etchant TFT \[contains: hydrofluoric acid (8-15% solution in w
 
 Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasses and face-shield
 
-### **Procedure** {#procedure}
+### **Procedure**
 
-#### **Preparation** {#preparation}
+#### **Preparation**
 
 1. Review the first aid procedures for HF exposure with your chemical buddy, including identifying the location of the HF First Aid Kit and Calcium Gluconate Gel.   
     Note that you cannot use HF alone. When using HF, you must ensure that there is at least one other person (your chemical buddy) in the vicinity of the process at all times. That person must call Public Safety (212-650-7777) in the event of an emergency and then assist you with first aid.
@@ -161,7 +161,7 @@ If a spill occurs outside the hood:
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.  
    
 
-### **Revision History:** {#revision-history:}
+### **Revision History:**
 
 * Version 0.0 \- Created September 6, 2017   
 * Version 1.0 \- Revised November 20, 2024   

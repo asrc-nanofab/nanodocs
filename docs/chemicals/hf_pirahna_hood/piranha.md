@@ -14,31 +14,31 @@ ASRC Standard Operating Procedure:
 
 ## **Piranha Clean**
 
-### **Principle of Operation**  {#principle-of-operation}
+### **Principle of Operation** 
 
 To clean organic residues off substrates.
 
 *Danger: Piranha waste involves oxygen gas which can pressurize and break sealed containers.  Do not store mixed Piranha in a sealed container.  It is very important that you reset and start the Piranha waste timer on the fume hood whenever you dump Piranha waste in the acid carboy so the cleanroom staff can determine whether or not the Piranha waste is safe for disposal.*
 
-### **Material Requirements** {#material-requirements}
+### **Material Requirements**
 
-#### **Equipment:**  {#equipment:}
+#### **Equipment:** 
 
 substrate, two glass beakers, graduated cylinder, and stainless steel tweezers
 
 - *Warning: Pirahna attacks organics, including most plastics.  It will react violently with polyethylene and polypropylene tweezers and containers.  It will also react violently with organic solvents such as acetone and isopropanol.*
 
-#### **Chemicals:**  {#chemicals:}
+#### **Chemicals:** 
 
 Sulfuric Acid (H2SO4 96%) and Hydrogen Peroxide (H2O2 30%)
 
-#### **Personal Protective Equipment:**  {#personal-protective-equipment:}
+#### **Personal Protective Equipment:** 
 
 Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasses and face-shield
 
-### **Procedure** {#procedure}
+### **Procedure**
 
-#### **Piranha Clean** {#piranha-clean}
+#### **Piranha Clean**
 
 1. Get two glass beakers that will fit your samples for processing from the “Piranha Supplies” drawer in the glassware rack along the wall to the right of the hood – one should be labeled “Water Only” and the other should be labeled “Piranha Only”.  
 2. Get a glass graduated cylinder from the “Piranha Supplies” drawer in the glassware rack.  
@@ -56,7 +56,7 @@ Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasse
 14. Allow your samples to sit in the Piranha clean for 10-20 minutes to remove all organics. Make sure there is a label with your name, the date and chemical contents next to it, and leave the Badger slot for the hood enabled while your chemicals remain in the hood.  
 15. Rinse out the graduated cylinder with DI water in the sink, then blow it semi-dry the N2 gun and place it on a cleanroom wipe in the hood.
 
-#### **DI Water Rinse** {#di-water-rinse}
+#### **DI Water Rinse**
 
 1. When the clean is complete, remove your sample from the piranha solution with tweezers. *It is often best to use a small trickle of DI water from one of the DI water guns to break the surface tension of the piranha solution as you remove your sample so don’t recoat your sample with contaminants as you take it out. Only use a small trickle as you do not want to add too much water (sulfuric acid reacts with water) and you don’t want to splash piranha outside of the beaker.*  
 2. Transfer the sample carefully to the DI water rinse beaker. Make sure to leave the tweezers in the rinse beaker as well.  
@@ -65,11 +65,11 @@ Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasse
 5. Remove the sample from the rinse beaker with the tweezers.   
 6. Rinse the sample with DI water in the hood sink, holding it in the water stream for approximately 10 seconds or more.
 
-#### **Sample Dry** {#sample-dry}
+#### **Sample Dry**
 
 1. After the water rinse is finished, blow the sample dry with the N2 gun.
 
-#### **Cleanup** {#cleanup}
+#### **Cleanup**
 
 1. Allow the hot piranha to cool to close to room temperature before disposing of the solution. If you are going to leave the mixture unattended, make sure it remains properly labeled and the Badger slot is still enabled.  
 2. Carefully pour the piranha solution into the waste container designated for piranha waste in the back of the hood.  
@@ -78,16 +78,16 @@ Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasse
 5. Rinse the beaker with DI water multiple times (typically 3 times or more) in the sink and then blow it as dry as possible with the N2 gun.  
 6. Return all glassware to its proper storage location.
 
-### **Accident Procedure** {#accident-procedure}
+### **Accident Procedure**
 
-#### **Contact** {#contact}
+#### **Contact**
 
 - Skin: Remove contaminated clothing, wash skin with soap and water. **If there is any irritation, get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-#### **Spills** {#spills}
+#### **Spills**
 
 ##### **Small Spill Within the Hood**
 
@@ -112,7 +112,7 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-### **Revision History:** {#revision-history:}
+### **Revision History:**
 
 * Version 0.0  – Created September 8th, 2017  
 * Version 1.0  – Revised May 22, 2025  

@@ -14,21 +14,21 @@
 
 ### Standard Operating Procedure
 
-## Section 1: Process Description {#section-1:-process-description}
+## Section 1: Process Description
 
 The Litho-Development Hood is an Air Control stainless steel fume hood designed for non-corrosive chemical work. Located in the lithography bay of the cleanroom, this hood is designated for solvents and developers with low concentrations of caustics (3% or less) and is to be used for preparing substrates and other samples for lithography and performing post-exposure development of photo- and EBL-resists. There is one sonicator tank built into the hood that can be used to assist with cleaning or development.
 
 DI water guns and a DI water faucet over the sink is available for rinsing samples and glassware. Dry nitrogen guns are available in the hood for blowing dry samples and glassware.  Squeeze bottles of isopropanol, acetone and methanol are also available in the hood to be used for rinsing samples. A rack of glassware designated for use in the litho-development hood only is located next to the hood, though users may also bring their own glassware to be used in the hood if so desired. The glassware is also labelled for use with specific types of chemicals only, such as solvents, caustics or water. There are two stainless steel carboys located in the hood for disposal of most solvents used in the hood, though there are several developers used in the hood that must be disposed of into separate waste containers.
 
-### TMAH Description and Precautions {#tmah-description-and-precautions}
+### TMAH Description and Precautions
 
 Tetramethylammonium hydroxide (TMAH) is a caustic chemical available in solutions of varying concentrations, such as \<3% in some developer solutions or in higher concentrations of 10-25%. TMAH is a strong base in higher concentrations, so while the developer solutions with \<3% TMAH are allowed in the Litho Development Hood in Lithography without the full acid PPE, higher concentrations are only allowed in the Caustics/Metal Etch Hood and must be only be handled while wearing full PPE.
 
 TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also a contact poison, meaning it has toxic and potentially deadly effects if it comes in contact with skin. Skin contact allows the tetramethylammonium ion to enter the bloodstream causing systemic neurotoxicity, which can lead to respiratory failure. Though higher concentrations present the greatest risks, even lower concentrations of \<3% can cause severe burns and life-threatening symptoms depending on the duration and area of exposure if it gets on the skin, so even lower concentrations should be handled with caution and any skin that comes in contact with the solution should be flushed with water immediately.
 
-## Section 2: Safety Protocols {#section-2:-safety-protocols}
+## Section 2: Safety Protocols
 
-### Potential Hazards {#potential-hazards}
+### Potential Hazards
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -52,13 +52,13 @@ TMAH is extremely corrosive to skin, eyes, and mucous membranes, and it is also 
 | AZ 400K 4:1 Developer \[contains: potassium borates (\<15%)\] | ![](img/5be351cd4aeb.jpg){ width="96" }![](img/933ea4999773.png){ width="96" } | May be corrosive to metals Causes mild skin irritation Causes eye irritation May damage fertility or the unborn child |
 |  |  |  |
 
-### Physical Hazards {#physical-hazards}
+### Physical Hazards
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
 | Pressurized gas (for the hood spinners only) | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 
-### Routes of Exposure {#routes-of-exposure}
+### Routes of Exposure
 
 There is a risk of skin or eye exposure when handling chemicals that can be mitigated by wearing proper PPE.
 
@@ -68,13 +68,13 @@ There is a risk of launching objects by spraying them with the nitrogen guns in 
 
 There is a risk of splattering chemicals by spraying them with the nitrogen guns in the hood that can be mitigated by always aiming the nitrogen gun into the hood and away from people and never directly spraying chemicals with the nitrogen guns.
 
-### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
+### Personal Protective Equipment Requirements
 
 Users must be wearing the nitrile cleanroom gloves required throughout the cleanroom at all times.  It is also recommended that users wear a second pair of gloves over the first pair.  Chemicals may splash onto gloves, which could lead to contaminating other equipment in the cleanroom if gloves are not changed after using chemicals.  Wearing a second pair of gloves makes it easier to remove, dispose of and replace soiled gloves.
 
 Safety glasses are required when using the litho-development hood.
 
-### Chemical Storage {#chemical-storage}
+### Chemical Storage
 
 * Caustic-based developers, those with low concentrations of tetramethylammonium hydroxide or potassium borates are stored in the Caustic Developers Cabinet, the small blue caustics cabinet located under the shelf to the right of the litho-development hood.
 
@@ -82,25 +82,25 @@ Safety glasses are required when using the litho-development hood.
 
 * Regular solvents, such as IPA and acetone, are stored in the Solvents Cabinet, the large yellow cabinet located just outside of the lithography bay.
 
-### Waste Disposal {#waste-disposal}
+### Waste Disposal
 
-#### Solvents (excluding SU-8 Developer/PGMEA) {#solvents-(excluding-su-8-developer/pgmea)}
+#### Solvents (excluding SU-8 Developer/PGMEA)
 
 There are two chemical waste slots in the back of the solvents/lift-off hood that drain to stainless steel carboys under the hood.  All regular solvents, such as isopropanol, acetone, methanol, ethanol, and toluene, should go into the carboys.  Solvents used for development of EBL resists, such as MIBK, xylene, and amyl acetate, along with solvents used to dilute or mix  resists, such as anisole and cyclopentanone, can also go into the carboys.  Any of these solvents can go into either of the two carboys in spite of the labeling above them.
 
-#### SU-8 Developer/PGMEA {#su-8-developer/pgmea}
+#### SU-8 Developer/PGMEA
 
 One exception for solvent disposal in the carboys is SU-8 developer (PGMEA or 1-methoxy-2-propanol acetate), which should not be poured into the carboys, but instead should be disposed of into a waste bottle in the waste cabinet.
 
-#### Caustic-based Photo Developers {#caustic-based-photo-developers}
+#### Caustic-based Photo Developers
 
 Caustic based developers that contain TMAH, potassium borate or NaOH, such as AZ 300 MIF, AZ 726 MIF, AZ 400K, must be disposed of in a waste bottle and stored in the chemical waste cabinet in the lithography bay.  The waste bottle must be labelled with the full names of the chemical contents, meaning no abbreviations or trade names are to be used on the label.  Generally, there should already be a waste bottle set up in the waste cabinet for halogenated solvents.
 
-#### Soiled Wipes and Gloves {#soiled-wipes-and-gloves}
+#### Soiled Wipes and Gloves
 
 Dispose of gloves and wipes soiled with chemicals in a red hazardous waste bin.
 
-#### Sharps {#sharps}
+#### Sharps
 
 Dispose of any used pipettes or swabs in the sharps waste container.
 
@@ -108,9 +108,9 @@ Dispose of used or failed substrates in a sharps waste container.
 
 Dispose of broken chemical glassware in a sharps waste container.
 
-## Section 3: Chemical Process {#section-3:-chemical-process}
+## Section 3: Chemical Process
 
-### Preparation {#preparation}
+### Preparation
 
 1. Read through the datasheet of the resist that you will be developing.  The duration of development is critical, so you need to know this before you begin the actual chemical work.
 
@@ -128,7 +128,7 @@ Dispose of broken chemical glassware in a sharps waste container.
 
     4. Confirm that the hood is in a clean and safe state. If other users’ chemistry is in the hood, it should be to the side of the hood and unattended chemicals must be covered.
 
-### Litho-Development {#litho-development}
+### Litho-Development
 
 1. Get two glass beakers that will fit your samples for processing from the “Development Hood Supplies” glassware rack on the shelf to the right of the hood – one should be labeled “Water Only” and the other should be labeled either “Solvents Only” or “Caustics Only” depending on the type of developer you are using.  
 2. Rinse both beakers with DI water prior to beginning the process.  
@@ -139,7 +139,7 @@ Dispose of broken chemical glassware in a sharps waste container.
 7. Place your sample into the developer using tweezers and begin agitating the solution.  
 8. Allow your samples to sit in the developer for the duration of time required to develop your features. If you are leaving your chemistry unattended for this time, make sure there is a label with your name, the date and chemical contents next to it, and leave the Badger slot for the hood enabled while your chemicals remain in the hood.
 
-### DI Water Rinse {#di-water-rinse}
+### DI Water Rinse
 
 1. When the development is complete, remove your sample from the developer with tweezers. *It is often best to use a small trickle of DI water from one of the DI water guns to break the surface tension of the chemical solution as you remove your sample so don’t coat your sample with contaminants as you take it out. Only use a small trickle as you do not want to add too much water and you don’t want to splash it outside of the beaker.*  
 2. Transfer the sample carefully to the DI water rinse beaker.  
@@ -147,11 +147,11 @@ Dispose of broken chemical glassware in a sharps waste container.
 4. Remove the sample from the rinse beaker with the tweezers. *It is often best to use a small trickle of DI water from one of the DI water guns to break the surface tension of the chemical solution as you remove your sample so don’t coat your sample with contaminants as you take it out.*  
 5. Rinse the sample with DI water in the hood sink, holding it in the water stream for approximately 10 seconds or more.
 
-### Sample Dry {#sample-dry}
+### Sample Dry
 
 1. After the water rinse is finished, blow the sample dry with the N2 gun. Be careful to use a full blast of nitrogen as it is easy to blow your sample out of the tweezers if it is too strong.
 
-### Cleanup {#cleanup}
+### Cleanup
 
 1. Retrieve a waste bottle labelled for the chemical components of your developer solution from the chemical waste cabinet and bring it to the hood. Do not open the waste bottle outside of the hood.  
 2. Carefully pour the developer waste into the waste bottle designated for the chemical components using the small plastic funnel found on the shelf next to the hood.  
@@ -160,18 +160,18 @@ Dispose of broken chemical glassware in a sharps waste container.
 5. Rinse the beaker with DI water multiple times (typically 3 times or more) in the sink and then blow it as dry as possible with the N2 gun.  
 6. Return all glassware to a drawer in the litho-development glassware rack.
 
-## Section 4: Accident Procedure {#section-4:-accident-procedure}
+## Section 4: Accident Procedure
 
-### **Chemical Exposure** {#chemical-exposure}
+### **Chemical Exposure**
 
 - Skin: Remove contaminated clothing, wash skin with soap and water. **If there is any irritation, get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-### **Spills** {#spills}
+### **Spills**
 
-##### **Small Spill Within the Hood** {#small-spill-within-the-hood}
+##### **Small Spill Within the Hood**
 
 If a small spill occurs and is fully contained within the hood:
 
@@ -179,14 +179,14 @@ If a small spill occurs and is fully contained within the hood:
 * If wipes are insufficient, use the absorbent pads stored in the bottom right corner of the hood.  
 * If you are unsure how to clean up the material or feel uncomfortable doing so, **notify staff immediately**.
 
-##### **Medium or Large Spill Within the Hood \- Always staff** {#medium-or-large-spill-within-the-hood---always-staff}
+##### **Medium or Large Spill Within the Hood \- Always staff**
 
 If the spill requires use of an absorbent pillow from the spill kit:
 
 * **Notify staff immediately.**  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert other users **not to use the hood** until it has been properly cleaned and cleared by staff.
 
-##### **Any Spill Outside the Hood** {#any-spill-outside-the-hood}
+##### **Any Spill Outside the Hood**
 
 If a spill occurs outside the hood:
 
@@ -194,7 +194,7 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-## Versioning and Updates {#versioning-and-updates}
+## Versioning and Updates
 
 4/7/26- Updated with TMAH Hazard Section
 

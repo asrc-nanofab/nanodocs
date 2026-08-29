@@ -10,13 +10,13 @@
 
 ---
 
-## **Section 1: Hardware Description and Principle of Operation**    {#section-1:-hardware-description-and-principle-of-operation}
+## **Section 1: Hardware Description and Principle of Operation**   
 
 The Inductively Coupled Plasma Reactive Ion Etcher (ICP-RIE, or often just ICP) uses a radio-frequency-powered electromagnetic field to generate a plasma in a vacuum chamber. The strong field achieved is enabled by the second, additional coil in the upper part of the chamber, unlike in a simple Reactive Ion Etcher (RIE). Gasses pumped in while the RF power is active are ionized and bombard the sample- removing material through both chemical and physical mechanisms.
 
 Our lab has two ICP-RIEs- an ICP Fluorine (on the le***F***t) and an ICP Chlorine (on the right). The tools are differentiated by the etch gasses available and what materials are allowed or restricted in each tool.
 
-## **Section 2: General Hazards** {#section-2:-general-hazards}
+## **Section 2: General Hazards**
 
 | Pictogram | Description |
 | :---- | :---- |
@@ -80,13 +80,13 @@ If you need to prematurely stop a process step with hazardous gasses, it is pref
 
 **BCl3:** [https://amp.generalair.com/MsdsDocs/PA4566S.pdf](https://amp.generalair.com/MsdsDocs/PA4566S.pdf) 
 
-## **Section 3: Routes of Exposure** {#section-3:-routes-of-exposure}
+## **Section 3: Routes of Exposure**
 
 Inhalation (always make sure load lock has successfully completed automatic venting cycle)
 
 Eye exposure (mitigated by filter, do not tamper with viewport or stare into plasma for lengthy periods)
 
-## **Section 4: Approval and Training** {#section-4:-approval-and-training}
+## **Section 4: Approval and Training**
 
 Before using the tool, all users must have already been approved to access the cleanroom facility. While using the tool, users must adhere to all rules outlined during cleanroom orientation and in the facility manuals. Only users that have been qualified may use the tool. 
 
@@ -106,11 +106,11 @@ Current Tool Manager: Emma Anquillare ([eanquillare@gc.cuny.edu](mailto:eanquill
 
  
 
-## **Section 5: Required PPE** {#section-5:-required-ppe}
+## **Section 5: Required PPE**
 
 Cleanroom suits (including booties, hairnets, and hoods), nitrile cleanroom gloves, and eye protection are always required inside the cleanroom and when using the tool or the nearby nitrogen blow gun. 
 
-## **Section 6: Material Approval Process and Restrictions** {#section-6:-material-approval-process-and-restrictions}
+## **Section 6: Material Approval Process and Restrictions**
 
 ***All*** materials (both exposed and not exposed) entering the tool must be disclosed and approved before insertion into ***only their approved etcher***. Any changes to the materials or gas chemistry of the etch process must be explicitly approved in writing by the etch tool manager. Requests can be made using this form: [https://asrc.formstack.com/forms/asrc\_nanofabrication\_facility\_etch\_process\_request\_form](https://asrc.formstack.com/forms/asrc_nanofabrication_facility_etch_process_request_form) 
 
@@ -122,7 +122,7 @@ Fomblin oil is available for chip adherence to carrier wafer if needed.
 
 Wafers and carrier wafers processed in the RIE should not then be processed in the ICP-RIE tools, even if the materials they are made of would usually be allowed. Similarly, wafers and carrier wafers processed in the ICP-Cl should not then go into the ICP-F. Speak to tool manager for further details. 
 
-## **Section 7: Process Steps** {#section-7:-process-steps}
+## **Section 7: Process Steps**
 
 > > > 1. **Set Up** 
 
@@ -251,7 +251,7 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 
  
 
-## **Section 8: Emergency Stop** {#section-8:-emergency-stop}
+## **Section 8: Emergency Stop**
 
 **EMO Button**
 
@@ -261,7 +261,7 @@ If you see arc flashing or sparks within the chamber through the viewport: First
 
 A ticking noise during a plasma process accompanied by haywire RF numbers may also warrant use of the EMO button if attempting to stop it using the software doesn’t work first. 
 
-## **Section 9: What to Watch out for During Operation** {#section-9:-what-to-watch-out-for-during-operation}
+## **Section 9: What to Watch out for During Operation**
 
 Make sure the plasma is stable by regularly checking its glow in the porthole. If the plasma is flickering on and off, use ‘skip phase’ or ‘stop’ to end the recipe and contact the tool manager. 
 
@@ -271,7 +271,7 @@ Make sure desired gas flow and power values are consistently close to their setp
 
 When not in use, the table temperature should always be left at 20°C setpoint. Ensure that the metal portions of the red and blue cooling lines behind the tool are always free of condensation or frost build up:
 
-## **Section 10: Disallowed Activities** {#section-10:-disallowed-activities}
+## **Section 10: Disallowed Activities**
 
 * This instrument incorporates hazards such as high-voltage electronics, radio-frequency radiation, UV- radiation, compressed gasses, heated parts, pinch- points, and vacuum chambers. **Never attempt to tinker with the tool or software beyond what is explicitly described in this SOP**.    
 * When etching through a wafer, a carrier wafer is always needed to protect the tool table. The table should never be exposed to plasma without a wafer.   
@@ -300,7 +300,7 @@ When not in use, the table temperature should always be left at 20°C setpoint. 
 * Incorporate new gasses into a recipe that are not already utilized in that recipe or attempt to create a new recipe. Only make changes to a recipe that have been explicitly approved.   
 * Forget to remove the edge bead of a wafer with photoresist
 
-## **Section 11: Revision History** {#section-11:-revision-history}
+## **Section 11: Revision History**
 
 Revision 1.0- July 31, 2024
 

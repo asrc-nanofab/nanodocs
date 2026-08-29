@@ -14,15 +14,15 @@
 
 ### Standard Operating Procedure
 
-## Section 1: Process Description {#section-1:-process-description}
+## Section 1: Process Description
 
 The Solvents/Lift-Off Hood is an Air Control stainless steel fume hood designed for non-corrosive chemical work. Located in the metrology bay of the cleanroom, this hood is designated for solvents only and is to be used for cleaning substrates and other samples with solvents and performing post-deposition or post-etch lift-off of photo- and EBL-resists. There are two sonicator tanks built into the hood that can be used to assist with cleaning or lift-off processes.
 
 DI water and dry nitrogen guns are available in the hood for rinsing and blowing dry samples and glassware. Squeeze bottles of isopropanol, acetone and methanol are also available in the hood to be used for rinsing samples. A rack of glassware designated for use in the solvents/lift-off hood only is located near the hood, though users may also bring their own glassware to be used in the hood if so desired. There are three stainless steel carboys located in the hood for disposal of most solvents used in the hood, though any halogenated solvents used in the hood must be disposed of into a separate waste container.
 
-## Section 2: Safety Protocols {#section-2:-safety-protocols}
+## Section 2: Safety Protocols
 
-### Potential Hazards {#potential-hazards}
+### Potential Hazards
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -41,7 +41,7 @@ DI water and dry nitrogen guns are available in the hood for rinsing and blowing
 | Pressurized gas | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 | Hot Plate | ![](img/eb60111b034b.png){ width="100" } | Can cause severe thermal burns |
 
-### Routes of Exposure {#routes-of-exposure}
+### Routes of Exposure
 
 There is a risk of skin or eye exposure when handling chemicals that can be mitigated by wearing proper PPE.
 
@@ -53,31 +53,31 @@ There is a risk of splattering chemicals by spraying them with the nitrogen guns
 
 There is a risk of severe skin burns if a hotplate is touched, which can be prevented by using tweezers when handling samples on the hotplate and never touching it directly with hands or other body parts. When heating chemicals in glassware on a hotplate, do remove from the hotplate until the hotplate has been turned off and the chemicals have returned to room temperature.
 
-### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
+### Personal Protective Equipment Requirements
 
 Users must be wearing the nitrile cleanroom gloves required throughout the cleanroom at all times. It is also recommended that users wear a second pair of gloves over the first pair. Chemicals may splash onto gloves, which could lead to contaminating other equipment in the cleanroom if gloves are not changed after using chemicals. Wearing a second pair of gloves makes it easier to remove, dispose of and replace soiled gloves.
 
 Safety glasses are required when using the solvents hood.
 
-### Waste Disposal {#waste-disposal}
+### Waste Disposal
 
-#### Solvents {#solvents}
+#### Solvents
 
 There are three chemical waste slots in the back of the solvents/lift-off hood that drain to stainless steel carboys under the hood. All regular solvents, such as isopropanol, acetone, methanol, ethanol, toluene, and NMP (Remover PG) should go into the carboys. Any of these solvents can go into any of the three carboys in spite of the labeling above them.
 
-#### Halogenated Solvents {#halogenated-solvents}
+#### Halogenated Solvents
 
 Halogenated solvents, such as chloroform, must be disposed of in a waste bottle and stored in the chemical waste cabinet in the lithography bay. The waste bottle must be labelled with the full names of the chemical contents, meaning no abbreviations or tradenames are to be used on the label. Generally, there should already be a waste bottle set up in the waste cabinet for halogenated solvents.
 
-#### Sonicator Tank {#sonicator-tank}
+#### Sonicator Tank
 
 The sonicator tanks in the hood also drain into the carboys, so if the tank is filled with solvents.  Water put into the tank will also have to be drained into the carboy, so when filling with water do not fill to excess. Instead, use just enough water so that the sensor in the control screen indicates it is full. There is a drain button in the sonicator tank control screen in the hood’s control screen. When the button is green, the drain is open.
 
-#### Soiled Wipes and Gloves {#soiled-wipes-and-gloves}
+#### Soiled Wipes and Gloves
 
 Dispose of gloves and wipes soiled with chemicals in a red hazardous waste bin.
 
-#### Sharps {#sharps}
+#### Sharps
 
 Dispose of any used pipettes or swabs in the sharps waste container.
 
@@ -85,7 +85,7 @@ Dispose of used or failed substrates in a sharps waste container.
 
 Dispose of broken chemical glassware in a sharps waste container.
 
-## Section 3: Process {#section-3:-process}
+## Section 3: Process
 
 ### Preparation
 

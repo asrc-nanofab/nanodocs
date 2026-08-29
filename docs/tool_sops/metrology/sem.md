@@ -12,29 +12,29 @@
 
 **Standard Operating Procedure: SEM**
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+## **Section 1 – Process or Experiment Description**
 
 This Standard Operating Procedure (SOP) outlines the proper use of the Nova Scanning Electron Microscope (Nova NanoSEM 450). The Nova Scanning Electron Microscope (SEM) is a high resolution scanning electron microscope intended for sample characterization. In addition to the powerful combination of advanced optics (including a two-mode final lens), SE/BSE (Secondary Electrons/Backscattered Electrons) in-lens detection and beam deceleration, the Nova NanoSEM 450 series introduces a new suite of latest generation, high sensitivity, retractable SE/BSE and STEM detectors, as well as versatile SE/BSE filtering capabilities, to best optimize the information of interest. Intelligent scanning modes are available to minimize imaging artifacts.  
 
 All standard laboratory safety protocols must be followed throughout this procedure. While not all safety rules are explicitly stated within this SOP, they are covered in the required safety training sessions that must be completed prior to beginning any lab work. For instance, all personnel must wear appropriate lab attire, including an approved lab coat, safety goggles, closed-toe shoes, and clothing that covers all exposed skin, including the legs. A copy of the laboratory’s minimum safety requirements can be found in the SOP binder for reference.
 
-## **Section 2 – Hazards General** {#section-2-–-hazards-general}
+## **Section 2 – Hazards General**
 
 N/A
 
-## **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
+## **Section 3 – Routes of Exposure**
 
 N/A
 
-## **Section 4 – Process Steps** {#section-4-–-process-steps}
+## **Section 4 – Process Steps**
 
-### **4.1. Working instructions**  {#4.1.-working-instructions}
+### **4.1. Working instructions** 
 
-#### **4.1.1. System Startup** {#4.1.1.-system-startup}
+#### **4.1.1. System Startup**
 
  After logging in the Badger, the SEM computer will be ON. 
 
-#### **4.1.2. Sample Preparation**  {#4.1.2.-sample-preparation}
+#### **4.1.2. Sample Preparation** 
 
 1. If the sample is nonconductive (plastic, fiber, polymer or other substance with an electrical resistance greater than 1010 ohms) the specimen can be coated with a thin layer (\~10-15 nm) of gold using the Cressington sputter coater. This conductive layer will help to reduce sample charging and improve image quality. If no coating is desired as it might alter the specimen, “Low Vacuum” mode can be used to stabilize the specimen for observation.  
 2. Mount the sample on a sample holder using carbon/Cu tape, or if the holder has clips, tighten the clip with a screwdriver to secure the sample. Be sure the clip holds the sample securely and that the clip is not obscuring any area that you intend to image. The specimen must be electrically grounded to the sample holder to minimize specimen charging.   
@@ -42,11 +42,11 @@ N/A
 4. Check whether the sample will fit through the load lock door using the   
     load lock door emulator. If the sample is small enough to fit through the load lock door, then you can use the load lock procedure to load the sample. If the sample is too big, then you will have to vent the main chamber door. 
 
-#### **4.1.3. Loading your sample** {#4.1.3.-loading-your-sample}
+#### **4.1.3. Loading your sample**
 
            You can load your sample through the load lock or the main chamber.
 
-##### **4.1.3.1 Loading Sample through Load Lock** {#4.1.3.1-loading-sample-through-load-lock}
+##### **4.1.3.1 Loading Sample through Load Lock**
 
 1. Vent the load lock by pressing the button labelled **V** (vent) and then lift and swing open the load lock lid.   
 2. Place the sample on the carrier in the load lock and then insert the rod into the sample carrier compressing the spring on the rod. While holding it in place, turn the manipulator to lock the carrier in place and then place the rod into the *parking* position to prevent the rod from slowly creeping forward.   
@@ -57,7 +57,7 @@ N/A
 
 ![](img/80fda3a035e3.jpg)
 
-#####        **4.1.3.2. Loading Sample through Main Chamber**  {#4.1.3.2.-loading-sample-through-main-chamber}
+#####        **4.1.3.2. Loading Sample through Main Chamber** 
 
 1. Click the **Vent** button and then click **Yes** when the confirmation box appears. This will begin venting the chamber and move the stage into position. Venting will take around 5 minutes to complete. There is no pressure gauge that will read when the chamber is at atmospheric so you will simply have to wait and then try opening it.  
 2. Once the chamber has finished venting, open the specimen chamber and insert the specimen holder with the sample into the slot on the stage.  
@@ -65,7 +65,7 @@ N/A
 
 ![](img/5163229d1135.jpg){ width="353" }
 
-#### **4.1.4. Stage Movement – Navigation** {#4.1.4.-stage-movement-–-navigation}
+#### **4.1.4. Stage Movement – Navigation**
 
 1. Before you do any navigation, select the **Stage** menu and check that **Touch Alarm Enabled** and **External Current Measurement** are both checked.  These need to be active in case you drive the sample into the detector.  With these enabled, the stage will stop as soon as it touches the detector, preventing significant damage.  Nonetheless, be careful not to crash your sample into the detector.  
 2. **Move the stage up** to the 5mm working distance line. This process should be done carefully since the SEM software does not know the relative stage-to-column distance until you link Z to the working distance later. Make sure the camera (4th quadrant) is working.   
@@ -77,12 +77,12 @@ N/A
 5. In order to move a stage, select the Actual mode and enter a value into the edit box and click the **Go To** button.  If you wish to stop the stage while it is in motion, click the **Stop** button (the **Go To** button becomes the **Stop** button when the stage is in motion) or press the **Esc** key. Start by moving up 5-10mm at a time while keeping the mouse over the stop button in case the stage goes above the 5mm working distance line. The safest way to move the z-stage in order to avoid crashing into the detector is in the live camera quad (Quad 4), hold down the scroll wheel and drag the mouse up or down to move the stage in that direction.  
 6. Adjust so that the top of your sample is roughly aligned with the 5mm line.
 
-#### **4.1.5. Stage Movement – Take Nav-Cam Photo**  {#4.1.5.-stage-movement-–-take-nav-cam-photo}
+#### **4.1.5. Stage Movement – Take Nav-Cam Photo** 
 
 1. Select the **Stage** menu, select **Take Nav-Cam Photo**. If the function does not work, try clicking on the Nav-Cam quad (Quad 3\) and then try again. Or instead of selecting **Take Nav-Cam Photo**, select **Move Stage to Nav-Cam** and once the stage has moved into position select **Take Nav-Cam Photo**.   
 2. Once the Nav-Cam photo is acquired, it can be used for navigating in the x- and y-plane. Either drag the cross over a desired feature in the image of the sample, or double click on a feature and the stage will move to center that position under the detector.
 
-#### **4.1.6. Imaging** {#4.1.6.-imaging}
+#### **4.1.6. Imaging**
 
 1. Wait for the chamber pressure to reach 4e-5 Torr.   
 2. Set the voltage (High Voltage) and current (Spot) to your preferred settings.  
@@ -95,9 +95,9 @@ N/A
 9. To capture an image, click on the Photo button or press **F2**.  
 10. When prompted to save your image, save to your folder in the User SEM Images folder on the Litho-PC.  When you are finished imaging switch to the Raith computer and copy your files from User SEM Images to your folder in the NanoFab01 shared drive.  DO NOT use a flash drive on either computer and DO NOT try to access the internet.  You can retrieve your files from the NanoFab01 folder on any of the computers in the wipe down room.
 
-#### **4.1.7. Unloading your sample** {#4.1.7.-unloading-your-sample}
+#### **4.1.7. Unloading your sample**
 
-#####             **4.1.7.1 Unloading Sample through Load Lock** {#4.1.7.1-unloading-sample-through-load-lock}
+#####             **4.1.7.1 Unloading Sample through Load Lock**
 
 1. Turn off the beam by clicking the **Beam On** button.  
 2. Check that the load lock is properly closed and press the **P** button, which will pump the load lock if it is not already at vacuum and move the stage into the loading position.  Once the load lock is pumped and the stage is in place, the **OK** button will light up and the gate valve interlock will release, allowing the door to the main chamber to be opened.  
@@ -110,49 +110,49 @@ N/A
 
 ![](img/2c9c5fe9abc5.jpg)
 
-##### **4.1.7.2. Unloading  Sample through the Main Chamber**  {#4.1.7.2.-unloading-sample-through-the-main-chamber}
+##### **4.1.7.2. Unloading  Sample through the Main Chamber** 
 
 1. Turn off the beam by clicking the **Beam On** button.  
 2. **Vent** the chamber  
 3. Remove your sample from the chuck.  
 4. Close the chamber door and pump down. Wait for the chamber to fully pump down (check the green status).
 
-#### **4.1.8. Cleanup and Waste Disposal** {#4.1.8.-cleanup-and-waste-disposal}
+#### **4.1.8. Cleanup and Waste Disposal**
 
 1. Tidy up the area.  
 2. Throw away the used tape into the trash can.
 
-## **Section 5-Allowed Activities** {#section-5-allowed-activities}
+## **Section 5-Allowed Activities**
 
 - Users may open the chamber and insert the low vacuum detector, but only if they have been trained on how to do so.  
 - Users may open the chamber and change the sample holder setup on the stage, but only if they have been trained on how to do so.
 
-## **Section 6-Disallowed Activities** {#section-6-disallowed-activities}
+## **Section 6-Disallowed Activities**
 
 - Users should never disable the touch alarm or the external current measurement.
 
 - No Magnetic materials are allowed when using the immersion mode.
 
-## **Section 7- What to watch out for during operation** {#section-7--what-to-watch-out-for-during-operation}
+## **Section 7- What to watch out for during operation**
 
 - Users should be sure that the chamber pressure is less than the 4e-5 range before turning on the beam.  
 - Users should not adjust the settings for the source tilt and alignment.
 
-## **Section 8- Common Troubleshooting Tips** {#section-8--common-troubleshooting-tips}
+## **Section 8- Common Troubleshooting Tips**
 
 - If the image shifts whenever the focus is adjusted, try adjusting the lens alignment, though only if you’ve been shown how to do so.  
 - If a user is seeing a lot of charging, they could try switching to another detector, or changing the detector setting to backscatter electrons or custom mode.  
 - If a user is seeing a significant amount of image drift, they should try pausing everything and waiting about 10 minutes before trying to image again.  
 - If controls are not working properly, try closing and then restarting the software.  Log in to the software as “user” with password “Hilda001”.
 
-## **Section 9 \- When to call staff?**  {#section-9---when-to-call-staff?}
+## **Section 9 \- When to call staff?** 
 
 - If the cooling water is not flowing.  
 - If your sample gets stuck in the load lock door.  
 - If the stage position for loading from the load lock is not correct.   
 - If none of the common troubleshooting tips can fix a problem.
 
-## **Section 10-Badger Criteria**  {#section-10-badger-criteria}
+## **Section 10-Badger Criteria** 
 
 *Report Problem:*
 

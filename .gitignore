@@ -7,3 +7,5 @@ __pycache__/
 .wrangler/
 /agent/node_modules/
 /agent/.wrangler/
+.ruff_cache/
+.cache/

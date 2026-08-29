@@ -10,7 +10,7 @@
 
 ---
 
-## Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -21,17 +21,17 @@
 | Room and Building | ASRC G.263 |
 | Primary Phone Number | 2124133399 |
 
-### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description**
 
 This SOP is only for the general use of using the hot plates for their fabrication process. Only approved users are allowed to use the equipment. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  
 
-### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances**
 
 Does not apply.
 
-### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -39,7 +39,7 @@ Does not apply.
 | Electrical  | ![](img/765f52c79e88.jpg){ width="80" } | Operate on **high-voltage** systems. |
 | Chemical | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="74" } | Photoresists, developers, and solvents used during the fabrication process. Many are **toxic**, **flammable**, or **skin/eye irritants**. **Dangerous to the environment** if not properly disposed of. |
 
-### **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
+### **Section 4 – Routes of Exposure**
 
 Thermal hazard is present if did not wait until the hot plate(s) has sufficiently cooled down.
 
@@ -47,15 +47,15 @@ Electrical hazard is present whenever servicing the equipment.
 
 Chemical exposure is present before and after equipment use.
 
-### **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
+### **Section 5 – Personal Protective Equipment**
 
 All trained staff are instructed to check the temperature of the hot plate with a contact thermometer before any service or maintenance work.
 
-### **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
+### **Section 6 – Waste Disposal**
 
 Does not apply.
 
-## **Tool Operation** {#tool-operation}
+## **Tool Operation**
 
 Coming Soon\!
 

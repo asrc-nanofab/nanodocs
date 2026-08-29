@@ -12,27 +12,27 @@
 
 **Standard Operating Procedure: J.A. Woollam V-VASE Ellipsometer** 
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+## **Section 1 – Process or Experiment Description**
 
 This Standard Operating Procedure (SOP) outlines the proper use of the J.A. Woollam V-VASE Ellipsometer. Ellipsometry is a sensitive measurement technique that uses polarized light to characterize thin films, surfaces, and material microstructure by determining the relative phase change in the beam of reflected light.  Ellipsometry can be used to determine optical constants (n, k or ε1, ε2), thin film thickness, doping concentration, surface and interfacial roughness, alloy ratio, crystallinity, optical anisotropy, and depth of profile of material properties.
 
 All standard laboratory safety protocols must be followed throughout this procedure. While not all safety rules are explicitly stated within this SOP, they are covered in the required safety training sessions that must be completed prior to beginning any lab work. For instance, all personnel must wear appropriate lab attire, including an approved lab coat, safety goggles, closed-toe shoes, and clothing that covers all exposed skin, including the legs. A copy of the laboratory’s minimum safety requirements can be found in the SOP binder for reference.
 
-## **Section 2 – Hazards General** {#section-2-–-hazards-general}
+## **Section 2 – Hazards General**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
 | Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The act of scanning your sample can cause the stage to move outward and rotate. Keep hands and fingers clear of sample stage while making measurements. |
 
-## **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
+## **Section 3 – Routes of Exposure**
 
             N/A
 
 ## **Section 4 – Process Steps**
 
-### **4.1. Working instructions**  {#4.1.-working-instructions}
+### **4.1. Working instructions** 
 
-#### **4.1.1 System Power Up** {#4.1.1-system-power-up}
+#### **4.1.1 System Power Up**
 
 1. Turn on the power for the system if it is not ON.  
 2. Turn on the monochromator.  
@@ -43,7 +43,7 @@ All standard laboratory safety protocols must be followed throughout this proced
     Enter a username when prompted to do so.   
 6. Insert the alignment detector in the polarized light source if it is not already in place. Be careful whenever handling the alignment detector, especially when inserting it. Be sure the pins are aligned and connected correctly so they are not bent or broken in the process.
 
-####      **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
+####      **4.1.2.  Loading your sample and alignment**
 
 1. Place calibration wafer on the sample holder. The sample size switch on the side of the sample holder should be set to large for large wafers or small for small samples and then set the vacuum switch from vent to vacuum to hold the wafer in place.   
 2. Click on **Acquire Data-\>Align Sample** from the menu bar. You’ll be prompted to insert the alignment detector and then to adjust the positioning of the wafer; click **OKAY** when prompted to do so.   
@@ -55,7 +55,7 @@ All standard laboratory safety protocols must be followed throughout this proced
     ![](img/06de764cd2fb.png){ width="547" }  
    
 
-#### **4.1.3.  System Calibration** {#4.1.3.-system-calibration}
+#### **4.1.3.  System Calibration**
 
    
 
@@ -65,7 +65,7 @@ All standard laboratory safety protocols must be followed throughout this proced
 2. Set the range of wavelengths to your desired range and then perform a coarse calibration followed by a fine calibration. Once it is finished the system should say “**Hardware Initialized and Calibrated”.**  
 3. Turn the vacuum switch to vent and remove the calibration wafer. 
 
-####            **4.1.4 Collect Measurement Data** {#4.1.4-collect-measurement-data}
+####            **4.1.4 Collect Measurement Data**
 
 1. Place the sample to be measured on the sample holder. The sample size switch will need to be set to large or small depending on the size of your sample before you set the vacuum switch from vent to vacuum to hold the wafer in place. If you can hear any suction from the vacuum, you need to adjust the sample so that it is flat to the sample holder and that it covers the whole are of the vacuum.  
 2. If you are trying to measure a precise spot on your sample you can determine where the beam will hit your sample using the system camera. Open the camera software on the computer and then adjust the focus knob on the camera until it is focus on your sample surface. Move your sample on the sample holder until the desired area is within the circle in the camera window.   
@@ -83,13 +83,13 @@ All standard laboratory safety protocols must be followed throughout this proced
 
    
 
-#### **4.1.5.  Save data** {#4.1.5.-save-data}
+#### **4.1.5.  Save data**
 
    
 
 You should save your data to your own folder in the NanoFab01 network drive. Enter any comments that you think will help to distinguish the data you collect from any other data. 
 
-####           **4.1.6. Focusing Probes (Optional)** {#4.1.6.-focusing-probes-(optional)}
+####           **4.1.6. Focusing Probes (Optional)**
 
 1. Click on **Focusing Probe Alignment** under Acquire Data.  
 2. Confirm that the alignment detector is already installed in the polarized light source.   
@@ -102,7 +102,7 @@ You should save your data to your own folder in the NanoFab01 network drive. Ent
 
 Note: Using the focusing probes restricts the angles of incidence that can be measured to a range of 40°-77°.
 
-####      **4.1.7.Unloading sample and Shutdown Tool** {#4.1.7.unloading-sample-and-shutdown-tool}
+####      **4.1.7.Unloading sample and Shutdown Tool**
 
 1. Remove the sample from the stage by turning the switch from vacuum to vent.  
 2. Close the WVASE32 software.  
@@ -110,32 +110,32 @@ Note: Using the focusing probes restricts the angles of incidence that can be me
 4. If another user is scheduled to use the ellipsometer that day, you should leave the monochromator and lamp on. If you are the last user for the day, turn off the power to the lamp and then turn off the power to the monochromator.  
    
 
-####     **4.1.8.Data Analysis** {#4.1.8.data-analysis}
+####     **4.1.8.Data Analysis**
 
 1. To perform analysis of the data measured, the data should be transferred to another computer with the WVASE32 software so that the ellipsometer can be used by another user. Transfer your data files to the NanoFab01 network drive. Do not use a flash drive or the internet on the ellipsometer computer.  
 2. Consult the WVASE32 software manual and J.A. Woollam website to determine the best methods for modeling and fitting your experimental data.
 
-## **Section 5- Allowed Activities** {#section-5--allowed-activities}
+## **Section 5- Allowed Activities**
 
 No restriction on materials to be characterized.
 
-## **Section 6-Disallowed Activities** {#section-6-disallowed-activities}
+## **Section 6-Disallowed Activities**
 
 **DO NOT** leave the lamp and monochromator on once the measurements have completed for the session.
 
-## **Section 7- What to watch out for during operation** {#section-7--what-to-watch-out-for-during-operation}
+## **Section 7- What to watch out for during operation**
 
 Make sure that Z-stage alignment completes without any error.
 
-## **Section 8 \- Common Troubleshooting Tips** {#section-8---common-troubleshooting-tips}
+## **Section 8 \- Common Troubleshooting Tips**
 
 If the Z-stage alignment fails, turn off the monochromator and turn it on again. It sometimes fails to start in first attempt.
 
-## **Section 9- When to call staff?**  {#section-9--when-to-call-staff?}
+## **Section 9- When to call staff?** 
 
 Contact staff if the-stage alignment fails.
 
-## **Section 10- Badger Criteria**  {#section-10--badger-criteria}
+## **Section 10- Badger Criteria** 
 
 *Report Problem:*
 

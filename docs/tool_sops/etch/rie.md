@@ -10,11 +10,11 @@
 
 ---
 
-## **Section 1: Hardware Description and Principle of Operation**   {#section-1:-hardware-description-and-principle-of-operation}
+## **Section 1: Hardware Description and Principle of Operation**  
 
 The Reactive Ion Etcher (RIE) uses a radio-frequency-powered electromagnetic field to generate a plasma in a vacuum chamber. Gasses pumped in while the RF power is active are ionized and bombard the sample- removing material through both chemical and physical mechanisms.
 
-## **Section 2: General Hazards** {#section-2:-general-hazards}
+## **Section 2: General Hazards**
 
 | Pictogram | Description |
 | :---- | :---- |
@@ -57,13 +57,13 @@ SF6: [https://www.airgas.com/msds/001048.pdf](https://www.airgas.com/msds/001048
 
 CF4: [https://www.airgas.com/msds/001051.pdf](https://www.airgas.com/msds/001051.pdf) 
 
-## **Section 3: Routes of Exposure** {#section-3:-routes-of-exposure}
+## **Section 3: Routes of Exposure**
 
 Inhalation (always make sure tool has successfully completed automatic venting cycle)
 
 Eye exposure (mitigated by filter, do not tamper with viewport or stare into plasma for lengthy periods)
 
-## **Section 4: Approval and Training** {#section-4:-approval-and-training}
+## **Section 4: Approval and Training**
 
 Before using the tool, all users must have already been approved to access the cleanroom facility. While using the tool, users must adhere to all rules outlined during cleanroom orientation and in the facility manuals. Only users that have been qualified may use the tool. 
 
@@ -82,11 +82,11 @@ Current Tool Manager: Emma Anquillare (eanquillare@gc.cuny.edu)
 
 **It is the responsibility of the tool user** to always know the most up-to-date tool information. Recent information can be found in this SOP, may be shared via email, or in the \#icp\_rie channel in the CUNY ASRC Nanofab slack. All users must join the slack channel.  ([https://app.slack.com/client/T2SMN1H8Q/C364LUTGA](https://app.slack.com/client/T2SMN1H8Q/C364LUTGA))
 
-## **Section 5: Required PPE** {#section-5:-required-ppe}
+## **Section 5: Required PPE**
 
 Cleanroom suits (including booties, hairnets, and hoods), nitrile cleanroom gloves, and eye protection are always required inside the cleanroom and when using the tool or the nearby nitrogen blow gun. 
 
-## **Section 6: Material Approval Process and Restrictions** {#section-6:-material-approval-process-and-restrictions}
+## **Section 6: Material Approval Process and Restrictions**
 
 ***All*** materials (both exposed and not exposed) entering the tool must be disclosed and approved before insertion into ***only their approved etcher***. Any changes to the materials or gas chemistry of the etch process must be explicitly approved in writing by the etch tool manager. Requests can be made using this form: [https://asrc.formstack.com/forms/asrc\_nanofabrication\_facility\_etch\_process\_request\_form](https://asrc.formstack.com/forms/asrc_nanofabrication_facility_etch_process_request_form) 
 
@@ -110,7 +110,7 @@ Material MSDS Symbols indicating potential toxicity:
 
 If you need to prematurely stop a process step with hazardous gasses or materials, it is preferable to **click “Skip Phase” rather than stop**. This ensures any additional purge steps of the recipe are completed before venting. (There is also a shorter purge built into the venting process)
 
-## **Section 7: Process Steps** {#section-7:-process-steps}
+## **Section 7: Process Steps**
 
 > > > 1. **Set Up** 
 
@@ -222,7 +222,7 @@ If you need to prematurely stop a process step with hazardous gasses or material
 
 ![](img/6877f2f9fb8e.png)
 
-## **Section 8: Emergency Stop** {#section-8:-emergency-stop}
+## **Section 8: Emergency Stop**
 
 **EMO Button**
 
@@ -232,13 +232,13 @@ If you see arc flashing or sparks *within* the chamber through the viewport: Fir
 
 A ticking noise during a plasma process accompanied by haywire RF numbers may also warrant use of the EMO button if attempting to stop it using the software doesn’t work first. 
 
-## **Section 9: What to Watch out for During Operation** {#section-9:-what-to-watch-out-for-during-operation}
+## **Section 9: What to Watch out for During Operation**
 
 Make sure desired gas flow and power values are consistently close to their setpoints, and that reflected power is always low. 
 
 When not in use, the table temperature should always be left at 20°C to avoid condensation build-up within the tool. Always make sure the Table temperature is at or approaching 20°C at the end of your session. 
 
-## **Section 10: Disallowed Activities** {#section-10:-disallowed-activities}
+## **Section 10: Disallowed Activities**
 
 * This instrument incorporates hazards such as high-voltage electronics, radio-frequency radiation, UV- radiation, compressed gasses, heated parts, pinch- points, and vacuum chambers. **Never attempt to tinker with the tool or software beyond what is explicitly described in this SOP**.    
 * Oxidizing and flammable gasses should ***never*** mix. (eg- O2 and CH4 should never mix). If you ever observe it immediately stop the process and alert staff.   
@@ -260,13 +260,13 @@ When not in use, the table temperature should always be left at 20°C to avoid c
 * Incorporate new gasses into a recipe that are not already utilized in that recipe or attempt to create a new recipe  
 * Run a clean on the graphite process wafer
 
-## **Section 11: Revision History** {#section-11:-revision-history}
+## **Section 11: Revision History**
 
 Revision 2.0- New PTIQ Software, Formstack Process
 
 Revision 3.0 – 5/29/25- Updated to meet lab-wide SOP standards and structure, other minor clarifications, gas clarification, correction on tolerance time. (Emma Anquillare)
 
-## **Section 12: Signature Page** {#section-12:-signature-page}
+## **Section 12: Signature Page**
 
 My signature below indicates that I have read this SOP and will abide by all rules and instructions. 
 

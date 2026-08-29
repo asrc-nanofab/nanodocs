@@ -10,7 +10,7 @@
 
 ---
 
-## Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -20,39 +20,39 @@
 | Department | NanoFabrication Facility |
 | Room and Building | ASRC G.263 |
 
-### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description**
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after training with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  
 
-### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances**
 
 **Substance Name:** Gold
 
 **Abbreviation:** Cr
 
-### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
 | Gold | ![](img/3c69e7170c3c.jpg){ width="99" }![](img/8b0deafcd5f4.png){ width="77" } | Gold is toxic to aquatic life in nanoparticulate form. **Inhalation risk** from dust or nanoparticles in poorly ventilated areas. |
 
-### **Section 4 – Routes of Exposure** {#section-4-–-routes-of-exposure}
+### **Section 4 – Routes of Exposure**
 
 Inhalation hazard is present during handling or cleaning the chamber walls in a poorly ventilated area. The hazard is also present if the chamber did not have sufficient time to vent to atmospheric pressure.
 
-### **Section 5 – Personal Protective Equipment** {#section-5-–-personal-protective-equipment}
+### **Section 5 – Personal Protective Equipment**
 
 All personnel are instructed to clean the chamber in the designated fume hood with goggles, and dispose of the dirty wipes in the chemical waste bin. 
 
-### **Section 6 – Waste Disposal** {#section-6-–-waste-disposal}
+### **Section 6 – Waste Disposal**
 
 | Hazardous compound, element, or chemical name | State (L,G,S) | Hazardous | Non-hazardous | Which hazards? | How is waste managed? |
 | ----- | ----- | ----- | ----- | :---- | ----- |
 | Gold | S | x |  | Solid waste is toxic to environment and human health | Must be collected and disposed of as Hazardous waste  |
 
-## **Tool operation** {#tool-operation}
+## **Tool operation**
 
 **Hardware Description and Principle of Operation** 
 
@@ -162,7 +162,7 @@ the time.
 
 \- Users are not allowed to deposit more than 20nm of gold without staff permission.
 
-## **Common Errors and Troubleshooting\-**  {#common-errors-and-troubleshooting-}
+## **Common Errors and Troubleshooting\-** 
 
 **What to watch out for during operation** 
 

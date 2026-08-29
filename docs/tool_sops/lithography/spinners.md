@@ -14,7 +14,7 @@
 
 **Photo/EBL-resist Spinners**
 
-## Section 1: Process Description {#section-1:-process-description}
+## Section 1: Process Description
 
 ***Brewer Science Spin Coater***
 
@@ -22,18 +22,18 @@ There are three Brewer Science Cee spin coaters in the Lithography Bay.  Two are
 
 Two additional Brewer Cee spin coaters are located in the fume hoods in the lithography bay. Spin coater \# 2 is dedicated for photoresist processing, and spin coater \# 3 is dedicated to all other non-standard materials, such as spin-on glasses, PVA, PPC, charge spreading layers for e-beam, and 3D laser lithography resists. The tools are capable of spin coating substrates up to 7” square or 200-mm round and features high torque for maximum ramping capability.  You can also spin coat smaller size substrates (\<1-cm through 200-mm) using a wide array of spin-coating chuck sizes.
 
-## Section 2: Safety Protocols {#section-2:-safety-protocols}
+## Section 2: Safety Protocols
 
-### Chemical Hazards {#chemical-hazards}
+### Chemical Hazards
 
-#### Solvents {#solvents}
+#### Solvents
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
 | Isopropanol \[Isopropyl alcohol; 2-propanol\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause respiratory irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure  |
 | Acetone \[2-propanone; Dimethyl ketone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" } | Highly flammable liquid and vapor Causes serious eye irritation May cause drowsiness or dizziness May cause damage to organs through prolonged or repeated exposure Repeated exposure may cause skin dryness or cracking |
 
-#### EBL Resists {#ebl-resists}
+#### EBL Resists
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -41,7 +41,7 @@ Two additional Brewer Cee spin coaters are located in the fume hoods in the lith
 | ma-N 2403 \[contains: 1-methyl-2-pyrrolidone; n-butyl acetate; cyclohexanone\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" } | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation |
 | ZEP 520A \[contains: anisole\] | ![](img/b0820edd970c.jpg){ width="96" } | Flammable liquid and vapor |
 
-#### Photoresists {#photoresists}
+#### Photoresists
 
 | Hazardous Chemical | Hazard Sign | Hazard Statements |
 | ----- | ----- | ----- |
@@ -52,7 +52,7 @@ Two additional Brewer Cee spin coaters are located in the fume hoods in the lith
 | AZ 125nXT-7A Photoresist \[contains: 1-methoxy-2-propanol acetate; modified diacrylate; phenone derivative; triarylphosphine oxide\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/5be351cd4aeb.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/27f7133549e9.jpg){ width="96" } | Flammable liquid and vapor Causes skin irritation May cause an allergic skin reaction Causes serious eye damage May cause respiratory irritation, drowsiness or dizziness Toxic to aquatic life with long lasting effects |
 | SU-8 2002, 2005, 2010, 2025, 2050, 2100 Photoresist \[contains: epoxy resin; cyclopentanone; hexafluoroantimonate salt; propylene carbonate; triarylsulfonium salt\] | ![](img/b0820edd970c.jpg){ width="96" }![](img/b1c097ef480a.png){ width="95" }![](img/933ea4999773.png){ width="96" }![](img/27f7133549e9.jpg){ width="96" } | Flammable liquid and vapor Causes skin irritation Causes serious eye irritation May cause an allergic skin reaction Suspected of causing genetic defects Toxic to aquatic life with long lasting effects |
 
-### Physical Hazards {#physical-hazards}
+### Physical Hazards
 
 | Hazard | Hazard Sign | Hazard Statements |
 | ----- | :---: | ----- |
@@ -60,7 +60,7 @@ Two additional Brewer Cee spin coaters are located in the fume hoods in the lith
 | Pressurized gas (for the hood spinners only) | ![](img/e45aac766869.jpg){ width="101" } | Nitrogen guns in the hood are pressurized |
 | Hotplate (for EBL spinner only) | ![](img/eb60111b034b.png){ width="100" } | Hotplate is set to 180℃ at all times and can cause severe burns |
 
-### Routes of Exposure {#routes-of-exposure}
+### Routes of Exposure
 
 There is a risk of skin or eye exposure when handling photoresists and solvents that can be mitigated by wearing proper PPE.
 
@@ -74,13 +74,13 @@ There is a risk of launching objects by spraying them with the nitrogen guns in 
 
 There is a risk of severe skin burns if the hotplate with the EBL spinner is touched, which can be prevented by never by using tweezer when handling samples on the hotplate and never touching it directly with hands or other body parts.
 
-### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
+### Personal Protective Equipment Requirements
 
 Users must be wearing the nitrile cleanroom gloves required throughout the cleanroom at all times.  It is also recommended that users wear a second pair of gloves over the first pair.  It is very easy to get photoresist on gloves when applying resists to samples.  Wearing a second pair of gloves makes it easier to remove, dispose of and replace soiled gloves.
 
 Safety glasses are required when using the spinners.
 
-### Waste Disposal {#waste-disposal}
+### Waste Disposal
 
 Dispose of gloves and wipes soiled with photoresists or solvents in a red hazardous waste bin.
 
@@ -88,9 +88,9 @@ Dispose of any used pipettes or swabs in the sharps waste container.
 
 Dispose of used or failed substrates in a sharps waste container.
 
-## Section 3: Process {#section-3:-process}
+## Section 3: Process
 
-### Procedure {#procedure}
+### Procedure
 
 Estimated Time:  \<20 minutes
 
@@ -172,7 +172,7 @@ a.     Do not dispense an excessive amount. Covering \<75% of the wafer is suffi
 
  
 
-### Emergency Stop {#emergency-stop}
+### Emergency Stop
 
 *Critical*
 
@@ -184,7 +184,7 @@ a.     Do not dispense an excessive amount. Covering \<75% of the wafer is suffi
 
  
 
-### Allowed Activities {#allowed-activities}
+### Allowed Activities
 
 \-        Solvent clean substrate.
 
@@ -206,7 +206,7 @@ o   Substrate surface should be hydrophobic for resist to coat well and adhere t
 
  
 
-### Disallowed Activities {#disallowed-activities}
+### Disallowed Activities
 
 \-        Users cannot use samples smaller than the chuck.
 
@@ -216,7 +216,7 @@ o   Pieces Chuck: Sample must cover o-ring
 
  
 
-### What to watch out for during operation {#what-to-watch-out-for-during-operation}
+### What to watch out for during operation
 
 \-        If the wafer is wobbling during the process, it is off center.
 
@@ -224,7 +224,7 @@ o   Pieces Chuck: Sample must cover o-ring
 
  
 
-### Common Troubleshooting Tips {#common-troubleshooting-tips}
+### Common Troubleshooting Tips
 
 \-        If vacuum is weak, remove the chuck and turn on the vacuum by pressing Hold. Dispense 3-4 drops of acetone with the dropper into the vacuum opening on the spindle shaft and blow the nitrogen gun down the vacuum opening.
 
@@ -234,13 +234,13 @@ o   Be careful to not get solvent anywhere but inside the vacuum opening.
 
  
 
-### When to call staff? {#when-to-call-staff?}
+### When to call staff?
 
 \-        There is no vacuum.
 
  
 
-### Badger Criteria {#badger-criteria}
+### Badger Criteria
 
 *Report Problem:*
 
@@ -256,7 +256,7 @@ o   Be careful to not get solvent anywhere but inside the vacuum opening.
 
  
 
-### Reference Documents {#reference-documents}
+### Reference Documents
 
 \-        https://www.brewerscience.com/processing-theories/spin-coat/
 
