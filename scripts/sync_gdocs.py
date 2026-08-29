@@ -53,6 +53,7 @@ PDFS_DIR = DOCS_DIR / "assets" / "pdfs"
 # memory only, so every process restart re-downloaded every DOCX.
 SYNC_STATE_PATH = REPO_ROOT / ".sync-state.json"
 REQUEST_TIMEOUT = 60
+GET_ATTEMPTS = 3
 DEFAULT_WATCH_INTERVAL = 20.0
 # Floor so a typo like --watch 0 can't hammer Google's export endpoints
 MIN_WATCH_INTERVAL = 5.0
@@ -325,6 +326,23 @@ def best_original(
 
 def slugify(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
+
+
+def fetch_url(url: str) -> requests.Response:
+    """GET with retries. GitHub runners often see one-off Google export stalls."""
+    last_exc: requests.RequestException | None = None
+    for attempt in range(1, GET_ATTEMPTS + 1):
+        try:
+            resp = requests.get(url, timeout=REQUEST_TIMEOUT)
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException as exc:
+            last_exc = exc
+            if attempt == GET_ATTEMPTS:
+                break
+            time.sleep(5 * attempt)
+    assert last_exc is not None
+    raise last_exc
 
 
 def pdf_asset_path(section: Section, name: str) -> Path:
@@ -752,8 +770,7 @@ def sync_row(
     preview_url = f"https://docs.google.com/document/d/{doc_id}/preview"
 
     md_url = f"https://docs.google.com/document/d/{doc_id}/export?format=md"
-    resp = requests.get(md_url, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
+    resp = fetch_url(md_url)
     # Sidecar / watch fast path: a byte-identical export means nothing to
     # do, skipping the docx download, image matching, and PDF entirely.
     md_digest = hashlib.sha1(resp.content).hexdigest()
@@ -767,8 +784,7 @@ def sync_row(
     markdown = ALT_BOILERPLATE_RE.sub("", resp.text)
 
     docx_url = f"https://docs.google.com/document/d/{doc_id}/export?format=docx"
-    resp = requests.get(docx_url, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
+    resp = fetch_url(docx_url)
     docx_media = load_docx_media(resp.content)
 
     body = clean_body(markdown)
@@ -797,8 +813,7 @@ def sync_row(
     # Keyed to the body, not the whole page, so header-template tweaks don't
     # re-download and rewrite every hosted PDF.
     if body_changed or not pdf_path.exists():
-        resp = requests.get(pdf_url, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
+        resp = fetch_url(pdf_url)
         pdf_path.parent.mkdir(parents=True, exist_ok=True)
         pdf_path.write_bytes(resp.content)
 
@@ -827,8 +842,7 @@ def sync_section(
 ) -> Counter[SyncStatus]:
     if not quiet:
         print(f"Section: {section.name}")
-    resp = requests.get(section.sheet_csv_url, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
+    resp = fetch_url(section.sheet_csv_url)
     rows = list(csv.DictReader(io.StringIO(resp.text)))
 
     counts: Counter[SyncStatus] = Counter()
