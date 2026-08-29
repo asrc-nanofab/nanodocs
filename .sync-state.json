@@ -1,0 +1,192 @@
+{
+  "134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ": {
+    "export_sha1": "1b9f690a71973b127a8c54258f2c304bd4f90feb",
+    "name": "ICP-Fl",
+    "section": "tools"
+  },
+  "13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc": {
+    "export_sha1": "116de9b9b2b225ffbb454fc45cf205ebca32250f",
+    "name": "ALD",
+    "section": "tools"
+  },
+  "15K8HiRoBqTl6__K5GMHitdGn7ybAD6Iga3Qf07gFwt4": {
+    "export_sha1": "435397335c2c02d2324a43df4f23a09fbe9ee184",
+    "name": "Litho-Development Hood",
+    "section": "chem"
+  },
+  "16OSeeL1jXSGKkX6lI78EIyhBQONfz8GxHnL7XUGWk14": {
+    "export_sha1": "e4a53a7cd16b35a465d62a7542c9ec9ad6062d1f",
+    "name": "Solvent/Lift-Off Hood",
+    "section": "chem"
+  },
+  "187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw": {
+    "export_sha1": "6e81bda3d4a6e2e5edd3e5d5301e04a7f19026d0",
+    "name": "Safety Manual",
+    "section": "policy"
+  },
+  "1CEDzZpsaCl18r2u3Z_2YnZJjB6EAYobtiUnn9lpl9LY": {
+    "export_sha1": "98bb41569a05bfac61948ef7d9d1305bc1bf757c",
+    "name": "Gold Sputter",
+    "section": "tools"
+  },
+  "1Gcfy5zHprGlI_ZHOKh8N3v_X1wO9ndRzPOorbETv7g0": {
+    "export_sha1": "4eae90f231d67b4c68ce9c5f3432b739d64de557",
+    "name": "Piranha/HF Hood",
+    "section": "chem"
+  },
+  "1H33fEMQOaZ6IegQyybm0pJRTaQjPmYC0ar2dVD6sJwM": {
+    "export_sha1": "a798a7b98968e052883b2512d0f2ab25e42a9936",
+    "name": "Spinner",
+    "section": "tools"
+  },
+  "1H5BNvSj7EzHJ6-9Pjn1EpoTDeR8hgMribRgxNWJGK_g": {
+    "export_sha1": "e17440994db3387f77ef99caaaa39603359dff60",
+    "name": "Lab Suspension",
+    "section": "policy"
+  },
+  "1HBfsM3Lt2x3310cCUOhnfu8L6NcT_e4XFyvLrq5oJIs": {
+    "export_sha1": "ba5d57182300d48daf6ae71be9f1fd3ece4b408d",
+    "name": "Dicing Saw",
+    "section": "tools"
+  },
+  "1IaniDFz65Ywijamk3f5YETyXLmCPBjYZ47sSgO8O6DE": {
+    "export_sha1": "e7cb72cc09a92ade12632c04cb89dc21c21d2dad",
+    "name": "RIE",
+    "section": "tools"
+  },
+  "1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg": {
+    "export_sha1": "d97b954b6253bdf71e49eec79cf1fc1463bcb907",
+    "name": "Piranha Clean SOP",
+    "section": "chem"
+  },
+  "1KGMAyNuV7d_IKULiMIsnu3mv2qEcMy-Go3yxuJijZLQ": {
+    "export_sha1": "b4e2f3c57cf1bbacf2f18c9c04f4d4345026ec1c",
+    "name": "Chromium Etch SOP",
+    "section": "chem"
+  },
+  "1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw": {
+    "export_sha1": "b952f928dae1f84649523563acea80049223b74d",
+    "name": "Nanoscribe",
+    "section": "tools"
+  },
+  "1OKt-lxZbpTqgTQaB2xr4tY9Pc04TGJ_Dgq-SYLFo0FM": {
+    "export_sha1": "bb0dc32081711e5cbb180b0ea02bb0ab4289e2c9",
+    "name": "Isotropic Silicon Etch (HNA) SOP",
+    "section": "chem"
+  },
+  "1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI": {
+    "export_sha1": "99df601ba9a09f5922b4b443391d6f63d7b993d5",
+    "name": "Optical Profilometer",
+    "section": "tools"
+  },
+  "1Qtl2bvsitV9snJGXmonvmC6lgJgq6zfIud20R6E94i0": {
+    "export_sha1": "43e2c00b9df1cbc3d00692c2a7f8bfe2b38dfa57",
+    "name": "RCA Hood",
+    "section": "chem"
+  },
+  "1RVBRcWvxVvR0yamtidYjsd0aanbXqg84ov4ds2PDYB0": {
+    "export_sha1": "9e1040275621d6e2f56dc119c10ff2716e9961c7",
+    "name": "Hydroflouric Acid SOP",
+    "section": "chem"
+  },
+  "1T6G6K91GHww4PlztrbcEJj7Kibu3BXw-j6RAdp5PAGQ": {
+    "export_sha1": "fbc64dc192edb7cb6c6ca236e07934b358964528",
+    "name": "Nickel Etch SOP",
+    "section": "chem"
+  },
+  "1UN-jwGXj1MgKG_DcL0Pjg06Q0h_o_oWUWd3saSPNCxk": {
+    "export_sha1": "c6f42d5516b369ef0dedcd7d95e89bfd274f4274",
+    "name": "Metal Evap",
+    "section": "tools"
+  },
+  "1WzJh-JIVJhJRlmDeTlwibXwsdp1JH-A4RMS0WEP63CY": {
+    "export_sha1": "fa9c0489c3a869c2eaaf44c00fc1913615698578",
+    "name": "Becoming a Nanofab User",
+    "section": "policy"
+  },
+  "1XmcgTR4KJSk2_5zVrSb0KT16OabZz5VcCGGa1UyJi4s": {
+    "export_sha1": "738179adada4a4dbe9f571f2a39177a618601b54",
+    "name": "Thermal Evap",
+    "section": "tools"
+  },
+  "1ZxRo_R4RzLxKZ7h_I2hFphAH187e9qq2U4bBf5n4lOg": {
+    "export_sha1": "dbaaa57126381c43b35c9beba3bc8cdbab09d529",
+    "name": "AJA Sputter",
+    "section": "tools"
+  },
+  "1_9u5YudriyjGAOOsm-8EVmkD0bD6SvVQZb4RuNEvKrg": {
+    "export_sha1": "4e5616dd8b1eab8ebda4a9978840799269582bf5",
+    "name": "Caustics/Metal Etch Hood",
+    "section": "chem"
+  },
+  "1_GuCjeccX-jVpvjYN3VdQHAqRQzjFMkkwiHjFlsDaZI": {
+    "export_sha1": "9499195ebbb0b0215dffcc89045717c13c2c9b70",
+    "name": "Organic Evap",
+    "section": "tools"
+  },
+  "1beyiXEaJvjsNaPcidsnvz1DwOyGI37BpkUN3oCp7gmo": {
+    "export_sha1": "350e6f7eeec3e3df94f28f5046b37bd5f30037aa",
+    "name": "Ellipsometer",
+    "section": "tools"
+  },
+  "1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc": {
+    "export_sha1": "909e142891181cceb6958d208d7494306af50f52",
+    "name": "Elionix 100keV",
+    "section": "tools"
+  },
+  "1cds236-fRol1RoqzUvsCR4YPsqeyf5Yum19WReIJFl8": {
+    "export_sha1": "1efa814a971ca515f5890dc590f0497eee89e1b7",
+    "name": "Mask Aligner",
+    "section": "tools"
+  },
+  "1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY": {
+    "export_sha1": "c59b693f43afcce59d8b964dc7aa260a4f66aba7",
+    "name": "SEM",
+    "section": "tools"
+  },
+  "1ffuyK_5d5dMrEkYlPAlxepmydWzc6R_e42pD5W3brjw": {
+    "export_sha1": "c1348d4022a243acd60cef5faf2fac0d679d0e0b",
+    "name": "Gold Etch SOP",
+    "section": "chem"
+  },
+  "1lzJ2D_izEUCCXlF7XG8gEiAwup2btTmb8DAzQv20AQ8": {
+    "export_sha1": "51facb2523f06359830f0f71846b9aaa508cecc3",
+    "name": "Hot Plates",
+    "section": "tools"
+  },
+  "1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4": {
+    "export_sha1": "5787217870e69388c564305b9982eea8c799f1a3",
+    "name": "ICP-Cl",
+    "section": "tools"
+  },
+  "1q-4YgUklqppoQipswF7NygH4oarlqO2lo9nTGDubHhk": {
+    "export_sha1": "4859ae5fa7e26051cd663efdaca3c8571dd357a8",
+    "name": "PECVD",
+    "section": "tools"
+  },
+  "1qzcJ_VQbIsTaRefLxhnhzaancla2f7Q7IbotATD6YJU": {
+    "export_sha1": "685e1e278d4adf4a9d1eca1b36472c9f25e451b7",
+    "name": "Lab Manual",
+    "section": "policy"
+  },
+  "1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8": {
+    "export_sha1": "5ff9333931dea2a9bf65b3e7fa306cada3ea585f",
+    "name": "Aluminum Etch SOP",
+    "section": "chem"
+  },
+  "1uDD_bNfVsyvTkWzNPy5QGdm7Z_LQdniKeHbNruE4a1I": {
+    "export_sha1": "e20ae8f19603146e683e9072017309cb76a70c29",
+    "name": "Profilometer",
+    "section": "tools"
+  },
+  "1vWchHUJWEjEPmC7fhBNWyf3IMGcx8EHeKd0mEAQ3X0c": {
+    "export_sha1": "7330efc2e57f226619958e0476d82380664b7489",
+    "name": "AFM",
+    "section": "tools"
+  },
+  "1wxldtt0HAxqAhj__62KHGnug-Hdfc21pm3gg9mrBhIE": {
+    "export_sha1": "f961f65d11771a61d7e447d006c9671808a478e7",
+    "name": "C-14",
+    "section": "policy"
+  }
+}

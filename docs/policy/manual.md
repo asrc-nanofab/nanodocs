@@ -101,6 +101,8 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 
 * Food or drinks are not allowed in the cleanroom or any other labs at the ASRC.  This includes the gowning room, so users are not allowed to store food or drink, even if unopened, in lockers or containers.
 
+* ![A sign with text and symbolsDescription automatically generated](img/e22fcc6cea69.png)
+
 * Do not smoke or chew gum while inside the cleanroom.
 
 * Do not wear headphones while inside the cleanroom.
@@ -112,6 +114,8 @@ Failure to follow these rules may result in temporary or permanent loss of clean
 * Always remove gloves as you exit the laboratory. 
 
 * It is recommended that members wash their hands after leaving the NanoFab. 
+
+* ![A black and white image of a person washing their handsDescription automatically generated](img/d34587fed928.jpg){ width="122" }
 
 **Hours of Operations**
 
@@ -175,6 +179,8 @@ Failure to abide by the After-Hours Policy will result in loss of after-hours an
 
 * In the event of an emergency during after-hours, the entrance of the cleanroom will be blocked to prevent users from entering. The cleanroom will be closed until further notice.
 
+* ![A glass door with a roped barrierDescription automatically generated with medium confidence](img/09925b92e45c.jpg){ width="326" }
+
 **C-14**
 
 * A C-14 is a Certificate of Fitness for Non-Production Laboratories issued by FDNY.  FDNY requires that permitted labs in New York City must be under the supervision of a C-14 holder.  This means there must be at least one person on the ground floor of the ASRC if there is anyone working in the lab.  During regular operating hours, facility staff are on-site and fulfill this requirement, but during after-hours, there is no guarantee that there are other C-14 holders on-site, so all members who wish to enter the cleanroom during after-hours must have a C-14.
@@ -207,7 +213,9 @@ Failure to abide by the After-Hours Policy will result in loss of after-hours an
 
 * APPLY IN PERSON:
 
-* For those not eligible for the alternative issuance program, the test must be taken at FDNY, located at 9 MetroTech Center, 1st Floor, Brooklyn, NY 11201\. 
+* For those not eligible for the alternative issuance program, the test must be taken at FDNY, located at 9 MetroTech Center, 1st Floor, Brooklyn, NY 11201\.
+
+* ![A map of a cityDescription automatically generated](img/d98cd82ef52f.png){ width="310" }
 
 * C-14 will be issued the same day at the FDNY office when the test has been satisfactorily completed.
 
@@ -303,15 +311,15 @@ Gloves
 
 **Iris Scanner**
 
-* Cleanroom access is controlled by a dual card/iris reader located to the right of the gowning room entrance. 
+Cleanroom access is controlled by a dual card/iris reader located to the right of the gowning room entrance. 
 
-* Stand approximately 2” from the box and hold your card to the reader until the system begins its audio cues.
+Stand approximately 2” from the box and hold your card to the reader until the system begins its audio cues.
 
-* Align your eyes so that they are visible in the alignment mirror.
+Align your eyes so that they are visible in the alignment mirror.
 
-* The yellow indicator dot will turn green when you reach a correct position.
+The yellow indicator dot will turn green when you reach a correct position.
 
-* Hold position until access is granted.
+Hold position until access is granted.
 
 **Gowning Procedure**
 
@@ -405,6 +413,8 @@ Do not remove gloves, hairnet, facemask or booties until you’ve exited the gow
 
 * Members can save pictures, files, and data to their own folder under “Users”.
 
+* ![A screenshot of a computerDescription automatically generated](img/4effc7dd5a7f.png){ width="366" }
+
 **Citation Statement Requirement**
 
 * When publishing or presenting results derived from use of equipment and services at the ASRC NanoFab, please use the following acknowledgement:
@@ -416,4 +426,9 @@ Do not remove gloves, hairnet, facemask or booties until you’ve exited the gow
 * I will adhere to the guidelines provided in this document while a member of the ASRC NanoFabrication Facility and understand that failure to comply with any of the regulations will lead to revocation of privileges, suspension, and/or expulsion from the cleanroom.
 
 * **When you register as a User of the ASRC NanoFabrication Facility, you will be directed to this document and asked to confirm your acceptance of the Rules of Conduct and Use.**
+
+
+
+
+
 

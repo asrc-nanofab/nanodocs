@@ -12,9 +12,9 @@
 
 **Standard Operating Procedure: PECVD**
 
-## **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION** {#plasma-enhanced-chemical-vapor-deposition}
+## **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION**
 
-### **Facility and Contact Information** {#facility-and-contact-information}
+### **Facility and Contact Information**
 
 | Nanofabrication Facility | ASRC, RFCUNY |
 | :---- | :---- |
@@ -23,9 +23,9 @@
 | **Manager** | **Shawn Kilpatrick** |
 | **Room & Building** |  **G263, Nanofab, ASRC** |
 
-### **Section 1- Process and Experiment Description** {#section-1--process-and-experiment-description}
+### **Section 1- Process and Experiment Description**
 
-**Oxford PlasmaPro System 100 PECVD**
+#### **Oxford PlasmaPro System 100 PECVD**
 
 The Oxford Plasma Enhanced Chemical Vapor Deposition (PECVD) is a sophisticated high quality film deposition tool, which utilizes various process gases for deposition of silicon dioxide, silicon carbide silicon nitride, amorphous silicon, silicon carbide and other films for wide applications.
 
@@ -47,7 +47,7 @@ Hardware Description
 
     It can hold substrates up to 8 inches in diameter. The temperature control system is included to maintain substrate temperature generally ranges from 100oC to 400o
 
-#### **Principle of Operation:** {#principle-of-operation:}
+#### **Principle of Operation:**
 
 The PECVD process has three main operation steps
 
@@ -57,35 +57,33 @@ The PECVD process has three main operation steps
 
     3. Cleaning
 
-##### **Conditioning:** {#conditioning:}
+##### **Conditioning:**
 
 It is the process of preparing and stabilizing the chamber and its components before actual film deposition starts. This step helps to remove any contaminants or any residues from previous processes. Conditioning or seasoning involves a pre-deposition of approximately 200 nm of material deposition on the chamber area to ensure a clean atmosphere for the new deposition process using the recommended carrier wafer.
 
 Conditioning also heats the chamber to the desired temperature, adjusts chamber pressure to the required level and ensures consistent gas flow into the chamber.
 
-##### **Deposition:** {#deposition:}
+##### **Deposition:**
 
 It is the main process of the PECVD where the desired thickness of materials is deposited onto the surface of the wafer or substrate to form a thin film layer/s in a precisely controlled environment. In a confined space of vacuum, high voltage RF power is applied to generate plasma between two parallel configurations of electrodes with the introduction of process gas/es.  During the operation, some gases flow and components are interlocked for safety purposes. 
 
-##### **Cleaning:** {#cleaning:}
+##### **Cleaning:**
 
 The cleaning process after deposition is crucial for maintaining the PECVD system’s performance and high-quality film deposition in the next subsequent processes. 
 
 After the deposition process, the chamber walls and components often contain residual films and toxic gases. Plasma cleaning is commonly used to remove these residues. Generally, fluorine-based gas is introduced into the chamber to generate plasma, and it etches out thin layers of material that are deposited on the chamber’s inside walls and stage. After plasma cleaning multiple cycles of pumping and purging of N2 gas are done to flush out any remaining contaminants.
 
-### ---
+### **Section 2 \- Personal Protective Equipment & Responsibilities**
 
-### **Section 2 \- Personal Protective Equipment & Responsibilities** {#section-2---personal-protective-equipment-&-responsibilities}
-
-**Personal Protective Equipment**: 
+#### **Personal Protective Equipment:** 
 
 Clean room gown, nitrile gloves, Mask, Goggles (optional) 
 
-**Equipment for the tool**: 
+#### **Equipment for the tool:** 
 
 Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers. 
 
-**User Responsibilities**
+#### **User Responsibilities**
 
 * Follow proper gowning procedures (Top to bottom and vice-versa)  
 * Carefully read SOP.  
@@ -97,7 +95,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 * Always be alert and aware of any unusual tool behavior or smells; warn fellow users and inform staff immediately.  
 * Always keep clean working space before and after use
 
-**Do / Can**
+#### **Do / Can**
 
 * Walk as slow as possible, brisk walks or running might contaminate sensitive substrates in the Cleanroom.  
 * Before using the tool, enable the badger account.  
@@ -113,7 +111,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 * Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
 * Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 2 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
 
-    ![](img/ac4716a38cff.png){ width="109" }![](img/c33eb243d09e.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+    ![](img/ac4716a38cff.png){ width="109" }![](img/d2fec89e8f77.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
 
 *Image 1:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
 
@@ -121,7 +119,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 
 *Image 2* Flat Edge of the Sapphire Cleaning Wafer on the load arm
 
-**Do not**
+#### **Do not**
 
 * Leave the Clean Room when the process is running.  
 * Never change the matching network position while running the deposition recipe.  
@@ -133,7 +131,7 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 * **Never use Oxidizer and Flammable gases together, it will explode**   
 * Deposit too much of the material before running a clean. For SiO2 \> 5µm, SiN \> 3 µm, a-Si \> 2µm, or SiC \> 1.5µm, depositions must be split in half and the chamber must be cleaned at the halfway point.
 
-**Emergency Stop**
+#### **Emergency Stop**
 
 * In the case of an emergency where a tool malfunction puts users in imminent danger, press the red EMO button on the tool. This is only to be used as a last resort.
 
@@ -143,9 +141,9 @@ Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers.
 
 To change the matching position of the transformer, reach out at the bottom right corner of the right-side panel. 
 
-### **Section 3- Process Steps of SOP** {#section-3--process-steps-of-sop}
+### **Section 3- Process Steps of SOP**
 
-**Material Deposition Procedure**
+#### **Material Deposition Procedure**
 
 Log in to the PTIQ system, using a private user account or common **User account** under **Individual** category. (Computer’s Screen will wake up only after enabling BADGER ACCOUNT)
 
@@ -165,9 +163,9 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 7, * Opened Load Lock lid
 
-* #### **Three Operation Steps** {#three-operation-steps}
+* #### **Three Operation Steps**
 
-1. ##### **Load Sample** {#load-sample}
+1. ##### **Load Sample**
 
     Sapphire wafer is always there in the Load Lock under the vacuum.
 
@@ -191,7 +189,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 8*, Loading steps for wafer/chips for Condition/Deposition/Clean processe*s*
 
-2. ##### **Run Recipe** {#run-recipe}
+2. ##### **Run Recipe**
 
 1. Click PECVD\#1 \[step **1**\] tab under Manual tab. Follow the numbered steps on the **Image 9\.**
 
@@ -205,7 +203,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 9,* Steps for Loading and Runing Recipe
 
-3. ##### **Unload Sample** {#unload-sample}
+3. ##### **Unload Sample**
 
     When the process is completed, the wafer inside the chamber will be in GREEN. Follow steps of **Image 10**.
 
@@ -223,9 +221,9 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 *Image 10,* Unloading steps for wafer/chips after Condition/Deposition processes 
 
-* #### **Three Main Processes** {#three-main-processes}
+* #### **Three Main Processes**
 
-1. ##### **Condition Chamber** {#condition-chamber}
+1. ##### **Condition Chamber**
 
 1. Set the match position to the appropriate setting for the desired film to be deposited.
 
@@ -245,7 +243,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 9. Vent the load lock and unload the wafer for the next operation deposition steps.
 
-2. ##### **Deposition** {#deposition}
+2. ##### **Deposition**
 
 	To Run the Deposition Recipe.
 
@@ -259,9 +257,9 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 As mentioned below.
 
-**Changing Deposition time in the Recipe**
+#### **Changing Deposition time in the Recipe**
 
-1. With respect to Time (Hr. Min. Sec) as of **Image 11**
+1. ##### **With respect to Time (Hr. Min. Sec) as of Image 11**
 
 Go to the Recipe Editor \[step **1**\].
 
@@ -279,7 +277,7 @@ Go to the Recipe Editor \[step **1**\].
 
 *Image 11*, Changing deposition time on the Deposition recipe
 
-2. With respect to the growth rate per CYCLE (here Nitrite Recipe); Follow the steps of **Image 12\.**
+2. ##### **With respect to the growth rate per CYCLE (here Nitrite Recipe); Follow the steps of Image 12\.**
 
 1. Go to the Recipe Editor \[step **1**\].
 
@@ -299,7 +297,7 @@ Go to the Recipe Editor \[step **1**\].
 
 *Image 12*, Changing deposition time on the Nitrite Recipe or recipe that has the deposition process with a number of cycles.
 
-3. ##### **Clean Chamber** {#clean-chamber}
+3. ##### **Clean Chamber**
 
 **Approximate time: 50 mins**
 
@@ -332,7 +330,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 *Image 13*, Changing Cleaning Time for OPT Clean Timed Recipe
 
-### **Section 4 – Gases, Hazards Classification and symbols** {#section-4-–-gases,-hazards-classification-and-symbols}
+### **Section 4 – Gases, Hazards Classification and symbols**
 
 ![](img/d1d00fedc781.png){ width="445" }
 
@@ -350,13 +348,13 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 ![A red and white sign with a skull and crossbonesDescription automatically generated](img/940a999ed658.jpg){ width="66" } \= Toxic
 
-![A black exclamation mark in a red diamondDescription automatically generated](img/fb9ccb8a17d2.png){ width="61" }  \= Harmful
+![A black exclamation mark in a red diamondDescription automatically generated](img/281c24ff29c7.png){ width="61" }  \= Harmful
 
 ![A sign with a black object in the middleDescription automatically generated](img/794c4d78c5a0.png){ width="66" } \= Compressed Gas
 
  
 
-* #### **Gases, Hazard sign and Description** {#gases,-hazard-sign-and-description}
+* #### **Gases, Hazard sign and Description**
 
 | S. No | Gases | Gases & Hazard Sign | Description |
 | ----- | ----- | ----- | ----- |

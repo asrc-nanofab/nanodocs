@@ -19,6 +19,10 @@ Usage:
 
 With --watch, the sync re-runs every ~20s (pair with `zensical serve` for a
 live preview while editing the Google Doc); Ctrl+C stops it.
+
+Last-published Markdown-export SHA-1s live in `.sync-state.json` at the
+repo root so a later run (CI or a fresh `--watch`) can skip unchanged
+docs without re-downloading the DOCX and PDF.
 """
 
 from __future__ import annotations
@@ -29,6 +33,7 @@ import csv
 import enum
 import hashlib
 import io
+import json
 import re
 import sys
 import time
@@ -40,8 +45,13 @@ from pathlib import Path
 import requests
 from PIL import Image
 
-DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+DOCS_DIR = REPO_ROOT / "docs"
 PDFS_DIR = DOCS_DIR / "assets" / "pdfs"
+# Repo root, not docs/: Zensical must not serve this. CI and one-shot runs
+# use it as the unchanged fast path; --watch used to keep the same map in
+# memory only, so every process restart re-downloaded every DOCX.
+SYNC_STATE_PATH = REPO_ROOT / ".sync-state.json"
 REQUEST_TIMEOUT = 60
 DEFAULT_WATCH_INTERVAL = 20.0
 # Floor so a typo like --watch 0 can't hammer Google's export endpoints
@@ -96,6 +106,68 @@ class SyncStatus(enum.Enum):
     SYNCED = "synced"
     UNCHANGED = "unchanged"
     SKIPPED = "skipped"
+
+
+@dataclass
+class SyncState:
+    """Last published Markdown-export SHA-1 per Google Doc id."""
+
+    docs: dict[str, dict[str, str]]
+    dirty: bool = False
+
+    def export_sha1(self, doc_id: str) -> str | None:
+        entry = self.docs.get(doc_id)
+        if entry is None:
+            return None
+        sha1 = entry.get("export_sha1")
+        return sha1 or None
+
+    def remember(self, doc_id: str, *, section: str, name: str, sha1: str) -> None:
+        # Only persist when the hash is new or changed — a rename in the
+        # sheet must not dirty the sidecar on an idle tick.
+        existing = self.docs.get(doc_id)
+        if existing is not None and existing.get("export_sha1") == sha1:
+            return
+        self.docs[doc_id] = {
+            "name": name,
+            "section": section,
+            "export_sha1": sha1,
+        }
+        self.dirty = True
+
+
+def load_sync_state(path: Path = SYNC_STATE_PATH) -> SyncState:
+    if not path.is_file():
+        return SyncState(docs={})
+    raw = json.loads(path.read_text())
+    if not isinstance(raw, dict):
+        raise TypeError(f"{path} must be a JSON object of doc id → entry")
+    docs: dict[str, dict[str, str]] = {}
+    for doc_id, entry in raw.items():
+        if not isinstance(entry, dict):
+            continue
+        sha1 = str(entry.get("export_sha1") or "")
+        if not sha1:
+            continue
+        docs[str(doc_id)] = {
+            "name": str(entry.get("name") or ""),
+            "section": str(entry.get("section") or ""),
+            "export_sha1": sha1,
+        }
+    return SyncState(docs=docs)
+
+
+def save_sync_state(state: SyncState, path: Path = SYNC_STATE_PATH) -> bool:
+    """Write only when a hash was added or changed. Returns True if written."""
+    if not state.dirty:
+        return False
+    text = json.dumps(state.docs, indent=2, sort_keys=True) + "\n"
+    if path.is_file() and path.read_text() == text:
+        state.dirty = False
+        return False
+    path.write_text(text)
+    state.dirty = False
+    return True
 
 
 @dataclass(frozen=True)
@@ -658,7 +730,7 @@ def sync_row(
     section: Section,
     row: dict[str, str],
     quiet: bool = False,
-    md_cache: dict[str, str] | None = None,
+    state: SyncState | None = None,
 ) -> SyncStatus:
     name = (row.get(section.name_column) or "").strip()
     pdf_url = (row.get("PDF Link") or "").strip()
@@ -682,12 +754,12 @@ def sync_row(
     md_url = f"https://docs.google.com/document/d/{doc_id}/export?format=md"
     resp = requests.get(md_url, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
-    # Watch-mode fast path: a byte-identical export means nothing to do,
-    # skipping the docx download, image matching, and PDF logic entirely
+    # Sidecar / watch fast path: a byte-identical export means nothing to
+    # do, skipping the docx download, image matching, and PDF entirely.
     md_digest = hashlib.sha1(resp.content).hexdigest()
     if (
-        md_cache is not None
-        and md_cache.get(doc_id) == md_digest
+        state is not None
+        and state.export_sha1(doc_id) == md_digest
         and page_path.exists()
         and pdf_path.exists()
     ):
@@ -730,9 +802,9 @@ def sync_row(
         pdf_path.parent.mkdir(parents=True, exist_ok=True)
         pdf_path.write_bytes(resp.content)
 
-    # Only cache after the full pipeline, so disk is known to match the export
-    if md_cache is not None:
-        md_cache[doc_id] = md_digest
+    # Only record after the full pipeline, so disk is known to match the export
+    if state is not None and page_path.exists() and pdf_path.exists():
+        state.remember(doc_id, section=section.name, name=name, sha1=md_digest)
 
     if not page_changed:
         if not quiet:
@@ -751,7 +823,7 @@ def sync_section(
     category: str | None,
     only: str | None,
     quiet: bool = False,
-    md_cache: dict[str, str] | None = None,
+    state: SyncState | None = None,
 ) -> Counter[SyncStatus]:
     if not quiet:
         print(f"Section: {section.name}")
@@ -765,7 +837,7 @@ def sync_section(
             continue
         if only and (row.get(section.name_column) or "").strip() != only:
             continue
-        counts[sync_row(section, row, quiet, md_cache)] += 1
+        counts[sync_row(section, row, quiet, state)] += 1
     if not quiet:
         print(f"  {summarize(counts)}")
     return counts
@@ -778,23 +850,26 @@ def summarize(counts: Counter[SyncStatus]) -> str:
 def sync_all(
     args: argparse.Namespace,
     quiet: bool = False,
-    md_cache: dict[str, str] | None = None,
+    state: SyncState | None = None,
 ) -> Counter[SyncStatus]:
+    if state is None:
+        state = load_sync_state()
     totals: Counter[SyncStatus] = Counter()
     for section_name in args.sections:
         totals += sync_section(
-            SECTIONS[section_name], args.category, args.only, quiet, md_cache
+            SECTIONS[section_name], args.category, args.only, quiet, state
         )
+    save_sync_state(state)
     return totals
 
 
 def watch(args: argparse.Namespace, interval: float) -> int:
-    md_cache: dict[str, str] = {}
+    state = load_sync_state()
     print(f"Watching every {interval:g}s — Ctrl+C to stop")
     try:
         while True:
             try:
-                totals = sync_all(args, quiet=True, md_cache=md_cache)
+                totals = sync_all(args, quiet=True, state=state)
             except requests.RequestException as exc:
                 print(f"[{time.strftime('%H:%M:%S')}] error: {exc} — will retry")
             else:

@@ -14,7 +14,7 @@ Standard Operating Procedure:
 
 ## **Isotropic Silicon Etch (HNA)**
 
-### **Principle of Operation** {#principle-of-operation}
+### **Principle of Operation**
 
 For isotropic wet etching of silicon and polysilicon. Etch rates are on the order of 1-3 µm/min depending on the ratio of chemicals used.
 
@@ -22,15 +22,15 @@ Hydrofluoric (HF) acid has a number of chemical, physical and toxicological prop
 
 *Danger: Hydrofluoric acid is a contact poison, capable of penetrating skin and causing deep tissue damage, including severe burns and bone damage. If absorbed into the bloodstream, it will react with calcium and other electrolytes leading to hypocalcemia, causing cardiac arrhythmias and cardiac arrest. It is important to know the first aid procedure for treating HF exposure and to immediately call CCNY Public Safety so they can call an ambulance if there is an HF exposure. HF does not burn like other acids since it penetrates the skin and reacts in the body, leading to delayed reactions and pain. Depending on the concentration of HF, pain caused by the tissue damage may be delayed 1 to 24 hours.  If HF is not rapidly neutralized and the fluoride ion bound, tissue destruction may continue for days and result in limb loss and death, so it is important to wear the proper PPE and to get immediate medical assistance in the case of exposure.*
 
-### **Material Requirements** {#material-requirements}
+### **Material Requirements**
 
-#### **Equipment:**  {#equipment:}
+#### **Equipment:** 
 
 Substrate, plastic (Teflon or polypropylene) beakers and vessels, plastic tweezers and/or any other HF-approved lab ware  
 
 **Caution: HF etches glass, so glass containers are incompatible with HF.**
 
-#### **Chemicals:**  {#chemicals:}
+#### **Chemicals:** 
 
 Hydrofluoric Acid (48-51% solution in water), Nitric Acid (HNO3 60%) and Acetic Acid (C2H4O2 99.5%)
 
@@ -44,11 +44,11 @@ Transene RSE 5:6:3, RSE-100 & RS-200 \[contains: hydrofluoric acid; nitric acid;
 - Select Incompatible Materials: Glass, titanium, alumina, silicon nitride  
 - Compatible Plastics: HDPE, PP, Teflon, PFA, PVC
 
-#### **Personal Protective Equipment:**  {#personal-protective-equipment:}
+#### **Personal Protective Equipment:** 
 
 Trionic gloves on top of nitrile gloves, vinyl apron with sleeves, safety glasses and face-shield
 
-### **Procedure** {#procedure}
+### **Procedure**
 
 Note: This etch is intended for etching silicon and polysilicon, but it will also attack silicon dioxide and some metals (aluminum, titanium, etc.). You can mask an HNA etch with photoresist for a short etch (\~1 minute). The photoresist will have to be properly hard baked before the etch.  If you etch longer, the photoresist will start to peel off.  It is typically best to use a hard nitride mask.
 
@@ -57,7 +57,7 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 1. Review the first aid procedures for HF exposure with your chemical buddy, including identifying the location of the HF First Aid Kit and Calcium Gluconate Gel.   
     Note that you cannot use HF alone. When using HF, you must ensure that there is at least one other person (your chemical buddy) in the vicinity of the process at all times. That person must call Public Safety (212-650-7777) in the event of an emergency and then assist you with first aid.
 
-#### **HNA Etch** {#hna-etch}
+#### **HNA Etch**
 
 1. Get two plastic beakers that will fit your samples for processing from the “HF Supplies” drawer in the glassware rack along the wall to the right of the hood – one should be labeled “Water Only” and the other should be labeled “HF Only”.  
 2. Get a plastic measuring beaker from the “HF Supplies” drawer in the glassware rack.  
@@ -83,7 +83,7 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 13. Calculate the etch time for your sample.  
 14. Place your sample into the HNA solution using the plastic tweezers and allow it to soak in the HNA solution for the appropriate amount of time calculated in the previous step. Agitation of the etchant will help to accelerate the etch
 
-#### **DI Water Rinse** {#di-water-rinse}
+#### **DI Water Rinse**
 
 1. When the etch time is complete, remove your sample from the HNA solution with the plastic tweezers.  
 2. Transfer the sample carefully to the DI water rinse beaker. Make sure to leave the tweezers in the rinse beaker as well.  
@@ -92,12 +92,12 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 5. Remove the sample from the rinse beaker with the tweezers.  
 6. Rinse the sample with DI water in the hood sink, holding it in the water stream for approximately 10 seconds or more.
 
-#### **Sample Dry** {#sample-dry}
+#### **Sample Dry**
 
 1. After the water rinse is finished, blow the sample dry with the N2 gun.  
 2. After getting most of the water off, you can dry the samples more in an oven or on a hotplate if allowable for your sample.
 
-#### **Cleanup** {#cleanup}
+#### **Cleanup**
 
 1. If you heated the HNA solution, allow it to cool to close to room temperature before disposing of the solution. If you are going to leave the mixture unattended, make sure it remains properly labeled and the Badger slot is still enabled.  
 2. Carefully pour the HNA solution into the waste container designated for HF waste in the back of the hood.  
@@ -109,9 +109,9 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 8. Store the HF in the HF Cabinet.  Store the nitric acid in the Nitric Acid Cabinet.  Store the acetic acid in the Acids Cabinet.  
 9. Inspect all of the PPE to ensure it did not come into contact with the chemicals before returning them to its storage location.
 
-### **Accident Procedure** {#accident-procedure}
+### **Accident Procedure**
 
-#### **Hydrofluoric Acid or HNA Contact** {#hydrofluoric-acid-or-hna-contact}
+#### **Hydrofluoric Acid or HNA Contact**
 
 ### **Emergency Response Procedure**
 
@@ -135,14 +135,14 @@ Note: This etch is intended for etching silicon and polysilicon, but it will als
 2. Ensure emergency responders and treating physicians are aware of the nature of the chemical exposure. Provide a copy of the MSDS to emergency responders.  
 3. Inhalation of hydrofluoric acid fumes may cause swelling in the respiratory tract up to 24 hours after exposure. Persons who have inhaled hydrofluoric acid vapors may need prophylactic oxygen treatment and must be seen by a physician as soon as possible.
 
-#### **Nitric Acid and Acetic Acid Contact** {#nitric-acid-and-acetic-acid-contact}
+#### **Nitric Acid and Acetic Acid Contact**
 
 - Skin: Rinse affected area with water for 5 minutes, removing contaminated clothing during rinse. **If there is a visible burn,** **get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 20 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-#### **Spills** {#spills}
+#### **Spills**
 
 ##### **Small Spill Within the Hood**
 
@@ -167,7 +167,7 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-### **Revision History:** {#revision-history:}
+### **Revision History:**
 
 * Version 0.0  – Created September 8th, 2017  
 * Version 1.0  – Revised May 22, 2025  

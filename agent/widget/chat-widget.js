@@ -9,9 +9,10 @@
  *   - recv  cf_agent_use_chat_response (body = one JSON stream chunk)
  *   - recv  cf_agent_chat_messages     (authoritative persisted list)
  *
- * Citations are parsed from searchDocs tool outputs ("[n] <url> (score s)"
- * lines), never from the model's prose — GLM often omits links or appends
- * heading-slug junk to them.
+ * Source cards are the intersection of searchDocs URLs and URLs the model
+ * mentioned in prose. Inline cites are stripped before markdown so they
+ * cannot break numbered lists; the card href is the search row, not the
+ * model's copy (which often grows heading-slug junk).
  */
 import { AgentClient } from "agents/client";
 
@@ -134,23 +135,91 @@ function initWidget(workerHost) {
     }
   }
 
+  function normalizeCite(raw) {
+    const trimmed = String(raw || "").replace(/[.,;:!?)*]+$/, "");
+    if (!trimmed) return null;
+    if (trimmed.startsWith("/")) {
+      return trimmed.split(/[?#]/)[0] || null;
+    }
+    return cleanDocsUrl(trimmed);
+  }
+
+  function citationMatches(cited, retrieved) {
+    const norm = (p) => (p === "/" ? "/" : p.replace(/\/+$/, "") || "/");
+    const c = norm(cited);
+    const r = norm(retrieved);
+    return c === r || c.startsWith(`${r}/`);
+  }
+
   function renderInline(text) {
     let html = escapeHtml(text);
     html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
     html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-    // Markdown links, then bare URLs left over in prose.
-    html = html.replace(
-      /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
-      (m, label, url) => {
-        const href = cleanDocsUrl(url);
-        return href ? `<a href="${href}">${label}</a>` : label;
-      }
-    );
-    html = html.replace(/(?<!["'=(\]])(https?:\/\/[^\s<)]+)/g, (m, url) => {
-      const href = cleanDocsUrl(url);
-      return href ? `<a href="${href}">${href}</a>` : m;
-    });
     return html;
+  }
+
+  function isCiteOnlyLine(line) {
+    const t = line.trim();
+    return (
+      /^\*{0,2}Source:\*{0,2}\s+\S+/i.test(t) ||
+      /^https?:\/\/\S+$/i.test(t) ||
+      /^\/[\w./-]+\/?$/.test(t) ||
+      /^\[[^\]]*\]\((https?:\/\/[^)]+|\/[^)]+)\)$/.test(t)
+    );
+  }
+
+  function isListLine(line) {
+    return /^\s*(?:[-*]|\d+[.)])\s+/.test(line);
+  }
+
+  function stripCiteTokens(line) {
+    return line
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/g, "$1")
+      .replace(/https?:\/\/[^\s<)]+/g, "")
+      .replace(/\s*\*{0,2}Source:\*{0,2}\s+\S+/gi, "")
+      .replace(/[ \t]{2,}/g, " ")
+      .replace(/[ \t]+([.,;:!?])/g, "$1")
+      .replace(/[ \t]+$/g, "");
+  }
+
+  // Drop Source:/URL lines (and the blank lines they sat on) so a
+  // markdown 1. 1. 1. list stays one <ol> and the browser can number it.
+  function stripCitationsForDisplay(text) {
+    const kept = [];
+    for (const line of text.split("\n")) {
+      if (isCiteOnlyLine(line)) continue;
+      const cleaned = stripCiteTokens(line);
+      if (cleaned.trim() === "" && line.trim() !== "") continue;
+      kept.push(cleaned);
+    }
+    const squeezed = [];
+    for (const line of kept) {
+      if (
+        line.trim() === "" &&
+        squeezed.length &&
+        squeezed[squeezed.length - 1].trim() === ""
+      ) {
+        continue;
+      }
+      squeezed.push(line);
+    }
+    while (squeezed.length && squeezed[squeezed.length - 1].trim() === "") {
+      squeezed.pop();
+    }
+    const out = [];
+    for (let i = 0; i < squeezed.length; i++) {
+      if (
+        squeezed[i].trim() === "" &&
+        out.length &&
+        isListLine(out[out.length - 1]) &&
+        i + 1 < squeezed.length &&
+        isListLine(squeezed[i + 1])
+      ) {
+        continue;
+      }
+      out.push(squeezed[i]);
+    }
+    return out.join("\n");
   }
 
   /** Tiny markdown-to-HTML for assistant text: headings, lists, code fences. */
@@ -228,13 +297,27 @@ function initWidget(workerHost) {
     return urls;
   }
 
-  /** Docs URLs the model actually linked in its prose, normalized. */
+  /** Docs URLs the model mentioned in prose (https, /path, Source: …). */
   function citedInProse(msg) {
     const hrefs = new Set();
-    for (const match of messageText(msg).matchAll(/https?:\/\/[^\s<)\]]+/g)) {
-      // Trim sentence punctuation the URL regex drags along.
-      const href = cleanDocsUrl(match[0].replace(/[.,;:!?]+$/, ""));
+    const text = messageText(msg);
+    const add = (raw) => {
+      const href = normalizeCite(raw);
       if (href) hrefs.add(href);
+    };
+    for (const match of text.matchAll(
+      /\[([^\]]*)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)\)/g
+    )) {
+      add(match[2]);
+    }
+    for (const match of text.matchAll(/https?:\/\/[^\s<)\]]+/g)) {
+      add(match[0]);
+    }
+    for (const line of text.split("\n")) {
+      const src = line.match(/^\s*\*{0,2}Source:\*{0,2}\s+(\S+)/i);
+      if (src) add(src[1]);
+      const onlyPath = line.trim().match(/^(\/[\w./-]+\/?)$/);
+      if (onlyPath) add(onlyPath[1]);
     }
     return hrefs;
   }
@@ -279,7 +362,7 @@ function initWidget(workerHost) {
             ? `<span class="ndc-activity">${escapeHtml(activity)}</span>`
             : ""
         }`
-      : renderMarkdown(text);
+      : renderMarkdown(stripCitationsForDisplay(text));
   }
 
   function render(forcePin = false) {
@@ -291,16 +374,14 @@ function initWidget(workerHost) {
           `<div class="ndc-msg ndc-user">${escapeHtml(messageText(msg))}</div>`
         );
       } else if (msg.role === "assistant") {
-        // Citation cards attach only after the turn finishes, so the
-        // streaming text never shifts around them. Show only the pages the
-        // model linked in its answer; if it wrote no links, fall back to
-        // everything searchDocs retrieved so sources are never lost.
+        // Cards after the turn finishes. Only pages the model cited that
+        // also appear in searchDocs — no fallback to the unused hits.
         let cardHrefs = [];
         if (msg !== streamingMsg) {
-          const retrieved = extractCitations(msg);
           const used = citedInProse(msg);
-          const cited = retrieved.filter((href) => used.has(href));
-          cardHrefs = cited.length ? cited : retrieved;
+          cardHrefs = extractCitations(msg).filter((href) =>
+            [...used].some((cited) => citationMatches(cited, href))
+          );
         }
         const cards = cardHrefs
           .map((href) => {

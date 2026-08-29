@@ -1,0 +1,64 @@
+# Poll Google Docs and publish when the export hash changes.
+# schedule only runs after this file is on the default branch (main).
+# workflow_dispatch works from any branch and pushes that same branch.
+name: Sync and publish
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      sections:
+        description: "Registry sections (space-separated: tools, chem, policy)"
+        type: string
+        default: "tools chem policy"
+      only:
+        description: "Exact registry name; empty = every mapped doc in those sections"
+        type: string
+        default: ""
+
+concurrency:
+  group: sync-and-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Sync Google Docs
+        env:
+          INPUT_SECTIONS: ${{ github.event_name == 'schedule' && 'tools chem policy' || inputs.sections }}
+          INPUT_ONLY: ${{ github.event_name == 'schedule' && '' || inputs.only }}
+        run: |
+          set -euo pipefail
+          read -r -a sections <<< "${INPUT_SECTIONS}"
+          for s in "${sections[@]}"; do
+            case "$s" in
+              tools|chem|policy) ;;
+              *) echo "Invalid section: $s" >&2; exit 1 ;;
+            esac
+          done
+          if [[ -n "${INPUT_ONLY}" ]]; then
+            uv run python scripts/sync_gdocs.py "${sections[@]}" --only "${INPUT_ONLY}"
+          else
+            uv run python scripts/sync_gdocs.py "${sections[@]}"
+          fi
+
+      - name: Strict site build
+        run: uv run zensical build --strict
+
+      - name: Publish if changed
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          SYNC_ONLY: ${{ github.event_name == 'schedule' && '' || inputs.only }}
+        run: bash scripts/ci_publish.sh

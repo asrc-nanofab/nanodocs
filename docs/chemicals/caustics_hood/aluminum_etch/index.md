@@ -19,11 +19,11 @@ Standard Operating Procedure:
 
 ##     **Aluminum Etch**
 
-### **Principle of Operation** {#principle-of-operation}
+### **Principle of Operation**
 
 To remove aluminum from a substrate – patterned or unpatterned.
 
-### **Material Requirements** {#material-requirements}
+### **Material Requirements**
 
 #### **Equipment:** 
 
@@ -57,9 +57,9 @@ Transene Aluminum Etchant Type D \[contains: sodium-m-nitrobenzene sulfonate, ph
 
 Trionic gloves on top of nitrile gloves, apron, safety glasses and face-shield
 
-### **Procedure** {#procedure}
+### **Procedure**
 
-#### **Aluminum Etch** {#aluminum-etch}
+#### **Aluminum Etch**
 
 1. Get two glass beakers that will fit your samples for processing from the “Acid Supplies” drawer in the glassware rack to the left of the hood – one should be labeled “Water Only” and the other should be labeled “Acids Only”.  
 2. Rinse both beakers with DI water prior to beginning the process.  
@@ -72,20 +72,20 @@ Trionic gloves on top of nitrile gloves, apron, safety glasses and face-shield
     2. At 50°C, the aluminum will etch at a rate of approximately 660 nm/min or higher depending on the etchant type.  
 8. Place your sample into the etchant using tweezers and soak it for the appropriate amount of time calculated in the previous step. Agitation of the etchant will help to accelerate the etch.
 
-#### **DI Water Rinse** {#di-water-rinse}
+#### **DI Water Rinse**
 
 1. When the etch is complete, remove your sample from the etchant with tweezers and  transfer the sample carefully to the DI water rinse beaker.  Make sure to leave the tweezers in the rinse beaker as well.  
 2. Let the sample and tools soak in DI water for 1 minute.  
 3. Remove the sample from the rinse beaker with the tweezers.   
 4. Rinse the sample with DI water in the hood sink, holding it in the water stream for approximately 10 seconds or more.
 
-#### **Sample Dry** {#sample-dry}
+#### **Sample Dry**
 
 1. After the water rinse is finished, blow the sample dry with the N2 gun.  
 2. After getting most of the water off, you can dry the samples more in an oven or on a hotplate, if allowable for your sample.  
 3. Inspect sample for traces of un-etched aluminum. If features are small, use an optical microscope. **DO NOT use a microscope, or any other equipment in the facility while wearing the hood PPE.** If more etch time is required, place wafer back into the etchant for another 30 seconds while agitating. Repeat rinse and dry procedures.
 
-#### **Cleanup** {#cleanup}
+#### **Cleanup**
 
 1. The etchant may be used for multiple etches. For temporary storage (\<1 day), place a watch glass over the etchant beaker and store on fab wipes in the back of the hood. Make sure there is a label with your name, the date and chemical contents next to it, and leave the Badger slot for the hood enabled while your chemicals remain in the hood.  
 2. Dump the etchant waste into the waste container designated for acids in the back of the hood.  
@@ -97,16 +97,16 @@ Trionic gloves on top of nitrile gloves, apron, safety glasses and face-shield
 8. Store the Aluminum Etchant in the Nitric Acid Cabinet.  
 9. Inspect all of the PPE to ensure it did not come in contact with the etchant before returning it to its storage location.
 
-### **Accident Procedure** {#accident-procedure}
+### **Accident Procedure**
 
-#### **Contact** {#contact}
+#### **Contact**
 
 - Skin: Remove contaminated clothing, wash skin with soap and water. **If there is any irritation, get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-#### **Spills** {#spills}
+#### **Spills**
 
 ##### **Small Spill Within the Hood**
 
@@ -131,7 +131,7 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-### **Revision History:** {#revision-history:}
+### **Revision History:**
 
 * Version 0.0  – Created September 8th, 2017  
 * Version 1.0  – Revised May 22, 2025  

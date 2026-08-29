@@ -12,27 +12,27 @@
 
 **Standard Operating Procedure: Stylus Profiler**
 
-## **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+## **Section 1 – Process or Experiment Description**
 
 This Standard Operating Procedure (SOP) outlines the proper use of the Bruker Detach \-XT Stylus profiler. The Bruker Stylus Profiler is a semi-automated stylus profiler that can be used to measure step height with better than 5 Å repeatability, surface roughness, as well as 3D surface mapping. 
 
 All standard laboratory safety protocols must be followed throughout this procedure. While not all safety rules are explicitly stated within this SOP, they are covered in the required safety training sessions that must be completed prior to beginning any lab work. For instance, all personnel must wear appropriate lab attire, including an approved lab coat, safety goggles, closed-toe shoes, and clothing that covers all exposed skin, including the legs. A copy of the laboratory’s minimum safety requirements can be found in the SOP binder for reference.
 
-## **Section 2 – Hazards General** {#section-2-–-hazards-general}
+## **Section 2 – Hazards General**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---: | :---: | ----- |
 | Mechanical Hazard Pinch Point | ![A yellow triangle sign with black hands and a gear](img/1091f6aa7e39.png){ width="81" } | The act of scanning your sample can cause the stage to move. Keep hands and fingers clear of sample stage while making measurements. |
 
-## **Section 3 – Routes of Exposure** {#section-3-–-routes-of-exposure}
+## **Section 3 – Routes of Exposure**
 
 N/A
 
-## **Section 4 – Process Steps** {#section-4-–-process-steps}
+## **Section 4 – Process Steps**
 
-### **4.1. Working instructions**  {#4.1.-working-instructions}
+### **4.1. Working instructions** 
 
-#### **4.1.1 System Power Up** {#4.1.1-system-power-up}
+#### **4.1.1 System Power Up**
 
 1. Start the Vision64 software.  
 2. Click **OKAY** when prompted to initialize the XY stage.   
@@ -40,7 +40,7 @@ N/A
 4. The light over the sample stage should turn on once the stage is initialized and the software is open. Otherwise, restart the Vision64 software again.   
    
 
-#### **4.1.2.  Loading your sample and alignment** {#4.1.2.-loading-your-sample-and-alignment}
+#### **4.1.2.  Loading your sample and alignment**
 
 1. Place sample in the center of the stage. **Be careful not to touch the stylus tip whenever you load or unload a sample. Be sure the stylus is in its home position all the way up off the sample and stage.**  
     1. Note: You can position the stage for easier loading and unloading by clicking **Unload Sample** to move the stage out and clicking **Load Sample** to move the stage back in.   
@@ -50,7 +50,7 @@ N/A
     1. Note: If you need to raise the stylus at all, you can move it up a few millimeters by clicking **Tower Up**, or you can move it all the way up by clicking **Tower Home**.  
       
 
-#### **4.1.3 Collect Measurement Data** {#4.1.3-collect-measurement-data}
+#### **4.1.3 Collect Measurement Data**
 
       
 
@@ -67,7 +67,7 @@ N/A
     1. Note: If you wish to perform a sequence of measurements, perform data stitching, or create a 3D map, those options are also available under Measurement Setup, but they are not necessary for a typical measurement.   
 6. Once your measurement parameters are entered, click **Single Acquisition** to make the measurement. **Do not touch or bump the table holding the Dektak-XT while it is measuring, as any wobbling could ruin the measurement.** 
 
-#### **4.1.4. Data Analysis** {#4.1.4.-data-analysis}
+#### **4.1.4. Data Analysis**
 
 1. After the system has made a measurement, the software will switch to the Data Analysis window.   
 2. Level the data if necessary, by selecting **Terms Removal (F-Operator)** in Data Analyzer, then move the R and M cursors to two points you expect should be level and then right-click the data and select **Two-Point Leveling**.   
@@ -81,11 +81,11 @@ N/A
 
 ![](img/05d68765349d.png)
 
-#### **4.1.5.  Save data** {#4.1.5.-save-data}
+#### **4.1.5.  Save data**
 
 Save the data set using the file operation functions. Save → Dataset. You should save your data to your own folder in the NanoFab01 network drive either in the XML or Bit map format. 
 
-#### **4.1.6.Unloading sample and Shutdown Tool** {#4.1.6.unloading-sample-and-shutdown-tool}
+#### **4.1.6.Unloading sample and Shutdown Tool**
 
 1. Navigate to the Measurement Setup window.   
 2. Click **Tower Home** to raise the stylus back to its home position.   
@@ -94,13 +94,13 @@ Save the data set using the file operation functions. Save → Dataset. You shou
 5. Close the Vision64 software. The light over the sample stage should turn off once the software closes.  
 6. Clean up the work area. 
 
-## **Section 5- Allowed Activities** {#section-5--allowed-activities}
+## **Section 5- Allowed Activities**
 
 Users should only attempt to make measurements with the tool configured as it is.  Anything that requires a different configuration should not be attempted without first consulting cleanroom staff.
 
 Emergency stops should not be necessary for this tool, but if circumstances ever arise where it is necessary to perform an emergency stop, do so by pressing the red EMO button on the tool’s controller.
 
-## **Section 6-Disallowed Activities** {#section-6-disallowed-activities}
+## **Section 6-Disallowed Activities**
 
 Do not disconnect any cables when the system is powered on.
 
@@ -108,7 +108,7 @@ Never try to change the stylus tip.  The stylus tip will break if handled improp
 
 Users should not attempt to calibrate the tool.  If they do not believe the tool is properly calibrated they should inform the cleanroom staff.
 
-## **Section 7- What to watch out for during operation** {#section-7--what-to-watch-out-for-during-operation}
+## **Section 7- What to watch out for during operation**
 
 Avoid any vibration and shock during measurement.
 
@@ -116,7 +116,7 @@ Always keep the environmental enclosure door closed when the system is in use an
 
 Be mindful of the limits your sample might impose on measurements.  The stylus may not be able to properly measure some features that are too deep and too narrow. Issues may arise where the stage may get stuck in a position and the software will stop responding.  Attempt to close and restart the software, reinitializing all of the stages in the process.  Notify staff if this occurs.
 
-## **Section 8 \- Common Troubleshooting Tips** {#section-8---common-troubleshooting-tips}
+## **Section 8 \- Common Troubleshooting Tips**
 
 If something is not responding, attempt to close and restart the software, reinitializing all of the stages in the process.  Notify staff if this occurs.
 
@@ -124,7 +124,7 @@ If something is not responding, attempt to close and restart the software, reini
 
 If the stage is not working. Or if the stylus is broken.
 
-## **Section 10- Badger Criteria**  {#section-10--badger-criteria}
+## **Section 10- Badger Criteria** 
 
 *Report Problem:Shutdown:*
 

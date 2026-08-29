@@ -18,13 +18,13 @@
 
 ---
 
-## **Safety Information and Overview** {#safety-information-and-overview}
+## **Safety Information and Overview**
 
-1. ### **Tool Information** {#tool-information}
+1. ### **Tool Information**
 
 The Elionix 100keV and Elionix 50keV are both E-Beam Lithography tools that use a raster scanned electron beam to write patterns on pieces (as small as 1cm2 or wafers up to 6” in diameter.  The tools is able to accommodate substrates of various compositions, from 150 𝜇m thick up to 2.5mm thick.
 
-2. ### **General Hazards** {#general-hazards}
+2. ### **General Hazards**
 
 The Elionix E-Beam lithography tools use extremely high voltages.  Though the tool is carefully grounded and contained, If you observe any issues please contact staff.  
 
@@ -34,15 +34,15 @@ The Elionix E-Beam lithography tools use extremely high voltages.  Though the to
 
  
 
-3. ### **Personal Protective Equipment** {#personal-protective-equipment}
+3. ### **Personal Protective Equipment**
 
 The Elionix tools are in the lithography area which is designated class 100 and a face mask is required.  Additionally, the standard gown, hood, booties, gloves and eye protection are required.  
 
 ---
 
-## **Tool Operation** {#tool-operation}
+## **Tool Operation**
 
-1. ### **Converting your GDSII or DXF CAD Files** {#converting-your-gdsii-or-dxf-cad-files}
+1. ### **Converting your GDSII or DXF CAD Files**
 
 * Here at ASRC we use WECAS to convert CAD files.  All files must be converted on the computer in the computer room – offline.  **DO NOT convert any CAD files on the Elionix tool computer as this will crash the system.**  Instructions on how to use WECAS will be provided in a separate manual.      
 * Once you have converted the files, Save the entire folder on the Elionix computer in a folder with your user name.  This folder will have the scbc, the sccc, and the scon files needed to write your job.  This folder will get transferred to the tool after you log into Badger.  
@@ -50,7 +50,7 @@ The Elionix tools are in the lithography area which is designated class 100 and 
 
 ---
 
-2. ### **Overview of the Elionix System Components** {#overview-of-the-elionix-system-components}
+2. ### **Overview of the Elionix System Components**
 
    
 
@@ -72,7 +72,7 @@ When you get to the machine, the software that controls the Elionix hardware and
 
 ---
 
-3. ### **Loading your sample** {#loading-your-sample}
+3. ### **Loading your sample**
 
    
 
@@ -101,9 +101,9 @@ When you get to the machine, the software that controls the Elionix hardware and
 
 ---
 
-4. ### **Preparing the Elionix Beam for Exposure** {#preparing-the-elionix-beam-for-exposure}
+4. ### **Preparing the Elionix Beam for Exposure**
 
-#### **Setting the Beam Current** {#setting-the-beam-current}
+#### **Setting the Beam Current**
 
 Now we will pay attention to the “Beam adjustment” screen.  Click on the “Beam” Icon.  This will bring up the “Beam Memory” tab.  Group \[1\] contains recipes for the 120-micron aperture, and group \[2\] contains recipes for the 240 micron aperture.  (Larger beam currents may need the larger aperture).  Each recipe contains preset values for focus, stagnation, brightness and contrast.    
 
@@ -119,7 +119,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 5. After adjusting the current, click on the horseshoe shaped magnet icon to degauss the beam again.  
 6.  Blank the beam again using the “BLK” button and deselect the “measure” button.
 
-#### **Adjust the beam focus and stigmation** {#adjust-the-beam-focus-and-stigmation}
+#### **Adjust the beam focus and stigmation**
 
  
 
@@ -137,7 +137,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 ---
 
-5. ### **Preparing a Schedule File on WECAS** {#preparing-a-schedule-file-on-wecas}
+5. ### **Preparing a Schedule File on WECAS**
 
 * Copy the Beamer output Folder to your directory From “User in CAD PC” to “Users on-line PC”  
 * Open a WECAS screen.  The top toolbar will look as follows:
@@ -176,7 +176,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 ---
 
-6. ### **Exposing the job in WECAS** {#exposing-the-job-in-wecas}
+6. ### **Exposing the job in WECAS**
 
 **![](img/2e6eb2c004e1.png){ width="186" }**
 
@@ -189,7 +189,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 ---
 
-7. ### **Unloading your sample** {#unloading-your-sample}
+7. ### **Unloading your sample**
 
 1. When your job is complete all fields will be white and a pop up widow will tell you it is finished  
 2. Click “Isolation Valve” in the beam menu to close it.  The button will turn grey  
@@ -202,7 +202,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 
 ---
 
-### **Appendix A:  Manual Alignment** {#appendix-a:-manual-alignment}
+### **Appendix A:  Manual Alignment**
 
 Now we need to tell WECAS where the alignment marks are, relative to the (0,0) position of your original CAD output by BEAMER.  We Generally use 4 global marks, Denoted A,B,C and D, which are always oriented as shown below:  
         ** ![](img/a4ded59641e3.png){ width="217" }**  
@@ -268,13 +268,13 @@ PC …
 
 ## ---
 
-## **Common Issues and Troubleshooting** {#common-issues-and-troubleshooting}
+## **Common Issues and Troubleshooting**
 
-### **Height Sensor Error:** {#height-sensor-error:}
+### **Height Sensor Error:**
 
 Make certain that the “set option” value is correct (\~3.0 mm for a 5oo um substrate) and that the height sensor is on.
 
-### **Turbo Pump Failure** {#turbo-pump-failure}
+### **Turbo Pump Failure**
 
 If the load lock door is not properly closed when the evacuate switch is toggled, the vacuum pump will fail, often with a loud noise.  This is something that should be prevented against by holding the door firmly shut when pumping down.  
 

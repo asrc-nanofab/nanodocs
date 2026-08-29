@@ -10,23 +10,23 @@
 
 ---
 
-## Safety Information and Overview {#safety-information-and-overview}
+## Safety Information and Overview
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
-| Date | 3/11/2026 |
+| Date | 8/26/2026 |
 | SOP Title | AJA E-Beam Organic/Oxide Evaporator SOP |
 | Principal Investigator | Samantha Roberts |
 | Department | NanoFabrication Facility |
 | Room and Building | ASRC G.263 |
 
-### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
+### **Section 1 – Process or Experiment Description**
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after passing a qualification with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  NO high vapor pressure materials
 
-### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
+### **Section 2 – Hazardous Substances**
 
 **Substance Name:** Chromium
 
@@ -38,7 +38,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
+### **Section 3 – Potential Hazards**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -72,9 +72,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 
-## **Tool operation** {#tool-operation}
+## **Tool operation**
 
-### **1\. Precheck list** {#1.-precheck-list}
+### **1\. Precheck list**
 
 1. Check main chamber pressure (should be \<1E-7, or E-8 Torr range)  
 2. Check load lock pressure (should be in E-5 or E-6 Torr range)  
@@ -82,7 +82,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 4. Check the material you need is in the tool  
 5. **CONFIRM THAT THE GATE VALVE IS CLOSED**
 
-### **2\. Loading the Sample in Loadlock** {#2.-loading-the-sample-in-loadlock}
+### **2\. Loading the Sample in Loadlock**
 
 1. Verify the gate valve is closed  
 2. Turn off pump to vent the loadlock  
@@ -91,6 +91,8 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     * Make sure one arm of the propeller is pointing towards the main chamber		OR  
     * Use one of the lines coming out of the middle of the propeller, to align to the **NOTCH** on the **LEFT** side of the loadarm  
     * See figure 1 for reference
+
+**![](img/89c25b52d9e5.png){ width="241" }![](img/288985977023.png){ width="200" }**
 
 ### **3\. Loading the Sample into Chamber**
 
@@ -114,7 +116,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 10. Close the gate valve  
 11. Close the upper viewport shutter
 
-### **4\. Preparing the Gun** {#4.-preparing-the-gun}
+**![](img/0e0aea780d18.png)**
+
+### **4\. Preparing the Gun**
 
 1. Turn on the Genius remote  
     * Make certain it is in manual mode   
@@ -127,7 +131,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     * Should position the view to be able to see the assembly on top and “darkness” underneath  
         1. You could open and close the “e-beam shutter” to see if positioned correctly 
 
-### **5\. Selecting a Material and Recipe** {#5.-selecting-a-material-and-recipe}
+### **5\. Selecting a Material and Recipe**
 
 1. Select the material by crucible number from the **E-BEAM POCKET** drop-down menu  
     1. The crucible positions are shown on the chart attached to the chamber door  
@@ -143,7 +147,10 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     1. Enter a film thickness **greater** than what you need to deposit  
     2. Verify that the Start Mode is in “Manual” mode  
     3. Sensor 1 must be “On”  
-    4. See figure 4 for reference ![](img/c2f506ee7d12.png){ width="398" }  
+    4. See figure 4 for reference 
+
+![](img/c2f506ee7d12.png){ width="398" }
+
 8. Go back to the main menu and go to the **Film menu**  
 9. Select the material desired to deposit  
 10.  In that material film menu screen, verify the following 2 items  
@@ -151,14 +158,17 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     2. The line that reads “**material”** matches to what you will be evaporating   
         1. This would be found towards the bottom of the screen  
         2. Do not look at the top of the screen to verify this information  
-        3. See figure 5 for reference![](img/5df2744c3222.png)  
+        3. See figure 5 for reference
+
+![](img/5df2744c3222.png)
+
 11. On the main menu, verify you are operating in “Man/Auto” (as opposed to Auto/Man)  
     1. You may have to click on **“Next Menu”** to see this option  
     2. A white box appears around the **“Power”** level column when you are in manual mode  
 12. Press the green box that reads **“Start Button/ Start Layer”**  
     1. It should read **“Manual Start Layer”**, before you start ramping up. 
 
-### **6\. Film Deposition** {#6.-film-deposition}
+### **6\. Film Deposition**
 
 #### *Ramping up to Threshold* 					
 
@@ -202,7 +212,11 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     1.  Should be about the same pace as when you ramped it up \- after soaking   
 16. Hit the “Stop/Stop Layer” button  
 17. Click “Next Menu”  
-18. Hit the “Reset” button
+18. Hit the “Reset” button  
+19. Record the crystal monitor life at the end of each layer.   
+    1. Look for the “**Sensor Life**” button  
+        1. You may have to press “**Next Menu**” to see this option  
+        2. Record the value found in the “**Life Percentage**”, under first column “**Sensor 1**”
 
 ---
 
@@ -210,35 +224,38 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 ( 4.Preparing for Film Deposition, and 5\. Film Deposition)  
 ---
 
-### **7\. Turn Off the Gun** {#7.-turn-off-the-gun}
+### **7\. Turn Off the Gun**
 
 1. Turn **off** the HV on Genius Monitor  
 2. **Close** the E-beam shutter
 
-### **8\. Unload Sample** {#8.-unload-sample}
+### **8\. Unload Sample**
 
-19. Verify load lock is \< 3E-5 Torr   
-20. Open the gate valve  
-21. Move load arm all the way into the main chamber   
-22. Lower sample holder onto the load arm  
-23. Turn propeller **counter-clockwise** to release sample holder  
-24. Raise propeller to clear the sample holder   
+20. Verify load lock is \< 3E-5 Torr   
+21. Open the gate valve  
+22. Move load arm all the way into the main chamber   
+23. Lower sample holder onto the load arm  
+24. Turn propeller **counter-clockwise** to release sample holder  
+25. Raise propeller to clear the sample holder   
     1. Align to the **top sharpie line**  
-25. Rotate load arm handle to bring the sample holder back into the loadlock  
-26. Close the gate valve  
-27. Vent the loadlock to retrieve sample  
-28. Return the sample holder to the loadlock and replace lid  
-29. **Always leave the loadlock under vacuum before you log off the tool**  
-30. **Make sure to record the deposition information in the log book, if you didn’t do it earlier.**
+26. Rotate load arm handle to bring the sample holder back into the loadlock  
+27. Close the gate valve  
+28. Vent the loadlock to retrieve sample  
+29. Return the sample holder to the loadlock and replace lid  
+30. **Always leave the loadlock under vacuum before you log off the tool**  
+31. **Make sure to record the deposition information in the log book, if you didn’t do it earlier.**
 
-## **Common Errors and Troubleshooting** {#common-errors-and-troubleshooting}
+## **Common Errors and Troubleshooting**
 
 ---
 
-Prepared by: Salam Elhalabi  
-Date: March 11, 2026  
+Prepared by: Salam Garraway  
+Date:  August 26, 2026  
 Reviewed/Revised:   
-Salam Elhalabi
+Salam Garraway
+
+
+
 
 
 
