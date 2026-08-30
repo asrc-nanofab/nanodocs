@@ -1,11 +1,13 @@
 # Poll Google Docs and publish when the export hash changes.
 # schedule only runs after this file is on the default branch (main).
 # workflow_dispatch works from any branch and pushes that same branch.
+# Off the :00/:15/:30/:45 rush — GitHub drops scheduled jobs under load
+# and those minutes are the worst. Still best-effort, not a metronome.
 name: Sync and publish
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       sections:
