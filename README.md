@@ -243,9 +243,7 @@ Linting: `uv run ruff check .` and `uv run ruff format .`
 ## Deploying
 
 **Live site:** <https://nanodocs.pages.dev> (Cloudflare Pages project
-`nanodocs`, production branch `main`). A push to `main` is the deploy. Do
-**not** run `./deploy.sh` — that is the old GitHub Pages path
-(`mkdocs gh-deploy`) and would republish `github.io/nanodocs`.
+`nanodocs`, production branch `main`). A push to `main` is the deploy.
 
 Cloudflare already runs `pip install .` from `pyproject.toml`. The Pages
 **build command** (dashboard, not this repo) must strip PDFs after Zensical

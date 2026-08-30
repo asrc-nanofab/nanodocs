@@ -24,7 +24,7 @@ docs/assets/pdfs/ ──> wrangler r2 object put --remote ──> R2 nanodocs-pd
 Pages has a **25 MiB per-file** limit. PDFs stay on disk for `zensical serve`
 and `--strict`; production serves them from the private R2 bucket
 `nanodocs-pdfs` via the `PDFS` binding. Do not put PDFs in the Pages
-artifact. Do not run `./deploy.sh` (legacy GitHub Pages).
+artifact.
 
 ## Hard rules
 

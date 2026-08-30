@@ -7,7 +7,6 @@ authors = [
     {name = "SPR"}
 ]
 dependencies = [
-    "ghp-import==2.1.0",
     "ipykernel==6.29.5",
     "requests>=2.32.4",
     "pillow>=12.3.0",
