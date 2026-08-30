@@ -210,7 +210,7 @@ It is useful to create a bounding box in your GDS file that is the size of your 
 
 Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, with a feature at the center that allows for easy alignment.  
 
-	**A.  Modify the Schedule File**
+#### **A. Modify the Schedule File**
 
 1. You need to tell WECAS that you will be doing alignment when you set up the initial schedule file.  We need to go back to the “Set Option” Button (From Section II Page 3 of this manual) and set values in the “Registration” column (indicated below).  For manual Alignment “Periodic Correction” and “width modulation” remain off \-- These are used only in “Auto” and “Full Auto” alignment modes.  
      
@@ -225,12 +225,11 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 ![](img/ca2583f6ea3b.png)  
 **Example of modification in the SCON file – Red Text is inserted into the file**
 
-7. Now when you display your schedule file (“Edit Schedule Execution”🡪”Next”) in WECAS you will see white crosses that represent the locations of your alignment marks.    
-8. 
+7. Now when you display your schedule file (“Edit Schedule Execution”🡪”Next”) in WECAS you will see white crosses that represent the locations of your alignment marks.
 
-    **B.  Load Chip or Wafer and set up Elionix Beam as before in above Sections**
+#### **B. Load Chip or Wafer and set up Elionix Beam as before in above Sections**
 
-    **C.  Align the Elionix to the “A-Mark” of your sample chip/wafer**
+#### **C. Align the Elionix to the “A-Mark” of your sample chip/wafer**
 
 1. From WECAS go to Users On-Line PC then File 🡪 Open Schedule File 🡪 \[SC8 Filename\]  
 2. You can get back to the schedule instructions by clicking “back” and then reopen through the “Edit schedule execution”.  You will see your .con files and their locations.    
@@ -255,7 +254,7 @@ PC …
 PC …  
 …
 
-       **E.  Manual SEM Alignment to Marks**
+#### **D. Manual SEM Alignment to Marks**
 
 1. After clicking “Expose” in WECAS there will be pop-up windows that ask you to select the center of the mark “A”.  Using a zoomed-in SEM window find the center of the mark in the crosshairs.    
 2. Note:  The magnification that you use for Mark A will be the default for B, C, and D. The window needs to be zoomed in enough for accuracy but zoomed out enough to find the mark.  
@@ -276,7 +275,7 @@ Make certain that the “set option” value is correct (\~3.0 mm for a 5oo um s
 
 ### **Turbo Pump Failure**
 
-If the load lock door is not properly closed when the evacuate switch is toggled, the vacuum pump will fail, often with a loud noise.  This is something that should be prevented against by holding the door firmly shut when pumping down.  
+If the load lock door is not properly closed when the evacuate switch is toggled, the vacuum pump will fail, often with a loud noise.  This is something that should be prevented by holding the door firmly shut when pumping down.  
 
 In the event of a pump failure, please make certain that you alert staff directly. 
 
