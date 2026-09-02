@@ -31,47 +31,47 @@ There are four objectives available for use with the system for different applic
 ![](img/769180079744.jpg){ width="172" }![](img/4536b41e21d5.jpg){ width="171" }  
 63x NA 1.4: Immersion (DiLL) objective used for small feature solution set (3D SF)
 
-	Working distance \= 360 um  
-	Printing field (galvo) \= 200 um diameter circle  
-	Theoretical lateral (x,y) resolution \= 340 nm  
-	Theoretical axial (z) resolution \= 826 nm  
-	Voxel aspect ratio \= 2.4  
-	Δn required at 830 nm \= \>0.04  
-	Typical slicing distance \= 0.3 um  
-	Typical hatching distance \= 0.2 um
+Working distance \= 360 um  
+Printing field (galvo) \= 200 um diameter circle  
+Theoretical lateral (x,y) resolution \= 340 nm  
+Theoretical axial (z) resolution \= 826 nm  
+Voxel aspect ratio \= 2.4  
+Δn required at 830 nm \= \>0.04  
+Typical slicing distance \= 0.3 um  
+Typical hatching distance \= 0.2 um
 
 25x NA 0.8: Immersion (DiLL) objective used for medium feature solution set (3D MF)
 
-	Working distance \= 380 um  
-	Printing field (galvo) \= 400 um diameter circle  
-	Theoretical lateral (x,y) resolution \= 595 nm  
-	Theoretical axial (z) resolution \= 3.313 um  
-	Voxel aspect ratio \= 5.6  
-	Δn required at 830 nm \= \>0.1  
-	Typical slicing distance \= 1 um  
-	Typical hatching distance \= 0.5 um
+Working distance \= 380 um  
+Printing field (galvo) \= 400 um diameter circle  
+Theoretical lateral (x,y) resolution \= 595 nm  
+Theoretical axial (z) resolution \= 3.313 um  
+Voxel aspect ratio \= 5.6  
+Δn required at 830 nm \= \>0.1  
+Typical slicing distance \= 1 um  
+Typical hatching distance \= 0.5 um
 
 20x NA 0.5: Non-immersion objective used for 2D and 2.5D maskless lithography
 
-	Working distance \= 2.1 mm  
-	Printing field (galvo) \= 600 um diameter circle  
-	Theoretical lateral (x,y) resolution \= 951 nm  
-	Theoretical axial (z) resolution \= 5.824 um  
-	Voxel aspect ratio \= 6.1  
-	Δn required at 830 nm \= no limitation  
-	Typical slicing distance \= 3-6 um  
-	Typical hatching distance \= 0.7-1.2 um
+Working distance \= 2.1 mm  
+Printing field (galvo) \= 600 um diameter circle  
+Theoretical lateral (x,y) resolution \= 951 nm  
+Theoretical axial (z) resolution \= 5.824 um  
+Voxel aspect ratio \= 6.1  
+Δn required at 830 nm \= no limitation  
+Typical slicing distance \= 3-6 um  
+Typical hatching distance \= 0.7-1.2 um
 
 10x NA 0.3: Immersion (DiLL) objective used for large feature solution set (3D LF)
 
-	Working distance \= 700 um  
-	Printing field (galvo) \= 1 mm diameter circle  
-	Theoretical lateral (x,y) resolution \= 1.6 um  
-	Theoretical axial (z) resolution \= 25.4 um  
-	Voxel aspect ratio \= 16.0  
-	Δn required at 830 nm \= \>0.5  
-	Typical slicing distance \= 5 um  
-	Typical hatching distance \= 1 um
+Working distance \= 700 um  
+Printing field (galvo) \= 1 mm diameter circle  
+Theoretical lateral (x,y) resolution \= 1.6 um  
+Theoretical axial (z) resolution \= 25.4 um  
+Voxel aspect ratio \= 16.0  
+Δn required at 830 nm \= \>0.5  
+Typical slicing distance \= 5 um  
+Typical hatching distance \= 1 um
 
 ### Material Description
 
