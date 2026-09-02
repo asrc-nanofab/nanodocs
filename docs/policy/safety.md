@@ -16,6 +16,8 @@
 
 ![](img/1062b5e92d2d.jpg)
 
+The main entrance and exit to the cleanroom is through the gowning room. Other exits in the cleanroom are for emergencies only.
+
 ## **Section 2: Facility Staff and Emergency Contacts**
 
 ### **Facility Staff Contacts**
@@ -58,11 +60,11 @@
 
 In the case of a fire emergency, activate the nearest red fore-alarm pull box and then immediately evacuate while alerting others in the area to the same.  DO NOT use the central staircase or elevators.  Contact the CCNY Public Safety Emergency number once out of immediate danger.
 
-In the case of a medical emergency, contact the CCNY Public Safety Emergency number and report the nature of the medical emergency, the exact location of the injured person(s), and any hazards.
+In the case of a medical emergency, contact the CCNY Public Safety Emergency number and report the nature of the medical emergency, the exact location of the injured person(s), and any hazards.  
 
 ### **Phone Locations in the Cleanroom**
 
-A staff contact list is posted next to all telephones in the cleanroom.
+There are 3 phones located throughout the main cleanroom. A staff contact list is posted next to all telephones in the cleanroom.
 
 ![](img/91abeb4a9315.jpg){ width="243" }![](img/63e2dbfb376c.jpg){ width="364" }
 
@@ -78,15 +80,17 @@ A staff contact list is posted next to all telephones in the cleanroom.
 
 2. As you proceed to an exit door, ask other lab members to follow.
 
-3. Do not de-gown, keep your gown on.
+3. Do not de-gown. Leave your suit while exiting the building. You can take your suit off once you’ve made it to the assembly area outside the building.
 
-4. After exiting the cleanroom, exit the building through the nearest exits.
+4. After exiting the cleanroom, exit the building through the nearest exits. DO NOT use the central staircase or the elevator.
 
-5. The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+5. The assembly area is in the field on the west side of the CDI building.
 
-6. Remain available to pass on details you have about events that lead to an evacuation.
+6. Remain available to pass on details you have about events that lead to an evacuation and to give your cleanroom suit to staff.
 
 ![](img/a46036c6d34a.jpg)
+
+The best routes when evacuating the building from the cleanroom for a fire are to the exit in the south stairwell of the ASRC and the ground floor exit on the west side of the CDI. When exiting from the front of the cleanroom, go right and head to the south stairwell and exit the building through there.  When exiting from the back of the cleanroom, go out to the main passage between the ASRC and CDI, turn left and go all the way through to the ground floor exit of the CDI.
 
 #### **TGMS Alarm Level 1:**
 
@@ -94,7 +98,7 @@ A staff contact list is posted next to all telephones in the cleanroom.
 
 2. As you proceed to an exit door, ask other lab members to follow.
 
-3. De-gown and hang up your suit..
+3. De-gown and hang up your suit.
 
 4. Exit the cleanroom.
 
@@ -106,15 +110,17 @@ A staff contact list is posted next to all telephones in the cleanroom.
 
 2. As you proceed to an exit door, ask other lab members to follow.
 
-3. Do not de-gown, keep your gown on.
+3. Do not de-gown. Leave your suit while exiting the building. You can take your suit off once you’ve made it to the assembly area outside the building.
 
-4. After exiting the cleanroom, exit the building through the nearest exits.
+4. After exiting the cleanroom, head toward the main passage between the ASRC and CDI and then head toward the exit on the ground floor of the CDI. DO NOT exit the building through the south stairwell of the ASRC. DO NOT use the central staircase or the elevator.
 
-5. The assembly area for the NanoFab is across St. Nicholas Terrace on the park side of the street.
+5. The assembly area is in the field on the west side of the CDI building.
 
-6. Remain available to pass on details you have about events that lead to an evacuation.
+6. Remain available to pass on details you have about events that lead to an evacuation and to give your cleanroom suit to staff.
 
 ![](img/00b79aa65c1c.jpg)
+
+When exiting the building for a level 2 TGMS alarm, do not exit through the south stairwell of the ASRC. That exit is too close to the gas storage room. The best route when evacuating the building from the cleanroom for a TGMS alarm is the ground floor exit on the west side of the CDI. When exiting from the front of the cleanroom, go left and head to the main stairs where you will take another left to go through the main passage between the ASRC and CDI and go all the way through to the ground floor exit of the CDI.  When exiting from the back of the cleanroom, go out to the main passage between the ASRC and CDI, turn left and go all the way through to the ground floor exit of the CDI.
 
 ## **Section 4: Alarm Systems**
 
@@ -150,9 +156,9 @@ There are TGMS alarms with a stack of 3 lights and a horn mounted
 
     * Green Light: Normal/safe conditions.
 
-    **Emergency Gas Off (EGO):** if a gas leak is detected, press the EGO button
+    * No Light: Maintenance conditions.
 
-    **Fire Alarm:** in the event of a fire, pull the fire alarm
+**Emergency Gas Off (EGO):** if a gas leak is detected, press the EGO button
 
 Emergency Gas Off (EGO) and Fire Alarm is located in the gowning room next to the Material Safety Data Sheets.
 
@@ -160,13 +166,11 @@ Emergency Gas Off (EGO) and Fire Alarm is located in the gowning room next to th
 
 **Equipment EMO Buttons**
 
-* Only push in the event of life threatening emergencies such as visible flames or electrocution.
+Only push in the event of life threatening emergencies such as visible flames or electrocution.
 
-* A process malfunction is NOT an emergency.
+A process malfunction is NOT an emergency.
 
-* Pressing the button will damage the instrument.
-
-* 
+Pressing the button can damage the instrument.
 
 ## **Section 5: Emergency Response**
 
@@ -175,7 +179,7 @@ Emergency Gas Off (EGO) and Fire Alarm is located in the gowning room next to th
 In the event of a fire:
 
 * DO NOT attempt to extinguish the fire unless you have prior training on the use of fire extinguishers.  
-* Activate the nearest red fore-alarm pull box to   
+* Activate the nearest red fore-alarm pull box to set off the building alarm system.  
 * Immediately evacuate the lab.  In the process of evacuating, notify others in the cleanroom that the alarm is real and that they need to evacuate the lab immediately.  
 * Immediately evacuate the building.  Use the closest fire exit for the building.  DO NOT use the central staircase or the elevator.  
 * Contact CCNY Public Safety to inform them of any important information about the source of the fire and any other hazards.  
@@ -186,7 +190,7 @@ In the event of a fire:
 In the event of a medical emergency (non-chemical related):
 
 * Immediately call CCNY Public Safety (91 (212) 650-7777), tell them the nature of the emergency and your location.  
-* If the injured person is able to make it to the entrance of the cleanroom, assist them in moving there.  Otherwise, wait for the public safety officer to arrive and then bring theto the injured person in the cleanroom.  
+* If the injured person is able to make it to the entrance of the cleanroom, assist them in moving there.  Otherwise, wait for the public safety officer to arrive and then bring them to the injured person in the cleanroom.  
 * DO NOT render first aid or CPR unless you are certified to do so. 
 
 ### **Medical Emergency Due to Chemical Exposure**
@@ -195,6 +199,112 @@ In the event of a medical emergency due a chemical exposure:
 
 * Immediately call CCNY Public Safety (91 (212) 650-7777), tell them the nature of the emergency, your location and all hazards associated with the chemical.  
 * Follow the protocols given in the SOP for the specific chemical exposure.
+
+**Emergency: Chemical Exposure (not HF)**
+
+* Have someone call Public Safety (91 (212) 650-7777) and notify staff.
+
+    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
+
+* Remove the affected clothing.
+
+* Rinse the exposed areas with water for 15 minutes using a safety shower or eye wash.
+
+* Notify staff after exposure using the posted Emergency Contact Information.
+
+* In an emergency, the deck hoses are usually your closest source of water. 
+
+**Emergency: Eye Exposure**
+
+* Lab members should assist a colleague in the event of an eye exposure.
+
+* Flush eyes for at least 15 minutes – NOT LESS.
+
+    * Use an eye wash station.
+
+    * Sinks have DI guns that can be used followed by an eye wash.
+
+* Contact staff for assistance or call Public Safety (91 (212) 650-7777).
+
+* Follow up eye exposures with a visit to a medical professional.
+
+**Emergency: HF Burns**
+
+* HF acts as an anesthetic, you may not feel the burn until damage is already done.
+
+* Have someone call Public Safety (91 (212) 650-7777) and notify staff.
+
+    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
+
+    * MSDS is located in the gowning room.
+
+    * Bring calcium gluconate gel to the ambulance and continue to apply.
+
+* Remove affected clothing, flush with cold water for 5 minutes.
+
+* Massage calcium gluconate ointment from First Aid Safety Stations onto exposed area.
+
+* Notify cleanroom staff after exposure, using the posted Emergency Contact Information.
+
+**Emergency: TMAH Exposure**
+
+* TMAH is used in photoresist developer @ \~3%.
+
+* It is hazardous by ingestion, inhalation, skin exposure and eye contact.
+
+* Exposure to concentrations \>15% may cause respiratory or heart failure – a ganglion inhibitor.
+
+* If exposed:
+
+    * Flush exposed area with water for 15 minutes.
+
+    * Notify cleanroom staff after exposure, using posted Emergency Contact Information.
+
+* If medical assistance is needed, have someone call Public Safety (91 (212) 650-7777).
+
+    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
+
+**First Aid for Other Incidents**
+
+**Chemical Inhalation**
+
+* Check area for safety.
+
+    * Close open containers.
+
+    * Move victim to safety.
+
+    * Call Public Safety (91 (212) 650-7777).
+
+    * Resuscitate with rescue breathing if necessary and qualified.
+
+**Chemical Ingestions**
+
+* Call Public Safety (91 (212) 650-7777) and notify staff.
+
+    * Immediately go to ER.
+
+**First Aid for Minor Incidents**
+
+**Thermal Burn**
+
+* Immerse burned area in cold water.
+
+    * Cover with sterile dressing.
+
+    * Call Public Safety (91 (212) 650-7777) if severe.
+
+**Bleeding**
+
+* Place clean pad and pressure on the wound.
+
+    * If excessive, get medical attention.
+
+**Clothing Fire**
+
+* Stop, drop & roll or douse victim with safety shower.
+
+    * Call Public Safety (91 (212) 650-7777).
 
 ### **Flooding or Utility Problem**
 
@@ -261,6 +371,8 @@ The piranha/HF hood, caustics/metal etch hood and the RCA hood are all polypropy
 
 The ASRC Nanofabrication Facility provides most standard chemicals, including solvents, acids, caustics, oxidizers, and photo and EBL resists. Anything not supplied by the facility can only be brought into and stored in the cleanroom with the explicit permission of facility staff. All chemicals must be stored in appropriate chemical cabinets.
 
+	
+
 There are 10 chemical cabinets in the cleanroom:
 
 * Solvents Cabinet: stores most standard solvents, especially those used for cleaning and lift-off, including IPA, acetone and NMP (Remover PG).  
@@ -280,7 +392,7 @@ Each cabinet has a label with all of the chemicals stored in the cabinet and bas
 
 Users must get staff approval before bringing their own chemicals into the cleanroom. To get approval, users must first supply required information about the chemical and its use through the New Material Request Form and send staff a copy of the Safety Datasheet (SDS) for the chemical.
 
-Once approval is granted, the user must coordinate bringing the chemical to the cleanroom.
+Once approval is granted, the user must coordinate bringing the chemicals to the ASRC and into the cleanroom. 
 
 Fill out the [New Materials Request Form](https://asrc.formstack.com/forms/material_request_form) to request approval.
 
@@ -372,7 +484,7 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 **Hoods and Carboys**
 
-* Pour waste into appropriate carboy.
+* Pour waste into the  appropriate carboy.
 
 * Chutes are labeled directly above.
 
@@ -416,122 +528,6 @@ In the case of such a spill, users are to do the following:
 * **Notify cleanroom staff immediately.**  
 * **Evacuate the immediate area** (typically the entire bay containing the hood).  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
-
-**Emergency: Chemical Exposure (not HF)**
-
-* Have someone call Public Safety (91 (212) 650-7777) and notify staff.
-
-    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
-
-* Remove the affected clothing.
-
-* Rinse the exposed areas with water for 15 minutes using a safety shower or eye wash.
-
-* Notify staff after exposure using the posted Emergency Contact Information.
-
-* In an emergency, the deck hoses are usually your closest source of water. 
-
-**Emergency: Eye Exposure**
-
-* Lab members should assist a colleague in the event of an eye exposure.
-
-* Flush eyes for at least 15 minutes – NOT LESS.
-
-    * Use an eye wash station.
-
-    * Sinks have DI guns that can be used followed by an eye wash.
-
-* Contact staff for assistance or call Public Safety (91 (212) 650-7777).
-
-* Follow up eye exposures with a visit to a medical professional.
-
-**Emergency: HF Burns**
-
-* HF acts as an anesthetic, you may not feel the burn until damage is already done.
-
-* Have someone call Public Safety (91 (212) 650-7777) and notify staff.
-
-    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
-
-    * MSDS is located in the gowning room.
-
-    * Bring calcium gluconate gel to the ambulance and continue to apply.
-
-* Remove affected clothing, flush with cold water for 5 minutes.
-
-* Massage calcium gluconate ointment from First Aid Safety Stations onto exposed area.
-
-* Notify cleanroom staff after exposure, using the posted Emergency Contact Information.
-
-**Emergency: TMAH Exposure**
-
-* TMAH is used in photoresist developer @ \~3%.
-
-* It is hazardous by ingestion, inhalation, skin exposure and eye contact.
-
-* Exposure to concentrations \>15% may cause respiratory or heart failure – a ganglion inhibitor.
-
-* If exposed:
-
-    * Flush exposed area with water for 15 minutes.
-
-    * Notify cleanroom staff after exposure, using posted Emergency Contact Information.
-
-* If medical assistance is needed, have someone call Public Safety (91 (212) 650-7777).
-
-    * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
-
-**Emergency: General**
-
-* If you see someone who is in distress, you are automatically their safety buddy.
-
-* Call Public Safety (91 (212) 650-7777).
-
-* Be sure you are wearing proper protective equipment before helping the victim.
-
-* Take MSDS to the Emergency Room.
-
-**First Aid for Other Incidents**
-
-**Chemical Inhalation**
-
-* Check area for safety.
-
-    * Close open containers.
-
-    * Move victim to safety.
-
-    * Call Public Safety (91 (212) 650-7777).
-
-    * Resuscitate with rescue breathing if necessary and qualified.
-
-**Chemical Ingestions**
-
-* Call Public Safety (91 (212) 650-7777) and notify staff.
-
-    * Immediately go to ER.
-
-**First Aid for Minor Incidents**
-
-**Thermal Burn**
-
-* Immerse burned area in cold water.
-
-    * Cover with sterile dressing.
-
-    * Call Public Safety (91 (212) 650-7777) if severe.
-
-**Bleeding**
-
-* Place clean pad and pressure on the wound.
-
-    * If excessive, get medical attention.
-
-**Clothing Fire**
-
-* Stop, drop & roll or douse victim with safety shower.
-
-    * Call Public Safety (91 (212) 650-7777).
 
 
 
