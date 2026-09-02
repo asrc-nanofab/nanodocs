@@ -14,7 +14,7 @@
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
-| Date | 8/26/2026 |
+| Date | 9/02/2026 |
 | SOP Title | Manual Operation of the AJA Orion 8 Sputter Tool |
 | Principal Investigator | Samantha Roberts |
 | Department | NanoFabrication Facility |
@@ -140,7 +140,7 @@ happen with Guns 3, 5 and 6), click to toggle the lower right button called "SW"
 
 #### **Target Cleaning**
 
-Should be performed whenever doing reactive sputtering (after deposition).   
+Should be performed whenever doing reactive sputtering (after deposition). Can also be used before the deposition process.  
 26\. With the shutter closed, set the material to standard strike conditions.  
 27\. Set a timer for 10mins.  
 28\. When complete, ramp down, and set the tool back to idle state. (No gas flowing, heater is off, shutter(s) closed, rotation off, pressure control section has a green “Opened” button). 
@@ -161,7 +161,7 @@ Should be performed whenever doing reactive sputtering (after deposition).
 ## ---
 
 Prepared by: SPR  
-Date:  August 26, 2026  
+Date:  September 2, 2026  
 Reviewed/Revised:   
 Salam Garraway  
    

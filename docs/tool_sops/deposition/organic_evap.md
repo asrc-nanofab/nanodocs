@@ -14,7 +14,7 @@
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
-| Date | 8/26/2026 |
+| Date | 9/02/2026 |
 | SOP Title | AJA E-Beam Organic/Oxide Evaporator SOP |
 | Principal Investigator | Samantha Roberts |
 | Department | NanoFabrication Facility |
@@ -92,7 +92,10 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     * Use one of the lines coming out of the middle of the propeller, to align to the **NOTCH** on the **LEFT** side of the loadarm  
     * See figure 1 for reference
 
-**![](img/89c25b52d9e5.png){ width="241" }![](img/288985977023.png){ width="200" }**
+**![](img/a14b25ec03cc.png){ width="269" }**  
+*Figure 1*: The blue arrow shows the area to look at when aligning the sample plate. A blue dashed line is drawn from the sample plate, extending to the notch on the left side of the load arm, and both lines need to align.   
+**![](img/4fd1defc2aae.png){ width="257" }**  
+*Figure 2:* Blue arrow points to the deposition height/transfer position. Green arrow points to the loading/unloading  position.
 
 ### **3\. Loading the Sample into Chamber**
 
@@ -116,7 +119,8 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 10. Close the gate valve  
 11. Close the upper viewport shutter
 
-**![](img/0e0aea780d18.png)**
+**![](img/0a063c719eeb.png)**  
+*Figure 3:* Green circle in collet.
 
 ### **4\. Preparing the Gun**
 
@@ -149,7 +153,8 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     3. Sensor 1 must be “On”  
     4. See figure 4 for reference 
 
-![](img/c2f506ee7d12.png){ width="398" }
+![](img/26f09d3541b8.png){ width="322" }  
+*Figure 4:* When you are on this screen, you are editing the material’s recipe/process. The only parameter to edit here is the “Final Thickness”, which you **must set to a number higher than what you want on your sample**. The other 2 parameters: **“Start Mode” and “Sensor 1” must match this photo.**
 
 8. Go back to the main menu and go to the **Film menu**  
 9. Select the material desired to deposit  
@@ -160,7 +165,8 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
         2. Do not look at the top of the screen to verify this information  
         3. See figure 5 for reference
 
-![](img/5df2744c3222.png)
+![](img/fa7602c60308.png){ width="314" }  
+*Figure 5:* In the material’s film menu, make sure that the pocket place matches the chart on the door, and the material name is the same as what will be used in reality.
 
 11. On the main menu, verify you are operating in “Man/Auto” (as opposed to Auto/Man)  
     1. You may have to click on **“Next Menu”** to see this option  
@@ -250,7 +256,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 ---
 
 Prepared by: Salam Garraway  
-Date:  August 26, 2026  
+Date: September 2, 2026  
 Reviewed/Revised:   
 Salam Garraway
 
