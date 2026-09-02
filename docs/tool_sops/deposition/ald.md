@@ -10,9 +10,9 @@
 
 ---
 
-## **Facility and Contact Information**
+## **Ultratech Fiji G2 ALD**
 
-### **Ultratech Fiji G2 ALD**
+### **Facility and Contact Information**
 
 | Nanofabrication Facility | ASRC, RFCUNY |
 | :---- | :---- |
@@ -21,11 +21,9 @@
 | Manager | Shawn Kilpatrick |
 | Room & Building |  G263, Nanofab, ASRC |
 
-ATOMIC LAYER DEPOSITION \[PLASMA ENHANCED/THERMAL\]: ALD
+### **Section: 1 Hardware Description and Principle of Operation**
 
-## **Section: 1 Hardware Description and Principle of Operation**
-
-### ***Principle of ALD***
+#### **Principle of ALD**
 
 Atomic Layer deposition (ALD) is a vapor-phase thin film deposition technique that allows growth of films, atomic layer by layer. The typical ALD reaction is illustrated via the formation of aluminum oxide from trimethylaluminum or TMA, Al(CH3)3, and water. The precursor reacts with hydroxyl groups on the surface of the substrate, liberating methane. The reaction is self-limiting as the precursor does not react with adsorbed aluminum species. Unreacted precursor and the methane (CH4) liberated from the reaction are removed by simple evacuation of the sample chamber or by flowing inert gas over the surface. Water reacts with the methyl groups on the deposited aluminum atoms forming both Al-O-Al bridges, as well as new hydroxyl groups. The formation of hydroxyl groups readies the surface for the acceptance of the next layer of aluminum atoms. Methane is liberated as a by-product. The unreacted byproducts are then pumped out of the chamber. Finally, the process begins again with the introduction of precursor A followed by B. Atomic layers are built up one after the other and shown in Figure 1\.
 
@@ -33,7 +31,7 @@ The ALD system consists of a heated reaction chamber, to which the reaction prec
 
 Typically, two types of ALD deposition tools that are available i.e. Thermal ALD and Plasma Enhanced ALD.
 
-1. #### **Thermal ALD**
+##### **Thermal ALD**
 
 Thermal ALD operates through sequential, self-limiting chemical reactions between precursor gases and co-reactant (e.g. H2O, O3, NH3) by thermal or heat energy. 
 
@@ -51,9 +49,7 @@ Thermal ALD operates through sequential, self-limiting chemical reactions betwee
 * May not work well with less thermally reactive precursors. (limited to materials/reactants)  
 * Lower growth rate than PE-ALD
 
-2. #### **Plasma Enhanced ALD (PE-ALD)**
-
-   
+##### **Plasma Enhanced ALD (PE-ALD)**
 
 Plasma Enhanced or Plasma assisted ALD is another technique that deposits a thin film of choice materials with the introduction of plasma source. Plasma discharge helps to activate precursor molecules and enhance surface reactions, that increases growth rate and improves film properties. It uses Plasma (e.g. O2, N2, NH3, Ar) to generate reactive radicals and ions.
 
@@ -69,11 +65,11 @@ Plasma Enhanced or Plasma assisted ALD is another technique that deposits a thin
 * Due to ion bombardment sensitive substrate may damage.  
 * Not suitable for deep trench or high aspect ratio deposition.
 
-### **Material Requirements**
+**Material Requirements**
 
 The ALD growth process involves the use of volatile chemical reactants. Therefore, the materials on which ALD growth takes place should be inert. Typically, silicon, glass, or metal substrates are ideal. Many ALD precursors are known to react with organic materials, such as photo or electron beam resists. Furthermore, most ALD processes are calibrated in the 100 – 300 C temperature range. The sample should be able to withstand that heat for a prolonged period. Please consult staff (and literature) prior to growing on uncommon substrates.
 
-## **Section 2- Potential Hazards of Precursors**
+### **Section 2- Potential Hazards of Precursors**
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | :---- | :---- |
@@ -84,7 +80,7 @@ The ALD growth process involves the use of volatile chemical reactants. Therefor
 | TDMSi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" }![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" } | Can form flammable vapors Release corrosive gases Can cause coughing, dizziness and respiratory distress. |
 | TDMTi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" } | Highly reactive in air. Skin and eye damage, respiratory irritation. |
 
-## **Section 3- Routes of Exposure**
+### **Section 3- Routes of Exposure**
 
 There are three major routes of exposure to hazardous gases in ALD Tools and mostly from Lock lock land from wafers or chips.
 
@@ -98,13 +94,13 @@ While transferring wafer from the loadlock, residual gases may escape, and Wafer
 | 2 | ![A red circle with a hand and drops of water](img/c5718438518d.png){ width="101" }Skin Contact | Direct contact with leaked or condensed gas | Irritation, chemical burns or delayed skin reactions. |
 | 3 | ![A red circle with a logo](img/f24a3b923d0d.png){ width="100" }Eye Contact | Irritation from gas fumes or splashes | Eye irritation, burn |
 
-## **Section 4 \- Personal Protective Equipment**
+### **Section 4 \- Personal Protective Equipment**
 
 **Personal Protective Equipment**: Clean room gown, nitrile gloves, Mask, Goggles (optional) 
 
 **Equipment for the tool**: Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers 
 
-## **Section 5- Standard Operating Procedure**
+### **Section 5- Standard Operating Procedure**
 
 **Estimated Time**: Typical processes go from 1 hour for 100 cycles to several hours as many hundreds of cycles. The Screen will display with process time when a recipe is loaded.
 
@@ -116,7 +112,7 @@ Figure 3 shows the software screen that you should encounter when coming to the 
 
 Figure 3 General Information of FIJI software screen
 
-### ***Load Sample***
+#### **Load Sample**
 
 To load the sample please follow the following steps (also see Figure 4 for a graphical reference):
 
@@ -168,7 +164,7 @@ Once the load lock has been pumped, it is ready to transfer the sample into the 
 
 Figure 5 Isolating reactor chamber and Pumping LL
 
-###   ***Transfer sample***
+  **Transfer sample**
 
 1. Open the gate valve by clicking either the **Open Gate** tap or **BLUE** button (Blue color means Closed and Orange means Open) **\[step 1a or 1b\]**. **(Figure 6\)**
 
@@ -195,7 +191,7 @@ Figure 5 Isolating reactor chamber and Pumping LL
 ![](img/820b661269ae.png)  
 Figure 6, Loading and pumping reactor sequences
 
-### ***Run Recipe***
+#### **Run Recipe**
 
 You are now ready to run a recipe. 
 
@@ -214,7 +210,7 @@ NOTE: At the end of your recipe make sure to set the temperature of heaters 13, 
 ![](img/911311f43dc0.png)  
 Figure 7 Loading recipe and modifying parameters
 
-### ***Unload Sample***
+#### **Unload Sample**
 
 When unloading the sample, you must follow the above steps in reverse order. In that case, you should follow **figure 8\.**
 
@@ -256,7 +252,7 @@ Figure 8, Unloading sample
 
    
 
-## **Section 6- Safety and Emergency**
+### **Section 6- Safety and Emergency**
 
 **Emergency Stop**
 
@@ -296,7 +292,7 @@ Figure 9 shows a typical pressure graph for a Plasma-Enhanced ALD process. If th
 ![](img/283584239d8e.png)  
 Figure 9 Pressure graph and Pulse peaks
 
-**Common Troubleshooting Tips**
+#### **Common Troubleshooting Tips**
 
 * If the heaters are off, or if there are communication issues between the software and the hardware, restart the Fiji software.  
 * Pressure gauge issues.   
@@ -315,10 +311,11 @@ Figure 9 Pressure graph and Pulse peaks
 
 * The tool doesn’t pump down to vacuum.
 
-### ***Revision History:***
+#### **Revision History:**
 
 1. Revision 1.0 \-January 2018 – MB created the original document  
-2. Revision 2.0 – June 2025 \- Rai
+2. Revision 2.0 – June 2025 \- Rai Suresh  
+3. Revision 2.01– September 2026 \- Rai Suresh  
 
 
 

@@ -12,7 +12,7 @@
 
 **Standard Operating Procedure: PECVD**
 
-## **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION**
+## **PLASMA ENHANCED CHEMICAL VAPOR DEPOSITION (PECVD)**
 
 ### **Facility and Contact Information**
 
@@ -45,7 +45,11 @@ Hardware Description
 
 3. Substrate Holder
 
-    It can hold substrates up to 8 inches in diameter. The temperature control system is included to maintain substrate temperature generally ranges from 100oC to 400o
+    It can hold substrates up to 8 inches in diameter. The temperature control system is included to maintain substrate temperature generally ranges from 100oC to 400o 
+
+   
+
+   
 
 #### **Principle of Operation:**
 
@@ -83,115 +87,57 @@ Clean room gown, nitrile gloves, Mask, Goggles (optional)
 
 Chips/Substrate, conditioning/cleaning substrate/wafer and appropriate tweezers. 
 
-#### **User Responsibilities**
-
-* Follow proper gowning procedures (Top to bottom and vice-versa)  
-* Carefully read SOP.  
-* Always follow safety protocols.  
-* Look for the color of the hazard light signal and sound of alarm.  
-* Always do Conditioning and Cleaning before and after running the recipe.  
-* (must follow three main operation steps).  
-* Know what your process parameters, materials and limitations are.  
-* Always be alert and aware of any unusual tool behavior or smells; warn fellow users and inform staff immediately.  
-* Always keep clean working space before and after use
-
-#### **Do / Can**
-
-* Walk as slow as possible, brisk walks or running might contaminate sensitive substrates in the Cleanroom.  
-* Before using the tool, enable the badger account.  
-* Disable badger after completion of CLEANING RECIPE.  
-* Use your own substrate, carrier wafer or ASRC while conditioning and cleaning, (Condition and carrier wafers are as shown in Image 1.)  
-* Use only Sapphire wafer for cleaning recipes, users can use their own wafer or use ASRC’s wafer.   
-* Always check the matching position of RF capacitors (430) before beginning the cleaning recipe.  
-* In a request, staff can create private accounts for users. They can develop their own recipes or just modify them.  
-* Can do some other experiment side by side or walk around inside the Clean Room.  
-*   
-    
-* Refer to the gas SDS sheets and safety summary in the binder near the exit of the Cleanroom Gowning area.  
-* Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
-* Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 2 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
-
-    ![](img/ac4716a38cff.png){ width="109" }![](img/d2fec89e8f77.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
-
-*Image 1:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
-
-*![](img/7426f7a4382c.jpg){ width="312" }*
-
-*Image 2* Flat Edge of the Sapphire Cleaning Wafer on the load arm
-
-#### **Do not**
-
-* Leave the Clean Room when the process is running.  
-* Never change the matching network position while running the deposition recipe.  
-* Lean or shake the tool   
-* Overwrite or change other recipes.  
-* Never use resists, polymers or tape in the PECVD  
-* Leave any stuff after disabling a badger account on the tool  
-* Take any of the items from inside the cleaning room without the approval of staff.  
-* **Never use Oxidizer and Flammable gases together, it will explode**   
-* Deposit too much of the material before running a clean. For SiO2 \> 5µm, SiN \> 3 µm, a-Si \> 2µm, or SiC \> 1.5µm, depositions must be split in half and the chamber must be cleaned at the halfway point.
-
-#### **Emergency Stop**
-
-* In the case of an emergency where a tool malfunction puts users in imminent danger, press the red EMO button on the tool. This is only to be used as a last resort.
-
-*![](img/269a9324048f.png){ width="351" }*
-
-***Image 3*** EMO located at the side wall of the load lock chamber
-
-To change the matching position of the transformer, reach out at the bottom right corner of the right-side panel. 
-
 ### **Section 3- Process Steps of SOP**
 
-#### **Material Deposition Procedure**
+**Material Deposition Procedure**
 
-Log in to the PTIQ system, using a private user account or common **User account** under **Individual** category. (Computer’s Screen will wake up only after enabling BADGER ACCOUNT)
+Log in to the PTIQ system, using a private user account or common **User account** under **Individual** category. (Computer’s Screen will wake up only after enabling BADGER ACCOUNT) as shown in Image 1
 
 ![](img/60d1d09bd6c7.png){ width="341" }
 
-*Image 5**\-***  **PTIQ Login Screen** 
+*Image 1**\-***  **PTIQ Login Screen** 
 
 **![](img/d3bd212f4d2d.png){ width="493" }**
 
 If users have their own private account, they can login under the same Individual category and use their ID and Password, where they have permission to create recipes, modify process parameters, save, delete and transfer files. 
 
-After logging in to the appropriate account, users might see on the screen as either Image 6 or Image 7\.
+After logging in to the appropriate account, users might see on the screen as either Image 2 or Image 3\.
 
-![](img/282918a37fd1.jpg)*Image 6,* general cartoon view of PTIQ screen
+![](img/282918a37fd1.jpg)*Image 2,* general cartoon view of PTIQ screen
 
 ![](img/1cce505ab39b.jpg)
 
-*Image 7, * Opened Load Lock lid
+*Image 3, * Opened Load Lock lid
 
-* #### **Three Operation Steps**
+#### **Three Operation Steps**
 
-1. ##### **Load Sample**
+1. **Load Sample**
 
     Sapphire wafer is always there in the Load Lock under the vacuum.
 
-1. Go to the Transport \[step **1**\] tab under Manual and select VENT \[step **2**\] to evacuate the load lock as shown in the **Image 8**, follow the number sequences. 
+* Go to the Transport \[step **1**\] tab under Manual and select VENT \[step **2**\] to evacuate the load lock as shown in the **Image 4**, follow the number sequences. 
 
-2. Wait for the load lock to reach atmospheric pressure, it takes approximately 2mins and 10 sec.
+* Wait for the load lock to reach atmospheric pressure, it takes approximately 2mins and 10 sec.
 
-3. When vented, the Load lock chamber will be populated with grey dots.
+* When vented, the Load lock chamber will be populated with grey dots.
 
-4. Open Load lock Lid, place specified carrier wafer for the next operation. Small chips should be placed on the carrier wafer. For bigger than 3 inches wafer, replace Sapphire wafer with substrate wafer.
+* Open Load lock Lid, place specified carrier wafer for the next operation. Small chips should be placed on the carrier wafer. For bigger than 3 inches wafer, replace Sapphire wafer with substrate wafer.
 
-5. The slant edge of the wafer must be aligned between the two set screws on the Load Arm. (**as of Image 2)**
+* The slant edge of the wafer must be aligned between the two set screws on the Load Arm. (**as of Image 11)**
 
-6. Close the lid of the load lock and pump the chamber \[step **3**\].
+* Close the lid of the load lock and pump the chamber \[step **3**\].
 
-7. When pumping is done, load the wafer into the main chamber \[step **4**\]
+* When pumping is done, load the wafer into the main chamber \[step **4**\]
 
-8. Ivory color of the wafer is assumed as fresh wafer into the chamber.
+* Ivory color of the wafer is assumed as fresh wafer into the chamber.
 
 ![](img/01a2344e08f6.jpg)
 
-*Image 8*, Loading steps for wafer/chips for Condition/Deposition/Clean processe*s*
+*Image 4*, Loading steps for wafer/chips for Condition/Deposition/Clean processe*s*
 
-2. ##### **Run Recipe**
+2. **Run Recipe**
 
-1. Click PECVD\#1 \[step **1**\] tab under Manual tab. Follow the numbered steps on the **Image 9\.**
+1. Click PECVD\#1 \[step **1**\] tab under Manual tab. Follow the numbered steps on the **Image 5\.**
 
 2. At the Right-hand side, click the RUN RECIPE tab, click the drop down menu \[step **2**\]   to select the recipe to be used. 
 
@@ -201,11 +147,11 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 ![](img/6962d1747c2b.jpg)
 
-*Image 9,* Steps for Loading and Runing Recipe
+*Image 5,* Steps for Loading and Runing Recipe
 
-3. ##### **Unload Sample**
+3. **Unload Sample**
 
-    When the process is completed, the wafer inside the chamber will be in GREEN. Follow steps of **Image 10**.
+    When the process is completed, the wafer inside the chamber will be in GREEN. Follow steps of **Image 6**.
 
 1. Go to **Manual** tab and Transport \[step **1**\]. Under the Transport tab, select **UNLOAD** Wafer \[step **2**\].
 
@@ -219,47 +165,47 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 ![](img/683a62531567.jpg)
 
-*Image 10,* Unloading steps for wafer/chips after Condition/Deposition processes 
+*Image 6,* Unloading steps for wafer/chips after Condition/Deposition processes 
 
-* #### **Three Main Processes**
+#### **Three Main Processes**
 
-1. ##### **Condition Chamber**
+1. **Condition Chamber**
 
 1. Set the match position to the appropriate setting for the desired film to be deposited.
 
 2. To load wafer for conditioning the chamber, Click Manual Tab Transport Tab, under the load lock, vent. 
 
-3. Follow the steps shown in **image 8** for unloading the clean sapphire wafer to load the carrier wafer. 
+3. Follow the steps shown in **image 4** for unloading the clean sapphire wafer to load the carrier wafer. 
 
 4. Load the carrier wafer as per the instruction above. (Flat edge between the two set screws)
 
-5. Load recipe as shown in **Image 9** (loading and running recipe)
+5. Load recipe as shown in **Image 5** (loading and running recipe)
 
 6. In the conditioning recipe, table temperature is set according to the material to be deposited. So, select an appropriate condition recipe. \[The user does not need to set the deposition table temperature in the deposition recipe.\]
 
 7. When conditioning is complete, the message will pop up as saying completion of process successfully.
 
-8. Follow the steps shown in **image 10** for unloading carrier wafer to load the substrate for the deposition.
+8. Follow the steps shown in **image 6** for unloading carrier wafer to load the substrate for the deposition.
 
 9. Vent the load lock and unload the wafer for the next operation deposition steps.
 
-2. ##### **Deposition**
+2. **Deposition**
 
 	To Run the Deposition Recipe.
 
-1. Load the wafer/substrate into the main chamber by following the steps shown in **image 8**. 
+1. Load the wafer/substrate into the main chamber by following the steps shown in **image 4**. 
 
-2. Now, go to PECVD\#1 tab to load the desired deposition recipe; **image 9**
+2. Now, go to PECVD\#1 tab to load the desired deposition recipe; **image 5**
 
 3. Look into the deposition category to select the recipe users want to deposit.
 
-4. Change the deposition time by following the steps of **Image 11** and **Image 12**. As per users required thickness of the material.
+4. Change the deposition time by following the steps of **Image 7** and **Image 8**. As per users required thickness of the material.
 
 As mentioned below.
 
-#### **Changing Deposition time in the Recipe**
+**Changing Deposition time in the Recipe**
 
-1. ##### **With respect to Time (Hr. Min. Sec) as of Image 11**
+1. With respect to Time (Hr. Min. Sec) as of Image 7
 
 Go to the Recipe Editor \[step **1**\].
 
@@ -275,9 +221,9 @@ Go to the Recipe Editor \[step **1**\].
 
 ![](img/154444d360ca.jpg)
 
-*Image 11*, Changing deposition time on the Deposition recipe
+*Image 7*, Changing deposition time on the Deposition recipe
 
-2. ##### **With respect to the growth rate per CYCLE (here Nitrite Recipe); Follow the steps of Image 12\.**
+2. **With respect to the growth rate per CYCLE (here Nitrite Recipe); Follow the steps of Image 8\.**
 
 1. Go to the Recipe Editor \[step **1**\].
 
@@ -295,9 +241,9 @@ Go to the Recipe Editor \[step **1**\].
 
 ![](img/53faea9f0cfc.png)
 
-*Image 12*, Changing deposition time on the Nitrite Recipe or recipe that has the deposition process with a number of cycles.
+*Image 8*, Changing deposition time on the Nitrite Recipe or recipe that has the deposition process with a number of cycles.
 
-3. ##### **Clean Chamber**
+3. **Clean Chamber**
 
 **Approximate time: 50 mins**
 
@@ -305,7 +251,7 @@ Set the match position to the appropriate setting for cleaning \[430\]
 
 Load the Sapphire wafer into the loading Arm correctly
 
-1. Go to Recipe editor \[step **1**\] and select the cleaning recipe. Follow the steps of **Image 13\.**
+1. Go to Recipe editor \[step **1**\] and select the cleaning recipe. Follow the steps of **Image 9\.**
 
     1. Timed Clean
 
@@ -321,14 +267,14 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
         1. Select OPT CLEAN EPD. 
 
-2. After editing cleaning time, follow the steps of loading **wafer, loading and running the recipe and unloading the wafer** steps as shown in **images 8,9 and 10\.**  
+2. After editing cleaning time, follow the steps of loading **wafer, loading and running the recipe and unloading the wafer** steps as shown in **images 4,5 and 6\.**  
 3. Be inside the Cleanroom until the clean recipe is completed.  
 4. Unload Clean wafer into the Load lock and keep the chamber under vacuum.  
 5. Clean the tools area, if needed, and disable the tool from the badger.
 
 ![](img/38979f71cdfb.jpg)
 
-*Image 13*, Changing Cleaning Time for OPT Clean Timed Recipe
+*Image 9*, Changing Cleaning Time for OPT Clean Timed Recipe
 
 ### **Section 4 – Gases, Hazards Classification and symbols**
 
@@ -354,7 +300,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
  
 
-* #### **Gases, Hazard sign and Description**
+#### **Gases, Hazard sign and Description**
 
 | S. No | Gases | Gases & Hazard Sign | Description |
 | ----- | ----- | ----- | ----- |
@@ -367,6 +313,70 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 | 7 | H2 (Hydrogen) |   ![](img/0ed88b43df86.png){ width="163" } | Extremely flammable gas Odorless and invisible flame Reduce oxygen levels at high concentrations.  |
 | 8 | N2O (Nitrous Oxide) |  ![](img/7fd69b94b07a.png){ width="158" } | Colorless, sweet-smelling Supports combustion (Oxidizer) Can cause fire or explosion if mixed with flammables at high temperature and pressure Inhalation hazard (narcotic effects) Asphyxiant concentrations |
 | 9 | O2 (Oxygen) |   ![](img/8835cd32a295.png){ width="193" } | Odorless, colorless gas with strong oxidizer Intensifies fire, with combustible materials (oils, greases or organic materials) may ignite spontaneously and  Can cause explosion at high pressure Prolong exposure to high concentration leads to damage tissues and organs.  |
+
+### **Section 5- Safety and Emergency**
+
+**User Responsibilities**
+
+* Follow proper gowning procedures (Top to bottom and vice-versa)  
+* Carefully read SOP.  
+* Always follow safety protocols.  
+* Look for the color of the hazard light signal and sound of alarm.  
+* Always do Conditioning and Cleaning before and after running the recipe.  
+* (must follow three main operation steps).  
+* Know what your process parameters, materials and limitations are.  
+* Always be alert and aware of any unusual tool behavior or smells; warn fellow users and inform staff immediately.  
+* Always keep clean working space before and after use
+
+**Do / Can**
+
+* Walk as slow as possible, brisk walks or running might contaminate sensitive substrates in the Cleanroom.  
+* Before using the tool, enable the badger account.  
+* Disable badger after completion of CLEANING RECIPE.  
+* Use your own substrate, carrier wafer or ASRC while conditioning and cleaning, (Condition and carrier wafers are as shown in Image 10.)  
+* Use only Sapphire wafer for cleaning recipes, users can use their own wafer or use ASRC’s wafer.   
+* Always check the matching position of RF capacitors (430) before beginning the cleaning recipe.  
+* In a request, staff can create private accounts for users. They can develop their own recipes or just modify them.  
+* Can do some other experiment side by side or walk around inside the Clean Room.  
+*   
+    
+* Refer to the gas SDS sheets and safety summary in the binder near the exit of the Cleanroom Gowning area.  
+* Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
+* Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 11 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
+
+    ![](img/ac4716a38cff.png){ width="109" }![](img/326bb45b2e0e.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+
+*Image 10:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
+
+*![](img/7426f7a4382c.jpg){ width="312" }*
+
+*Image 11* Flat Edge of the Sapphire Cleaning Wafer on the load arm
+
+**Do not**
+
+* Leave the Clean Room when the process is running.  
+* Never change the matching network position while running the deposition recipe.  
+* Lean or shake the tool   
+* Overwrite or change other recipes.  
+* Never use resists, polymers or tape in the PECVD  
+* Leave any stuff after disabling a badger account on the tool  
+* Take any of the items from inside the cleaning room without the approval of staff.  
+* **Never use Oxidizer and Flammable gases together, it will explode**   
+* Deposit too much of the material before running a clean. For SiO2 \> 5µm, SiN \> 3 µm, a-Si \> 2µm, or SiC \> 1.5µm, depositions must be split in half and the chamber must be cleaned at the halfway point.
+
+**Emergency Stop**
+
+* In the case of an emergency where a tool malfunction puts users in imminent danger, press the red EMO button on the tool. This is only to be used as a last resort.
+
+*![](img/269a9324048f.png){ width="351" }*
+
+*Image 12* EMO located at the side wall of the load lock chamber
+
+**![](img/082a888df825.jpg){ width="296" }**
+
+*Image 13* Knob dial to change the Match Position
+
+To change the matching position of the transformer, reach out at the bottom right corner of the right-side panel. 
 
 * **What to watch out for during operation**
 
@@ -384,8 +394,11 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 * When the Tool behaves weird.
 
-**Revision History:**  
-Version 1.0 \- After PTIQ Upgrade  \- May 2025 
+#### **Revision History:**
+
+Version 1.0 \- After PTIQ Upgrade  \- May 2025   
+Version 1.01 \- September 2026- Suresh Rai
+
 
 
 
