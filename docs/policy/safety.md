@@ -68,6 +68,8 @@ There are 3 phones located throughout the main cleanroom. A staff contact list i
 
 ![](img/91abeb4a9315.jpg){ width="243" }![](img/63e2dbfb376c.jpg){ width="364" }
 
+In the map below, the phone locations are denoted by the blue icons.
+
 ![](img/2cc2d1ab518f.jpg)
 
 ## **Section 3: Emergency Exits** 
@@ -180,8 +182,8 @@ In the event of a fire:
 
 * DO NOT attempt to extinguish the fire unless you have prior training on the use of fire extinguishers.  
 * Activate the nearest red fore-alarm pull box to set off the building alarm system.  
-* Immediately evacuate the lab.  In the process of evacuating, notify others in the cleanroom that the alarm is real and that they need to evacuate the lab immediately.  
-* Immediately evacuate the building.  Use the closest fire exit for the building.  DO NOT use the central staircase or the elevator.  
+* Immediately evacuate the lab. In the process of evacuating, notify others in the cleanroom that the alarm is real and that they need to evacuate the lab immediately.  
+* Immediately evacuate the building. Use the closest fire exit for the building.  DO NOT use the central staircase or the elevator.  
 * Contact CCNY Public Safety to inform them of any important information about the source of the fire and any other hazards.  
 * Notify cleanroom staff to inform them of all information about the fire.
 
@@ -189,20 +191,38 @@ In the event of a fire:
 
 In the event of a medical emergency (non-chemical related):
 
-* Immediately call CCNY Public Safety (91 (212) 650-7777), tell them the nature of the emergency and your location.  
+* Immediately call CCNY Public Safety \[(212) 650-7777)\], tell them the nature of the emergency and your location.  
 * If the injured person is able to make it to the entrance of the cleanroom, assist them in moving there.  Otherwise, wait for the public safety officer to arrive and then bring them to the injured person in the cleanroom.  
-* DO NOT render first aid or CPR unless you are certified to do so. 
+* DO NOT render first aid or CPR unless you are certified to do so.
+
+**First Aid for Minor Incidents**
+
+For minor first aid incidents, there is a first aid kit in the wipe down room. The injured person can self apply antiseptics and bandages as necessary. If assistance is required, CCNY Public Safety must be called. Others should not render first aid or CPR unless they are certified to do so.
+
+* **Bleeding**  
+    * Place a clean pad and apply pressure on the wound.  
+    * If bleeding can be controlled, apply bandages.  
+    * If bleeding is excessive or stitches are required, call Public Safety \[(212) 650-7777\] and get medical attention.
+
+* **Thermal Burn**  
+    * Immerse burned area in cold water.  
+    * Apply sterile dressing to the burned area.  
+    * Call Public Safety \[(212) 650-7777\] if severe and get medical attention.
+
+* **Clothing Fire**  
+    * Stop, drop & roll or douse the victim in the safety shower.  
+    * Call Public Safety \[(212) 650-7777)\] even if the victim sustained no burns in the incident.
 
 ### **Medical Emergency Due to Chemical Exposure**
 
 In the event of a medical emergency due a chemical exposure:
 
-* Immediately call CCNY Public Safety (91 (212) 650-7777), tell them the nature of the emergency, your location and all hazards associated with the chemical.  
+* Immediately call CCNY Public Safety \[(212) 650-7777)\], tell them the nature of the emergency, your location and all hazards associated with the chemical.  
 * Follow the protocols given in the SOP for the specific chemical exposure.
 
 **Emergency: Chemical Exposure (not HF)**
 
-* Have someone call Public Safety (91 (212) 650-7777) and notify staff.
+* Have someone call Public Safety \[(212) 650-7777)\] and notify staff.
 
     * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
 
@@ -224,7 +244,7 @@ In the event of a medical emergency due a chemical exposure:
 
     * Sinks have DI guns that can be used followed by an eye wash.
 
-* Contact staff for assistance or call Public Safety (91 (212) 650-7777).
+* Contact staff for assistance or call Public Safety \[(212) 650-7777)\].
 
 * Follow up eye exposures with a visit to a medical professional.
 
@@ -232,7 +252,7 @@ In the event of a medical emergency due a chemical exposure:
 
 * HF acts as an anesthetic, you may not feel the burn until damage is already done.
 
-* Have someone call Public Safety (91 (212) 650-7777) and notify staff.
+* Have someone call Public Safety \[(212) 650-7777)\] and notify staff.
 
     * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
 
@@ -260,11 +280,11 @@ In the event of a medical emergency due a chemical exposure:
 
     * Notify cleanroom staff after exposure, using posted Emergency Contact Information.
 
-* If medical assistance is needed, have someone call Public Safety (91 (212) 650-7777).
+* If medical assistance is needed, have someone call Public Safety \[(212) 650-7777)\].
 
     * The person calling Public Safety should find the MSDS for the chemical and have it ready for them when they arrive; needs to stay with the exposed person.
 
-**First Aid for Other Incidents**
+**First Aid for Other Chemical Exposures**
 
 **Chemical Inhalation**
 
@@ -274,37 +294,15 @@ In the event of a medical emergency due a chemical exposure:
 
     * Move victim to safety.
 
-    * Call Public Safety (91 (212) 650-7777).
+    * Call Public Safety \[(212) 650-7777\].
 
     * Resuscitate with rescue breathing if necessary and qualified.
 
 **Chemical Ingestions**
 
-* Call Public Safety (91 (212) 650-7777) and notify staff.
+* Call Public Safety \[(212) 650-7777)\] and notify staff.
 
     * Immediately go to ER.
-
-**First Aid for Minor Incidents**
-
-**Thermal Burn**
-
-* Immerse burned area in cold water.
-
-    * Cover with sterile dressing.
-
-    * Call Public Safety (91 (212) 650-7777) if severe.
-
-**Bleeding**
-
-* Place clean pad and pressure on the wound.
-
-    * If excessive, get medical attention.
-
-**Clothing Fire**
-
-* Stop, drop & roll or douse victim with safety shower.
-
-    * Call Public Safety (91 (212) 650-7777).
 
 ### **Flooding or Utility Problem**
 
@@ -364,6 +362,8 @@ The piranha/HF hood, caustics/metal etch hood and the RCA hood are all polypropy
 * RCA Hood:  
     * Designated for RCA chemistries, including ammonium hydroxide (RCA 1), hydrochloric acid (RCA 2\) and hydrofluoric acid (HF dip).  
     * To be for the RCA cleaning process to prepare samples for oxide growths in the furnace.
+
+In the map below, the Solvents/Lift-Off Hood, the Litho-Developer Hood, and the Spinner Hood are denoted by the yellow rectangles and the Piranha/HF Hood, Caustics/Metal Etch Hood, and RCA Hood are denoted by the red rectangles. The different chemical storage cabinets are denoted by the other icons in the map.
 
 **![](img/0bab8dcb1b6c.jpg)**
 
@@ -470,15 +470,21 @@ Chemicals should never be opened or used outside of a chemical fume hood or with
 
 * Please review our [Glassware Policy](https://asrc.gc.cuny.edu/nanofab/member-resources/chemicals/) on our website for full glassware policy details.
 
-* All solid waste that has come in contact with photoresist and chemicals must be discarded in either the red sharps or hazardous waste bins.
+* ![A red container with a green bag on itDescription automatically generated](img/3be4516601eb.jpg){ width="141" }
 
-* Dispose needles, pipettes, razor blades, wafers and other sharp objects in red “sharps” bins.
+* All solid waste that has come in contact with photoresist and chemicals must be discarded in either the red sharps or hazardous waste bins.
 
 * Non-contaminated wipes are **NOT** to be disposed of in the hazardous waste bins.
 
-![A red container with a green bag on itDescription automatically generated](img/3be4516601eb.jpg){ width="141" }![A black and white bin with a white lidDescription automatically generated](img/a5115871fad8.jpg){ width="146" }
+* ![A black and white bin with a white lidDescription automatically generated](img/a5115871fad8.jpg){ width="146" }
+
+* Dispose needles, pipettes, razor blades, wafers and other sharp objects in red “sharps” bins.
 
 **Showers and Eye Wash Stations**
+
+There are 3 emergency showers and eye wash stations located through the cleanroom. Each is located near one of the 3 white plastics acid/caustic hoods (Piranha/HF Hood, Caustics/Metal Etch Hood, and RCA Hood).
+
+In the map below, the Piranha/HF Hood, Caustics/Metal Etch Hood, and RCA Hood are denoted by the red rectangles and the emergency showers and eye wash stations are denoted by the green icons.
 
 ![](img/a2e77f0c432a.jpg)
 
