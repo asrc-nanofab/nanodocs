@@ -240,7 +240,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 7. Find your “A” alignment mark in the SEM window and zoom in and center it using the arrows to move the stage and the crosshairs (Crosshairs activated from the ELS-G100 software)   
 8. Click on “Move Pattern” and from the popup menu choose “Read Stage Position”.  Save the new schedule file with these updated write positions.
 
-    **  D.  Start the Exposure following Section IV on “Exposing Job in WECAS”** 
+    **D.  Start the Exposure following Section IV on “Exposing Job in WECAS”** 
 
 …  
 PX …  
