@@ -42,7 +42,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
-| Bright e-beam | ![]() | Serious eye damage may occur if viewed directly at e-beam during use |
+| Bright e-beam | ![](img/de09a6b8829c.jpg){ width="83" } | Serious eye damage may occur if viewed directly at e-beam during use |
 | Electric Shock | ![](img/ab90af7d548b.jpg){ width="80" } | Tool operates in extremely high voltages (3-10kV). |
 | Thermal  | ![](img/eb60111b034b.png){ width="88" } | Sample(s) and sample plate can get hot to touch |
 | Chrome | ![](img/0bbce0ece39a.jpg){ width="98" }![](img/8b0deafcd5f4.png){ width="74" } | Exposure to particulate or vapor form may present significant health hazards and is toxic to aquatic organisms.  Under the high temperatures involved in e-beam evaporation, **metallic Cr can oxidize** into Cr(VI), especially in the presence of residual oxygen. This is highly toxic to aquatic organisms and is a known human carcinogen. |
@@ -355,7 +355,7 @@ This point of view of looking through the loadlock viewport window. The loadarm 
 ![](img/184e257a83b7.png){ width="421" }  
 *Figure 3*  
 This point of view is looking into the main chamber from the viewport window. The yellow arrow points to the angle bracket. **The blue arrow shows where the sample plate should be placed onto the angle bracket.**  
-![]()  
+![](img/e23d5caf23ad.png){ width="365" }  
 *Figure 4*  
 The **bottom** sharpie denotes where the angle brackets should be placed to start the loading process. This is also where you leave the angle bracket when you want to transfer the sample plate back into the loadlock. The **top** sharpie mark is the minimum safe clearance to move the loadarm back to its home position safely. The blue dashed line shows where the angle bracket is at the 90mm mark, the deposition height. *Note: We align the angle bracket to the placemarkers by using the bottom edge of the brass rod.*
 
@@ -381,6 +381,8 @@ Prepared by: Salam Elhalabi
 Date: August 26, 2026  
 Reviewed/Revised:   
 Salam Garraway
+
+
 
 
 
