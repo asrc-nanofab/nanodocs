@@ -396,7 +396,7 @@ a. Remove substrate.
 
 15\. Repeat *Step 21 – Step 28* of *Run Process – Top Side Alignment*.
 
-**Emergency Stop **
+**Emergency Stop** 
 
 *Critical* 
 
