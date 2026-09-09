@@ -14,7 +14,7 @@
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
-| Date | 9/02/2026 |
+| Date | 9/09/2026 |
 | SOP Title | AJA E-Beam Organic/Oxide Evaporator SOP |
 | Principal Investigator | Samantha Roberts |
 | Department | NanoFabrication Facility |
@@ -153,7 +153,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     3. Sensor 1 must be “On”  
     4. See figure 4 for reference 
 
-![](img/26f09d3541b8.png){ width="322" }  
+![](img/5ba069a58975.png){ width="310" }  
 *Figure 4:* When you are on this screen, you are editing the material’s recipe/process. The only parameter to edit here is the “Final Thickness”, which you **must set to a number higher than what you want on your sample**. The other 2 parameters: **“Start Mode” and “Sensor 1” must match this photo.**
 
 8. Go back to the main menu and go to the **Film menu**  
@@ -165,7 +165,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
         2. Do not look at the top of the screen to verify this information  
         3. See figure 5 for reference
 
-![](img/fa7602c60308.png){ width="314" }  
+![](img/c7ccb6f591f6.png)  
 *Figure 5:* In the material’s film menu, make sure that the pocket place matches the chart on the door, and the material name is the same as what will be used in reality.
 
 11. On the main menu, verify you are operating in “Man/Auto” (as opposed to Auto/Man)  
