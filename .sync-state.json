@@ -1,16 +1,16 @@
 {
   "134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ": {
-    "export_sha1": "1b9f690a71973b127a8c54258f2c304bd4f90feb",
+    "export_sha1": "f666d4e932185f6dbbd90786a27994f41fe1beba",
     "name": "ICP-Fl",
     "section": "tools"
   },
   "13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc": {
-    "export_sha1": "57223cbd87c0ec762ecdf6c0fa357831167a166c",
+    "export_sha1": "2a5bb329ee4cb9211163bce3022f83592a6fcd8b",
     "name": "ALD",
     "section": "tools"
   },
   "15K8HiRoBqTl6__K5GMHitdGn7ybAD6Iga3Qf07gFwt4": {
-    "export_sha1": "435397335c2c02d2324a43df4f23a09fbe9ee184",
+    "export_sha1": "f74026af71fed4606b35fdcc5bec34e185c877b4",
     "name": "Litho-Development Hood",
     "section": "chem"
   },
@@ -20,7 +20,7 @@
     "section": "chem"
   },
   "187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw": {
-    "export_sha1": "12d8ea244ad63eb6f290d5b003e490a49366c1c6",
+    "export_sha1": "1e7d2db8262afc3f8112b0f2859a58b8a5de4fd2",
     "name": "Safety Manual",
     "section": "policy"
   },
@@ -30,12 +30,12 @@
     "section": "tools"
   },
   "1Gcfy5zHprGlI_ZHOKh8N3v_X1wO9ndRzPOorbETv7g0": {
-    "export_sha1": "4eae90f231d67b4c68ce9c5f3432b739d64de557",
+    "export_sha1": "00e8d6abbfac3c90025a30ab1dfa8faf92267f0d",
     "name": "Piranha/HF Hood",
     "section": "chem"
   },
   "1H33fEMQOaZ6IegQyybm0pJRTaQjPmYC0ar2dVD6sJwM": {
-    "export_sha1": "a798a7b98968e052883b2512d0f2ab25e42a9936",
+    "export_sha1": "5f327b9a22fa5ee6ca623a4e425dae3b492c1dc3",
     "name": "Spinner",
     "section": "tools"
   },
@@ -45,27 +45,27 @@
     "section": "policy"
   },
   "1HBfsM3Lt2x3310cCUOhnfu8L6NcT_e4XFyvLrq5oJIs": {
-    "export_sha1": "ba5d57182300d48daf6ae71be9f1fd3ece4b408d",
+    "export_sha1": "539645700b6307f85dd648cf9127687d283dc8a6",
     "name": "Dicing Saw",
     "section": "tools"
   },
   "1IaniDFz65Ywijamk3f5YETyXLmCPBjYZ47sSgO8O6DE": {
-    "export_sha1": "e7cb72cc09a92ade12632c04cb89dc21c21d2dad",
+    "export_sha1": "953c7b1ee980f014940be18f5023c19080fec178",
     "name": "RIE",
     "section": "tools"
   },
   "1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg": {
-    "export_sha1": "d97b954b6253bdf71e49eec79cf1fc1463bcb907",
+    "export_sha1": "e5908d2620df01c39bcdabee3af00d926299baf4",
     "name": "Piranha Clean SOP",
     "section": "chem"
   },
   "1KGMAyNuV7d_IKULiMIsnu3mv2qEcMy-Go3yxuJijZLQ": {
-    "export_sha1": "b4e2f3c57cf1bbacf2f18c9c04f4d4345026ec1c",
+    "export_sha1": "7575feb4445b2f3cb26e9c223dbe17beb954134f",
     "name": "Chromium Etch SOP",
     "section": "chem"
   },
   "1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw": {
-    "export_sha1": "79bda434f1d7c75b572ec1e373f5cb3257e29983",
+    "export_sha1": "4d4abb7b2bc5ceb1d83f4d3bc0894ccd831816d0",
     "name": "Nanoscribe",
     "section": "tools"
   },
@@ -75,22 +75,22 @@
     "section": "chem"
   },
   "1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI": {
-    "export_sha1": "99df601ba9a09f5922b4b443391d6f63d7b993d5",
+    "export_sha1": "de31f6aec126a55849e3c92fa1eaa25bcac30630",
     "name": "Optical Profilometer",
     "section": "tools"
   },
   "1Qtl2bvsitV9snJGXmonvmC6lgJgq6zfIud20R6E94i0": {
-    "export_sha1": "43e2c00b9df1cbc3d00692c2a7f8bfe2b38dfa57",
+    "export_sha1": "3bf8167fded3e957a68370a70131aae0f99ac966",
     "name": "RCA Hood",
     "section": "chem"
   },
   "1RVBRcWvxVvR0yamtidYjsd0aanbXqg84ov4ds2PDYB0": {
-    "export_sha1": "9e1040275621d6e2f56dc119c10ff2716e9961c7",
+    "export_sha1": "deab29fdae713daae18c64b9eaf3cc00c7edcc72",
     "name": "Hydroflouric Acid SOP",
     "section": "chem"
   },
   "1T6G6K91GHww4PlztrbcEJj7Kibu3BXw-j6RAdp5PAGQ": {
-    "export_sha1": "fbc64dc192edb7cb6c6ca236e07934b358964528",
+    "export_sha1": "1bd8d2178786c62b2ab65cd125da4596416c36b5",
     "name": "Nickel Etch SOP",
     "section": "chem"
   },
@@ -105,27 +105,27 @@
     "section": "policy"
   },
   "1XmcgTR4KJSk2_5zVrSb0KT16OabZz5VcCGGa1UyJi4s": {
-    "export_sha1": "738179adada4a4dbe9f571f2a39177a618601b54",
+    "export_sha1": "f019d117c7681e4f3c6794d8f5ff915c682425d1",
     "name": "Thermal Evap",
     "section": "tools"
   },
   "1ZxRo_R4RzLxKZ7h_I2hFphAH187e9qq2U4bBf5n4lOg": {
-    "export_sha1": "0a017e4cb0d90733d200bc152a90fa203e7cb37f",
+    "export_sha1": "fe6cdb1d907fe8f384da84d401d818c4ba7cc8d3",
     "name": "AJA Sputter",
     "section": "tools"
   },
   "1_9u5YudriyjGAOOsm-8EVmkD0bD6SvVQZb4RuNEvKrg": {
-    "export_sha1": "4e5616dd8b1eab8ebda4a9978840799269582bf5",
+    "export_sha1": "bd1026b07d5291c650981fb354f36f40176c116d",
     "name": "Caustics/Metal Etch Hood",
     "section": "chem"
   },
   "1_GuCjeccX-jVpvjYN3VdQHAqRQzjFMkkwiHjFlsDaZI": {
-    "export_sha1": "dfcd6c5809e00574d23b72c6561340c815f2b1a0",
+    "export_sha1": "dc848ddf1dd39b321a848780bc02f781b5514703",
     "name": "Organic Evap",
     "section": "tools"
   },
   "1beyiXEaJvjsNaPcidsnvz1DwOyGI37BpkUN3oCp7gmo": {
-    "export_sha1": "350e6f7eeec3e3df94f28f5046b37bd5f30037aa",
+    "export_sha1": "442bee39b2f8184802bcebcaa970d84bbcab5b6a",
     "name": "Ellipsometer",
     "section": "tools"
   },
@@ -135,7 +135,7 @@
     "section": "tools"
   },
   "1cds236-fRol1RoqzUvsCR4YPsqeyf5Yum19WReIJFl8": {
-    "export_sha1": "1efa814a971ca515f5890dc590f0497eee89e1b7",
+    "export_sha1": "4ad946667132c884026370dc8b4d3063ca88b7e2",
     "name": "Mask Aligner",
     "section": "tools"
   },
@@ -145,7 +145,7 @@
     "section": "tools"
   },
   "1ffuyK_5d5dMrEkYlPAlxepmydWzc6R_e42pD5W3brjw": {
-    "export_sha1": "c1348d4022a243acd60cef5faf2fac0d679d0e0b",
+    "export_sha1": "9ea02527612a82e57d703dfaa9693f975a7e4f31",
     "name": "Gold Etch SOP",
     "section": "chem"
   },
@@ -155,12 +155,12 @@
     "section": "tools"
   },
   "1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4": {
-    "export_sha1": "5787217870e69388c564305b9982eea8c799f1a3",
+    "export_sha1": "860834d1a64567ec66673179919e55cd2094ddfd",
     "name": "ICP-Cl",
     "section": "tools"
   },
   "1q-4YgUklqppoQipswF7NygH4oarlqO2lo9nTGDubHhk": {
-    "export_sha1": "1d110725ccc1f3a517dfc81de3260f26c2b4e141",
+    "export_sha1": "4ea35fd90d4f7d17be53895a4ab41e11bf5582f6",
     "name": "PECVD",
     "section": "tools"
   },
@@ -175,7 +175,7 @@
     "section": "chem"
   },
   "1uDD_bNfVsyvTkWzNPy5QGdm7Z_LQdniKeHbNruE4a1I": {
-    "export_sha1": "e20ae8f19603146e683e9072017309cb76a70c29",
+    "export_sha1": "b7c30f9b7f3133fdc504c395cae36da3647aef51",
     "name": "Profilometer",
     "section": "tools"
   },

@@ -10,7 +10,7 @@
 
 ---
 
-## Safety Information and Overview
+## Safety Information and Overview {#safety-information-and-overview}
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
@@ -20,13 +20,13 @@
 | Department | NanoFabrication Facility |
 | Room and Building | ASRC G.263 |
 
-### **Section 1 – Process or Experiment Description**
+### **Section 1 – Process or Experiment Description** {#section-1-–-process-or-experiment-description}
 
 This SOP is only for the general use of depositing thin films. Only approved users are allowed to use the equipment, after passing a qualification with the tool manager. Any maintenance will be done by trained staff members. Some maintenance creates additional hazards which will be described in the Instrument Manual.
 
 \*Note: Any sample preparation is to be done by the user, and this document does not cover any information related to sample preparation. Any materials listed outside of the approved list, must be discussed with the tool manager.  NO high vapor pressure materials
 
-### **Section 2 – Hazardous Substances**
+### **Section 2 – Hazardous Substances** {#section-2-–-hazardous-substances}
 
 **Substance Name:** Chromium
 
@@ -38,7 +38,7 @@ This SOP is only for the general use of depositing thin films. Only approved use
 
 **Abbreviation:** Ag
 
-### **Section 3 – Potential Hazards**
+### **Section 3 – Potential Hazards** {#section-3-–-potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description |
 | :---- | ----- | :---- |
@@ -72,9 +72,9 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 | Silver | S | x |  | Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 | Chrome | S | x |  |  Solid waste is toxic to environment, aquatic, and human health | Must be collected and disposed of as Hazardous waste  |
 
-## **Tool operation**
+## **Tool operation** {#tool-operation}
 
-### **1\. Precheck list**
+### **1\. Precheck list** {#1.-precheck-list}
 
 1. Check main chamber pressure (should be \<1E-7, or E-8 Torr range)  
 2. Check load lock pressure (should be in E-5 or E-6 Torr range)  
@@ -82,7 +82,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 4. Check the material you need is in the tool  
 5. **CONFIRM THAT THE GATE VALVE IS CLOSED**
 
-### **2\. Loading the Sample in Loadlock**
+### **2\. Loading the Sample in Loadlock** {#2.-loading-the-sample-in-loadlock}
 
 1. Verify the gate valve is closed  
 2. Turn off pump to vent the loadlock  
@@ -122,7 +122,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 **![](img/0a063c719eeb.png)**  
 *Figure 3:* Green circle in collet.
 
-### **4\. Preparing the Gun**
+### **4\. Preparing the Gun** {#4.-preparing-the-gun}
 
 1. Turn on the Genius remote  
     * Make certain it is in manual mode   
@@ -135,7 +135,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     * Should position the view to be able to see the assembly on top and “darkness” underneath  
         1. You could open and close the “e-beam shutter” to see if positioned correctly 
 
-### **5\. Selecting a Material and Recipe**
+### **5\. Selecting a Material and Recipe** {#5.-selecting-a-material-and-recipe}
 
 1. Select the material by crucible number from the **E-BEAM POCKET** drop-down menu  
     1. The crucible positions are shown on the chart attached to the chamber door  
@@ -174,7 +174,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 12. Press the green box that reads **“Start Button/ Start Layer”**  
     1. It should read **“Manual Start Layer”**, before you start ramping up. 
 
-### **6\. Film Deposition**
+### **6\. Film Deposition** {#6.-film-deposition}
 
 #### *Ramping up to Threshold* 					
 
@@ -230,12 +230,12 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 ( 4.Preparing for Film Deposition, and 5\. Film Deposition)  
 ---
 
-### **7\. Turn Off the Gun**
+### **7\. Turn Off the Gun** {#7.-turn-off-the-gun}
 
 1. Turn **off** the HV on Genius Monitor  
 2. **Close** the E-beam shutter
 
-### **8\. Unload Sample**
+### **8\. Unload Sample** {#8.-unload-sample}
 
 20. Verify load lock is \< 3E-5 Torr   
 21. Open the gate valve  
@@ -251,7 +251,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 30. **Always leave the loadlock under vacuum before you log off the tool**  
 31. **Make sure to record the deposition information in the log book, if you didn’t do it earlier.**
 
-## **Common Errors and Troubleshooting**
+## **Common Errors and Troubleshooting** {#common-errors-and-troubleshooting}
 
 ---
 

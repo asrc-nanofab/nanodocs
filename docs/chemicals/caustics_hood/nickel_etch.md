@@ -14,17 +14,17 @@ Standard Operating Procedure:
 
 ## **Nickel Etch**
 
-### **Principle of Operation**
+### **Principle of Operation** {#principle-of-operation}
 
 To remove nickel from a substrate – patterned or unpatterned
 
-### **Material Requirements**
+### **Material Requirements** {#material-requirements}
 
-#### **Equipment:** 
+#### **Equipment:**  {#equipment:}
 
 Substrate, glass beaker (for etchant), glass beaker (for rinse) and stainless steel tweezers
 
-#### **Chemicals:** 
+#### **Chemicals:**  {#chemicals:}
 
 Transene Nickel Etchant TFB \[contains: nitric acid, potassium perfluoroalkyl sulfonate\]
 
@@ -36,13 +36,13 @@ Transene Nickel Etchant TFB \[contains: nitric acid, potassium perfluoroalkyl su
 - Select Incompatible Materials: Aluminum, silver  
 - Compatible Plastics: HDPE, PP, Teflon, PFA, PVC
 
-#### **Personal Protective Equipment:** 
+#### **Personal Protective Equipment:**  {#personal-protective-equipment:}
 
 Trionic gloves on top of nitrile gloves, apron, safety glasses and face-shield
 
-### **Procedure**
+### **Procedure** {#procedure}
 
-#### **Nickel Etch**
+#### **Nickel Etch** {#nickel-etch}
 
 1. Get two glass beakers that will fit your samples for processing from the “Acid Supplies” drawer in the glassware rack to the left of the hood – one should be labeled “Water Only” and the other should be labeled “Acids Only”.  
 2. Rinse both beakers with DI water prior to beginning the process.  
@@ -78,16 +78,16 @@ Trionic gloves on top of nitrile gloves, apron, safety glasses and face-shield
 8. Store the Nickel Etchant in the Nitric Acid Cabinet.  
 9. Inspect all of the PPE to ensure it did not come in contact with the etchant before returning it to its storage location.
 
-### **Accident Procedure**
+### **Accident Procedure** {#accident-procedure}
 
-#### **Contact**
+#### **Contact** {#contact}
 
 - Skin: Remove contaminated clothing, wash skin with soap and water. **If there is any irritation, get immediate medical attention.**   
 - Eye: Immediately flush with water for at least 15 minutes while lifting upper and lower eyelids occasionally. **Get immediate medical attention.**  
 - Ingestion: Do not induce vomiting. **Get immediate medical attention.**  
 - Inhalation: Remove to fresh air. Resuscitate if necessary. Take care not to inhale any fumes released from the victim’s lungs. **Get immediate medical attention.**
 
-#### **Spills**
+#### **Spills** {#spills}
 
 ##### **Small Spill Within the Hood**
 
@@ -112,7 +112,7 @@ If a spill occurs outside the hood:
 2. **Evacuate the immediate area** (typically the entire bay containing the hood).  
 3. If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-### **Revision History:**
+### **Revision History:** {#revision-history:}
 
 * Version 0.0  – Created September 8th, 2017  
 * Version 1.0  – Revised May 22, 2025  

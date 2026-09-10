@@ -12,7 +12,7 @@
 
 **Lab Manual: Safety**
 
-## **Section 1: Cleanroom Basic Layout**
+## **Section 1: Cleanroom Basic Layout** {#section-1:-cleanroom-basic-layout}
 
 ![](img/1062b5e92d2d.jpg)
 
@@ -20,7 +20,7 @@ The main entrance and exit to the cleanroom is through the gowning room. Other e
 
 ## **Section 2: Facility Staff and Emergency Contacts**
 
-### **Facility Staff Contacts**
+### **Facility Staff Contacts** {#facility-staff-contacts}
 
 * Samantha Roberts, Facility Director  
     * Office phone: (212) 413-3313  
@@ -43,7 +43,7 @@ The main entrance and exit to the cleanroom is through the gowning room. Other e
         \* dial 33407 when dialing from an internal phone within the ASRC  
     * Email: [eanquillare@gc.cuny.edu](mailto:eanquillare@gc.cuny.edu)
 
-### **ASRC Safety Contacts**
+### **ASRC Safety Contacts** {#asrc-safety-contacts}
 
 * Thomas Dickson, Environmental Health and Safety Officer  
     * Office phone: (212) 413-3351  
@@ -54,7 +54,7 @@ The main entrance and exit to the cleanroom is through the gowning room. Other e
         \* dial 33313 when dialing from an internal phone within the ASRC  
     * Email: equinteros@gc.cuny.edu
 
-### **ASRC Emergency Contacts**
+### **ASRC Emergency Contacts** {#asrc-emergency-contacts}
 
 * Public Safety Emergency: dial (212) 650-7777
 
@@ -62,7 +62,7 @@ In the case of a fire emergency, activate the nearest red fore-alarm pull box an
 
 In the case of a medical emergency, contact the CCNY Public Safety Emergency number and report the nature of the medical emergency, the exact location of the injured person(s), and any hazards.  
 
-### **Phone Locations in the Cleanroom**
+### **Phone Locations in the Cleanroom** {#phone-locations-in-the-cleanroom}
 
 There are 3 phones located throughout the main cleanroom. A staff contact list is posted next to all telephones in the cleanroom.
 
@@ -124,11 +124,11 @@ The best routes when evacuating the building from the cleanroom for a fire are t
 
 When exiting the building for a level 2 TGMS alarm, do not exit through the south stairwell of the ASRC. That exit is too close to the gas storage room. The best route when evacuating the building from the cleanroom for a TGMS alarm is the ground floor exit on the west side of the CDI. When exiting from the front of the cleanroom, go left and head to the main stairs where you will take another left to go through the main passage between the ASRC and CDI and go all the way through to the ground floor exit of the CDI.  When exiting from the back of the cleanroom, go out to the main passage between the ASRC and CDI, turn left and go all the way through to the ground floor exit of the CDI.
 
-## **Section 4: Alarm Systems**
+## **Section 4: Alarm Systems** {#section-4:-alarm-systems}
 
-### **Fire Alarm:** 
+### **Fire Alarm:**  {#fire-alarm:}
 
-#### **Alarm Light and Horn**
+#### **Alarm Light and Horn** {#alarm-light-and-horn}
 
 There are red fire alarms with a strobe light and speaker mounted on walls throughout the cleanroom. In the case of a fire, the strobe light will blink and an audible alarm will sound.
 
@@ -136,17 +136,17 @@ The speaker may also be used by CCNY Fire Safety to deliver more information, so
 
 **![](img/5f7cff0cf019.jpg){ width="224" }**
 
-#### **Fire Drills**
+#### **Fire Drills** {#fire-drills}
 
 Fire drills are preplanned events, so staff will send messages and warnings ahead of time. Everyone is required to evacuate the building during fire drills. It is important to plan certain cleanroom processes that require constant presence in the cleanroom so that they do not coincide with fire drills.
 
-#### **Pull Stations**
+#### **Pull Stations** {#pull-stations}
 
 There are pull stations to set off the fire alarm mounted on walls throughout the cleanroom. These are only to be activated in case of a fire in the cleanroom.
 
 **![](img/c702efd828d6.jpg){ width="219" }**
 
-### **Toxic Gas Monitoring System (TGMS) Alarm:**
+### **Toxic Gas Monitoring System (TGMS) Alarm:** {#toxic-gas-monitoring-system-(tgms)-alarm:}
 
 Alarm Lights and Horn:
 
@@ -164,7 +164,7 @@ There are TGMS alarms with a stack of 3 lights and a horn mounted
 
 Emergency Gas Off (EGO) and Fire Alarm is located in the gowning room next to the Material Safety Data Sheets.
 
-### **Facility Equipment Alarms**
+### **Facility Equipment Alarms** {#facility-equipment-alarms}
 
 **Equipment EMO Buttons**
 
@@ -174,9 +174,9 @@ A process malfunction is NOT an emergency.
 
 Pressing the button can damage the instrument.
 
-## **Section 5: Emergency Response**
+## **Section 5: Emergency Response** {#section-5:-emergency-response}
 
-### **Fire**
+### **Fire** {#fire}
 
 In the event of a fire:
 
@@ -187,7 +187,7 @@ In the event of a fire:
 * Contact CCNY Public Safety to inform them of any important information about the source of the fire and any other hazards.  
 * Notify cleanroom staff to inform them of all information about the fire.
 
-### **Medical Emergency (Not Caused by Chemical Exposure)**
+### **Medical Emergency (Not Caused by Chemical Exposure)** {#medical-emergency-(not-caused-by-chemical-exposure)}
 
 In the event of a medical emergency (non-chemical related):
 
@@ -213,7 +213,7 @@ For minor first aid incidents, there is a first aid kit in the wipe down room. T
     * Stop, drop & roll or douse the victim in the safety shower.  
     * Call Public Safety \[(212) 650-7777)\] even if the victim sustained no burns in the incident.
 
-### **Medical Emergency Due to Chemical Exposure**
+### **Medical Emergency Due to Chemical Exposure** {#medical-emergency-due-to-chemical-exposure}
 
 In the event of a medical emergency due a chemical exposure:
 
@@ -304,7 +304,7 @@ In the event of a medical emergency due a chemical exposure:
 
     * Immediately go to ER.
 
-### **Flooding or Utility Problem**
+### **Flooding or Utility Problem** {#flooding-or-utility-problem}
 
 In the event of flooding or a utility problem:
 
@@ -312,9 +312,9 @@ Immediately contact facility staff.
 
 * Shutdown water supply if you can identify the source.  DO NOT attempt to do anything if the flooding is near high voltage power supplies.  Immediately get away from anything hazardous.
 
-## **Section 6: Right to Know and Safety Data Sheets**
+## **Section 6: Right to Know and Safety Data Sheets** {#section-6:-right-to-know-and-safety-data-sheets}
 
-### **Right to Know**
+### **Right to Know** {#right-to-know}
 
 You have a right to know about the hazards you are exposed to in the workplace. The law requires that your employer make you aware of the hazards and provide you with the information you need to work safely. Under the federal Occupational Safety and Health Administration, Hazard Communication Standard, your employer must develop a comprehensive program to inform you of hazards you may encounter in the workplace and also provide you with training in the use and handling of products containing hazardous chemicals. Additionally, public sector workplaces in New York State must meet the requirements of the NYS Right-To-Know law.
 
@@ -322,7 +322,7 @@ The ASRC Nanofabrication Facility administration and staff is obligated to provi
 
 Safety information for all chemicals stored in the cleanroom is also provided through signage and SDSs for individual chemicals. Pay close attention to sections of chemical SOPs and the chemical content lists posted on all chemical cabinets that will identify the specific hazards. These are especially important for users with underlying health conditions that can be exacerbated by exposure to certain chemicals. No one is required to report health conditions before using the facility, but if you have any questions or there is anything you need to know more about, staff will provide any information you need. An important example pertains to anyone who is pregnant or trying to become pregnant while working in the cleanroom. There are multiple solvents, several specifically used for photolithography processes, that may potentially harm fertility or an unborn child, so knowing which chemicals have this hazard and the best methods for mitigating this hazard will be important to know.
 
-### **Safety Data Sheets**
+### **Safety Data Sheets** {#safety-data-sheets}
 
 Abbreviated as SDS, and previously known as Material Safety Data Sheets or MSDS.  A Safety Data Sheet is a document required by the Occupational Safety and Health Administration (OSHA) to provide chemical safety and hazard information for end users.  Anyone who might handle, work with or be exposed to a hazardous material must have access to the SDS.
 
@@ -336,9 +336,9 @@ Copies of the SDS’s for all chemicals can be found in:
 * Digital copies stored in the MSDS folder in the shared NanoFab01 drive accessible within the ASRC network.  
 * Digital copies available as downloadable PDFs from the NanoFab website: https://asrc.gc.cuny.edu/facilities/nanofabrication/policies-procedures-resources/chemicals/
 
-## **Section 7: Chemical Safety**
+## **Section 7: Chemical Safety** {#section-7:-chemical-safety}
 
-### **Chemical Hood Access and Use**
+### **Chemical Hood Access and Use** {#chemical-hood-access-and-use}
 
 Chemicals can only ever be opened and used within their designated fume hoods. There are 6 fume hoods in the cleanroom: the photoresist spinner hood, the litho-developer hood, the solvents/lift-off hood, the piranha/HF hood, the caustics/metal etch hood, and the RCA hood. Each hood is designated for specific chemicals and processes.
 
@@ -367,7 +367,7 @@ In the map below, the Solvents/Lift-Off Hood, the Litho-Developer Hood, and the 
 
 **![](img/0bab8dcb1b6c.jpg)**
 
-### **Chemical Storage**
+### **Chemical Storage** {#chemical-storage}
 
 The ASRC Nanofabrication Facility provides most standard chemicals, including solvents, acids, caustics, oxidizers, and photo and EBL resists. Anything not supplied by the facility can only be brought into and stored in the cleanroom with the explicit permission of facility staff. All chemicals must be stored in appropriate chemical cabinets.
 
@@ -388,7 +388,7 @@ There are 10 chemical cabinets in the cleanroom:
 
 Each cabinet has a label with all of the chemicals stored in the cabinet and basic hazards associated with each chemical. The contents list will also distinguish chemicals supplied by the facility and those belonging to specific groups or users.
 
-### **User Chemicals**
+### **User Chemicals** {#user-chemicals}
 
 Users must get staff approval before bringing their own chemicals into the cleanroom. To get approval, users must first supply required information about the chemical and its use through the New Material Request Form and send staff a copy of the Safety Datasheet (SDS) for the chemical.
 
@@ -396,7 +396,7 @@ Once approval is granted, the user must coordinate bringing the chemicals to the
 
 Fill out the [New Materials Request Form](https://asrc.formstack.com/forms/material_request_form) to request approval.
 
-### **Chemical Handling**
+### **Chemical Handling** {#chemical-handling}
 
 Chemicals should never be opened or used outside of a chemical fume hood or without wearing the required person protective equipment (PPE). Always check the exhaust of any hood you’re using before you use it to be sure that there is sufficient exhaust. Never use a hood if the exhaust monitor reads below 0.1 inches of water. The hood will alarm and cut off any electronics in the hood if the exhaust is too low. Wait until the exhaust has returned to its normal level before resetting the alarmed hood and using it. Also be mindful of the exhaust level if it is unstable as it may dip below 0.1 inches of water unexpectedly.
 
@@ -494,9 +494,9 @@ In the map below, the Piranha/HF Hood, Caustics/Metal Etch Hood, and RCA Hood ar
 
 * Chutes are labeled directly above.
 
-### **Chemical Spills**
+### **Chemical Spills** {#chemical-spills}
 
-#### **Level 1: Small Spill Within the Hood**
+#### **Level 1: Small Spill Within the Hood** {#level-1:-small-spill-within-the-hood}
 
 A small spill that occurs and is fully contained within the hood. These spills are generally safe for users to clean up without the assistance of staff, though they may ask for staff assistance if they are not comfortable with it.
 
@@ -506,7 +506,7 @@ In the case of such a spill, users are to do the following:
 * If wipes are insufficient, use the absorbent pads stored in the bottom right corner of the hood.  
 * If you are unsure how to clean up the material or feel uncomfortable doing so, **notify staff immediately**.
 
-#### **Level 2: Medium or Large Spill Within the Hood**
+#### **Level 2: Medium or Large Spill Within the Hood** {#level-2:-medium-or-large-spill-within-the-hood}
 
 A spill that occurs within a hood but is large enough to require neutralization (if an acid or caustic) or use of an absorbent pillow from the spill kit.
 
@@ -515,7 +515,7 @@ In the case of such a spill, users are to do the following:
 * **Notify staff immediately.**  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert other users **not to use the hood** until it has been properly cleaned and cleared by staff.
 
-#### **Level 3: Any Non-Waste Spill Directly Outside the Hood**
+#### **Level 3: Any Non-Waste Spill Directly Outside the Hood** {#level-3:-any-non-waste-spill-directly-outside-the-hood}
 
 A spill that occurs outside of a hood with chemicals in-use with a hood process by a user.
 
@@ -525,7 +525,7 @@ In the case of such a spill, users are to do the following:
 * **Evacuate the immediate area** (typically the entire bay containing the hood).  
 * If the spill occurs **after hours**, contact cleanroom staff and post a message on Slack to alert others. The cleanroom will remain closed until staff can safely manage the spill.
 
-#### **Level 4: Any Chemical Waste Spill by a User**
+#### **Level 4: Any Chemical Waste Spill by a User** {#level-4:-any-chemical-waste-spill-by-a-user}
 
 A spill that occurs outside of a hood by a user handling or transporting a chemical waste bottle between the waste cabinet and a hood.
 

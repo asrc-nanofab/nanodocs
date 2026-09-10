@@ -14,9 +14,9 @@
 
 ### Standard Operating Procedure
 
-## Section 1: Process and Experiment Description
+## Section 1: Process and Experiment Description {#section-1:-process-and-experiment-description}
 
-### Hardware Description
+### Hardware Description {#hardware-description}
 
 The Nanoscribe 3D Lithography System is a laser lithography system that enables fabrication of true 3-dimensional micro- and nanostructures.  Originally designed for the fabrication of photonic crystal structures, the instrument can be utilized for a wide array of 3D structures suitable for applications in different areas of research.  
 ![](img/191b9210b42d.png){ width="394" }   
@@ -24,7 +24,7 @@ The system utilizes a class 3B (120mW), 780 nm wavelength, 150 femtosecond, 80MH
 
 The system utilizes motorized stages in the x,y-plane for scanning across different substrate sizes depending on the substrate holder utilized.  The objective approaches the substrate utilizing a z-scanner with a range of around 10mm, and this stage can be utilized for writing tall structures, though with less precision.  There are also piezoelectric stages in the x,y, and z-planes, each with a range of 300 um, that can be utilized for greater precision.  The z-piezo is utilized for most writes, regardless of the overall size, while the x- and y-piezos (piezo mode) are generally only used for the smallest possible nanostructures.  The galvanometer (galvo mode) is used for most writes in the x,y-planes as it is significantly faster than the piezo mode.
 
-### Microscope Objectives
+### Microscope Objectives {#microscope-objectives}
 
 There are four objectives available for use with the system for different applications depending on the required feature size, resolution and other parameters used (solution set).  
 ![](img/c81bbf818207.jpg){ width="168" }![](img/b8903077e437.jpg){ width="170" }  
@@ -73,7 +73,7 @@ Voxel aspect ratio \= 16.0
 Typical slicing distance \= 5 um  
 Typical hatching distance \= 1 um
 
-### Material Description
+### Material Description {#material-description}
 
 Nanoscribe GmbH supplies proprietary UV-curable photoresins to be utilized with different applications of the Nanoscribe system.  The resins have optimized sensitivity for fast 3D structuring using two-photon absorption with good adhesion to various substrates, low mechanical stress and high mechanical stability.  None of the resins require post-exposure bakes.  Each resin is optimized to be used with specific objectives, utilizing specific solutions sets to be printed on specific substrates based on the difference in refractive index between the resin and substrate required by the utilized objective.
 
@@ -86,9 +86,9 @@ Nanoscribe GmbH supplies proprietary UV-curable photoresins to be utilized with 
 | IP-PDMS | 1.43 | highly flexible and elastic; non-cytotoxic; low refractive index | 3D MF | 25x | ITO-coated, superfrost |
 | IP-Q | 1.487 | meso-scale | 3D LF | 10x | silicon |
 
-## Section 2: Safety Protocols
+## Section 2: Safety Protocols {#section-2:-safety-protocols}
 
-### Potential Hazards
+### Potential Hazards {#potential-hazards}
 
 | Hazard | Hazard Sign | Hazard Description | Safety Protocol |
 | ----- | :---: | ----- | ----- |
@@ -96,24 +96,24 @@ Nanoscribe GmbH supplies proprietary UV-curable photoresins to be utilized with 
 | Pinch Points | ![](img/40a3ff5c9d27.jpg){ width="100" } | Fingers may be trapped between moving parts if placed in the path of moving motorized stages causing minor cuts and bruising. | Stay clear of the motorized stages whenever they are in motion. |
 | 2PP Resins \[IP-Dip, IP-L, IP-S, IP-Visio, IP-PDMS, IP-Q\] | ![](img/0514f37e76d2.png){ width="106" }![](img/3bf4afce750c.jpg){ width="107" } | Causes serious eye irritation. Causes skin irritation. May cause an allergic skin reaction. Toxic to aquatic life with long lasting effects. | Users are required to wear cleanroom gloves and safety glasses at all times in the cleanroom.  It is also recommended to wear a second pair of nitrile gloves whenever handling photoresins.  Change gloves whenever gloves are soiled by photoresin.  Dispose of soiled gloves in a red garbage bin. |
 
-### Personal Protective Equipment Requirements
+### Personal Protective Equipment Requirements {#personal-protective-equipment-requirements}
 
 Users must be wearing the nitrile cleanroom gloves and safety glasses required throughout the cleanroom whenever using the Nanoscribe.  No extra personal protective equipment is required.
 
-### Waste Disposal
+### Waste Disposal {#waste-disposal}
 
 Dispose of gloves and wipes soiled with photoresin or solvents in a red hazardous waste bin.  
 Dispose of used or failed substrates in a sharps waste container.
 
-## Section 3: Process Procedures
+## Section 3: Process Procedures {#section-3:-process-procedures}
 
 Estimated Time: \~40 minutes \+ write time
 
-### Material Requirements
+### Material Requirements {#material-requirements}
 
 Equipment: substrate, tweezers, three glass containers (for Surpass \[optional\], PEGMA developer and IPA), tape and vertical substrate holder
 
-### Start Up Tool
+### Start Up Tool {#start-up-tool}
 
 1. Turn on the controller  
 2. Turn on the power supply  
@@ -125,7 +125,7 @@ Equipment: substrate, tweezers, three glass containers (for Surpass \[optional\]
 
 ### ![](img/ededa912ff58.jpg){ width="291" }
 
-### **Initialize Software**
+### **Initialize Software** {#initialize-software}
 
 1\.  Click NanoWrite software icon on the desktop.
 
@@ -147,7 +147,7 @@ Equipment: substrate, tweezers, three glass containers (for Surpass \[optional\]
 
 ![](img/348bf528149d.png){ width="291" }
 
-### **Sample preparation**
+### **Sample preparation** {#sample-preparation}
 
 1\. 	Choose the sample holder.
 
@@ -193,7 +193,7 @@ c.     Dip-in laser lithography (DiLL)
 
 **Note**: Resolution depends on the objective lens and resist. 
 
-### **Install Objective Lens \[Additional Training Needed\]**
+### **Install Objective Lens \[Additional Training Needed\]** {#install-objective-lens-[additional-training-needed]}
 
 1\.     Press the objective lens button on the microscope controller for the replacement position.
 
@@ -217,7 +217,7 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
 ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe52.jpg](img/d9fdb7ee9e39.jpg){ width="313" }
 
-### **3D Writing Procedure**
+### **3D Writing Procedure** {#3d-writing-procedure}
 
 1\.     If you haven’t done so already, click on the sample location in the "Choose sample holder" window, and the location clicked will be in green. 
 
@@ -270,7 +270,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
  
 
-### **Unload Sample**
+### **Unload Sample** {#unload-sample}
 
 1\.     Click the **OK** button in the "Confirm exchange holder" window.
 
@@ -278,7 +278,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 3\.     Remove the sample from the sample holder.  
 4\.     Turn off the illumination LED, if necessary.
 
-### **Develop Sample**
+### **Develop Sample** {#develop-sample}
 
 1\. 	Use a bath of SU-8 developer (propylene glycol monomethyl ether acetate, PGMEA) in a 25 mL beaker. To fix the substrate vertically in the beaker, use the vertical substrate holder. Allow the substrate to develop for at least 10 minutes. Depending on the size of the structure, this step can take up to 30 minutes. However, the development time is not very critical – structures can be kept in the developer for much longer without changing the structure.
 
@@ -286,7 +286,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
 3\. 	Remove from the IPA and place the substrate on a clean surface to air dry. For more robust structures, methanol can be applied to the surface to expedite evaporation. DO NOT blow dry the substrate.
 
-### **Shut Down Tool**
+### **Shut Down Tool** {#shut-down-tool}
 
 1\. 	Turn off software and shut down the computer.
 
@@ -300,7 +300,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
 6\. 	Turn off main power.
 
-### **Cleanup and Waste Disposal**
+### **Cleanup and Waste Disposal** {#cleanup-and-waste-disposal}
 
 1\. 	Check tool for any residual resist and clean with wipes and IPA.
 
@@ -312,13 +312,13 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
  
 
-## **Emergency Stop**
+## **Emergency Stop** {#emergency-stop}
 
 \-           NA
 
  
 
-## **What to watch out for during operation**
+## **What to watch out for during operation** {#what-to-watch-out-for-during-operation}
 
 \-           Laser not firing.
 
@@ -330,7 +330,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
  
 
-## **Allowed Activities**
+## **Allowed Activities** {#allowed-activities}
 
 \-           Users may use substrate/holder combinations according to the following parameters:
 
@@ -340,7 +340,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
 \-           Users are allowed to use non-Nanoscribe resists with NanoFab Staff permission and only in a **non**\-dip-in mode.
 
-## **Disallowed Activities**
+## **Disallowed Activities** {#disallowed-activities}
 
 \-           Don’t remove the sample holder unless the exchange holder window has been selected and the window is open.
 
@@ -354,7 +354,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
  
 
-## **Common Troubleshooting Tips**
+## **Common Troubleshooting Tips** {#common-troubleshooting-tips}
 
 \-           If the previous user did not shut down the system in the instructed order, the tool will sometimes have issues finding the interface. If this is the case, shut down the tool in the instructed sequence and then restart from the beginning.
 
@@ -370,7 +370,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
  
 
-## **When to call staff?**
+## **When to call staff?** {#when-to-call-staff?}
 
 \-           If the tool will not initialize.
 
@@ -380,7 +380,7 @@ a.     Note: If the interface is not found in the process of "Approach Sample", 
 
  
 
-## **Badger Criteria**
+## **Badger Criteria** {#badger-criteria}
 
 *Report Problem*
 
