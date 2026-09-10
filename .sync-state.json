@@ -15,7 +15,7 @@
     "section": "chem"
   },
   "16OSeeL1jXSGKkX6lI78EIyhBQONfz8GxHnL7XUGWk14": {
-    "export_sha1": "e4a53a7cd16b35a465d62a7542c9ec9ad6062d1f",
+    "export_sha1": "518a5cfe90aca8783a572ecb17a1aa8603df0e77",
     "name": "Solvent/Lift-Off Hood",
     "section": "chem"
   },
@@ -25,7 +25,7 @@
     "section": "policy"
   },
   "1CEDzZpsaCl18r2u3Z_2YnZJjB6EAYobtiUnn9lpl9LY": {
-    "export_sha1": "98bb41569a05bfac61948ef7d9d1305bc1bf757c",
+    "export_sha1": "4b31508a8bb5e8d1dc959afae73cbba7937ddab2",
     "name": "Gold Sputter",
     "section": "tools"
   },
@@ -70,7 +70,7 @@
     "section": "tools"
   },
   "1OKt-lxZbpTqgTQaB2xr4tY9Pc04TGJ_Dgq-SYLFo0FM": {
-    "export_sha1": "bb0dc32081711e5cbb180b0ea02bb0ab4289e2c9",
+    "export_sha1": "367fa54d30fa71c87e98c604f0231d04d47071b0",
     "name": "Isotropic Silicon Etch (HNA) SOP",
     "section": "chem"
   },
@@ -95,7 +95,7 @@
     "section": "chem"
   },
   "1UN-jwGXj1MgKG_DcL0Pjg06Q0h_o_oWUWd3saSPNCxk": {
-    "export_sha1": "5f3bd6ad897e35d9347c7d2b56e229a6a8480099",
+    "export_sha1": "c7e166ae75d0c57ea2298fc3bd71e2e16f0facc2",
     "name": "Metal Evap",
     "section": "tools"
   },
@@ -130,7 +130,7 @@
     "section": "tools"
   },
   "1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc": {
-    "export_sha1": "2cf1465de88bd7ffcbc3b9a07c019fa822ddb26f",
+    "export_sha1": "5fdd464ea75e6ed40ba294d532eff1e2d5f16d41",
     "name": "Elionix 100keV",
     "section": "tools"
   },
@@ -140,7 +140,7 @@
     "section": "tools"
   },
   "1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY": {
-    "export_sha1": "c59b693f43afcce59d8b964dc7aa260a4f66aba7",
+    "export_sha1": "9bf2f836a9cdfbeda711a992c6b23974f4192197",
     "name": "SEM",
     "section": "tools"
   },
@@ -150,7 +150,7 @@
     "section": "chem"
   },
   "1lzJ2D_izEUCCXlF7XG8gEiAwup2btTmb8DAzQv20AQ8": {
-    "export_sha1": "51facb2523f06359830f0f71846b9aaa508cecc3",
+    "export_sha1": "93d5ef0d9688d5daf220227a49cb56b81e650233",
     "name": "Hot Plates",
     "section": "tools"
   },
@@ -170,7 +170,7 @@
     "section": "policy"
   },
   "1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8": {
-    "export_sha1": "5ff9333931dea2a9bf65b3e7fa306cada3ea585f",
+    "export_sha1": "71c55186edf11c841e01c4fdbf9307caee0f1589",
     "name": "Aluminum Etch SOP",
     "section": "chem"
   },
