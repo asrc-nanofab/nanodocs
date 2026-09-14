@@ -107,7 +107,7 @@ After logging in to the appropriate account, users might see on the screen as ei
 
 ![](img/1cce505ab39b.jpg)
 
-*Image 3, * Opened Load Lock lid
+*Image 3,*  Opened Load Lock lid
 
 #### **Three Operation Steps** {#three-operation-steps}
 
@@ -294,7 +294,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 
 ![A red and white sign with a skull and crossbonesDescription automatically generated](img/940a999ed658.jpg){ width="66" } \= Toxic
 
-![A black exclamation mark in a red diamondDescription automatically generated](img/fb9ccb8a17d2.png){ width="61" }  \= Harmful
+![A black exclamation mark in a red diamondDescription automatically generated](img/281c24ff29c7.png){ width="61" }  \= Harmful
 
 ![A sign with a black object in the middleDescription automatically generated](img/794c4d78c5a0.png){ width="66" } \= Compressed Gas
 
@@ -344,7 +344,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 * Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
 * Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 11 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
 
-    ![](img/ac4716a38cff.png){ width="109" }![](img/326bb45b2e0e.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+    ![](img/ac4716a38cff.png){ width="109" }![](img/d2fec89e8f77.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
 
 *Image 10:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
 

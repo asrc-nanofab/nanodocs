@@ -54,7 +54,7 @@ The Elionix tools are in the lithography area which is designated class 100 and 
 
    
 
-After logging into Badger, you should ascertain the state of the machine.  The system is shown in the Figure below.  The only part of the system that you should interact with are the load lock where you will load your sample, and the Computer and keyboard.  **No other knobs or buttons should be touched. ** Below you will see images denoting the various parts of the machine
+After logging into Badger, you should ascertain the state of the machine.  The system is shown in the Figure below.  The only part of the system that you should interact with are the load lock where you will load your sample, and the Computer and keyboard.  **No other knobs or buttons should be touched.**  Below you will see images denoting the various parts of the machine
 
 ![](img/1b3762bda2df.png){ width="542" }
 
@@ -205,7 +205,7 @@ Now we will pay attention to the “Beam adjustment” screen.  Click on the “
 ### **Appendix A:  Manual Alignment** {#appendix-a:-manual-alignment}
 
 Now we need to tell WECAS where the alignment marks are, relative to the (0,0) position of your original CAD output by BEAMER.  We Generally use 4 global marks, Denoted A,B,C and D, which are always oriented as shown below:  
-        ** ![](img/a4ded59641e3.png){ width="217" }**  
+         **![](img/a4ded59641e3.png){ width="217" }**  
 It is useful to create a bounding box in your GDS file that is the size of your chip, or at least encompasses all of your features (including alignment marks) as shown in gray in the image above.  This gives a Lower-left-hand (0,0) (x,y) position, to reference, and you need to program into WECAS the location of the 4 alignment marks with respect to this coordinate system in units of millimeters.
 
 Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, with a feature at the center that allows for easy alignment.  
@@ -240,7 +240,7 @@ Alignment marks should be crosses 5 µm wide and OA width and height of 1 mm, wi
 7. Find your “A” alignment mark in the SEM window and zoom in and center it using the arrows to move the stage and the crosshairs (Crosshairs activated from the ELS-G100 software)   
 8. Click on “Move Pattern” and from the popup menu choose “Read Stage Position”.  Save the new schedule file with these updated write positions.
 
-    **  D.  Start the Exposure following Section IV on “Exposing Job in WECAS”** 
+    **D.  Start the Exposure following Section IV on “Exposing Job in WECAS”** 
 
 …  
 PX …  

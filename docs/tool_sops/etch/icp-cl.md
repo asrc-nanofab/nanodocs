@@ -230,11 +230,11 @@ Wafers and carrier wafers processed in the RIE should not then be processed in t
 | *If You Are Etching…* | Clean Instructions  |
 | :---- | :---- |
 | LiNbO3 with an Ar Mill Any other compound with an Ar Mill that is unreactive with the gasses available | **Category 1**  Run the **ASRC O2 Clean** on the cleaning wafer. The cleaning step should be the length of time you had active plasma or 10 minutes, whichever is longer.  |
-| Si, SiO2, Si3N4, or SiC with a CF4 etch Nb, NbTiN, Ti, or TiO2 (regardless of etch chemistry) Si with a HBr etch Ge (with no materials in other categories)  | **Category 2 ** Run the **ASRC CF4/O2 Clean** on the cleaning wafer. Each cleaning step (CF4, O2) should be the length of time you had active plasma or 10 minutes, whichever is longer.  |
+| Si, SiO2, Si3N4, or SiC with a CF4 etch Nb, NbTiN, Ti, or TiO2 (regardless of etch chemistry) Si with a HBr etch Ge (with no materials in other categories)  | **Category 2**  Run the **ASRC CF4/O2 Clean** on the cleaning wafer. Each cleaning step (CF4, O2) should be the length of time you had active plasma or 10 minutes, whichever is longer.  |
 | *If You Are Etching…* | Clean Instructions  |
 | Cr | **Category 3** Run the **ASRC Cl2-O2/CF4/O2 Clean** on the cleaning wafer. The Cl2-O2 step should be run for as long as you had active plasma or 10 minutes, whichever is longer. The two following cleaning steps (CF4, O2) should be run for at least 10 minutes each.  |
 | A III-V compound containing Ga or Ta with a BCl3/Cl2 etch in a structure that does not contain As   | **Category 4**  Run the **ASRC BCl3-Cl2/CF4/O2 Clean** on the cleaning wafer. The BCl3-Cl2 step should be run for as long as you had active plasma or 10 minutes, whichever is longer. The two following cleaning steps (CF4, O2) should be run for at least 10 minutes each.  |
-| GaAs *Any* structure containing As (even if not directly etched) | **Category 5 ** On a **Fresh Silicon Wafer**: Run the **BCl3/Cl2 GaAs** **Etch** for the length of time you had active plasma or **20** **minutes**, whichever is longer. Discard the wafer when done.  On the Cleaning Wafer: Run the **ASRC CF4/O2 Clean**.The two cleaning steps (CF4, O2) should be run for **20 minutes** each.  |
+| GaAs *Any* structure containing As (even if not directly etched) | **Category 5**  On a **Fresh Silicon Wafer**: Run the **BCl3/Cl2 GaAs** **Etch** for the length of time you had active plasma or **20** **minutes**, whichever is longer. Discard the wafer when done.  On the Cleaning Wafer: Run the **ASRC CF4/O2 Clean**.The two cleaning steps (CF4, O2) should be run for **20 minutes** each.  |
 
 3. Run process. **Stay logged into Badger and in the cleanroom for the entire clean.**  
 4. Accept pop-up when finished.  
