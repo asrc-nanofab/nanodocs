@@ -14,7 +14,7 @@
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
-| Date | 9/08/2026 |
+| Date | 9/17/2026 |
 | SOP Title | Manual Operation of the AJA Orion 8 Sputter Tool |
 | Principal Investigator | Samantha Roberts |
 | Department | NanoFabrication Facility |
@@ -120,7 +120,7 @@ happen with Guns 3, 5 and 6), click to toggle the lower right button called "SW"
 16\. Deposit for the length of time that you want. (20 minutes for Al at 150W for \>100 nm) 
 
 17\. Close the shutter when time is completed.   
-![](img/2823434677ff.png)  
+![](img/25607fcc9619.png)  
 *Figure 1:* Blue arrow shows the location to open/close the center gun shutter.
 
 #### **Ramp Down** 
@@ -162,7 +162,7 @@ happen with Guns 3, 5 and 6), click to toggle the lower right button called "SW"
 ## ---
 
 Prepared by: SPR  
-Date:  September 8, 2026  
+Date:  September 17, 2026  
 Reviewed/Revised:   
 Salam Garraway  
    

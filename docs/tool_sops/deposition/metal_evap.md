@@ -14,7 +14,7 @@
 
 | Advanced Science Research Center | Graduate Center CUNY |
 | :---- | :---- |
-| Date | 8/26/2026 |
+| Date | 9/17/2026 |
 | SOP Title | AJA E-Beam Metal Evaporator SOP |
 | Principal Investigator | Samantha Roberts |
 | Department | NanoFabrication Facility |
@@ -101,14 +101,24 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 1. Verify the receiving substrate holder (the angle bracket) is in the correct load position (height and rotation)  
     1. Do not go below the bottom sharpie line   
     2. Verify the vertical sharpie line (green line) orients with either the screw groove or red line for correct orientation  
-    3. See figures 1+4 in appendix for reference  
+    3. See figures 1+4 in appendix for reference
+
+![](img/f96f0dd97b2f.png){ width="285" }  
+*Figure 1:*The green dashed line shows that the green sharpie mark is aligned with the screw groove or red sharpie mark (whichever is easiest). *Note: the green sharpie mark will only appear if you can see the screw notched on the side, represented by the blue arrow.*  
+![](img/e23d5caf23ad.png){ width="229" }  
+*Figure 4:* The **bottom** sharpie denotes where the angle brackets should be placed to start the loading process. This is also where you leave the angle bracket when you want to transfer the sample plate back into the loadlock. The **top** sharpie mark is the minimum safe clearance to move the loadarm back to its home position safely. The blue dashed line shows where the angle bracket is at the 90mm mark, the deposition height. *Note: We align the angle bracket to the placemarkers by using the bottom edge of the brass rod.*
+
 2. Open viewport shutters  
 3. Open gate valve when it is **below** 3E-5 Torr  
 4. Move the load arm to the loadlock.  
     1. First go to the gate valve marking   
     2. Make sure to slowly move towards the loadlock  
     3. The paddle should be below the sample plate  
-    4. See figure 2 in appendix for reference  
+    4. See figure 2 in appendix for reference
+
+![](img/d4ffe3bd5182.png){ width="308" }  
+*Figure 2:* This point of view of looking through the loadlock viewport window. The loadarm paddle is directly below the sample plate. **The goal is to place the sample plate onto the middle step feature on the loadarm, represented by the blue arrows.** 
+
 5. Pick up the sample plate   
     1. The sample plate should sit in the middle step of the paddle  
     2. Recall that there is limited clearance between the rack spaces  
@@ -120,7 +130,11 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 8. Use the joystick to lift the sample plate off the loadarm.   
     1. The sample plate must sit on the lowest step of the angle brackets  
     2. You **can adjust the loadarm as needed** to achieve the above  
-    3. See figure 3 in appendix for reference  
+    3. See figure 3 in appendix for reference
+
+![](img/184e257a83b7.png){ width="404" }  
+*Figure 3:* This point of view is looking into the main chamber from the viewport window. The yellow arrow points to the angle bracket. **The blue arrow shows where the sample plate should be placed onto the angle bracket.**
+
 9. Raise substrate holder (with sample plate) to deposition height  
     1. Deposition height is 90mm from the top   
     2. See figure 4 in appendix for reference  
@@ -135,14 +149,25 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 3. Go to the Process Screen  
     1. Select the material desired to deposit  
     2. Must select it **twice** to actually select that choice  
-    3. See figure 5+6 in appendix for reference  
+    3. See figure 5+6 in appendix for reference
+
+![](img/d904898b7ac4.png){ width="311" }  
+*Figure 5:* This is the main screen on the Inficon. On the top, in the yellow box, displays the current material recipe loaded, and the state of the process. Next to the blue arrow, is the “next menu” button, that cycles indefinitely through all of the options. Next to the orange arrow, is the “Auto/Manual” button, that you must confirm/adjust to read “Manual/Auto” for using the tool in manual mode. Next to the yellow arrow, is the “Start Layer” button, that you press **once** to start ramping up your deposition process. 
+
+![](img/a36201a4b1d3.png){ width="348" }  
+*Figure 6:* After you press the “Process Menu” button, it takes to this screen to select a material. Choose the material you will be depositioning, and **in order to make the selection (or move on to the next screen), you must press it twice.**
+
 4. Press “Edit” on the layer screen  
     1. **You should only see 1 layer** \- which is the same as the material selected  
 5. In the “Process Menu: Edit …: Edit Layer 1.1” screen, you must edit/verify the following:  
     1. Enter a film thickness greater than what you need to deposit  
     2. Verify that the Start Mode is in “Auto” mode  
     3. Sensor 1 must be “On”  
-    4. See figure 7 in appendix for reference   
+    4. See figure 7 in appendix for reference 
+
+![](img/dbd9583f0298.png){ width="373" }  
+*Figure 7:* When you are on this screen, you are editing the material’s recipe/process. The only parameter to edit here is the “Final Thickness”, which you **must set to a number higher than what you want on your sample**. The other 2 parameters: **“Start Mode” and “Sensor 1” must match this photo.** 
+
 6. Go back to the main menu and go to the Film menu  
     1. Select the material desired to deposit  
 7.  In that material film menu screen, verify the following 2 items  
@@ -242,7 +267,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
 ---
 
-## Ion Milling Procedure 
+## **Ion Milling Procedure** 
 
 ### **Setup and Loading**
 
@@ -260,20 +285,32 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
 1. Open the gate valve to the loadlock, and **keep it open**.  
 2. Turn off the ion gauge, by pressing the **SENSOR ON/OFF** button  
-    1. Shown in figure 8  
-        ![](img/69c9142ec327.png)  
+    1. Shown in figure 8
+
+![](img/90043b02aa59.png)  
+*Figure 8:* Yellow arrow shows where the sensor on/off is located.
+
 3. Shut off the top cryo pump.  
     1. Touch **Cr\_I** to make it go from **ON** to **OFF**  
-    2. Shown in figure 9  
-        ![](img/a8661cbfecdc.png)  
+    2. Shown in figure 9
+
+![](img/0448681ab5dd.png)  
+*Figure 9:* Blue arrow shows where the top cryo button (Cr\_I) is located. OFF represents closed.
+
 4. Turn on the Argon gas and start the flow at 5 sccm  
     1. On the touch screen, touch the gas box to edit the value  
-    2. See figure 10  
-        ![](img/63ed86f82602.png)  
+    2. See figure 10
+
+![](img/e696352c1c54.png)  
+*Figure 10:* Blue arrow shows where to edit the gas flow. Yellow arrow turns On/Off the Ar gas.
+
 5. Establish the chamber pressure to be about **5E-4 Torr** by cranking the lever on the bottom cryo  
     1. Use the loadlock gauge to verify the pressure  
-    2. See figure 11 for the location of the bottom cryo lever.  
-        ![](img/f85ec30dbed2.png)  
+    2. See figure 11 for the location of the bottom cryo lever.
+
+![](img/8bdc07a485bf.png)  
+*Figure 11:* Blue arrow shows where the lever to adjust the bottom cryo valve opening is located. This is behind the materials turret.
+
 6. Setup your ion milling settings  
     1. Use the chart on the tool to help you with this  
         1. If you need to adjust a parameter, press the button that is next to it, and then turn the knob  
@@ -288,9 +325,11 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
     3. The chamber will be very bright, please make sure to use welding goggles if you are going to look inside.  
         1. The filament for ion milling will glow and refer to figure 13 for what it should look like
 
-        ![](img/b6cf8cd5798a.png)
+![](img/cf7d1328fba1.png)  
+*Figure 12:* Blue arrow shows the knob is to adjust parameter value. Yellow arrows represent where the parameter adjustment button is. The green arrow shows the red LED light that could turn on during use.
 
-        ![](img/6972756bc91a.png)
+![](img/da5742c5bf10.png)  
+*Figure 13:* Ion milling filament when setup properly.
 
 11. Turn on rotation of the sample plate.  
     1. Flip the switch to **LOCAL** mode  
@@ -298,8 +337,11 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
         1. You should hear a click at the beginning   
         2. A green LED should be turned ON  
     3. Adjust the RPM knob to desired rotation speed  
-    4. See figure 14 as an example for in-use  
-        ![](img/f213c9b44f17.png)  
+    4. See figure 14 as an example for in-use
+
+![](img/1d545207b96a.png)  
+*Figure 14:* Green LED is on, which represents it’s spinning. The toggle switch is in the **UP** position which is **LOCAL** mode.
+
 12. At this point, you are ready to mill. Open the substrate shutter and start a timer  
     1. The substrate shutter is **S\_SH**  
     2. You may see a red light appear for **Accel mAmp Limit** on the panel, this is ok.  
@@ -330,16 +372,13 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 1. Turn the ion gauge back on by pressing the **SENSOR ON/OFF** button  
 2. Open the top cryo pump by pressing the **Cr\_I**   
     1. You may hear a hiss and pop sounds, this is normal.  
-    2. See figure 13 for what the touch screen and the ion gauge panels should look like for idle state  
-        ![](img/9439c3777db2.png)  
+    2. See figure 15 for what the touch screen and the ion gauge panels should look like for idle state  
 3. Open up completely the bottom cryo pump  
     1. Manually crank the level to **OPEN** position  
-4. **Make sure the gate valve is closed before venting the loadlock to remove your sample**  
-     
-     
-     
-     
-   
+4. **Make sure the gate valve is closed before venting the loadlock to remove your sample**
+
+![](img/ea5fde63a403.png)  
+*Figure 15:* An example of what the idle state should look like before you leave the tool – you do not need to wait around until the chamber pressure gets very low.
 
 ## **Appendix** {#appendix}
 
@@ -377,10 +416,17 @@ When you are on this screen, you are editing the material’s recipe/process. Th
 
 ---
 
-Prepared by: Salam Elhalabi  
-Date: August 26, 2026  
+Prepared by: Salam Garraway  
+Date: September 17, 2026  
 Reviewed/Revised:   
 Salam Garraway
+
+
+
+
+
+
+
 
 
 
