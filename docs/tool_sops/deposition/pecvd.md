@@ -344,7 +344,7 @@ For a Clean timed recipe, the **Cleaning Time calculation** **must include the C
 * Be aware of hazardous flammable, oxidizing, corrosive and acute toxicity of gases that are used in the Process parameters.  
 * Placing the wafer on the load arm of the load lock, always align the flat edge of the wafer between the two set screws as shown in Image 11 below. The load arm can accommodate wafer size up to 8 inches. But in general, use only small cut pieces of chip, 2-, 3- or 4-inches wafer size.
 
-    ![](img/ac4716a38cff.png){ width="109" }![](img/d2fec89e8f77.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
+    ![](img/ac4716a38cff.png){ width="109" }![](img/950106fe3669.jpg){ width="115" }![](img/cbc3062b8cab.png){ width="104" }![](img/7d6b497da510.png){ width="111" }![](img/3f0d9d61b814.png){ width="110" }
 
 *Image 10:* 4” Wafers that use the PECVD conditioning or carrier wafer to support small chips.  SiON, A-Si, SiO2 and Sapphire wafers.
 

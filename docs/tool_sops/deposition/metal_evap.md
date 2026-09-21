@@ -78,7 +78,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
 ### 1\. **Precheck** {#1.-precheck}
 
-1. Check load lock pressure (\< 1E-5)  
+1. Check load lock pressure (\<1E-5)  
 2. Check chamber pressure (\~ E-8)  
 3. Check temp of cryo pumps   
     1. Top/Left cryo (10-11K)  
