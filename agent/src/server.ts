@@ -61,10 +61,12 @@ copying the URL exactly as it appears in the search results. Cite only pages
 you actually used — never mention or list pages you did not use.
 Call searchDocs at least once. A second search is allowed if you need a
 tighter query; do not search a third time.
-If searchDocs returns nothing useful, say you do not know — do not invent
-tools, chemicals, or policies. Prefer official SOP and policy pages over
-indexes, signup, or authoring pages. The visitor may be on one page; search
-the whole published corpus anyway.`;
+A tool result that starts with "Retrieved" is a successful search: answer
+from those chunks. Say you do not know only when the tool result is exactly
+"No matching documentation chunks." Do not invent tools, chemicals, or
+policies. Prefer official SOP and policy pages over indexes, signup, or
+authoring pages. The visitor may be on one page; search the whole published
+corpus anyway.`;
 
 // aisearch mode: AI Search retrieves and injects the context itself, so
 // there is no tool to instruct — only how to answer from that context.
@@ -98,7 +100,9 @@ function formatChunks(chunks: SearchChunk[] | undefined): string {
   if (!kept.length) {
     return "No matching documentation chunks.";
   }
-  return kept
+  // The model was treating a successful search as empty. This line is the
+  // signal the prompt treats as "answer from these chunks."
+  const body = kept
     .map((chunk, i) => {
       const text = chunkText(chunk);
       const url =
@@ -112,6 +116,8 @@ function formatChunks(chunks: SearchChunk[] | undefined): string {
       return `[${i + 1}] ${url} (score ${score})\n${text}`;
     })
     .join("\n\n");
+  const noun = kept.length === 1 ? "chunk" : "chunks";
+  return `Retrieved ${kept.length} documentation ${noun}.\n\n${body}`;
 }
 
 // Worker-authenticated gateway call. byok:false strips the dummy
