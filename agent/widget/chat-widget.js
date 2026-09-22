@@ -56,6 +56,16 @@ function initWidget(workerHost) {
   let activity = "";
   let client = null;
   let historyLoaded = false;
+  // Incremented on "new conversation" so a socket that was just closed
+  // cannot write its old transcript back into the panel.
+  let clientGen = 0;
+  // One automatic resend when search returned pages and the reply still
+  // says it found nothing. A second miss is shown, with those pages.
+  let refusalRetries = 0;
+  // One automatic resend when the socket drops mid-answer. This is a new
+  // request, not a resume of the call that already died.
+  let dropRetries = 0;
+  let recoverOnOpen = false;
 
   // --- DOM -----------------------------------------------------------
 
@@ -374,14 +384,18 @@ function initWidget(workerHost) {
           `<div class="ndc-msg ndc-user">${escapeHtml(messageText(msg))}</div>`
         );
       } else if (msg.role === "assistant") {
-        // Cards after the turn finishes. Only pages the model cited that
-        // also appear in searchDocs — no fallback to the unused hits.
+        // Cards after the turn finishes. Prefer pages the model cited.
+        // A refusal cites nothing, which used to hide the SOP search
+        // already returned — fall back to those pages so the visitor
+        // can open them.
         let cardHrefs = [];
         if (msg !== streamingMsg) {
+          const retrieved = extractCitations(msg);
           const used = citedInProse(msg);
-          cardHrefs = extractCitations(msg).filter((href) =>
-            [...used].some((cited) => citationMatches(cited, href))
+          const cited = retrieved.filter((href) =>
+            [...used].some((item) => citationMatches(item, href))
           );
+          cardHrefs = cited.length ? cited : retrieved;
         }
         const cards = cardHrefs
           .map((href) => {
@@ -441,31 +455,101 @@ function initWidget(workerHost) {
 
   // --- Agent transport -------------------------------------------------
 
+  function toolRetrieved(msg) {
+    return (msg.parts || []).some(
+      (part) =>
+        typeof part.output === "string" && part.output.startsWith("Retrieved")
+    );
+  }
+
+  function isEmptySearchReply(text) {
+    return /don['’]t know|do not know|no matching|no relevant|couldn['’]t find|could not find/i.test(
+      text
+    );
+  }
+
+  function postChatRequest() {
+    const socket = ensureClient();
+    if (socket.readyState !== 1 /* OPEN */) {
+      setStatus("Connecting…");
+    } else {
+      setStatus("");
+    }
+    activity = "Thinking…";
+    pending = true;
+    streamingMsg = null;
+    socket.send(
+      JSON.stringify({
+        type: "cf_agent_use_chat_request",
+        id: crypto.randomUUID(),
+        init: {
+          method: "POST",
+          body: JSON.stringify({
+            messages,
+            page: window.location.origin + window.location.pathname
+          })
+        }
+      })
+    );
+    render(true);
+  }
+
+  // The server replaces its transcript with this list, so dropping the
+  // bad assistant turn here is what lets the retry answer fresh.
+  function resendWithoutAssistant() {
+    const last = messages[messages.length - 1];
+    if (last && last.role === "assistant") messages.pop();
+    streamingMsg = null;
+    streamingEl = null;
+    postChatRequest();
+  }
+
   function ensureClient() {
     if (client) return client;
+    const gen = clientGen;
     client = new AgentClient({
       host: workerHost,
       agent: AGENT_NAME,
       name: conversationId
     });
     client.addEventListener("open", () => {
-      setStatus("");
-      // Only replay if a reply was mid-stream. Asking to resume an
-      // already-finished turn hits the remote AI proxy and logs
-      // "internal error; reference = …".
-      if (pending) {
-        client.send(JSON.stringify({ type: "cf_agent_stream_resume_request" }));
+      if (gen !== clientGen) return;
+      if (!recoverOnOpen) {
+        setStatus("");
+        return;
       }
+      // The server resumes on its own when a stream is still running.
+      // If that frame doesn't arrive, the call is dead — send the
+      // question again. Asking to resume a finished turn is what killed it.
+      setTimeout(() => {
+        if (gen !== clientGen || !recoverOnOpen) return;
+        recoverOnOpen = false;
+        if (dropRetries >= 1) {
+          pending = false;
+          streamingMsg = null;
+          activity = "";
+          setStatus("Connection lost — send your question again.");
+          render();
+          return;
+        }
+        dropRetries += 1;
+        setStatus("Connection lost — retrying…");
+        resendWithoutAssistant();
+      }, 400);
     });
     client.addEventListener("close", () => {
+      if (gen !== clientGen) return;
       if (pending) {
-        setStatus("Connection lost — reconnecting…");
+        recoverOnOpen = true;
+        setStatus("Connection lost — retrying…");
       }
     });
     client.addEventListener("error", () => {
+      if (gen !== clientGen) return;
       setStatus("Assistant unreachable — retrying…");
     });
     client.addEventListener("message", (event) => {
+      if (gen !== clientGen) return;
       if (typeof event.data !== "string") return;
       let frame;
       try {
@@ -559,6 +643,22 @@ function initWidget(workerHost) {
     pending = false;
     streamingMsg = null;
     activity = "";
+    const last = messages[messages.length - 1];
+    // Search succeeded and the sentence still says nothing was found.
+    // Ask once more while the panel is open, instead of leaving a
+    // finished-looking refusal the visitor has to reload past.
+    if (
+      refusalRetries < 1 &&
+      last &&
+      last.role === "assistant" &&
+      toolRetrieved(last) &&
+      isEmptySearchReply(messageText(last))
+    ) {
+      refusalRetries += 1;
+      setStatus("Searching again…");
+      resendWithoutAssistant();
+      return;
+    }
     if (!keepStatus) {
       setStatus("");
     }
@@ -623,6 +723,8 @@ function initWidget(workerHost) {
         }
         break;
       case "cf_agent_stream_resuming":
+        // A live stream is still going. Don't also resend the question.
+        recoverOnOpen = false;
         pending = true;
         streamingMsg = null;
         activity = "Thinking…";
@@ -665,49 +767,31 @@ function initWidget(workerHost) {
   }
 
   function sendQuestion(text) {
-    const socket = ensureClient();
-    // PartySocket buffers sends while connecting and flushes before the
-    // open event, so a question typed immediately after opening still lands.
-    if (socket.readyState !== 1 /* OPEN */) {
-      setStatus("Connecting…");
-    }
-    activity = "Thinking…";
+    refusalRetries = 0;
+    dropRetries = 0;
+    recoverOnOpen = false;
     messages.push({
       id: crypto.randomUUID(),
       role: "user",
       parts: [{ type: "text", text }]
     });
-    pending = true;
-    streamingMsg = null;
-    socket.send(
-      JSON.stringify({
-        type: "cf_agent_use_chat_request",
-        id: crypto.randomUUID(),
-        init: {
-          method: "POST",
-          body: JSON.stringify({
-            messages,
-            // Hint only — the Worker's system prompt keeps search corpus-wide.
-            page: window.location.origin + window.location.pathname
-          })
-        }
-      })
-    );
-    // Asking a question snaps back to following the reply.
-    render(true);
+    postChatRequest();
   }
 
   function newConversation() {
+    clientGen += 1;
     conversationId = crypto.randomUUID();
     sessionStorage.setItem(STORAGE_KEY, conversationId);
-    if (client) {
-      client.close();
-      client = null;
-    }
+    const old = client;
+    client = null;
+    if (old) old.close();
     messages = [];
     streamingMsg = null;
     streamingEl = null;
     pending = false;
+    recoverOnOpen = false;
+    refusalRetries = 0;
+    dropRetries = 0;
     historyLoaded = true; // fresh instance has no history to fetch
     setStatus("");
     render();

@@ -901,6 +901,10 @@ const partysocket = new PartySocket({
     let activity = "";
     let client = null;
     let historyLoaded = false;
+    let clientGen = 0;
+    let refusalRetries = 0;
+    let dropRetries = 0;
+    let recoverOnOpen = false;
     const root = document.createElement("div");
     root.id = ROOT_ID;
     root.innerHTML = `
@@ -1138,10 +1142,12 @@ const partysocket = new PartySocket({
         } else if (msg.role === "assistant") {
           let cardHrefs = [];
           if (msg !== streamingMsg) {
+            const retrieved = extractCitations(msg);
             const used = citedInProse(msg);
-            cardHrefs = extractCitations(msg).filter(
-              (href) => [...used].some((cited) => citationMatches(cited, href))
+            const cited = retrieved.filter(
+              (href) => [...used].some((item) => citationMatches(item, href))
             );
+            cardHrefs = cited.length ? cited : retrieved;
           }
           const cards = cardHrefs.map((href) => {
             const { title, trail } = citationLabel(href);
@@ -1183,28 +1189,91 @@ const partysocket = new PartySocket({
       statusEl.textContent = text || "";
       statusEl.hidden = !text;
     }
+    function toolRetrieved(msg) {
+      return (msg.parts || []).some(
+        (part) => typeof part.output === "string" && part.output.startsWith("Retrieved")
+      );
+    }
+    function isEmptySearchReply(text) {
+      return /don['’]t know|do not know|no matching|no relevant|couldn['’]t find|could not find/i.test(
+        text
+      );
+    }
+    function postChatRequest() {
+      const socket = ensureClient();
+      if (socket.readyState !== 1) {
+        setStatus("Connecting\u2026");
+      } else {
+        setStatus("");
+      }
+      activity = "Thinking\u2026";
+      pending = true;
+      streamingMsg = null;
+      socket.send(
+        JSON.stringify({
+          type: "cf_agent_use_chat_request",
+          id: crypto.randomUUID(),
+          init: {
+            method: "POST",
+            body: JSON.stringify({
+              messages,
+              page: window.location.origin + window.location.pathname
+            })
+          }
+        })
+      );
+      render(true);
+    }
+    function resendWithoutAssistant() {
+      const last = messages[messages.length - 1];
+      if (last && last.role === "assistant") messages.pop();
+      streamingMsg = null;
+      streamingEl = null;
+      postChatRequest();
+    }
     function ensureClient() {
       if (client) return client;
+      const gen = clientGen;
       client = new AgentClient({
         host: workerHost,
         agent: AGENT_NAME,
         name: conversationId
       });
       client.addEventListener("open", () => {
-        setStatus("");
-        if (pending) {
-          client.send(JSON.stringify({ type: "cf_agent_stream_resume_request" }));
+        if (gen !== clientGen) return;
+        if (!recoverOnOpen) {
+          setStatus("");
+          return;
         }
+        setTimeout(() => {
+          if (gen !== clientGen || !recoverOnOpen) return;
+          recoverOnOpen = false;
+          if (dropRetries >= 1) {
+            pending = false;
+            streamingMsg = null;
+            activity = "";
+            setStatus("Connection lost \u2014 send your question again.");
+            render();
+            return;
+          }
+          dropRetries += 1;
+          setStatus("Connection lost \u2014 retrying\u2026");
+          resendWithoutAssistant();
+        }, 400);
       });
       client.addEventListener("close", () => {
+        if (gen !== clientGen) return;
         if (pending) {
-          setStatus("Connection lost \u2014 reconnecting\u2026");
+          recoverOnOpen = true;
+          setStatus("Connection lost \u2014 retrying\u2026");
         }
       });
       client.addEventListener("error", () => {
+        if (gen !== clientGen) return;
         setStatus("Assistant unreachable \u2014 retrying\u2026");
       });
       client.addEventListener("message", (event) => {
+        if (gen !== clientGen) return;
         if (typeof event.data !== "string") return;
         let frame;
         try {
@@ -1291,6 +1360,13 @@ const partysocket = new PartySocket({
       pending = false;
       streamingMsg = null;
       activity = "";
+      const last = messages[messages.length - 1];
+      if (refusalRetries < 1 && last && last.role === "assistant" && toolRetrieved(last) && isEmptySearchReply(messageText(last))) {
+        refusalRetries += 1;
+        setStatus("Searching again\u2026");
+        resendWithoutAssistant();
+        return;
+      }
       if (!keepStatus) {
         setStatus("");
       }
@@ -1345,6 +1421,7 @@ const partysocket = new PartySocket({
           }
           break;
         case "cf_agent_stream_resuming":
+          recoverOnOpen = false;
           pending = true;
           streamingMsg = null;
           activity = "Thinking\u2026";
@@ -1383,45 +1460,30 @@ const partysocket = new PartySocket({
       }
     }
     function sendQuestion(text) {
-      const socket = ensureClient();
-      if (socket.readyState !== 1) {
-        setStatus("Connecting\u2026");
-      }
-      activity = "Thinking\u2026";
+      refusalRetries = 0;
+      dropRetries = 0;
+      recoverOnOpen = false;
       messages.push({
         id: crypto.randomUUID(),
         role: "user",
         parts: [{ type: "text", text }]
       });
-      pending = true;
-      streamingMsg = null;
-      socket.send(
-        JSON.stringify({
-          type: "cf_agent_use_chat_request",
-          id: crypto.randomUUID(),
-          init: {
-            method: "POST",
-            body: JSON.stringify({
-              messages,
-              // Hint only — the Worker's system prompt keeps search corpus-wide.
-              page: window.location.origin + window.location.pathname
-            })
-          }
-        })
-      );
-      render(true);
+      postChatRequest();
     }
     function newConversation() {
+      clientGen += 1;
       conversationId = crypto.randomUUID();
       sessionStorage.setItem(STORAGE_KEY, conversationId);
-      if (client) {
-        client.close();
-        client = null;
-      }
+      const old = client;
+      client = null;
+      if (old) old.close();
       messages = [];
       streamingMsg = null;
       streamingEl = null;
       pending = false;
+      recoverOnOpen = false;
+      refusalRetries = 0;
+      dropRetries = 0;
       historyLoaded = true;
       setStatus("");
       render();
