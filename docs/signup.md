@@ -14,7 +14,7 @@
 
 ### Fill out the ASRC New User Form
 
-To gain access to any of the ASRC facilities, you must fill out the [new user form](https://asrc.formstack.com/forms/facility_user_application) in formstack. This applies to all users, including CUNY users, external academic users, and industry users. 
+To gain access to any of the ASRC facilities, you must fill out the [new user form](https://asrc.formstack.com/forms/facility_user_application) in formstack. This applies to all users, including CUNY users, external academic users, and industry users. **Please be certain to select “Nanofabrication” for the core facility.**  
 
 The approval process takes up to 7-10 days, after which you will receive an email letting you know you have been approved.  
 
