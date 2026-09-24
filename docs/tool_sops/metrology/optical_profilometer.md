@@ -106,7 +106,7 @@ Users should not attempt to calibrate the tool.  If they do not believe the tool
 
 ## **Section 7- What to watch out for during operation** {#section-7--what-to-watch-out-for-during-operation}
 
-Ensure that the objectives are raised high enough to easily clear your sample. Always ensure that objectives will not strike your sample. Doing so can result in damage to the objectives and it costs close to $10,000.  
+Ensure that the objectives are raised high enough to easily clear your sample. Always ensure that objectives will not strike your sample. Doing so can result in damage to the objectives and it costs close to \$10,000.  
 Be mindful of the limits your sample might impose on measurements.  Rough surfaces, non-reflective surfaces and multiple materials with different reflectivity can affect or hinder measurements.
 
 ## **Section 8 \- Common Troubleshooting Tips** {#section-8---common-troubleshooting-tips}
