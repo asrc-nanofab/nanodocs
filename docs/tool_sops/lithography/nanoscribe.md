@@ -177,7 +177,7 @@ a.     Here is the cleaning procedure in the user manual (Chapter 5.3 of User\_M
 
 5\.     Insert the sample holder into the microscope module. Make sure that the sample holder is set at the right position. When the sample holder is inserted, you can hear a "click sound".
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe22.jpg](img/48b22b8c3ce2.jpg){ width="215" } ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe23.jpg](img/3814ea4e1d97.jpg){ width="216" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe22.jpg](img/48b22b8c3ce2.jpg){ width="215" } ![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe23.jpg](img/3814ea4e1d97.jpg){ width="216" }
 
 **Note**: There are the following three printing configurations (see Chapter 5.2 of User\_Manual in Nanobox file directory on the PC).
 
@@ -187,9 +187,9 @@ b.     Air configuration
 
 c.     Dip-in laser lithography (DiLL)
 
-![https://www.seas.upenn.edu/\~nanosop/images/configurations\_002.jpg](img/740b0e7dafe3.png)
+![https\://www\.seas.upenn.edu/\~nanosop/images/configurations\_002.jpg](img/740b0e7dafe3.png)
 
-![https://www.seas.upenn.edu/\~nanosop/images/table1\_001.jpg](img/e283ee916874.jpg){ width="451" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/table1\_001.jpg](img/e283ee916874.jpg){ width="451" }
 
 **Note**: Resolution depends on the objective lens and resist. 
 
@@ -203,19 +203,19 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
 2\.     Remove the cap from the pocket of the turret if it is present.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe46.jpg](img/7757310e17be.jpg){ width="241" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe46.jpg](img/7757310e17be.jpg){ width="241" }
 
 3\.     Remove the objective lens from the case. A white suction ring must be put on the objective lens.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg](img/772aca86a7d9.jpg){ width="265" } ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg](img/aecbe9855262.jpg){ width="275" } 
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg](img/772aca86a7d9.jpg){ width="265" } ![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe47.jpg](img/aecbe9855262.jpg){ width="275" } 
 
 4\.     Install the objective lens on the objective turret of the microscope module.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe48.jpg](img/22c0202d9fa8.jpg){ width="203" }![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe49.jpg](img/4eeea4e556bd.jpg){ width="204" }![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe51.jpg](img/8dff6935d124.jpg){ width="207" } 
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe48.jpg](img/22c0202d9fa8.jpg){ width="203" }![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe49.jpg](img/4eeea4e556bd.jpg){ width="204" }![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe51.jpg](img/8dff6935d124.jpg){ width="207" } 
 
 5\.     On the Zeiss touch screen, press the button of the objective lens installed, and the objective lens will move beneath the sample.
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe52.jpg](img/d9fdb7ee9e39.jpg){ width="313" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe52.jpg](img/d9fdb7ee9e39.jpg){ width="313" }
 
 ### **3D Writing Procedure** {#3d-writing-procedure}
 
@@ -225,19 +225,19 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
 ![](img/36a2ff413e28.png){ width="160" }
 
-3\.     Click the ![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe33.jpg](img/2842e74385f0.png) icon on the bottom of the screen, and the monitor window and illumination LED switches will be opened.  
+3\.     Click the ![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe33.jpg](img/2842e74385f0.png) icon on the bottom of the screen, and the monitor window and illumination LED switches will be opened.  
 4\.     Click on the button of the transmission or reflection illumination.
 
  
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe32.jpg](img/d71608fec528.jpg){ width="535" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe32.jpg](img/d71608fec528.jpg){ width="535" }
 
    
 5\.     Click the **Approach Sample** button.
 
  
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe34.jpg](img/2b92e14e066f.jpg){ width="359" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe34.jpg](img/2b92e14e066f.jpg){ width="359" }
 
 6\.     When the right working distance is automatically found, the small interference fringes will be observed in the "Interface Finder" window, as shown below.  If the small interference fringes are not observed, or located at the wrong pixel, you have to click **Find Interface** later.
 
@@ -252,7 +252,7 @@ a.     For example, if you want to use 63x objective lens, press the 20x button,
 
  
 
-![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe36.jpg](img/14eab77caebb.jpg){ width="219" }![https://www.seas.upenn.edu/\~nanosop/images/Nanoscribe37\_000.jpg](img/ad137c2e17d3.jpg){ width="355" }
+![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe36.jpg](img/14eab77caebb.jpg){ width="219" }![https\://www\.seas.upenn.edu/\~nanosop/images/Nanoscribe37\_000.jpg](img/ad137c2e17d3.jpg){ width="355" }
 
  	9\.     Click **Start Job**.
 

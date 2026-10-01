@@ -189,7 +189,7 @@ Failure to abide by the After-Hours Policy will result in loss of after-hours an
 
 * APPLY ONLINE:
 
-* For 1st time C-14 applicants for the ASRC address, or if previous C-14 is more than 90 days past the expiration date, who are eligible to apply without taking a test (alternative issuance program), apply directly for your C-14 at [https://nyc-business.nyc.gov/nycbusiness/description/cof-c14](https://nyc-business.nyc.gov/nycbusiness/description/cof-c14).  You will need the following forms ready for the application:
+* For 1st time C-14 applicants for the ASRC address, or if previous C-14 is more than 90 days past the expiration date, who are eligible to apply without taking a test (alternative issuance program), apply directly for your C-14 at [https\://nyc-business.nyc.gov/nycbusiness/description/cof-c14](https://nyc-business.nyc.gov/nycbusiness/description/cof-c14).  You will need the following forms ready for the application:
 
 * Completed and notarized Applicant Affirmation Form \- find a notary at local bank branches, UPS, FedE, online, amongst other locations.
 
@@ -219,7 +219,7 @@ Failure to abide by the After-Hours Policy will result in loss of after-hours an
 
 * C-14 will be issued the same day at the FDNY office when the test has been satisfactorily completed.
 
-* Further instructions for applying in person can found at [https://nyc-business.nyc.gov/nycbusiness/description/cof-c14/apply](https://nyc-business.nyc.gov/nycbusiness/description/cof-c14/apply).
+* Further instructions for applying in person can found at [https\://nyc-business.nyc.gov/nycbusiness/description/cof-c14/apply](https://nyc-business.nyc.gov/nycbusiness/description/cof-c14/apply).
 
 * APPLY BY MAIL:
 

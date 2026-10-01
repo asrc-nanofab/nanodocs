@@ -258,7 +258,7 @@ o   Be careful to not get solvent anywhere but inside the vacuum opening.
 
 ### Reference Documents {#reference-documents}
 
-\-        https://www.brewerscience.com/processing-theories/spin-coat/
+\-        https\://www\.brewerscience.com/processing-theories/spin-coat/
 
 
 

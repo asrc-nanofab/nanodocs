@@ -64,21 +64,21 @@ If you need to prematurely stop a process step with hazardous gasses, it is pref
 
 **For Full MSDS Information, Visit:**
 
-**H2:** [https://www.airgas.com/msds/001026.pdf](https://www.airgas.com/msds/001026.pdf) 
+**H2:** [https\://www\.airgas.com/msds/001026.pdf](https://www.airgas.com/msds/001026.pdf) 
 
-**CH4:** [https://www.airgas.com/msds/001033.pdf](https://www.airgas.com/msds/001033.pdf)
+**CH4:** [https\://www\.airgas.com/msds/001033.pdf](https://www.airgas.com/msds/001033.pdf)
 
-**Cl2:** [https://www.airgas.com/msds/001015.pdf](https://www.airgas.com/msds/001015.pdf) 
+**Cl2:** [https\://www\.airgas.com/msds/001015.pdf](https://www.airgas.com/msds/001015.pdf) 
 
-**HBr:** [https://www.airgas.com/msds/001027.pdf](https://www.airgas.com/msds/001027.pdf) 
+**HBr:** [https\://www\.airgas.com/msds/001027.pdf](https://www.airgas.com/msds/001027.pdf) 
 
-**Ar:** [https://www.airgas.com/msds/001004.pdf](https://www.airgas.com/msds/001004.pdf) 
+**Ar:** [https\://www\.airgas.com/msds/001004.pdf](https://www.airgas.com/msds/001004.pdf) 
 
-**O2:**  [https://www.airgas.com/msds/001043.pdf](https://www.airgas.com/msds/001043.pdf)
+**O2:**  [https\://www\.airgas.com/msds/001043.pdf](https://www.airgas.com/msds/001043.pdf)
 
-**CF4:** [https://www.airgas.com/msds/001051.pdf](https://www.airgas.com/msds/001051.pdf) 
+**CF4:** [https\://www\.airgas.com/msds/001051.pdf](https://www.airgas.com/msds/001051.pdf) 
 
-**BCl3:** [https://amp.generalair.com/MsdsDocs/PA4566S.pdf](https://amp.generalair.com/MsdsDocs/PA4566S.pdf) 
+**BCl3:** [https\://amp.generalair.com/MsdsDocs/PA4566S.pdf](https://amp.generalair.com/MsdsDocs/PA4566S.pdf) 
 
 ## **Section 3: Routes of Exposure** {#section-3:-routes-of-exposure}
 
@@ -102,7 +102,7 @@ Only the tool manager may train and approve new users.
 
 Current Tool Manager: Emma Anquillare ([eanquillare@gc.cuny.edu](mailto:eanquillare@gc.cuny.edu))
 
-**It is the responsibility of the tool user** to always know the most up-to-date tool information. Recent information can be found in this SOP, may be shared via email, or in the \#icp\_rie channel in the CUNY ASRC Nanofab slack. All users must join the slack channel.  ([https://app.slack.com/client/T2SMN1H8Q/C364LUTGA](https://app.slack.com/client/T2SMN1H8Q/C364LUTGA))
+**It is the responsibility of the tool user** to always know the most up-to-date tool information. Recent information can be found in this SOP, may be shared via email, or in the \#icp\_rie channel in the CUNY ASRC Nanofab slack. All users must join the slack channel.  ([https\://app.slack.com/client/T2SMN1H8Q/C364LUTGA](https://app.slack.com/client/T2SMN1H8Q/C364LUTGA))
 
  
 
@@ -112,7 +112,7 @@ Cleanroom suits (including booties, hairnets, and hoods), nitrile cleanroom glov
 
 ## **Section 6: Material Approval Process and Restrictions** {#section-6:-material-approval-process-and-restrictions}
 
-***All*** materials (both exposed and not exposed) entering the tool must be disclosed and approved before insertion into ***only their approved etcher***. Any changes to the materials or gas chemistry of the etch process must be explicitly approved in writing by the etch tool manager. Requests can be made using this form: [https://asrc.formstack.com/forms/asrc\_nanofabrication\_facility\_etch\_process\_request\_form](https://asrc.formstack.com/forms/asrc_nanofabrication_facility_etch_process_request_form) 
+***All*** materials (both exposed and not exposed) entering the tool must be disclosed and approved before insertion into ***only their approved etcher***. Any changes to the materials or gas chemistry of the etch process must be explicitly approved in writing by the etch tool manager. Requests can be made using this form: [https\://asrc.formstack.com/forms/asrc\_nanofabrication\_facility\_etch\_process\_request\_form](https://asrc.formstack.com/forms/asrc_nanofabrication_facility_etch_process_request_form) 
 
 The form can also be accessed here:
 

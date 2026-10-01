@@ -334,7 +334,7 @@ Copies of the SDS’s for all chemicals can be found in:
 
 * Printed copies stored in the SDS binder mounted on the wall at the entrance of the gowning room.  
 * Digital copies stored in the MSDS folder in the shared NanoFab01 drive accessible within the ASRC network.  
-* Digital copies available as downloadable PDFs from the NanoFab website: https://asrc.gc.cuny.edu/facilities/nanofabrication/policies-procedures-resources/chemicals/
+* Digital copies available as downloadable PDFs from the NanoFab website: https\://asrc.gc.cuny.edu/facilities/nanofabrication/policies-procedures-resources/chemicals/
 
 ## **Section 7: Chemical Safety** {#section-7:-chemical-safety}
 

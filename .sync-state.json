@@ -1,6 +1,6 @@
 {
   "134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ": {
-    "export_sha1": "f666d4e932185f6dbbd90786a27994f41fe1beba",
+    "export_sha1": "75b34d581639ecc263e25e79f6e772b8ae01eded",
     "name": "ICP-Fl",
     "section": "tools"
   },
@@ -20,7 +20,7 @@
     "section": "chem"
   },
   "187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw": {
-    "export_sha1": "1e7d2db8262afc3f8112b0f2859a58b8a5de4fd2",
+    "export_sha1": "f80af68eae06483635a7a81b68b7b9f9bbf1f1a8",
     "name": "Safety Manual",
     "section": "policy"
   },
@@ -35,7 +35,7 @@
     "section": "chem"
   },
   "1H33fEMQOaZ6IegQyybm0pJRTaQjPmYC0ar2dVD6sJwM": {
-    "export_sha1": "5f327b9a22fa5ee6ca623a4e425dae3b492c1dc3",
+    "export_sha1": "371f9ac8bcf737b0e0d2d7545ac555fad7cbc77d",
     "name": "Spinner",
     "section": "tools"
   },
@@ -50,7 +50,7 @@
     "section": "tools"
   },
   "1IaniDFz65Ywijamk3f5YETyXLmCPBjYZ47sSgO8O6DE": {
-    "export_sha1": "953c7b1ee980f014940be18f5023c19080fec178",
+    "export_sha1": "382e709dcaccec250654772e78e9f4ff25860982",
     "name": "RIE",
     "section": "tools"
   },
@@ -65,7 +65,7 @@
     "section": "chem"
   },
   "1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw": {
-    "export_sha1": "4d4abb7b2bc5ceb1d83f4d3bc0894ccd831816d0",
+    "export_sha1": "0a8991fb2f9b7e61c277f828a869c316c5191920",
     "name": "Nanoscribe",
     "section": "tools"
   },
@@ -155,7 +155,7 @@
     "section": "tools"
   },
   "1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4": {
-    "export_sha1": "338cdf77ad1c649d7cf945f59ffce15f515f4e62",
+    "export_sha1": "8bdeb33879a94597d54ebae9cd3e999f2738af64",
     "name": "ICP-Cl",
     "section": "tools"
   },
@@ -165,7 +165,7 @@
     "section": "tools"
   },
   "1qzcJ_VQbIsTaRefLxhnhzaancla2f7Q7IbotATD6YJU": {
-    "export_sha1": "685e1e278d4adf4a9d1eca1b36472c9f25e451b7",
+    "export_sha1": "76e9ef928f546ef30dd6bd908d1f4a6464274a66",
     "name": "Lab Manual",
     "section": "policy"
   },
@@ -185,7 +185,7 @@
     "section": "tools"
   },
   "1wxldtt0HAxqAhj__62KHGnug-Hdfc21pm3gg9mrBhIE": {
-    "export_sha1": "f961f65d11771a61d7e447d006c9671808a478e7",
+    "export_sha1": "948e7ba255da01a54da2d4a359071a7235ffc6e4",
     "name": "C-14",
     "section": "policy"
   }
