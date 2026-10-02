@@ -75,10 +75,10 @@ The ALD growth process involves the use of volatile chemical reactants. Therefor
 | :---- | :---- | :---- |
 | Electric Shock | ![A yellow triangle sign with black lightning bolt](img/9fbf021183b8.jpg){ width="80" } | RF generator works with high voltage supply. |
 | Thermal  | ![A yellow triangle sign with a hand over a surface](img/eb60111b034b.png){ width="88" } | Sample(s) and sample holder can get hot to touch, even LL get heated up with the chamber’s high temperature. |
-| TDMHf | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A red and white sign with a skull and crossbonesDescription automatically generated](img/657e736dbfb3.jpg){ width="66" }![A sign with a person with a star in the centerDescription automatically generated]() | Vapor may form explosive mixing with air. It can cause burn to skin, eyes and respiratory tract and is toxic.  . |
+| TDMHf | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A red and white sign with a skull and crossbonesDescription automatically generated](img/657e736dbfb3.jpg){ width="66" }![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" } | Vapor may form explosive mixing with air. It can cause burn to skin, eyes and respiratory tract and is toxic.  . |
 | TDMA | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A red and white sign with a skull and crossbonesDescription automatically generated](img/657e736dbfb3.jpg){ width="66" } | Pyrophoric, may ignite in the moist air can form flammable and may cause skin and eye burns |
-| TDMSi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A sign with a person with a star in the centerDescription automatically generated]()![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" } | Can form flammable vapors Release corrosive gases Can cause coughing, dizziness and respiratory distress. |
-| TDMTi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A sign with a person with a star in the centerDescription automatically generated]() | Highly reactive in air. Skin and eye damage, respiratory irritation. |
+| TDMSi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" }![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" } | Can form flammable vapors Release corrosive gases Can cause coughing, dizziness and respiratory distress. |
+| TDMTi | **![A red and black sign with a flameDescription automatically generated](img/a80b2cde7a35.png){ width="61" }**![A warning sign with a red borderDescription automatically generated](img/7558c2926e19.jpg){ width="62" }![A sign with a person with a star in the centerDescription automatically generated](img/bf7fa46e8661.png){ width="63" } | Highly reactive in air. Skin and eye damage, respiratory irritation. |
 
 ### **Section 3- Routes of Exposure** {#section-3--routes-of-exposure}
 
@@ -316,6 +316,7 @@ Figure 9 Pressure graph and Pulse peaks
 1. Revision 1.0 \-January 2018 – MB created the original document  
 2. Revision 2.0 – June 2025 \- Rai Suresh  
 3. Revision 2.01– September 2026 \- Rai Suresh  
+
 
 
 
