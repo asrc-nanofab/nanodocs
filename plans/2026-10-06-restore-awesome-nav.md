@@ -1,7 +1,7 @@
 # Restore awesome-nav directory files
 
 **Date:** 2026-10-06
-**Status:** Draft
+**Status:** Phase B done — awaiting sign-off
 
 ## Description
 
@@ -45,18 +45,20 @@ that enables the plugin.
 
 ### Phase A — Upgrade Zensical, leave nav alone
 
-- [ ] In `pyproject.toml`, change `zensical>=0.0.57` to `zensical>=0.0.68`.
-- [ ] `uv lock` so `uv.lock` resolves 0.0.68 (or newer if 0.0.68 is no longer
-      the newest 0.0.x that still reads `mkdocs.yml` the same way).
-- [ ] Do not add a plugin entry and do not add `.nav.yml` files.
-- [ ] `uv run zensical build --strict` passes. Sidebar is unchanged because
-      the explicit `nav:` tree is still the only navigation.
+- [x] In `pyproject.toml`, change `zensical>=0.0.57` to `zensical>=0.0.68`.
+- [x] `uv lock` so `uv.lock` resolves 0.0.68 (or newer if 0.0.68 is no longer
+      the newest 0.0.x that still reads `mkdocs.yml` the same way). Resolved
+      0.0.68.
+- [x] Do not add a plugin entry and do not add `.nav.yml` files.
+- [x] `uv run zensical build --strict` passes. Sidebar is unchanged because
+      the explicit `nav:` tree is still the only navigation. Build finished
+      in 1.24s, "No issues found".
 
 ### Phase A review gate — STOP for sign-off
 
-- [ ] `uv run zensical --version` is 0.0.68 or newer.
-- [ ] Strict build passes with no new warnings.
-- [ ] Decision: proceed / adjust / abandon
+- [x] `uv run zensical --version` is 0.0.68 or newer. Reported `0.0.68`.
+- [x] Strict build passes with no new warnings. "No issues found".
+- [x] Decision: proceed. User said go on Phase B.
 
 ### Phase B — Swap the nav tree for `.nav.yml` files
 
@@ -64,9 +66,9 @@ Enable the plugin and delete `nav:` together. Write these files. Labels and
 order match the current `mkdocs.yml` `nav:` block. Paths are relative to the
 file's directory.
 
-- [ ] `mkdocs.yml`: under `plugins:`, after `search`, add `- awesome-nav`.
+- [x] `mkdocs.yml`: under `plugins:`, after `search`, add `- awesome-nav`.
       Delete the `nav:` block and the comment above it.
-- [ ] `docs/.nav.yml` (no `title:`)
+- [x] `docs/.nav.yml` (no `title:`)
 
 ```yaml
 nav:
@@ -79,7 +81,7 @@ nav:
   - FAQ: faq/index.md
 ```
 
-- [ ] `docs/policy/.nav.yml`
+- [x] `docs/policy/.nav.yml`
 
 ```yaml
 title: Lab Safety Policies
@@ -91,7 +93,7 @@ nav:
   - Suspension Policy: suspension.md
 ```
 
-- [ ] `docs/tool_sops/.nav.yml`
+- [x] `docs/tool_sops/.nav.yml`
 
 ```yaml
 title: Tool SOPs
@@ -104,7 +106,7 @@ nav:
   - Packaging SOPs: packaging
 ```
 
-- [ ] `docs/tool_sops/lithography/.nav.yml`
+- [x] `docs/tool_sops/lithography/.nav.yml`
 
 ```yaml
 title: Lithography SOPs
@@ -117,7 +119,7 @@ nav:
   - Hot Plates: hot_plates.md
 ```
 
-- [ ] `docs/tool_sops/deposition/.nav.yml`
+- [x] `docs/tool_sops/deposition/.nav.yml`
 
 ```yaml
 title: Deposition SOPs
@@ -132,7 +134,7 @@ nav:
   - Gold Sputter Coater: gold_sputter.md
 ```
 
-- [ ] `docs/tool_sops/etch/.nav.yml`
+- [x] `docs/tool_sops/etch/.nav.yml`
 
 ```yaml
 title: Etcher SOPs
@@ -143,7 +145,7 @@ nav:
   - ICP-Chlorine Etcher: icp-cl.md
 ```
 
-- [ ] `docs/tool_sops/metrology/.nav.yml`
+- [x] `docs/tool_sops/metrology/.nav.yml`
 
 ```yaml
 title: Metrology SOPs
@@ -156,7 +158,7 @@ nav:
   - Ellipsometer: ellipsometer.md
 ```
 
-- [ ] `docs/tool_sops/packaging/.nav.yml`
+- [x] `docs/tool_sops/packaging/.nav.yml`
 
 ```yaml
 title: Packaging SOPs
@@ -165,7 +167,7 @@ nav:
   - Dicing Saw: dicing_saw.md
 ```
 
-- [ ] `docs/chemicals/.nav.yml`
+- [x] `docs/chemicals/.nav.yml`
 
 ```yaml
 title: Chemical Handling
@@ -178,7 +180,7 @@ nav:
   - RCA Hood: rca_hood
 ```
 
-- [ ] `docs/chemicals/caustics_hood/.nav.yml`
+- [x] `docs/chemicals/caustics_hood/.nav.yml`
 
 ```yaml
 title: Caustics/Metal Etch Hood
@@ -191,7 +193,7 @@ nav:
   - Silicon Etch: silicon_etch.md
 ```
 
-- [ ] `docs/chemicals/hf_pirahna_hood/.nav.yml` — untitled children, titles
+- [x] `docs/chemicals/hf_pirahna_hood/.nav.yml` — untitled children, titles
       come from each page's H1, same as today:
 
 ```yaml
@@ -202,7 +204,7 @@ nav:
   - piranha.md
 ```
 
-- [ ] `docs/chemicals/rca_hood/.nav.yml`
+- [x] `docs/chemicals/rca_hood/.nav.yml`
 
 ```yaml
 title: RCA Hood
@@ -211,7 +213,7 @@ nav:
   - rca_clean.md
 ```
 
-- [ ] `docs/authoring/.nav.yml` — includes the two pages the old file lacked:
+- [x] `docs/authoring/.nav.yml` — includes the two pages the old file lacked:
 
 ```yaml
 title: About This Site
@@ -222,20 +224,23 @@ nav:
   - Wiring a Docs Chat Agent: chat_agent.md
 ```
 
-- [ ] Do not recreate `docs/faq/.nav.yml`,
+- [x] Do not recreate `docs/faq/.nav.yml`,
       `docs/chemicals/solvent_hood/.nav.yml`,
       `docs/chemicals/caustics_hood/aluminum_etch/.nav.yml`, or
       `docs/signup/.nav.yml`.
-- [ ] `AGENTS.md`: replace the "Zensical does not read awesome-nav" paragraph.
+- [x] `AGENTS.md`: replace the "Zensical does not read awesome-nav" paragraph.
       New pages get a line in the `.nav.yml` of their directory. A nested tool
       is still `slug/index.md` plus a `.nav.yml` in that directory for its
-      children. Keep the "do not add `zensical.toml`" line.
-- [ ] `README.md`: same change in "What is generated vs. hand-written", in
+      children. Keep the "do not add `zensical.toml`" line. Repo-map row
+      updated too.
+- [x] `README.md`: same change in "What is generated vs. hand-written", in
       step 4 of "Adding or updating a document" (the line goes in the
       category `.nav.yml`, not `mkdocs.yml`), and in the repo-map row for
       `mkdocs.yml`.
-- [ ] `uv run zensical build --strict` passes.
-- [ ] Build log has no `nav_override`, `root_title`, or `no_matches` warning.
+- [x] `uv run zensical build --strict` passes. 1.15s, "No issues found".
+- [x] Build log has no `nav_override`, `root_title`, or `no_matches` warning.
+      Built `site/index.html` nav matches the review checklist below
+      (labels, order, single links, H1 titles). `.nav.yml` is not in `site/`.
 
 ### Phase B review gate — STOP for sign-off
 

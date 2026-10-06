@@ -1,0 +1,8 @@
+nav:
+  - Home: index.md
+  - Lab Safety Policies: policy
+  - Tool SOPs: tool_sops
+  - Chemical Handling: chemicals
+  - Nanofab Signup: signup.md
+  - About This Site: authoring
+  - FAQ: faq/index.md

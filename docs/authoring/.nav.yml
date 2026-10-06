@@ -1,0 +1,6 @@
+title: About This Site
+nav:
+  - index.md
+  - Writing Documentation: writing_documentation.md
+  - How the Docs Chat Works: how_chat_works.md
+  - Wiring a Docs Chat Agent: chat_agent.md
