@@ -10,7 +10,7 @@ dependencies = [
     "ipykernel==6.29.5",
     "requests>=2.32.4",
     "pillow>=12.3.0",
-    "zensical>=0.0.57",
+    "zensical>=0.0.68",
 ]
 
 [dependency-groups]

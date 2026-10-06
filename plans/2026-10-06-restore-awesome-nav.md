@@ -1,7 +1,7 @@
 # Restore awesome-nav directory files
 
 **Date:** 2026-10-06
-**Status:** Draft
+**Status:** Phase A done — awaiting sign-off
 
 ## Description
 
@@ -45,17 +45,19 @@ that enables the plugin.
 
 ### Phase A — Upgrade Zensical, leave nav alone
 
-- [ ] In `pyproject.toml`, change `zensical>=0.0.57` to `zensical>=0.0.68`.
-- [ ] `uv lock` so `uv.lock` resolves 0.0.68 (or newer if 0.0.68 is no longer
-      the newest 0.0.x that still reads `mkdocs.yml` the same way).
-- [ ] Do not add a plugin entry and do not add `.nav.yml` files.
-- [ ] `uv run zensical build --strict` passes. Sidebar is unchanged because
-      the explicit `nav:` tree is still the only navigation.
+- [x] In `pyproject.toml`, change `zensical>=0.0.57` to `zensical>=0.0.68`.
+- [x] `uv lock` so `uv.lock` resolves 0.0.68 (or newer if 0.0.68 is no longer
+      the newest 0.0.x that still reads `mkdocs.yml` the same way). Resolved
+      0.0.68.
+- [x] Do not add a plugin entry and do not add `.nav.yml` files.
+- [x] `uv run zensical build --strict` passes. Sidebar is unchanged because
+      the explicit `nav:` tree is still the only navigation. Build finished
+      in 1.24s, "No issues found".
 
 ### Phase A review gate — STOP for sign-off
 
-- [ ] `uv run zensical --version` is 0.0.68 or newer.
-- [ ] Strict build passes with no new warnings.
+- [x] `uv run zensical --version` is 0.0.68 or newer. Reported `0.0.68`.
+- [x] Strict build passes with no new warnings. "No issues found".
 - [ ] Decision: proceed / adjust / abandon
 
 ### Phase B — Swap the nav tree for `.nav.yml` files
