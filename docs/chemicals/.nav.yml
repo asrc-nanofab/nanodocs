@@ -1,0 +1,8 @@
+title: Chemical Handling
+nav:
+  - index.md
+  - Litho-Development Hood: litho_hood/index.md
+  - Solvent Hood: solvent_hood/index.md
+  - Caustics/Metal Etch Hood: caustics_hood
+  - HF and Piranha Hood: hf_pirahna_hood
+  - RCA Hood: rca_hood

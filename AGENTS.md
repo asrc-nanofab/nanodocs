@@ -72,11 +72,10 @@ Defined in `scripts/sync_gdocs.py`:
   Non-matching filenames go in `TOOL_PAGE_OVERRIDES`.
 - **Chem / policy**: explicit name → path maps (`CHEM_PAGE_MAP`,
   `POLICY_PAGE_MAP`). A doc absent from the map is skipped with a log line.
-- New pages must also be added to the `nav:` tree in `mkdocs.yml`.
-  Zensical does not read awesome-nav `.nav.yml` files yet — do not
-  recreate those files. Nested tools are indented children under the
-  parent path (promote `slug.md` → `slug/index.md`). The old `.nav.yml`
-  tree is in git history if Zensical later maps the plugin.
+- New pages get a line in the `.nav.yml` of their directory. Zensical's
+  built-in awesome-nav plugin reads those files (`plugins: awesome-nav`
+  in `mkdocs.yml`). A nested tool is `slug/index.md` plus a `.nav.yml`
+  in that directory for its children.
 - Keep `mkdocs.yml`. Do not add `zensical.toml` until they ship a
   conversion tool.
 - The sync preserves an existing page's H1, so renaming a page's on-site title
@@ -113,7 +112,7 @@ they're harmless but can be deleted if unreferenced.
 | `wrangler.jsonc` | Pages + R2 binding (`PDFS`) |
 | `scripts/sync_gdocs.py` | The sync (single source of sync behavior) |
 | `docs/robots.txt`, `docs/google*.html` | Search Console / crawlers; do not delete the google HTML file |
-| `mkdocs.yml` | Site config and `nav:` tree (Zensical modern; `site_url` is `https://nanodocs.pages.dev`) |
+| `mkdocs.yml` | Site config (Zensical modern; `site_url` is `https://nanodocs.pages.dev`). Sidebar order lives in `docs/**/.nav.yml`. |
 | `overrides/` | Theme extras: PDF-link pills; slate `--md-default-bg-color` lift only |
 | `plans/` | Dated, phased work plans with review gates (see `.cursor/rules/plan-files.mdc`) |
 | `.cursor/rules/`, `.cursor/commands/` | Agent guardrails and workflows |

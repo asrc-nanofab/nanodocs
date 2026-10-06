@@ -121,10 +121,10 @@ Generated (never hand-edit — fix the Google Doc or the script, then re-sync):
 - `docs/assets/pdfs/` (hosted PDFs)
 
 Hand-written: section index pages, `docs/faq/`, `docs/signup/`, and the
-`nav:` tree in `mkdocs.yml`. Zensical does not read awesome-nav `.nav.yml`
-files yet; those live in git history on `main` and can come back when it
-does. Until then, new pages and nests (a tool with child process docs)
-are indented entries in that tree. Keep `mkdocs.yml` — do not add a
+`.nav.yml` files that set sidebar order. Zensical's built-in awesome-nav
+plugin reads those files. A new page is one line in its directory's
+`.nav.yml`. A tool with child process docs is `slug/index.md` plus a
+`.nav.yml` in that directory. Keep `mkdocs.yml` — do not add a
 `zensical.toml` until Zensical ships a conversion tool.
 
 ## Writing docs that convert cleanly
@@ -164,10 +164,11 @@ the sync locally only to preview before that run.
      `TOOL_PAGE_OVERRIDES` in the script.
    - **Chem / policy**: add the document name → page path to `CHEM_PAGE_MAP` /
      `POLICY_PAGE_MAP` in the script.
-4. Add the page to the `nav:` tree in `mkdocs.yml`. A flat tool is one
-   line (`AJA Sputter: tool_sops/deposition/aja_sputter.md`). Promoting
-   it to a parent with process docs means moving the file to
-   `aja_sputter/index.md` and indenting children under that entry.
+4. Add the page to the `.nav.yml` in its directory. A flat tool is one
+   line in `docs/tool_sops/deposition/.nav.yml`
+   (`AJA Sputter: aja_sputter.md`). Promoting it to a parent with process
+   docs means moving the file to `aja_sputter/index.md` and adding a
+   `.nav.yml` in that directory for the children.
 5. Run the sync and check the page locally.
 6. Upload the new PDF to R2 (same key as the local path under
    `docs/assets/pdfs/`) so View PDF works on the live site. See
@@ -379,7 +380,7 @@ GitHub Pages for this repo is **unpublished**. Leave it that way.
 | `docs/google*.html` | Google Search Console verification file (do not delete) |
 | `agent/` | Sibling Cloudflare Worker: `ChatAgent` Durable Object + `searchDocs` tool (the docs chat brain; deployed separately from Pages) |
 | `agent/widget/chat-widget.js` | Chat widget source — `npm run build:widget` emits the committed bundle |
-| `mkdocs.yml` | Site configuration (Zensical modern theme, explicit `nav:`); `site_url` is `https://nanodocs.pages.dev` |
+| `mkdocs.yml` | Site configuration (Zensical modern theme, awesome-nav plugin); `site_url` is `https://nanodocs.pages.dev`. Sidebar order is `docs/**/.nav.yml`. |
 | `overrides/` | Theme customizations (`extra.css`: PDF pills; slate page fill) + chat widget bundle and stylesheet |
 | `plans/` | Dated work plans with phased steps and review gates |
 | `AGENTS.md` | Operational guide for coding agents (invariants, commands, quirks) |
