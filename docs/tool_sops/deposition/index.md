@@ -7,7 +7,7 @@
 - [AJA Organic Evaporator](organic_evap.md)
 - [AJA Thermal Evaporator](thermal_evap.md)
 - [Fuji ALD](ald.md)
-- [Oxford PECVD](pecvd.md)
+- [Oxford PECVD](pecvd/index.md)
 - [Gold Sputter Coater](gold_sputter.md)
 
 Select a tool above to view its Standard Operating Procedure (SOP).
