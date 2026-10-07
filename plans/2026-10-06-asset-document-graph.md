@@ -5,10 +5,12 @@
 
 ## Description
 
-An asset is a tool or a piece of support equipment. A document is a
-file. A document points at the assets it is about. An asset points at
-the support equipment it depends on. A file lives in one place. A
-contract that covers three machines has three links, not three copies.
+An asset is a process tool, the support equipment attached to a tool
+(its chiller, its pump), or facility infrastructure (the TGMS, air
+handling). A document is a file. A document points at the assets it is
+about. A tool points at the equipment and infrastructure it depends on.
+A file lives in one place. A contract that covers three machines has
+three links, not three copies.
 
 Someone writes the asset list. The model may only pick from that list,
 from the document types below, and from the audience values. It does
@@ -37,7 +39,8 @@ flowchart LR
 ```
 
 Solid arrows are `about`: a document to an asset. Dashed arrows are
-`depends_on`: an asset to support equipment it needs.
+`depends_on`: a tool to the equipment or infrastructure it needs. The
+chiller is the PECVD's own; the TGMS is the facility's.
 
 "Everything about the Oxford PECVD" is the user SOP, the repair SOP,
 and the service contract. "All contracts" is the service contract,
@@ -51,12 +54,25 @@ Recorded 2026-10-06. These are settled; Phase B builds on them.
 | Decision | Choice | Why |
 | --- | --- | --- |
 | Asset-to-asset edge | Add `depends_on` now. One hop, not followed transitively. | "PECVD chiller" is a relationship hidden in a name. Without the edge, "the chiller is down, which tools are affected" has no answer. |
-| `kind` vs `class` | Drop `kind`. Keep `class` and `subclass`. | `kind` was a two-value summary of `class` (`support_equipment` versus everything else); two columns that must agree is a bug waiting for a row. `class` and `subclass` already exist in NanoKnow, so nothing new is invented. "Is it a tool or support equipment" is answered by `class`. |
+| `kind`, `class`, `subclass` | Keep all three. `kind` is the level: `tool` or `infrastructure`. `class`/`subclass` are what it is, from NanoKnow. | They answer different questions. `class` says process tool or support equipment. `kind` says whether it belongs to a tool or to the facility. A chiller is `support_equipment` at `tool` level; the TGMS is `support_equipment` at `infrastructure` level. Class cannot tell them apart, so `kind` is not derivable and not redundant. |
 | Document type × audience validity | Deferred. | Not needed for the example. Listed under open questions. |
 | Hoods | Hoods are assets, `class=wet_processing`. | Users are trained on them. The etch pages under a hood are documents about that hood, the same shape as SOPs under a tool. |
 | Asset ids | Qualifier plus subclass, never a bare subclass. Permanent. | `ald` breaks the day a second ALD arrives. Renaming an id is a migration; renaming a `name` is a cell edit. Rule below. |
 
 ## Categories
+
+### Asset kind
+
+The level an asset lives at. Who owns it, who fixes it, whose budget.
+
+| Kind | What it is |
+| --- | --- |
+| `tool` | A process tool and the equipment attached to it. Oxford PECVD, AJA Sputter, the Caustics hood, the PECVD's own chiller and pump. |
+| `infrastructure` | Facility systems shared by many tools. TGMS, air handling, electrical, house vacuum. |
+
+`infrastructure` rows are always `class=support_equipment`. `tool` rows
+can be any class, including `support_equipment` when the equipment
+belongs to one tool.
 
 ### Asset class and subclass
 
@@ -66,10 +82,10 @@ one subclass, and every subclass belongs to exactly one class.
 `not_applicable` and `unknown` are for a guess that did not match. They
 are not assigned to a real asset row.
 
-Seven classes are process stations a user is trained on. The eighth,
-`support_equipment`, is what those stations depend on: the TGMS, a
-chiller, a pump. That split is the only "tool versus support" distinction
-in the model; there is no separate column for it.
+Seven classes are process tools a user is trained on. The eighth,
+`support_equipment`, is what those tools depend on. It appears at both
+kinds: the PECVD's chiller is `tool` / `support_equipment` / `chiller`;
+the TGMS is `infrastructure` / `support_equipment` / `tgms`.
 
 | Class | Subclasses |
 | --- | --- |
@@ -119,12 +135,14 @@ chains.
 An id is lower-case, hyphenated, and permanent. It is a qualifier plus
 the subclass, so two assets of the same subclass can never share one:
 
-| Asset is… | Qualifier | Example |
-| --- | --- | --- |
-| A process tool | Manufacturer or model | `oxford-pecvd`, `fiji-ald`, `aja-sputter` |
-| A hood | The hood's working name | `caustics-hood`, `hf-piranha-hood` |
-| Support equipment serving one tool | The tool it serves | `pecvd-chiller` |
-| Lab-wide support equipment | `facility` | `facility-tgms` |
+| Asset is… | Kind | Qualifier | Example |
+| --- | --- | --- | --- |
+| A process tool | `tool` | Manufacturer or model | `oxford-pecvd`, `fiji-ald`, `aja-sputter` |
+| A hood | `tool` | The hood's working name | `caustics-hood`, `hf-piranha-hood` |
+| Equipment attached to one tool | `tool` | The tool it serves | `pecvd-chiller` |
+| Facility infrastructure | `infrastructure` | `facility` | `facility-tgms` |
+
+The `facility-` prefix and `kind=infrastructure` always go together.
 
 A bare subclass (`ald`, `chiller`) is never an id. Changing what a
 machine is called edits `name`, not `id`. Replacing a machine is a new
@@ -137,14 +155,14 @@ row with a new id; the old row stays so its documents still resolve.
 Aliases are other names that mean this same row. "PECVD" and
 "Oxford PlasmaPro" both resolve to Oxford PECVD.
 
-| id | name | class | subclass | aliases |
-| --- | --- | --- | --- | --- |
-| oxford-pecvd | Oxford PECVD | deposition | pecvd | PECVD, Oxford PlasmaPro |
-| fiji-ald | Fiji ALD | deposition | ald | ALD |
-| aja-sputter | AJA Sputter | deposition | sputter | AJA |
-| caustics-hood | Caustics/Metal Etch Hood | wet_processing | wet_etching | caustics hood, metal etch hood |
-| facility-tgms | TGMS | support_equipment | tgms | toxic gas monitor |
-| pecvd-chiller | PECVD chiller | support_equipment | chiller | |
+| id | name | kind | class | subclass | aliases |
+| --- | --- | --- | --- | --- | --- |
+| oxford-pecvd | Oxford PECVD | tool | deposition | pecvd | PECVD, Oxford PlasmaPro |
+| fiji-ald | Fiji ALD | tool | deposition | ald | ALD |
+| aja-sputter | AJA Sputter | tool | deposition | sputter | AJA |
+| caustics-hood | Caustics/Metal Etch Hood | tool | wet_processing | wet_etching | caustics hood, metal etch hood |
+| pecvd-chiller | PECVD chiller | tool | support_equipment | chiller | |
+| facility-tgms | TGMS | infrastructure | support_equipment | tgms | toxic gas monitor |
 
 The other hoods (Litho-Development, Solvent, HF and Piranha, RCA) are
 the same shape as the Caustics row and are left out to keep the
@@ -196,7 +214,9 @@ One row is one "about" link. The contract is three rows.
 | --- | --- | --- |
 | Everything about the Oxford PECVD | d1, d2, d3, d4, d5 | `about` only |
 | Oxford PECVD including its support equipment | d1–d6 | `about`, plus `about` of each `depends_on` target |
-| All support equipment | facility-tgms, pecvd-chiller | `class` filter |
+| All support equipment | pecvd-chiller, facility-tgms | `class` filter |
+| All facility infrastructure | facility-tgms | `kind` filter |
+| Everything that is the PECVD's, including its own equipment | oxford-pecvd, pecvd-chiller | `depends_on` targets where `kind=tool` |
 | User documents about the Oxford PECVD | d1, d4 | `about`, audience filter |
 | All contracts | d5 | type filter |
 | Everything about the TGMS | d5 | `about` |
@@ -221,9 +241,9 @@ Drive. These tables are the links, not a second copy of the file.
 
 - [x] Write this example: asset rows, document rows, link rows, and the
       category lists.
-- [x] Record the 2026-10-06 decisions: `depends_on` edge, drop `kind`
-      and keep class/subclass, hoods are assets, id rule, defer
-      type × audience.
+- [x] Record the 2026-10-06 decisions: `depends_on` edge; keep `kind`
+      (tool / infrastructure level) alongside class/subclass; hoods are
+      assets; id rule; defer type × audience.
 - [ ] Read the tables above against the lab. Check that Oxford PECVD,
       the TGMS, the chiller, and the Caustics hood are the right shape,
       and that the service contract as three links is the case you meant.
@@ -245,11 +265,14 @@ Drive. These tables are the links, not a second copy of the file.
 Only after the example is accepted. This work is in the NanoKnow repo,
 not in the docs sync.
 
-- [ ] Add an asset table (id, name, class, subclass, aliases). Class
-      and subclass values come from `classification.py`; a write whose
-      subclass is not in its class is rejected.
+- [ ] Add an asset table (id, name, kind, class, subclass, aliases).
+      Class and subclass values come from `classification.py`; a write
+      whose subclass is not in its class is rejected.
+- [ ] Validate `kind` on write: `infrastructure` requires
+      `class=support_equipment`; `tool` allows any class.
 - [ ] Enforce the id rule on write: lower-case, hyphenated, not equal to
-      any bare subclass value.
+      any bare subclass value; `facility-` prefix if and only if
+      `kind=infrastructure`.
 - [ ] Add `contract` and `procurement` to the document types.
 - [ ] Add an `about` table (document, asset).
 - [ ] Add a `depends_on` table (asset, asset).
@@ -257,7 +280,8 @@ not in the docs sync.
       name stays a suggestion. It does not create an asset.
 - [ ] Browse "everything about this asset," "including its support
       equipment," "all documents of this type," "all assets of this
-      class," and "what depends on this asset" from those tables.
+      class," "all facility infrastructure," and "what depends on this
+      asset" from those tables.
 
 ### Phase B review gate — STOP for sign-off
 
@@ -269,6 +293,8 @@ not in the docs sync.
 - [ ] A made-up tool name does not create a row.
 - [ ] A write with id `ald` is rejected.
 - [ ] A write with `class=deposition, subclass=chiller` is rejected.
+- [ ] A write with `kind=infrastructure, class=deposition` is rejected.
+- [ ] `kind=infrastructure` returns the TGMS and not the PECVD chiller.
 - [ ] Decision: proceed / adjust / abandon
 
 ## Open questions
