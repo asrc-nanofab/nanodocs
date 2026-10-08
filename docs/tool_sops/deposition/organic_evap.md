@@ -76,7 +76,7 @@ Kapton or copper tape that has silver and/or chrome on the top layer, must be di
 
 ### **1\. Precheck list** {#1.-precheck-list}
 
-1. Check main chamber pressure (should be \<1E-7, or E-8 Torr range)  
+1. Check main chamber pressure (should be $<$1E-7, or E-8 Torr range)  
 2. Check load lock pressure (should be in E-5 or E-6 Torr range)  
 3. Check the cryo temp is between 10-12K  
 4. Check the material you need is in the tool  
