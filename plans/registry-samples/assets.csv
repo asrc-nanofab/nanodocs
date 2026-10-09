@@ -1,0 +1,47 @@
+id,name,group,short_name,description,manufacturer,model
+ald,Fiji ALD,deposition,ALD,Atomic Layer Deposition (ALD),Cambridge Nanotech,Fiji G2
+metal-evap,AJA Metal Evaporator,deposition,Metal Evap,Evaporator E-beam / Thermal,AJA,ORION-8E
+organic-evap,AJA Organic Evaporator,deposition,Organic Evap,Evaporator E-beam / Thermal,AJA,ORION
+thermal-evap,AJA Thermal Evaporator,deposition,Thermal Evap,Evaporator Thermal,AJA,ORION-3-TH
+aja-sputter,AJA Sputter,deposition,AJA Sputter,RF/DC Sputter,AJA,ORION-8
+pecvd,Oxford PECVD,deposition,PECVD,Plasma Enhanced Chemical Vapor Deposotion,Oxford Instruments,PlasmaPro System 100
+gold-sputter,Gold Sputter Coater,deposition,Gold Sputter,Small Sputter Coater,Cressington,108 Manual Sputter Coater
+icp-cl,ICP-Chlorine Etcher,etching,ICP-Cl,ICP Etching (Cl based),Oxford Instruments,PlasmaPro System 100
+rie,Reactive Ion Etcher,etching,RIE,RIE Etching,Oxford Instruments,PlasmaPro NGP80
+icp-fl,ICP-Fluorine Etcher,etching,ICP-Fl,ICP Etching (Fl Based w/ DRIE),Oxford Instruments,PlasmaPro System 100
+ozone-cleaner,Ozone Cleaner,etching,Ozone Cleaner,UV Ozone Cleaner,Samco,UV-2
+asher,Asher,etching,Asher,Plasma Asher,PVA TePla,IoN System
+hf-etcher,HF Etcher,etching,HF Etcher,Vapor HF Etcher / Release,SPTS,Primaxx uEtch
+xef2-etcher,XeF2 Etcher,etching,XeF2 Etcher,XeF2 Etcher / Release,SPTS,Xactix e1
+rta,RTA,furnace,RTA,Rapid Thermal Anneal,Modular Process Technology,RTP-600S
+nitride-furnace,Nitride Furnace,furnace,Nitride Furnace,LPCVD Silicon Nitride Furnace,Tystar,Tytan 4600 Furnace Stack
+teos-furnace,TEOS Furnace,furnace,TEOS Furnace,LPCVD TEOS Furnace,Tystar,Tytan 4600 Furnace Stack
+annealing-furnace,Annealing Furnace,furnace,Annealing Furnace,Thermal Anneal Furnace,Tystar,Tytan 4600 Furnace Stack
+oxidation-furnace,Oxidation  Furnace,furnace,Oxidation  Furnace,Thermal Oxidation Furnace,Tystar,Tytan 4600 Furnace Stack
+nanoscribe,Nanoscribe 3D Lithography,lithography,Nanoscribe,3D Nano Lithography Tool,Nanoscribe,Photonic Professional GT
+mask-aligner,EVG Photo-Mask Aligner,lithography,Mask Aligner,Mask Aligner,EVG,EVG620 - Backside
+oven,Oven,lithography,Oven,Photoresist Oven (2x),SPX,BlueM DC-146
+spinner,Spinners,lithography,Spinner,Spinners Photoresist / Other,Brewer Science,CEE 200X
+ebl-spinner,EBL Spinner,lithography,EBL Spinner,Spinner E-Beam Resist,Brewer Science,
+hot-plates,Hot Plates,lithography,Hot Plates,Hot Plate Tower,Reynolds Tech,Custom
+elionix-100kev,Elionix E-Beam Lithography,lithography,Elionix 100keV,Electron beam lithography (EBL),Elionix,ELS-F100-6 (100 kV system)
+elionix-50kev,Elionix 50keV,lithography,Elionix 50keV,Electron beam lithography (EBL),Elionix,ELS-50 (50 kV system)
+srd,SRD,lithography,SRD,Spin Rinse Dryer,OEM Group,400s Series
+afm,Atomic Force Microscope,metrology,AFM,Atomic Force Microscope (AFM),Bruker,Dimension FastScan
+optical-profilometer,Optical Profilometer,metrology,Optical Profilometer,Optical Profilometer,Bruker,ContourGT-I
+profilometer,Profilometer,metrology,Profilometer,Surface Profilometer,Bruker,Dektak XT
+ellipsometer,Ellipsometer,metrology,Ellipsometer,Ellipsometer,J.A. Woolam,V-VASE
+filmetrics,Filmetrics,metrology,Filmetrics,Filmetrics,Filmetrics,F20-UV
+microscope,Microscope,metrology,Microscope,Inspection Microscope (2x),Nikon,Nikon LV-150N
+microscope-litho,Microscope Litho,metrology,Microscope Litho,Low End Microscope,Nikon,Eclipse LV150N-CH
+sem,Scanning Electron Microscope,metrology,SEM,Scanning Electron Microscope (SEM),FEI,Nova Nano450 w/ beam blanker
+probe-station,Probe Station,metrology,Probe Station,Probe Station with Source Meters,Keithley,"2400, 2401"
+dicing-saw,Dicing Saw,packaging,Dicing Saw,Wafer Dicer,Disco,DAD3220
+wire-bonder,Wire Bonder,packaging,Wire Bonder,Wire bonder,West Bond,Automated 454647E
+tape-mounter,Tape Mounter,packaging,Tape Mounter,Tape Mounter,Ultron,UH114
+tape-curing,Tape Curing,packaging,Tape Curing,UV Tape Curing System,Ultron,UH102
+litho-hood,Litho-Development Hood,wet-processing,,,,
+solvent-hood,Solvent Lift-Off Hood,wet-processing,,,,
+caustics-hood,Caustics/Metal Etch Hood,wet-processing,,,,
+hf-piranha-hood,HF and Piranha Hood,wet-processing,,,,
+rca-hood,RCA Hood,wet-processing,,,,
