@@ -1,0 +1,49 @@
+id,name,kind,class,subclass,aliases,registry,registry_name,registry_category,source,review,notes
+fiji-ald,Ultratech Fiji G2 ALD,tool,deposition,ald,ALD; Fiji; Ultratech Fiji G2,tools,ALD,Deposition,registry,ok,
+aja-metal-ebeam-evap,AJA Metal Evaporator,tool,deposition,ebeam_evap,Metal Evap; AJA E-Beam Metal Evaporator,tools,Metal Evap,Deposition,registry,ok,
+aja-organic-ebeam-evap,AJA Organic Evaporator,tool,deposition,ebeam_evap,Organic Evap; AJA E-Beam Organic/Oxide Evaporator,tools,Organic Evap,Deposition,registry,ok,Same subclass as the metal evaporator; the qualifier keeps the ids apart
+aja-thermal-evap,AJA Thermal Evaporator,tool,deposition,thermal_evap,Thermal Evap,tools,Thermal Evap,Deposition,registry,ok,
+aja-sputter,AJA Sputter,tool,deposition,sputter,AJA; AJA Orion 8,tools,AJA Sputter,Deposition,registry,ok,
+oxford-pecvd,Oxford PECVD,tool,deposition,pecvd,PECVD; Oxford PlasmaPro,tools,PECVD,Deposition,registry,ok,
+gold-sputter,Gold Sputter Coater,tool,deposition,sputter,Gold Sputter,tools,Gold Sputter,Deposition,registry,check,The Google Doc's own SOP title is the AJA Orion 8 title; confirm this is a different machine before keeping the id
+chlorine-icp-rie,ICP Chlorine Etcher,tool,etching,icp_rie,ICP-Cl; ICP Chlorine,tools,ICP-Cl,Etching,registry,check,Manufacturer is not in the SOP
+oxford-rie,Oxford 80 RIE,tool,etching,rie,RIE; Oxford 80,tools,RIE,Etching,registry,ok,
+fluorine-icp-rie,ICP Fluorine Etcher,tool,etching,icp_rie,ICP-Fl; ICP Fluorine,tools,ICP-Fl,Etching,registry,check,Manufacturer is not in the SOP
+ozone-uv-clean,Ozone Cleaner,tool,etching,uv_clean,Ozone Cleaner,tools,Ozone Cleaner,Etching,registry,check,No document in the registry yet
+nanofab-asher,Asher,tool,etching,asher,Asher,tools,Asher,Etching,registry,check,Provisional id; replace the qualifier with the manufacturer before anything stores this
+hf-vapor-etch,HF Etcher,tool,etching,vapor_etch,HF Etcher,tools,HF Etcher,Etching,registry,check,No document yet; confirm this is a vapor tool and not the HF hood
+xef2-vapor-etch,XeF2 Etcher,tool,etching,vapor_etch,XeF2,tools,XeF2 Etcher,Etching,registry,check,No document yet
+nanofab-rta,RTA,tool,thermal_processing,rta,RTA,tools,RTA,Furnace,registry,check,Provisional id; no document yet
+nitride-furnace,Nitride Furnace,tool,thermal_processing,,Nitride Furnace,tools,Nitride Furnace,Furnace,registry,check,Subclass left blank: diffusion_furnace or lpcvd
+teos-lpcvd,TEOS Furnace,tool,thermal_processing,lpcvd,TEOS Furnace,tools,TEOS Furnace,Furnace,registry,check,Subclass guessed as lpcvd
+anneal-furnace,Annealing Furnace,tool,thermal_processing,anneal_furnace,Annealing Furnace,tools,Annealing Furnace,Furnace,registry,check,Provisional id; no document yet
+oxidation-furnace,Oxidation Furnace,tool,thermal_processing,oxidation_furnace,Oxidation Furnace,tools,Oxidation  Furnace,Furnace,registry,check,Registry name has two spaces; provisional id
+nanoscribe-three-d-litho,Nanoscribe,tool,lithography,three_d_litho,Nanoscribe,tools,Nanoscribe,Lithography,registry,ok,
+evg-photo-lithography,EVG Mask Aligner,tool,lithography,photo_lithography,Mask Aligner; EVG,tools,Mask Aligner,Lithography,registry,ok,
+litho-oven,Oven,tool,lithography,oven,Oven,tools,Oven,Lithography,registry,check,Provisional id; no document yet
+litho-spinner,Spinners,tool,lithography,spinner,Spinner; Spinners,tools,Spinner,Lithography,registry,check,The page title is plural; confirm this row is one asset
+ebl-spinner,EBL Spinner,tool,lithography,spinner,EBL Spinner,tools,EBL Spinner,Lithography,registry,check,No document yet
+litho-hotplate,Hot Plates,tool,lithography,hotplate,Hot Plates,tools,Hot Plates,Lithography,registry,check,One document may cover several plates
+elionix-100-ebl,Elionix 100 keV,tool,lithography,ebl,Elionix 100keV; Elionix,tools,Elionix 100keV,Lithography,registry,ok,
+elionix-50-ebl,Elionix 50 keV,tool,lithography,ebl,Elionix 50keV,tools,Elionix 50keV,Lithography,registry,check,No document yet
+nanofab-srd,SRD,tool,wet_processing,srd,SRD,tools,SRD,Lithography,registry,check,The tools sheet files this under Lithography; class is wet_processing because that is the class that owns subclass srd
+bruker-afm,Bruker AFM,tool,metrology,afm,AFM; Bruker Dimension FastScan,tools,AFM,Metrology,registry,ok,
+bruker-profilometer,Bruker Optical Profilometer,tool,metrology,profilometer,Optical Profilometer; Bruker,tools,Optical Profilometer,Metrology,registry,ok,
+dektak-profilometer,Dektak Profilometer,tool,metrology,profilometer,Profilometer; Dektak,tools,Profilometer,Metrology,registry,ok,
+woollam-ellipsometer,Woollam V-VASE Ellipsometer,tool,metrology,ellipsometer,Ellipsometer; Woollam; V-VASE,tools,Ellipsometer,Metrology,registry,ok,
+filmetrics-thin-film-spectrometer,Filmetrics,tool,metrology,thin_film_spectrometer,Filmetrics,tools,Filmetrics,Metrology,registry,check,No document yet
+metrology-microscope,Microscope,tool,metrology,optical_microscope,Microscope,tools,Microscope,Metrology,registry,check,Provisional id; no document yet
+litho-microscope,Litho Microscope,tool,metrology,optical_microscope,Microscope Litho,tools,Microscope Litho,Metrology,registry,check,Provisional id; no document yet
+nova-sem,Nova NanoSEM 450,tool,metrology,sem,SEM; Nova NanoSEM,tools,SEM,Metrology,registry,ok,
+nanofab-electrical-probe,Probe Station,tool,metrology,electrical_probe,Probe Station,tools,Probe Station,Metrology,registry,check,Provisional id; no document yet
+disco-dicing-saw,Disco Dicing Saw,tool,packaging,dicing_saw,Dicing Saw; Disco,tools,Dicing Saw,Packaging,registry,ok,
+nanofab-wire-bonder,Wire Bonder,tool,packaging,wire_bonding,Wire Bonder,tools,Wire Bonder,Packaging,registry,check,Provisional id; no document yet
+tape-mounter,Tape Mounter,tool,packaging,,Tape Mounter,tools,Tape Mounter,Packaging,registry,check,No subclass in the list matches tape mounting
+tape-curing,Tape Curing,tool,packaging,,Tape Curing,tools,Tape Curing,Packaging,registry,check,No subclass in the list matches tape curing
+caustics-hood,Caustics/Metal Etch Hood,tool,wet_processing,wet_etching,caustics hood; metal etch hood,chem,Caustics/Metal Etch Hood,Hood,registry,ok,
+hf-piranha-hood,HF and Piranha Hood,tool,wet_processing,wet_etching,Piranha/HF Hood; HF hood; piranha hood,chem,Piranha/HF Hood,Hood,registry,check,This hood is used for HF etch and piranha clean
+rca-hood,RCA Clean Hood,tool,wet_processing,chemical_cleaning,RCA Hood,chem,RCA Hood,Hood,registry,ok,
+litho-development-hood,Litho-Development Hood,tool,wet_processing,development,Litho-Development Hood,chem,Litho-Development Hood,Hood,registry,ok,
+solvent-hood,Solvent Lift-Off Hood,tool,wet_processing,chemical_cleaning,Solvent/Lift-Off Hood; solvent hood,chem,Solvent/Lift-Off Hood,Hood,registry,check,Lift-off has no subclass of its own
+pecvd-chiller,PECVD chiller,tool,support_equipment,chiller,,,,,example,example,From the worked example. Not in the tool registry. Fill or delete before this list is treated as complete.
+facility-tgms,TGMS,infrastructure,support_equipment,tgms,toxic gas monitor,,,,example,example,From the worked example. Not in the tool registry.

@@ -1,0 +1,42 @@
+document,asset,notes
+tools-ald,fiji-ald,
+tools-metal-evap,aja-metal-ebeam-evap,
+tools-organic-evap,aja-organic-ebeam-evap,
+tools-thermal-evap,aja-thermal-evap,
+tools-aja-sputter,aja-sputter,
+tools-pecvd,oxford-pecvd,
+tools-gold-sputter,gold-sputter,
+tools-icp-cl,chlorine-icp-rie,
+tools-rie,oxford-rie,
+tools-icp-fl,fluorine-icp-rie,
+tools-nanoscribe,nanoscribe-three-d-litho,
+tools-mask-aligner,evg-photo-lithography,
+tools-spinner,litho-spinner,
+tools-hot-plates,litho-hotplate,
+tools-elionix-100kev,elionix-100-ebl,
+tools-afm,bruker-afm,
+tools-optical-profilometer,bruker-profilometer,
+tools-profilometer,dektak-profilometer,
+tools-ellipsometer,woollam-ellipsometer,
+tools-sem,nova-sem,
+tools-dicing-saw,disco-dicing-saw,
+chem-aluminum-etch-sop,caustics-hood,Hood assignment follows the site page map
+chem-chromium-etch-sop,caustics-hood,Hood assignment follows the site page map
+chem-gold-etch-sop,caustics-hood,Hood assignment follows the site page map
+chem-hydroflouric-acid-sop,hf-piranha-hood,Hood assignment follows the site page map
+chem-isotropic-silicon-etch-hna-sop,caustics-hood,Hood assignment follows the site page map
+chem-nickel-etch-sop,caustics-hood,Hood assignment follows the site page map
+chem-piranha-clean-sop,hf-piranha-hood,Hood assignment follows the site page map
+chem-rca-clean-sop,rca-hood,Hood assignment follows the site page map
+chem-litho-development-hood,litho-development-hood,Hood assignment follows the site page map
+chem-rca-hood,rca-hood,Hood assignment follows the site page map
+chem-solvent-lift-off-hood,solvent-hood,Hood assignment follows the site page map
+chem-caustics-metal-etch-hood,caustics-hood,Hood assignment follows the site page map
+chem-piranha-hf-hood,hf-piranha-hood,Hood assignment follows the site page map
+ex-pecvd-repair,oxford-pecvd,example
+ex-plasmapro-manual,oxford-pecvd,example
+ex-pecvd-oxide-recipe,oxford-pecvd,example
+ex-chiller-po,pecvd-chiller,example
+ex-deposition-contract,oxford-pecvd,example
+ex-deposition-contract,facility-tgms,example
+ex-deposition-contract,pecvd-chiller,example

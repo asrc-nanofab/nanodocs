@@ -40,7 +40,9 @@ flowchart LR
 
 Solid arrows are `about`: a document to an asset. Dashed arrows are
 `depends_on`: a tool to the equipment or infrastructure it needs. The
-chiller is the PECVD's own; the TGMS is the facility's.
+chiller is the PECVD's own; the TGMS is the facility's. The columns
+that store this graph, and the same edges drawn from the example rows,
+are in [Tables](#tables).
 
 "Everything about the Oxford PECVD" is the user SOP, the repair SOP,
 and the service contract. "All contracts" is the service contract,
@@ -148,6 +150,51 @@ A bare subclass (`ald`, `chiller`) is never an id. Changing what a
 machine is called edits `name`, not `id`. Replacing a machine is a new
 row with a new id; the old row stays so its documents still resolve.
 
+## Tables
+
+Four tables. These columns are the minimum. An asset row and a document
+row are nodes. An `about` row and a `depends_on` row are directed edges.
+Drawing the graph is reading those rows. No edge is added that is not
+already a row.
+
+### `assets`
+
+| Column | What it holds |
+| --- | --- |
+| `id` | Permanent key. Qualifier plus subclass. |
+| `name` | Display name. |
+| `kind` | `tool` or `infrastructure`. |
+| `class` | One class from the list above. |
+| `subclass` | One subclass of that class. |
+| `aliases` | Other names that resolve to this same `id`. |
+
+### `documents`
+
+| Column | What it holds |
+| --- | --- |
+| `id` | Permanent key. |
+| `title` | Display title. |
+| `type` | One document type. |
+| `audience` | `user` or `staff`. |
+
+### `about`
+
+| Column | What it holds |
+| --- | --- |
+| `document` | A `documents.id`. |
+| `asset` | An `assets.id`. |
+
+One row is one edge, document → asset.
+
+### `depends_on`
+
+| Column | What it holds |
+| --- | --- |
+| `asset` | An `assets.id`. The one that needs something. |
+| `depends_on` | An `assets.id`. The one it needs. |
+
+One row is one edge, asset → asset. One hop.
+
 ## Example rows
 
 ### Assets
@@ -203,10 +250,56 @@ One row is one "about" link. The contract is three rows.
 
 ### `depends_on` links
 
-| asset | depends on |
+| asset | depends_on |
 | --- | --- |
 | oxford-pecvd | facility-tgms |
 | oxford-pecvd | pecvd-chiller |
+
+### The graph these rows are
+
+Solid arrows are `about`. Dashed arrows are `depends_on`. `d7`,
+`fiji-ald`, and `aja-sputter` are nodes with no edges. The sketch at
+the top of this plan is the same edges, drawn with display names.
+
+```mermaid
+flowchart LR
+  d1["d1 Oxford PECVD SOP"]
+  d2["d2 PECVD repair SOP"]
+  d3["d3 PlasmaPro manual"]
+  d4["d4 PECVD oxide recipe"]
+  d5["d5 service contract"]
+  d6["d6 Chiller PO"]
+  d7["d7 Rules of conduct"]
+  d8["d8 Aluminum etch"]
+  pecvd["oxford-pecvd"]
+  ald["fiji-ald"]
+  sputter["aja-sputter"]
+  hood["caustics-hood"]
+  chiller["pecvd-chiller"]
+  tgms["facility-tgms"]
+  d1 --> pecvd
+  d2 --> pecvd
+  d3 --> pecvd
+  d4 --> pecvd
+  d5 --> pecvd
+  d5 --> tgms
+  d5 --> chiller
+  d6 --> chiller
+  d8 --> hood
+  pecvd -.-> tgms
+  pecvd -.-> chiller
+```
+
+### How a query runs
+
+A mentioned name is matched against `assets.name` and `assets.aliases`
+and becomes one `id`. Then the question is a column filter or one read
+of an edge table.
+
+- A property question filters one table: `documents.type`, `documents.audience`, `assets.class`, or `assets.kind`.
+- "Everything about X" reads `about` where `asset` is that id.
+- "Which tools are affected" reads `depends_on` where `depends_on` is that id.
+- "Including its support equipment" reads `depends_on` where `asset` is that id, then reads `about` for the id and for those targets. That hop happens once.
 
 ### What a question returns
 
