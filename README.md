@@ -45,22 +45,22 @@ with three tabs. A row is a node. A cell that names another row's id is the edge
 | --- | --- |
 | `groups` | What an asset is (`deposition`, `wet-processing`) and the sidebar heading it sits under. `section` is the tab: `tools`, `chemicals`, or `policy`. |
 | `assets` | A thing people are trained on: a tool, a hood. `id` is the permanent URL segment. `name` is the sidebar label and can change without moving the URL. |
-| `documents` | One Google Doc, published as one page. `asset` points at an asset, or is blank for a facility document (a policy, signup). `label` is the sidebar text and the page's URL slug. `title` is the on-page H1. `audience` is `public`, `staff`, or `admin`. |
+| `documents` | One Google Doc, published as one page. `asset` points at an asset, or is blank for a facility document (a policy, signup). `label` is the sidebar text and the page's URL slug. A label of `SOP` is the asset's home page instead. `title` is the on-page H1. `audience` is `public`, `staff`, or `admin`. |
 
-The public build publishes `audience=public` rows whose `doc` cell is a Google Doc URL. A blank `doc` is registered but unpublished, so a tool can be listed before its SOP exists. An asset with no published document produces no directory. An asset with one does: the sync writes `index.md` from the asset row (name, and description / manufacturer / model when those cells are filled). That index is not a Google Doc and has no PDF. The Google Docs are pages under the asset directory.
+The public build publishes `audience=public` rows whose `doc` cell is a Google Doc URL. A blank `doc` is registered but unpublished, so a tool can be listed before its SOP exists. An asset with no published document produces no directory. The document labeled `SOP` is written as that asset's `index.md`; the sidebar uses the asset's `name`. Any other published document is `slugify(label).md` beside it, and that is what draws the caret. The home page is the Google Doc and has its PDF.
 
 ```text
-docs/<section>/<group>/<asset>/index.md
-docs/<section>/<group>/<asset>/<slug of label>.md
-docs/<section>/<slug of label>.md          # no asset, section set
-docs/<slug of label>.md                     # no asset, section blank
+docs/<section>/<group>/<asset>/index.md            # the SOP, or the asset's only document
+docs/<section>/<group>/<asset>/<slug of label>.md  # any other document
+docs/<section>/<slug of label>.md                  # no asset, section set
+docs/<slug of label>.md                            # no asset, section blank
 ```
 
 `id` values are permanent. Rename `name` or `label`, never `id`. A label edit moves that document's URL, and the sync appends the old URL to `docs/_redirects`. The PDF key follows the page path (`docs/assets/pdfs/<same path>.pdf`), not the title, so renaming a title does not rename the R2 object. The Download pill's filename comes from `title`.
 
 Columns the sync does not know are ignored, so a tab can gain attributes without a script change. `audience` and `section` are short lists in the sync; adding a value is a one-line change.
 
-Sidebar order stays in the repo's `.nav.yml` files. The sync rewrites the label of every entry it generated, appends a missing page at the end of that list, and does not reorder or remove anything. A new row shows up at the bottom on the next run; move it in the repo. `docs/.nav.yml` itself (Home, Tools, Signup) is hand-written and the sync never opens it. An entry whose page moved goes stale, and `zensical build --strict` fails until that line is deleted.
+Sidebar order stays in the repo's `.nav.yml` files. The sync rewrites the label of every entry it generated, appends a missing page at the end of that list, and does not reorder or remove a line. An asset with one published document is a single link (`<asset id>/index.md`) and has no `.nav.yml`, except under a group that has no index page of its own. Wet Processing is that group: those assets are listed as directories whose `.nav.yml` contains only `index.md`, so the heading does not adopt the first SOP as its link. The theme draws that as a link, not a caret. A second published document makes the asset a caret: the name opens the SOP, and the other documents are the rows under it. A new row shows up at the bottom on the next run; move it in the repo. `docs/.nav.yml` itself (Home, Tools, Signup) is hand-written and the sync never opens it. An entry whose page moved goes stale, and `zensical build --strict` fails until that line is deleted.
 
 ### The sync script
 
@@ -342,13 +342,13 @@ previewing locally:
 
 1. Sync (`uv run python scripts/sync_gdocs.py …`). That refreshes the
    local file under `docs/assets/pdfs/`, using the same relative path as
-   the page (`tools/deposition/pecvd/sop.pdf` for the PECVD SOP).
+   the page (`tools/deposition/pecvd/index.pdf` for the PECVD SOP).
 2. Upload **that file** to the real bucket (`--remote` is required;
    without it Wrangler writes a local emulator under `.wrangler/`):
 
    ```bash
-   npx wrangler r2 object put nanodocs-pdfs/tools/deposition/pecvd/sop.pdf \
-     --file=docs/assets/pdfs/tools/deposition/pecvd/sop.pdf \
+   npx wrangler r2 object put nanodocs-pdfs/tools/deposition/pecvd/index.pdf \
+     --file=docs/assets/pdfs/tools/deposition/pecvd/index.pdf \
      --content-type=application/pdf \
      --remote
    ```

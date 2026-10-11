@@ -1,8 +1,8 @@
 title: Metrology
 nav:
   - index.md
-  - Atomic Force Microscope: afm
-  - Scanning Electron Microscope: sem
-  - Optical Profilometer: optical-profilometer
-  - Profilometer: profilometer
-  - Ellipsometer: ellipsometer
+  - Atomic Force Microscope: afm/index.md
+  - Scanning Electron Microscope: sem/index.md
+  - Optical Profilometer: optical-profilometer/index.md
+  - Profilometer: profilometer/index.md
+  - Ellipsometer: ellipsometer/index.md

@@ -10,8 +10,8 @@ docs/assets/pdfs/ so "View PDF" opens in the browser's native viewer
 instead of forcing a download (Google's export URL sends
 Content-Disposition: attachment).
 
-An asset with a published document also gets an index.md generated from
-the asset row. That page is not a Google Doc and has no PDF.
+The document labeled SOP is the asset's index.md. A caret is written
+only when another published document sits beside it.
 
 The docs and the sheet are link-shared, so no credentials are needed.
 
@@ -72,6 +72,8 @@ REGISTRY_GIDS = {
 }
 SECTIONS = {"tools", "chemicals", "policy"}
 AUDIENCES = {"public", "staff", "admin"}
+# The document with this label is the asset's home page (index.md).
+HOME_LABEL = "SOP"
 ID_RE = re.compile(r"^[a-z0-9-]+$")
 REDIRECTS_PATH = DOCS_DIR / "_redirects"
 
@@ -678,9 +680,6 @@ class Asset:
     id: str
     name: str
     group: str
-    description: str
-    manufacturer: str
-    model: str
 
 
 @dataclass(frozen=True)
@@ -792,14 +791,7 @@ def _load_assets(text: str, groups: dict[str, Group]) -> dict[str, Asset]:
             raise RegistryError(f"{where}: group {group_id!r} is not a groups.id")
         if not name:
             raise RegistryError(f"{where}: name is empty")
-        assets[asset_id] = Asset(
-            id=asset_id,
-            name=name,
-            group=group_id,
-            description=_cell(row, "description"),
-            manufacturer=_cell(row, "manufacturer"),
-            model=_cell(row, "model"),
-        )
+        assets[asset_id] = Asset(id=asset_id, name=name, group=group_id)
     return assets
 
 
@@ -814,7 +806,6 @@ def _load_documents(
     )
     documents: list[Document] = []
     seen_docs: dict[str, str] = {}
-    seen_paths: dict[str, str] = {}
     for number, row in enumerate(reader, start=2):
         if _blank_row(row):
             continue
@@ -861,36 +852,90 @@ def _load_documents(
             doc_id=doc_id,
             row_number=number,
         )
-        # Checked for unpublished rows too, so two labels that would collide
-        # fail before either page is written.
-        rel = document_rel(document, Registry(groups, assets, []))
+        documents.append(document)
+    _assign_document_paths(documents, groups, assets)
+    return documents
+
+
+def _documents_for_asset(documents: list[Document], asset_id: str) -> list[Document]:
+    return [document for document in documents if document.asset == asset_id]
+
+
+def home_document(documents: list[Document], asset_id: str) -> Document:
+    """The asset's home page. A SOP row wins; a lone row is home too."""
+    rows = _documents_for_asset(documents, asset_id)
+    sop = [document for document in rows if document.label == HOME_LABEL]
+    if len(sop) > 1:
+        listed = ", ".join(f"row {document.row_number}" for document in sop)
+        raise RegistryError(
+            f"asset {asset_id}: more than one document labeled {HOME_LABEL!r} ({listed})"
+        )
+    if len(sop) == 1:
+        return sop[0]
+    if len(rows) == 1:
+        return rows[0]
+    raise RegistryError(
+        f"asset {asset_id}: {len(rows)} documents and no row labeled {HOME_LABEL!r}"
+    )
+
+
+def _require_published_home(documents: list[Document]) -> None:
+    """A published sibling needs its home page published for the same audience."""
+    asset_ids = {document.asset for document in documents if document.asset}
+    for asset_id in sorted(asset_ids):
+        rows = _documents_for_asset(documents, asset_id)
+        home = home_document(documents, asset_id)
+        audiences = sorted({document.audience for document in rows if document.doc_id})
+        for audience in audiences:
+            if home.doc_id and home.audience == audience:
+                continue
+            raise RegistryError(
+                f"asset {asset_id}: a {audience} document is published but the home "
+                f"page (documents row {home.row_number}) is not"
+            )
+
+
+def _assign_document_paths(
+    documents: list[Document],
+    groups: dict[str, Group],
+    assets: dict[str, Asset],
+) -> None:
+    """Resolve home pages, then reject two rows that would write one file."""
+    seen_assets: set[str] = set()
+    for document in documents:
+        if document.asset and document.asset not in seen_assets:
+            seen_assets.add(document.asset)
+            home_document(documents, document.asset)
+    _require_published_home(documents)
+    registry = Registry(groups, assets, documents)
+    seen_paths: dict[str, str] = {}
+    for document in documents:
+        where = f"documents row {document.row_number} ({document.label})"
+        rel = document_rel(document, registry)
         if rel == ".md" or rel.endswith("/.md"):
-            raise RegistryError(f"{where}: label {label!r} has no slug")
+            raise RegistryError(f"{where}: label {document.label!r} has no slug")
         previous_path = seen_paths.get(rel)
         if previous_path is not None:
             raise RegistryError(
                 f"{where}: path {rel} is already used by {previous_path}"
             )
         seen_paths[rel] = where
-        documents.append(document)
-    return documents
 
 
 def document_rel(document: Document, registry: Registry) -> str:
     """Page path relative to docs/, per the registry path rule."""
-    slug = slugify(document.label)
     if document.asset:
         asset = registry.assets[document.asset]
         group = registry.groups[asset.group]
-        return f"{group.section}/{group.id}/{asset.id}/{slug}.md"
+        prefix = f"{group.section}/{group.id}/{asset.id}"
+        home = home_document(registry.documents, document.asset)
+        if document.row_number == home.row_number:
+            return f"{prefix}/index.md"
+        return f"{prefix}/{slugify(document.label)}.md"
+    slug = slugify(document.label)
     if document.section:
         return f"{document.section}/{slug}.md"
     return f"{slug}.md"
-
-
-def asset_index_rel(asset: Asset, registry: Registry) -> str:
-    group = registry.groups[asset.group]
-    return f"{group.section}/{group.id}/{asset.id}/index.md"
 
 
 def pdf_rel(page_rel: str) -> Path:
@@ -927,33 +972,6 @@ def append_redirect(old_rel: str, new_rel: str) -> None:
     if existing and not existing.endswith("\n"):
         existing += "\n"
     REDIRECTS_PATH.write_text(existing + line)
-
-
-def _table_cell(value: str) -> str:
-    return value.replace("|", "\\|")
-
-
-def build_asset_index(asset: Asset) -> str:
-    """The generated asset home page. Blank fields are omitted."""
-    lines = [
-        (
-            "<!-- AUTO-GENERATED by scripts/sync_gdocs.py from the asset row. "
-            "Edit the registry, not this file. -->"
-        ),
-        "",
-        f"# {asset.name}",
-        "",
-    ]
-    if asset.description:
-        lines.extend((asset.description, ""))
-    rows = []
-    if asset.manufacturer:
-        rows.append(f"| Manufacturer | {_table_cell(asset.manufacturer)} |")
-    if asset.model:
-        rows.append(f"| Model | {_table_cell(asset.model)} |")
-    if rows:
-        lines.extend(("| | |", "| --- | --- |", *rows, ""))
-    return "\n".join(lines).rstrip() + "\n"
 
 
 def published_documents(registry: Registry, audience: str) -> list[Document]:
@@ -1079,41 +1097,79 @@ def merge_published_nav(registry: Registry, documents: list[Document]) -> None:
         if generated:
             merge_nav(DOCS_DIR / section / ".nav.yml", None, generated)
 
+    published_by_asset: dict[str, list[Document]] = {}
+    for document in documents:
+        if document.asset:
+            published_by_asset.setdefault(document.asset, []).append(document)
+
     for group_id in groups_used:
         group = registry.groups[group_id]
         # Sheet order, not nav order: only used when the line is new.
         ordered = []
         for asset in registry.assets.values():
-            if asset.group == group_id and asset.id in assets_used:
-                ordered.append(NavEntry(asset.name, asset.id))
+            if asset.group != group_id or asset.id not in assets_used:
+                continue
+            published = published_by_asset[asset.id]
+            target = _group_nav_target(asset, group, len(published))
+            ordered.append(NavEntry(asset.name, target))
         merge_nav(
             DOCS_DIR / group.section / group.id / ".nav.yml", group.label, ordered
         )
 
-    for asset_id in assets_used:
+    for asset_id, published in published_by_asset.items():
         asset = registry.assets[asset_id]
         group = registry.groups[asset.group]
+        nav_path = DOCS_DIR / group.section / group.id / asset_id / ".nav.yml"
+        all_rows = _documents_for_asset(registry.documents, asset_id)
+        if len(published) < 2:
+            # A group with its own index.md can point straight at the SOP.
+            # Without one, the first index.md child becomes the group
+            # heading's link, so the asset keeps a nav file whose only
+            # entry is index.md. The theme draws that as a link, not a caret.
+            if _group_has_index(group):
+                _drop_asset_nav(nav_path, _owned_nav_targets(all_rows))
+            else:
+                merge_nav(nav_path, asset.name, [NavEntry(None, "index.md")])
+            continue
+        home = home_document(registry.documents, asset_id)
         generated = [NavEntry(None, "index.md")]
-        for document in documents:
-            if document.asset != asset_id:
+        for document in published:
+            if document.row_number == home.row_number:
                 continue
             generated.append(NavEntry(document.label, f"{slugify(document.label)}.md"))
-        merge_nav(
-            DOCS_DIR / group.section / group.id / asset.id / ".nav.yml",
-            asset.name,
-            generated,
+        merge_nav(nav_path, asset.name, generated)
+
+
+def _group_has_index(group: Group) -> bool:
+    return (DOCS_DIR / group.section / group.id / "index.md").is_file()
+
+
+def _group_nav_target(asset: Asset, group: Group, published_count: int) -> str:
+    if published_count >= 2 or not _group_has_index(group):
+        return asset.id
+    return f"{asset.id}/index.md"
+
+
+def _owned_nav_targets(rows: list[Document]) -> set[str]:
+    return {"index.md", *(f"{slugify(document.label)}.md" for document in rows)}
+
+
+def _drop_asset_nav(path: Path, owned: set[str]) -> None:
+    """Remove a one-document asset's nav file so it does not draw a caret.
+
+    A target this sync did not generate means the file has a hand-written
+    child. Leave it in place and stop, rather than deleting that line.
+    """
+    if not path.is_file():
+        return
+    _, entries = load_nav(path)
+    foreign = [entry.target for entry in entries if entry.target not in owned]
+    if foreign:
+        rel = path.relative_to(REPO_ROOT)
+        raise RegistryError(
+            f"{rel}: nav lists {foreign[0]!r}, which this sync did not generate"
         )
-
-
-def write_asset_indexes(registry: Registry, documents: list[Document]) -> None:
-    seen: set[str] = set()
-    for document in documents:
-        if not document.asset or document.asset in seen:
-            continue
-        seen.add(document.asset)
-        asset = registry.assets[document.asset]
-        rel = asset_index_rel(asset, registry)
-        write_if_changed(DOCS_DIR / rel, build_asset_index(asset))
+    path.unlink()
 
 
 def _page_title(page_path: Path) -> str | None:
@@ -1228,9 +1284,8 @@ def sync_all(
     if not selected:
         save_sync_state(state)
         return counts
-    # Indexes and nav follow the whole audience, not the download filter,
-    # so a title or label edit lands even when one doc is re-synced.
-    write_asset_indexes(registry, published)
+    # Nav follows the whole audience, not the download filter, so a title
+    # or label edit lands even when one doc is re-synced.
     for document in selected:
         counts[sync_document(document, registry, quiet, state)] += 1
     merge_published_nav(registry, published)

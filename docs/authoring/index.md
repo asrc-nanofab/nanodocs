@@ -38,15 +38,15 @@ flowchart LR
 
 ### Addresses, the asset page, and the sidebar
 
-A tool or hood with a published document gets its own page, written from the asset row: the name as the heading, then the description, manufacturer, and model when those cells are filled. That page has no PDF. The Google Docs sit underneath it. The tool name in the sidebar opens this page; `SOP` is the row under it.
+The tool or hood name in the sidebar opens its SOP. That page is the asset's home page. When the asset has another published document, the name becomes a caret and those other documents are the rows under it. The SOP is not listed again.
 
 The address follows the sheet:
 
-- a tool SOP is `/tools/<group>/<asset id>/sop/`
+- a tool SOP is `/tools/<group>/<asset id>/`
 - an etch under a hood is `/chemicals/wet-processing/<hood id>/<slug of the label>/`
 - a policy is `/policy/<slug of the label>/`
 
-The asset `id` does not change. Renaming the asset's `name` changes the sidebar label and leaves the address where it is. Renaming a document's `label` moves that page, and the old address keeps working. The on-page heading is the document's `title`, which can change without moving the address or the PDF.
+The asset `id` does not change. Renaming the asset's `name` changes the sidebar label and leaves the address where it is. Renaming a document's `label` moves that page, and the old address keeps working. The SOP stays at the asset address. The on-page heading is the document's `title`, which can change without moving the address or the PDF.
 
 Sidebar order is kept in this repo, not in the sheet. A new row appears at the bottom of its list the next time the site syncs; someone then moves that line to where it should sit. Sorting the sheet does nothing to the site.
 

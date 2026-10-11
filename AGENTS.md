@@ -51,8 +51,8 @@ uv run zensical serve                                    # http://127.0.0.1:8000
 uv run zensical build --strict                           # required gate
 # After a PDF changes, upload that key to R2 (user-run; --remote is required).
 # The key is the page path with a .pdf suffix:
-npx wrangler r2 object put nanodocs-pdfs/tools/deposition/pecvd/sop.pdf \
-  --file=docs/assets/pdfs/tools/deposition/pecvd/sop.pdf \
+npx wrangler r2 object put nanodocs-pdfs/tools/deposition/pecvd/index.pdf \
+  --file=docs/assets/pdfs/tools/deposition/pecvd/index.pdf \
   --content-type=application/pdf --remote
 ```
 
@@ -71,18 +71,19 @@ Defined in `scripts/sync_gdocs.py`. One workbook (Nanodocs Registry,
 
 - An **asset** is a tool or hood. `id` is the permanent URL segment;
   `name` is the sidebar label. An asset with a published document is a
-  directory. Its `index.md` is generated from the asset row (name, and
-  description / manufacturer / model when filled) and is not a Google Doc.
+  directory. Its `index.md` is the Google Doc labeled `SOP` (or the only
+  document, when there is just one).
 - A **document** is one Google Doc. `label` is the sidebar text and the
-  file is `slugify(label).md` (hyphens). `title` is the H1. `audience`
-  `public` is what this build publishes. A blank `doc` cell is unpublished.
+  file is `slugify(label).md` (hyphens), except the home page, which is
+  `index.md`. `title` is the H1. `audience` `public` is what this build
+  publishes. A blank `doc` cell is unpublished.
 - A **group** says what the asset is and, through `section`, which tab it
   appears on. Hoods are assets in `wet-processing`, whose section is
   `chemicals`.
 
 ```text
-docs/<section>/<group>/<asset>/index.md
-docs/<section>/<group>/<asset>/<slug>.md     # asset set
+docs/<section>/<group>/<asset>/index.md      # the SOP, or the only document
+docs/<section>/<group>/<asset>/<slug>.md     # any other document
 docs/<section>/<slug>.md                     # no asset, section set (policy)
 docs/<slug>.md                               # no asset, section blank (signup)
 ```
@@ -93,9 +94,15 @@ doc's last path in `.sync-state.json` and appends the old URL to
 `docs/assets/pdfs/`. Unknown columns are ignored.
 
 Sidebar order lives in `.nav.yml`. The sync relabels entries it generated,
-appends a missing page at the end, and does not reorder or remove. It
-creates `<asset dir>/.nav.yml` (`index.md` first, then each document) and
-never opens `docs/.nav.yml`. A stale entry whose page moved fails
+appends a missing page at the end, and does not reorder or remove a line.
+An asset with one published document is listed as `<id>/index.md` and has
+no `.nav.yml`, unless its group has no `index.md` of its own. Wet
+Processing is that case: the asset is listed as `<id>` and its `.nav.yml`
+contains only `index.md`, which the theme draws as a link rather than a
+caret. A second published document creates `<asset dir>/.nav.yml`
+(`index.md` first, then each other document) so the asset name opens the
+SOP and the other documents sit under the caret. The sync never opens
+`docs/.nav.yml`. A stale entry whose page moved fails
 `zensical build --strict` until the line is deleted.
 
 Keep `mkdocs.yml`. Do not add `zensical.toml` until they ship a

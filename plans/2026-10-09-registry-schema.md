@@ -1,7 +1,7 @@
 # Make the registry sheet the source of truth: assets, documents, groups
 
 **Date:** 2026-10-09
-**Status:** Phase B done — awaiting sign-off. Supersedes `2026-10-09-sheet-owns-page-path.md`
+**Status:** Phase B2 done — awaiting sign-off. Supersedes `2026-10-09-sheet-owns-page-path.md`
 **Branch:** `create-assets-docs-groups`
 
 ## Description
@@ -50,8 +50,8 @@ flowchart LR
   documents -- "asset" --> assets
 ```
 
-- An **asset** is a thing people are trained on: a tool, a hood, a furnace. It exists whether or not it has a document (Ozone Cleaner has a row and no page). On the site, an asset with a published document is a directory. Its `index.md` is generated from the asset row. The Google Docs are pages under that directory.
-- A **document** is one Google Doc published as one page. It is *about* at most one asset. A document with no asset is a facility document (policy, signup). No document is the asset's home page.
+- An **asset** is a thing people are trained on: a tool, a hood, a furnace. It exists whether or not it has a document (Ozone Cleaner has a row and no page). On the site, an asset with a published document is a directory. Its home page is a Google Doc.
+- A **document** is one Google Doc published as one page. It is *about* at most one asset. A document with no asset is a facility document (policy, signup). The document labeled `SOP` is the asset's home page.
 - A **group** is what an asset is (`deposition`, `wet-processing`) and the sidebar heading those assets sit under. Each group belongs to a **section**, the top-level tab it is shown in. Hoods are assets in group `wet-processing`; that group's section is `chemicals`, so they stay on the Chemical Handling tab. The asset says what it is; the group says where it is shown.
 
 Audience is on the document, as the Oct 6 plan has it. The site build
@@ -62,9 +62,9 @@ now; the filter is one line.
 ### Growth rule
 
 - `id` values are permanent. Rename `name` or `label`, never `id`. Replacing a machine is a new row with a new id. A document's URL follows its `label`; the sync writes the redirect.
-- Columns can be added to any tab at any time. The sync reads the columns it knows and ignores the rest. `description`, `manufacturer`, and `model` are read for the asset index.
+- Columns can be added to any tab at any time. The sync reads the columns it knows and ignores the rest. `description`, `manufacturer`, and `model` stay on the assets tab and are not read.
 - Vocabularies (`audience`, `section`) are short lists in the sync. Adding a value is a one-line change plus whatever renders it.
-- Nothing is inferred from another row. An asset is a folder because it is an asset, not because something points at it.
+- An asset directory exists because the asset has a published document. The caret is the one inference from sibling rows: it exists only when another published document sits beside the home page.
 
 The first growth steps, none of which change this schema: a `type`
 column on `documents` once its vocabulary is known, a `short_name`
@@ -90,8 +90,8 @@ will.
 | `assets` | `id` | yes | Permanent slug; the URL segment and the key documents point at. Lower-case, hyphens. Never edited once published. | `Programmatic ID` |
 | `assets` | `name` | yes | Sidebar label for the asset: `Oxford PECVD`, `Fiji ALD`. Free to edit; the URL does not move. | the label in `.nav.yml` |
 | `assets` | `group` | yes | A `groups.id`. Says what the asset is and, through the group, where it is shown. | `Type (Category)` |
-| `assets` | `description` | no | What the machine is: `Plasma Enhanced Chemical Vapor Deposition`. Printed on the asset index. Omitted when blank. | `Name - Full` |
-| `assets` | `manufacturer`, `model` | no | Printed on the asset index. Omitted when blank. | same |
+| `assets` | `description` | no | What the machine is: `Plasma Enhanced Chemical Vapor Deposition`. The sync ignores it. | `Name - Full` |
+| `assets` | `manufacturer`, `model` | no | The sync ignores both. | same |
 | `documents` | `asset` | no | An `assets.id`. Blank for a facility document (policy, signup). | `Tool Name` / `CHEM_PAGE_MAP` |
 | `documents` | `label` | yes | Sidebar text, and the source of the URL: the file is `slugify(label).md`. | the label in `.nav.yml` / `*_PAGE_MAP` |
 | `documents` | `title` | yes | The on-page H1: `Atomic Layer Deposition (ALD) SOP`, `ASRC Nanofab -- Rules of Conduct`. | the H1 on disk; tool SOPs gain a trailing ` SOP` when the H1 lacks one |
@@ -117,8 +117,9 @@ the chat widget cites, and the ids already exist.
 **`documents`.** One row is one Google Doc page. `label` is both the
 sidebar text and the URL — renames are rare, and when one happens the
 sync writes a redirect (below), so there is no separate slug column to
-keep in step. `title` is the H1 of that page; the asset index uses the
-asset's `name` instead. Document `type` is not a column yet. A tool SOP,
+keep in step. `title` is the H1 of that page, including when the page is
+the asset's home. The sidebar label of the home page is the asset's
+`name`, so `SOP` does not appear as its own row. Document `type` is not a column yet. A tool SOP,
 a hood page, and an etch page differ by `asset` and `label`. Add `type`
 when the vocabulary is settled.
 
@@ -126,10 +127,10 @@ when the vocabulary is settled.
 
 ```text
 asset dir = docs / section / group / asset
-index     = index.md                              generated from the asset row
-document  = <asset dir> / slugify(label).md       when asset is set
-            docs / section / slugify(label).md    when asset is blank
-                                                  (section omitted when blank)
+home      = index.md                                 the asset's home document
+other     = <asset dir> / slugify(label).md          every other document
+facility  = docs / section / slugify(label).md       when asset is blank
+                                                       (section omitted when blank)
 ```
 
 `slugify` lower-cases and turns every run of non-alphanumerics into one
@@ -140,47 +141,46 @@ When `asset` is set, `group` is the asset's group and `section` is that
 group's section. When it is not, `section` is the document row's own and
 there is no group.
 
+The home document is chosen from the asset's document rows, published or
+not, so an unpublished sibling does not move the SOP:
+
+- A row labeled `SOP` is the home page. Two `SOP` rows on one asset fail validation.
+- An asset with exactly one document row, and that label is not `SOP`, uses that row as the home page.
+- An asset with two or more document rows and no `SOP` label fails validation. The sync does not guess.
+
 | Row | Path | URL |
 | --- | --- | --- |
-| asset `pecvd` (group deposition → tools), any published document | `tools/deposition/pecvd/index.md` | `/tools/deposition/pecvd/` |
-| asset `pecvd`, label `SOP` | `tools/deposition/pecvd/sop.md` | `/tools/deposition/pecvd/sop/` |
+| asset `pecvd`, label `SOP` | `tools/deposition/pecvd/index.md` | `/tools/deposition/pecvd/` |
 | asset `pecvd`, label `Oxide Recipe` | `tools/deposition/pecvd/oxide-recipe.md` | `/tools/deposition/pecvd/oxide-recipe/` |
+| asset `caustics-hood`, label `SOP` | `chemicals/wet-processing/caustics-hood/index.md` | `/chemicals/wet-processing/caustics-hood/` |
 | asset `caustics-hood`, label `Gold Etch` | `chemicals/wet-processing/caustics-hood/gold-etch.md` | `/chemicals/wet-processing/caustics-hood/gold-etch/` |
 | no asset, section `policy`, label `Safety Manual` | `policy/safety-manual.md` | `/policy/safety-manual/` |
 | no asset, section blank, label `Nanofab Signup` | `nanofab-signup.md` | `/nanofab-signup/` |
 
-The index is written only for an asset that has a published document.
-Adding another document adds a file beside it and does not move the
-index. Document images go to `<asset dir>/img/`. An asset with no
+Adding another document adds a file beside the home page and does not
+move it. Document images go to `<asset dir>/img/`. An asset with no
 published document produces no directory (Ozone Cleaner, the furnaces).
 
-The PDF key is derived from the document path, not the display name:
-`<section>/<group>/<asset>/<slug>.pdf` under `docs/assets/pdfs/`
-and in R2. The index has no PDF. The `download=` attribute on the
+The PDF key is derived from the document path, not the display name.
+The home SOP's key is `<section>/<group>/<asset>/index.pdf` under
+`docs/assets/pdfs/` and in R2. The `download=` attribute on the
 Download pill supplies the friendly filename from `title`. Renaming a
-title no longer renames an R2 key.
+title no longer renames an R2 key. Phase C has not uploaded the new
+keys, so the home key changing from `sop.pdf` to `index.pdf` is free.
 
-### Asset index
+### Home page
 
-The same template for every asset that has a document. An asset with no document stays a row in the sheet and gets no directory, no `index.md`, and no sidebar entry. The H1 is `name`. Each other field
-is printed only when its cell is filled, and the table is omitted when
-both manufacturer and model are blank. Staff and training are further
-rows of that table once those columns exist; they are not in this schema.
+The home page is the Google Doc, written with the same pill links as
+every other document. The H1 is that document's `title`. An asset with
+no published document stays a row in the sheet and gets no directory,
+no `index.md`, and no sidebar entry.
 
-```markdown
-# Oxford PECVD
-
-Plasma Enhanced Chemical Vapor Deposition
-
-| | |
-| --- | --- |
-| Manufacturer | Oxford Instruments |
-| Model | PlasmaPro System 100 |
-```
-
-The sync writes this file and marks it auto-generated from the asset
-row. It is not a Google Doc and it has no document row. Group landing
-pages (`deposition/index.md`, `chemicals/index.md`) stay hand-written.
+There is no page generated from the asset row. Phase B wrote one for
+every asset that had a document; Phase B2 overwrites it with the SOP.
+`description`, `manufacturer`, and `model` are not printed. Group
+landing pages (`deposition/index.md`, `chemicals/index.md`) stay
+hand-written. Their links already point at `<asset>/index.md` and do
+not change; that URL becomes the SOP.
 
 ### Redirects
 
@@ -190,8 +190,12 @@ differs from the remembered one — a label edit, an asset moved to
 another group — the sync appends the old URL → new URL line to
 `docs/_redirects`, which Cloudflare Pages serves natively. A rename
 therefore costs nothing and old bookmarks, QR codes, and chat citations
-keep working. Phase B seeds the file with every URL that changes in the
-migration.
+keep working. Phase B seeded the file with every URL the migration
+moves. Those tool and hood lines pointed at `…/sop/`. Phase B2 retargets
+them at the asset URL. `append_redirect` will not rewrite an existing
+source line, so that edit is in place. The same run appends a new line
+for each home SOP, `…/sop/` → `…/`, because `.sync-state.json` still
+remembers `sop.md`.
 
 ### Sidebar
 
@@ -202,20 +206,41 @@ published, the sync:
 
 - rewrites the label of every entry whose path it generated, to the sheet's `name` (asset directory), `label` (document), or group `label` (group directory);
 - appends an entry for any published page or asset directory that has no entry, at the end of the list;
-- never reorders, never removes, and never touches entries for paths it did not generate.
+- never reorders and never removes a line. A group entry whose target changes (`pecvd` to `pecvd/index.md`, or the reverse when a second document is published) goes stale until that line is deleted. The one exception is `<asset dir>/.nav.yml` itself, which the sync deletes when the asset no longer has two published documents and every entry in the file is one the sync generated.
 
 The entry shapes are the ones awesome-nav already reads:
 
 | Directory | Entry the sync maintains |
 | --- | --- |
 | `<section>/` | `label: <group id>` for each group with a published asset; for `policy`, `label: <slug>.md` for each asset-less document |
-| `<section>/<group>/` | `name: <asset id>` for each asset with a published document |
-| `<asset dir>/` | the file is created for every such asset, with `index.md` first and then `label: <slug>.md` for each document |
+| `<section>/<group>/` | `name: <asset id>/index.md` when the asset has one published document; `name: <asset id>` when it has two or more |
+| `<asset dir>/` | created only when the asset has two or more published documents: `index.md` first, then `label: <slug>.md` for each document that is not the home page |
 
-`navigation.indexes` makes the asset's `name` the link to `index.md`.
-The documents are the rows under the caret. The index is not listed a
-second time. An asset with one SOP is still a caret: the tool name opens
-the index, and `SOP` is the row beneath it.
+A published document has a non-blank `doc` and an `audience` equal to
+the build's (`public` by default). The home page is not listed a second
+time. `navigation.indexes` makes the asset's `name` the link to
+`index.md`, which is the SOP.
+
+One published document is a single link. When the group has its own
+`index.md`, the group entry points at `<asset id>/index.md` and the
+asset directory has no `.nav.yml`. The sync deletes that file when the
+asset has fewer than two published documents, unless it contains a
+target the sync did not generate.
+
+Wet Processing has no `index.md`. A direct child whose target is
+`<asset id>/index.md` is an index page, and the theme uses the first
+index page as the group heading's link, which hides that asset. Those
+assets are listed as `<asset id>` with a `.nav.yml` whose only entry is
+`index.md`. The theme draws that as a link with no caret. Discovered
+while executing Phase B2.
+
+Two or more published documents is a caret. The group entry is the
+directory name, so awesome-nav loads `<asset dir>/.nav.yml`. The asset
+name opens the SOP. The other documents are the rows under the caret.
+
+The samples have 24 assets with only an SOP (the 21 tools, plus
+`litho-hood`, `solvent-hood`, and `rca-hood`) and two with more
+(`caustics-hood`, `hf-piranha-hood`). Only those two are carets.
 
 Everything else in those files is yours: the order, the hand-written
 group landing pages, hand-written pages dropped into a generated
@@ -231,13 +256,12 @@ edit, an asset in a new group) goes stale, and `zensical build --strict`
 fails on it until the line is deleted — the merge appends the new entry
 but will not guess that the old one is the same page.
 
-Under Chemical Handling the hierarchy adds one level: the tab, then a
-bold "Wet Processing" heading, then each hood as a collapsed caret. The
-hood name opens the generated index. The hood SOP and the etch pages are
-the rows inside the caret. Today the hoods are the bold headings and the
-etch pages are always visible. The same caret applies to every tool that
-has a document. Accepted: keep the caret. The tool or hood name opens
-the index, and `SOP` is the row beneath it.
+Under Chemical Handling the tab stays, then a bold "Wet Processing"
+heading. Litho-Development, Solvent Lift-Off, and RCA are links to the
+hood SOP. Caustics and HF and Piranha are carets: the hood name opens
+the SOP, and the etch pages are the rows inside the caret. Phase A
+accepted a caret on every asset that had a document. That decision is
+reversed here, before Phase B sign-off.
 
 ### Consistency check
 
@@ -246,7 +270,7 @@ reports and exits non-zero when:
 
 - a published row has no entry in its directory's `.nav.yml` (cannot happen after a merge, but catches a hand-deleted line);
 - a `.nav.yml` entry the sync generated carries a label that differs from the sheet;
-- a page on disk starts with the `AUTO-GENERATED` marker but neither a document row nor a published asset's index resolves to it (a row deleted from the sheet, or a label edit that left the old file behind);
+- a page on disk starts with the `AUTO-GENERATED` marker but no document row resolves to it (a row deleted from the sheet, a label edit that left the old file behind, or a Phase B `sop.md` left beside the home page);
 - a `_redirects` source still exists as a page.
 
 The first two are the sheet-to-tree direction; the third is the
@@ -261,7 +285,9 @@ The sync stops the run with the row and the reason. It never guesses.
 - `assets.id` or `groups.id` duplicated; `id` not lower-case `[a-z0-9-]`.
 - `assets.group` not in `groups`; `groups.section` or `documents.section` not in the section list.
 - `documents.asset` not in `assets`.
-- An asset with two documents whose labels slugify the same.
+- An asset with two documents whose labels slugify the same, or with two rows labeled `SOP`.
+- An asset with two or more document rows and no row labeled `SOP`.
+- An asset with a published document whose home document is not published for that same audience. A blank `doc` is not published.
 - A document with no `label`, or with no `title`.
 - `audience` not in its vocabulary.
 - Two rows resolving to the same path.
@@ -344,11 +370,12 @@ unchanged.
 | — (section policy) | Suspension Policy | Lab Suspension Policy | public |
 | — (section blank) | Nanofab Signup | Becoming a Nanofab User | public |
 
-`doc` is today's `Share Link` for each. The asset URL is the new index.
-Today's tool and hood URLs are the SOP, so those redirects point at
-`sop.md`, not at the index: `/tool_sops/deposition/aja_sputter/` →
-`/tools/deposition/aja-sputter/sop/`. The same split applies to every
-hood. Other URL changes: the tools section `tool_sops/` → `tools/`,
+`doc` is today's `Share Link` for each. The asset URL is the SOP.
+Today's tool and hood URLs redirect to that URL, not to a `sop.md`
+child: `/tool_sops/deposition/aja_sputter/` →
+`/tools/deposition/aja-sputter/`. The same for every hood. Phase B
+seeded the destinations as `…/sop/`; Phase B2 rewrites them. Other URL
+changes: the tools section `tool_sops/` → `tools/`,
 tool ids with hyphens, `etch/` → `etching/`,
 every hood gains the `wet-processing/` segment, every policy page
 (`manual` → `rules-of-conduct`, `c14` → `c14-application`), and `signup`
@@ -359,7 +386,7 @@ every hood gains the `wet-processing/` segment, every policy page
 ### What this does to the earlier plans
 
 - `2026-10-09-sheet-owns-page-path`: superseded. Keeps one `Share Link` with all export URLs derived, and keeps slugified names for documents (with redirects on rename). Drops `Class`/`Parent`, and uses the permanent `Programmatic ID` for assets instead of slugifying their names.
-- `2026-10-06-nested-tool-sections`: its caret rule is how every asset with a document is drawn. The index is the generated asset page, so the caret exists as soon as the asset has a document. The hand-written `pecvd/pecvd_processes.md` sample goes away in Phase B.
+- `2026-10-06-nested-tool-sections`: a caret exists only when the asset has a published document besides its home page, and the home page is the SOP. The hand-written `pecvd/pecvd_processes.md` sample goes away in Phase B.
 - `2026-10-06-asset-document-graph`: unchanged in intent; its Phase B (NanoKnow tables) imports `assets` from this workbook instead of maintaining a second list. Document `type` stays in that model and is not a column here until its vocabulary is chosen. Its id rule applies to NanoKnow's own key, with a crosswalk column here if the two ever differ. `plans/asset-graph-samples/assets.csv` already has that crosswalk shape (`registry_name`).
 
 ## Steps
@@ -389,7 +416,7 @@ The current sync keeps working until Phase C.
 - [x] One workbook for all three sections is acceptable. Nanodocs Registry holds `groups`, `assets`, and `documents`.
 - [x] The `audience` vocabulary is right: `public`, `staff`, `admin`. Accepted by proceeding.
 - [x] `label` doubling as the URL is acceptable: a label edit moves the page and writes a redirect. Signup stays `nanofab-signup` under that rule.
-- [x] The asset URL is the generated index, and today's SOP moves to `sop.md` under it. Old SOP URLs redirect to that file. The caret stays, including for an asset with one document.
+- [x] The asset URL is the generated index, and today's SOP moves to `sop.md` under it. Old SOP URLs redirect to that file. The caret stays, including for an asset with one document. **Reversed** before Phase B sign-off. The SOP is `index.md`. A caret exists only when another published document sits beside it. Phase B2 does the reversal.
 - [x] The migration's URL changes are acceptable. Accepted by proceeding.
 - [x] Decision: proceed.
 
@@ -411,16 +438,39 @@ deleted and regenerated, so there is one tree to review.
 - [x] `uv run ruff check .` and `uv run ruff format .`
 - [x] `uv run zensical build --strict` passes. Built sidebar order matches today's, with sheet labels (Plasma Etching, Fiji ALD, Wet Processing, SOP under each caret).
 
-### Phase B review gate — STOP for sign-off
+### Phase B review gate — superseded
+
+Do not execute this gate. It checked the generated asset index and a caret on every tool. Sign-off is the Phase B2 review gate.
+
+- [x] Superseded by Phase B2.
+
+### Phase B2 — SOP is the index
+
+Same branch, `create-assets-docs-groups`. Execute the steps below. Do not check the review-gate boxes. Do not start Phase C. The registry samples and the Google Sheet do not change.
+
+`document_rel` in `scripts/sync_gdocs.py` runs inside the row loop and is given an empty document list, so it cannot see siblings. `build_asset_index` writes the page Phase B2 removes. `merge_nav` matches on target and never retargets or deletes a line, so the group nav files have to be edited in place or the next sync appends a second entry. `append_redirect` leaves an existing source line alone.
+
+- [x] Resolve each asset's home page after all document rows are loaded, then check path collisions. A row labeled `SOP` is `<asset dir>/index.md`. Two `SOP` rows on one asset fail. An asset with exactly one document row uses that row as `index.md` even when the label is not `SOP`. An asset with two or more document rows and no `SOP` fails, naming the asset id. Every other document stays `slugify(label).md`. Facility documents are unchanged. A published document is a non-blank `doc` whose `audience` is the one being built. If an asset has a published document, its home document must be published for that same audience; a blank `doc` does not count.
+- [x] Delete `build_asset_index`, `write_asset_indexes`, `asset_index_rel`, and `_table_cell`. Drop `description`, `manufacturer`, and `model` from `Asset` and stop reading those columns. Remove the `write_asset_indexes` call in `sync_all`. Update the module docstring so it no longer describes a generated asset index.
+- [x] In `merge_published_nav`, a one-document asset's group entry target is `<asset id>/index.md` and no `<asset dir>/.nav.yml` is written, when the group has its own `index.md`. Wet Processing has none, so those one-document assets stay `<asset id>` with a `.nav.yml` whose only entry is `index.md`. An asset with two or more published documents keeps the group target `<asset id>`, and its `.nav.yml` lists `index.md` then each non-home document as `label: <slug>.md`. Do not emit a row for the home document. When the asset has fewer than two published documents and the group has an index, delete `<asset dir>/.nav.yml` if every entry in it is one this sync generates (`index.md` or a document slug); if it contains any other target, stop the run and leave the file.
+- [x] Rewrite group nav targets in place, preserving order, before the sync. Tool groups point each one-document asset at `<id>/index.md`. Wet Processing lists `litho-hood`, `solvent-hood`, and `rca-hood` as directories, and leaves `caustics-hood` and `hf-piranha-hood` as directories. Did not edit `docs/.nav.yml` or the hand-written group and section `index.md` links.
+- [x] Deleted `<asset dir>/.nav.yml` for the 21 one-document tools. `litho-hood`, `solvent-hood`, and `rca-hood` keep a `.nav.yml` with only `index.md`. In the Caustics and HF and Piranha nav files, deleted the `SOP: sop.md` line and left `index.md` and the etch lines in their current order.
+- [x] In `docs/_redirects`, rewrote every destination that ended in `/sop/` (52 lines) so the `sop/` segment is gone. Sources and order unchanged.
+- [x] Deleted 26 auto-generated `sop.md` pages and 26 `sop.pdf` files. Left etch pages, images, and facility documents.
+- [x] Full sync wrote 26 home SOPs to `index.md` and left 12 documents unchanged. It did not append a second group-nav line. `.sync-state.json` records `index.md` for each of the 26 home SOPs. The sync appended 26 `…/sop/ → …/` lines; those addresses were never published, so they were removed. `docs/_redirects` keeps only the addresses the live site still serves.
+- [x] Updated `README.md`, `AGENTS.md`, and `docs/authoring/index.md`. The PECVD PDF key is `tools/deposition/pecvd/index.pdf`. The Wet Processing exception is recorded in the first two.
+- [x] `uv run ruff check .` and `uv run ruff format .`
+- [x] `uv run zensical build --strict` passes. Oxford PECVD's `index.md` starts with the Google Doc marker and its H1 is `Oxford PECVD SOP`, and the sidebar item is a plain link. Caustics and HF and Piranha are carets whose rows are the etches. Litho, Solvent, and RCA are links with no caret. No `sop.md` remains under an asset directory.
+
+### Phase B2 review gate — STOP for sign-off
 
 `uv run zensical serve`:
 
-- [ ] Each tab's sidebar is in today's order with the sheet's labels. Group headings are bold and open as before.
-- [ ] Add a row to `documents` with no nav entry, re-sync, and confirm it appears at the end of its list; edit its `label`, re-sync, and confirm the nav label follows.
-- [ ] Chemical Handling shows one bold "Wet Processing" heading with the five hoods under it. Each hood name opens its index. The hood SOP and, where they exist, the etch pages are the rows inside the caret.
-- [ ] A tool with one SOP is a caret, as accepted. The tool name opens the index. `SOP` is the only row under it. The etching group's heading is "Plasma Etching".
-- [ ] The index H1 is the asset `name`, and its body matches the template. Every document H1 is the sheet `title`. Every document's sidebar entry is its `label`. Images and both PDF pills resolve on document pages. The index has no PDF.
-- [ ] Old URLs redirect locally via `wrangler pages dev` or on a preview deploy. Edit one `label` in the sheet, re-sync, and confirm a new `_redirects` line appears.
+- [ ] Each tab's sidebar is in today's order with the sheet's labels. Group headings are bold and open as before. The etching group's heading is "Plasma Etching".
+- [ ] A tool with only an SOP is a single link. The tool name opens the SOP. There is no caret and no `SOP` row. Oxford PECVD's H1 is `Oxford PECVD SOP`, and both PDF pills resolve. The page is `/tools/deposition/pecvd/`.
+- [ ] Chemical Handling shows one bold "Wet Processing" heading. Litho-Development, Solvent Lift-Off, and RCA are single links to the hood SOP. Caustics and HF and Piranha are carets: the hood name opens the SOP, and the rows inside are the etch pages only.
+- [ ] Add a row to `documents` with no nav entry, re-sync, and confirm it appears at the end of its list; edit its `label`, re-sync, and confirm the nav label follows. Adding that row beside a one-SOP tool turns the tool into a caret without moving the SOP URL.
+- [ ] Old URLs redirect locally via `wrangler pages dev` or on a preview deploy, and the destination is the asset URL. Edit one `label` in the sheet, re-sync, and confirm a new `_redirects` line appears.
 - [ ] Decision: proceed / adjust / abandon
 
 ### Phase C — Cut over
@@ -435,7 +485,7 @@ deleted and regenerated, so there is one tree to review.
 
 - Document `type` is deferred. Add the column when the vocabulary is known; until the sync is taught that column, it ignores it.
 - `audience=staff` and `admin` rows are accepted and skipped by the public build. Nothing publishes them until the staff preview reads `--audience staff`.
-- Assets with no documents produce no page.
+- Assets with no documents produce no page. `description`, `manufacturer`, and `model` stay on the assets tab and are not rendered.
 - `short_name` is deferred. Staff still say `PECVD` and `ICP-Cl`, and `Staff Tool List` still joins on `Name - Short`. That nickname is not a column here. Add it when that list is read, and join it on `id`.
 - Asset-to-asset edges (`parent`, Oct 6's `depends_on`) are not here. The first row that needs one adds a `parent` column; the path rule already handles a nested asset directory if that is wanted.
 - The sync still needs network to `docs.google.com`. No credentials.
