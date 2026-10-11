@@ -1,7 +1,7 @@
 # Make the registry sheet the source of truth: assets, documents, groups
 
 **Date:** 2026-10-09
-**Status:** Draft — proposal for review; supersedes `2026-10-09-sheet-owns-page-path.md` if accepted
+**Status:** Accepted — Phase A not started. Supersedes `2026-10-09-sheet-owns-page-path.md`
 
 ## Description
 
@@ -235,8 +235,8 @@ bold "Wet Processing" heading, then each hood as a collapsed caret. The
 hood name opens the generated index. The hood SOP and the etch pages are
 the rows inside the caret. Today the hoods are the bold headings and the
 etch pages are always visible. The same caret applies to every tool that
-has a document. Whether the extra click is acceptable is a Phase B gate
-item.
+has a document. Accepted: keep the caret. The tool or hood name opens
+the index, and `SOP` is the row beneath it.
 
 ### Consistency check
 
@@ -264,9 +264,13 @@ The sync stops the run with the row and the reason. It never guesses.
 - A document with no `label`, or with no `title`.
 - `audience` not in its vocabulary.
 - Two rows resolving to the same path.
+- A duplicate `doc` URL.
 
-Two rows pointing at one Google Doc is allowed (Piranha Clean and RCA
-Clean do today). A row is a page; a doc may back two pages.
+One Google Doc backs one page. A duplicate `doc` value fails validation,
+because `.sync-state.json` remembers one path per doc id. The RCA
+Cleaning Procedure row was dropped: it pointed at the Piranha doc, and
+the live page was that SOP under a different H1. The RCA hood keeps its
+own SOP row.
 
 ## Migration of today's rows
 
@@ -283,7 +287,7 @@ see the shape.
 | --- | --- | --- |
 | lithography | tools | Lithography |
 | deposition | tools | Deposition |
-| etching | tools | Etcher |
+| etching | tools | Plasma Etching |
 | metrology | tools | Metrology |
 | packaging | tools | Packaging |
 | furnace | tools | Furnace |
@@ -333,7 +337,6 @@ unchanged.
 | caustics-hood | Nickel Etch | Nickel Etch SOP | public |
 | hf-piranha-hood | Hydrofluoric Acid Etch | Hydrofluoric Acid Etch | public |
 | hf-piranha-hood | Piranha Clean | Piranha Clean | public |
-| rca-hood | RCA Cleaning Procedure | RCA Cleaning Procedure | public |
 | — (section policy) | Rules of Conduct | ASRC Nanofab -- Rules of Conduct | public |
 | — (section policy) | Safety Manual | ASRC Nanofab Facility -- Safety Manual | public |
 | — (section policy) | C14 Application | Instruction for C-14 Application | public |
@@ -368,7 +371,7 @@ current sync keeps working until Phase C.
 
 - [ ] Add a `groups` tab: import `plans/registry-samples/groups.csv`.
 - [ ] Replace `Tool List` with `assets`: import `plans/registry-samples/assets.csv` (46 rows — the 41 tools with renamed headers plus the five hoods). Or rename the existing headers and append the hoods by hand.
-- [ ] Add a `documents` tab: import `plans/registry-samples/documents.csv` (39 rows — 21 tool SOPs, 13 hood pages, 5 facility documents).
+- [ ] Add a `documents` tab: import `plans/registry-samples/documents.csv` (38 rows — 21 tool SOPs, 12 hood pages, 5 facility documents). The RCA Cleaning Procedure row is omitted.
 - [ ] Share the workbook so the two new tabs export as CSV ("anyone with link can view" is already set); note each tab's `gid`.
 
 ### Phase A review gate — STOP for sign-off
@@ -376,8 +379,8 @@ current sync keeps working until Phase C.
 - [ ] Every `Programmatic ID` is the id you want in URLs for good. Changing one later is a redirect, not a cell edit.
 - [ ] One workbook for all three sections is acceptable (versus keeping chem and policy in their own workbooks with the same tabs).
 - [ ] The `audience` vocabulary is right: `public`, `staff`, `admin`.
-- [ ] `label` doubling as the URL is acceptable: a label edit moves the page and writes a redirect.
-- [ ] The asset URL is the generated index, and today's SOP moves to `sop.md` under it. Old SOP URLs redirect to that file.
+- [x] `label` doubling as the URL is acceptable: a label edit moves the page and writes a redirect. Signup stays `nanofab-signup` under that rule.
+- [x] The asset URL is the generated index, and today's SOP moves to `sop.md` under it. Old SOP URLs redirect to that file. The caret stays, including for an asset with one document.
 - [ ] The migration's URL changes are acceptable.
 - [ ] Decision: proceed / adjust / abandon
 
@@ -405,8 +408,8 @@ deleted and regenerated, so there is one tree to review.
 
 - [ ] Each tab's sidebar is in today's order with the sheet's labels. Group headings are bold and open as before.
 - [ ] Add a row to `documents` with no nav entry, re-sync, and confirm it appears at the end of its list; edit its `label`, re-sync, and confirm the nav label follows.
-- [ ] Chemical Handling shows one bold "Wet Processing" heading with the five hoods under it. Each hood name opens its index. The hood SOP and, where they exist, the etch pages are the rows inside the caret. Decide whether the extra click is acceptable.
-- [ ] A tool with one SOP is a caret. The tool name opens the index. `SOP` is the only row under it.
+- [ ] Chemical Handling shows one bold "Wet Processing" heading with the five hoods under it. Each hood name opens its index. The hood SOP and, where they exist, the etch pages are the rows inside the caret.
+- [ ] A tool with one SOP is a caret, as accepted. The tool name opens the index. `SOP` is the only row under it. The etching group's heading is "Plasma Etching".
 - [ ] The index H1 is the asset `name`, and its body matches the template. Every document H1 is the sheet `title`. Every document's sidebar entry is its `label`. Images and both PDF pills resolve on document pages. The index has no PDF.
 - [ ] Old URLs redirect locally via `wrangler pages dev` or on a preview deploy. Edit one `label` in the sheet, re-sync, and confirm a new `_redirects` line appears.
 - [ ] Decision: proceed / adjust / abandon

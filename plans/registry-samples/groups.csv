@@ -1,7 +1,7 @@
 id,section,label
 lithography,tools,Lithography
 deposition,tools,Deposition
-etching,tools,Etcher
+etching,tools,Plasma Etching
 metrology,tools,Metrology
 packaging,tools,Packaging
 furnace,tools,Furnace

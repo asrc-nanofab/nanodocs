@@ -4,7 +4,7 @@ metal-evap,AJA Metal Evaporator,deposition,Evaporator E-beam / Thermal,AJA,ORION
 organic-evap,AJA Organic Evaporator,deposition,Evaporator E-beam / Thermal,AJA,ORION
 thermal-evap,AJA Thermal Evaporator,deposition,Evaporator Thermal,AJA,ORION-3-TH
 aja-sputter,AJA Sputter,deposition,RF/DC Sputter,AJA,ORION-8
-pecvd,Oxford PECVD,deposition,Plasma Enhanced Chemical Vapor Deposotion,Oxford Instruments,PlasmaPro System 100
+pecvd,Oxford PECVD,deposition,Plasma Enhanced Chemical Vapor Deposition,Oxford Instruments,PlasmaPro System 100
 gold-sputter,Gold Sputter Coater,deposition,Small Sputter Coater,Cressington,108 Manual Sputter Coater
 icp-cl,ICP-Chlorine Etcher,etching,ICP Etching (Cl based),Oxford Instruments,PlasmaPro System 100
 rie,Reactive Ion Etcher,etching,RIE Etching,Oxford Instruments,PlasmaPro NGP80
@@ -17,7 +17,7 @@ rta,RTA,furnace,Rapid Thermal Anneal,Modular Process Technology,RTP-600S
 nitride-furnace,Nitride Furnace,furnace,LPCVD Silicon Nitride Furnace,Tystar,Tytan 4600 Furnace Stack
 teos-furnace,TEOS Furnace,furnace,LPCVD TEOS Furnace,Tystar,Tytan 4600 Furnace Stack
 annealing-furnace,Annealing Furnace,furnace,Thermal Anneal Furnace,Tystar,Tytan 4600 Furnace Stack
-oxidation-furnace,Oxidation  Furnace,furnace,Thermal Oxidation Furnace,Tystar,Tytan 4600 Furnace Stack
+oxidation-furnace,Oxidation Furnace,furnace,Thermal Oxidation Furnace,Tystar,Tytan 4600 Furnace Stack
 nanoscribe,Nanoscribe 3D Lithography,lithography,3D Nano Lithography Tool,Nanoscribe,Photonic Professional GT
 mask-aligner,EVG Photo-Mask Aligner,lithography,Mask Aligner,EVG,EVG620 - Backside
 oven,Oven,lithography,Photoresist Oven (2x),SPX,BlueM DC-146
