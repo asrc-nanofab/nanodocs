@@ -1,192 +1,230 @@
 {
   "134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ": {
     "export_sha1": "75b34d581639ecc263e25e79f6e772b8ae01eded",
-    "name": "ICP-Fl",
+    "name": "icp-fl/SOP",
+    "path": "tools/etching/icp-fl/index.md",
     "section": "tools"
   },
   "13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc": {
     "export_sha1": "2a5bb329ee4cb9211163bce3022f83592a6fcd8b",
-    "name": "ALD",
+    "name": "ald/SOP",
+    "path": "tools/deposition/ald/index.md",
     "section": "tools"
   },
   "15K8HiRoBqTl6__K5GMHitdGn7ybAD6Iga3Qf07gFwt4": {
     "export_sha1": "f74026af71fed4606b35fdcc5bec34e185c877b4",
-    "name": "Litho-Development Hood",
-    "section": "chem"
+    "name": "litho-hood/SOP",
+    "path": "chemicals/wet-processing/litho-hood/index.md",
+    "section": "chemicals"
   },
   "16OSeeL1jXSGKkX6lI78EIyhBQONfz8GxHnL7XUGWk14": {
     "export_sha1": "518a5cfe90aca8783a572ecb17a1aa8603df0e77",
-    "name": "Solvent/Lift-Off Hood",
-    "section": "chem"
+    "name": "solvent-hood/SOP",
+    "path": "chemicals/wet-processing/solvent-hood/index.md",
+    "section": "chemicals"
   },
   "187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw": {
     "export_sha1": "f80af68eae06483635a7a81b68b7b9f9bbf1f1a8",
     "name": "Safety Manual",
+    "path": "policy/safety-manual.md",
     "section": "policy"
   },
   "1CEDzZpsaCl18r2u3Z_2YnZJjB6EAYobtiUnn9lpl9LY": {
     "export_sha1": "4b31508a8bb5e8d1dc959afae73cbba7937ddab2",
-    "name": "Gold Sputter",
+    "name": "gold-sputter/SOP",
+    "path": "tools/deposition/gold-sputter/index.md",
     "section": "tools"
   },
   "1Gcfy5zHprGlI_ZHOKh8N3v_X1wO9ndRzPOorbETv7g0": {
     "export_sha1": "00e8d6abbfac3c90025a30ab1dfa8faf92267f0d",
-    "name": "Piranha/HF Hood",
-    "section": "chem"
+    "name": "hf-piranha-hood/SOP",
+    "path": "chemicals/wet-processing/hf-piranha-hood/index.md",
+    "section": "chemicals"
   },
   "1H33fEMQOaZ6IegQyybm0pJRTaQjPmYC0ar2dVD6sJwM": {
     "export_sha1": "371f9ac8bcf737b0e0d2d7545ac555fad7cbc77d",
-    "name": "Spinner",
+    "name": "spinner/SOP",
+    "path": "tools/lithography/spinner/index.md",
     "section": "tools"
   },
   "1H5BNvSj7EzHJ6-9Pjn1EpoTDeR8hgMribRgxNWJGK_g": {
     "export_sha1": "e17440994db3387f77ef99caaaa39603359dff60",
-    "name": "Lab Suspension",
+    "name": "Suspension Policy",
+    "path": "policy/suspension-policy.md",
     "section": "policy"
   },
   "1HBfsM3Lt2x3310cCUOhnfu8L6NcT_e4XFyvLrq5oJIs": {
     "export_sha1": "539645700b6307f85dd648cf9127687d283dc8a6",
-    "name": "Dicing Saw",
+    "name": "dicing-saw/SOP",
+    "path": "tools/packaging/dicing-saw/index.md",
     "section": "tools"
   },
   "1IaniDFz65Ywijamk3f5YETyXLmCPBjYZ47sSgO8O6DE": {
     "export_sha1": "382e709dcaccec250654772e78e9f4ff25860982",
-    "name": "RIE",
+    "name": "rie/SOP",
+    "path": "tools/etching/rie/index.md",
     "section": "tools"
   },
   "1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg": {
     "export_sha1": "e5908d2620df01c39bcdabee3af00d926299baf4",
-    "name": "Piranha Clean SOP",
-    "section": "chem"
+    "name": "hf-piranha-hood/Piranha Clean",
+    "path": "chemicals/wet-processing/hf-piranha-hood/piranha-clean.md",
+    "section": "chemicals"
   },
   "1KGMAyNuV7d_IKULiMIsnu3mv2qEcMy-Go3yxuJijZLQ": {
     "export_sha1": "7575feb4445b2f3cb26e9c223dbe17beb954134f",
-    "name": "Chromium Etch SOP",
-    "section": "chem"
+    "name": "caustics-hood/Chrome Etch",
+    "path": "chemicals/wet-processing/caustics-hood/chrome-etch.md",
+    "section": "chemicals"
   },
   "1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw": {
     "export_sha1": "0a8991fb2f9b7e61c277f828a869c316c5191920",
-    "name": "Nanoscribe",
+    "name": "nanoscribe/SOP",
+    "path": "tools/lithography/nanoscribe/index.md",
     "section": "tools"
   },
   "1OKt-lxZbpTqgTQaB2xr4tY9Pc04TGJ_Dgq-SYLFo0FM": {
     "export_sha1": "367fa54d30fa71c87e98c604f0231d04d47071b0",
-    "name": "Isotropic Silicon Etch (HNA) SOP",
-    "section": "chem"
+    "name": "caustics-hood/Silicon Etch",
+    "path": "chemicals/wet-processing/caustics-hood/silicon-etch.md",
+    "section": "chemicals"
   },
   "1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI": {
     "export_sha1": "0edb928bad733f6b98041a7b2e1be560caa3d6a3",
-    "name": "Optical Profilometer",
+    "name": "optical-profilometer/SOP",
+    "path": "tools/metrology/optical-profilometer/index.md",
     "section": "tools"
   },
   "1Qtl2bvsitV9snJGXmonvmC6lgJgq6zfIud20R6E94i0": {
     "export_sha1": "3bf8167fded3e957a68370a70131aae0f99ac966",
-    "name": "RCA Hood",
-    "section": "chem"
+    "name": "rca-hood/SOP",
+    "path": "chemicals/wet-processing/rca-hood/index.md",
+    "section": "chemicals"
   },
   "1RVBRcWvxVvR0yamtidYjsd0aanbXqg84ov4ds2PDYB0": {
     "export_sha1": "deab29fdae713daae18c64b9eaf3cc00c7edcc72",
-    "name": "Hydroflouric Acid SOP",
-    "section": "chem"
+    "name": "hf-piranha-hood/Hydrofluoric Acid Etch",
+    "path": "chemicals/wet-processing/hf-piranha-hood/hydrofluoric-acid-etch.md",
+    "section": "chemicals"
   },
   "1T6G6K91GHww4PlztrbcEJj7Kibu3BXw-j6RAdp5PAGQ": {
     "export_sha1": "1bd8d2178786c62b2ab65cd125da4596416c36b5",
-    "name": "Nickel Etch SOP",
-    "section": "chem"
+    "name": "caustics-hood/Nickel Etch",
+    "path": "chemicals/wet-processing/caustics-hood/nickel-etch.md",
+    "section": "chemicals"
   },
   "1UN-jwGXj1MgKG_DcL0Pjg06Q0h_o_oWUWd3saSPNCxk": {
     "export_sha1": "353c06b0349fb691bb156957f2716cca61179ffc",
-    "name": "Metal Evap",
+    "name": "metal-evap/SOP",
+    "path": "tools/deposition/metal-evap/index.md",
     "section": "tools"
   },
   "1WzJh-JIVJhJRlmDeTlwibXwsdp1JH-A4RMS0WEP63CY": {
     "export_sha1": "c18aa2de734d53d6b4c100c371f54d90c07d4d9d",
-    "name": "Becoming a Nanofab User",
-    "section": "policy"
+    "name": "Nanofab Signup",
+    "path": "nanofab-signup.md",
+    "section": ""
   },
   "1XmcgTR4KJSk2_5zVrSb0KT16OabZz5VcCGGa1UyJi4s": {
     "export_sha1": "f019d117c7681e4f3c6794d8f5ff915c682425d1",
-    "name": "Thermal Evap",
+    "name": "thermal-evap/SOP",
+    "path": "tools/deposition/thermal-evap/index.md",
     "section": "tools"
   },
   "1ZxRo_R4RzLxKZ7h_I2hFphAH187e9qq2U4bBf5n4lOg": {
     "export_sha1": "d0c73e478de0bf345b6624644f8f9217554813f8",
-    "name": "AJA Sputter",
+    "name": "aja-sputter/SOP",
+    "path": "tools/deposition/aja-sputter/index.md",
     "section": "tools"
   },
   "1_9u5YudriyjGAOOsm-8EVmkD0bD6SvVQZb4RuNEvKrg": {
     "export_sha1": "bd1026b07d5291c650981fb354f36f40176c116d",
-    "name": "Caustics/Metal Etch Hood",
-    "section": "chem"
+    "name": "caustics-hood/SOP",
+    "path": "chemicals/wet-processing/caustics-hood/index.md",
+    "section": "chemicals"
   },
   "1_GuCjeccX-jVpvjYN3VdQHAqRQzjFMkkwiHjFlsDaZI": {
     "export_sha1": "4fc58118d449ecad6a3a757b0829674383490db0",
-    "name": "Organic Evap",
+    "name": "organic-evap/SOP",
+    "path": "tools/deposition/organic-evap/index.md",
     "section": "tools"
   },
   "1beyiXEaJvjsNaPcidsnvz1DwOyGI37BpkUN3oCp7gmo": {
     "export_sha1": "442bee39b2f8184802bcebcaa970d84bbcab5b6a",
-    "name": "Ellipsometer",
+    "name": "ellipsometer/SOP",
+    "path": "tools/metrology/ellipsometer/index.md",
     "section": "tools"
   },
   "1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc": {
     "export_sha1": "1fa5aaf91a826b3676d3d67d9d43767f1abe5a26",
-    "name": "Elionix 100keV",
+    "name": "elionix-100kev/SOP",
+    "path": "tools/lithography/elionix-100kev/index.md",
     "section": "tools"
   },
   "1cds236-fRol1RoqzUvsCR4YPsqeyf5Yum19WReIJFl8": {
     "export_sha1": "4ad946667132c884026370dc8b4d3063ca88b7e2",
-    "name": "Mask Aligner",
+    "name": "mask-aligner/SOP",
+    "path": "tools/lithography/mask-aligner/index.md",
     "section": "tools"
   },
   "1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY": {
     "export_sha1": "9bf2f836a9cdfbeda711a992c6b23974f4192197",
-    "name": "SEM",
+    "name": "sem/SOP",
+    "path": "tools/metrology/sem/index.md",
     "section": "tools"
   },
   "1ffuyK_5d5dMrEkYlPAlxepmydWzc6R_e42pD5W3brjw": {
     "export_sha1": "9ea02527612a82e57d703dfaa9693f975a7e4f31",
-    "name": "Gold Etch SOP",
-    "section": "chem"
+    "name": "caustics-hood/Gold Etch",
+    "path": "chemicals/wet-processing/caustics-hood/gold-etch.md",
+    "section": "chemicals"
   },
   "1lzJ2D_izEUCCXlF7XG8gEiAwup2btTmb8DAzQv20AQ8": {
     "export_sha1": "93d5ef0d9688d5daf220227a49cb56b81e650233",
-    "name": "Hot Plates",
+    "name": "hot-plates/SOP",
+    "path": "tools/lithography/hot-plates/index.md",
     "section": "tools"
   },
   "1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4": {
     "export_sha1": "8bdeb33879a94597d54ebae9cd3e999f2738af64",
-    "name": "ICP-Cl",
+    "name": "icp-cl/SOP",
+    "path": "tools/etching/icp-cl/index.md",
     "section": "tools"
   },
   "1q-4YgUklqppoQipswF7NygH4oarlqO2lo9nTGDubHhk": {
     "export_sha1": "2bb14a85aa62cf96c557828cb51572dd031e38ff",
-    "name": "PECVD",
+    "name": "pecvd/SOP",
+    "path": "tools/deposition/pecvd/index.md",
     "section": "tools"
   },
   "1qzcJ_VQbIsTaRefLxhnhzaancla2f7Q7IbotATD6YJU": {
     "export_sha1": "76e9ef928f546ef30dd6bd908d1f4a6464274a66",
-    "name": "Lab Manual",
+    "name": "Rules of Conduct",
+    "path": "policy/rules-of-conduct.md",
     "section": "policy"
   },
   "1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8": {
     "export_sha1": "71c55186edf11c841e01c4fdbf9307caee0f1589",
-    "name": "Aluminum Etch SOP",
-    "section": "chem"
+    "name": "caustics-hood/Aluminum Etch",
+    "path": "chemicals/wet-processing/caustics-hood/aluminum-etch.md",
+    "section": "chemicals"
   },
   "1uDD_bNfVsyvTkWzNPy5QGdm7Z_LQdniKeHbNruE4a1I": {
     "export_sha1": "b7c30f9b7f3133fdc504c395cae36da3647aef51",
-    "name": "Profilometer",
+    "name": "profilometer/SOP",
+    "path": "tools/metrology/profilometer/index.md",
     "section": "tools"
   },
   "1vWchHUJWEjEPmC7fhBNWyf3IMGcx8EHeKd0mEAQ3X0c": {
     "export_sha1": "7330efc2e57f226619958e0476d82380664b7489",
-    "name": "AFM",
+    "name": "afm/SOP",
+    "path": "tools/metrology/afm/index.md",
     "section": "tools"
   },
   "1wxldtt0HAxqAhj__62KHGnug-Hdfc21pm3gg9mrBhIE": {
     "export_sha1": "948e7ba255da01a54da2d4a359071a7235ffc6e4",
-    "name": "C-14",
+    "name": "C14 Application",
+    "path": "policy/c14-application.md",
     "section": "policy"
   }
 }

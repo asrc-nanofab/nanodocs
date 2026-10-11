@@ -5,25 +5,25 @@
 
 <div class="grid cards" markdown>
 
--   __[:material-book-open-page-variant-outline: ASRC Nanofab Lab Manual](manual.md)__
+-   __[:material-book-open-page-variant-outline: ASRC Nanofab Lab Manual](rules-of-conduct.md)__
 
     ---
     
     The official lab manual covering general rules, procedures, and facility information.
 
--   __[:material-shield-check-outline: Nanofab Facility Safety Policies](safety.md)__
+-   __[:material-shield-check-outline: Nanofab Facility Safety Policies](safety-manual.md)__
 
     ---
 
     Comprehensive safety guidelines that must be followed at all times.
 
--   __[:material-key-variant: C-14 Access Policy](c14.md)__
+-   __[:material-key-variant: C-14 Access Policy](c14-application.md)__
 
     ---
 
     Specific requirements and regulations for accessing the C-14 cleanroom.
 
--   __[:material-gavel: Suspension Policy](suspension.md)__
+-   __[:material-gavel: Suspension Policy](suspension-policy.md)__
 
     ---
 

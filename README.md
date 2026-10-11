@@ -12,7 +12,7 @@ canonical content — it holds a synced, web-friendly rendering of it.
 
 ```mermaid
 flowchart LR
-    GD[Google Docs<br/>SOPs, policies] --> REG[Registry sheets<br/>name + category + link]
+    GD[Google Docs<br/>SOPs, policies] --> REG[Nanodocs Registry<br/>groups, assets, documents]
     REG --> SYNC[scripts/sync_gdocs.py]
     SYNC --> MD[Markdown pages<br/>docs/**/*.md]
     SYNC --> IMG[Original-res images<br/>docs/**/img/]
@@ -36,19 +36,31 @@ Function only runs on Cloudflare. The Pages build copies those PDFs into
 `site/` (Zensical does not know about R2) and then **deletes**
 `site/assets/pdfs` before upload so Pages never sees the large files.
 
-### The registry sheets
+### The registry
 
-Three Google Sheets act as the registry of what gets published. Each row is a
-document: its name, (for tools) a category, and a link to the Google Doc.
+One workbook, [Nanodocs Registry](https://docs.google.com/spreadsheets/d/1wuT0MT50EOu8GzAxCS05bQzJCV9Hevwk7dXe9B28wBo/edit),
+with three tabs. A row is a node. A cell that names another row's id is the edge.
 
-| Sheet | Section | Name column |
-| --- | --- | --- |
-| Tool SOPs | `docs/tool_sops/<category>/` | `Tool Name` |
-| Chemical docs | `docs/chemicals/<hood>/` | `Document Name` |
-| Policies | `docs/policy/` | `Document Name` |
+| Tab | What a row is |
+| --- | --- |
+| `groups` | What an asset is (`deposition`, `wet-processing`) and the sidebar heading it sits under. `section` is the tab: `tools`, `chemicals`, or `policy`. |
+| `assets` | A thing people are trained on: a tool, a hood. `id` is the permanent URL segment. `name` is the sidebar label and can change without moving the URL. |
+| `documents` | One Google Doc, published as one page. `asset` points at an asset, or is blank for a facility document (a policy, signup). `label` is the sidebar text and the page's URL slug. A label of `SOP` is the asset's home page instead. `title` is the on-page H1. `audience` is `public`, `staff`, or `admin`. |
 
-Rows without a doc link are skipped, so tools can be listed in the sheet
-before their SOP exists.
+The public build publishes `audience=public` rows whose `doc` cell is a Google Doc URL. A blank `doc` is registered but unpublished, so a tool can be listed before its SOP exists. An asset with no published document produces no directory. The document labeled `SOP` is written as that asset's `index.md`; the sidebar uses the asset's `name`. Any other published document is `slugify(label).md` beside it, and that is what draws the caret. The home page is the Google Doc and has its PDF.
+
+```text
+docs/<section>/<group>/<asset>/index.md            # the SOP, or the asset's only document
+docs/<section>/<group>/<asset>/<slug of label>.md  # any other document
+docs/<section>/<slug of label>.md                  # no asset, section set
+docs/<slug of label>.md                            # no asset, section blank
+```
+
+`id` values are permanent. Rename `name` or `label`, never `id`. A label edit moves that document's URL, and the sync appends the old URL to `docs/_redirects`. The PDF key follows the page path (`docs/assets/pdfs/<same path>.pdf`), not the title, so renaming a title does not rename the R2 object. The Download pill's filename comes from `title`.
+
+Columns the sync does not know are ignored, so a tab can gain attributes without a script change. `audience` and `section` are short lists in the sync; adding a value is a one-line change.
+
+Sidebar order stays in the repo's `.nav.yml` files. The sync rewrites the label of every entry it generated, appends a missing page at the end of that list, and does not reorder or remove a line. An asset with one published document is a single link (`<asset id>/index.md`) and has no `.nav.yml`, except under a group that has no index page of its own. Wet Processing is that group: those assets are listed as directories whose `.nav.yml` contains only `index.md`, so the heading does not adopt the first SOP as its link. The theme draws that as a link, not a caret. A second published document makes the asset a caret: the name opens the SOP, and the other documents are the rows under it. A new row shows up at the bottom on the next run; move it in the repo. `docs/.nav.yml` itself (Home, Tools, Signup) is hand-written and the sync never opens it. An entry whose page moved goes stale, and `zensical build --strict` fails until that line is deleted.
 
 ### The sync script
 
@@ -101,10 +113,10 @@ a safe no-op and exits with an error only when nothing matched the filters.
 Run it with:
 
 ```bash
-uv run python scripts/sync_gdocs.py tools chem policy   # everything
-uv run python scripts/sync_gdocs.py tools --category Deposition
-uv run python scripts/sync_gdocs.py policy --only "Safety Manual"
-uv run python scripts/sync_gdocs.py tools --only AFM --watch   # re-sync every 20s
+uv run python scripts/sync_gdocs.py                         # every public document
+uv run python scripts/sync_gdocs.py --group deposition
+uv run python scripts/sync_gdocs.py --asset pecvd --only SOP
+uv run python scripts/sync_gdocs.py --only "Gold Etch" --watch   # re-sync every 20s
 ```
 
 With `--watch [SECONDS]`, the sync re-runs until Ctrl+C, printing one
@@ -114,18 +126,13 @@ converted local page refreshes in the other within a cycle.
 
 ### What is generated vs. hand-written
 
-Generated (never hand-edit — fix the Google Doc or the script, then re-sync):
+Generated (never hand-edit — fix the Google Doc, the registry, or the script, then re-sync):
 
-- Any page starting with `<!-- AUTO-GENERATED by scripts/sync_gdocs.py ... -->`
+- Any page starting with `<!-- AUTO-GENERATED by scripts/sync_gdocs.py ... -->`, including each asset's `index.md`
 - `docs/**/img/` (extracted images, content-hash filenames)
 - `docs/assets/pdfs/` (hosted PDFs)
 
-Hand-written: section index pages, `docs/faq/`, `docs/signup/`, and the
-`.nav.yml` files that set sidebar order. Zensical's built-in awesome-nav
-plugin reads those files. A new page is one line in its directory's
-`.nav.yml`. A tool with child process docs is `slug/index.md` plus a
-`.nav.yml` in that directory. Keep `mkdocs.yml` — do not add a
-`zensical.toml` until Zensical ships a conversion tool.
+Hand-written: section and group landing pages (`docs/tools/deposition/index.md`, `docs/chemicals/index.md`), `docs/faq/`, `docs/authoring/`, and the `.nav.yml` files that set sidebar order. Zensical's built-in awesome-nav plugin reads those files. Keep `mkdocs.yml` — do not add a `zensical.toml` until Zensical ships a conversion tool.
 
 ## Writing docs that convert cleanly
 
@@ -156,23 +163,10 @@ the sync locally only to preview before that run.
 **Add a new document:**
 
 1. Create the Google Doc and set sharing to "anyone with the link can view".
-2. Add a row to the appropriate registry sheet with the name and the doc's
-   `export?format=pdf` link.
-3. Mapping to a page file:
-   - **Tools**: the filename is the slugified tool name (e.g. "AJA Sputter" →
-     `aja_sputter.md`). If that doesn't match the file you want, add an entry to
-     `TOOL_PAGE_OVERRIDES` in the script.
-   - **Chem / policy**: add the document name → page path to `CHEM_PAGE_MAP` /
-     `POLICY_PAGE_MAP` in the script.
-4. Add the page to the `.nav.yml` in its directory. A flat tool is one
-   line in `docs/tool_sops/deposition/.nav.yml`
-   (`AJA Sputter: aja_sputter.md`). Promoting it to a parent with process
-   docs means moving the file to `aja_sputter/index.md` and adding a
-   `.nav.yml` in that directory for the children.
-5. Run the sync and check the page locally.
-6. Upload the new PDF to R2 (same key as the local path under
-   `docs/assets/pdfs/`) so View PDF works on the live site. See
-   [Deploying](#deploying).
+2. If the tool or hood is not already an asset, add a row to `assets` with a new `id` (lower-case, hyphens, never reused) and a `group`.
+3. Add a row to `documents`: the asset id (blank for a policy or signup page), the sidebar `label`, the on-page `title`, `audience` `public`, and the doc's share link. Leave `section` blank when `asset` is set; set it to `policy` for a facility document, or blank to publish at the docs root.
+4. Run the sync. The page lands at the path rule above. The sync appends a sidebar entry at the end of that directory's `.nav.yml` if one is not already there; move the line to the position you want.
+5. Upload the new PDF to R2 (same key as the local path under `docs/assets/pdfs/`) so View PDF works on the live site. See [Deploying](#deploying).
 
 ## The docs chat
 
@@ -347,18 +341,19 @@ need the live file updated before the next poll, or when you are
 previewing locally:
 
 1. Sync (`uv run python scripts/sync_gdocs.py …`). That refreshes the
-   local file under `docs/assets/pdfs/{tools,chem,policy}/`.
+   local file under `docs/assets/pdfs/`, using the same relative path as
+   the page (`tools/deposition/pecvd/index.pdf` for the PECVD SOP).
 2. Upload **that file** to the real bucket (`--remote` is required;
    without it Wrangler writes a local emulator under `.wrangler/`):
 
    ```bash
-   npx wrangler r2 object put nanodocs-pdfs/tools/PECVD_SOP.pdf \
-     --file=docs/assets/pdfs/tools/PECVD_SOP.pdf \
+   npx wrangler r2 object put nanodocs-pdfs/tools/deposition/pecvd/index.pdf \
+     --file=docs/assets/pdfs/tools/deposition/pecvd/index.pdf \
      --content-type=application/pdf \
      --remote
    ```
 
-   Keys match the folders: `tools/…`, `chem/…`, `policy/…`.
+   The key is the page path with a `.pdf` suffix. A title edit does not change it.
 3. Push to `main` if the markdown page also changed. A PDF-only change
    needs the R2 upload; Pages does not need a rebuild for the file bytes.
 
