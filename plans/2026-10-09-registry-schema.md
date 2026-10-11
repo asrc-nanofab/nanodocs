@@ -1,7 +1,7 @@
 # Make the registry sheet the source of truth: assets, documents, groups
 
 **Date:** 2026-10-09
-**Status:** Phase B2 done — awaiting sign-off. Supersedes `2026-10-09-sheet-owns-page-path.md`
+**Status:** Phase C in progress — new PDF keys are in R2. Supersedes `2026-10-09-sheet-owns-page-path.md`
 **Branch:** `create-assets-docs-groups`
 
 ## Description
@@ -471,11 +471,11 @@ Same branch, `create-assets-docs-groups`. Execute the steps below. Do not check 
 - [ ] Chemical Handling shows one bold "Wet Processing" heading. Litho-Development, Solvent Lift-Off, and RCA are single links to the hood SOP. Caustics and HF and Piranha are carets: the hood name opens the SOP, and the rows inside are the etch pages only.
 - [ ] Add a row to `documents` with no nav entry, re-sync, and confirm it appears at the end of its list; edit its `label`, re-sync, and confirm the nav label follows. Adding that row beside a one-SOP tool turns the tool into a caret without moving the SOP URL.
 - [ ] Old URLs redirect locally via `wrangler pages dev` or on a preview deploy, and the destination is the asset URL. Edit one `label` in the sheet, re-sync, and confirm a new `_redirects` line appears.
-- [ ] Decision: proceed / adjust / abandon
+- [x] Decision: proceed. Sidebar accepted. The sheet-row and redirect experiments were not run.
 
 ### Phase C — Cut over
 
-- [ ] Upload all PDFs under the new R2 keys; delete the old keys.
+- [ ] Upload all PDFs under the new R2 keys; delete the old keys. Uploaded 38 new keys to `nanodocs-pdfs` on 2026-10-11. Old keys (`tools/*_SOP.pdf`, `chem/*`, `policy/Becoming_a_Nanofab_User.pdf`, and the rest of the live set) stay until the new pages are deployed, because the live site still requests them.
 - [ ] Merge; confirm the production deploy and redirects.
 - [ ] Delete the `Document URLs` tab and retire the chem and policy workbooks (or leave them read-only with a note pointing at the registry).
 - [ ] Mark `2026-10-09-sheet-owns-page-path.md` superseded; update `2026-10-06-nested-tool-sections.md` status.
