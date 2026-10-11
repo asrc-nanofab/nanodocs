@@ -1,7 +1,8 @@
 # Make the registry sheet the source of truth: assets, documents, groups
 
 **Date:** 2026-10-09
-**Status:** Accepted — Phase A not started. Supersedes `2026-10-09-sheet-owns-page-path.md`
+**Status:** Phase B done — awaiting sign-off. Supersedes `2026-10-09-sheet-owns-page-path.md`
+**Branch:** `create-assets-docs-groups`
 
 ## Description
 
@@ -365,42 +366,50 @@ every hood gains the `wet-processing/` segment, every policy page
 
 ### Phase A — Build the three tabs
 
-In the tools workbook (`1b4RRhKAukj9NrFyiJl_I9vbAUnrgDSy1TeNq2QLKJr4`).
-Do not touch `Document URLs` or the chem and policy workbooks; the
-current sync keeps working until Phase C.
+A new workbook, [Nanodocs Registry](https://docs.google.com/spreadsheets/d/1wuT0MT50EOu8GzAxCS05bQzJCV9Hevwk7dXe9B28wBo/edit),
+id `1wuT0MT50EOu8GzAxCS05bQzJCV9Hevwk7dXe9B28wBo`. The live tools workbook
+(`1b4RRhKAukj9NrFyiJl_I9vbAUnrgDSy1TeNq2QLKJr4`), including `Document URLs`
+and `Tool List`, stays untouched, as do the chem and policy workbooks.
+The current sync keeps working until Phase C.
 
-- [ ] Add a `groups` tab: import `plans/registry-samples/groups.csv`.
-- [ ] Replace `Tool List` with `assets`: import `plans/registry-samples/assets.csv` (46 rows — the 41 tools with renamed headers plus the five hoods). Or rename the existing headers and append the hoods by hand.
-- [ ] Add a `documents` tab: import `plans/registry-samples/documents.csv` (38 rows — 21 tool SOPs, 12 hood pages, 5 facility documents). The RCA Cleaning Procedure row is omitted.
-- [ ] Share the workbook so the two new tabs export as CSV ("anyone with link can view" is already set); note each tab's `gid`.
+| Tab | gid |
+| --- | --- |
+| `groups` | `1564656206` |
+| `assets` | `0` |
+| `documents` | `1004610326` |
+
+- [x] Add a `groups` tab: import `plans/registry-samples/groups.csv`. 7 rows. Etching's label is Plasma Etching.
+- [x] Add an `assets` tab: import `plans/registry-samples/assets.csv` (46 rows — the 41 tools with renamed headers plus the five hoods). `Tool List` in the old workbook is unchanged.
+- [x] Add a `documents` tab: import `plans/registry-samples/documents.csv` (38 rows — 21 tool SOPs, 12 hood pages, 5 facility documents). The RCA Cleaning Procedure row is omitted.
+- [x] Shared so each tab exports as CSV. Exports match the samples (Google adds CRLF and drops the trailing newline).
 
 ### Phase A review gate — STOP for sign-off
 
-- [ ] Every `Programmatic ID` is the id you want in URLs for good. Changing one later is a redirect, not a cell edit.
-- [ ] One workbook for all three sections is acceptable (versus keeping chem and policy in their own workbooks with the same tabs).
-- [ ] The `audience` vocabulary is right: `public`, `staff`, `admin`.
+- [x] Every `Programmatic ID` is the id you want in URLs for good. Changing one later is a redirect, not a cell edit. Accepted by proceeding.
+- [x] One workbook for all three sections is acceptable. Nanodocs Registry holds `groups`, `assets`, and `documents`.
+- [x] The `audience` vocabulary is right: `public`, `staff`, `admin`. Accepted by proceeding.
 - [x] `label` doubling as the URL is acceptable: a label edit moves the page and writes a redirect. Signup stays `nanofab-signup` under that rule.
 - [x] The asset URL is the generated index, and today's SOP moves to `sop.md` under it. Old SOP URLs redirect to that file. The caret stays, including for an asset with one document.
-- [ ] The migration's URL changes are acceptable.
-- [ ] Decision: proceed / adjust / abandon
+- [x] The migration's URL changes are acceptable. Accepted by proceeding.
+- [x] Decision: proceed.
 
 ### Phase B — Sync reads the registry
 
 On a branch. Cut-over, not coexistence: the old generated files are
 deleted and regenerated, so there is one tree to review.
 
-- [ ] Replace `SECTIONS` with one `REGISTRY` (workbook id, three gids). Load and validate `groups`, `assets`, `documents` as above before any download.
-- [ ] Resolve the path, PDF key, and nav entries per the rules. Write each published asset's `index.md` from the template. Parse the doc id from `doc`; derive preview and export URLs. Stop reading `PDF Link`.
-- [ ] Delete `TOOL_CATEGORY_DIRS`, `TOOL_PAGE_OVERRIDES`, `CHEM_PAGE_MAP`, `POLICY_PAGE_MAP`, and `resolve_page_path`'s per-section branches.
-- [ ] `--audience public` (default) filters documents. `--group`, `--asset`, and `--only <label>` replace `--category` / `--only <name>`.
-- [ ] Merge into `.nav.yml`: relabel generated entries from the sheet, append missing ones, never reorder or remove. Create `<asset dir>/.nav.yml` for every asset with a published document, `index.md` first, then each document.
-- [ ] Delete every page starting with the `AUTO-GENERATED` marker, `docs/**/img/`, `docs/assets/pdfs/`, and `pecvd/pecvd_processes.md`. Rewrite the existing `.nav.yml` files to the new paths by hand (`tool_sops/` → `tools/`, `etch/` → `etching/`, hyphenated ids, `wet-processing/`), keeping today's order. In `docs/.nav.yml`, the tab is `Tools: tools`. Run one full sync; it should append nothing.
-- [ ] Record each doc's written path in `.sync-state.json`; append to `docs/_redirects` when it changes. Seed the file with every URL the migration moves.
-- [ ] Update links in the hand-written index pages (`deposition/index.md`, `chemicals/index.md`'s hood cards, and the others) and the Tools and Signup entries in `docs/.nav.yml` to the new paths.
-- [ ] `.github/workflows/sync-and-publish.yml`: commit when `.nav.yml`, `_redirects`, or `.sync-state.json` changed, not only pages.
-- [ ] Update `README.md`, `AGENTS.md`, and `docs/authoring/index.md`: three tabs, the path rule, the asset index template, the growth rule, the merge rule for `.nav.yml`.
-- [ ] `uv run ruff check .` and `uv run ruff format .`
-- [ ] `uv run zensical build --strict` passes.
+- [x] Replace `SECTIONS` with one `REGISTRY` (workbook id, three gids). Load and validate `groups`, `assets`, `documents` as above before any download.
+- [x] Resolve the path, PDF key, and nav entries per the rules. Write each published asset's `index.md` from the template. Parse the doc id from `doc`; derive preview and export URLs. Stop reading `PDF Link`.
+- [x] Delete `TOOL_CATEGORY_DIRS`, `TOOL_PAGE_OVERRIDES`, `CHEM_PAGE_MAP`, `POLICY_PAGE_MAP`, and `resolve_page_path`'s per-section branches.
+- [x] `--audience public` (default) filters documents. `--group`, `--asset`, and `--only <label>` replace `--category` / `--only <name>`.
+- [x] Merge into `.nav.yml`: relabel generated entries from the sheet, append missing ones, never reorder or remove. Create `<asset dir>/.nav.yml` for every asset with a published document, `index.md` first, then each document.
+- [x] Delete every page starting with the `AUTO-GENERATED` marker (39 pages), `docs/**/img/`, `docs/assets/pdfs/`, and `pecvd/pecvd_processes.md`. Rewrote `.nav.yml` to the new paths, keeping today's order. `docs/.nav.yml` tab is `Tools: tools`. Full sync wrote 38 documents and 26 asset indexes and appended nothing to the pre-written nav files.
+- [x] Record each doc's written path in `.sync-state.json`; append to `docs/_redirects` when it changes. Seeded the file with every URL the migration moves (both slash forms). `site/_redirects` is emitted by the build.
+- [x] Update links in the hand-written index pages (`deposition/index.md`, `chemicals/index.md`'s hood cards, and the others) and the Tools and Signup entries in `docs/.nav.yml` to the new paths.
+- [x] `.github/workflows/sync-and-publish.yml`: the new CLI takes `--group`, `--asset`, `--only`, `--audience`. `scripts/ci_publish.sh` already stages all of `docs/` plus `.sync-state.json`, which includes `.nav.yml` and `_redirects`.
+- [x] Update `README.md`, `AGENTS.md`, and `docs/authoring/index.md`: three tabs, the path rule, the asset index template, the growth rule, the merge rule for `.nav.yml`.
+- [x] `uv run ruff check .` and `uv run ruff format .`
+- [x] `uv run zensical build --strict` passes. Built sidebar order matches today's, with sheet labels (Plasma Etching, Fiji ALD, Wet Processing, SOP under each caret).
 
 ### Phase B review gate — STOP for sign-off
 
@@ -430,5 +439,5 @@ deleted and regenerated, so there is one tree to review.
 - `short_name` is deferred. Staff still say `PECVD` and `ICP-Cl`, and `Staff Tool List` still joins on `Name - Short`. That nickname is not a column here. Add it when that list is read, and join it on `id`.
 - Asset-to-asset edges (`parent`, Oct 6's `depends_on`) are not here. The first row that needs one adds a `parent` column; the path rule already handles a nested asset directory if that is wanted.
 - The sync still needs network to `docs.google.com`. No credentials.
-- `.github/workflows/sync-and-publish.yml` commits only when a page changed. Phase B must make it commit `.nav.yml` and `_redirects` changes too, or a sheet relabel never reaches the site.
+- `scripts/ci_publish.sh` stages `docs/` and `.sync-state.json`, so a `.nav.yml` or `_redirects` change is committed with the pages.
 - Moving ordering into the sheet later is one rule change: the merge becomes a full rewrite, driven by an `order` column. Nothing in the schema has to move.

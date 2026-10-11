@@ -10,14 +10,22 @@ on:
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
-      sections:
-        description: "Registry sections (space-separated: tools, chem, policy)"
-        type: string
-        default: "tools chem policy"
-      only:
-        description: "Exact registry name; empty = every mapped doc in those sections"
+      group:
+        description: "groups.id; empty = every group"
         type: string
         default: ""
+      asset:
+        description: "assets.id; empty = every asset"
+        type: string
+        default: ""
+      only:
+        description: "Document label; empty = every published document"
+        type: string
+        default: ""
+      audience:
+        description: "Audience to publish"
+        type: string
+        default: "public"
 
 concurrency:
   group: sync-and-publish
@@ -41,22 +49,17 @@ jobs:
 
       - name: Sync Google Docs
         env:
-          INPUT_SECTIONS: ${{ github.event_name == 'schedule' && 'tools chem policy' || inputs.sections }}
+          INPUT_GROUP: ${{ github.event_name == 'schedule' && '' || inputs.group }}
+          INPUT_ASSET: ${{ github.event_name == 'schedule' && '' || inputs.asset }}
           INPUT_ONLY: ${{ github.event_name == 'schedule' && '' || inputs.only }}
+          INPUT_AUDIENCE: ${{ github.event_name == 'schedule' && 'public' || inputs.audience }}
         run: |
           set -euo pipefail
-          read -r -a sections <<< "${INPUT_SECTIONS}"
-          for s in "${sections[@]}"; do
-            case "$s" in
-              tools|chem|policy) ;;
-              *) echo "Invalid section: $s" >&2; exit 1 ;;
-            esac
-          done
-          if [[ -n "${INPUT_ONLY}" ]]; then
-            uv run python scripts/sync_gdocs.py "${sections[@]}" --only "${INPUT_ONLY}"
-          else
-            uv run python scripts/sync_gdocs.py "${sections[@]}"
-          fi
+          args=(--audience "${INPUT_AUDIENCE}")
+          if [[ -n "${INPUT_GROUP}" ]]; then args+=(--group "${INPUT_GROUP}"); fi
+          if [[ -n "${INPUT_ASSET}" ]]; then args+=(--asset "${INPUT_ASSET}"); fi
+          if [[ -n "${INPUT_ONLY}" ]]; then args+=(--only "${INPUT_ONLY}"); fi
+          uv run python scripts/sync_gdocs.py "${args[@]}"
 
       - name: Strict site build
         run: uv run zensical build --strict

@@ -8,12 +8,12 @@ disagree, this file and `.cursor/rules/` win.
 
 A Zensical site (modern theme) on **Cloudflare Pages**
 (`https://nanodocs.pages.dev`) whose content is **synced from Google Docs**.
-Staff write SOPs/policies as Google Docs; registry Google Sheets list what
+Staff write SOPs/policies as Google Docs; the Nanodocs Registry sheet lists what
 gets published; `scripts/sync_gdocs.py` converts each doc to a site page.
 This repo is a rendering of the docs, not the source of truth.
 
 ```text
-Google Docs ──> registry sheets ──> scripts/sync_gdocs.py ──> docs/**/*.md
+Google Docs ──> Nanodocs Registry ──> scripts/sync_gdocs.py ──> docs/**/*.md
                                                           ├─> docs/**/img/          (extracted images)
                                                           └─> docs/assets/pdfs/     (local PDFs)
 docs/ ──> zensical build ──> site/ (then rm site/assets/pdfs) ──> Cloudflare Pages
@@ -44,14 +44,16 @@ artifact.
 ## Commands
 
 ```bash
-uv run python scripts/sync_gdocs.py tools chem policy    # sync everything
-uv run python scripts/sync_gdocs.py tools --category Deposition
-uv run python scripts/sync_gdocs.py tools --only "AJA Sputter"
+uv run python scripts/sync_gdocs.py                      # every public document
+uv run python scripts/sync_gdocs.py --group deposition
+uv run python scripts/sync_gdocs.py --asset pecvd --only SOP
 uv run zensical serve                                    # http://127.0.0.1:8000/
 uv run zensical build --strict                           # required gate
-# After a PDF changes, upload that key to R2 (user-run; --remote is required):
-npx wrangler r2 object put nanodocs-pdfs/<tools|chem|policy>/<file>.pdf \
-  --file=docs/assets/pdfs/<same> --content-type=application/pdf --remote
+# After a PDF changes, upload that key to R2 (user-run; --remote is required).
+# The key is the page path with a .pdf suffix:
+npx wrangler r2 object put nanodocs-pdfs/tools/deposition/pecvd/sop.pdf \
+  --file=docs/assets/pdfs/tools/deposition/pecvd/sop.pdf \
+  --content-type=application/pdf --remote
 ```
 
 A push to `main` deploys Pages. Cloudflare build command:
@@ -63,23 +65,41 @@ network). No credentials: all docs/sheets are "anyone with link can view".
 
 ## How the sync maps docs to pages
 
-Defined in `scripts/sync_gdocs.py`:
+Defined in `scripts/sync_gdocs.py`. One workbook (Nanodocs Registry,
+`REGISTRY_ID`) with three tabs (`REGISTRY_GIDS`: `groups`, `assets`,
+`documents`).
 
-- `SECTIONS` — the three registry sheets (tools / chem / policy), their CSV
-  export URLs, name columns, and PDF output dirs.
-- **Tools**: page path is `docs/tool_sops/<category>/<slugified name>.md`,
-  category from the sheet's `Type (Category)` column via `TOOL_CATEGORY_DIRS`.
-  Non-matching filenames go in `TOOL_PAGE_OVERRIDES`.
-- **Chem / policy**: explicit name → path maps (`CHEM_PAGE_MAP`,
-  `POLICY_PAGE_MAP`). A doc absent from the map is skipped with a log line.
-- New pages get a line in the `.nav.yml` of their directory. Zensical's
-  built-in awesome-nav plugin reads those files (`plugins: awesome-nav`
-  in `mkdocs.yml`). A nested tool is `slug/index.md` plus a `.nav.yml`
-  in that directory for its children.
-- Keep `mkdocs.yml`. Do not add `zensical.toml` until they ship a
-  conversion tool.
-- The sync preserves an existing page's H1, so renaming a page's on-site title
-  is a one-time hand edit of the H1 that survives future syncs.
+- An **asset** is a tool or hood. `id` is the permanent URL segment;
+  `name` is the sidebar label. An asset with a published document is a
+  directory. Its `index.md` is generated from the asset row (name, and
+  description / manufacturer / model when filled) and is not a Google Doc.
+- A **document** is one Google Doc. `label` is the sidebar text and the
+  file is `slugify(label).md` (hyphens). `title` is the H1. `audience`
+  `public` is what this build publishes. A blank `doc` cell is unpublished.
+- A **group** says what the asset is and, through `section`, which tab it
+  appears on. Hoods are assets in `wet-processing`, whose section is
+  `chemicals`.
+
+```text
+docs/<section>/<group>/<asset>/index.md
+docs/<section>/<group>/<asset>/<slug>.md     # asset set
+docs/<section>/<slug>.md                     # no asset, section set (policy)
+docs/<slug>.md                               # no asset, section blank (signup)
+```
+
+`id` is permanent. A `label` edit moves the page; the sync records the
+doc's last path in `.sync-state.json` and appends the old URL to
+`docs/_redirects`. The PDF key is that same path under
+`docs/assets/pdfs/`. Unknown columns are ignored.
+
+Sidebar order lives in `.nav.yml`. The sync relabels entries it generated,
+appends a missing page at the end, and does not reorder or remove. It
+creates `<asset dir>/.nav.yml` (`index.md` first, then each document) and
+never opens `docs/.nav.yml`. A stale entry whose page moved fails
+`zensical build --strict` until the line is deleted.
+
+Keep `mkdocs.yml`. Do not add `zensical.toml` until they ship a
+conversion tool. The on-page H1 of a document is the sheet `title`.
 
 ## Google export quirks (debugging rendering issues)
 

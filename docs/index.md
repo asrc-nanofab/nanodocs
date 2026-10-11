@@ -13,7 +13,7 @@ hide:
 
 Complete documentation for the ASRC Nanofabrication Facility.
 
-<p class="home-cta" markdown>[Become a Nanofab User](signup.md){ .md-button .md-button--primary }</p>
+<p class="home-cta" markdown>[Become a Nanofab User](nanofab-signup.md){ .md-button .md-button--primary }</p>
 
 </div>
 
@@ -43,7 +43,7 @@ Complete documentation for the ASRC Nanofabrication Facility.
 
     Standard operating procedures for all nanofabrication equipment.
 
-    [:octicons-arrow-right-24: Open Tool SOPs](tool_sops/index.md)
+    [:octicons-arrow-right-24: Open Tool SOPs](tools/index.md)
 
 -   :material-flask:{ .lg .middle } __Chemical Handling__
 

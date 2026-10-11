@@ -1,0 +1,10 @@
+title: Deposition
+nav:
+  - index.md
+  - AJA Sputter: aja-sputter
+  - AJA Metal Evaporator: metal-evap
+  - AJA Organic Evaporator: organic-evap
+  - AJA Thermal Evaporator: thermal-evap
+  - Fiji ALD: ald
+  - Oxford PECVD: pecvd
+  - Gold Sputter Coater: gold-sputter

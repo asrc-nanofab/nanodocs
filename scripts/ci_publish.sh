@@ -25,6 +25,8 @@ else
   echo "No PDF changes; skipping R2."
 fi
 
+# docs/ includes .nav.yml and _redirects, so a relabel or a redirect
+# is published even when no page body changed.
 git add -- .sync-state.json docs/
 
 if git diff --cached --quiet; then

@@ -7,7 +7,7 @@ is the whole pipeline.
 
 ```mermaid
 flowchart LR
-    GD[Your Google Doc] --> REG[Registry sheet<br/>doc name + Google link]
+    GD[Your Google Doc] --> REG[Nanodocs Registry<br/>assets and documents]
     REG --> SYNC[Python sync script]
     SYNC --> MD[Markdown pages]
     SYNC --> IMG[Full-res images]
@@ -20,9 +20,7 @@ flowchart LR
 
 1. **You write in Google Docs.** The doc is the single source of truth — the
    site never holds content of its own.
-2. **A registry sheet lists what's published.** Each row is one document: its
-   name, category, and a link to the doc. If it's not in the sheet, it's not
-   on the site.
+2. **The Nanodocs Registry lists what's published.** It is one spreadsheet with three tabs. `assets` is the tool or hood (its id is the permanent address; its name is the sidebar label). `documents` is one Google Doc about that asset: the sidebar label, the on-page title, who it's for (`public` for the site), and the doc link. A policy or the signup page is a document with no asset. `groups` is the heading those assets sit under (Deposition, Wet Processing) and which tab of the site they appear on. If a row isn't in the sheet, it isn't on the site. A tool can be listed before it has a document; it gets a page only once a document is published.
 3. **A sync script converts each doc.** It downloads the doc straight from
    Google in three formats:
     - **Markdown** becomes the web page you're reading. The script strips
@@ -37,6 +35,20 @@ flowchart LR
    [nanodocs.pages.dev](https://nanodocs.pages.dev) (Cloudflare Pages).
    Every page ends up searchable, readable on phones, and in step with
    the docs.
+
+### Addresses, the asset page, and the sidebar
+
+A tool or hood with a published document gets its own page, written from the asset row: the name as the heading, then the description, manufacturer, and model when those cells are filled. That page has no PDF. The Google Docs sit underneath it. The tool name in the sidebar opens this page; `SOP` is the row under it.
+
+The address follows the sheet:
+
+- a tool SOP is `/tools/<group>/<asset id>/sop/`
+- an etch under a hood is `/chemicals/wet-processing/<hood id>/<slug of the label>/`
+- a policy is `/policy/<slug of the label>/`
+
+The asset `id` does not change. Renaming the asset's `name` changes the sidebar label and leaves the address where it is. Renaming a document's `label` moves that page, and the old address keeps working. The on-page heading is the document's `title`, which can change without moving the address or the PDF.
+
+Sidebar order is kept in this repo, not in the sheet. A new row appears at the bottom of its list the next time the site syncs; someone then moves that line to where it should sit. Sorting the sheet does nothing to the site.
 
 ### Where the PDFs live
 
