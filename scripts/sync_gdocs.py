@@ -74,6 +74,8 @@ TOOL_PAGE_OVERRIDES = {
     "ICP-Fl": "icp-fl.md",
     "Spinner": "spinners.md",
     "Elionix 100keV": "elionix.md",
+    # Nested under deposition/pecvd/ so the SOP can have sibling pages.
+    "PECVD": "pecvd/index.md",
 }
 
 # Document Name (as in the sheets) → page path relative to docs/

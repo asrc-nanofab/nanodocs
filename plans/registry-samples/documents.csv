@@ -1,0 +1,40 @@
+asset,label,title,section,audience,doc
+ald,SOP,Atomic Layer Deposition (ALD) SOP,,public,https://docs.google.com/document/d/13ZXev9NXbltwLdRk76AbLV_IsnMcdnw-pK4Ytmj8YJc/edit
+metal-evap,SOP,AJA Metal Evaporator SOP,,public,https://docs.google.com/document/d/1UN-jwGXj1MgKG_DcL0Pjg06Q0h_o_oWUWd3saSPNCxk/edit
+organic-evap,SOP,AJA Organic Evaporator SOP,,public,https://docs.google.com/document/d/1_GuCjeccX-jVpvjYN3VdQHAqRQzjFMkkwiHjFlsDaZI/edit
+thermal-evap,SOP,AJA Thermal Evaporator SOP,,public,https://docs.google.com/document/d/1XmcgTR4KJSk2_5zVrSb0KT16OabZz5VcCGGa1UyJi4s/edit
+aja-sputter,SOP,AJA Sputter Deposition SOP,,public,https://docs.google.com/document/d/1ZxRo_R4RzLxKZ7h_I2hFphAH187e9qq2U4bBf5n4lOg/edit
+pecvd,SOP,Oxford PECVD SOP,,public,https://docs.google.com/document/d/1q-4YgUklqppoQipswF7NygH4oarlqO2lo9nTGDubHhk/edit
+gold-sputter,SOP,Gold Sputter Coater SOP,,public,https://docs.google.com/document/d/1CEDzZpsaCl18r2u3Z_2YnZJjB6EAYobtiUnn9lpl9LY/edit
+icp-cl,SOP,ICP-Chlorine Etcher SOP,,public,https://docs.google.com/document/d/1ptTwQFwkZXMfj5kJUGXTWLBkJ6nIfmFmzOoVM4ivMz4/edit
+rie,SOP,Oxford 80 RIE SOP,,public,https://docs.google.com/document/d/1IaniDFz65Ywijamk3f5YETyXLmCPBjYZ47sSgO8O6DE/edit
+icp-fl,SOP,ICP Fluorine Etcher SOP,,public,https://docs.google.com/document/d/134y0mBFL0VjC1F5kO6U1BMUVSfikEUZUemUuRE5o-aQ/edit
+nanoscribe,SOP,Nanoscribe 3D-Lithography SOP,,public,https://docs.google.com/document/d/1L4zLClXwaq7xw9K1aaVvXxmGVu2fVdstCTqypNmvXOw/edit
+mask-aligner,SOP,EVG Photomask Aligner SOP,,public,https://docs.google.com/document/d/1cds236-fRol1RoqzUvsCR4YPsqeyf5Yum19WReIJFl8/edit
+spinner,SOP,Spinners SOP,,public,https://docs.google.com/document/d/1H33fEMQOaZ6IegQyybm0pJRTaQjPmYC0ar2dVD6sJwM/edit
+hot-plates,SOP,Hot Plates SOP,,public,https://docs.google.com/document/d/1lzJ2D_izEUCCXlF7XG8gEiAwup2btTmb8DAzQv20AQ8/edit
+elionix-100kev,SOP,Elionix EBL 100keV SOP,,public,https://docs.google.com/document/d/1cOrrlJ8EToXcZ4G9Xtm8EBx-b4wHd6OidtbHtsJkXLc/edit
+afm,SOP,Atomic Force Microscope SOP,,public,https://docs.google.com/document/d/1vWchHUJWEjEPmC7fhBNWyf3IMGcx8EHeKd0mEAQ3X0c/edit
+optical-profilometer,SOP,Bruker Optical Profilometer SOP,,public,https://docs.google.com/document/d/1P_gjqrtBJbpDRO05SCl5TCALK-lMi89ykMG46FFzpGI/edit
+profilometer,SOP,Dektak Profilometer SOP,,public,https://docs.google.com/document/d/1uDD_bNfVsyvTkWzNPy5QGdm7Z_LQdniKeHbNruE4a1I/edit
+ellipsometer,SOP,Woollam V-VASE Ellipsometer SOP,,public,https://docs.google.com/document/d/1beyiXEaJvjsNaPcidsnvz1DwOyGI37BpkUN3oCp7gmo/edit
+sem,SOP,Scanning Electron Microscope SOP,,public,https://docs.google.com/document/d/1ewPbWkKfsC5ondHnL8PWIldjZXe1qQ_s_uoc0QVt_BY/edit
+dicing-saw,SOP,Disco Dicing Saw SOP,,public,https://docs.google.com/document/d/1HBfsM3Lt2x3310cCUOhnfu8L6NcT_e4XFyvLrq5oJIs/edit
+litho-hood,SOP,Litho-Development Hood,,public,https://docs.google.com/document/d/15K8HiRoBqTl6__K5GMHitdGn7ybAD6Iga3Qf07gFwt4/edit
+solvent-hood,SOP,Solvent Lift-Off Hood,,public,https://docs.google.com/document/d/16OSeeL1jXSGKkX6lI78EIyhBQONfz8GxHnL7XUGWk14/edit
+caustics-hood,SOP,Caustics and Metal Etch Hood,,public,https://docs.google.com/document/d/1_9u5YudriyjGAOOsm-8EVmkD0bD6SvVQZb4RuNEvKrg/edit
+caustics-hood,Aluminum Etch,Aluminum Etch,,public,https://docs.google.com/document/d/1sY9ryit4Lrh_y8Saq49lXGpBvjVZQ8X8OhuhvA_iZF8/edit
+caustics-hood,Chrome Etch,Chrome Etch,,public,https://docs.google.com/document/d/1KGMAyNuV7d_IKULiMIsnu3mv2qEcMy-Go3yxuJijZLQ/edit
+caustics-hood,Gold Etch,Gold Etch,,public,https://docs.google.com/document/d/1ffuyK_5d5dMrEkYlPAlxepmydWzc6R_e42pD5W3brjw/edit
+caustics-hood,Silicon Etch,Isotropic Silicon Etch,,public,https://docs.google.com/document/d/1OKt-lxZbpTqgTQaB2xr4tY9Pc04TGJ_Dgq-SYLFo0FM/edit
+caustics-hood,Nickel Etch,Nickel Etch SOP,,public,https://docs.google.com/document/d/1T6G6K91GHww4PlztrbcEJj7Kibu3BXw-j6RAdp5PAGQ/edit
+hf-piranha-hood,SOP,HF and Piranha Hood,,public,https://docs.google.com/document/d/1Gcfy5zHprGlI_ZHOKh8N3v_X1wO9ndRzPOorbETv7g0/edit
+hf-piranha-hood,Hydrofluoric Acid Etch,Hydrofluoric Acid Etch,,public,https://docs.google.com/document/d/1RVBRcWvxVvR0yamtidYjsd0aanbXqg84ov4ds2PDYB0/edit
+hf-piranha-hood,Piranha Clean,Piranha Clean,,public,https://docs.google.com/document/d/1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg/edit
+rca-hood,SOP,RCA Clean Hood,,public,https://docs.google.com/document/d/1Qtl2bvsitV9snJGXmonvmC6lgJgq6zfIud20R6E94i0/edit
+rca-hood,RCA Cleaning Procedure,RCA Cleaning Procedure,,public,https://docs.google.com/document/d/1K4aSGcPMeBPrMqDWhkOVNtJZhjbr77MOZ8vOJRbYkpg/edit
+,Nanofab Signup,Becoming a Nanofab User,,public,https://docs.google.com/document/d/1WzJh-JIVJhJRlmDeTlwibXwsdp1JH-A4RMS0WEP63CY/edit
+,C14 Application,Instruction for C-14 Application,policy,public,https://docs.google.com/document/d/1wxldtt0HAxqAhj__62KHGnug-Hdfc21pm3gg9mrBhIE/edit
+,Rules of Conduct,ASRC Nanofab -- Rules of Conduct,policy,public,https://docs.google.com/document/d/1qzcJ_VQbIsTaRefLxhnhzaancla2f7Q7IbotATD6YJU/edit
+,Safety Manual,ASRC Nanofab Facility -- Safety Manual,policy,public,https://docs.google.com/document/d/187RZSPDB9wpZXlKId2_d5mGpKgp5suuu95ipNXFHyPw/edit
+,Suspension Policy,Lab Suspension Policy,policy,public,https://docs.google.com/document/d/1H5BNvSj7EzHJ6-9Pjn1EpoTDeR8hgMribRgxNWJGK_g/edit
